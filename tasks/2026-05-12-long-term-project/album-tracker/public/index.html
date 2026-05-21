@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专辑数据库</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-brand">🎵 专辑数据库</div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active" data-page="dashboard">仪表盘</a>
+      <a href="#" class="nav-link" data-page="albums">专辑库</a>
+
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="container">
+    <!-- 仪表盘 -->
+    <div id="page-dashboard" class="page active">
+      <h1>📊 仪表盘</h1>
+      <div class="stats-grid" id="stats-grid"></div>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>🎸 风格分布 Top 10</h3>
+          <div id="genre-chart" class="bar-chart"></div>
+        </div>
+        <div class="chart-card">
+          <h3>🌍 国家分布 Top 10</h3>
+          <div id="country-chart" class="bar-chart"></div>
+        </div>
+      </div>
+      <!-- 新增：收听趋势 + 年度对比 -->
+      <div class="charts-grid" style="margin-top:24px">
+        <div class="chart-card">
+          <h3>📈 收听趋势（按年份）</h3>
+          <div id="listen-trend-chart" class="bar-chart"></div>
+        </div>
+        <div class="chart-card">
+          <h3>🏆 年度收听排行</h3>
+          <div id="year-compare-chart" class="bar-chart"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 专辑库 -->
+    <div id="page-albums" class="page">
+      <h1>💿 专辑库</h1>
+      <div class="album-controls">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="搜索专辑名 / 艺术家..." class="search-input">
+          <select id="search-table" class="search-select">
+            <option value="albums">总库 (albums)</option>
+            <option value="albums_2024">2024</option>
+            <option value="albums_2025">2025</option>
+            <option value="albums_2026">2026</option>
+          </select>
+          <button id="search-btn" class="btn btn-primary">搜索</button>
+        </div>
+        <div class="view-controls">
+          <select id="sort-by" class="search-select">
+            <option value="listen">按收听次数</option>
+            <option value="score">按评分</option>
+            <option value="name">按专辑名</option>
+            <option value="artist">按艺术家</option>
+            <option value="year">按发行年份</option>
+          </select>
+          <select id="sort-dir" class="search-select">
+            <option value="desc">降序</option>
+            <option value="asc">升序</option>
+          </select>
+          <button id="view-grid" class="view-btn active" title="卡片视图">▦</button>
+          <button id="view-list" class="view-btn" title="列表视图">≡</button>
+        </div>
+      </div>
+      <div id="albums-grid" class="albums-grid"></div>
+      <div id="albums-list" class="albums-list" style="display:none">
+        <div class="table-container">
+          <table class="album-table">
+            <thead>
+              <tr>
+                <th>封面</th>
+                <th>专辑名</th>
+                <th>艺术家</th>
+                <th>风格</th>
+                <th>国家</th>
+                <th>年份</th>
+                <th>收听</th>
+              </tr>
+            </thead>
+            <tbody id="albums-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+  </main>
+
+  <!-- 专辑详情弹窗（只读） -->
+  <div id="album-modal" class="modal">
+    <div class="modal-content modal-large">
+      <div class="modal-header">
+        <h2 id="modal-title">专辑详情</h2>
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+      <div class="modal-footer">
+        <span class="modal-hint">💡 编辑/删除/收听请使用 CLI 工具</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 提示消息 -->
+  <div id="toast" class="toast"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

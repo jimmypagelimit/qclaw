@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+Thumbs.db
+tmp/
+_cleaners_*.jpg
+task-artifact_*.md
+task-summary_*.md

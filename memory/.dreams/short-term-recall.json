@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-21T17:40:37.183Z",
+  "entries": {
+    "memory:memory/2026-05-14.md:38:71": {
+      "key": "memory:memory/2026-05-14.md:38:71",
+      "path": "memory/2026-05-14.md",
+      "startLine": 38,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "## 18:41 最终版脚本整理完成 **v9 FINAL 脚本已整理到项目目录：** - `{workspace_root_dir}/tasks/2026-05-12-long-term-project/album-tracker/gen_ranking_v9.py` - 通用模板，支持命令行参数（--album/--artist/--year/--cover/--rank等） - 输出目录：`ranking-images/` **验证结果：** 脚本运行正常，生成图片成功 **下一步待定：** 批量生成排行榜图片（用户尚未确认是否现在做） **v9最终设计规范总结：** - CD感圆盘（银边+中心孔+反光）| 440px | 左侧 - 暗色模糊背景 - 全白色字体体系 - 年份/排名 → 专辑名 → 信息块（艺术家不翻译） - 正在播放左上角 --- ## 19:00 会话压缩前记忆存档 ### Album Tracker 项目状态（日终） - **CLI 修复**：✅ 全部完成并验证（info/listen/delete -i 优先查年份表） - **封面系统**：✅ 497/497 完成，命名规范 `{album_id}-COV.jpg` - **Web UI**：✅ 纯展示模式，排行榜页面已移除 - **服务器**：运行在 localhost:3456，PID 12456（session marine-zephyr） - **Git**：已提交推送（701e0ee） ### 图片生成任务完成 ⭐",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T17:40:37.183Z",
+      "lastRecalledAt": "2026-05-21T17:40:37.183Z",
+      "queryHashes": [
+        "62b9fba333fe"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "workspace-root-dir",
+        "ranking-images",
+        "年份/排名",
+        "info/listen/delete",
+        "497/497",
+        "album-id",
+        "cov.jpg",
+        "marine-zephyr"
+      ]
+    },
+    "memory:memory/2026-05-13.md:305:335": {
+      "key": "memory:memory/2026-05-13.md:305:335",
+      "path": "memory/2026-05-13.md",
+      "startLine": 305,
+      "endLine": 335,
+      "source": "memory",
+      "snippet": "- MusicBrainz 对中文专辑覆盖差（中文名/拼音名混乱） **待手动搜：** 6张（见上方列表） ## 封面补漏最终轮（~15:30-16:06） ### 背景 2026年表还有6张专辑缺封面，需要最后冲刺。 ### 发现的核心Bug：表ID不匹配 ⚠️ **问题根源：** - `get_db_id()` 函数通过 Web API 搜索专辑，返回的是 **albums 总表**的 `album_id` - 但实际这张专辑可能只在 albums_2026（或其他年份表）里 - albums_2026 里的 `album_id` 是独立的序列（38/88/79...），不等于 albums 表的 ID（447/487/478...） - 当脚本尝试 `PUT /api/albums/447?table=albums_2026` → HTTP 404（albums_2026 里没有 ID=447） **正确的表ID映射：** | 专辑 | albums表ID | albums_2026表ID | albums_2024表ID | |------|-----------|-----------------|-----------------| | 刺猬《乌鸦谷》 | 447 | **38** | - | | Kill-Kennie《Repetition》 | 487 | **88** | - | | 苍蝇《The Fly II》 | 139 | - | **139** | | 戴饶《锦上添花》 | 173 | - |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T17:40:37.183Z",
+      "lastRecalledAt": "2026-05-21T17:40:37.183Z",
+      "queryHashes": [
+        "62b9fba333fe"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "中文名/拼音名混乱",
+        "30-16",
+        "get-db-id",
+        "album-id",
+        "albums-2026",
+        "38/88/79",
+        "447/487/478",
+        "api/albums/447"
+      ]
+    },
+    "memory:memory/2026-05-13.md:329:354": {
+      "key": "memory:memory/2026-05-13.md:329:354",
+      "path": "memory/2026-05-13.md",
+      "startLine": 329,
+      "endLine": 354,
+      "source": "memory",
+      "snippet": "| 猿《漩渦重構實驗》 | 478 | **79** | - | | 许巍《每一刻都是崭新的》 | - | **36** | - | **教训：** album-tracker 的 Web API 里，albums 表和年份表是独立的记录集，`album_id` 互不对应。同步封面时必须分别查每个表的 ID。 ### 最终补漏结果 | 专辑 | 封面文件 | albums表 | 年份表 | 状态 | |------|---------|---------|--------|------| | 刺猬《乌鸦谷》 | `covers/447-刺猬-[Hedgehog]-乌鸦谷-...jpg` | ✅ | albums_2026/38 ✅ | ✅ | | Kill-Kennie《Repetition》 | `covers/487-Kill-Kennie-Repetition.jpg` | ✅ | albums_2026/88 ✅ | ✅ | | 苍蝇《The Fly II》 | `covers/139-苍蝇-The Fly II.jpg` | ✅ | albums_2024/139 ✅ | ✅ | | 戴饶《锦上添花》 | `covers/173-戴饶-锦上添花.jpg` | ✅ | albums_2024/173 ✅ | ✅ | | 猿《漩渦重構實驗》 | `covers/478-猿-漩渦重構實驗.jpg` | ✅ | albums_2026/79 ✅ | ⚠️ 封面可能错误（QQ源50KB，NE搜索结果混淆） | | 许巍《每一刻都是崭新的》 |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T17:40:37.183Z",
+      "lastRecalledAt": "2026-05-21T17:40:37.183Z",
+      "queryHashes": [
+        "62b9fba333fe"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "album-tracker",
+        "album-id",
+        "covers/447-刺猬",
+        "albums-2026/38",
+        "kill-kennie",
+        "albums-2026/88",
+        "covers/139-苍蝇-the",
+        "ii.jpg"
+      ]
+    },
+    "memory:memory/2026-05-13.md:50:74": {
+      "key": "memory:memory/2026-05-13.md:50:74",
+      "path": "memory/2026-05-13.md",
+      "startLine": 50,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "**详情弹窗改为只读：** 封面大图 + 基本信息（双列）+ 八维度评分条 + 描述 + CLI提示 ### 昨日 git push 补推成功（~08:55） - 昨晚下班时 git push 在 PowerShell 卡住（Windows 凭据弹窗） - 今天用 Git Bash 重新 commit + push 成功 - 11 文件变更，+1135/-34 行，推到 main ### album-tracker 封面来源总结（~10:05） 用户询问专辑图片抓取手段，总结了当前三源： 1. iTunes Search API（首选，~60%命中） 2. Deezer API（备选，~25%） 3. 网易云音乐搜索（兜底，~15%） 尚未集成：MusicBrainz Cover Art Archive、Discogs、Bandcamp、Last.fm ### 研发计划查看（~10:07） 用户要求看研发计划（docs/研发计划.md）。该文档是 2026-05-12 初版，偏 CLI 工具设计。 实际开发已偏离：计划是 CLI 工具，实际做了 Web UI + 封面系统 + 每日自动任务。 **重要决定：用户选择继续完善 Web UI（展示统计方向），不走 CLI 完善。Web UI 只做展示统计，维护操作全走 CLI。** ## 注意事项 - git push 必须用 Git Bash（有 credential helper），PowerShell 会卡凭据弹窗 - album-tracker 项目路径：`tasks/2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T17:40:37.183Z",
+      "lastRecalledAt": "2026-05-21T17:40:37.183Z",
+      "queryHashes": [
+        "62b9fba333fe"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "album-tracker",
+        "last.fm",
+        "docs/研发计划.md",
+        "tasks/2",
+        "详情",
+        "只读",
+        "封面",
+        "基本"
+      ]
+    },
+    "memory:memory/2026-05-13.md:68:98": {
+      "key": "memory:memory/2026-05-13.md:68:98",
+      "path": "memory/2026-05-13.md",
+      "startLine": 68,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "**重要决定：用户选择继续完善 Web UI（展示统计方向），不走 CLI 完善。Web UI 只做展示统计，维护操作全走 CLI。** ## 注意事项 - git push 必须用 Git Bash（有 credential helper），PowerShell 会卡凭据弹窗 - album-tracker 项目路径：`tasks/2026-05-12-long-term-project/album-tracker` - Web 服务器：`node dist/server.js`，端口 3456 - 数据库现状：albums 495条 | albums_2026 122条 - 封面进度：216张完成，~279张剩余（HEARTBEAT 每日自动跑10张） # 2026-05-13 周三 ## 上午任务执行记录 - 09:34 开始执行今日任务 - ✅ H:和C:盘已挂载，同步完成（B/C/G文件夹） - ✅ 独立音乐RSS（Indie线：Pitchfork/Stereogum/BrooklynVegan）已抓取并通知 - ✅ 文学RSS（中文网页+韩国+东南亚）部分完成，英文源（The Millions）已获取，中文源URL待修正 - ✅ 输出质量反思（周二）：无问题 - 无过程堆砌 - 直答，无多余搜索过程 - 无信息轰炸 - 飞书通知简洁 - 无过度解读 - 未添加不必要分析 - 无废话 - 避免了\"让我试试\"等 ## 输出质量反思（周二 2026-05-12） 回顾昨日输出： - 魚住英里奈照片",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T17:40:37.183Z",
+      "lastRecalledAt": "2026-05-21T17:40:37.183Z",
+      "queryHashes": [
+        "62b9fba333fe"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "album-tracker",
+        "dist/server.js",
+        "albums-2026",
+        "b/c/g文件夹",
+        "重要",
+        "决定",
+        "用户",
+        "选择"
+      ]
+    }
+  }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    position: relative;
+    background: #1a1a2e;
+  }
+
+  /* 模糊背景 */
+  .bg {
+    position: absolute;
+    top: -100px; left: -100px;
+    width: 2120px; height: 1280px;
+    background: url('covers/323-COV.jpg') center center / cover no-repeat;
+    filter: blur(60px) brightness(0.4);
+    z-index: 0;
+  }
+  .bg-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(10, 10, 30, 0.55);
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%; height: 100%;
+    padding: 80px;
+  }
+
+  /* 左侧封面 */
+  .cover-wrap {
+    flex-shrink: 0;
+    width: 520px; height: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+    margin-right: 80px;
+  }
+  .cover-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* 右侧文字区 */
+  .info {
+    flex: 1;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rank {
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.12);
+    line-height: 1;
+    margin-bottom: -30px;
+    font-style: italic;
+  }
+
+  .now-playing {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 26px;
+    color: #aaa;
+    margin-bottom: 32px;
+    width: fit-content;
+  }
+  .eq-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 28px;
+  }
+  .eq-bars span {
+    display: block;
+    width: 5px;
+    background: #1DB954;
+    border-radius: 2px;
+    animation: eq 0.8s ease-in-out infinite alternate;
+  }
+  .eq-bars span:nth-child(1) { height: 10px; animation-delay: 0s; }
+  .eq-bars span:nth-child(2) { height: 20px; animation-delay: 0.15s; }
+  .eq-bars span:nth-child(3) { height: 14px; animation-delay: 0.3s; }
+  .eq-bars span:nth-child(4) { height: 24px; animation-delay: 0.1s; }
+  .eq-bars span:nth-child(5) { height: 10px; animation-delay: 0.25s; }
+  @keyframes eq {
+    0% { transform: scaleY(0.4); }
+    100% { transform: scaleY(1); }
+  }
+  .now-playing .song-name {
+    color: #1DB954;
+    font-weight: 600;
+  }
+
+  .album-name {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .artist {
+    font-size: 40px;
+    color: #ccc;
+    margin-bottom: 36px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 36px;
+  }
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .meta-label {
+    font-size: 20px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+  .meta-value {
+    font-size: 30px;
+    color: #ddd;
+    font-weight: 600;
+  }
+
+  .genre-tags {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #bbb;
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg-overlay"></div>
+  <div class="content">
+    <div class="cover-wrap">
+      <img src="covers/323-COV.jpg" alt="Twin Fantasy cover">
+    </div>
+    <div class="info">
+      <div class="rank">#1</div>
+      <div class="now-playing">
+        <div class="eq-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span>正在播放：<span class="song-name">Twin Fantasy</span></span>
+      </div>
+      <div class="album-name">Twin Fantasy</div>
+      <div class="artist">Car Seat Headrest</div>
+      <div class="meta">
+        <div class="meta-item">
+          <div class="meta-label">发行年份</div>
+          <div class="meta-value">2018</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">收听次数</div>
+          <div class="meta-value">13 次</div>
+        </div>
+      </div>
+      <div class="genre-tags">
+        <span class="tag">Slacker Rock</span>
+        <span class="tag">Rock</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
