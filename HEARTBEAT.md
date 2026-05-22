@@ -53,19 +53,21 @@
 
 ## 💾 C盘空间监控（每天）
 
-- **阈值**：C 盘剩余空间 < 50GB 时飞书告警
+- **阈值**：C 盘已用空间 > 50GB 时飞书告警
 - **检查频率**：每日首次 heartbeat
 - **检查方法**：Python `shutil.disk_usage("C:\\")`
-- **告警格式**：⚠️ C盘空间告警 | 当前剩余：XX.X GB | 请清理磁盘
+- **告警格式**：⚠️ C盘占用告警 | 当前已用：XX.X GB | 当前剩余：XX.X GB
 - **正常时不发通知**（避免骚扰）
 - **heartbeat-state.json 追踪**：记录 `lastChecks.c_drive_check`
 
 ### Python 检查代码（用于 heartbeat）
 ```python
 import shutil
-free_gb = shutil.disk_usage("C:\\").free / (1024**3)
-if free_gb < 50:
-    print(f"⚠️ C盘空间告警 | 当前剩余：{free_gb:.1f} GB | 请清理磁盘")
+usage = shutil.disk_usage("C:\\") 
+used_gb = usage.used / (1024**3)
+free_gb = usage.free / (1024**3)
+if used_gb > 50:
+    print(f"⚠️ C盘占用告警 | 当前已用：{used_gb:.1f} GB | 当前剩余：{free_gb:.1f} GB")
 ```
 
 ## 🌿 身心保养提醒
