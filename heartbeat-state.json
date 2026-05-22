@@ -1,19 +1,16 @@
 ﻿{
     "deferred":  {
-                     "skip_covers":  true,
-                     "skip_indie_rss":  true,
-                     "skip_lit_rss":  true,
-                     "reason":  "late_night_0052",
-                     "h_drive_mounted":  false
+                     "h_drive_mounted":  false,
+                     "g_drive_mounted":  false
                  },
     "lastChecks":  {
-                       "indie_rss":  0,
+                       "indie_rss":  "2026-05-22T13:50:00+08:00",
                        "covers":  0,
                        "weekly_review":  "2026-04-26",
-                       "lit_rss":  0,
+                       "lit_rss":  "2026-05-22T13:50:00+08:00",
                        "covers_remaining":  279,
                        "monthly_review":  "2026-05-01",
                        "covers_total":  216
                    },
-    "lastHeartbeat":  "2026-05-22T00:52:00+08:00"
+    "lastHeartbeat":  "2026-05-22T08:03:57.3876769+08:00"
 }

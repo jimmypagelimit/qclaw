@@ -7,26 +7,21 @@
 - 年龄锚点：2008年初二(13岁)，2012高三(17岁)，2016大四(21岁)
 
 ## 音乐库
-- 源目录: G:\音乐编年史
-- 荒岛唱片: H:\私人\荒岛唱片 (主) + C:\荒岛唱片 (副本)
-- 岁月新歌⭐: G:\diary-content\history\music\list\岁月新歌\（2005-2024）
-- 岁月拾歌⭐: G:\diary-content\history\music\list\岁月拾歌\（2008-2024）
+- 源目录: \\10.0.2.4\qemu\音乐编年史
+- 荒岛唱片: \\10.0.2.4\qemu\荒岛唱片（仅在 G: 盘）【H: 盘不再使用】
+- 岁月新歌⭐: \\10.0.2.4\qemu\diary-content\history\music\list\岁月新歌\（2005-2024）
+- 岁月拾歌⭐: \\10.0.2.4\qemu\diary-content\history\music\list\岁月拾歌\（2008-2024）
 - **双螺旋**：新歌=世界给了你什么，拾歌=你真正要什么
 - **详解**：→ `MEMORY-听歌脉络详解.md`
-
-## 审美DNA（三条铁律，13岁到30岁未变）
-1. **有"人的气息"** — 创作>流水线
-2. **有"超越此刻"的东西** — 非纯娱乐
-3. **有"不驯服"的姿态** — 不顺从、不安全、不取悦
 
 ## B站账号
 - 郊眠寺墨麒麟，104视频(RYM榜单)，1336粉/1.8万赞/58.4万播放
 
 ## 重要规则
 
-### 荒岛唱片同步 ⭐
-- 互相补充模式：只补充不删除，H盘C盘都同步
-- 脚本: H:\私人\荒岛唱片\sync.sh
+### 荒岛唱片维护 ⭐
+- 位置: \\10.0.2.4\qemu\荒岛唱片（G: 盘）
+- 手动管理，无自动同步【H: 盘已废弃】
 
 ### 飞书
 - 文件拖群不私信，xlsx先复制到workspace再发
@@ -53,11 +48,11 @@
 - 命令执行优先级: Python > PowerShell > Git Bash
 
 ## 原创计划
-- 路径: G:\原创计划
+- 路径: \\10.0.2.4\qemu\原创计划
 - 月度/专题/年榜/双面计划/听歌随想/新专速递
 
 ### 听歌记录数据库（album-tracker 项目）⭐ 长期维护
-- **SQLite**: G:\原创计划\music
+- **SQLite**: \\10.0.2.4\qemu\原创计划\music\music
 - **CLI 工具**: {workspace_root_dir}\tasks\2026-05-12-long-term-project\album-tracker
 - **Web 界面**: http://localhost:3456（`node dist/server.js` 启动）
 - **Python 3.11**: C:\Python311\python.exe
@@ -69,8 +64,8 @@
 - 我直接操作数据库（Web界面或API/CLI）
 - **双表同步**：写入年份表 + albums 总表
 - **同步规则**:
-  - 专辑不存在 → 新增记录
-  - 专辑已存在 → **只增加** `total_listen_count`（判重依据：album_name + artist）
+- 专辑不存在 → 新增记录
+- 专辑已存在 → **只增加** `total_listen_count`（判重依据：album_name + artist）
 - Markdown 文件已清空，仅保留空文件占位
 - 导入脚本: `album-tracker/scripts/import_2026.py`（默认华语新+外语新，`--all`全四类）
 
@@ -89,6 +84,3 @@
 ## RSS体系（2026-05-01建成）
 - 153源：44音乐+62文学+25历史哲学+22Reddit
 - 详见 `RSS-SOURCES.md`，检查逻辑见 `HEARTBEAT.md`
-
-## 未完成任务
-- AOTY周五推送cron：需在QClaw UI手动创建
