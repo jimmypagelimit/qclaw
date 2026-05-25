@@ -176,6 +176,31 @@ print(os.path.exists("G:\\音乐编年史"))
 - **网址**：https://www.metal-archives.com
 - **注意**：需 opencli + CDP 绕过 Cloudflare
 
+## 视频背景图生成脚本
+
+### ✅ 敲定版参数（CD风格，2026-05-23）
+
+- **脚本**: `_gen_batch_bg.py`（`video_thumbs/` 目录下）
+- **输入**: `video_thumbs/20th_century_indie/`（20张封面）
+- **输出**: `video_thumbs/20th_century_indie_bg/`（PNG，1920×1080）
+- **尺寸**: 1920×1080（16:9）
+- **构图**: 封面放左侧 80px，居中；右侧留文字区
+- **模糊**: GaussianBlur radius=30
+- **暗角**: vignette，强度 0.75
+- **CD外圈**: 深色边框(16px) + 细线(#3C3240)
+- **CD内圈**: 圆环(inner_r=55, hole_r=14)
+- **镜面高光**: 左上角弧形白带
+- **右侧渐暗**: fade_x=封面右边缘+80px
+- **右上装饰**: 三颗金色小圆点
+- **封面边框**: 金色分隔线
+
+### 快速生成命令
+```bash
+C:\Python311\python.exe _gen_batch_bg.py
+```
+
+---
+
 ## 歌词获取工具
 
 ### 实测访问状态

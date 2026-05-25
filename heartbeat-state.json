@@ -1,17 +1,22 @@
 {
-    "deferred":  {
-                     "h_drive_mounted":  false,
-                     "g_drive_mounted":  false
-                 },
-    "lastChecks":  {
-                       "indie_rss":  "2026-05-23T02:46:00+08:00",
-                       "covers":  0,
-                       "weekly_review":  "2026-04-26",
-                       "lit_rss":  "2026-05-22T13:50:00+08:00",
-                       "covers_remaining":  279,
-                       "monthly_review":  "2026-05-01",
-                       "covers_total":  216,
-                       "c_drive_check": "2026-05-23T02:46:00+08:00"
-                   },
-    "lastHeartbeat":  "2026-05-23T02:46:00.0000000+08:00"
+    "deferred": {
+        "h_drive_mounted": false,
+        "g_drive_mounted": false
+    },
+    "lastChecks": {
+        "indie_rss": "2026-05-25T06:01:00+08:00",
+        "covers": "2026-05-25T06:01:00+08:00",
+        "weekly_review": "2026-04-26",
+        "lit_rss": "2026-05-25T06:01:00+08:00",
+        "covers_remaining": 0,
+        "monthly_review": "2026-05-01",
+        "covers_total": 501,
+        "c_drive_check": "2026-05-25T06:01:00+08:00",
+        "religion_rss": "2026-05-23T07:29:00+08:00",
+        "metal_rss": "2026-05-23T07:29:00+08:00"
+    },
+    "lastHeartbeat": "2026-05-25T14:11:00+08:00",
+    "notes": {
+        "2026-05-25": "首次heartbeat(14:01)：C盘35.1GB正常；G/H盘未挂载跳过封面下载和音乐库同步；Indie文学双RSS检查完成并发送飞书通知（G→P2P用户）。"
+    }
 }
