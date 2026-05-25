@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "心跳轮询",
+  "name": "Git提交推送",
   "status": "active",
   "createdAt": "2026-05-22T00:10:05.395Z",
-  "updatedAt": "2026-05-25T06:13:49.466Z",
+  "updatedAt": "2026-05-25T09:44:00.665Z",
   "agents": [
     {
       "id": "agent_inui3px0",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_fst2sfpr",
-    "title": "心跳轮询",
+    "title": "Git提交推送",
     "createdAt": "2026-05-22T00:10:05.395Z",
     "file": "summary_fst2sfpr.md"
   },
-  "lastMessageCount": 21
+  "lastMessageCount": 40
 }
