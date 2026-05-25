@@ -1,0 +1,12 @@
+=== 停止 album-tracker Web 服务 ===
+
+1. 停止所有 node 进程...
+  结果: SUCCESS: The process "node.exe" with PID 10012 has been terminated.
+
+2. 等待进程完全停止 (3秒)...
+  等待完成
+
+3. 验证端口 3456...
+  ✓ 端口 3456 已释放
+
+=== 停止完成 ===

@@ -1,0 +1,17 @@
+=== 下载封面 ===
+专辑: Post Recovery
+艺术家: midwest, post death
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bd/9a/47/bd9a470d-35e5-8393-457f-da1ef4dd806b/artwork.jpg/600x600bb.jpg
+  ✓ 已下载: 531-midwest_post_death-Post_Recovery.jpg (150593 bytes)
+  ✓ 已复制: 187-midwest_post_death-Post_Recovery.jpg
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/b830a2404b3ad17630f1b5e2c11aae74/500x500-000000-80-0-0.jpg
+  ✓ 已下载: 531-midwest_post_death-Post_Recovery.jpg (76879 bytes)
+  ✓ 已复制: 187-midwest_post_death-Post_Recovery.jpg
+
+=== 验证封面文件 ===
+✓ 封面1存在: 531-midwest_post_death-Post_Recovery.jpg (76879 bytes)
+✓ 封面2存在: 187-midwest_post_death-Post_Recovery.jpg (76879 bytes)

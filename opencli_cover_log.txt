@@ -1,0 +1,88 @@
+Starting cover download for 18 albums
+Strategy: NetEase API -> Discogs -> Bandcamp
+
+[1/18] 假假条 - 时代在召唤
+  Found on Discogs
+  FAIL download: https://i.discogs.com/j8k3eIVTRP8Wd5IIWhqH9Av2hpOHMaCyq11pZU043Kw/rs:fit/g:sm/q:
+
+[2/18] 陈升 - 我的小清新
+  Found on NetEase
+  OK (netease): saved to 113-COV.jpg
+
+[3/18] 郑钧 - 郑钧=zj
+  Found on Discogs
+  FAIL download: https://i.discogs.com/yOvxdBrb3UPPADT96Kn2HnIthUWJBVYRyDuCelSMusw/rs:fit/g:sm/q:
+
+[4/18] 苍蝇 - The Fly II
+  Found on Discogs
+  FAIL download: https://i.discogs.com/tIkswLe9AwkNrFxsS0Xxj1ZwcSb-VzxAGJkPfUOTh4E/rs:fit/g:sm/q:
+
+[5/18] 黑麒麟 - 金陵祭
+  Found on Discogs
+  FAIL download: https://i.discogs.com/j8k3eIVTRP8Wd5IIWhqH9Av2hpOHMaCyq11pZU043Kw/rs:fit/g:sm/q:
+
+[6/18] 戴饶 - 锦上添花
+  Found on NetEase
+  OK (netease): saved to 173-COV.jpg
+
+[7/18] 刀郎 - 喀什科尔胡杨
+  Found on Discogs
+  FAIL download: https://i.discogs.com/Y2IjTu-ZdgMKQIrqKTz5fS-79FCcQP4m9bmYqyeIoic/rs:fit/g:sm/q:
+
+[8/18] Nokturnal Mortum - Голос сталі (The Voice of Steel)
+  Found on Discogs
+  FAIL download: https://i.discogs.com/moE0tlPsATPnNDZ7EFf7IAA7x5yfhMSC2QU8FVqCSlc/rs:fit/g:sm/q:
+
+[9/18] 装咖人 - 夜官巡场
+  Found on Discogs
+  FAIL download: https://i.discogs.com/j8k3eIVTRP8Wd5IIWhqH9Av2hpOHMaCyq11pZU043Kw/rs:fit/g:sm/q:
+
+[10/18] 张福全 - Tea with Flower Fragrance
+  Found on Discogs
+  FAIL download: https://i.discogs.com/2RU1doW4Unz3cedj7ZgWVRKlc9X4GOMJXeOxvT61Bhc/rs:fit/g:sm/q:
+
+[11/18] 声音碎片 [Sound Fragment] - 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window)
+  FAIL not found anywhere
+
+[12/18] 海朋森 - She Came Back From the Square
+  Found on Discogs
+  FAIL download: https://i.discogs.com/geKKIg3tgjJRzsfW3K3tdrW29VEL-3U2qohJC-KR1O8/rs:fit/g:sm/q:
+
+[13/18] 海朋森 [Hiperson] - 我不要别的历史 No Need for Another History
+  FAIL not found anywhere
+
+[14/18] 许巍 [Xu Wei] - 每一刻都是崭新的 (It's New for Every Moment)
+  FAIL not found anywhere
+
+[15/18] 刺猬 [Hedgehog] - 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected)
+  Found on NetEase
+  OK (netease): saved to 447-COV.jpg
+
+[16/18] 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 漩渦重構實驗 Vortex Reconstruction Experiment
+  FAIL not found anywhere
+
+[17/18] 何韻詩 [HOCC] - Rive-Sud, Montréal
+  Found on NetEase
+  OK (netease): saved to 481-COV.jpg
+
+[18/18] Kill-Kennie - Repetition
+  Found on NetEase
+  OK (netease): saved to 487-COV.jpg
+
+
+=== RESULT ===
+Success: 5
+Failed: 13
+  - 假假条 - 时代在召唤 (download failed)
+  - 郑钧 - 郑钧=zj (download failed)
+  - 苍蝇 - The Fly II (download failed)
+  - 黑麒麟 - 金陵祭 (download failed)
+  - 刀郎 - 喀什科尔胡杨 (download failed)
+  - Nokturnal Mortum - Голос сталі (The Voice of Steel) (download failed)
+  - 装咖人 - 夜官巡场 (download failed)
+  - 张福全 - Tea with Flower Fragrance (download failed)
+  - 声音碎片 [Sound Fragment] - 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window) (not found)
+  - 海朋森 - She Came Back From the Square (download failed)
+  - 海朋森 [Hiperson] - 我不要别的历史 No Need for Another History (not found)
+  - 许巍 [Xu Wei] - 每一刻都是崭新的 (It's New for Every Moment) (not found)
+  - 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 漩渦重構實驗 Vortex Reconstruction Experiment (not found)

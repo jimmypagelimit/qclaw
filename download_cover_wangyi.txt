@@ -1,0 +1,16 @@
+=== 尝试网易云 API ===
+专辑: 悲歌欢唱 Lamenting in Delight
+艺术家: 苏紫旭
+
+1. 搜索专辑...
+  ✗ 未找到专辑
+
+=== 验证封面文件 ===
+✗ 总表封面不存在: 526-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+✗ 2026表封面不存在: 181-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+
+=== 备选方案 ===
+如果网易云也没有，可以：
+1. 用 opencli browser 搜索网易云网页版
+2. 手动从 RYM 截图
+3. 暂时留空 cover_image_url，后续补

@@ -1,0 +1,22 @@
+=== 新增专辑：悲歌欢唱 Lamenting in Delight ===
+
+albums 总表当前最大 ID: 525
+新专辑 ID: 526
+
+✓ 已插入 albums 总表 (id=526)
+
+albums_2026 表当前最大 ID: 180
+新专辑在 2026 表的 ID: 181
+
+✓ 已插入 albums_2026 表 (id=181)
+
+=== 提交成功 ===
+
+=== 验证插入结果 ===
+albums 总表: id=526 | 悲歌欢唱 Lamenting in Delight | tc=4 | RYM=3.5 | score=None
+albums_2026 表: id=181 | 悲歌欢唱 Lamenting in Delight | tc=4 | RYM=3.5 | score=None
+
+=== 下一步 ===
+1. 下载封面到: covers/526-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+2. 同时下载到: covers/181-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+3. 重启 Web 服务

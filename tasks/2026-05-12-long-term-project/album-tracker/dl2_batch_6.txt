@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[13] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[14] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[15] Голос сталі (The Voice of Steel) - Nokturnal Mortum ... ❌ 所有源均未找到
+[16] 恋恋风尘 - 老狼 ... ✅ (netease, 581425B)
+[17] 沙发海 - 陈绮贞 ... ✅ (netease, 437943B)
+[18] 影之传说 - 陈楚生 ... ✅ (deezer, 61358B)
+[19] 十年全纪录 - 熊天平 ... ✅ (deezer, 52929B)
+[20] 怎样 - 戴佩妮 ... ✅ (netease, 413573B)
+[21] 大事发声旅行团 & 魏如萱专场 - 魏如萱 ... ✅ (netease, 44202B)
+[22] 闪亮的日子 - 罗大佑 ... ✅ (deezer, 98268B)
+[23] 听上去不错 - 郑钧 ... ✅ (netease, 24206B)
+[24] 水木年华3（新歌+精选） - 水木年华 ... ✅ (netease, 459634B)
+[25] 70.80 - 水木年华 ... ✅ (deezer, 69442B)
+[26] 两只口罩 - 郑钧 ... ✅ (deezer, 35571B)
+[27] 梦回唐朝 - 唐朝 ... ✅ (netease, 60747B)
+[28] 黑豹 - 黑豹 ... ✅ (deezer, 75921B)
+[29] 昼夜本色第二季 - 梁博 ... ✅ (deezer, 36401B)
+[30] 我不是随便的花朵 - 姜昕 ... ✅ (deezer, 60707B)
+[31] 晚安晚安演唱會 - 魏如萱 ... ✅ (deezer, 28106B)
+[32] Easy - 彭坦 ... ✅ (deezer, 53610B)
+[33] 唱片 - 王啸坤 ... ✅ (netease, 32243B)
+[34] 咒语 - 野孩子 ... ✅ (itunes, 45493B)
+[35] ...And Justice for All - Metallica ... ✅ (itunes, 69288B)
+[36] Under Cover - Ozzy Osbourne ... ✅ (itunes, 102354B)
+[37] Metallica - Metallica ... ✅ (itunes, 22274B)
+[38] Converging Ages - Inanna ... ✅ (itunes, 160951B)
+[39] Dead as Dreams - Weakling ... ✅ (deezer, 25499B)
+[40] 1184 - 	Windir ... ✅ (itunes, 111279B)
+[41] 舞娘 - 蔡依林 ... ✅ (netease, 96545B)
+[42] 荒腔走板 选段 - 大忘杠 ... ✅ (netease, 27291B)
+[43] 青年 - 青年 ... ✅ (deezer, 35804B)
+[44] 新台币 - Baboo ... ✅ (itunes, 106151B)
+[45] 演义 - 唐朝 ... ✅ (netease, 593670B)
+[46] 凝华 - 霜冻前夜 ... ✅ (netease, 39819B)
+[47] Around the Fur - Deftones ... ✅ (deezer, 44247B)
+[48] 魔性的释放 - 陈劲 ... ✅ (netease, 77131B)
+[49] 大海 - 张雨生 ... ✅ (deezer, 51170B)
+[50] 看不见的城市 - 惘闻 ... ✅ (netease, 43140B)
+
+💾 数据库已保存
+📊 结果: ✅ 35 成功 / ❌ 15 失败 / 📋 50 总计

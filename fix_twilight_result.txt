@@ -1,0 +1,25 @@
+=== 修复 The Twilight Sad - It's the Long Goodbye ===
+
+1. 检查当前 tc 值...
+  albums 总表 tc 当前值: 3 (类型: int)
+  albums_2026 表 tc 当前值: 3 (类型: int)
+
+2. 修正 tc 值并更新 RYM 评分...
+  ✓ albums 总表: tc=1, rating=3.49
+  ✓ albums_2026 表: tc=1, rating=3.49
+
+3. 提交数据库...
+  ✓ 提交成功
+
+4. 验证更新结果...
+  albums 总表: name=It's the Long Goodbye, artist=The Twilight Sad, tc=1, RYM=3.49
+  albums_2026 表: name=It's the Long Goodbye, artist=The Twilight Sad, tc=1, RYM=3.49
+
+5. 检查封面文件...
+  封面1: G:\原创计划\covers\513-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg
+  存在: False
+  封面2: C:\Users\qujt\.qclaw\workspace\tasks\2026-05-12-long-term-project\album-tracker\covers\114-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg
+  存在: False
+
+=== 修复完成 ===
+下一步：下载封面（如不存在）

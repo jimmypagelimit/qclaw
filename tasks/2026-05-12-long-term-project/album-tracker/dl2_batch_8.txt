@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[13] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[14] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[15] Голос сталі (The Voice of Steel) - Nokturnal Mortum ... ❌ 所有源均未找到
+[16] 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window) - 声音碎片 [Sound Fragment] ... ❌ 所有源均未找到
+[17] 每一刻都是崭新的 (It's New for Every Moment) - 许巍 [Xu Wei] ... ❌ 所有源均未找到
+[18] 2003 逝 - 雷光夏 [Summer Lei] ... ❌ 所有源均未找到
+[19] 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected) - 刺猬 [Hedgehog] ... ❌ 所有源均未找到
+[20] Loney People With Power - deafHeaven ... ✅ (itunes, 94144B)
+[21] Synchronicity - The Police ... ✅ (itunes, 136651B)
+[22] New Bermuda - Deafheaven ... ✅ (itunes, 144996B)
+[23] EVOL - Sonic Youth ... ✅ (itunes, 179863B)
+[24] Kiss Me Kiss Me Kiss Me - The Cure ... ✅ (itunes, 102729B)
+[25] Capacity - Big Thief ... ✅ (itunes, 74341B)
+[26] 碎片 - 黄贯中 ... ✅ (deezer, 13804B)
+[27] 大只佬 - V是兔子 ... ✅ (netease, 45198B)
+[28] 开 - 门图 ... ✅ (netease, 20983B)
+[29] 春戏 - 小雨乐队 ... ✅ (deezer, 108290B)
+[30] 地下河 Undercurrent - Pu Poo Platter ... ✅ (itunes, 47785B)
+[31] Is It Gonna Happen Again？ - jody积融 ... ✅ (deezer, 34901B)
+[32] 东方分子 - 觀觀 ... ✅ (itunes, 120482B)
+[33] 漩渦重構實驗 Vortex Reconstruction Experiment - 猿 [Yuan] & 鍋一楠 [Guo Yinan] ... ❌ 所有源均未找到
+[34] You Can't Eat It so You Keep It as a Pet - 羊与马群 ... ✅ (netease, 54879B)
+[35] Cacophonic Symphony - 秘密行动 ... ✅ (netease, 20326B)
+[36] Rive-Sud, Montréal - 何韻詩 [HOCC] ... ❌ 所有源均未找到
+[37] 春子 Haruko - L8ching ... ✅ (itunes, 139836B)
+[38] Secret love - Dry Cleaning ... ✅ (deezer, 36959B)
+[39] Cainite - The Mensis Ritual ... ✅ (itunes, 111304B)
+[40] Megadeth - Megadeth ... ✅ (itunes, 116783B)
+[41] Casino - Richard Sallis ... ✅ (deezer, 30162B)
+[42] Repetition - Kill-Kennie ... ❌ 所有源均未找到
+[43] Setting Fire to the Sky - Urne ... ✅ (itunes, 120208B)
+[44] Necropalace - Worm ... ✅ (itunes, 140709B)
+[45] Some Things Never Leave - Annabelle Dinda ... ✅ (itunes, 144318B)
+[46] An Evergreen Joke - Snorkmaiden ... ✅ (itunes, 269799B)
+[47] The Sound of One Car Crashing - threadbaron ... ✅ (itunes, 72043B)
+[48] Peanut - Otto Benson ... ✅ (deezer, 87761B)
+[49] The Apple Tree Under the Sea - Hemlocke Springs ... ✅ (deezer, 75293B)
+[50] Blame the Clown - Twisted Teens ... ✅ (itunes, 109171B)
+
+💾 数据库已保存
+📊 结果: ✅ 28 成功 / ❌ 22 失败 / 📋 50 总计

@@ -1,0 +1,22 @@
+=== 复制封面 + 检查 drug bug ===
+
+1. 复制 Aldous Harding 封面...
+  ✓ 已复制: 122-Aldous_Harding-Train_on_the_Island.jpg (107914 bytes)
+
+2. 检查 drug bug - Hell for a Basement...
+
+  albums 总表检查...
+  找到 1 条记录:
+  - id=517, name=Hell for a Basement, artist=drug bug, tc=2026-04, RYM=None
+  结论: 专辑已存在，需要更新 tc 和 RYM
+
+  albums_2026 表检查...
+  找到 1 条记录:
+  - id=118, name=Hell for a Basement, artist=drug bug, tc=2026-04, RYM=None
+
+  drug bug 所有专辑检查...
+  找到 1 条 drug bug 专辑:
+  - id=517, name=Hell for a Basement, tc=2026-04, RYM=None
+
+=== 结论 ===
+根据检查结果决定下一步操作。

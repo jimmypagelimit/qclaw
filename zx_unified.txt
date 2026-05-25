@@ -1,0 +1,31 @@
+=== 开始更新 albums_2026 表 ===
+
+1. 更新 id=39 (城市):
+   - cover_image_url: covers/448-張懸_[Deserts_Chang]-城市.jpg
+   - 更新为: covers/168-张悬-城市.jpg
+   OK 已更新 cover_image_url
+   - artist: 张悬 [Deserts Chang]
+   - 更新为: 张悬
+   OK 已更新 artist
+
+2. 更新 id=40 (神的游戏):
+   - cover_image_url: covers/449-張懸_[Deserts_Chang]-神的遊戲_Games_We_Play.jpg
+   - 更新为: covers/6-张悬-神的游戏.jpg
+   OK 已更新 cover_image_url
+   - artist: 张悬 [Deserts Chang]
+   - 更新为: 张悬
+   OK 已更新 artist
+
+=== 更新完成，已提交到数据库 ===
+
+=== 验证更新结果 ===
+  id=39 | 城市
+    artist=张悬
+    cover=covers/168-张悬-城市.jpg
+  id=40 | 神的游戏
+    artist=张悬
+    cover=covers/6-张悬-神的游戏.jpg
+
+=== 删除繁体封面文件 ===
+  SKIP 不存在: 448-張懸_[Deserts_Chang]-城市.jpg
+  SKIP 不存在: 449-張懸_[Deserts_Chang]-神的遊戲_Games_We_Play.jpg

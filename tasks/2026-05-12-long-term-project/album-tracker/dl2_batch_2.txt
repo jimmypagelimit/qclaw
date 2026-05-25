@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 似水流年 - 李健 ... ✅ (deezer, 58791B)
+[09] The Piper at The Gates of Dawn - Pink Floyd ... ✅ (itunes, 173014B)
+[10] 乐与怒 - Beyond ... ✅ (itunes, 81314B)
+[11] The Dark Side of The Moon - Pink Floyd ... ✅ (itunes, 74083B)
+[12] 为你而来 - 李健 ... ✅ (deezer, 48384B)
+[13] 我等就来唱山歌 - 交工乐队 ... ✅ (netease, 202518B)
+[14] 赵小雷 - 赵雷 ... ✅ (deezer, 59916B)
+[15] 最好的礼物 - 高枫 ... ✅ (deezer, 98492B)
+[16] 新长征路上的摇滚 - 崔健 ... ✅ (deezer, 119847B)
+[17] 天空 - 王菲 ... ✅ (deezer, 46929B)
+[18] 雨吁 - 窦唯 ... ✅ (netease, 105719B)
+[19] Famous Last Words - Supertramp ... ✅ (itunes, 61370B)
+[20] 校园民谣 - 群星 ... ✅ (netease, 39110B)
+[21] 怒放 - 郑钧 ... ✅ (netease, 559488B)
+[22] 冷血动物 - 谢天笑 ... ✅ (netease, 346138B)
+[23] 美丽境界 - 齐秦 ... ✅ (netease, 26379B)
+[24] Jay - 周杰伦 ... ✅ (deezer, 37515B)
+[25] 王菲 - 王菲 ... ✅ (deezer, 67947B)
+[26] 王菲1997 - 王菲 ... ✅ (netease, 337349B)
+[27] 遇见我 - 曹方 ... ✅ (netease, 546566B)
+[28] 露天电影院 - 郁冬 ... ✅ (netease, 461826B)
+[29] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[30] Savior - Green Day ... ✅ (itunes, 187533B)
+[31] Crooked Rain,Crooked Rain - Pavement ... ✅ (deezer, 77578B)
+[32] 垃圾场 - 何勇 ... ✅ (deezer, 19703B)
+[33] 雪山白凤凰 - 深山 ... ✅ (netease, 24847B)
+[34] Back In Black - AC/DC ... ✅ (itunes, 22746B)
+[35] Wall of Eyes - The Smile ... ✅ (itunes, 202408B)
+[36] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[37] Please Please Me - The Beatles ... ✅ (itunes, 140237B)
+[38] 蓝色土耳其 - 周传雄 ... ✅ (netease, 34348B)
+[39] 丰收 - 高枫 ... ✅ (deezer, 57382B)
+[40] 亲亲 - 梁静茹 ... ✅ (netease, 512719B)
+[41] 同名专辑 - 王啸坤 ... ✅ (netease, 292938B)
+[42] Deep - Peter Murphy ... ✅ (itunes, 53529B)
+[43] 第一册 - 子曰 ... ✅ (itunes, 167899B)
+[44] 愿爱无忧 - 痛仰乐队 ... ✅ (netease, 26993B)
+[45] Cognitive - Soen ... ✅ (itunes, 131328B)
+[46] 望乡 - 陈升 ... ❌ 所有源均未找到
+[47] 台湾 - 左小祖咒 ... ✅ (netease, 575394B)
+[48] 马秋峰 - 王梵瑞 ... ✅ (itunes, 32264B)
+[49] 落泪的戏子 - 郑智化 ... ✅ (netease, 31839B)
+[50] 近人可读 - 寸铁 ... ✅ (netease, 228537B)
+
+💾 数据库已保存
+📊 结果: ✅ 40 成功 / ❌ 10 失败 / 📋 50 总计

@@ -1,0 +1,13 @@
+=== 下载封面 ===
+专辑: 悲歌欢唱 Lamenting in Delight
+艺术家: 苏紫旭 & The Paramecia
+
+1. 尝试 iTunes Search API...
+  ✗ 未找到专辑
+
+2. 尝试 Deezer API...
+  ✗ 未找到专辑
+
+=== 验证封面文件 ===
+✗ 总表封面不存在: 526-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+✗ 2026表封面不存在: 181-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg

@@ -1,0 +1,24 @@
+=== 新增专辑：otay:onii - 愛在屎邊邊 Love Is in the Shit ===
+
+albums 总表当前最大 ID: 529
+新专辑在总表的 ID: 530
+
+1. 插入 albums 总表...
+  ✓ 已插入 albums 总表 (id=530)
+
+albums_2026 表当前最大 ID: 185
+新专辑在 2026 表的 ID: 186
+
+2. 插入 albums_2026 表...
+  ✓ 已插入 albums_2026 表 (id=186)
+
+=== 提交 ===
+✓ 已提交到数据库
+
+=== 验证插入结果 ===
+albums 总表: id=530 | 愛在屎邊邊 Love Is in the Shit | tc=1 | RYM=3.54
+albums_2026 表: id=186 | 愛在屎邊邊 Love Is in the Shit | tc=1 | RYM=3.54
+
+=== 下一步 ===
+1. 下载封面到: covers/530-otay_onii-愛在屎邊邊_Love_Is_in_the_Shit.jpg 和 covers/186-otay_onii-愛在屎邊邊_Love_Is_in_the_Shit.jpg
+2. 重启 Web 服务

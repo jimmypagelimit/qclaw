@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T17:40:37.183Z",
+  "updatedAt": "2026-05-22T23:20:11.450Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -155,6 +155,68 @@
         "决定",
         "用户",
         "选择"
+      ]
+    },
+    "memory:memory/2026-03-28.md:1:34": {
+      "key": "memory:memory/2026-03-28.md:1:34",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-03-28 ## 工作记录 ### GitHub AI 趋势周榜（2026-03-28） Top 15 项目： 1. AutoGPT - 182.9k stars - 自主 AI Agent 平台 2. langchain - 131.3k stars - Agent 工程平台 3. open-webui - 129.0k stars - 用户友好 AI 界面（支持 Ollama、OpenAI） 4. awesome-llm-apps - 103.8k stars - LLM 应用集合 5. browser-use - 84.8k stars - 网站对 AI Agent 可访问 6. ragflow - 76.4k stars - 开源 RAG 引擎 7. PaddleOCR - 73.2k stars - 文档 OCR 8. OpenHands - 70.0k stars - AI 驱动软件开发 9. LlamaFactory - 69.2k stars - LLM 微调框架 10. crawl4ai - 62.8k stars - LLM 友好爬虫 11. mem0 - 51.3k stars - AI Agent 记忆层 12. deer-flow - 50.2k stars - 字节开源 SuperAgent ### Python 版本问题 - 当前系统：Python 3.14（C:\\Python314\\ 和 MSYS2 mingw64） - 问题：3.14 是预发布版，标准库有 bug（types 模块缺",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3695731699466705,
+      "maxScore": 0.3695731699466705,
+      "firstRecalledAt": "2026-05-22T23:20:11.450Z",
+      "lastRecalledAt": "2026-05-22T23:20:11.450Z",
+      "queryHashes": [
+        "cb7707de7d3b"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "182.9k",
+        "131.3k",
+        "open-webui",
+        "129.0k",
+        "awesome-llm-apps",
+        "103.8k"
+      ]
+    },
+    "memory:memory/2026-04-07.md:1:34": {
+      "key": "memory:memory/2026-04-07.md:1:34",
+      "path": "memory/2026-04-07.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-07 工作记录 ## 完成任务 ### web-access Skill 安装 - 来源: https://github.com/eze-is/web-access - 安装路径: ~/.qclaw/workspace/skills/web-access - 依赖: Node.js v22.13.1 ✅ | Chrome CDP port 9222 ✅ | Proxy ✅ - 用户手动配置 Chrome CDP 端口从 28800 改为 9222 ### B站账号信息查询 - 账号: 郊眠寺墨麒麟 - 粉丝 1336 | 获赞 1.8万 | 播放 58.4万 - 投稿 104 个视频（主要是 RYM 榜单视频） - 11 个合集（RYM华语、RYM外语、2025年终盘点等） - 3 个收藏夹 ### B站评论回复尝试（未完成） - 目标视频: 【RYM】评分最高的25张魔岩唱片发行专辑 (BV18e9MB6EEx) - 问题: CDP 方式无法操作评论区（需要登录态） - B站评论 API 返回 -403（访问权限不足） ## 技术经验 ### CDP 代理使用 - PowerShell 的 curl 是 Invoke-WebRequest 别名，参数不兼容 → 改用 MSYS2 /usr/bin/curl - 引号转义问题 → 改用 temp_eval.js 文件方式传递 eval 代码 - 截图功能缺少 sharp 依赖包 - 关机命令: shutdown /s /t 0 ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36806541681289673,
+      "maxScore": 0.36806541681289673,
+      "firstRecalledAt": "2026-05-22T23:20:11.450Z",
+      "lastRecalledAt": "2026-05-22T23:20:11.450Z",
+      "queryHashes": [
+        "cb7707de7d3b"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "web-access",
+        "github.com/eze-is/web-access",
+        "node.js",
+        "v22.13.1",
+        "1.8万",
+        "58.4万",
+        "invoke-webrequest",
+        "usr/bin/curl"
       ]
     }
   }

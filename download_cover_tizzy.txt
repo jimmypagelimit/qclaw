@@ -1,0 +1,15 @@
+=== 下载封面 ===
+专辑: 告密的心 The Tell-Tale Heart
+艺术家: Tizzy Bac
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/14/5b/96/145b9671-0d94-0a1e-e29f-cfb1ebedb124/4712755920200.jpg/600x600bb.jpg
+  ✓ 已下载 (总表): 527-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg (173823 bytes)
+  ✓ 已复制 (2026表): 182-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg
+
+2. 尝试 Deezer API...
+  ✗ 未找到专辑
+
+=== 验证封面文件 ===
+✓ 总表封面存在: 527-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg (173823 bytes)
+✓ 2026表封面存在: 182-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg (173823 bytes)

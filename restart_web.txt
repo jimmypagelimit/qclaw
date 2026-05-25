@@ -1,0 +1,22 @@
+=== 重启 album-tracker Web 服务 ===
+
+1. 停止现有 node 进程...
+  结果: 
+  警告: ERROR: The process "node.exe" not found.
+
+2. 等待进程完全停止 (3秒)...
+  等待完成
+
+3. 启动 Web 服务...
+  ✓ 已启动 Web 服务 (PID: 10012)
+
+4. 等待服务启动 (5秒)...
+  等待完成
+
+5. 验证服务可访问...
+  ✓ Web 服务可访问 (http://localhost:3456)
+
+=== 重启完成 ===
+
+新添加的专辑（苏紫旭 & The Paramecia - 悲歌欢唱 Lamenting in Delight）
+现在应该可以在 http://localhost:3456 看到。

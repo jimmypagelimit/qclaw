@@ -1,0 +1,11 @@
+=== albums 总表 ===
+id=323
+  album=Twin Fantasy
+  artist=Car Seat Headrest
+  first_listen=2025-04-11
+  cover=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg
+
+=== albums_2025 ===
+  id=323 album=Twin Fantasy artist=Car Seat Headrest first_listen=2025-04-11 cover=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg
+=== albums_2026 ===
+  id=56 album=Twin Fantasy artist=Car Seat Headrest first_listen=2026-03 cover=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg

@@ -1,0 +1,18 @@
+=== 检查 Asher White - Jessica Pratt ===
+
+✓ 数据库文件存在: G:\原创计划\music
+
+1. albums 总表检查...
+  找到 1 条记录:
+  - id=434, name=Jessica Pratt, artist=Asher White, tc=2026-03, RYM=None
+
+2. albums_2026 表检查...
+  找到 1 条记录:
+  - id=25, name=Jessica Pratt, artist=Asher White, tc=2026-03, RYM=None
+
+3. Asher White 所有专辑检查...
+  找到 1 条 Asher White 专辑:
+  - id=434, name=Jessica Pratt, tc=2026-03, RYM=None
+
+=== 结论 ===
+根据检查结果决定是否需要新增此专辑。

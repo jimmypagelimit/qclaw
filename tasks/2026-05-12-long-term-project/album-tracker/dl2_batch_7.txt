@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[13] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[14] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[15] Голос сталі (The Voice of Steel) - Nokturnal Mortum ... ❌ 所有源均未找到
+[16] 此时此刻 - 许巍 ... ✅ (deezer, 49553B)
+[17] 让我想一想 - 陈绮贞 ... ✅ (netease, 448192B)
+[18] Berlin - Lou Reed ... ✅ (itunes, 126852B)
+[19] Let It Be - The Beatles ... ✅ (itunes, 82358B)
+[20] Salvation - Funeral Mist ... ✅ (itunes, 128280B)
+[21] 雨生欢禧城 - 张雨生 ... ✅ (netease, 62023B)
+[22] 生活麻辣烫 - 王齐铭 ... ✅ (netease, 44573B)
+[23] 精气神 - 梁博 ... ✅ (deezer, 16705B)
+[24] 遇雨而生 - 天鹅与花朵 ... ✅ (netease, 56184B)
+[25] Itinerary - Jo's Moving Day ... ✅ (itunes, 122630B)
+[26] 淡淡幽情 - 邓丽君 ... ✅ (deezer, 40559B)
+[27] 一些次要的时刻 - 卧轨的火车 ... ✅ (netease, 14773B)
+[28] 易碎物 - Tizzy Bac ... ✅ (itunes, 148107B)
+[29] 成长瞬间 - 反光镜乐队 ... ✅ (netease, 50197B)
+[30] Jessica Pratt - Asher White ... ✅ (itunes, 56078B)
+[31] 木马 (Muma) - 木马 [Muma] ... ✅ (itunes, 61878B)
+[32] 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window) - 声音碎片 [Sound Fragment] ... ❌ 所有源均未找到
+[33] Pluto - 鄭宜農 [Enno Cheng] ... ✅ (itunes, 57942B)
+[34] 海龟先生 - 海龟先生 [Mr. Turtle] ... ✅ (deezer, 29069B)
+[35] 嘎调 - 嘎调 [The Gar] ... ✅ (netease, 29670B)
+[36] 城市天气的航行 (City Weather Sailing) - P.K. 14 ... ✅ (itunes, 65693B)
+[37] 共同的土地 A Mutual Ground - 缺省 [Default] ... ✅ (itunes, 60011B)
+[38] 每一刻都是崭新的 (It's New for Every Moment) - 许巍 [Xu Wei] ... ❌ 所有源均未找到
+[39] 2003 逝 - 雷光夏 [Summer Lei] ... ❌ 所有源均未找到
+[40] 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected) - 刺猬 [Hedgehog] ... ❌ 所有源均未找到
+[41] 城市 - 張懸 [Deserts Chang] ... ✅ (itunes, 76920B)
+[42] 神的遊戲 Games We Play - 張懸 [Deserts Chang] ... ✅ (itunes, 66704B)
+[43] The Jester Race - In Flames ... ✅ (deezer, 79745B)
+[44] Teens of denial - Car Seat Headrest ... ✅ (itunes, 66174B)
+[45] Ram - Paul McCartney ... ✅ (itunes, 177663B)
+[46] All Things Must Pass - George Harrison ... ✅ (itunes, 100441B)
+[47] Dirt - Alice In Chains ... ✅ (itunes, 85257B)
+[48] Soldatenschicksale - Kanonenfieber ... ✅ (itunes, 170534B)
+[49] Misery Is a Butterfly - Blonde Redhead ... ✅ (itunes, 165571B)
+[50] Psychocandy - The Jesus and Mary Chain ... ✅ (itunes, 62107B)
+
+💾 数据库已保存
+📊 结果: ✅ 31 成功 / ❌ 19 失败 / 📋 50 总计

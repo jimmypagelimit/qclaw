@@ -1,0 +1,17 @@
+=== albums 总表 - 张悬 ===
+找到 4 条记录:
+  id=6 | 神的游戏 | artist=张悬 | tc=5 | score=99.3 | first_listen=2012-11
+  id=168 | 城市 | artist=张悬 | tc=5 | score=3.61 | first_listen=2012-08
+  id=169 | My Life Will | artist=张悬 | tc=2 | score=None | first_listen=2012-08
+  id=303 | 亲爱的...我还不知道 | artist=张悬 | tc=2 | score=None | first_listen=2012-08
+
+=== 检查繁体残留 ===
+OK: 无繁体残留
+
+=== 检查重复专辑名 ===
+OK: 无重复专辑名
+
+=== albums_2026 表 - 张悬 ===
+找到 2 条记录:
+  id=39 | 城市 | tc=1 | score=3.61
+  id=40 | 神的游戏 | tc=1 | score=3.63

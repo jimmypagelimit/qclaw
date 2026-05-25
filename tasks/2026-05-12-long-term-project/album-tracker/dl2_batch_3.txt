@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] 天那边的爱 - 高枫 ... ✅ (deezer, 20769B)
+[12] 海龟先生 - 海龟先生 ... ✅ (deezer, 29069B)
+[13] 三十王十三 - 王啸坤 ... ✅ (netease, 12535B)
+[14] 苏醒 - 王杰 ... ✅ (netease, 364094B)
+[15] 人人都有一颗主唱的心 - 二手玫瑰 ... ✅ (netease, 32251B)
+[16] Life's Rich Pageant - R.E.M. ... ✅ (itunes, 114658B)
+[17] 春水似年华 - 刁寒 ... ✅ (netease, 177191B)
+[18] 春龙交响夜2024 - 罗大佑 ... ✅ (netease, 56251B)
+[19] Abbey Road - The Beatles ... ✅ (itunes, 162567B)
+[20] Magical Mystery Tour - The Beatles ... ✅ (itunes, 270486B)
+[21] Toxicity - System of a Down ... ✅ (itunes, 75540B)
+[22] How to Leave Town - Car Seat Headrest ... ✅ (deezer, 27620B)
+[23] Diamond Jubilee - Cindy Lee ... ✅ (itunes, 57198B)
+[24] Frizzle Fry - Primus ... ✅ (itunes, 132629B)
+[25] Reckoning - R.E.M. ... ✅ (itunes, 184863B)
+[26] Arntor - Windir ... ✅ (itunes, 125946B)
+[27] 无能的力量 - 崔健 ... ✅ (deezer, 83554B)
+[28] 敷衍 - 王菲 ... ✅ (deezer, 40809B)
+[29] 只爱陌生人 - 王菲 ... ✅ (netease, 440995B)
+[30] 趣味小常识 - 九维 ... ✅ (deezer, 43199B)
+[31] 冬 未了 - 苏打绿 ... ✅ (deezer, 90222B)
+[32] Ultra - Depeche Mode ... ✅ (itunes, 124957B)
+[33] Masterpiece - Big Thief ... ✅ (itunes, 79763B)
+[34] 神经 - 达明一派 ... ✅ (deezer, 39168B)
+[35] 唱游 - 王菲 ... ✅ (netease, 521392B)
+[36] 吉他手 - 陈绮贞 ... ✅ (netease, 463161B)
+[37] 幻听 - 窦唯 ... ✅ (netease, 523318B)
+[38] 八方来财 - 揽佬SKAI ISYOURGOD ... ✅ (itunes, 246448B)
+[39] Instrumentals - Adrianne Lenker ... ✅ (itunes, 171326B)
+[40] 艳阳天 - 窦唯 ... ✅ (netease, 558432B)
+[41] I’m OK - 陶喆 ... ✅ (deezer, 46452B)
+[42] 你来自何方 - 许景淳 ... ✅ (netease, 132941B)
+[43] 给你一点颜色 - 崔健 ... ✅ (deezer, 65940B)
+[44] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[45] Cest La Vie - 自然卷 ... ✅ (netease, 290163B)
+[46] 春秋 - 春秋 ... ✅ (deezer, 41363B)
+[47] 飞狗 - 崔健 ... ✅ (netease, 265849B)
+[48] The Top - The Cure ... ✅ (itunes, 117267B)
+[49] 越长大越孤单 - 牛奶咖啡 ... ✅ (deezer, 27681B)
+[50] 鹄歌 - 霜冻前夜 ... ✅ (netease, 56754B)
+
+💾 数据库已保存
+📊 结果: ✅ 39 成功 / ❌ 11 失败 / 📋 50 总计

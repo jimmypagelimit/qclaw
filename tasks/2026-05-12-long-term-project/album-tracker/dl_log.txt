@@ -1,0 +1,25 @@
+🔍 找到 20 张需要封面的专辑（offset=0, count=20）
+
+[01] Twin Fantasy - Car Seat Headrest ... ✅ (itunes, 32199B)
+[02] 不允许哭泣的场合 - 魏如萱 ... ✅ (deezer, 42506B)
+[03] Disintegration - The Cure ... ✅ (itunes, 77773B)
+[04] The Rise and Fall of Ziggy Stardust and the Spiders from Mars - David Bowie ... ✅ (itunes, 138940B)
+[05] 奕秋 - 葬尸湖 ... ✅ (netease, 152344B)
+[06] 优雅的刺猬 - 魏如萱 ... ✅ (netease, 394598B)
+[07] In the Aeroplane Over the Sea - Neutral Milk Hotel ... ✅ (itunes, 169084B)
+[08] Funeral - Arcade Fire ... ✅ (itunes, 136494B)
+[09] 孤雁 - 葬尸湖 ... ✅ (netease, 41549B)
+[10] 珍珠刑 - 魏如萱 ... ✅ (deezer, 48578B)
+[11] 白日梦蓝 - 刺猬 ... ✅ (deezer, 41434B)
+[12] 堕落天使 - 郑智化 ... ✅ (netease, 40016B)
+[13] 藏着不等于遗忘 - 魏如萱 ... ✅ (netease, 15246B)
+[14] 卡拉OK.台北.我 - 张雨生 ... ✅ (deezer, 77474B)
+[15] 深庭 - 葬尸湖 ... ✅ (netease, 46927B)
+[16] 妖祭 - 葬尸湖 ... ✅ (netease, 62981B)
+[17] 极夜 - 霜冻前夜 ... ✅ (deezer, 49816B)
+[18] 口是心非 - 张雨生 ... ✅ (deezer, 58997B)
+[19] 生之响往 - 刺猬 ... ✅ (netease, 20664B)
+[20] Carrie & Lowell - Sufjan Stevens ... ✅ (itunes, 111953B)
+
+💾 数据库已保存
+📊 结果: ✅ 20 成功 / ❌ 0 失败 / 📋 20 总计

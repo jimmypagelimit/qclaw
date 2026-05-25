@@ -1,0 +1,27 @@
+🔍 找到 22 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[13] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[14] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[15] Голос сталі (The Voice of Steel) - Nokturnal Mortum ... ❌ 所有源均未找到
+[16] 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window) - 声音碎片 [Sound Fragment] ... ❌ 所有源均未找到
+[17] 每一刻都是崭新的 (It's New for Every Moment) - 许巍 [Xu Wei] ... ❌ 所有源均未找到
+[18] 2003 逝 - 雷光夏 [Summer Lei] ... ❌ 所有源均未找到
+[19] 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected) - 刺猬 [Hedgehog] ... ❌ 所有源均未找到
+[20] 漩渦重構實驗 Vortex Reconstruction Experiment - 猿 [Yuan] & 鍋一楠 [Guo Yinan] ... ❌ 所有源均未找到
+[21] Rive-Sud, Montréal - 何韻詩 [HOCC] ... ❌ 所有源均未找到
+[22] Repetition - Kill-Kennie ... ❌ 所有源均未找到
+
+💾 数据库已保存
+📊 结果: ✅ 0 成功 / ❌ 22 失败 / 📋 22 总计

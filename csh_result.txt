@@ -1,0 +1,55 @@
+=== 查找 Car Seat Headrest - Twin Fantasy ===
+
+表: albums
+  id=323 album=Twin Fantasy artist=Car Seat Headrest tc=13 score=None
+  cover_url=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg
+
+  id=382 album=Teens of Denial artist=Car Seat Headrest tc=6 score=None
+  cover_url=covers/382-Car_Seat_Headrest-Teens_of_Denial.jpg
+
+  id=383 album=Nervous Young Man artist=Car Seat Headrest tc=3 score=None
+  cover_url=covers/383-Car_Seat_Headrest-Nervous_Young_Man.jpg
+
+  id=384 album=Making a Door Less Open artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/384-Car_Seat_Headrest-Making_a_Door_Less_Open.jpg
+
+  id=385 album=Monomania artist=Car Seat Headrest tc=3 score=None
+  cover_url=covers/385-Car_Seat_Headrest-Monomania.jpg
+
+  id=386 album=How to Leave Town artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/386-Car_Seat_Headrest-How_to_Leave_Town.jpg
+
+  id=451 album=Teens of denial artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/451-Car_Seat_Headrest-Teens_of_denial.jpg
+
+表: albums_2025
+  id=323 album=Twin Fantasy artist=Car Seat Headrest tc=10 score=None
+  cover_url=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg
+
+  id=382 album=Teens of Denial artist=Car Seat Headrest tc=4 score=None
+  cover_url=covers/382-Car_Seat_Headrest-Teens_of_Denial.jpg
+
+  id=383 album=Nervous Young Man artist=Car Seat Headrest tc=3 score=None
+  cover_url=covers/383-Car_Seat_Headrest-Nervous_Young_Man.jpg
+
+  id=384 album=Making a Door Less Open artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/384-Car_Seat_Headrest-Making_a_Door_Less_Open.jpg
+
+  id=385 album=Monomania artist=Car Seat Headrest tc=2 score=None
+  cover_url=covers/385-Car_Seat_Headrest-Monomania.jpg
+
+  id=386 album=How to Leave Town artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/386-Car_Seat_Headrest-How_to_Leave_Town.jpg
+
+表: albums_2026
+  id=42 album=Teens of denial artist=Car Seat Headrest tc=1 score=None
+  cover_url=covers/451-Car_Seat_Headrest-Teens_of_denial.jpg
+
+  id=54 album=Teens of Denial artist=Car Seat Headrest tc=2 score=3.91
+  cover_url=covers/382-Car_Seat_Headrest-Teens_of_Denial.jpg
+
+  id=56 album=Twin Fantasy artist=Car Seat Headrest tc=3 score=4.02
+  cover_url=covers/323-Car_Seat_Headrest-Twin_Fantasy.jpg
+
+  id=59 album=Monomania artist=Car Seat Headrest tc=2 score=3.79
+  cover_url=covers/385-Car_Seat_Headrest-Monomania.jpg

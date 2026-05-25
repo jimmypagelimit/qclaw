@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] Making a Door Less Open - Car Seat Headrest ... ✅ (deezer, 26860B)
+[13] 无法逃脱 - 指南针 ... ✅ (netease, 498107B)
+[14] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[15] 花的姿态演唱会经典实录 - 陈绮贞 ... ✅ (netease, 249826B)
+[16] Thick As A Brick - Jethro Tull ... ✅ (itunes, 146514B)
+[17] 龙虎人丹 - 新裤子 ... ✅ (deezer, 102948B)
+[18] Awakening from Dukkha - 九宝 ... ✅ (deezer, 55326B)
+[19] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[20] Dopethrone - Electric Wizard ... ✅ (itunes, 69445B)
+[21] Symbolic - Death ... ✅ (itunes, 183970B)
+[22] Almighty So 2 - Chief Keef ... ✅ (itunes, 139587B)
+[23] 皇后大道东 - 罗大佑 ... ✅ (netease, 638416B)
+[24] Slippery When Wet - Bon Jovi ... ✅ (itunes, 230902B)
+[25] Before the Applause - 重塑雕像的权利 ... ✅ (deezer, 16478B)
+[26] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[27] 依然 - 李健 ... ✅ (deezer, 47062B)
+[28] (What's The Story)Morning Glory? - Oasis ... ✅ (itunes, 177544B)
+[29] 你在红楼 我在西游 - 群星 ... ✅ (netease, 26060B)
+[30] 13 - Blur ... ✅ (itunes, 114108B)
+[31] Trans Europa Express  - Kraftwerk  ... ✅ (itunes, 35223B)
+[32] Deep Purple in Rock - Deep Purple ... ✅ (itunes, 120155B)
+[33] 安河桥北 - 宋冬野 ... ✅ (itunes, 62589B)
+[34] 天湖 - 施教日 ... ✅ (netease, 31864B)
+[35] 笑傲江湖原声带 - 赵季平 ... ✅ (netease, 36881B)
+[36] 表情 - 李杰 ... ✅ (netease, 32615B)
+[37] 西湖向西杭州演唱会 - 王啸坤 ... ✅ (netease, 189103B)
+[38] 西游记原声带 - 许镜清 ... ✅ (netease, 278953B)
+[39] 左小祖咒在地安门 - 左小祖咒 ... ✅ (netease, 43189B)
+[40] 每一刻都是崭新的 - 许巍 ... ✅ (netease, 95826B)
+[41] Purple Rain - Prince ... ✅ (itunes, 147369B)
+[42] Living's Deal - Explosicum ... ✅ (itunes, 171948B)
+[43] 我知道你离我不远 - 陈楚生 ... ✅ (deezer, 20383B)
+[44] 水浒传 - 赵季平 ... ✅ (netease, 41701B)
+[45] American Idiot - Green Day ... ✅ (deezer, 45065B)
+[46] Pet Sounds - The Beach Boys ... ✅ (itunes, 134255B)
+[47] Blue Blood - X ... ✅ (itunes, 35149B)
+[48] 黄金时代 - 达达乐队 ... ✅ (netease, 28711B)
+[49] 2002年的第一场雪 - 刀郎 ... ✅ (deezer, 43736B)
+[50] 完美的呻吟 - 陈珊妮 ... ✅ (deezer, 40233B)
+
+💾 数据库已保存
+📊 结果: ✅ 36 成功 / ❌ 14 失败 / 📋 50 总计

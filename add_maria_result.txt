@@ -1,0 +1,24 @@
+=== 新增专辑：Maria BC - Marathon ===
+
+albums 总表当前最大 ID: 527
+新专辑在总表的 ID: 528
+
+1. 插入 albums 总表...
+  ✓ 已插入 albums 总表 (id=528)
+
+albums_2026 表当前最大 ID: 183
+新专辑在 2026 表的 ID: 184
+
+2. 插入 albums_2026 表...
+  ✓ 已插入 albums_2026 表 (id=184)
+
+=== 提交 ===
+✓ 已提交到数据库
+
+=== 验证插入结果 ===
+albums 总表: id=528 | Marathon | tc=3 | RYM=3.47
+albums_2026 表: id=184 | Marathon | tc=3 | RYM=3.47
+
+=== 下一步 ===
+1. 下载封面到: covers/528-Maria_BC-Marathon.jpg 和 covers/184-Maria_BC-Marathon.jpg
+2. 重启 Web 服务

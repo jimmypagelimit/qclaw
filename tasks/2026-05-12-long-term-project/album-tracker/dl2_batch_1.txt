@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 原谅我就是这样的女生 - 戴佩妮 ... ✅ (netease, 382574B)
+[05] 佛跳墙 - 佛跳墙 ... ✅ (deezer, 59138B)
+[06] 亲爱的...我还不知道 - 张悬 ... ✅ (netease, 138941B)
+[07] 阿密特2 - 张惠妹 ... ✅ (netease, 40355B)
+[08] The New Sound - Geordie Greep ... ✅ (deezer, 71997B)
+[09] The Queen Is Dead - The Smiths ... ✅ (itunes, 39732B)
+[10] De mysteriis Dom Sathanas - Mayhem ... ✅ (itunes, 91004B)
+[11] 好好享受人类的莫名其妙 - 秦凡淇 ... ✅ (itunes, 35630B)
+[12] Crimson - Edge of Sanity ... ✅ (itunes, 189337B)
+[13] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[14] 她的。发光摇摆 - 何欣穗 ... ✅ (netease, 312336B)
+[15] 原乡 - 罗大佑 ... ✅ (deezer, 76035B)
+[16] 茫茫集 - 噬湖 ... ✅ (netease, 16171B)
+[17] Lost & Found 去寻找 - 牛奶咖啡 ... ✅ (netease, 49368B)
+[18] 北之国 IV - 水树 ... ✅ (netease, 45012B)
+[19] 灰太阳 - 施鑫文月 ... ✅ (deezer, 67808B)
+[20] 巴蜀文艺复兴：第一章 - 施鑫文月 ... ✅ (deezer, 58497B)
+[21] 巴蜀文艺复兴：第二章 - 施鑫文月 ... ✅ (deezer, 70083B)
+[22] 雨后星空 - 张雨生 ... ✅ (netease, 67117B)
+[23] 醒 - 安抚狮子 ... ✅ (netease, 27115B)
+[24] 9522 - 安溥 [Anpu] ... ✅ (itunes, 120529B)
+[25] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[26] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[27] Honeyed and Killed - 刺猬 [Hedgehog] ... ✅ (netease, 19452B)
+[28] Loveless - My Bloody Valentine ... ✅ (itunes, 70117B)
+[29] Cancionera - Natalia Lafourcade ... ✅ (itunes, 55947B)
+[30] Dragon New Warm Mountain I Believe in You - Big Thief ... ✅ (itunes, 37992B)
+[31] 两语 - 文雀 [Sparrow] ... ✅ (itunes, 85140B)
+[32] Death in the Business of Whaling - Searows ... ✅ (itunes, 156352B)
+[33] American Road in New Jersey - American Road In New Jersey ... ✅ (deezer, 15633B)
+[34] Singin' to an Empty Chair - Ratboys ... ✅ (deezer, 79104B)
+[35] Days of Ash - U2 ... ✅ (itunes, 121744B)
+[36] You Are in My Dreams - Kisses ... ✅ (itunes, 121779B)
+[37] Nothing's About to Happen to Me - Mitski ... ✅ (deezer, 91684B)
+[38] The Mountain - Gorillaz ... ✅ (itunes, 108336B)
+[39] An Undying Love for a Burning World - Neurosis ... ✅ (netease, 68501B)
+[40] Something Worth Waiting For - Friko ... ✅ (deezer, 39978B)
+[41] American Football [LP4] - American Football ... ✅ (itunes, 72840B)
+[42] 冀西南林路行 - 万能青年旅店 ... ✅ (deezer, 51775B)
+[43] 红旗下的蛋 - 崔健 ... ✅ (deezer, 47495B)
+[44] The Beatles - The Beatles ... ✅ (itunes, 8824B)
+[45] 万能青年旅店 - 万能青年旅店 ... ✅ (deezer, 37257B)
+[46] 解决 - 崔健 ... ✅ (netease, 516551B)
+[47] 黑梦 - 窦唯 ... ✅ (netease, 52049B)
+[48] Breakfast In America - Supertramp ... ✅ (itunes, 106359B)
+[49] 一生有你 - 水木年华 ... ✅ (netease, 464574B)
+[50] 想念你 - 李健 ... ✅ (deezer, 105928B)
+
+💾 数据库已保存
+📊 结果: ✅ 44 成功 / ❌ 6 失败 / 📋 50 总计

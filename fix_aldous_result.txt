@@ -1,0 +1,26 @@
+=== 修复 Aldous Harding - Train on the Island ===
+
+1. 检查当前 tc 值...
+  albums 总表 tc 当前值: 1 (类型: int)
+  albums_2026 表 tc 当前值: 1 (类型: int)
+
+2. 修正 tc 值并更新 RYM 评分...
+  ✓ albums 总表: tc=1, rating=3.5
+  ✓ albums_2026 表: tc=1, rating=3.5
+
+3. 提交数据库...
+  ✓ 提交成功
+
+4. 验证更新结果...
+  albums 总表: name=Train on the Island, artist=Aldous Harding, tc=1, RYM=3.5
+  albums_2026 表: name=Train on the Island, artist=Aldous Harding, tc=1, RYM=3.5
+
+5. 检查封面文件...
+  封面1: 521-Aldous_Harding-Train_on_the_Island.jpg
+  存在: True
+  大小: 107914 bytes
+  封面2: 122-Aldous_Harding-Train_on_the_Island.jpg
+  存在: False
+
+=== 修复完成 ===
+下一步：下载封面（如不存在）

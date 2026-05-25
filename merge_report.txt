@@ -1,0 +1,84 @@
+=== 合并张悬繁体→简体 ===
+DB: G:\原创计划\music exists: True
+
+检查表: ['albums', 'albums_2024', 'albums_2025', 'albums_2026']
+
+=== BEFORE ===
+表=albums 专辑=神的游戏 艺术家=张悬
+  id=6 artist_raw=张悬 album_raw=神的游戏 tc=4 score=99.3
+表=albums 专辑=城市 艺术家=张悬
+  id=168 artist_raw=张悬 album_raw=城市 tc=4 score=None
+表=albums 专辑=My Life Will 艺术家=张悬
+  id=169 artist_raw=张悬 album_raw=My Life Will tc=2 score=None
+表=albums 专辑=亲爱的...我还不知道 艺术家=张悬
+  id=303 artist_raw=张悬 album_raw=亲爱的...我还不知道 tc=2 score=None
+表=albums 专辑=城市 艺术家=张悬 [Deserts Chang]
+  id=448 artist_raw=張懸 [Deserts Chang] album_raw=城市 tc=1 score=3.61
+表=albums 专辑=神的遊戲 Games We Play 艺术家=张悬 [Deserts Chang]
+  id=449 artist_raw=張懸 [Deserts Chang] album_raw=神的遊戲 Games We Play tc=1 score=3.63
+表=albums_2024 专辑=神的游戏 艺术家=张悬
+  id=6 artist_raw=张悬 album_raw=神的游戏 tc=2 score=99.3
+表=albums_2024 专辑=城市 艺术家=张悬
+  id=168 artist_raw=张悬 album_raw=城市 tc=1 score=None
+表=albums_2024 专辑=My Life Will 艺术家=张悬
+  id=169 artist_raw=张悬 album_raw=My Life Will tc=1 score=None
+表=albums_2025 专辑=神的游戏 艺术家=张悬
+  id=6 artist_raw=张悬 album_raw=神的游戏 tc=2 score=99.3
+表=albums_2025 专辑=城市 艺术家=张悬
+  id=168 artist_raw=张悬 album_raw=城市 tc=3 score=None
+表=albums_2025 专辑=My Life Will 艺术家=张悬
+  id=169 artist_raw=张悬 album_raw=My Life Will tc=1 score=None
+表=albums_2025 专辑=亲爱的...我还不知道 艺术家=张悬
+  id=303 artist_raw=张悬 album_raw=亲爱的...我还不知道 tc=2 score=None
+表=albums_2026 专辑=城市 艺术家=张悬 [Deserts Chang]
+  id=39 artist_raw=張懸 [Deserts Chang] album_raw=城市 tc=1 score=3.61
+表=albums_2026 专辑=神的遊戲 Games We Play 艺术家=张悬 [Deserts Chang]
+  id=40 artist_raw=張懸 [Deserts Chang] album_raw=神的遊戲 Games We Play tc=1 score=3.63
+总条目数: 15
+
+=== 合并中 ===
+合并操作:
+  albums.448: artist 張懸 [Deserts Chang] → 张悬 [Deserts Chang]
+  albums.449: artist 張懸 [Deserts Chang] → 张悬 [Deserts Chang]
+  albums_2026.39: artist 張懸 [Deserts Chang] → 张悬 [Deserts Chang]
+  albums_2026.40: artist 張懸 [Deserts Chang] → 张悬 [Deserts Chang]
+
+=== AFTER ===
+表=albums 专辑=神的游戏 艺术家=张悬
+  id=6 artist=张悬 album=神的游戏 tc=4 score=99.3
+表=albums 专辑=城市 艺术家=张悬
+  id=168 artist=张悬 album=城市 tc=4 score=None
+表=albums 专辑=My Life Will 艺术家=张悬
+  id=169 artist=张悬 album=My Life Will tc=2 score=None
+表=albums 专辑=亲爱的...我还不知道 艺术家=张悬
+  id=303 artist=张悬 album=亲爱的...我还不知道 tc=2 score=None
+表=albums 专辑=城市 艺术家=张悬 [Deserts Chang]
+  id=448 artist=张悬 [Deserts Chang] album=城市 tc=1 score=3.61
+表=albums 专辑=神的遊戲 Games We Play 艺术家=张悬 [Deserts Chang]
+  id=449 artist=张悬 [Deserts Chang] album=神的遊戲 Games We Play tc=1 score=3.63
+表=albums_2024 专辑=神的游戏 艺术家=张悬
+  id=6 artist=张悬 album=神的游戏 tc=2 score=99.3
+表=albums_2024 专辑=城市 艺术家=张悬
+  id=168 artist=张悬 album=城市 tc=1 score=None
+表=albums_2024 专辑=My Life Will 艺术家=张悬
+  id=169 artist=张悬 album=My Life Will tc=1 score=None
+表=albums_2025 专辑=神的游戏 艺术家=张悬
+  id=6 artist=张悬 album=神的游戏 tc=2 score=99.3
+表=albums_2025 专辑=城市 艺术家=张悬
+  id=168 artist=张悬 album=城市 tc=3 score=None
+表=albums_2025 专辑=My Life Will 艺术家=张悬
+  id=169 artist=张悬 album=My Life Will tc=1 score=None
+表=albums_2025 专辑=亲爱的...我还不知道 艺术家=张悬
+  id=303 artist=张悬 album=亲爱的...我还不知道 tc=2 score=None
+表=albums_2026 专辑=城市 艺术家=张悬 [Deserts Chang]
+  id=39 artist=张悬 [Deserts Chang] album=城市 tc=1 score=3.61
+表=albums_2026 专辑=神的遊戲 Games We Play 艺术家=张悬 [Deserts Chang]
+  id=40 artist=张悬 [Deserts Chang] album=神的遊戲 Games We Play tc=1 score=3.63
+总条目数: 15
+
+=== 差距 ===
+合并前条目数: 15
+合并后条目数: 15
+减少条目数: 0
+
+Done, report saved to merge_report.txt

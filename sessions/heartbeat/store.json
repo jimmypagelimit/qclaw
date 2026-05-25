@@ -1,0 +1,25 @@
+{
+  "id": "heartbeat",
+  "name": "心跳轮询",
+  "status": "active",
+  "createdAt": "2026-05-22T00:10:05.395Z",
+  "updatedAt": "2026-05-25T06:13:49.466Z",
+  "agents": [
+    {
+      "id": "agent_inui3px0",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-05-22T00:10:05.395Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_fst2sfpr",
+    "title": "心跳轮询",
+    "createdAt": "2026-05-22T00:10:05.395Z",
+    "file": "summary_fst2sfpr.md"
+  },
+  "lastMessageCount": 21
+}

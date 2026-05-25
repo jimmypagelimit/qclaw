@@ -1,0 +1,26 @@
+=== 使用 opencli browser 搜索网易云 ===
+专辑: 悲歌欢唱 Lamenting in Delight
+艺术家: 苏紫旭
+
+1. 打开网易云搜索页面...
+  URL: https://music.163.com/#/search/m/?s=%E8%8B%8F%E7%B4%AB%E6%97%AD%20%E6%82%B2%E6%AD%8C%E6%AC%A2%E5%94%B1%20Lamenting%20in%20Delight&type=1
+  ✗ 异常: [WinError 2] 系统找不到指定的文件。
+
+2. 等待页面加载 (5秒)...
+  等待完成
+
+3. 截图查看搜索结果...
+  ✗ 截图失败: [WinError 2] 系统找不到指定的文件。
+
+=== 说明 ===
+由于网易云页面是 JS 渲染的，需要：
+1. 查看 wangyi_search.png 截图，确认是否找到专辑
+2. 如果找到，手动点击专辑，进入详情页
+3. 右键封面 → 另存为，保存到 covers/ 目录
+
+=== 备选方案 ===
+如果 opencli browser 无法找到，可以：
+1. 手动在浏览器中打开网易云，搜索专辑
+2. 右键封面 → 另存为
+3. 保存为 covers/526-苏紫旭_&_The_Paramecia-悲歌欢唱_Lamenting_in_Delight.jpg
+4. 同时复制到 covers/181-...jpg

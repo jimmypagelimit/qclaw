@@ -1,0 +1,19 @@
+=== 下载封面 ===
+专辑: Jessica Pratt
+艺术家: Asher White
+
+封面不存在，开始下载...
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/89/4b/9f894bd7-a534-ad7a-04d5-0bd4970f8e28/61282.jpg/600x600bb.jpg
+  ✓ 已下载: 434-Asher_White-Jessica_Pratt.jpg (56078 bytes)
+  ✓ 已复制: 25-Asher_White-Jessica_Pratt.jpg
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/57b157bbfe720dacddc8b811468bee1b/500x500-000000-80-0-0.jpg
+  ✓ 已下载: 434-Asher_White-Jessica_Pratt.jpg (30760 bytes)
+  ✓ 已复制: 25-Asher_White-Jessica_Pratt.jpg
+
+=== 验证封面文件 ===
+✓ 封面1存在: 434-Asher_White-Jessica_Pratt.jpg (30760 bytes)
+✓ 封面2存在: 25-Asher_White-Jessica_Pratt.jpg (30760 bytes)

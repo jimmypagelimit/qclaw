@@ -1,0 +1,13 @@
+=== 下载封面 ===
+专辑: 愛在屎邊邊 Love Is in the Shit
+艺术家: otay:onii
+
+1. 尝试 iTunes Search API...
+  ✗ 未找到专辑
+
+2. 尝试 Deezer API...
+  ✗ 未找到专辑
+
+=== 验证封面文件 ===
+✗ 封面1不存在: 530-otay_onii-愛在屎邊邊_Love_Is_in_the_Shit.jpg
+✗ 封面2不存在: 186-otay_onii-愛在屎邊邊_Love_Is_in_the_Shit.jpg

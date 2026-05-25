@@ -1,0 +1,55 @@
+🔍 找到 50 张需要封面的专辑（offset=0, count=50）
+
+[01] 飞出迷楼 - 苏紫旭&The Paramecia ... ❌ 所有源均未找到
+[02] 喀什科尔胡杨 - 刀郎 ... ❌ 所有源均未找到
+[03] 刀郎III - 刀郎 ... ❌ 所有源均未找到
+[04] 夜官巡场 - 装咖人 ... ❌ 所有源均未找到
+[05] She Came Back From the Square - 海朋森 ... ❌ 所有源均未找到
+[06] 我不要别的历史 No Need for Another History - 海朋森 [Hiperson] ... ❌ 所有源均未找到
+[07] 郑钧=zj - 郑钧 ... ❌ 所有源均未找到
+[08] 时代在召唤 - 假假条 ... ❌ 所有源均未找到
+[09] 我的小清新 - 陈升 ... ❌ 所有源均未找到
+[10] 望乡 - 陈升 ... ❌ 所有源均未找到
+[11] Tea with Flower Fragrance - 张福全 ... ❌ 所有源均未找到
+[12] The Fly II - 苍蝇 ... ❌ 所有源均未找到
+[13] 金陵祭 - 黑麒麟 ... ❌ 所有源均未找到
+[14] 锦上添花 - 戴饶 ... ❌ 所有源均未找到
+[15] Tago Mago - Can ... ✅ (itunes, 152168B)
+[16] Acabou chorare - Novos Baianos ... ✅ (itunes, 130730B)
+[17] Die Mensch-Maschine - Kraftwerk ... ✅ (deezer, 46672B)
+[18] Dots and Loops - Stereolab ... ✅ (itunes, 75824B)
+[19] Illinois - Sufjan Stevens ... ✅ (itunes, 136501B)
+[20] Голос сталі (The Voice of Steel) - Nokturnal Mortum ... ❌ 所有源均未找到
+[21] Wild Mood Swings - The Cure ... ✅ (deezer, 51779B)
+[22] 和自己对话 - 林俊杰 ... ✅ (netease, 30001B)
+[23] 菲靡靡之音 - 王菲 ... ✅ (deezer, 28457B)
+[24] Surf's Up - The Beach Boys ... ✅ (itunes, 173938B)
+[25] Pop - U2 ... ✅ (itunes, 131722B)
+[26] In Utero - Nirvana ... ✅ (itunes, 88620B)
+[27] Motanka - Motanka ... ✅ (itunes, 83575B)
+[28] Achtung Baby - U2 ... ✅ (itunes, 166194B)
+[29] La leyenda de La Mancha - Mägo de Oz ... ✅ (itunes, 102771B)
+[30] Atom Heart Mother - Pink Floyd ... ✅ (itunes, 140061B)
+[31] 笑着哭 - 汪峰 ... ✅ (netease, 44119B)
+[32] 司命楼兰 - 葬尸湖、英吉沙 ... ✅ (netease, 20979B)
+[33] A Dream in Static - Earthside ... ✅ (itunes, 176187B)
+[34] End Leaving - Be Persecuted ... ✅ (netease, 26129B)
+[35] Pulver - Lifelover ... ✅ (itunes, 189768B)
+[36] 私房歌 - 郑智化 ... ✅ (deezer, 64248B)
+[37] 星星点灯 - 郑智化 ... ✅ (deezer, 29398B)
+[38] 如果云知道 - 许茹芸 ... ✅ (netease, 438467B)
+[39] Love,Sandy - 林忆莲 ... ✅ (netease, 19844B)
+[40] I'm With You - Red Hot Chili Peppers ... ✅ (itunes, 171357B)
+[41] 何德何能 - 黄舒骏 ... ✅ (netease, 32686B)
+[42] 虎口脱险 - 老狼 ... ✅ (netease, 25530B)
+[43] 青春 - 王梵瑞 ... ✅ (itunes, 117988B)
+[44] 时光谣 - 王梵瑞 ... ✅ (itunes, 40371B)
+[45] 等候 - 王梵瑞 ... ✅ (netease, 30841B)
+[46] 最美的时光 - 满江 ... ✅ (netease, 40478B)
+[47] 蓝色的脸 - 大波浪 ... ✅ (itunes, 84490B)
+[48] 祝你幸福 - 马飞 ... ✅ (netease, 98903B)
+[49] Heartwork - Carcass ... ✅ (itunes, 97852B)
+[50] 呼吸之野 - 许嵩 ... ✅ (netease, 38658B)
+
+💾 数据库已保存
+📊 结果: ✅ 35 成功 / ❌ 15 失败 / 📋 50 总计

@@ -1,0 +1,24 @@
+=== 新增专辑：midwest, post death - Post Recovery ===
+
+albums 总表当前最大 ID: 530
+新专辑在总表的 ID: 531
+
+1. 插入 albums 总表...
+  ✓ 已插入 albums 总表 (id=531)
+
+albums_2026 表当前最大 ID: 186
+新专辑在 2026 表的 ID: 187
+
+2. 插入 albums_2026 表...
+  ✓ 已插入 albums_2026 表 (id=187)
+
+=== 提交 ===
+✓ 已提交到数据库
+
+=== 验证插入结果 ===
+albums 总表: id=531 | Post Recovery | tc=1 | RYM=3.49
+albums_2026 表: id=187 | Post Recovery | tc=1 | RYM=3.49
+
+=== 下一步 ===
+1. 下载封面到: covers/531-midwest_post_death-Post_Recovery.jpg 和 covers/187-midwest_post_death-Post_Recovery.jpg
+2. 重启 Web 服务

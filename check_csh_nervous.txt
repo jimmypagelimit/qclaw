@@ -1,0 +1,23 @@
+=== 检查 Car Seat Headrest - Nervous Young Man ===
+
+✓ 数据库文件存在: G:\原创计划\music
+
+1. albums 总表检查...
+  找到 1 条记录:
+  - id=383, name=Nervous Young Man, artist=Car Seat Headrest, tc=2025-10-28, RYM=3.83
+
+2. albums_2026 表检查...
+  ✗ 未找到（需要新增）
+
+3. Car Seat Headrest 所有专辑检查...
+  找到 7 条 Car Seat Headrest 专辑:
+  - id=323, name=Twin Fantasy, tc=2025-04-11, RYM=None
+  - id=382, name=Teens of Denial, tc=2025-10-28, RYM=3.91
+  - id=383, name=Nervous Young Man, tc=2025-10-28, RYM=3.83
+  - id=384, name=Making a Door Less Open, tc=2025-10-28, RYM=2.85
+  - id=385, name=Monomania, tc=2025-10-28, RYM=3.78
+  - id=386, name=How to Leave Town, tc=2025-11-21, RYM=4.01
+  - id=451, name=Teens of denial, tc=2026-01, RYM=None
+
+=== 结论 ===
+如果 albums 和 albums_2026 都未找到，需要新增此专辑。

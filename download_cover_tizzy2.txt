@@ -1,0 +1,17 @@
+=== 下载封面 ===
+专辑: 如果看見地獄，我就不怕魔鬼
+艺术家: Tizzy Bac
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ed/20/23/ed202374-a191-87af-b26d-a53915dbafbf/4712755920118.jpg/600x600bb.jpg
+  ✓ 已下载: 529-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg (101617 bytes)
+  ✓ 已复制: 185-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/e6d5425ac15329dcc03596fcde1c78b8/500x500-000000-80-0-0.jpg
+  ✓ 已下载: 529-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg (56477 bytes)
+  ✓ 已复制: 185-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg
+
+=== 验证封面文件 ===
+✓ 封面1存在: 529-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg (56477 bytes)
+✓ 封面2存在: 185-Tizzy_Bac-如果看見地獄，我就不怕魔鬼.jpg (56477 bytes)

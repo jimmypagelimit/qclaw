@@ -1,0 +1,19 @@
+=== 下载封面 ===
+专辑: It's the Long Goodbye
+艺术家: The Twilight Sad
+
+封面目录: C:\Users\qujt\.qclaw\workspace\tasks\2026-05-12-long-term-project\album-tracker\covers
+
+封面不存在，开始下载...
+
+1. 尝试 iTunes Search API...
+  ✗ iTunes API 未找到此专辑
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/0964d53a39642b2062a9c0479cb1b6b7/500x500-000000-80-0-0.jpg
+  ✓ 已下载: 513-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg (99574 bytes)
+  ✓ 已复制: 114-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg
+
+=== 验证封面文件 ===
+✓ 封面1存在: 513-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg (99574 bytes)
+✓ 封面2存在: 114-The_Twilight_Sad-It_s_the_Long_Goodbye.jpg (99574 bytes)

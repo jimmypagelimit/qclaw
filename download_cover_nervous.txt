@@ -1,0 +1,14 @@
+=== 下载封面 ===
+专辑: Nervous Young Man
+艺术家: Car Seat Headrest
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e3/0b/01/e30b01dd-4580-a1c6-e6dd-13bc95c23002/744861133667.png/600x600bb.jpg
+  ✓ 已下载: 183-Car_Seat_Headrest-Nervous_Young_Man.jpg (26044 bytes)
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/0852eb8132a41c55d0473980d20530fa/500x500-000000-80-0-0.jpg
+  ✓ 已下载: 183-Car_Seat_Headrest-Nervous_Young_Man.jpg (12848 bytes)
+
+=== 验证封面文件 ===
+✓ 封面存在: 183-Car_Seat_Headrest-Nervous_Young_Man.jpg (12848 bytes)

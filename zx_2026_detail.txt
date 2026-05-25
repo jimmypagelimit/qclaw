@@ -1,0 +1,19 @@
+=== albums_2026 表 - 张悬（完整信息）===
+找到 2 条记录:
+  id=39
+    album=城市
+    artist=张悬 [Deserts Chang]
+    tc=1 | score=3.61
+    first_listen=2026-05
+    cover=covers/448-張懸_[Deserts_Chang]-城市.jpg
+
+  id=40
+    album=神的游戏
+    artist=张悬 [Deserts Chang]
+    tc=1 | score=3.63
+    first_listen=2026-05
+    cover=covers/449-張懸_[Deserts_Chang]-神的遊戲_Games_We_Play.jpg
+
+
+=== 检查专辑名是否为繁体 ===
+OK: 无繁体专辑名

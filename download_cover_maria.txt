@@ -1,0 +1,18 @@
+=== 下载封面 ===
+专辑: Marathon
+艺术家: Maria BC
+
+1. 尝试 iTunes Search API...
+  找到封面: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/09/3a/fb/093afba5-8acb-fdd3-5473-addc810a8812/60188.jpg/600x600bb.jpg
+  ✓ 已下载: 528-Maria_BC-Marathon.jpg (100578 bytes)
+  ✓ 已复制: 184-Maria_BC-Marathon.jpg
+
+2. 尝试 Deezer API...
+  找到封面: https://cdn-images.dzcdn.net/images/cover/274fdbd131741111395b2db0eb0b4128/500x500-000000-80-0-0.jpg
+  ✗ 下载失败
+  找到封面: https://cdn-images.dzcdn.net/images/cover/274fdbd131741111395b2db0eb0b4128/500x500-000000-80-0-0.jpg
+  ✗ 下载失败
+
+=== 验证封面文件 ===
+✓ 封面1存在: 528-Maria_BC-Marathon.jpg (100578 bytes)
+✓ 封面2存在: 184-Maria_BC-Marathon.jpg (100578 bytes)

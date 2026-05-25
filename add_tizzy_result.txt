@@ -1,0 +1,25 @@
+=== 新增专辑：告密的心 (The Tell-Tale Heart) ===
+
+albums 总表当前最大 ID: 526
+新专辑 ID: 527
+
+albums_2026 表当前最大 ID: 181
+新专辑在 2026 表的 ID: 182
+
+1. 插入 albums 总表...
+  ✓ 已插入 albums 总表 (id=527)
+
+2. 插入 albums_2026 表...
+  ✓ 已插入 albums_2026 表 (id=182)
+
+=== 提交 ===
+✓ 已提交到数据库
+
+=== 验证插入结果 ===
+albums 总表: id=527 | 告密的心 (The Tell-Tale Heart) | tc=2026-05 | RYM=3.14 | score=None
+albums_2026 表: id=182 | 告密的心 (The Tell-Tale Heart) | tc=2026-05 | RYM=3.14 | score=None
+
+=== 下一步 ===
+1. 下载封面到: covers/527-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg
+2. 同时下载到: covers/182-Tizzy_Bac-告密的心_The_Tell-Tale_Heart.jpg
+3. 重启 Web 服务
