@@ -1,18 +1,19 @@
 ## 任务背景
-用户批量将RYM专辑入库到个人音乐数据库，共完成4张专辑入库。
+用户完成了三张专辑入库操作，并对Windows 10桌面进行了极致性能优化。后续发现封面匹配问题。
 
 ## 执行过程
-1. Wendy Eisenberg 同名专辑入库
-2. Angine de Poitrine - Vol.II 入库
-3. Car Seat Headrest - Teen of Denial 入库
-4. 每张专辑均完成数据库插入、封面下载、Git提交
+1. 入库 Wendy Eisenberg、Angine de Poitrine、Car Seat Headrest、魏如萱专辑
+2. 执行数据库插入、封面下载、Git提交流程
+3. Windows性能优化：禁用视觉效果、系统服务、遥测等
+4. 发现封面不匹配问题，排查原因
 
 ## 关键结果
-- albums表：506→508条（新增3条）
-- albums_2026表：新增3条记录
-- 封面文件：均已保存至 `\\10.0.2.4\qemu\原创计划\covers\`
-- Git提交：e68ac46、e068ac9、911c0c0 已推送
-- memory/2026-05-27.md 已更新入库日志
+- albums表新增至509条记录
+- albums_2026表新增至141条记录
+- 封面文件保存至 `\\10.0.2.4\qemu\原创计划\covers\`
+- Git提交：e68ac46、e068ac9、911c0c0、3f532e5
+- Windows优化：纯黑背景、禁用动画/阴影/遥测/SysMain等
+- 问题：album_id 538、539 封面可能不匹配
 
 ## 结论建议
-批量入库流程顺畅，技术参数（数据库路径、端口、字段名）已确认正确。
+封面问题待排查：需检查iTunes API返回、文件名匹配、public/covers/目录。建议检查数据库记录和封面文件确认问题根源。
