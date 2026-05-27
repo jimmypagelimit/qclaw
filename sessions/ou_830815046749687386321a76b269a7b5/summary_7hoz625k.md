@@ -1,17 +1,18 @@
 ## 任务背景
-用户启动album-tracker项目入库专辑，发现G:盘映射不稳定导致服务启动失败，需要永久修复路径问题并入库新专辑。
+用户维护 album-tracker 项目，入库新专辑到数据库。项目此前因 G: 盘映射问题修复为 UNC 路径。
 
 ## 执行过程
-1. 诊断问题：代码硬编码G:/路径，G:盘映射不稳定
-2. 修改源码：改用UNC路径直连`\\10.0.2.4\qemu`
-3. 重启验证：服务正常启动
-4. 入库专辑：Panopticon - Det hjemsøkte hjertet (2026)
+1. 确认服务运行状态 (localhost:3456)
+2. 入库 Panopticon - Det hjemsøkte hjertet (album_id=535)
+3. 入库 Wendy Eisenberg 同名专辑 (album_id=536)
+4. 每张专辑：检查重复→获取封面→插入数据库→Git提交→重启验证
 
 ## 关键结果
-- 路径修复：`src/db/database.ts`和`dist/server.js`改用UNC路径
-- 专辑入库：album_id=535，albums表505条，albums_2026表137条
-- 封面保存：`535-Panopticon-Det_hjemsokte_hjertet.jpg` (146KB)
-- Git提交：commit `3a691a8`已推送
+- albums 表：504 → 506 条记录
+- albums_2026 表：新增2条 (album_id=192,193)
+- 封面文件：已下载保存至 `\\10.0.2.4\qemu\原创计划\covers\`
+- Git提交：`3a691a8` 和 `e68ac46` 已推送
+- 修改文件：database.ts, server.js, memory/2026-05-27.md
 
 ## 结论建议
-路径问题已永久修复，不再依赖G:盘符映射。专辑入库流程正常，服务稳定运行于http://localhost:3456。
+入库流程正常，服务运行中。数据库路径已稳定使用 UNC 路径。
