@@ -23,7 +23,7 @@ print(f'New album_id: {new_id}')
 # 插入albums总表
 c.execute('''INSERT INTO albums (album_id, album_name, artist, release_year, genre, rating, total_listen_count, country)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', 
-(new_id, 'Det hjemsokte hjertet', 'Panopticon', '2026', 'Atmospheric Black Metal / Post-Metal', 3.84, 2, 'Norway'))
+(new_id, 'Wendy Eisenberg', 'Wendy Eisenberg', '2026', 'Singer-Songwriter / Chamber Folk', 3.47, 2, 'US'))
 
 # 插入albums_2026表
 c.execute('SELECT MAX(album_id) FROM albums_2026')
@@ -31,15 +31,15 @@ max_2026_id = c.fetchone()[0] or 0
 new_2026_id = max_2026_id + 1
 c.execute('''INSERT INTO albums_2026 (album_id, album_name, artist, release_year, genre, rating, total_listen_count, country)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', 
-(new_2026_id, 'Det hjemsokte hjertet', 'Panopticon', '2026', 'Atmospheric Black Metal / Post-Metal', 3.84, 2, 'Norway'))
+(new_2026_id, 'Wendy Eisenberg', 'Wendy Eisenberg', '2026', 'Singer-Songwriter / Chamber Folk', 3.47, 2, 'US'))
 
 conn.commit()
 print('Database updated')
 
 # 下载封面
-cover_url = 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/9c/01/0e9c0127-6ac2-c487-ea61-351f05a53e3e/7350142984199.png/600x600bb.jpg'
+cover_url = 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1a/be/c4/1abec466-45aa-9e41-62e9-4b9ead9af44f/61214.jpg/600x600bb.jpg'
 os.makedirs(covers_dir, exist_ok=True)
-cover_path = os.path.join(covers_dir, f'{new_id}-Panopticon-Det_hjemsokte_hjertet.jpg')
+cover_path = os.path.join(covers_dir, f'{new_id}-Wendy_Eisenberg-Wendy_Eisenberg.jpg')
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False

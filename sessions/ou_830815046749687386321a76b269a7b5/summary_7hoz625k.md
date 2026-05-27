@@ -1,18 +1,17 @@
 ## 任务背景
-album-tracker项目启动失败，数据库路径G:/原创计划/music不可访问，需要修复路径配置。
+用户启动album-tracker项目入库专辑，发现G:盘映射不稳定导致服务启动失败，需要永久修复路径问题并入库新专辑。
 
 ## 执行过程
-1. 检查G盘网络映射
-2. 分析server.js源码
-3. 确认网络位置可达
-4. 修改路径为UNC格式
-5. 重新编译并启动
+1. 诊断问题：代码硬编码G:/路径，G:盘映射不稳定
+2. 修改源码：改用UNC路径直连`\\10.0.2.4\qemu`
+3. 重启验证：服务正常启动
+4. 入库专辑：Panopticon - Det hjemsøkte hjertet (2026)
 
 ## 关键结果
-- 问题定位：G:盘为网络映射盘`\\10.0.2.4\qemu`，映射不稳定
-- 修复方案：改用UNC路径直连，不依赖G:盘符
-- 修改文件：`src/db/database.ts`和`dist/server.js`
-- 启动成功：http://localhost:3456正常访问
+- 路径修复：`src/db/database.ts`和`dist/server.js`改用UNC路径
+- 专辑入库：album_id=535，albums表505条，albums_2026表137条
+- 封面保存：`535-Panopticon-Det_hjemsokte_hjertet.jpg` (146KB)
+- Git提交：commit `3a691a8`已推送
 
 ## 结论建议
-已永久修复，项目不再依赖G:盘符映射，UNC直连更稳定。记忆已写入memory/2026-05-26.md。
+路径问题已永久修复，不再依赖G:盘符映射。专辑入库流程正常，服务稳定运行于http://localhost:3456。
