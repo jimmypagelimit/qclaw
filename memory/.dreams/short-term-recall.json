@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-22T23:20:11.450Z",
+  "updatedAt": "2026-05-26T20:20:57.691Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -217,6 +217,99 @@
         "58.4万",
         "invoke-webrequest",
         "usr/bin/curl"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:37": {
+      "key": "memory:memory/2026-05-06.md:1:37",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-05-06 日志 ## 荒岛唱片同步 - 昨日（05-05）同步尝试被 SIGKILL 中断，停在字母N - 今日（05-06）检查：H盘（外置，荒岛唱片主盘）和G盘（音乐编年史）均未挂载 - 目前只识别到 C/D/E 三个本地盘 - 用户插上硬盘后需要重新跑 sync.sh ## 待办 - 硬盘插上后重新跑 `H:\\私人\\荒岛唱片\\sync.sh`（H→C + C→H 双向同步）## 护肤提醒永久移除 - 用户明确要求：护肤提醒以后永远不要提了 - 已从 HEARTBEAT.md 删除晨间/晚间护肤提醒 - 只保留周日身心回顾和每月1号月度评估 - commit: c3adbab 移除晨间/晚间护肤提醒 ## Push 状态 - 10:21 push 失败（GitHub 无法解析） - 10:37 retry - Everything up-to-date - 3个 commit 已推送：59b1e4c, c3adbab # 2026-05-06 日志 ## 荒岛唱片同步 - 昨日（05-05）同步尝试被 SIGKILL 中断，停在字母N - 今日（05-06）检查：H盘（外置，荒岛唱片主盘）和G盘（音乐编年史）均未挂载 - 目前只识别到 C/D/E 三个本地盘 - 用户插上硬盘后需要重新跑 sync.sh ## 待办 - 硬盘插上后重新跑 `H:\\私人\\荒岛唱片\\sync.sh`（H→C + C→H 双向同步） ## 护肤提醒永久移除 - 用户明确要求：护肤提醒以后永",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.497223100066185,
+      "maxScore": 0.497223100066185,
+      "firstRecalledAt": "2026-05-26T20:20:57.691Z",
+      "lastRecalledAt": "2026-05-26T20:20:57.691Z",
+      "queryHashes": [
+        "67d0e77c9b65"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "05-05",
+        "05-06",
+        "c/d/e",
+        "sync.sh",
+        "heartbeat.md",
+        "删除晨间/晚间护肤提醒",
+        "移除晨间/晚间护肤提醒",
+        "up-to-date"
+      ]
+    },
+    "memory:memory/2026-05-12.md:52:82": {
+      "key": "memory:memory/2026-05-12.md:52:82",
+      "path": "memory/2026-05-12.md",
+      "startLine": 52,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "1. ✅ 魚住英里奈照片识别（上午）：识别出弹吉他现场照，现场布旗「春日牧人集」 2. ✅ 荒岛唱片同步（09:51）：Node.js版 sync-complement.js 执行成功，H↔C互相补充，1225个文件同步至H盘 3. ✅ 金属/硬核 RSS（周二轮换）：Decibel/No Clean Singing/Angry Metal Guy/Invisible Orunes/Lambgoat/r/Metal/r/Blackmetal/Metal Injection - 重点：Panopticon *Det Hjemsøkte Hjertet* Iconic评级（Angry Metal Guy）、Mastodon第九张专辑完成 4. ✅ 飞书通知已发送（金属/硬核动态 + 荒岛唱片同步完成） **技术备注：** - sync互补.sh 依赖 bash（WSL配置异常不可用），改用 Node.js 版解决 - HEARTBEAT.md 未提及当日执行时段，RSS检查在上午执行 **未完成/待办：** - 无 **git状态：** 工作区无待提交更改（skills子模块有untracked content但不影响主仓库） --- ## 18:30 - 2026年听歌记录入库（华语旧+外语旧） 从 Markdown 文件批量解析入库到 albums_2026 和 albums 总表。 **数据来源：** - `G:\\diary-content\\history\\music\\2026\\华语旧\\` (1-5月) - `",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47242970466613765,
+      "maxScore": 0.47242970466613765,
+      "firstRecalledAt": "2026-05-26T20:20:57.691Z",
+      "lastRecalledAt": "2026-05-26T20:20:57.691Z",
+      "queryHashes": [
+        "67d0e77c9b65"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "node.js版",
+        "sync-complement.js",
+        "金属/硬核",
+        "decibel/no",
+        "singing/angry",
+        "guy/invisible",
+        "金属/硬核动态",
+        "sync互补.sh"
+      ]
+    },
+    "memory:memory/2026-05-07.md:57:93": {
+      "key": "memory:memory/2026-05-07.md:57:93",
+      "path": "memory/2026-05-07.md",
+      "startLine": 57,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "**备注**：用户可能想深入了解SoulSeek的使用方法 ## The Cleaners From Venus 高清图片获取 **时间**：2026-05-07 18:14 **需求**：用户要求The Cleaners From Venus乐队的高清图片（800x800以上） **执行**： - 搜索引擎中文结果有限，改用iTunes Search API - 找到纪录片《The Jangling Man》（Martin Newell传记片）海报1500x1500 - 通过iTunes API获取5张专辑封面（1000x1000）： - Blow Away Your Troubles (1981) - Midnight Cleaners (1982) - Under Wartime Conditions (1984) - Living With Victoria Grey (1986) - That London (2022) - 所有图片下载成功并通过飞书发送 **技术要点**： - iTunes API是获取官方高清专辑封面的有效途径 - artworkUrl100可改尺寸参数获取高分辨率版本 **状态**：已完成 ## 荒岛唱片同步（H盘↔C盘） **时间**：2026-05-07 19:30 **情况**： - H盘（Memory）和C盘（荒岛唱片）均已挂载 - 今日19:16首次同步（robocopy）：B、C、G、L、N目录 H→C 完成 - 本次 heartb",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4556425422430038,
+      "maxScore": 0.4556425422430038,
+      "firstRecalledAt": "2026-05-26T20:20:57.691Z",
+      "lastRecalledAt": "2026-05-26T20:20:57.691Z",
+      "queryHashes": [
+        "67d0e77c9b65"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "备注",
+        "用户",
+        "可能",
+        "深入",
+        "了解",
+        "soulseek",
+        "使用",
+        "方法"
       ]
     }
   }

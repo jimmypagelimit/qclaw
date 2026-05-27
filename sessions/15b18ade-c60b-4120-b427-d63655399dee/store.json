@@ -1,0 +1,25 @@
+{
+  "id": "15b18ade-c60b-4120-b427-d63655399dee",
+  "name": "历史RSS聚合抓取",
+  "status": "active",
+  "createdAt": "2026-05-25T22:35:08.036Z",
+  "updatedAt": "2026-05-25T22:35:08.037Z",
+  "agents": [
+    {
+      "id": "agent_jxww8bvw",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-05-25T22:35:08.036Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_pdeu0tks",
+    "title": "历史RSS聚合抓取",
+    "createdAt": "2026-05-25T22:35:08.037Z",
+    "file": "summary_pdeu0tks.md"
+  },
+  "lastMessageCount": 17
+}
