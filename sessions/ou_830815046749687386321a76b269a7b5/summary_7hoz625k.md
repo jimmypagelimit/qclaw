@@ -1,19 +1,13 @@
 ## 任务背景
-用户完成了三张专辑入库操作，并对Windows 10桌面进行了极致性能优化。后续发现封面匹配问题。
-
+用户请求Windows 10极致性能优化（含系统还原点），并强调album-tracker是核心项目需深化记忆确保操作越来越准、快、少犯错。
 ## 执行过程
-1. 入库 Wendy Eisenberg、Angine de Poitrine、Car Seat Headrest、魏如萱专辑
-2. 执行数据库插入、封面下载、Git提交流程
-3. Windows性能优化：禁用视觉效果、系统服务、遥测等
-4. 发现封面不匹配问题，排查原因
-
+1. Windows优化：创建还原点→修改注册表（视觉效果/NTFS/网络）→禁用遥测任务
+2. 脚本开发：历经3次迭代修复Unicode/GBK编码问题
+3. 记忆强化：创建ALBUM_TRACKER_RULES.md操作手册→扩充MEMORY.md规则→永久禁用PowerShell
 ## 关键结果
-- albums表新增至509条记录
-- albums_2026表新增至141条记录
-- 封面文件保存至 `\\10.0.2.4\qemu\原创计划\covers\`
-- Git提交：e68ac46、e068ac9、911c0c0、3f532e5
-- Windows优化：纯黑背景、禁用动画/阴影/遥测/SysMain等
-- 问题：album_id 538、539 封面可能不匹配
-
+- Windows优化：11项成功（还原点、深灰背景、动画禁用、NTFS/网络优化），2项失败（权限不足）
+- 文件生成：`_ultra_optimize_v3.py`、`task-summary_20260527_1247.md`、`ALBUM_TRACKER_RULES.md`
+- MEMORY.md：新增专辑入库同步规则、繁简转换规则、封面路径规则、命令执行优先级
+- memory/2026-05-27.md：记录优化详情与记忆强化过程
 ## 结论建议
-封面问题待排查：需检查iTunes API返回、文件名匹配、public/covers/目录。建议检查数据库记录和封面文件确认问题根源。
+Windows优化需重启生效；album-tracker已建立完整操作手册（8步SOP+5类错误解决方案），后续操作前先读规则再动手。

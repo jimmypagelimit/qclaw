@@ -19,8 +19,46 @@
 
 ## 重要规则
 
-### 专辑入库同步规则（2026-05-23）
-每次用户新增专辑时：同步封面 + 导出 database.sql + git commit + git push
+### 专辑入库同步规则（2026-05-23 确立，持续深化）
+**每次用户新增专辑时，必须执行完整流程：**
+1. ✅ 停止 Web 服务（避免 sql.js 内存冲突）
+2. ✅ 写入年份表（`albums_YYYY`）+ 总表
+3. ✅ 繁简转换（繁体入库必须先转简体，见下方规则）
+4. ✅ 下载封面（iTunes > Deezer > 网易云，保存为 `{id}-{artist}-{album}.jpg`）
+5. ✅ 复制封面到 `album-tracker/public/covers/`（Web 访问路径）
+6. ✅ 更新数据库 `cover_image_url` 字段为 `/covers/{filename}.jpg`
+7. ✅ 导出 `database.sql`
+8. ✅ Git add + commit + push
+
+**判重依据**：`album_name + artist`（非 `album_id`）
+**双表同步**：写入年份表 + albums 总表，只增加 `total_listen_count`
+
+### 繁简转换规则（2026-05-27 确立）⭐
+**核心原则**：繁体入库的专辑必须先转为简体
+- ✅ 无歧义字符自动转换：並→并、於→于、體→体、會→会、後→后、學→学、門→门、國→国等
+- ⚠️ 有歧义字符需人工核对：`著`（著名 vs 看着）、`干`（干净 vs 干部）
+- 📝 转换脚本：`_convert_traditional_v2.py`（无歧义映射表）
+- 🔍 人工核对：转换后搜索含`著`的记录，逐条确认
+
+### 封面文件路径规则（2026-05-27 确立）⭐
+**Web 访问路径**：`album-tracker/public/covers/{filename}.jpg`
+**备份路径**：`\\10.0.2.4\qemu\原创计划\covers\`（仅备份，不直接访问）
+**数据库字段**：`cover_image_url = '/covers/{filename}.jpg'`
+**常见错误**：
+- ❌ 封面文件只放在备份路径，未复制到 `public/covers/` → HTTP 404
+- ❌ `cover_image_url` 字段为 `None` → Web 界面不显示封面
+
+### 命令执行规则（2026-05-27 确立）⭐
+**永久禁用 PowerShell**（用户明确要求："杜绝使用powershell"）
+
+**执行优先级**：
+1. **Python** — `C:\Python311\python.exe`（绝对第一，所有任务优先用 Python）
+2. **Node.js** — `node`（仅当 Python 不合适时用，如 album-tracker CLI）
+3. **CMD** — `cmd /c "..."`（仅简单命令，Python 无法处理时）
+4. **Git Bash** — `cmd /c "C:\Progra~1\Git\bin\bash.exe -l ..."`（仅 Git 操作）
+5. ~~PowerShell~~ ❌ **永久禁用，永远别用**
+
+**Git 操作必须用 Git Bash**（原因：有 credential helper，能访问 Windows 凭据管理器）
 
 ### 荒岛唱片维护 ⭐
 - 位置: \\10.0.2.4\qemu\荒岛唱片（G: 盘）
@@ -71,6 +109,8 @@
 - 专辑已存在 → **只增加** `total_listen_count`（判重依据：album_name + artist）
 - Markdown 文件已清空，仅保留空文件占位
 - 导入脚本: `album-tracker/scripts/import_2026.py`（默认华语新+外语新，`--all`全四类）
+- [详细操作手册](ALBUM_TRACKER_RULES.md)
+
 
 ## 常用网站
 - 匿名旅行者: https://www.anontraveler.com（音乐流派百科）

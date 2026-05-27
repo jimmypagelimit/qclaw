@@ -13,7 +13,8 @@
 ### 铁律
 - 所有脚本、API 调用、数据处理 → **必须用 Python**
 - 只有 Python 明显不合适时才考虑 Node.js/CMD
-- PowerShell 永远不用，没有例外
+- **PowerShell 永远不用，没有例外**
+- Git 操作必须用 Git Bash（`cmd /c "C:\Progra~1\Git\bin\bash.exe -l ..."`）
 
 ### Git 操作（重要！）
 **优先使用 Git Bash**，不用 PowerShell！
@@ -23,6 +24,12 @@
 **用法：**
 ```bash
 cmd /c "C:\Progra~1\Git\bin\bash.exe -l 脚本路径.sh"
+```
+
+**禁止用法（永远别用）：**
+```powershell
+# ❌ 错误示例 - 永远别用
+powershell -Command "cd ...; git add -A; git commit -m '...'; git push"
 ```
 
 ## Python 环境
