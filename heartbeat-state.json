@@ -4,21 +4,23 @@
         "g_drive_mounted": false
     },
     "lastChecks": {
-        "indie_rss": "2026-05-27T06:35:00+08:00",
+        "indie_rss": "2026-06-05T15:31:00+08:00",
         "covers": "2026-05-25T06:01:00+08:00",
         "weekly_review": "2026-04-26",
-        "lit_rss": "2026-05-27T06:35:00+08:00",
+        "lit_rss": "2026-06-05T15:31:00+08:00",
         "covers_remaining": 0,
         "monthly_review": "2026-05-01",
         "covers_total": 501,
-        "c_drive_check": "2026-05-27T06:35:00+08:00",
+        "c_drive_check": "2026-06-05T15:31:00+08:00",
         "religion_rss": "2026-05-23T07:29:00+08:00",
-        "metal_rss": "2026-05-26T06:34:00+08:00",
+        "metal_rss": "2026-05-28T01:02:00+08:00",
         "daily_summary": "2026-05-25T17:01:00+08:00"
     },
-    "lastHeartbeat": "2026-05-27T06:35:00+08:00",
+    "lastHeartbeat": "2026-06-05T15:31:00+08:00",
     "notes": {
         "2026-05-25": "06:01首次heartbeat：C盘35.1GB正常；G/H盘未挂载跳过封面下载和音乐库同步；Indie文学双RSS检查完成并发送飞书通知（G→P2P用户）。17:01每日总结：Windows 10性能优化完成，Git commit成功(74d8bf4)，Push失败(GitHub错误)，飞书通知失败(400错误)。19:31 evening heartbeat：G/H盘仍未挂载，所有任务已完成或推迟。",
-        "2026-05-26": "06:46 heartbeat：C盘34.7GB正常；G/H盘未挂载；网络受限（Google DNS失败，仅国内/飞书可达），所有RSS源无法抓取，跳过今日全部RSS检查；宗教RSS未更新（上次05-23）。"
+        "2026-05-26": "06:46 heartbeat：C盘34.7GB正常；G/H盘未挂载；网络受限（Google DNS失败，仅国内/飞书可达），所有RSS源无法抓取，跳过今日全部RSS检查；宗教RSS未更新（上次05-23）。",
+        "2026-05-28": "01:01 heartbeat：C盘30.1GB正常；G/H盘未挂载；Metal/Hardcore RSS检查完成。",
+        "2026-06-05": "10:31 heartbeat：C盘33.4GB正常；H盘未挂载跳过封面下载和音乐库同步；网络仍受限（无法访问国际RSS源），跳过Indie音乐和文学RSS检查。15:31 heartbeat：C盘33.4GB正常；网络已恢复，成功抓取Indie线+文学线RSS；飞书通知发送失败（message工具在heartbeat上下文中target默认heartbeat导致400错误），结果写入artifact文件。"
     }
 }

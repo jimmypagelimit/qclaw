@@ -86,7 +86,7 @@
 - Everything HTTP: localhost:18000 (便携版 C:\Everything)
 - 浏览器: OpenClaw 内置 Chromium（browser 工具）
 - Git操作用 Git Bash（有credential helper），不用PowerShell
-- 命令执行优先级: Python > PowerShell > Git Bash
+- 命令执行优先级: Python > Node.js > CMD > Git Bash（PowerShell 永久禁用）
 
 ## 原创计划
 - 路径: \\10.0.2.4\qemu\原创计划
