@@ -7,8 +7,8 @@ import initSqlJs, { Database as SqlJsDatabase } from 'sql.js';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// 默认数据库路径（网络位置）
-const DEFAULT_DB_PATH = '\\\\10.0.2.4\\qemu\\原创计划\\music';
+// 默认数据库路径（本地副本）
+const DEFAULT_DB_PATH = 'C:\\Users\\qujt\\.qclaw\\workspace\\_music_latest.db';
 
 let db: SqlJsDatabase | null = null;
 

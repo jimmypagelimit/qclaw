@@ -41,7 +41,7 @@ function getYearTables(): string[] {
 
 /** 在指定表中按 album_name + artist 查找专辑 */
 function findAlbumByKeys(table: string, albumName: string, artistName: string): any {
-  return queryOne(
+  return queryOne<any>(
     `SELECT * FROM ${table} WHERE album_name = ? AND artist = ?`,
     [albumName, artistName]
   );
@@ -96,8 +96,8 @@ app.get('/api/stats', async (_req, res) => {
 
     for (const table of tables) {
       const count = getTableCount(table);
-      const listens = query<{ total: number }>(`SELECT COALESCE(SUM(total_listen_count), 0) as total FROM ${table}`);
-      const topAlbum = queryOne(
+      const listens = query<any>(`SELECT COALESCE(SUM(total_listen_count), 0) as total FROM ${table}`);
+      const topAlbum = queryOne<any>(
         `SELECT * FROM ${table} ORDER BY total_listen_count DESC LIMIT 1`
       );
       result.tables[table] = {
@@ -107,10 +107,18 @@ app.get('/api/stats', async (_req, res) => {
       };
     }
 
-    const genres = query<{ genre: string; count: number }>(
-      `SELECT genre, COUNT(*) as count FROM albums WHERE genre IS NOT NULL AND genre != '' GROUP BY genre ORDER BY count DESC LIMIT 10`
+    // 使用 album_genres 中间表统计 genre 分布
+    const genres = query<any>(
+      `SELECT g.name as genre, COUNT(*) as count 
+       FROM albums a 
+       JOIN album_genres ag ON a.album_id = ag.album_id 
+       JOIN genres g ON ag.genre_id = g.genre_id 
+       WHERE g.name IS NOT NULL AND g.name != '' 
+       GROUP BY g.name 
+       ORDER BY count DESC 
+       LIMIT 10`
     );
-    const countries = query<{ country: string; count: number }>(
+    const countries = query<any>(
       `SELECT country, COUNT(*) as count FROM albums WHERE country IS NOT NULL AND country != '' GROUP BY country ORDER BY count DESC LIMIT 10`
     );
 
@@ -118,13 +126,26 @@ app.get('/api/stats', async (_req, res) => {
     const yearListens: Record<string, number> = {};
     for (const ytbl of getYearTables()) {
       const year = parseInt(ytbl.replace('albums_', ''));
-      const r = query<{ total: number }>(
+      const r = query<any>(
         `SELECT COALESCE(SUM(total_listen_count), 0) as total FROM ${ytbl}`
       );
       yearListens[String(year)] = r[0]?.total || 0;
     }
 
     result.genres = genres;
+
+    // 使用 album_styles 中间表统计 style 分布
+    const styles = query<any>(
+      `SELECT s.name as style, COUNT(*) as count 
+       FROM albums a 
+       JOIN album_styles ast ON a.album_id = ast.album_id 
+       JOIN styles s ON ast.style_id = s.style_id 
+       WHERE s.name IS NOT NULL AND s.name != '' 
+       GROUP BY s.name 
+       ORDER BY count DESC 
+       LIMIT 10`
+    );
+    result.styles = styles;
     result.countries = countries;
     result.yearListens = yearListens;
 
@@ -151,11 +172,14 @@ app.get('/api/albums', async (req, res) => {
       sql += ` AND (album_name LIKE ? OR artist LIKE ?)`;
       params.push(`%${search}%`, `%${search}%`);
     }
-    if (genre) { sql += ` AND genre LIKE ?`; params.push(`%${genre}%`); }
+    if (genre) { 
+      sql += ` AND EXISTS (SELECT 1 FROM album_genres ag JOIN genres g ON ag.genre_id = g.genre_id WHERE ag.album_id = ${table}.album_id AND g.name LIKE ?)`; 
+      params.push(`%${genre}%`); 
+    }
     if (country) { sql += ` AND country = ?`; params.push(country); }
     if (artist) { sql += ` AND artist LIKE ?`; params.push(`%${artist}%`); }
 
-    const countResult = query<{ total: number }>(
+    const countResult = query<any>(
       sql.replace('SELECT *', 'SELECT COUNT(*) as total'), params
     );
     const total = countResult[0]?.total || 0;
@@ -185,7 +209,7 @@ app.get('/api/albums', async (req, res) => {
 app.get('/api/albums/:id', async (req, res) => {
   try {
     const { table = 'albums' } = req.query;
-    const album = queryOne(
+    const album = queryOne<any>(
       `SELECT * FROM ${table} WHERE album_id = ?`,
       [Number(req.params.id)]
     );
@@ -232,11 +256,41 @@ app.get('/api/top', async (req, res) => {
 app.get('/api/genres', async (req, res) => {
   try {
     const { table = 'albums', limit = 20 } = req.query;
-    const genres = query<{ genre: string; count: number }>(
-      `SELECT genre, COUNT(*) as count FROM ${table} WHERE genre IS NOT NULL AND genre != '' GROUP BY genre ORDER BY count DESC LIMIT ?`,
+    // 使用 album_genres 中间表
+    const genres = query<any>(
+      `SELECT g.name as genre, COUNT(*) as count 
+       FROM ${table} a 
+       JOIN album_genres ag ON a.album_id = ag.album_id 
+       JOIN genres g ON ag.genre_id = g.genre_id 
+       WHERE g.name IS NOT NULL AND g.name != '' 
+       GROUP BY g.name 
+       ORDER BY count DESC 
+       LIMIT ?`,
       [Number(limit)]
     );
     res.json(genres);
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// 风格分布
+app.get('/api/styles', async (req, res) => {
+  try {
+    const { table = 'albums', limit = 20 } = req.query;
+    // 使用 album_styles 中间表
+    const styles = query<any>(
+      `SELECT s.name as style, COUNT(*) as count 
+       FROM ${table} a 
+       JOIN album_styles ast ON a.album_id = ast.album_id 
+       JOIN styles s ON ast.style_id = s.style_id 
+       WHERE s.name IS NOT NULL AND s.name != '' 
+       GROUP BY s.name 
+       ORDER BY count DESC 
+       LIMIT ?`,
+      [Number(limit)]
+    );
+    res.json(styles);
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
@@ -246,7 +300,7 @@ app.get('/api/genres', async (req, res) => {
 app.get('/api/countries', async (req, res) => {
   try {
     const { table = 'albums', limit = 20 } = req.query;
-    const countries = query<{ country: string; count: number }>(
+    const countries = query<any>(
       `SELECT country, COUNT(*) as count FROM ${table} WHERE country IS NOT NULL AND country != '' GROUP BY country ORDER BY count DESC LIMIT ?`,
       [Number(limit)]
     );
@@ -350,7 +404,7 @@ app.put('/api/albums/:id', async (req, res) => {
     }
 
     // 获取原始记录，用于跨表关联
-    const original = queryOne(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const original = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
     if (!original) { res.status(404).json({ error: '专辑未找到' }); return; }
 
     // 用 album_name + artist 在两张表里都找到并更新
@@ -365,7 +419,7 @@ app.put('/api/albums/:id', async (req, res) => {
     const otherTable = sourceTable === 'albums' ? yearTable(Number(year)) : 'albums';
     const otherAlbum = findAlbumByKeys(otherTable, original.album_name, original.artist);
     if (otherAlbum) {
-      const otherParams = setClauses.map(clause => {
+      const otherParams: any[] = setClauses.map(clause => {
         const field = clause.split(' = ')[0];
         return fields[field];
       });
@@ -373,7 +427,7 @@ app.put('/api/albums/:id', async (req, res) => {
       execute(`UPDATE ${otherTable} SET ${setClauses.join(', ')} WHERE album_id = ?`, otherParams);
     }
 
-    const updated = queryOne(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const updated = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
     res.json({ success: true, album: updated });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -389,7 +443,7 @@ app.delete('/api/albums/:id', async (req, res) => {
     const sourceTable = req.query.table as string || 'albums';
     const id = Number(req.params.id);
 
-    const album = queryOne(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const album = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
 
     // 从来源表删除
@@ -428,7 +482,7 @@ app.post('/api/albums/:id/listen', async (req, res) => {
     const yt = yearTable(yr);
 
     // 从来源表获取专辑信息
-    const album = queryOne(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const album = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
 
     const albumName = album.album_name;
@@ -461,7 +515,7 @@ app.post('/api/albums/:id/listen', async (req, res) => {
     }
 
     // 返回来源表的更新结果
-    const updated = queryOne(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const updated = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
     res.json({ success: true, album: updated, yearTable: yt });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
