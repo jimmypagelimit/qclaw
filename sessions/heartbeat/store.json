@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "封面下载故障",
+  "name": "Heartbeat 17:00",
   "status": "active",
   "createdAt": "2026-05-22T00:10:05.395Z",
-  "updatedAt": "2026-06-07T02:15:44.446Z",
+  "updatedAt": "2026-06-07T09:05:18.045Z",
   "agents": [
     {
       "id": "agent_inui3px0",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_fst2sfpr",
-    "title": "封面下载故障",
+    "title": "Heartbeat 17:00",
     "createdAt": "2026-05-22T00:10:05.395Z",
     "file": "summary_fst2sfpr.md"
   },
-  "lastMessageCount": 13
+  "lastMessageCount": 41
 }
