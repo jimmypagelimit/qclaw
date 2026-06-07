@@ -43,6 +43,8 @@ INSERT INTO "albums" VALUES(13,'王菲','王菲','中国','大陆','Mandopop',7.
 INSERT INTO "albums" VALUES(14,'冀西南林路行','万能青年旅店','中国','大陆','Art Rock,Progressive Rock',9.6,NULL,0,'2020-12',2,'独立发行','covers/14-万能青年旅店-冀西南林路行.jpg','44:22:00',18.0,10.0,6.3,29.0,8.5,3.3,3.0,27.5,105.6,'2020-12-22','Rock','姬赓',164,11,1);
 INSERT INTO "albums" VALUES(15,'Long Season','Fishmans','日本','世田谷','Dream Pop, Neo-Psychedelia, Progressive Pop',9.18,NULL,0,'2023-11',7,'Polydor','covers/15-Fishmans-Long_Season.jpg','35:16:00',16.5,6.0,7.8,29.5,9.1,3.3,3.4,25.4,101.0,'1996-10-25','Rock,Psychedelia,Pop','Fishmans',58,12,7);
 INSERT INTO "albums" VALUES(16,'宇宙 日本 世田谷','Fishmans','日本','世田谷','Dream Pop, Downtempo, Ambient Pop',9.2,NULL,0,'2023-09',4,'Polydor','covers/16-Fishmans-宇宙_日本_世田谷.jpg','58:32:00',18.5,6.0,5.1,29.5,9.5,3.3,3.4,25.9,101.2,'1997-07-24','Rock,Electronic','Fishmans',58,13,8);
+INSERT INTO "albums" VALUES(17,'淡淡幽情','邓丽君','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(18,'一些次要的时刻','卧轨的火车','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(19,'In the Court of crimson king','King Crimson','英国','伦敦','Progressive Rock, Art Rock',8.58,'0',0,'2023-12-09',4,NULL,'covers/19-King_Crimson-In_the_Court_of_crimson_king.jpg','41:59:00',19.0,0.0,0.0,19.0,8.0,10.0,7.0,23.0,103.0,'1969-10-10','Rock','King Crimson',79,14,1);
 INSERT INTO "albums" VALUES(20,'That! Feel! Good!','Jessie Ware','英国','伦敦','Dance-Pop, Disco',5.58,'0',1,'2023-11-16',1,NULL,'covers/20-Jessie_Ware-That!_Feel!_Good!.jpg','40:22:00',14.0,0.0,0.0,15.0,8.0,8.0,4.0,13.0,67.0,'2023-04-28','Dance',NULL,70,15,9);
 INSERT INTO "albums" VALUES(21,'苏醒','王杰','中国','台湾','Mandopop',7.08,'0',0,'2007-12-01',3,'英皇娱乐','covers/21-王杰-苏醒.jpg','66:21:00',12.0,0.0,0.0,13.0,8.0,7.0,9.0,27.0,85.0,'2005-09-30','Pop',NULL,246,2,2);
@@ -73,6 +75,7 @@ INSERT INTO "albums" VALUES(45,'生命是一次奇遇','高旗&超载','中国',
 INSERT INTO "albums" VALUES(46,'口是心非','张雨生','中国','台湾','Mandopop,Symphonic Rock, Art Pop, Pop Rock',8.72,'0',0,'2024-01-11',12,'上华唱片','covers/46-张雨生-口是心非.jpg','52:04:00',18.6,7.6,4.0,25.5,9.2,2.0,3.0,26.0,95.9,'1997-10-16','Pop,Rock',NULL,209,22,10);
 INSERT INTO "albums" VALUES(47,'生如夏花','朴树','中国','大陆','Pop, Singer-Songwriter',9.05,'0',0,'2011-07',4,'美卡音像','covers/47-朴树-生如夏花.jpg',NULL,18.6,8.8,2.0,27.3,8.0,2.0,4.8,28.0,99.5,'2004','Singer-Songwriter,Pop','张亚东',223,23,13);
 INSERT INTO "albums" VALUES(48,'Life''s Rich Pageant','R.E.M.','美国','佐治亚州',NULL,6.8,'0',0,NULL,2,NULL,'covers/48-R.E.M.-Life''s_Rich_Pageant.jpg',NULL,14.9,6.6,1.0,23.1,7.2,2.0,2.0,18.0,74.8,NULL,NULL,NULL,121,NULL,NULL);
+INSERT INTO "albums" VALUES(49,'Disintegration','The Cure','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(50,'音乐会','超级市场','中国','大陆',NULL,8.64,'0',0,NULL,8,NULL,'covers/50-超级市场-音乐会.jpg',NULL,15.3,7.8,7.3,28.7,7.2,2.0,3.0,23.7,95.0,NULL,NULL,NULL,279,NULL,NULL);
 INSERT INTO "albums" VALUES(51,'谁都看见了希望','李杰','中国','大陆','Indie Folk',8.38,'0',0,'2024-01-25',4,NULL,'covers/51-李杰-谁都看见了希望.jpg','41:25:00',18.0,6.4,4.2,26.8,8.7,2.0,3.8,22.3,92.2,'1998-05-01','Folk',NULL,225,24,3);
 INSERT INTO "albums" VALUES(52,'Pornography','The Cure','英国','西萨塞克斯','Gothic Rock,Post-Punk',8.3,'0',0,'2024-01-28',7,NULL,'covers/52-The_Cure-Pornography.jpg','43:20:00',15.6,7.8,5.4,26.2,8.3,2.0,2.0,24.0,91.3,'1982-03-03','Rock,Punk','The Cure',138,20,12);
@@ -81,7 +84,20 @@ INSERT INTO "albums" VALUES(54,'Deep','Peter Murphy','英国','北安普顿',NUL
 INSERT INTO "albums" VALUES(55,'Javelin','Sufjan Stevens','美国','底特律','Indie Folk, Singer-Songwriter, Chamber Folk',7.86,'0',0,'2023-12-12',7,'Asthmatic Kitty','covers/55-Sufjan_Stevens-Javelin.jpg','42:05:00',17.5,6.7,2.0,24.8,8.3,2.0,3.2,22.0,86.5,'2023-10-06','Folk','Sufjan Stevens',133,25,3);
 INSERT INTO "albums" VALUES(56,'Holy Smoke','Peter Murphy','英国','北安普顿',NULL,7.81,'0',0,NULL,5,NULL,'covers/56-Peter_Murphy-Holy_Smoke.jpg',NULL,15.6,6.3,3.0,26.5,8.1,2.0,2.4,22.0,85.9,NULL,NULL,NULL,116,NULL,NULL);
 INSERT INTO "albums" VALUES(57,'黑梦','窦唯','中国','大陆',NULL,9.02,'0',0,NULL,2,NULL,'covers/57-窦唯-黑梦.jpg',NULL,18.2,7.5,4.5,27.0,8.7,2.4,3.1,27.8,99.2,NULL,NULL,NULL,253,NULL,NULL);
+INSERT INTO "albums" VALUES(58,'Psychocandy','The Jesus and Mary Chain','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(59,'Monomania','Car Seat Headrest','',NULL,NULL,0.0,NULL,0,NULL,2,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(60,'Loney People With Power','deafHeaven','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(61,'Wintersun','Wintersun','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(62,'Presence','Led Zeppelin','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(63,'Synchronicity','The Police','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(64,'New Bermuda','Deafheaven','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(65,'EVOL','Sonic Youth','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(66,'The Head on the Door','The Cure','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(67,'Kiss Me Kiss Me Kiss Me','The Cure','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(68,'王菲1997','王菲','中国','大陆',NULL,7.93,'0',0,NULL,3,NULL,'covers/68-王菲-王菲1997.jpg',NULL,17.5,5.0,2.0,24.3,9.7,2.0,2.7,24.0,87.2,NULL,NULL,NULL,248,NULL,NULL);
+INSERT INTO "albums" VALUES(69,'Capacity','Big Thief','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(70,'碎片','黄贯中','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(71,'大只佬','V是兔子','',NULL,NULL,0.0,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'0',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(72,'爱如少年','许巍','中国','大陆','Alternative Rock, Singer-Songwriter, Pop Rock',8.62,'0',0,'2010-07-08',3,'华纳音乐','covers/72-许巍-爱如少年.jpg','54:41:00',18.2,7.2,2.1,25.7,8.2,2.0,4.6,26.8,94.8,'2008-10-15','Rock',NULL,270,26,1);
 INSERT INTO "albums" VALUES(73,'Revolver','The Beatles','英国','利物浦',NULL,9.24,'0',0,NULL,3,NULL,'covers/73-The_Beatles-Revolver.jpg',NULL,19.2,5.5,7.5,28.5,9.0,2.1,3.3,26.5,101.6,NULL,NULL,NULL,137,NULL,NULL);
 INSERT INTO "albums" VALUES(74,'Wall of Eyes','The Smile','英国','牛津',NULL,7.84,'0',0,NULL,2,NULL,'covers/74-The_Smile-Wall_of_Eyes.jpg',NULL,16.4,5.0,4.5,25.5,8.8,2.0,2.0,22.0,86.2,NULL,NULL,NULL,144,NULL,NULL);
