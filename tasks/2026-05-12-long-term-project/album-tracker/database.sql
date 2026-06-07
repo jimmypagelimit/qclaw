@@ -1,31 +1,1175 @@
 BEGIN TRANSACTION;
-CREATE TABLE "albums" (
-                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        album_name TEXT NOT NULL,
-                        artist TEXT NOT NULL,
-                        country TEXT,
-                        region TEXT,
-                        genre TEXT,
-                        rating REAL,
-                        description TEXT,
-                        is_compilation INTEGER DEFAULT 0,
-                        first_listen_date TEXT,
-                        total_listen_count INTEGER DEFAULT 1,
-                        release_company TEXT,
-                        cover_image_url TEXT,
-                        duration TEXT,
-                        composition_score REAL,
-                        lyrics_meaning_score REAL,
-                        creativity_score REAL,
-                        arrangement_score REAL,
-                        vocal_performance_score REAL,
-                        instrumental_performance_score REAL,
-                        sincerity_score REAL,
-                        subjective_score REAL,
-                        overall_score REAL,
-                        release_year TEXT,
-                        style TEXT,
-                        producer TEXT
+CREATE TABLE album_genres (
+    album_id INTEGER NOT NULL,
+    genre_id INTEGER NOT NULL,
+    genre_order INTEGER DEFAULT 1,
+    PRIMARY KEY (album_id, genre_id),
+    FOREIGN KEY (album_id) REFERENCES albums(album_id),
+    FOREIGN KEY (genre_id) REFERENCES genres(genre_id)
+);
+INSERT INTO "album_genres" VALUES(1,1,1);
+INSERT INTO "album_genres" VALUES(2,2,1);
+INSERT INTO "album_genres" VALUES(3,3,1);
+INSERT INTO "album_genres" VALUES(4,4,1);
+INSERT INTO "album_genres" VALUES(5,5,1);
+INSERT INTO "album_genres" VALUES(6,6,1);
+INSERT INTO "album_genres" VALUES(6,2,2);
+INSERT INTO "album_genres" VALUES(6,5,3);
+INSERT INTO "album_genres" VALUES(7,2,1);
+INSERT INTO "album_genres" VALUES(8,6,1);
+INSERT INTO "album_genres" VALUES(8,3,2);
+INSERT INTO "album_genres" VALUES(8,2,3);
+INSERT INTO "album_genres" VALUES(8,5,4);
+INSERT INTO "album_genres" VALUES(9,2,1);
+INSERT INTO "album_genres" VALUES(10,7,1);
+INSERT INTO "album_genres" VALUES(10,2,2);
+INSERT INTO "album_genres" VALUES(11,5,1);
+INSERT INTO "album_genres" VALUES(11,8,2);
+INSERT INTO "album_genres" VALUES(12,9,1);
+INSERT INTO "album_genres" VALUES(13,2,1);
+INSERT INTO "album_genres" VALUES(14,10,1);
+INSERT INTO "album_genres" VALUES(14,11,2);
+INSERT INTO "album_genres" VALUES(15,12,1);
+INSERT INTO "album_genres" VALUES(15,13,2);
+INSERT INTO "album_genres" VALUES(15,14,3);
+INSERT INTO "album_genres" VALUES(16,12,1);
+INSERT INTO "album_genres" VALUES(16,15,2);
+INSERT INTO "album_genres" VALUES(16,16,3);
+INSERT INTO "album_genres" VALUES(19,11,1);
+INSERT INTO "album_genres" VALUES(19,10,2);
+INSERT INTO "album_genres" VALUES(20,17,1);
+INSERT INTO "album_genres" VALUES(20,18,2);
+INSERT INTO "album_genres" VALUES(21,2,1);
+INSERT INTO "album_genres" VALUES(22,2,1);
+INSERT INTO "album_genres" VALUES(22,19,2);
+INSERT INTO "album_genres" VALUES(23,20,1);
+INSERT INTO "album_genres" VALUES(23,21,2);
+INSERT INTO "album_genres" VALUES(23,22,3);
+INSERT INTO "album_genres" VALUES(24,10,1);
+INSERT INTO "album_genres" VALUES(24,5,2);
+INSERT INTO "album_genres" VALUES(27,1,1);
+INSERT INTO "album_genres" VALUES(27,6,2);
+INSERT INTO "album_genres" VALUES(29,11,1);
+INSERT INTO "album_genres" VALUES(29,10,2);
+INSERT INTO "album_genres" VALUES(31,23,1);
+INSERT INTO "album_genres" VALUES(31,24,2);
+INSERT INTO "album_genres" VALUES(42,5,1);
+INSERT INTO "album_genres" VALUES(42,23,2);
+INSERT INTO "album_genres" VALUES(45,1,1);
+INSERT INTO "album_genres" VALUES(46,2,1);
+INSERT INTO "album_genres" VALUES(46,25,2);
+INSERT INTO "album_genres" VALUES(46,7,3);
+INSERT INTO "album_genres" VALUES(46,1,4);
+INSERT INTO "album_genres" VALUES(47,26,1);
+INSERT INTO "album_genres" VALUES(47,6,2);
+INSERT INTO "album_genres" VALUES(51,27,1);
+INSERT INTO "album_genres" VALUES(52,23,1);
+INSERT INTO "album_genres" VALUES(52,24,2);
+INSERT INTO "album_genres" VALUES(55,27,1);
+INSERT INTO "album_genres" VALUES(55,6,2);
+INSERT INTO "album_genres" VALUES(55,28,3);
+INSERT INTO "album_genres" VALUES(72,5,1);
+INSERT INTO "album_genres" VALUES(72,6,2);
+INSERT INTO "album_genres" VALUES(72,1,3);
+INSERT INTO "album_genres" VALUES(80,2,1);
+INSERT INTO "album_genres" VALUES(80,29,2);
+INSERT INTO "album_genres" VALUES(81,30,1);
+INSERT INTO "album_genres" VALUES(81,31,2);
+INSERT INTO "album_genres" VALUES(81,5,3);
+INSERT INTO "album_genres" VALUES(84,14,1);
+INSERT INTO "album_genres" VALUES(84,1,2);
+INSERT INTO "album_genres" VALUES(84,32,3);
+INSERT INTO "album_genres" VALUES(84,10,4);
+INSERT INTO "album_genres" VALUES(85,8,1);
+INSERT INTO "album_genres" VALUES(86,27,1);
+INSERT INTO "album_genres" VALUES(86,8,2);
+INSERT INTO "album_genres" VALUES(89,10,1);
+INSERT INTO "album_genres" VALUES(89,11,2);
+INSERT INTO "album_genres" VALUES(92,33,1);
+INSERT INTO "album_genres" VALUES(92,11,2);
+INSERT INTO "album_genres" VALUES(102,1,1);
+INSERT INTO "album_genres" VALUES(103,34,1);
+INSERT INTO "album_genres" VALUES(103,26,2);
+INSERT INTO "album_genres" VALUES(104,35,1);
+INSERT INTO "album_genres" VALUES(105,36,1);
+INSERT INTO "album_genres" VALUES(105,1,2);
+INSERT INTO "album_genres" VALUES(106,37,1);
+INSERT INTO "album_genres" VALUES(106,38,2);
+INSERT INTO "album_genres" VALUES(107,8,1);
+INSERT INTO "album_genres" VALUES(107,39,2);
+INSERT INTO "album_genres" VALUES(108,40,1);
+INSERT INTO "album_genres" VALUES(108,26,2);
+INSERT INTO "album_genres" VALUES(109,21,1);
+INSERT INTO "album_genres" VALUES(109,5,2);
+INSERT INTO "album_genres" VALUES(110,41,1);
+INSERT INTO "album_genres" VALUES(111,5,1);
+INSERT INTO "album_genres" VALUES(111,10,2);
+INSERT INTO "album_genres" VALUES(112,26,1);
+INSERT INTO "album_genres" VALUES(112,32,2);
+INSERT INTO "album_genres" VALUES(113,42,1);
+INSERT INTO "album_genres" VALUES(114,14,1);
+INSERT INTO "album_genres" VALUES(114,1,2);
+INSERT INTO "album_genres" VALUES(115,1,1);
+INSERT INTO "album_genres" VALUES(115,14,2);
+INSERT INTO "album_genres" VALUES(116,30,1);
+INSERT INTO "album_genres" VALUES(116,8,2);
+INSERT INTO "album_genres" VALUES(117,30,1);
+INSERT INTO "album_genres" VALUES(117,1,2);
+INSERT INTO "album_genres" VALUES(118,10,1);
+INSERT INTO "album_genres" VALUES(118,5,2);
+INSERT INTO "album_genres" VALUES(119,1,1);
+INSERT INTO "album_genres" VALUES(120,40,1);
+INSERT INTO "album_genres" VALUES(121,43,1);
+INSERT INTO "album_genres" VALUES(121,44,2);
+INSERT INTO "album_genres" VALUES(122,10,1);
+INSERT INTO "album_genres" VALUES(122,5,2);
+INSERT INTO "album_genres" VALUES(123,2,1);
+INSERT INTO "album_genres" VALUES(123,3,2);
+INSERT INTO "album_genres" VALUES(124,2,1);
+INSERT INTO "album_genres" VALUES(125,45,1);
+INSERT INTO "album_genres" VALUES(125,11,2);
+INSERT INTO "album_genres" VALUES(126,46,1);
+INSERT INTO "album_genres" VALUES(127,29,1);
+INSERT INTO "album_genres" VALUES(127,2,2);
+INSERT INTO "album_genres" VALUES(128,29,1);
+INSERT INTO "album_genres" VALUES(128,2,2);
+INSERT INTO "album_genres" VALUES(129,21,1);
+INSERT INTO "album_genres" VALUES(129,5,2);
+INSERT INTO "album_genres" VALUES(130,11,1);
+INSERT INTO "album_genres" VALUES(131,47,1);
+INSERT INTO "album_genres" VALUES(131,48,2);
+INSERT INTO "album_genres" VALUES(137,11,1);
+INSERT INTO "album_genres" VALUES(137,10,2);
+INSERT INTO "album_genres" VALUES(138,49,1);
+INSERT INTO "album_genres" VALUES(138,50,2);
+INSERT INTO "album_genres" VALUES(139,5,1);
+INSERT INTO "album_genres" VALUES(139,21,2);
+INSERT INTO "album_genres" VALUES(140,5,1);
+INSERT INTO "album_genres" VALUES(141,1,1);
+INSERT INTO "album_genres" VALUES(141,41,2);
+INSERT INTO "album_genres" VALUES(141,51,3);
+INSERT INTO "album_genres" VALUES(142,30,1);
+INSERT INTO "album_genres" VALUES(143,11,1);
+INSERT INTO "album_genres" VALUES(144,27,1);
+INSERT INTO "album_genres" VALUES(144,31,2);
+INSERT INTO "album_genres" VALUES(145,52,1);
+INSERT INTO "album_genres" VALUES(145,53,2);
+INSERT INTO "album_genres" VALUES(145,54,3);
+INSERT INTO "album_genres" VALUES(145,55,4);
+INSERT INTO "album_genres" VALUES(146,27,1);
+INSERT INTO "album_genres" VALUES(146,6,2);
+INSERT INTO "album_genres" VALUES(147,29,1);
+INSERT INTO "album_genres" VALUES(148,12,1);
+INSERT INTO "album_genres" VALUES(148,56,2);
+INSERT INTO "album_genres" VALUES(149,1,1);
+INSERT INTO "album_genres" VALUES(150,56,1);
+INSERT INTO "album_genres" VALUES(150,57,2);
+INSERT INTO "album_genres" VALUES(151,57,1);
+INSERT INTO "album_genres" VALUES(151,17,2);
+INSERT INTO "album_genres" VALUES(151,26,3);
+INSERT INTO "album_genres" VALUES(152,2,1);
+INSERT INTO "album_genres" VALUES(153,41,1);
+INSERT INTO "album_genres" VALUES(154,58,1);
+INSERT INTO "album_genres" VALUES(154,15,2);
+INSERT INTO "album_genres" VALUES(156,59,1);
+INSERT INTO "album_genres" VALUES(156,1,2);
+INSERT INTO "album_genres" VALUES(156,60,3);
+INSERT INTO "album_genres" VALUES(157,8,1);
+INSERT INTO "album_genres" VALUES(157,42,2);
+INSERT INTO "album_genres" VALUES(157,61,3);
+INSERT INTO "album_genres" VALUES(158,3,1);
+INSERT INTO "album_genres" VALUES(158,6,2);
+INSERT INTO "album_genres" VALUES(159,52,1);
+INSERT INTO "album_genres" VALUES(159,6,2);
+INSERT INTO "album_genres" VALUES(159,2,3);
+INSERT INTO "album_genres" VALUES(160,62,1);
+INSERT INTO "album_genres" VALUES(161,46,1);
+INSERT INTO "album_genres" VALUES(162,38,1);
+INSERT INTO "album_genres" VALUES(162,62,2);
+INSERT INTO "album_genres" VALUES(163,62,1);
+INSERT INTO "album_genres" VALUES(163,37,2);
+INSERT INTO "album_genres" VALUES(164,63,1);
+INSERT INTO "album_genres" VALUES(164,64,2);
+INSERT INTO "album_genres" VALUES(165,65,1);
+INSERT INTO "album_genres" VALUES(166,1,1);
+INSERT INTO "album_genres" VALUES(166,2,2);
+INSERT INTO "album_genres" VALUES(167,66,1);
+INSERT INTO "album_genres" VALUES(167,67,2);
+INSERT INTO "album_genres" VALUES(167,68,3);
+INSERT INTO "album_genres" VALUES(168,6,1);
+INSERT INTO "album_genres" VALUES(168,2,2);
+INSERT INTO "album_genres" VALUES(168,69,3);
+INSERT INTO "album_genres" VALUES(168,1,4);
+INSERT INTO "album_genres" VALUES(169,70,1);
+INSERT INTO "album_genres" VALUES(169,6,2);
+INSERT INTO "album_genres" VALUES(169,2,3);
+INSERT INTO "album_genres" VALUES(170,71,1);
+INSERT INTO "album_genres" VALUES(171,41,1);
+INSERT INTO "album_genres" VALUES(171,72,2);
+INSERT INTO "album_genres" VALUES(172,73,1);
+INSERT INTO "album_genres" VALUES(172,24,2);
+INSERT INTO "album_genres" VALUES(174,1,1);
+INSERT INTO "album_genres" VALUES(174,2,2);
+INSERT INTO "album_genres" VALUES(175,74,1);
+INSERT INTO "album_genres" VALUES(176,41,1);
+INSERT INTO "album_genres" VALUES(177,2,1);
+INSERT INTO "album_genres" VALUES(178,75,1);
+INSERT INTO "album_genres" VALUES(178,76,2);
+INSERT INTO "album_genres" VALUES(179,19,1);
+INSERT INTO "album_genres" VALUES(180,77,1);
+INSERT INTO "album_genres" VALUES(181,5,1);
+INSERT INTO "album_genres" VALUES(181,10,2);
+INSERT INTO "album_genres" VALUES(181,78,3);
+INSERT INTO "album_genres" VALUES(181,13,4);
+INSERT INTO "album_genres" VALUES(182,79,1);
+INSERT INTO "album_genres" VALUES(182,80,2);
+INSERT INTO "album_genres" VALUES(183,37,1);
+INSERT INTO "album_genres" VALUES(184,41,1);
+INSERT INTO "album_genres" VALUES(185,6,1);
+INSERT INTO "album_genres" VALUES(186,28,1);
+INSERT INTO "album_genres" VALUES(186,6,2);
+INSERT INTO "album_genres" VALUES(187,40,1);
+INSERT INTO "album_genres" VALUES(188,81,1);
+INSERT INTO "album_genres" VALUES(188,76,2);
+INSERT INTO "album_genres" VALUES(189,37,1);
+INSERT INTO "album_genres" VALUES(190,27,1);
+INSERT INTO "album_genres" VALUES(192,27,1);
+INSERT INTO "album_genres" VALUES(193,1,1);
+INSERT INTO "album_genres" VALUES(193,2,2);
+INSERT INTO "album_genres" VALUES(195,8,1);
+INSERT INTO "album_genres" VALUES(196,55,1);
+INSERT INTO "album_genres" VALUES(197,5,1);
+INSERT INTO "album_genres" VALUES(197,6,2);
+INSERT INTO "album_genres" VALUES(199,46,1);
+INSERT INTO "album_genres" VALUES(200,2,1);
+INSERT INTO "album_genres" VALUES(201,75,1);
+INSERT INTO "album_genres" VALUES(201,38,2);
+INSERT INTO "album_genres" VALUES(201,82,3);
+INSERT INTO "album_genres" VALUES(201,37,4);
+INSERT INTO "album_genres" VALUES(203,24,1);
+INSERT INTO "album_genres" VALUES(203,52,2);
+INSERT INTO "album_genres" VALUES(203,5,3);
+INSERT INTO "album_genres" VALUES(205,5,1);
+INSERT INTO "album_genres" VALUES(205,49,2);
+INSERT INTO "album_genres" VALUES(205,21,3);
+INSERT INTO "album_genres" VALUES(205,12,4);
+INSERT INTO "album_genres" VALUES(206,10,1);
+INSERT INTO "album_genres" VALUES(206,58,2);
+INSERT INTO "album_genres" VALUES(206,39,3);
+INSERT INTO "album_genres" VALUES(206,8,4);
+INSERT INTO "album_genres" VALUES(207,12,1);
+INSERT INTO "album_genres" VALUES(208,83,1);
+INSERT INTO "album_genres" VALUES(209,84,1);
+INSERT INTO "album_genres" VALUES(209,85,2);
+INSERT INTO "album_genres" VALUES(209,86,3);
+INSERT INTO "album_genres" VALUES(209,44,4);
+INSERT INTO "album_genres" VALUES(210,10,1);
+INSERT INTO "album_genres" VALUES(211,1,1);
+INSERT INTO "album_genres" VALUES(214,31,1);
+INSERT INTO "album_genres" VALUES(215,31,1);
+INSERT INTO "album_genres" VALUES(216,31,1);
+INSERT INTO "album_genres" VALUES(217,42,1);
+INSERT INTO "album_genres" VALUES(217,2,2);
+INSERT INTO "album_genres" VALUES(217,6,3);
+INSERT INTO "album_genres" VALUES(217,5,4);
+INSERT INTO "album_genres" VALUES(218,87,1);
+INSERT INTO "album_genres" VALUES(218,88,2);
+INSERT INTO "album_genres" VALUES(218,78,3);
+INSERT INTO "album_genres" VALUES(219,2,1);
+INSERT INTO "album_genres" VALUES(219,42,2);
+INSERT INTO "album_genres" VALUES(219,89,3);
+INSERT INTO "album_genres" VALUES(220,46,1);
+INSERT INTO "album_genres" VALUES(221,90,1);
+INSERT INTO "album_genres" VALUES(221,91,2);
+INSERT INTO "album_genres" VALUES(222,46,1);
+INSERT INTO "album_genres" VALUES(223,53,1);
+INSERT INTO "album_genres" VALUES(223,80,2);
+INSERT INTO "album_genres" VALUES(224,7,1);
+INSERT INTO "album_genres" VALUES(224,89,2);
+INSERT INTO "album_genres" VALUES(224,16,3);
+INSERT INTO "album_genres" VALUES(225,39,1);
+INSERT INTO "album_genres" VALUES(225,6,2);
+INSERT INTO "album_genres" VALUES(226,1,1);
+INSERT INTO "album_genres" VALUES(226,2,2);
+INSERT INTO "album_genres" VALUES(226,6,3);
+INSERT INTO "album_genres" VALUES(227,62,1);
+INSERT INTO "album_genres" VALUES(227,92,2);
+INSERT INTO "album_genres" VALUES(228,5,1);
+INSERT INTO "album_genres" VALUES(228,1,2);
+INSERT INTO "album_genres" VALUES(229,93,1);
+INSERT INTO "album_genres" VALUES(229,2,2);
+INSERT INTO "album_genres" VALUES(230,2,1);
+INSERT INTO "album_genres" VALUES(230,94,2);
+INSERT INTO "album_genres" VALUES(231,95,1);
+INSERT INTO "album_genres" VALUES(231,14,2);
+INSERT INTO "album_genres" VALUES(232,5,1);
+INSERT INTO "album_genres" VALUES(232,1,2);
+INSERT INTO "album_genres" VALUES(233,21,1);
+INSERT INTO "album_genres" VALUES(233,20,2);
+INSERT INTO "album_genres" VALUES(234,62,1);
+INSERT INTO "album_genres" VALUES(235,5,1);
+INSERT INTO "album_genres" VALUES(235,1,2);
+INSERT INTO "album_genres" VALUES(236,96,1);
+INSERT INTO "album_genres" VALUES(237,11,1);
+INSERT INTO "album_genres" VALUES(237,88,2);
+INSERT INTO "album_genres" VALUES(238,6,1);
+INSERT INTO "album_genres" VALUES(238,1,2);
+INSERT INTO "album_genres" VALUES(239,74,1);
+INSERT INTO "album_genres" VALUES(240,45,1);
+INSERT INTO "album_genres" VALUES(241,75,1);
+INSERT INTO "album_genres" VALUES(241,93,2);
+INSERT INTO "album_genres" VALUES(242,27,1);
+INSERT INTO "album_genres" VALUES(242,31,2);
+INSERT INTO "album_genres" VALUES(243,97,1);
+INSERT INTO "album_genres" VALUES(244,97,1);
+INSERT INTO "album_genres" VALUES(244,24,2);
+INSERT INTO "album_genres" VALUES(245,40,1);
+INSERT INTO "album_genres" VALUES(246,40,1);
+INSERT INTO "album_genres" VALUES(247,2,1);
+INSERT INTO "album_genres" VALUES(248,2,1);
+INSERT INTO "album_genres" VALUES(249,5,1);
+INSERT INTO "album_genres" VALUES(249,98,2);
+INSERT INTO "album_genres" VALUES(249,1,3);
+INSERT INTO "album_genres" VALUES(249,99,4);
+INSERT INTO "album_genres" VALUES(250,100,1);
+INSERT INTO "album_genres" VALUES(250,101,2);
+INSERT INTO "album_genres" VALUES(251,2,1);
+INSERT INTO "album_genres" VALUES(252,5,1);
+INSERT INTO "album_genres" VALUES(252,6,2);
+INSERT INTO "album_genres" VALUES(252,1,3);
+INSERT INTO "album_genres" VALUES(253,6,1);
+INSERT INTO "album_genres" VALUES(253,27,2);
+INSERT INTO "album_genres" VALUES(254,6,1);
+INSERT INTO "album_genres" VALUES(254,27,2);
+INSERT INTO "album_genres" VALUES(255,2,1);
+INSERT INTO "album_genres" VALUES(255,40,2);
+INSERT INTO "album_genres" VALUES(256,6,1);
+INSERT INTO "album_genres" VALUES(256,27,2);
+INSERT INTO "album_genres" VALUES(257,40,1);
+INSERT INTO "album_genres" VALUES(257,26,2);
+INSERT INTO "album_genres" VALUES(258,40,1);
+INSERT INTO "album_genres" VALUES(258,26,2);
+INSERT INTO "album_genres" VALUES(259,40,1);
+INSERT INTO "album_genres" VALUES(259,26,2);
+INSERT INTO "album_genres" VALUES(260,2,1);
+INSERT INTO "album_genres" VALUES(261,61,1);
+INSERT INTO "album_genres" VALUES(261,5,2);
+INSERT INTO "album_genres" VALUES(262,52,1);
+INSERT INTO "album_genres" VALUES(263,102,1);
+INSERT INTO "album_genres" VALUES(263,101,2);
+INSERT INTO "album_genres" VALUES(263,68,3);
+INSERT INTO "album_genres" VALUES(264,41,1);
+INSERT INTO "album_genres" VALUES(266,40,1);
+INSERT INTO "album_genres" VALUES(267,2,1);
+INSERT INTO "album_genres" VALUES(267,7,2);
+INSERT INTO "album_genres" VALUES(268,42,1);
+INSERT INTO "album_genres" VALUES(268,2,2);
+INSERT INTO "album_genres" VALUES(268,7,3);
+INSERT INTO "album_genres" VALUES(268,27,4);
+INSERT INTO "album_genres" VALUES(269,1,1);
+INSERT INTO "album_genres" VALUES(269,59,2);
+INSERT INTO "album_genres" VALUES(269,10,3);
+INSERT INTO "album_genres" VALUES(270,6,1);
+INSERT INTO "album_genres" VALUES(270,29,2);
+INSERT INTO "album_genres" VALUES(271,43,1);
+INSERT INTO "album_genres" VALUES(272,26,1);
+INSERT INTO "album_genres" VALUES(273,42,1);
+INSERT INTO "album_genres" VALUES(274,3,1);
+INSERT INTO "album_genres" VALUES(275,42,1);
+INSERT INTO "album_genres" VALUES(275,27,2);
+INSERT INTO "album_genres" VALUES(276,6,1);
+INSERT INTO "album_genres" VALUES(276,42,2);
+INSERT INTO "album_genres" VALUES(277,6,1);
+INSERT INTO "album_genres" VALUES(277,26,2);
+INSERT INTO "album_genres" VALUES(278,42,1);
+INSERT INTO "album_genres" VALUES(279,42,1);
+INSERT INTO "album_genres" VALUES(279,6,2);
+INSERT INTO "album_genres" VALUES(280,2,1);
+INSERT INTO "album_genres" VALUES(281,2,1);
+INSERT INTO "album_genres" VALUES(282,2,1);
+INSERT INTO "album_genres" VALUES(283,2,1);
+INSERT INTO "album_genres" VALUES(284,2,1);
+INSERT INTO "album_genres" VALUES(285,2,1);
+INSERT INTO "album_genres" VALUES(286,74,1);
+INSERT INTO "album_genres" VALUES(287,42,1);
+INSERT INTO "album_genres" VALUES(288,42,1);
+INSERT INTO "album_genres" VALUES(289,42,1);
+INSERT INTO "album_genres" VALUES(290,42,1);
+INSERT INTO "album_genres" VALUES(291,75,1);
+INSERT INTO "album_genres" VALUES(291,97,2);
+INSERT INTO "album_genres" VALUES(292,75,1);
+INSERT INTO "album_genres" VALUES(292,97,2);
+INSERT INTO "album_genres" VALUES(293,97,1);
+INSERT INTO "album_genres" VALUES(294,26,1);
+INSERT INTO "album_genres" VALUES(294,6,2);
+INSERT INTO "album_genres" VALUES(295,26,1);
+INSERT INTO "album_genres" VALUES(295,6,2);
+INSERT INTO "album_genres" VALUES(296,2,1);
+INSERT INTO "album_genres" VALUES(296,3,2);
+INSERT INTO "album_genres" VALUES(297,1,1);
+INSERT INTO "album_genres" VALUES(298,2,1);
+INSERT INTO "album_genres" VALUES(299,2,1);
+INSERT INTO "album_genres" VALUES(300,1,1);
+INSERT INTO "album_genres" VALUES(301,84,1);
+INSERT INTO "album_genres" VALUES(302,72,1);
+INSERT INTO "album_genres" VALUES(302,41,2);
+INSERT INTO "album_genres" VALUES(303,6,1);
+INSERT INTO "album_genres" VALUES(303,69,2);
+INSERT INTO "album_genres" VALUES(303,70,3);
+INSERT INTO "album_genres" VALUES(304,1,1);
+INSERT INTO "album_genres" VALUES(304,2,2);
+INSERT INTO "album_genres" VALUES(304,6,3);
+INSERT INTO "album_genres" VALUES(305,40,1);
+INSERT INTO "album_genres" VALUES(305,77,2);
+INSERT INTO "album_genres" VALUES(306,42,1);
+INSERT INTO "album_genres" VALUES(307,42,1);
+INSERT INTO "album_genres" VALUES(308,39,1);
+INSERT INTO "album_genres" VALUES(308,27,2);
+INSERT INTO "album_genres" VALUES(309,2,1);
+INSERT INTO "album_genres" VALUES(310,2,1);
+INSERT INTO "album_genres" VALUES(311,29,1);
+INSERT INTO "album_genres" VALUES(312,1,1);
+INSERT INTO "album_genres" VALUES(312,2,2);
+INSERT INTO "album_genres" VALUES(313,46,1);
+INSERT INTO "album_genres" VALUES(314,103,1);
+INSERT INTO "album_genres" VALUES(314,11,2);
+INSERT INTO "album_genres" VALUES(314,10,3);
+INSERT INTO "album_genres" VALUES(315,41,1);
+INSERT INTO "album_genres" VALUES(315,84,2);
+INSERT INTO "album_genres" VALUES(316,61,1);
+INSERT INTO "album_genres" VALUES(316,42,2);
+INSERT INTO "album_genres" VALUES(317,84,1);
+INSERT INTO "album_genres" VALUES(318,74,1);
+INSERT INTO "album_genres" VALUES(319,2,1);
+INSERT INTO "album_genres" VALUES(320,45,1);
+INSERT INTO "album_genres" VALUES(320,43,2);
+INSERT INTO "album_genres" VALUES(321,43,1);
+INSERT INTO "album_genres" VALUES(321,45,2);
+INSERT INTO "album_genres" VALUES(322,75,1);
+INSERT INTO "album_genres" VALUES(322,74,2);
+INSERT INTO "album_genres" VALUES(323,104,1);
+INSERT INTO "album_genres" VALUES(324,37,1);
+INSERT INTO "album_genres" VALUES(325,5,1);
+INSERT INTO "album_genres" VALUES(326,2,1);
+INSERT INTO "album_genres" VALUES(326,17,2);
+INSERT INTO "album_genres" VALUES(327,5,1);
+INSERT INTO "album_genres" VALUES(328,42,1);
+INSERT INTO "album_genres" VALUES(329,48,1);
+INSERT INTO "album_genres" VALUES(331,2,1);
+INSERT INTO "album_genres" VALUES(331,41,2);
+INSERT INTO "album_genres" VALUES(332,43,1);
+INSERT INTO "album_genres" VALUES(332,44,2);
+INSERT INTO "album_genres" VALUES(333,53,1);
+INSERT INTO "album_genres" VALUES(334,28,1);
+INSERT INTO "album_genres" VALUES(334,7,2);
+INSERT INTO "album_genres" VALUES(335,84,1);
+INSERT INTO "album_genres" VALUES(335,45,2);
+INSERT INTO "album_genres" VALUES(335,62,3);
+INSERT INTO "album_genres" VALUES(336,20,1);
+INSERT INTO "album_genres" VALUES(336,8,2);
+INSERT INTO "album_genres" VALUES(336,24,3);
+INSERT INTO "album_genres" VALUES(336,50,4);
+INSERT INTO "album_genres" VALUES(336,61,5);
+INSERT INTO "album_genres" VALUES(337,7,1);
+INSERT INTO "album_genres" VALUES(337,53,2);
+INSERT INTO "album_genres" VALUES(337,16,3);
+INSERT INTO "album_genres" VALUES(337,105,4);
+INSERT INTO "album_genres" VALUES(337,42,5);
+INSERT INTO "album_genres" VALUES(338,83,1);
+INSERT INTO "album_genres" VALUES(338,105,2);
+INSERT INTO "album_genres" VALUES(338,94,3);
+INSERT INTO "album_genres" VALUES(338,39,4);
+INSERT INTO "album_genres" VALUES(339,106,1);
+INSERT INTO "album_genres" VALUES(339,64,2);
+INSERT INTO "album_genres" VALUES(340,44,1);
+INSERT INTO "album_genres" VALUES(340,43,2);
+INSERT INTO "album_genres" VALUES(340,62,3);
+INSERT INTO "album_genres" VALUES(341,107,1);
+INSERT INTO "album_genres" VALUES(341,43,2);
+INSERT INTO "album_genres" VALUES(342,2,1);
+INSERT INTO "album_genres" VALUES(342,108,2);
+INSERT INTO "album_genres" VALUES(343,67,1);
+INSERT INTO "album_genres" VALUES(343,109,2);
+INSERT INTO "album_genres" VALUES(345,110,1);
+INSERT INTO "album_genres" VALUES(345,111,2);
+INSERT INTO "album_genres" VALUES(345,99,3);
+INSERT INTO "album_genres" VALUES(346,39,1);
+INSERT INTO "album_genres" VALUES(346,8,2);
+INSERT INTO "album_genres" VALUES(347,84,1);
+INSERT INTO "album_genres" VALUES(347,62,2);
+INSERT INTO "album_genres" VALUES(348,112,1);
+INSERT INTO "album_genres" VALUES(348,7,2);
+INSERT INTO "album_genres" VALUES(349,99,1);
+INSERT INTO "album_genres" VALUES(349,10,2);
+INSERT INTO "album_genres" VALUES(349,5,3);
+INSERT INTO "album_genres" VALUES(349,31,4);
+INSERT INTO "album_genres" VALUES(350,113,1);
+INSERT INTO "album_genres" VALUES(350,10,2);
+INSERT INTO "album_genres" VALUES(350,114,3);
+INSERT INTO "album_genres" VALUES(350,47,4);
+INSERT INTO "album_genres" VALUES(350,99,5);
+INSERT INTO "album_genres" VALUES(351,2,1);
+INSERT INTO "album_genres" VALUES(351,1,2);
+INSERT INTO "album_genres" VALUES(353,8,1);
+INSERT INTO "album_genres" VALUES(353,20,2);
+INSERT INTO "album_genres" VALUES(353,13,3);
+INSERT INTO "album_genres" VALUES(353,49,4);
+INSERT INTO "album_genres" VALUES(353,61,5);
+INSERT INTO "album_genres" VALUES(354,2,1);
+INSERT INTO "album_genres" VALUES(354,7,2);
+INSERT INTO "album_genres" VALUES(355,12,1);
+INSERT INTO "album_genres" VALUES(356,12,1);
+INSERT INTO "album_genres" VALUES(356,52,2);
+INSERT INTO "album_genres" VALUES(356,47,3);
+INSERT INTO "album_genres" VALUES(357,115,1);
+INSERT INTO "album_genres" VALUES(358,38,1);
+INSERT INTO "album_genres" VALUES(358,75,2);
+INSERT INTO "album_genres" VALUES(358,58,3);
+INSERT INTO "album_genres" VALUES(358,62,4);
+INSERT INTO "album_genres" VALUES(360,26,1);
+INSERT INTO "album_genres" VALUES(360,7,2);
+INSERT INTO "album_genres" VALUES(360,1,3);
+INSERT INTO "album_genres" VALUES(360,116,4);
+INSERT INTO "album_genres" VALUES(360,12,5);
+INSERT INTO "album_genres" VALUES(360,5,6);
+INSERT INTO "album_genres" VALUES(360,29,7);
+INSERT INTO "album_genres" VALUES(361,12,1);
+INSERT INTO "album_genres" VALUES(361,26,2);
+INSERT INTO "album_genres" VALUES(361,42,3);
+INSERT INTO "album_genres" VALUES(361,116,4);
+INSERT INTO "album_genres" VALUES(361,70,5);
+INSERT INTO "album_genres" VALUES(361,117,6);
+INSERT INTO "album_genres" VALUES(361,16,7);
+INSERT INTO "album_genres" VALUES(361,7,8);
+INSERT INTO "album_genres" VALUES(363,118,1);
+INSERT INTO "album_genres" VALUES(363,22,2);
+INSERT INTO "album_genres" VALUES(363,119,3);
+INSERT INTO "album_genres" VALUES(364,1,1);
+INSERT INTO "album_genres" VALUES(365,10,1);
+INSERT INTO "album_genres" VALUES(365,120,2);
+INSERT INTO "album_genres" VALUES(366,26,1);
+INSERT INTO "album_genres" VALUES(366,116,2);
+INSERT INTO "album_genres" VALUES(366,94,3);
+INSERT INTO "album_genres" VALUES(366,12,4);
+INSERT INTO "album_genres" VALUES(367,47,1);
+INSERT INTO "album_genres" VALUES(369,77,1);
+INSERT INTO "album_genres" VALUES(370,8,1);
+INSERT INTO "album_genres" VALUES(370,50,2);
+INSERT INTO "album_genres" VALUES(370,61,3);
+INSERT INTO "album_genres" VALUES(371,8,1);
+INSERT INTO "album_genres" VALUES(371,50,2);
+INSERT INTO "album_genres" VALUES(371,58,3);
+INSERT INTO "album_genres" VALUES(371,24,4);
+INSERT INTO "album_genres" VALUES(372,42,1);
+INSERT INTO "album_genres" VALUES(373,1,1);
+INSERT INTO "album_genres" VALUES(373,5,2);
+INSERT INTO "album_genres" VALUES(374,5,1);
+INSERT INTO "album_genres" VALUES(375,24,1);
+INSERT INTO "album_genres" VALUES(375,52,2);
+INSERT INTO "album_genres" VALUES(375,13,3);
+INSERT INTO "album_genres" VALUES(376,5,1);
+INSERT INTO "album_genres" VALUES(376,53,2);
+INSERT INTO "album_genres" VALUES(377,22,1);
+INSERT INTO "album_genres" VALUES(377,118,2);
+INSERT INTO "album_genres" VALUES(377,106,3);
+INSERT INTO "album_genres" VALUES(378,121,1);
+INSERT INTO "album_genres" VALUES(378,78,2);
+INSERT INTO "album_genres" VALUES(378,106,3);
+INSERT INTO "album_genres" VALUES(379,100,1);
+INSERT INTO "album_genres" VALUES(379,122,2);
+INSERT INTO "album_genres" VALUES(379,123,3);
+INSERT INTO "album_genres" VALUES(379,124,4);
+INSERT INTO "album_genres" VALUES(379,125,5);
+INSERT INTO "album_genres" VALUES(380,8,1);
+INSERT INTO "album_genres" VALUES(380,27,2);
+INSERT INTO "album_genres" VALUES(380,126,3);
+INSERT INTO "album_genres" VALUES(380,31,4);
+INSERT INTO "album_genres" VALUES(380,104,5);
+INSERT INTO "album_genres" VALUES(381,127,1);
+INSERT INTO "album_genres" VALUES(381,95,2);
+INSERT INTO "album_genres" VALUES(382,8,1);
+INSERT INTO "album_genres" VALUES(382,128,2);
+INSERT INTO "album_genres" VALUES(382,129,3);
+INSERT INTO "album_genres" VALUES(382,10,4);
+INSERT INTO "album_genres" VALUES(383,104,1);
+INSERT INTO "album_genres" VALUES(383,6,2);
+INSERT INTO "album_genres" VALUES(383,89,3);
+INSERT INTO "album_genres" VALUES(383,27,4);
+INSERT INTO "album_genres" VALUES(383,50,5);
+INSERT INTO "album_genres" VALUES(383,10,6);
+INSERT INTO "album_genres" VALUES(384,89,1);
+INSERT INTO "album_genres" VALUES(384,8,2);
+INSERT INTO "album_genres" VALUES(384,54,3);
+INSERT INTO "album_genres" VALUES(384,53,4);
+INSERT INTO "album_genres" VALUES(385,104,1);
+INSERT INTO "album_genres" VALUES(385,50,2);
+INSERT INTO "album_genres" VALUES(385,89,3);
+INSERT INTO "album_genres" VALUES(385,6,4);
+INSERT INTO "album_genres" VALUES(385,130,5);
+INSERT INTO "album_genres" VALUES(386,104,1);
+INSERT INTO "album_genres" VALUES(386,10,2);
+INSERT INTO "album_genres" VALUES(386,89,3);
+INSERT INTO "album_genres" VALUES(386,6,4);
+INSERT INTO "album_genres" VALUES(386,13,5);
+INSERT INTO "album_genres" VALUES(386,131,6);
+INSERT INTO "album_genres" VALUES(386,58,7);
+INSERT INTO "album_genres" VALUES(387,5,1);
+INSERT INTO "album_genres" VALUES(387,61,2);
+INSERT INTO "album_genres" VALUES(387,24,3);
+INSERT INTO "album_genres" VALUES(389,1,1);
+INSERT INTO "album_genres" VALUES(390,26,1);
+INSERT INTO "album_genres" VALUES(391,109,1);
+INSERT INTO "album_genres" VALUES(392,26,1);
+INSERT INTO "album_genres" VALUES(393,101,1);
+INSERT INTO "album_genres" VALUES(393,68,2);
+INSERT INTO "album_genres" VALUES(394,49,1);
+INSERT INTO "album_genres" VALUES(394,12,2);
+INSERT INTO "album_genres" VALUES(395,42,1);
+INSERT INTO "album_genres" VALUES(395,6,2);
+INSERT INTO "album_genres" VALUES(395,39,3);
+INSERT INTO "album_genres" VALUES(396,1,1);
+INSERT INTO "album_genres" VALUES(396,6,2);
+INSERT INTO "album_genres" VALUES(397,28,1);
+INSERT INTO "album_genres" VALUES(397,6,2);
+INSERT INTO "album_genres" VALUES(397,7,3);
+INSERT INTO "album_genres" VALUES(398,61,1);
+INSERT INTO "album_genres" VALUES(398,52,2);
+INSERT INTO "album_genres" VALUES(398,24,3);
+INSERT INTO "album_genres" VALUES(398,132,4);
+INSERT INTO "album_genres" VALUES(399,37,1);
+INSERT INTO "album_genres" VALUES(399,133,2);
+INSERT INTO "album_genres" VALUES(399,62,3);
+INSERT INTO "album_genres" VALUES(400,93,1);
+INSERT INTO "album_genres" VALUES(400,29,2);
+INSERT INTO "album_genres" VALUES(400,134,3);
+INSERT INTO "album_genres" VALUES(401,95,1);
+INSERT INTO "album_genres" VALUES(401,1,2);
+INSERT INTO "album_genres" VALUES(401,135,3);
+INSERT INTO "album_genres" VALUES(402,10,1);
+INSERT INTO "album_genres" VALUES(403,61,1);
+INSERT INTO "album_genres" VALUES(403,42,2);
+INSERT INTO "album_genres" VALUES(404,26,1);
+INSERT INTO "album_genres" VALUES(404,57,2);
+INSERT INTO "album_genres" VALUES(405,2,1);
+INSERT INTO "album_genres" VALUES(406,58,1);
+INSERT INTO "album_genres" VALUES(407,5,1);
+INSERT INTO "album_genres" VALUES(407,1,2);
+INSERT INTO "album_genres" VALUES(408,6,1);
+INSERT INTO "album_genres" VALUES(408,42,2);
+INSERT INTO "album_genres" VALUES(408,5,3);
+INSERT INTO "album_genres" VALUES(408,29,4);
+INSERT INTO "album_genres" VALUES(409,8,1);
+INSERT INTO "album_genres" VALUES(409,136,2);
+INSERT INTO "album_genres" VALUES(409,42,3);
+INSERT INTO "album_genres" VALUES(410,6,1);
+INSERT INTO "album_genres" VALUES(410,70,2);
+INSERT INTO "album_genres" VALUES(410,28,3);
+INSERT INTO "album_genres" VALUES(411,10,1);
+INSERT INTO "album_genres" VALUES(411,60,2);
+INSERT INTO "album_genres" VALUES(412,1,1);
+INSERT INTO "album_genres" VALUES(412,120,2);
+INSERT INTO "album_genres" VALUES(412,137,3);
+INSERT INTO "album_genres" VALUES(413,74,1);
+INSERT INTO "album_genres" VALUES(415,12,1);
+INSERT INTO "album_genres" VALUES(415,49,2);
+INSERT INTO "album_genres" VALUES(415,131,3);
+CREATE TABLE album_styles (
+    album_id INTEGER NOT NULL,
+    style_id INTEGER NOT NULL,
+    style_order INTEGER DEFAULT 1,
+    PRIMARY KEY (album_id, style_id),
+    FOREIGN KEY (album_id) REFERENCES albums(album_id),
+    FOREIGN KEY (style_id) REFERENCES styles(style_id)
+);
+INSERT INTO "album_styles" VALUES(1,1,1);
+INSERT INTO "album_styles" VALUES(2,2,1);
+INSERT INTO "album_styles" VALUES(3,3,1);
+INSERT INTO "album_styles" VALUES(4,2,1);
+INSERT INTO "album_styles" VALUES(5,1,1);
+INSERT INTO "album_styles" VALUES(6,4,1);
+INSERT INTO "album_styles" VALUES(6,2,2);
+INSERT INTO "album_styles" VALUES(6,1,3);
+INSERT INTO "album_styles" VALUES(7,2,1);
+INSERT INTO "album_styles" VALUES(8,4,1);
+INSERT INTO "album_styles" VALUES(8,3,2);
+INSERT INTO "album_styles" VALUES(8,2,3);
+INSERT INTO "album_styles" VALUES(8,1,4);
+INSERT INTO "album_styles" VALUES(9,2,1);
+INSERT INTO "album_styles" VALUES(10,2,1);
+INSERT INTO "album_styles" VALUES(11,1,1);
+INSERT INTO "album_styles" VALUES(12,5,1);
+INSERT INTO "album_styles" VALUES(13,2,1);
+INSERT INTO "album_styles" VALUES(14,1,1);
+INSERT INTO "album_styles" VALUES(15,1,1);
+INSERT INTO "album_styles" VALUES(15,6,2);
+INSERT INTO "album_styles" VALUES(15,2,3);
+INSERT INTO "album_styles" VALUES(16,1,1);
+INSERT INTO "album_styles" VALUES(16,5,2);
+INSERT INTO "album_styles" VALUES(19,1,1);
+INSERT INTO "album_styles" VALUES(20,7,1);
+INSERT INTO "album_styles" VALUES(21,2,1);
+INSERT INTO "album_styles" VALUES(22,2,1);
+INSERT INTO "album_styles" VALUES(22,1,2);
+INSERT INTO "album_styles" VALUES(23,1,1);
+INSERT INTO "album_styles" VALUES(23,8,2);
+INSERT INTO "album_styles" VALUES(24,1,1);
+INSERT INTO "album_styles" VALUES(27,2,1);
+INSERT INTO "album_styles" VALUES(29,1,1);
+INSERT INTO "album_styles" VALUES(31,1,1);
+INSERT INTO "album_styles" VALUES(31,9,2);
+INSERT INTO "album_styles" VALUES(42,1,1);
+INSERT INTO "album_styles" VALUES(45,1,1);
+INSERT INTO "album_styles" VALUES(46,2,1);
+INSERT INTO "album_styles" VALUES(46,1,2);
+INSERT INTO "album_styles" VALUES(47,4,1);
+INSERT INTO "album_styles" VALUES(47,2,2);
+INSERT INTO "album_styles" VALUES(51,3,1);
+INSERT INTO "album_styles" VALUES(52,1,1);
+INSERT INTO "album_styles" VALUES(52,9,2);
+INSERT INTO "album_styles" VALUES(55,3,1);
+INSERT INTO "album_styles" VALUES(72,1,1);
+INSERT INTO "album_styles" VALUES(81,1,1);
+INSERT INTO "album_styles" VALUES(84,2,1);
+INSERT INTO "album_styles" VALUES(84,1,2);
+INSERT INTO "album_styles" VALUES(85,1,1);
+INSERT INTO "album_styles" VALUES(86,1,1);
+INSERT INTO "album_styles" VALUES(86,3,2);
+INSERT INTO "album_styles" VALUES(89,1,1);
+INSERT INTO "album_styles" VALUES(95,2,1);
+INSERT INTO "album_styles" VALUES(102,1,1);
+INSERT INTO "album_styles" VALUES(103,2,1);
+INSERT INTO "album_styles" VALUES(104,10,1);
+INSERT INTO "album_styles" VALUES(106,8,1);
+INSERT INTO "album_styles" VALUES(107,1,1);
+INSERT INTO "album_styles" VALUES(107,2,2);
+INSERT INTO "album_styles" VALUES(108,3,1);
+INSERT INTO "album_styles" VALUES(108,2,2);
+INSERT INTO "album_styles" VALUES(109,1,1);
+INSERT INTO "album_styles" VALUES(110,1,1);
+INSERT INTO "album_styles" VALUES(111,1,1);
+INSERT INTO "album_styles" VALUES(112,2,1);
+INSERT INTO "album_styles" VALUES(112,1,2);
+INSERT INTO "album_styles" VALUES(113,2,1);
+INSERT INTO "album_styles" VALUES(114,2,1);
+INSERT INTO "album_styles" VALUES(114,1,2);
+INSERT INTO "album_styles" VALUES(115,2,1);
+INSERT INTO "album_styles" VALUES(115,1,2);
+INSERT INTO "album_styles" VALUES(116,1,1);
+INSERT INTO "album_styles" VALUES(117,1,1);
+INSERT INTO "album_styles" VALUES(118,1,1);
+INSERT INTO "album_styles" VALUES(119,1,1);
+INSERT INTO "album_styles" VALUES(120,3,1);
+INSERT INTO "album_styles" VALUES(121,8,1);
+INSERT INTO "album_styles" VALUES(122,1,1);
+INSERT INTO "album_styles" VALUES(123,2,1);
+INSERT INTO "album_styles" VALUES(123,3,2);
+INSERT INTO "album_styles" VALUES(124,2,1);
+INSERT INTO "album_styles" VALUES(125,8,1);
+INSERT INTO "album_styles" VALUES(125,1,2);
+INSERT INTO "album_styles" VALUES(126,8,1);
+INSERT INTO "album_styles" VALUES(127,3,1);
+INSERT INTO "album_styles" VALUES(127,2,2);
+INSERT INTO "album_styles" VALUES(128,3,1);
+INSERT INTO "album_styles" VALUES(128,2,2);
+INSERT INTO "album_styles" VALUES(129,1,1);
+INSERT INTO "album_styles" VALUES(130,1,1);
+INSERT INTO "album_styles" VALUES(131,3,1);
+INSERT INTO "album_styles" VALUES(137,1,1);
+INSERT INTO "album_styles" VALUES(138,1,1);
+INSERT INTO "album_styles" VALUES(139,1,1);
+INSERT INTO "album_styles" VALUES(140,1,1);
+INSERT INTO "album_styles" VALUES(141,2,1);
+INSERT INTO "album_styles" VALUES(141,1,2);
+INSERT INTO "album_styles" VALUES(141,8,3);
+INSERT INTO "album_styles" VALUES(142,11,1);
+INSERT INTO "album_styles" VALUES(143,1,1);
+INSERT INTO "album_styles" VALUES(144,3,1);
+INSERT INTO "album_styles" VALUES(144,1,2);
+INSERT INTO "album_styles" VALUES(145,1,1);
+INSERT INTO "album_styles" VALUES(145,5,2);
+INSERT INTO "album_styles" VALUES(146,3,1);
+INSERT INTO "album_styles" VALUES(147,3,1);
+INSERT INTO "album_styles" VALUES(148,1,1);
+INSERT INTO "album_styles" VALUES(148,2,2);
+INSERT INTO "album_styles" VALUES(149,1,1);
+INSERT INTO "album_styles" VALUES(150,2,1);
+INSERT INTO "album_styles" VALUES(150,12,2);
+INSERT INTO "album_styles" VALUES(151,12,1);
+INSERT INTO "album_styles" VALUES(151,2,2);
+INSERT INTO "album_styles" VALUES(152,2,1);
+INSERT INTO "album_styles" VALUES(153,1,1);
+INSERT INTO "album_styles" VALUES(154,1,1);
+INSERT INTO "album_styles" VALUES(154,5,2);
+INSERT INTO "album_styles" VALUES(156,1,1);
+INSERT INTO "album_styles" VALUES(157,1,1);
+INSERT INTO "album_styles" VALUES(158,3,1);
+INSERT INTO "album_styles" VALUES(158,1,2);
+INSERT INTO "album_styles" VALUES(159,1,1);
+INSERT INTO "album_styles" VALUES(159,2,2);
+INSERT INTO "album_styles" VALUES(160,8,1);
+INSERT INTO "album_styles" VALUES(161,8,1);
+INSERT INTO "album_styles" VALUES(162,8,1);
+INSERT INTO "album_styles" VALUES(163,8,1);
+INSERT INTO "album_styles" VALUES(164,8,1);
+INSERT INTO "album_styles" VALUES(165,8,1);
+INSERT INTO "album_styles" VALUES(166,1,1);
+INSERT INTO "album_styles" VALUES(166,2,2);
+INSERT INTO "album_styles" VALUES(167,13,1);
+INSERT INTO "album_styles" VALUES(168,4,1);
+INSERT INTO "album_styles" VALUES(168,2,2);
+INSERT INTO "album_styles" VALUES(168,1,3);
+INSERT INTO "album_styles" VALUES(169,2,1);
+INSERT INTO "album_styles" VALUES(169,4,2);
+INSERT INTO "album_styles" VALUES(170,2,1);
+INSERT INTO "album_styles" VALUES(171,1,1);
+INSERT INTO "album_styles" VALUES(171,8,2);
+INSERT INTO "album_styles" VALUES(172,9,1);
+INSERT INTO "album_styles" VALUES(174,2,1);
+INSERT INTO "album_styles" VALUES(174,1,2);
+INSERT INTO "album_styles" VALUES(175,8,1);
+INSERT INTO "album_styles" VALUES(176,1,1);
+INSERT INTO "album_styles" VALUES(177,2,1);
+INSERT INTO "album_styles" VALUES(178,8,1);
+INSERT INTO "album_styles" VALUES(179,1,1);
+INSERT INTO "album_styles" VALUES(180,1,1);
+INSERT INTO "album_styles" VALUES(181,1,1);
+INSERT INTO "album_styles" VALUES(182,5,1);
+INSERT INTO "album_styles" VALUES(183,8,1);
+INSERT INTO "album_styles" VALUES(184,1,1);
+INSERT INTO "album_styles" VALUES(185,4,1);
+INSERT INTO "album_styles" VALUES(186,3,1);
+INSERT INTO "album_styles" VALUES(188,8,1);
+INSERT INTO "album_styles" VALUES(189,8,1);
+INSERT INTO "album_styles" VALUES(190,3,1);
+INSERT INTO "album_styles" VALUES(192,3,1);
+INSERT INTO "album_styles" VALUES(193,2,1);
+INSERT INTO "album_styles" VALUES(193,1,2);
+INSERT INTO "album_styles" VALUES(195,1,1);
+INSERT INTO "album_styles" VALUES(196,2,1);
+INSERT INTO "album_styles" VALUES(197,1,1);
+INSERT INTO "album_styles" VALUES(199,8,1);
+INSERT INTO "album_styles" VALUES(200,2,1);
+INSERT INTO "album_styles" VALUES(201,8,1);
+INSERT INTO "album_styles" VALUES(203,1,1);
+INSERT INTO "album_styles" VALUES(203,9,2);
+INSERT INTO "album_styles" VALUES(204,9,1);
+INSERT INTO "album_styles" VALUES(204,1,2);
+INSERT INTO "album_styles" VALUES(205,1,1);
+INSERT INTO "album_styles" VALUES(206,1,1);
+INSERT INTO "album_styles" VALUES(206,2,2);
+INSERT INTO "album_styles" VALUES(207,1,1);
+INSERT INTO "album_styles" VALUES(208,2,1);
+INSERT INTO "album_styles" VALUES(209,8,1);
+INSERT INTO "album_styles" VALUES(210,1,1);
+INSERT INTO "album_styles" VALUES(211,1,1);
+INSERT INTO "album_styles" VALUES(214,3,1);
+INSERT INTO "album_styles" VALUES(214,1,2);
+INSERT INTO "album_styles" VALUES(215,3,1);
+INSERT INTO "album_styles" VALUES(215,1,2);
+INSERT INTO "album_styles" VALUES(216,3,1);
+INSERT INTO "album_styles" VALUES(216,1,2);
+INSERT INTO "album_styles" VALUES(217,2,1);
+INSERT INTO "album_styles" VALUES(217,1,2);
+INSERT INTO "album_styles" VALUES(218,1,1);
+INSERT INTO "album_styles" VALUES(219,2,1);
+INSERT INTO "album_styles" VALUES(220,8,1);
+INSERT INTO "album_styles" VALUES(221,14,1);
+INSERT INTO "album_styles" VALUES(222,8,1);
+INSERT INTO "album_styles" VALUES(223,5,1);
+INSERT INTO "album_styles" VALUES(223,2,2);
+INSERT INTO "album_styles" VALUES(224,2,1);
+INSERT INTO "album_styles" VALUES(224,5,2);
+INSERT INTO "album_styles" VALUES(224,15,3);
+INSERT INTO "album_styles" VALUES(225,2,1);
+INSERT INTO "album_styles" VALUES(226,1,1);
+INSERT INTO "album_styles" VALUES(226,2,2);
+INSERT INTO "album_styles" VALUES(227,8,1);
+INSERT INTO "album_styles" VALUES(228,1,1);
+INSERT INTO "album_styles" VALUES(229,16,1);
+INSERT INTO "album_styles" VALUES(229,2,2);
+INSERT INTO "album_styles" VALUES(230,2,1);
+INSERT INTO "album_styles" VALUES(231,2,1);
+INSERT INTO "album_styles" VALUES(232,1,1);
+INSERT INTO "album_styles" VALUES(233,1,1);
+INSERT INTO "album_styles" VALUES(234,8,1);
+INSERT INTO "album_styles" VALUES(235,1,1);
+INSERT INTO "album_styles" VALUES(236,8,1);
+INSERT INTO "album_styles" VALUES(237,1,1);
+INSERT INTO "album_styles" VALUES(238,1,1);
+INSERT INTO "album_styles" VALUES(239,8,1);
+INSERT INTO "album_styles" VALUES(240,8,1);
+INSERT INTO "album_styles" VALUES(241,8,1);
+INSERT INTO "album_styles" VALUES(242,3,1);
+INSERT INTO "album_styles" VALUES(242,1,2);
+INSERT INTO "album_styles" VALUES(243,8,1);
+INSERT INTO "album_styles" VALUES(244,8,1);
+INSERT INTO "album_styles" VALUES(244,9,2);
+INSERT INTO "album_styles" VALUES(245,3,1);
+INSERT INTO "album_styles" VALUES(246,3,1);
+INSERT INTO "album_styles" VALUES(247,2,1);
+INSERT INTO "album_styles" VALUES(248,2,1);
+INSERT INTO "album_styles" VALUES(249,1,1);
+INSERT INTO "album_styles" VALUES(250,13,1);
+INSERT INTO "album_styles" VALUES(251,2,1);
+INSERT INTO "album_styles" VALUES(252,1,1);
+INSERT INTO "album_styles" VALUES(253,3,1);
+INSERT INTO "album_styles" VALUES(254,3,1);
+INSERT INTO "album_styles" VALUES(255,3,1);
+INSERT INTO "album_styles" VALUES(256,3,1);
+INSERT INTO "album_styles" VALUES(257,3,1);
+INSERT INTO "album_styles" VALUES(257,2,2);
+INSERT INTO "album_styles" VALUES(258,3,1);
+INSERT INTO "album_styles" VALUES(258,2,2);
+INSERT INTO "album_styles" VALUES(259,3,1);
+INSERT INTO "album_styles" VALUES(259,2,2);
+INSERT INTO "album_styles" VALUES(260,2,1);
+INSERT INTO "album_styles" VALUES(261,1,1);
+INSERT INTO "album_styles" VALUES(262,1,1);
+INSERT INTO "album_styles" VALUES(263,13,1);
+INSERT INTO "album_styles" VALUES(264,1,1);
+INSERT INTO "album_styles" VALUES(266,3,1);
+INSERT INTO "album_styles" VALUES(267,2,1);
+INSERT INTO "album_styles" VALUES(268,2,1);
+INSERT INTO "album_styles" VALUES(269,1,1);
+INSERT INTO "album_styles" VALUES(270,3,1);
+INSERT INTO "album_styles" VALUES(271,8,1);
+INSERT INTO "album_styles" VALUES(272,2,1);
+INSERT INTO "album_styles" VALUES(273,2,1);
+INSERT INTO "album_styles" VALUES(274,3,1);
+INSERT INTO "album_styles" VALUES(275,2,1);
+INSERT INTO "album_styles" VALUES(275,3,2);
+INSERT INTO "album_styles" VALUES(276,11,1);
+INSERT INTO "album_styles" VALUES(276,2,2);
+INSERT INTO "album_styles" VALUES(277,2,1);
+INSERT INTO "album_styles" VALUES(278,2,1);
+INSERT INTO "album_styles" VALUES(279,11,1);
+INSERT INTO "album_styles" VALUES(279,2,2);
+INSERT INTO "album_styles" VALUES(280,2,1);
+INSERT INTO "album_styles" VALUES(281,2,1);
+INSERT INTO "album_styles" VALUES(282,2,1);
+INSERT INTO "album_styles" VALUES(283,2,1);
+INSERT INTO "album_styles" VALUES(284,2,1);
+INSERT INTO "album_styles" VALUES(285,2,1);
+INSERT INTO "album_styles" VALUES(286,8,1);
+INSERT INTO "album_styles" VALUES(287,2,1);
+INSERT INTO "album_styles" VALUES(288,2,1);
+INSERT INTO "album_styles" VALUES(289,2,1);
+INSERT INTO "album_styles" VALUES(290,2,1);
+INSERT INTO "album_styles" VALUES(291,8,1);
+INSERT INTO "album_styles" VALUES(292,8,1);
+INSERT INTO "album_styles" VALUES(293,8,1);
+INSERT INTO "album_styles" VALUES(294,2,1);
+INSERT INTO "album_styles" VALUES(295,2,1);
+INSERT INTO "album_styles" VALUES(296,2,1);
+INSERT INTO "album_styles" VALUES(296,3,2);
+INSERT INTO "album_styles" VALUES(297,1,1);
+INSERT INTO "album_styles" VALUES(298,2,1);
+INSERT INTO "album_styles" VALUES(299,2,1);
+INSERT INTO "album_styles" VALUES(300,1,1);
+INSERT INTO "album_styles" VALUES(301,8,1);
+INSERT INTO "album_styles" VALUES(302,8,1);
+INSERT INTO "album_styles" VALUES(302,1,2);
+INSERT INTO "album_styles" VALUES(303,4,1);
+INSERT INTO "album_styles" VALUES(303,3,2);
+INSERT INTO "album_styles" VALUES(303,1,3);
+INSERT INTO "album_styles" VALUES(304,1,1);
+INSERT INTO "album_styles" VALUES(304,2,2);
+INSERT INTO "album_styles" VALUES(305,3,1);
+INSERT INTO "album_styles" VALUES(305,1,2);
+INSERT INTO "album_styles" VALUES(306,2,1);
+INSERT INTO "album_styles" VALUES(307,2,1);
+INSERT INTO "album_styles" VALUES(308,2,1);
+INSERT INTO "album_styles" VALUES(309,2,1);
+INSERT INTO "album_styles" VALUES(310,2,1);
+INSERT INTO "album_styles" VALUES(311,3,1);
+INSERT INTO "album_styles" VALUES(312,1,1);
+INSERT INTO "album_styles" VALUES(312,2,2);
+INSERT INTO "album_styles" VALUES(313,8,1);
+INSERT INTO "album_styles" VALUES(314,1,1);
+INSERT INTO "album_styles" VALUES(315,1,1);
+INSERT INTO "album_styles" VALUES(316,1,1);
+INSERT INTO "album_styles" VALUES(316,2,2);
+INSERT INTO "album_styles" VALUES(317,8,1);
+INSERT INTO "album_styles" VALUES(318,8,1);
+INSERT INTO "album_styles" VALUES(319,2,1);
+INSERT INTO "album_styles" VALUES(320,8,1);
+INSERT INTO "album_styles" VALUES(321,8,1);
+INSERT INTO "album_styles" VALUES(322,8,1);
+INSERT INTO "album_styles" VALUES(323,1,1);
+INSERT INTO "album_styles" VALUES(324,8,1);
+INSERT INTO "album_styles" VALUES(325,1,1);
+INSERT INTO "album_styles" VALUES(326,2,1);
+INSERT INTO "album_styles" VALUES(327,1,1);
+INSERT INTO "album_styles" VALUES(328,1,1);
+INSERT INTO "album_styles" VALUES(329,3,1);
+INSERT INTO "album_styles" VALUES(331,2,1);
+INSERT INTO "album_styles" VALUES(331,1,2);
+INSERT INTO "album_styles" VALUES(332,8,1);
+INSERT INTO "album_styles" VALUES(333,2,1);
+INSERT INTO "album_styles" VALUES(334,3,1);
+INSERT INTO "album_styles" VALUES(334,2,2);
+INSERT INTO "album_styles" VALUES(335,8,1);
+INSERT INTO "album_styles" VALUES(335,1,2);
+INSERT INTO "album_styles" VALUES(336,1,1);
+INSERT INTO "album_styles" VALUES(337,2,1);
+INSERT INTO "album_styles" VALUES(337,5,2);
+INSERT INTO "album_styles" VALUES(338,2,1);
+INSERT INTO "album_styles" VALUES(339,8,1);
+INSERT INTO "album_styles" VALUES(340,8,1);
+INSERT INTO "album_styles" VALUES(341,8,1);
+INSERT INTO "album_styles" VALUES(342,2,1);
+INSERT INTO "album_styles" VALUES(343,17,1);
+INSERT INTO "album_styles" VALUES(345,17,1);
+INSERT INTO "album_styles" VALUES(346,2,1);
+INSERT INTO "album_styles" VALUES(346,1,2);
+INSERT INTO "album_styles" VALUES(347,8,1);
+INSERT INTO "album_styles" VALUES(348,2,1);
+INSERT INTO "album_styles" VALUES(349,1,1);
+INSERT INTO "album_styles" VALUES(350,17,1);
+INSERT INTO "album_styles" VALUES(350,1,2);
+INSERT INTO "album_styles" VALUES(350,3,3);
+INSERT INTO "album_styles" VALUES(351,2,1);
+INSERT INTO "album_styles" VALUES(353,1,1);
+INSERT INTO "album_styles" VALUES(354,2,1);
+INSERT INTO "album_styles" VALUES(355,1,1);
+INSERT INTO "album_styles" VALUES(356,1,1);
+INSERT INTO "album_styles" VALUES(356,3,2);
+INSERT INTO "album_styles" VALUES(357,8,1);
+INSERT INTO "album_styles" VALUES(358,8,1);
+INSERT INTO "album_styles" VALUES(360,2,1);
+INSERT INTO "album_styles" VALUES(360,1,2);
+INSERT INTO "album_styles" VALUES(361,2,1);
+INSERT INTO "album_styles" VALUES(363,8,1);
+INSERT INTO "album_styles" VALUES(364,1,1);
+INSERT INTO "album_styles" VALUES(365,1,1);
+INSERT INTO "album_styles" VALUES(366,2,1);
+INSERT INTO "album_styles" VALUES(367,3,1);
+INSERT INTO "album_styles" VALUES(368,2,1);
+INSERT INTO "album_styles" VALUES(369,1,1);
+INSERT INTO "album_styles" VALUES(370,1,1);
+INSERT INTO "album_styles" VALUES(370,2,2);
+INSERT INTO "album_styles" VALUES(371,1,1);
+INSERT INTO "album_styles" VALUES(372,2,1);
+INSERT INTO "album_styles" VALUES(373,1,1);
+INSERT INTO "album_styles" VALUES(374,1,1);
+INSERT INTO "album_styles" VALUES(375,1,1);
+INSERT INTO "album_styles" VALUES(376,1,1);
+INSERT INTO "album_styles" VALUES(376,5,2);
+INSERT INTO "album_styles" VALUES(377,8,1);
+INSERT INTO "album_styles" VALUES(378,8,1);
+INSERT INTO "album_styles" VALUES(379,13,1);
+INSERT INTO "album_styles" VALUES(380,3,1);
+INSERT INTO "album_styles" VALUES(380,1,2);
+INSERT INTO "album_styles" VALUES(381,1,1);
+INSERT INTO "album_styles" VALUES(382,1,1);
+INSERT INTO "album_styles" VALUES(383,1,1);
+INSERT INTO "album_styles" VALUES(384,1,1);
+INSERT INTO "album_styles" VALUES(384,2,2);
+INSERT INTO "album_styles" VALUES(385,1,1);
+INSERT INTO "album_styles" VALUES(386,1,1);
+INSERT INTO "album_styles" VALUES(387,1,1);
+INSERT INTO "album_styles" VALUES(387,2,2);
+INSERT INTO "album_styles" VALUES(387,9,3);
+INSERT INTO "album_styles" VALUES(389,1,1);
+INSERT INTO "album_styles" VALUES(389,2,2);
+INSERT INTO "album_styles" VALUES(390,2,1);
+INSERT INTO "album_styles" VALUES(391,13,1);
+INSERT INTO "album_styles" VALUES(392,2,1);
+INSERT INTO "album_styles" VALUES(393,13,1);
+INSERT INTO "album_styles" VALUES(394,1,1);
+INSERT INTO "album_styles" VALUES(394,2,2);
+INSERT INTO "album_styles" VALUES(395,2,1);
+INSERT INTO "album_styles" VALUES(396,1,1);
+INSERT INTO "album_styles" VALUES(396,2,2);
+INSERT INTO "album_styles" VALUES(396,3,3);
+INSERT INTO "album_styles" VALUES(397,3,1);
+INSERT INTO "album_styles" VALUES(397,2,2);
+INSERT INTO "album_styles" VALUES(397,1,3);
+INSERT INTO "album_styles" VALUES(398,1,1);
+INSERT INTO "album_styles" VALUES(398,2,2);
+INSERT INTO "album_styles" VALUES(398,9,3);
+INSERT INTO "album_styles" VALUES(399,8,1);
+INSERT INTO "album_styles" VALUES(399,3,2);
+INSERT INTO "album_styles" VALUES(400,3,1);
+INSERT INTO "album_styles" VALUES(400,2,2);
+INSERT INTO "album_styles" VALUES(401,1,1);
+INSERT INTO "album_styles" VALUES(401,2,2);
+INSERT INTO "album_styles" VALUES(402,1,1);
+INSERT INTO "album_styles" VALUES(402,2,2);
+INSERT INTO "album_styles" VALUES(403,1,1);
+INSERT INTO "album_styles" VALUES(403,2,2);
+INSERT INTO "album_styles" VALUES(404,2,1);
+INSERT INTO "album_styles" VALUES(404,12,2);
+INSERT INTO "album_styles" VALUES(405,2,1);
+INSERT INTO "album_styles" VALUES(406,1,1);
+INSERT INTO "album_styles" VALUES(407,1,1);
+INSERT INTO "album_styles" VALUES(407,2,2);
+INSERT INTO "album_styles" VALUES(408,1,1);
+INSERT INTO "album_styles" VALUES(408,2,2);
+INSERT INTO "album_styles" VALUES(408,3,3);
+INSERT INTO "album_styles" VALUES(409,1,1);
+INSERT INTO "album_styles" VALUES(409,2,2);
+INSERT INTO "album_styles" VALUES(410,3,1);
+INSERT INTO "album_styles" VALUES(410,2,2);
+INSERT INTO "album_styles" VALUES(411,1,1);
+INSERT INTO "album_styles" VALUES(412,1,1);
+INSERT INTO "album_styles" VALUES(412,2,2);
+INSERT INTO "album_styles" VALUES(413,8,1);
+INSERT INTO "album_styles" VALUES(415,1,1);
+CREATE TABLE "albums" (
+
+                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                        album_name TEXT NOT NULL,
+
+                        artist TEXT NOT NULL,
+
+                        country TEXT,
+
+                        region TEXT,
+
+                        genre TEXT,
+
+                        rating REAL,
+
+                        description TEXT,
+
+                        is_compilation INTEGER DEFAULT 0,
+
+                        first_listen_date TEXT,
+
+                        total_listen_count INTEGER DEFAULT 1,
+
+                        release_company TEXT,
+
+                        cover_image_url TEXT,
+
+                        duration TEXT,
+
+                        composition_score REAL,
+
+                        lyrics_meaning_score REAL,
+
+                        creativity_score REAL,
+
+                        arrangement_score REAL,
+
+                        vocal_performance_score REAL,
+
+                        instrumental_performance_score REAL,
+
+                        sincerity_score REAL,
+
+                        subjective_score REAL,
+
+                        overall_score REAL,
+
+                        release_year TEXT,
+
+                        style TEXT,
+
+                        producer TEXT
+
 , artist_id INTEGER, genre_id INTEGER, style_id INTEGER);
 INSERT INTO "albums" VALUES(1,'海龟先生','海龟先生','中国','大陆','Pop Rock',7.16,NULL,0,'2023-12',4,'摩登天空','covers/1-海龟先生-海龟先生.jpg','36:22:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-12-27','Rock',NULL,237,1,1);
 INSERT INTO "albums" VALUES(2,'马拉美的星期二','吴青峰','中国','台湾','Mandopop',7.42,NULL,0,'2024-01',3,'环球唱片','covers/2-吴青峰-马拉美的星期二.jpg','43:52:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2022-12-30','Pop','吴青峰,陈君豪',181,2,2);
@@ -537,33 +1681,60 @@ INSERT INTO "albums" VALUES(522,'Post Recovery','midwest, post death','',NULL,NU
 INSERT INTO "albums" VALUES(523,'Angel in Plainclothes','Angelo De Augustine','',NULL,NULL,3.44,NULL,0,NULL,3,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'2026',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(524,'Is It Gonna Happen Again?','jody积融','',NULL,NULL,3.51,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'2026',NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(525,'脱轨','谢甜柒','',NULL,NULL,3.4,NULL,0,NULL,1,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0.0,'2026',NULL,NULL,NULL,NULL,NULL);
-CREATE TABLE albums_2024 (
-                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        album_name TEXT NOT NULL,
-                        artist TEXT NOT NULL,
-                        country TEXT,
-                        region TEXT,
-                        genre TEXT,
-                        rating REAL,
-                        description TEXT,
-                        is_compilation INTEGER DEFAULT 0,
-                        first_listen_date TEXT,
-                        total_listen_count INTEGER DEFAULT 1,
-                        release_company TEXT,
-                        cover_image_url TEXT,
-                        duration TEXT,
-                        composition_score REAL,
-                        lyrics_meaning_score REAL,
-                        creativity_score REAL,
-                        arrangement_score REAL,
-                        vocal_performance_score REAL,
-                        instrumental_performance_score REAL,
-                        sincerity_score REAL,
-                        subjective_score REAL,
-                        overall_score REAL,
-                        release_year TEXT,
-                        style TEXT,
-                        producer TEXT
+CREATE TABLE albums_2024 (
+
+                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                        album_name TEXT NOT NULL,
+
+                        artist TEXT NOT NULL,
+
+                        country TEXT,
+
+                        region TEXT,
+
+                        genre TEXT,
+
+                        rating REAL,
+
+                        description TEXT,
+
+                        is_compilation INTEGER DEFAULT 0,
+
+                        first_listen_date TEXT,
+
+                        total_listen_count INTEGER DEFAULT 1,
+
+                        release_company TEXT,
+
+                        cover_image_url TEXT,
+
+                        duration TEXT,
+
+                        composition_score REAL,
+
+                        lyrics_meaning_score REAL,
+
+                        creativity_score REAL,
+
+                        arrangement_score REAL,
+
+                        vocal_performance_score REAL,
+
+                        instrumental_performance_score REAL,
+
+                        sincerity_score REAL,
+
+                        subjective_score REAL,
+
+                        overall_score REAL,
+
+                        release_year TEXT,
+
+                        style TEXT,
+
+                        producer TEXT
+
 );
 INSERT INTO "albums_2024" VALUES(1,'海龟先生','海龟先生','中国','大陆','Pop Rock',7.16,NULL,0,'2023-12',1,'摩登天空','covers/1-海龟先生-海龟先生.jpg','36:22:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-12-27','Rock',NULL);
 INSERT INTO "albums_2024" VALUES(2,'马拉美的星期二','吴青峰','中国','台湾','Mandopop',7.42,NULL,0,'2024-01',2,'环球唱片','covers/2-吴青峰-马拉美的星期二.jpg','43:52:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2022-12-30','Pop','吴青峰,陈君豪');
@@ -808,33 +1979,60 @@ INSERT INTO "albums_2024" VALUES(258,'时光谣','王梵瑞','中国','大陆','
 INSERT INTO "albums_2024" VALUES(259,'等候','王梵瑞','中国','大陆','Folk,Pop',NULL,NULL,0,'2009-01-02',1,'中天门文化传媒','covers/259-王梵瑞-等候.jpg','52:46:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2008-10-19','Folk,Pop',NULL);
 INSERT INTO "albums_2024" VALUES(260,'最美的时光','满江','中国','大陆','Mandopop',NULL,NULL,0,'2015-06-27',1,'上海声像','covers/260-满江-最美的时光.jpg','41:59:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2010-10-05','Pop','满江');
 INSERT INTO "albums_2024" VALUES(261,'Murmur','R.E.M.','美国','佐治亚州','Jangle Pop, Alternative Rock',NULL,NULL,0,'2011-11-08',1,'I.R.S. Records','covers/261-R.E.M.-Murmur.jpg','42:59:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1983-04-12','Rock','Mitch Easter,Don Dixon');
-CREATE TABLE albums_2025 (
-                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        album_name TEXT NOT NULL,
-                        artist TEXT NOT NULL,
-                        country TEXT,
-                        region TEXT,
-                        genre TEXT,
-                        rating REAL,
-                        description TEXT,
-                        is_compilation INTEGER DEFAULT 0,
-                        first_listen_date TEXT,
-                        total_listen_count INTEGER DEFAULT 1,
-                        release_company TEXT,
-                        cover_image_url TEXT,
-                        duration TEXT,
-                        composition_score REAL,
-                        lyrics_meaning_score REAL,
-                        creativity_score REAL,
-                        arrangement_score REAL,
-                        vocal_performance_score REAL,
-                        instrumental_performance_score REAL,
-                        sincerity_score REAL,
-                        subjective_score REAL,
-                        overall_score REAL,
-                        release_year TEXT,
-                        style TEXT,
-                        producer TEXT
+CREATE TABLE albums_2025 (
+
+                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                        album_name TEXT NOT NULL,
+
+                        artist TEXT NOT NULL,
+
+                        country TEXT,
+
+                        region TEXT,
+
+                        genre TEXT,
+
+                        rating REAL,
+
+                        description TEXT,
+
+                        is_compilation INTEGER DEFAULT 0,
+
+                        first_listen_date TEXT,
+
+                        total_listen_count INTEGER DEFAULT 1,
+
+                        release_company TEXT,
+
+                        cover_image_url TEXT,
+
+                        duration TEXT,
+
+                        composition_score REAL,
+
+                        lyrics_meaning_score REAL,
+
+                        creativity_score REAL,
+
+                        arrangement_score REAL,
+
+                        vocal_performance_score REAL,
+
+                        instrumental_performance_score REAL,
+
+                        sincerity_score REAL,
+
+                        subjective_score REAL,
+
+                        overall_score REAL,
+
+                        release_year TEXT,
+
+                        style TEXT,
+
+                        producer TEXT
+
 );
 INSERT INTO "albums_2025" VALUES(6,'神的游戏','张悬','中国','台湾','Singer-Songwriter, Mandopop, Alternative Rock',9.03,NULL,0,'2012-11',2,'索尼音乐','covers/6-张悬-神的游戏.jpg','48:56:00',17.3,8.9,4.1,27.3,8.1,2.0,3.9,27.7,99.3,'2012-08-10','Singer-Songwriter, Pop, Rock','李寿全,焦安溥');
 INSERT INTO "albums_2025" VALUES(8,'我去两千年','朴树','中国','大陆','Singer-Songwriter, Campus Folk,Mandopop, Alternative Rock',8.87,NULL,0,'2011-01',1,'太合麦田','covers/8-朴树-我去两千年.jpg','54:01:00',17.8,8.3,2.0,25.7,7.8,2.0,5.0,29.0,97.6,'1999-01-01','Singer-Songwriter, Folk,Pop, Rock','张亚东');
@@ -1028,33 +2226,60 @@ INSERT INTO "albums_2025" VALUES(411,'Berlin','Lou Reed','美国','纽约','Art 
 INSERT INTO "albums_2025" VALUES(412,'Let It Be','The Beatles','英国','利物浦','Pop Rock, Blues Rock, Roots Rock',NULL,NULL,0,'2017-01-27',1,'Apple','covers/412-The_Beatles-Let_It_Be.jpg','35:10:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1970-05-18','Rock,Pop','Phil Spector');
 INSERT INTO "albums_2025" VALUES(413,'Salvation','Funeral Mist','瑞典','斯德哥尔摩','Black Metal',NULL,NULL,0,'2026-01-27',1,'Norma Evangelium Diaboli','covers/413-Funeral_Mist-Salvation.jpg','65:43:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2003-06-01','Metal','Arioch, Necromorbus');
 INSERT INTO "albums_2025" VALUES(415,'Souvlaki','Slowdive','英国','伯克郡','Dream Pop, Shoegaze, Space Rock Revival',NULL,NULL,0,'2025-11-28',2,'Creation Records','covers/415-Slowdive-Souvlaki.jpg','40:48:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1993-06-01','Rock','Slowdive');
-CREATE TABLE albums_2026 (
-                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        album_name TEXT NOT NULL,
-                        artist TEXT NOT NULL,
-                        country TEXT,
-                        region TEXT,
-                        genre TEXT,
-                        rating REAL,
-                        description TEXT,
-                        is_compilation INTEGER DEFAULT 0,
-                        first_listen_date TEXT,
-                        total_listen_count INTEGER DEFAULT 1,
-                        release_company TEXT,
-                        cover_image_url TEXT,
-                        duration TEXT,
-                        composition_score REAL,
-                        lyrics_meaning_score REAL,
-                        creativity_score REAL,
-                        arrangement_score REAL,
-                        vocal_performance_score REAL,
-                        instrumental_performance_score REAL,
-                        sincerity_score REAL,
-                        subjective_score REAL,
-                        overall_score REAL,
-                        release_year TEXT,
-                        style TEXT,
-                        producer TEXT
+CREATE TABLE albums_2026 (
+
+                        album_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                        album_name TEXT NOT NULL,
+
+                        artist TEXT NOT NULL,
+
+                        country TEXT,
+
+                        region TEXT,
+
+                        genre TEXT,
+
+                        rating REAL,
+
+                        description TEXT,
+
+                        is_compilation INTEGER DEFAULT 0,
+
+                        first_listen_date TEXT,
+
+                        total_listen_count INTEGER DEFAULT 1,
+
+                        release_company TEXT,
+
+                        cover_image_url TEXT,
+
+                        duration TEXT,
+
+                        composition_score REAL,
+
+                        lyrics_meaning_score REAL,
+
+                        creativity_score REAL,
+
+                        arrangement_score REAL,
+
+                        vocal_performance_score REAL,
+
+                        instrumental_performance_score REAL,
+
+                        sincerity_score REAL,
+
+                        subjective_score REAL,
+
+                        overall_score REAL,
+
+                        release_year TEXT,
+
+                        style TEXT,
+
+                        producer TEXT
+
 );
 INSERT INTO "albums_2026" VALUES(1,'时空乐界','张雨生',NULL,NULL,NULL,NULL,NULL,0,'2026-01',3,NULL,'covers/416-张雨生-时空乐界.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums_2026" VALUES(2,'雨生欢禧城','张雨生',NULL,NULL,NULL,NULL,NULL,0,'2026-01',1,NULL,'covers/417-张雨生-雨生欢禧城.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -1528,262 +2753,138 @@ INSERT INTO "genres" VALUES(2,'Mandopop');
 INSERT INTO "genres" VALUES(3,'Campus Folk');
 INSERT INTO "genres" VALUES(4,'新古典主义中国风');
 INSERT INTO "genres" VALUES(5,'Alternative Rock');
-INSERT INTO "genres" VALUES(6,'Singer-Songwriter, Mandopop, Alternative Rock');
-INSERT INTO "genres" VALUES(7,'Singer-Songwriter, Campus Folk,Mandopop, Alternative Rock');
-INSERT INTO "genres" VALUES(8,'Art Pop,Mandopop');
-INSERT INTO "genres" VALUES(9,'Alternative Rock,Indie Rock');
-INSERT INTO "genres" VALUES(10,'French House');
-INSERT INTO "genres" VALUES(11,'Art Rock,Progressive Rock');
-INSERT INTO "genres" VALUES(12,'Dream Pop, Neo-Psychedelia, Progressive Pop');
-INSERT INTO "genres" VALUES(13,'Dream Pop, Downtempo, Ambient Pop');
-INSERT INTO "genres" VALUES(14,'Progressive Rock, Art Rock');
-INSERT INTO "genres" VALUES(15,'Dance-Pop, Disco');
-INSERT INTO "genres" VALUES(16,'Mandopop,Britpop');
-INSERT INTO "genres" VALUES(17,'Noise Rock, Grunge, Alternative Metal');
-INSERT INTO "genres" VALUES(18,'Art Rock, Alternative Rock');
-INSERT INTO "genres" VALUES(19,'Pop Rock, Singer-Songwriter');
-INSERT INTO "genres" VALUES(20,'Gothic Rock,Post-Punk');
-INSERT INTO "genres" VALUES(21,'Alternative Rock,Gothic Rock');
-INSERT INTO "genres" VALUES(22,'Mandopop,Symphonic Rock, Art Pop, Pop Rock');
-INSERT INTO "genres" VALUES(23,'Pop, Singer-Songwriter');
-INSERT INTO "genres" VALUES(24,'Indie Folk');
-INSERT INTO "genres" VALUES(25,'Indie Folk, Singer-Songwriter, Chamber Folk');
-INSERT INTO "genres" VALUES(26,'Alternative Rock, Singer-Songwriter, Pop Rock');
-INSERT INTO "genres" VALUES(27,'Mandopop,Contemporary Folk');
-INSERT INTO "genres" VALUES(28,'Singer-SongWriter,Folk Rock,Alternative Rock');
-INSERT INTO "genres" VALUES(29,'Progressive Pop, Pop Rock, Soft Rock, Art Rock');
-INSERT INTO "genres" VALUES(30,'Indie Rock');
-INSERT INTO "genres" VALUES(31,'Indie Folk, Indie Rock');
-INSERT INTO "genres" VALUES(32,'Art Rock, Progressive Rock');
-INSERT INTO "genres" VALUES(33,'Symphonic Prog,Progressive Rock');
-INSERT INTO "genres" VALUES(34,'Europop, Pop');
+INSERT INTO "genres" VALUES(6,'Singer-Songwriter');
+INSERT INTO "genres" VALUES(7,'Art Pop');
+INSERT INTO "genres" VALUES(8,'Indie Rock');
+INSERT INTO "genres" VALUES(9,'French House');
+INSERT INTO "genres" VALUES(10,'Art Rock');
+INSERT INTO "genres" VALUES(11,'Progressive Rock');
+INSERT INTO "genres" VALUES(12,'Dream Pop');
+INSERT INTO "genres" VALUES(13,'Neo-Psychedelia');
+INSERT INTO "genres" VALUES(14,'Progressive Pop');
+INSERT INTO "genres" VALUES(15,'Downtempo');
+INSERT INTO "genres" VALUES(16,'Ambient Pop');
+INSERT INTO "genres" VALUES(17,'Dance-Pop');
+INSERT INTO "genres" VALUES(18,'Disco');
+INSERT INTO "genres" VALUES(19,'Britpop');
+INSERT INTO "genres" VALUES(20,'Noise Rock');
+INSERT INTO "genres" VALUES(21,'Grunge');
+INSERT INTO "genres" VALUES(22,'Alternative Metal');
+INSERT INTO "genres" VALUES(23,'Gothic Rock');
+INSERT INTO "genres" VALUES(24,'Post-Punk');
+INSERT INTO "genres" VALUES(25,'Symphonic Rock');
+INSERT INTO "genres" VALUES(26,'Pop');
+INSERT INTO "genres" VALUES(27,'Indie Folk');
+INSERT INTO "genres" VALUES(28,'Chamber Folk');
+INSERT INTO "genres" VALUES(29,'Contemporary Folk');
+INSERT INTO "genres" VALUES(30,'Singer-SongWriter');
+INSERT INTO "genres" VALUES(31,'Folk Rock');
+INSERT INTO "genres" VALUES(32,'Soft Rock');
+INSERT INTO "genres" VALUES(33,'Symphonic Prog');
+INSERT INTO "genres" VALUES(34,'Europop');
 INSERT INTO "genres" VALUES(35,'Lounge');
-INSERT INTO "genres" VALUES(36,'Merseybeat, Pop Rock');
-INSERT INTO "genres" VALUES(37,'Melodic Black Metal, Post-Metal');
-INSERT INTO "genres" VALUES(38,'Indie Rock,Chamber Pop');
-INSERT INTO "genres" VALUES(39,'Folk,Pop');
-INSERT INTO "genres" VALUES(40,'Grunge,Alternative Rock');
+INSERT INTO "genres" VALUES(36,'Merseybeat');
+INSERT INTO "genres" VALUES(37,'Melodic Black Metal');
+INSERT INTO "genres" VALUES(38,'Post-Metal');
+INSERT INTO "genres" VALUES(39,'Chamber Pop');
+INSERT INTO "genres" VALUES(40,'Folk');
 INSERT INTO "genres" VALUES(41,'Hard Rock');
-INSERT INTO "genres" VALUES(42,'Alternative Rock,Art Rock');
-INSERT INTO "genres" VALUES(43,'Pop,Soft Rock');
-INSERT INTO "genres" VALUES(44,'Indie Pop');
-INSERT INTO "genres" VALUES(45,'Progressive Pop,Pop Rock');
-INSERT INTO "genres" VALUES(46,'Pop Rock,Progressive Pop');
-INSERT INTO "genres" VALUES(47,'Singer-SongWriter,Indie Rock');
-INSERT INTO "genres" VALUES(48,'Singer-SongWriter,Pop Rock');
-INSERT INTO "genres" VALUES(49,'Art Rock,Alternative Rock');
-INSERT INTO "genres" VALUES(50,'Folk');
-INSERT INTO "genres" VALUES(51,'Melodic Death Metal, Power Metal');
-INSERT INTO "genres" VALUES(52,'Mandopop,Campus Folk');
-INSERT INTO "genres" VALUES(53,'Progressive Metal,Progressive Rock');
-INSERT INTO "genres" VALUES(54,'Thrash Metal');
-INSERT INTO "genres" VALUES(55,'Contemporary Folk,Mandopop');
-INSERT INTO "genres" VALUES(56,'Grunge, Alternative Rock');
-INSERT INTO "genres" VALUES(57,'Progressive Rock');
-INSERT INTO "genres" VALUES(58,'Chinese Folk Music, Avant-Folk');
-INSERT INTO "genres" VALUES(59,'Slacker Rock, Psychedelic Folk, Indie Folk, Noise Pop');
-INSERT INTO "genres" VALUES(60,'Pop Punk, Punk Rock');
-INSERT INTO "genres" VALUES(61,'Alternative Rock,Folk Rock');
-INSERT INTO "genres" VALUES(62,'Progressive Rock,Art Rock');
-INSERT INTO "genres" VALUES(63,'Shoegaze, Noise Pop');
-INSERT INTO "genres" VALUES(64,'Alternative Rock,Grunge');
-INSERT INTO "genres" VALUES(66,'Pop Rock,Hard Rock,Pop Metal');
-INSERT INTO "genres" VALUES(67,'Singer-SongWriter');
-INSERT INTO "genres" VALUES(68,'Indie Folk, Folk Rock');
-INSERT INTO "genres" VALUES(69,'New Wave, Synthpop, Alternative Dance, C-Pop');
-INSERT INTO "genres" VALUES(70,'Indie Folk, Singer-Songwriter');
-INSERT INTO "genres" VALUES(71,'Contemporary Folk');
-INSERT INTO "genres" VALUES(72,'Dream Pop,MandoPop');
-INSERT INTO "genres" VALUES(73,'MandoPop,Contemporary R&B');
-INSERT INTO "genres" VALUES(74,'Contemporary R&B, Dance-Pop, Pop');
-INSERT INTO "genres" VALUES(75,'Post-Rock, Downtempo');
-INSERT INTO "genres" VALUES(76,'Glam Rock,Pop Rock,Rock Opera');
-INSERT INTO "genres" VALUES(77,'Indie Rock, Indie Pop, Jangle Pop');
-INSERT INTO "genres" VALUES(78,'Campus Folk, Singer-Songwriter');
-INSERT INTO "genres" VALUES(79,'New Wave, Singer-Songwriter, Mandopop');
-INSERT INTO "genres" VALUES(80,'Folk Metal');
-INSERT INTO "genres" VALUES(81,'Post-Metal, Folk Metal');
-INSERT INTO "genres" VALUES(82,'Folk Metal, Melodic Black Metal');
-INSERT INTO "genres" VALUES(83,'Stoner Metal, Doom Metal');
-INSERT INTO "genres" VALUES(84,'Technical Death Metal');
-INSERT INTO "genres" VALUES(85,'Pop Rock,Mandopop');
-INSERT INTO "genres" VALUES(86,'Chicago Drill, Trap, Hardcore Hip Hop');
-INSERT INTO "genres" VALUES(87,'Singer-Songwriter, Mandopop, Acoustic Rock, Pop Rock');
-INSERT INTO "genres" VALUES(88,'Folk Pop, Singer-Songwriter, Mandopop');
-INSERT INTO "genres" VALUES(89,'Cantopop');
-INSERT INTO "genres" VALUES(90,'Hard Rock, Glam Metal');
-INSERT INTO "genres" VALUES(91,'Dance-Punk, Post-Punk');
-INSERT INTO "genres" VALUES(92,'Black Metal');
-INSERT INTO "genres" VALUES(93,'Atmospheric Black Metal, Depressive Black Metal');
-INSERT INTO "genres" VALUES(94,'Britpop');
-INSERT INTO "genres" VALUES(95,'Rock');
-INSERT INTO "genres" VALUES(96,'Alternative Rock, Art Rock, Experimental Rock, Neo-Psychedelia');
-INSERT INTO "genres" VALUES(97,'Progressive Electronic, Electronic');
-INSERT INTO "genres" VALUES(98,'Melodic Black Metal');
-INSERT INTO "genres" VALUES(99,'Singer-Songwriter');
-INSERT INTO "genres" VALUES(100,'Chamber Folk, Singer-Songwriter');
-INSERT INTO "genres" VALUES(101,'Atmospheric Black Metal Chinese Folk Music, Depressive Black Metal');
-INSERT INTO "genres" VALUES(103,'C-Pop');
-INSERT INTO "genres" VALUES(104,'Alternative Rock, Singer-Songwriter');
-INSERT INTO "genres" VALUES(105,'Atmospheric Black Metal, Post-Metal, Blackgaze, Melodic Black Metal');
-INSERT INTO "genres" VALUES(106,'Post-Punk, New Wave, Alternative Rock');
-INSERT INTO "genres" VALUES(107,'Alternative Rock,Shoegaze, Grunge,Dream Pop');
-INSERT INTO "genres" VALUES(108,'Art Rock, Post-Rock, Chamber Pop, Indie Rock');
-INSERT INTO "genres" VALUES(109,'Dream Pop');
-INSERT INTO "genres" VALUES(110,'Baroque Pop');
-INSERT INTO "genres" VALUES(111,'Heavy Metal, Visual kei, Speed Metal, Power Metal');
-INSERT INTO "genres" VALUES(112,'Art Rock');
-INSERT INTO "genres" VALUES(113,'Folk Rock');
-INSERT INTO "genres" VALUES(114,'Indie Pop, Mandopop, Singer-Songwriter, Alternative Rock');
-INSERT INTO "genres" VALUES(115,'Krautrock, Psychedelic Rock, Experimental Rock');
-INSERT INTO "genres" VALUES(116,'Mandopop, Indie Pop, Indietronica');
-INSERT INTO "genres" VALUES(117,'MPB,Samba');
-INSERT INTO "genres" VALUES(118,'Synthpop, Electronic');
-INSERT INTO "genres" VALUES(119,'Art Pop, Indietronica, Ambient Pop');
-INSERT INTO "genres" VALUES(120,'Chamber Pop, Singer-Songwriter');
-INSERT INTO "genres" VALUES(121,'Pop Rock, Mandopop, Singer-Songwriter');
-INSERT INTO "genres" VALUES(122,'Folk Metal, Pagan Black Metal');
-INSERT INTO "genres" VALUES(123,'Alternative Rock, Pop Rock');
-INSERT INTO "genres" VALUES(124,'Ambient, Mandopop');
-INSERT INTO "genres" VALUES(125,'Mandopop, Adult Contemporary');
-INSERT INTO "genres" VALUES(126,'Psychedelic Pop, Progressive Pop');
-INSERT INTO "genres" VALUES(127,'Grunge, Noise Rock');
-INSERT INTO "genres" VALUES(128,'Celtic Metal');
-INSERT INTO "genres" VALUES(129,'Progressive Rock, Psychedelic Rock');
-INSERT INTO "genres" VALUES(130,'Singer-Songwriter, Pop Rock');
-INSERT INTO "genres" VALUES(131,'Progressive Metal');
-INSERT INTO "genres" VALUES(132,'Atmospheric Black Metal, Ambient');
-INSERT INTO "genres" VALUES(133,'DSBM');
-INSERT INTO "genres" VALUES(134,'DSBM, Post-Punk');
-INSERT INTO "genres" VALUES(135,'Alternative Rock, Funk Rock, Pop Rock, Rap Rock');
-INSERT INTO "genres" VALUES(136,'Conscious Hip Hop, Boom Bap');
-INSERT INTO "genres" VALUES(137,'Singer-Songwriter, Indie Folk');
-INSERT INTO "genres" VALUES(138,'Mandopop,Folk');
-INSERT INTO "genres" VALUES(139,'Jangle Pop, Alternative Rock');
-INSERT INTO "genres" VALUES(140,'New Wave');
-INSERT INTO "genres" VALUES(141,'East Coast Hip Hop, Boom Bap, Hardcore Hip Hop');
-INSERT INTO "genres" VALUES(142,'Mandopop, Art Pop');
-INSERT INTO "genres" VALUES(143,'Indie Pop, Mandopop, Art Pop, Indie Folk');
-INSERT INTO "genres" VALUES(144,'Pop Rock, Glam Rock, Art Rock');
-INSERT INTO "genres" VALUES(145,'Singer-Songwriter, Contemporary Folk');
-INSERT INTO "genres" VALUES(146,'Melodic Death Metal');
-INSERT INTO "genres" VALUES(147,'Pop');
-INSERT INTO "genres" VALUES(148,'Indie Pop, Indie Folk');
-INSERT INTO "genres" VALUES(149,'Singer-Songwriter, Indie Pop');
-INSERT INTO "genres" VALUES(150,'Singer-Songwriter, Pop');
-INSERT INTO "genres" VALUES(151,'Indie Pop, Singer-Songwriter');
-INSERT INTO "genres" VALUES(152,'Atmospheric Black Metal, DSBM');
-INSERT INTO "genres" VALUES(153,'Heavy Metal');
-INSERT INTO "genres" VALUES(154,'Glam Metal, Hard Rock');
-INSERT INTO "genres" VALUES(155,'Singer-Songwriter, Acoustic Rock, Folk Pop');
-INSERT INTO "genres" VALUES(156,'Folk,Rock');
-INSERT INTO "genres" VALUES(157,'Chamber Pop, Indie Folk');
-INSERT INTO "genres" VALUES(159,'Jazz-Rock, Progressive Rock, Art Rock');
-INSERT INTO "genres" VALUES(160,'Hard Rock, Heavy Metal');
-INSERT INTO "genres" VALUES(161,'Jangle Pop, Indie Pop');
-INSERT INTO "genres" VALUES(162,'Progressive Metal, Melodic Death Metal');
-INSERT INTO "genres" VALUES(163,'Melodic Death Metal, Progressive Metal');
-INSERT INTO "genres" VALUES(164,'Atmospheric Black Metal, Black Metal');
-INSERT INTO "genres" VALUES(165,'Slacker Rock');
-INSERT INTO "genres" VALUES(166,'Mandopop,Dance-Pop');
-INSERT INTO "genres" VALUES(167,'Avant-Folk');
-INSERT INTO "genres" VALUES(168,'Mandopop,Hard Rock');
-INSERT INTO "genres" VALUES(169,'Synthpop');
-INSERT INTO "genres" VALUES(170,'Chamber Folk, Art Pop');
-INSERT INTO "genres" VALUES(171,'Heavy Metal, Progressive Metal, Folk Metal');
-INSERT INTO "genres" VALUES(172,'Noise Rock, Indie Rock, Post-Punk, Noise Pop, Jangle Pop');
-INSERT INTO "genres" VALUES(173,'Art Pop, Synthpop, Ambient Pop, Sophisti-Pop, Indie Pop');
-INSERT INTO "genres" VALUES(174,'Baroque Pop, Sophisti-Pop, Adult Contemporary, Chamber Pop');
-INSERT INTO "genres" VALUES(175,'Avant-Garde Metal, Doom Metal');
-INSERT INTO "genres" VALUES(176,'Power Metal, Melodic Death Metal, Folk Metal');
-INSERT INTO "genres" VALUES(177,'Symphonic Metal, Melodic Death Metal');
-INSERT INTO "genres" VALUES(178,'Mandopop, Acoustic Pop');
-INSERT INTO "genres" VALUES(179,'Trap, Memphis Rap');
-INSERT INTO "genres" VALUES(180,'Hip Hop, Pop Rap, Rap Rock');
-INSERT INTO "genres" VALUES(181,'Chamber Pop, Indie Rock');
-INSERT INTO "genres" VALUES(182,'Heavy Metal, Folk Metal');
-INSERT INTO "genres" VALUES(183,'Live Orchestral Pop, Art Pop');
-INSERT INTO "genres" VALUES(184,'Rap Rock, Art Rock, Alternative Rock, Folk Rock');
-INSERT INTO "genres" VALUES(185,'Experimental Hip Hop, Art Rock, Industrial Hip Hop, Chinese Folk Music, Rap Rock');
-INSERT INTO "genres" VALUES(186,'Mandopop, Pop Rock');
-INSERT INTO "genres" VALUES(187,'Indie Rock, Noise Rock, Neo-Psychedelia, Shoegaze, Jangle Pop');
-INSERT INTO "genres" VALUES(188,'Dream Pop, New Wave, Chinese Folk Music');
-INSERT INTO "genres" VALUES(189,'BlackGaze');
-INSERT INTO "genres" VALUES(190,'Post-Metal, Atmospheric Black Metal, Post-Rock, Folk Metal');
-INSERT INTO "genres" VALUES(191,'Pop, Art Pop, Pop Rock, Trip Hop, Dream Pop, Alternative Rock, Contemporary Folk');
-INSERT INTO "genres" VALUES(192,'Dream Pop, Pop, Indie Pop, Trip Hop, Folk Pop, Ethereal Wave, Ambient Pop, Art Pop');
-INSERT INTO "genres" VALUES(193,'Nu Metal, Alternative Metal, Post-Hardcore');
-INSERT INTO "genres" VALUES(194,'Art Rock, Blues Rock');
-INSERT INTO "genres" VALUES(195,'Pop, Trip Hop, Adult Contemporary, Dream Pop');
-INSERT INTO "genres" VALUES(196,'Chinese Folk Music');
-INSERT INTO "genres" VALUES(197,'Indie Rock, Noise Pop, Jangle Pop');
-INSERT INTO "genres" VALUES(198,'Indie Rock,Noise Pop,Post-Rock,Post-Punk');
-INSERT INTO "genres" VALUES(199,'Pop Rock, Alternative Rock');
-INSERT INTO "genres" VALUES(200,'Post-Punk, New Wave, Neo-Psychedelia');
-INSERT INTO "genres" VALUES(201,'Alternative Rock, Synthpop');
-INSERT INTO "genres" VALUES(202,'Alternative Metal, Nu Metal, Avant-Garde Metal');
-INSERT INTO "genres" VALUES(203,'Funk Metal, Experimental Rock, Avant-Garde Metal');
-INSERT INTO "genres" VALUES(204,'Conscious Hip Hop, Jazz Rap, Neo-Soul, Funk, Poetry');
-INSERT INTO "genres" VALUES(205,'Indie Rock, Indie Folk, Americana, Folk Rock, Slacker Rock');
-INSERT INTO "genres" VALUES(206,'Hypnagogic Pop, Psychedelic Pop');
-INSERT INTO "genres" VALUES(207,'Indie Rock, Power Pop, Garage Rock Revival, Art Rock');
-INSERT INTO "genres" VALUES(208,'Slacker Rock, Singer-Songwriter, Indietronica, Indie Folk, Noise Pop, Art Rock');
-INSERT INTO "genres" VALUES(209,'Indietronica, Indie Rock, Alternative Dance, Synthpop');
-INSERT INTO "genres" VALUES(210,'Slacker Rock, Noise Pop, Indietronica, Singer-Songwriter, Bedroom Pop');
-INSERT INTO "genres" VALUES(211,'Slacker Rock, Art Rock, Indietronica, Singer-Songwriter, Neo-Psychedelia, Space Rock Revival, Post-Rock');
-INSERT INTO "genres" VALUES(212,'Alternative Rock, Jangle Pop, Post-Punk');
-INSERT INTO "genres" VALUES(213,'Memphis Rap');
-INSERT INTO "genres" VALUES(214,'Boom Bap, Hardcore Hip Hop');
-INSERT INTO "genres" VALUES(215,'Shoegaze, Dream Pop');
-INSERT INTO "genres" VALUES(216,'Indie Pop, Singer-Songwriter, Chamber Pop');
-INSERT INTO "genres" VALUES(217,'Chamber Folk, Singer-Songwriter, Art Pop');
-INSERT INTO "genres" VALUES(218,'Jangle Pop, New Wave, Post-Punk, Paisley Underground');
-INSERT INTO "genres" VALUES(219,'Melodic Black Metal, Viking Metal, Folk Metal');
-INSERT INTO "genres" VALUES(220,'Ambient, Contemporary Folk, Ambient Americana');
-INSERT INTO "genres" VALUES(221,'Psychedelic Pop, Pop Rock, Television Music');
-INSERT INTO "genres" VALUES(222,'Pop, Contemporary R&B');
-INSERT INTO "genres" VALUES(223,'Post-Rock');
-INSERT INTO "genres" VALUES(224,'Singer-Songwriter, Indie Pop, Alternative Rock, Contemporary Folk');
-INSERT INTO "genres" VALUES(225,'Indie Rock, Piano Rock, Indie Pop');
-INSERT INTO "genres" VALUES(226,'Singer-Songwriter, Folk Pop, Chamber Folk');
-INSERT INTO "genres" VALUES(227,'Art Rock, Rock Opera');
-INSERT INTO "genres" VALUES(228,'Pop Rock, Blues Rock, Roots Rock');
-INSERT INTO "genres" VALUES(229,'Dream Pop, Shoegaze, Space Rock Revival');
-INSERT INTO "genres" VALUES(230,'Chamber Folk');
-INSERT INTO "genres" VALUES(231,'Piano Rock');
-INSERT INTO "genres" VALUES(233,'Garage Rock');
-INSERT INTO "genres" VALUES(234,'Post-Punk');
-INSERT INTO "genres" VALUES(235,'Chamber Pop');
-INSERT INTO "genres" VALUES(236,'Noise Rock');
-INSERT INTO "genres" VALUES(237,'Blackgaze');
-INSERT INTO "genres" VALUES(238,'Atmospheric Black Metal');
-INSERT INTO "genres" VALUES(239,'Alternative R&B');
-INSERT INTO "genres" VALUES(240,'Experimental Hip Hop');
-INSERT INTO "genres" VALUES(241,'Symphonic Black Metal');
-INSERT INTO "genres" VALUES(242,'Neo-Psychedelia');
-INSERT INTO "genres" VALUES(243,'Art Pop');
-INSERT INTO "genres" VALUES(244,'Alt-Country');
-INSERT INTO "genres" VALUES(245,'Technical Thrash Metal');
-INSERT INTO "genres" VALUES(246,'Electropop');
-INSERT INTO "genres" VALUES(247,'Alt-Pop');
-INSERT INTO "genres" VALUES(248,'Afoxé');
-INSERT INTO "genres" VALUES(249,'Atmospheric Sludge Metal');
-INSERT INTO "genres" VALUES(250,'Post-Punk Revival');
-INSERT INTO "genres" VALUES(251,'Post-Hardcore');
-INSERT INTO "genres" VALUES(252,'Country Pop');
-INSERT INTO "genres" VALUES(253,'Shoegaze / Dream Pop / Post-Rock / Noise Rock');
-INSERT INTO "genres" VALUES(254,'Indie Pop / Chamber Pop / Neo-Psychedelia / Art Rock / Post-Rock');
-INSERT INTO "genres" VALUES(255,'Folk Rock, Progressive Rock, Indie Folk');
-INSERT INTO "genres" VALUES(256,'Indie Rock, Piano Rock');
-INSERT INTO "genres" VALUES(257,'Indie Folk, Singer-Songwriter, Psychedelic Folk');
-INSERT INTO "genres" VALUES(258,'Post-Industrial, Darkwave');
-INSERT INTO "genres" VALUES(259,'Noise Pop, Slacker Rock');
-INSERT INTO "genres" VALUES(260,'Alternative R&B, Alt-Pop');
-INSERT INTO "genres" VALUES(261,'Conscious Hip Hop');
-INSERT INTO "genres" VALUES(262,'Atmospheric Black Metal / Post-Metal');
-INSERT INTO "genres" VALUES(263,'Singer-Songwriter / Chamber Folk');
-INSERT INTO "genres" VALUES(264,'Math Rock');
-INSERT INTO "genres" VALUES(265,'Indie Rock / Power Pop');
+INSERT INTO "genres" VALUES(42,'Indie Pop');
+INSERT INTO "genres" VALUES(43,'Melodic Death Metal');
+INSERT INTO "genres" VALUES(44,'Power Metal');
+INSERT INTO "genres" VALUES(45,'Progressive Metal');
+INSERT INTO "genres" VALUES(46,'Thrash Metal');
+INSERT INTO "genres" VALUES(47,'Chinese Folk Music');
+INSERT INTO "genres" VALUES(48,'Avant-Folk');
+INSERT INTO "genres" VALUES(49,'Shoegaze');
+INSERT INTO "genres" VALUES(50,'Noise Pop');
+INSERT INTO "genres" VALUES(51,'Pop Metal');
+INSERT INTO "genres" VALUES(52,'New Wave');
+INSERT INTO "genres" VALUES(53,'Synthpop');
+INSERT INTO "genres" VALUES(54,'Alternative Dance');
+INSERT INTO "genres" VALUES(55,'C-Pop');
+INSERT INTO "genres" VALUES(56,'MandoPop');
+INSERT INTO "genres" VALUES(57,'Contemporary R&B');
+INSERT INTO "genres" VALUES(58,'Post-Rock');
+INSERT INTO "genres" VALUES(59,'Glam Rock');
+INSERT INTO "genres" VALUES(60,'Rock Opera');
+INSERT INTO "genres" VALUES(61,'Jangle Pop');
+INSERT INTO "genres" VALUES(62,'Folk Metal');
+INSERT INTO "genres" VALUES(63,'Stoner Metal');
+INSERT INTO "genres" VALUES(64,'Doom Metal');
+INSERT INTO "genres" VALUES(65,'Technical Death Metal');
+INSERT INTO "genres" VALUES(66,'Chicago Drill');
+INSERT INTO "genres" VALUES(67,'Trap');
+INSERT INTO "genres" VALUES(68,'Hardcore Hip Hop');
+INSERT INTO "genres" VALUES(69,'Acoustic Rock');
+INSERT INTO "genres" VALUES(70,'Folk Pop');
+INSERT INTO "genres" VALUES(71,'Cantopop');
+INSERT INTO "genres" VALUES(72,'Glam Metal');
+INSERT INTO "genres" VALUES(73,'Dance-Punk');
+INSERT INTO "genres" VALUES(74,'Black Metal');
+INSERT INTO "genres" VALUES(75,'Atmospheric Black Metal');
+INSERT INTO "genres" VALUES(76,'Depressive Black Metal');
+INSERT INTO "genres" VALUES(77,'Rock');
+INSERT INTO "genres" VALUES(78,'Experimental Rock');
+INSERT INTO "genres" VALUES(79,'Progressive Electronic');
+INSERT INTO "genres" VALUES(80,'Electronic');
+INSERT INTO "genres" VALUES(81,'Atmospheric Black Metal Chinese Folk Music');
+INSERT INTO "genres" VALUES(82,'Blackgaze');
+INSERT INTO "genres" VALUES(83,'Baroque Pop');
+INSERT INTO "genres" VALUES(84,'Heavy Metal');
+INSERT INTO "genres" VALUES(85,'Visual kei');
+INSERT INTO "genres" VALUES(86,'Speed Metal');
+INSERT INTO "genres" VALUES(87,'Krautrock');
+INSERT INTO "genres" VALUES(88,'Psychedelic Rock');
+INSERT INTO "genres" VALUES(89,'Indietronica');
+INSERT INTO "genres" VALUES(90,'MPB');
+INSERT INTO "genres" VALUES(91,'Samba');
+INSERT INTO "genres" VALUES(92,'Pagan Black Metal');
+INSERT INTO "genres" VALUES(93,'Ambient');
+INSERT INTO "genres" VALUES(94,'Adult Contemporary');
+INSERT INTO "genres" VALUES(95,'Psychedelic Pop');
+INSERT INTO "genres" VALUES(96,'Celtic Metal');
+INSERT INTO "genres" VALUES(97,'DSBM');
+INSERT INTO "genres" VALUES(98,'Funk Rock');
+INSERT INTO "genres" VALUES(99,'Rap Rock');
+INSERT INTO "genres" VALUES(100,'Conscious Hip Hop');
+INSERT INTO "genres" VALUES(101,'Boom Bap');
+INSERT INTO "genres" VALUES(102,'East Coast Hip Hop');
+INSERT INTO "genres" VALUES(103,'Jazz-Rock');
+INSERT INTO "genres" VALUES(104,'Slacker Rock');
+INSERT INTO "genres" VALUES(105,'Sophisti-Pop');
+INSERT INTO "genres" VALUES(106,'Avant-Garde Metal');
+INSERT INTO "genres" VALUES(107,'Symphonic Metal');
+INSERT INTO "genres" VALUES(108,'Acoustic Pop');
+INSERT INTO "genres" VALUES(109,'Memphis Rap');
+INSERT INTO "genres" VALUES(110,'Hip Hop');
+INSERT INTO "genres" VALUES(111,'Pop Rap');
+INSERT INTO "genres" VALUES(112,'Live Orchestral Pop');
+INSERT INTO "genres" VALUES(113,'Experimental Hip Hop');
+INSERT INTO "genres" VALUES(114,'Industrial Hip Hop');
+INSERT INTO "genres" VALUES(115,'BlackGaze');
+INSERT INTO "genres" VALUES(116,'Trip Hop');
+INSERT INTO "genres" VALUES(117,'Ethereal Wave');
+INSERT INTO "genres" VALUES(118,'Nu Metal');
+INSERT INTO "genres" VALUES(119,'Post-Hardcore');
+INSERT INTO "genres" VALUES(120,'Blues Rock');
+INSERT INTO "genres" VALUES(121,'Funk Metal');
+INSERT INTO "genres" VALUES(122,'Jazz Rap');
+INSERT INTO "genres" VALUES(123,'Neo-Soul');
+INSERT INTO "genres" VALUES(124,'Funk');
+INSERT INTO "genres" VALUES(125,'Poetry');
+INSERT INTO "genres" VALUES(126,'Americana');
+INSERT INTO "genres" VALUES(127,'Hypnagogic Pop');
+INSERT INTO "genres" VALUES(128,'Power Pop');
+INSERT INTO "genres" VALUES(129,'Garage Rock Revival');
+INSERT INTO "genres" VALUES(130,'Bedroom Pop');
+INSERT INTO "genres" VALUES(131,'Space Rock Revival');
+INSERT INTO "genres" VALUES(132,'Paisley Underground');
+INSERT INTO "genres" VALUES(133,'Viking Metal');
+INSERT INTO "genres" VALUES(134,'Ambient Americana');
+INSERT INTO "genres" VALUES(135,'Television Music');
+INSERT INTO "genres" VALUES(136,'Piano Rock');
+INSERT INTO "genres" VALUES(137,'Roots Rock');
 CREATE TABLE listen_history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         album_id INTEGER NOT NULL,
@@ -2823,81 +3924,20 @@ CREATE TABLE styles (
 INSERT INTO "styles" VALUES(1,'Rock');
 INSERT INTO "styles" VALUES(2,'Pop');
 INSERT INTO "styles" VALUES(3,'Folk');
-INSERT INTO "styles" VALUES(4,'Singer-Songwriter, Pop, Rock');
-INSERT INTO "styles" VALUES(5,'Singer-Songwriter, Folk,Pop, Rock');
-INSERT INTO "styles" VALUES(6,'Electronic');
-INSERT INTO "styles" VALUES(7,'Rock,Psychedelia,Pop');
-INSERT INTO "styles" VALUES(8,'Rock,Electronic');
-INSERT INTO "styles" VALUES(9,'Dance');
-INSERT INTO "styles" VALUES(10,'Pop,Rock');
-INSERT INTO "styles" VALUES(11,'Rock,Metal');
-INSERT INTO "styles" VALUES(12,'Rock,Punk');
-INSERT INTO "styles" VALUES(13,'Singer-Songwriter,Pop');
-INSERT INTO "styles" VALUES(14,'Rock,Folk');
-INSERT INTO "styles" VALUES(15,'Easy Listening');
-INSERT INTO "styles" VALUES(16,'Metal');
-INSERT INTO "styles" VALUES(17,'Rock,Pop');
-INSERT INTO "styles" VALUES(18,'Folk,Pop');
-INSERT INTO "styles" VALUES(19,'Pop,Folk');
-INSERT INTO "styles" VALUES(20,'Metal,Rock');
-INSERT INTO "styles" VALUES(21,'Punk,Rock');
-INSERT INTO "styles" VALUES(22,'Pop,Rock,Metal');
-INSERT INTO "styles" VALUES(23,'Singer-SongWriter');
-INSERT INTO "styles" VALUES(24,'Folk,Rock');
-INSERT INTO "styles" VALUES(25,'Pop,R&B');
-INSERT INTO "styles" VALUES(26,'R&B,Pop');
-INSERT INTO "styles" VALUES(27,'Hip Hop');
-INSERT INTO "styles" VALUES(28,'Pop,Singer-Songwriter');
-INSERT INTO "styles" VALUES(29,'Punk');
-INSERT INTO "styles" VALUES(30,'Singer-Songwriter');
-INSERT INTO "styles" VALUES(31,'Brazilian Music');
-INSERT INTO "styles" VALUES(32,'Electronic,Pop');
-INSERT INTO "styles" VALUES(33,'Pop,Electronic,Ambient Pop');
-INSERT INTO "styles" VALUES(34,'Ambient, Pop');
-INSERT INTO "styles" VALUES(35,'Metal,Punk');
-INSERT INTO "styles" VALUES(36,'Singer-SongWriter,Pop');
-INSERT INTO "styles" VALUES(37,'Metal，Rock');
-INSERT INTO "styles" VALUES(38,'Singer-Songwriter,Folk, Rock');
-INSERT INTO "styles" VALUES(39,'Pop,Electronic');
-INSERT INTO "styles" VALUES(40,'Hip-Hop');
-INSERT INTO "styles" VALUES(41,'Hip-Hop,Rock,Folk');
-INSERT INTO "styles" VALUES(42,'Rock,Pop,Punk');
-INSERT INTO "styles" VALUES(43,'Rock,Pop,Folk');
-INSERT INTO "styles" VALUES(44,'Folk,Pop,Rock');
-INSERT INTO "styles" VALUES(45,'Metal,Folk');
-INSERT INTO "styles" VALUES(46,'Art Rock');
-INSERT INTO "styles" VALUES(47,'Chamber Pop');
-INSERT INTO "styles" VALUES(48,'Indie Pop');
-INSERT INTO "styles" VALUES(49,'Contemporary Folk');
-INSERT INTO "styles" VALUES(50,'Alternative Rock');
-INSERT INTO "styles" VALUES(51,'Indie Rock');
-INSERT INTO "styles" VALUES(52,'Noise Pop');
-INSERT INTO "styles" VALUES(53,'Post-Punk');
-INSERT INTO "styles" VALUES(54,'Indie Folk');
-INSERT INTO "styles" VALUES(55,'Folk Pop');
-INSERT INTO "styles" VALUES(56,'Mexican Folk Music');
-INSERT INTO "styles" VALUES(57,'Post-Metal');
-INSERT INTO "styles" VALUES(58,'Pop Rock');
-INSERT INTO "styles" VALUES(59,'Blackgaze');
-INSERT INTO "styles" VALUES(60,'Experimental Rock');
-INSERT INTO "styles" VALUES(61,'Folk Rock');
-INSERT INTO "styles" VALUES(62,'Alt-Pop');
-INSERT INTO "styles" VALUES(63,'Abstract Hip Hop');
-INSERT INTO "styles" VALUES(64,'Gothic Metal');
-INSERT INTO "styles" VALUES(65,'Psychedelic Folk');
-INSERT INTO "styles" VALUES(66,'Slowcore');
-INSERT INTO "styles" VALUES(67,'Americana');
-INSERT INTO "styles" VALUES(68,'Neo-Psychedelia');
-INSERT INTO "styles" VALUES(69,'Dance-Pop');
-INSERT INTO "styles" VALUES(70,'Garage Rock');
-INSERT INTO "styles" VALUES(71,'Emo-Pop');
-INSERT INTO "styles" VALUES(72,'Progressive Metal');
-INSERT INTO "styles" VALUES(73,'Electronic Dance Music');
-INSERT INTO "styles" VALUES(74,'Post-Rock');
-INSERT INTO "styles" VALUES(75,'Midwest Emo');
-INSERT INTO "styles" VALUES(76,'Contemporary Country');
-INSERT INTO "styles" VALUES(77,'melancholic/ethereal/noisy shoegaze, female vocalist, atmospheric, hypnotic, nocturnal');
-INSERT INTO "styles" VALUES(78,'maximalist, passionate, sentimental, bittersweet, female vocalist, lush, eclectic, ethereal, bright, calm');
+INSERT INTO "styles" VALUES(4,'Singer-Songwriter');
+INSERT INTO "styles" VALUES(5,'Electronic');
+INSERT INTO "styles" VALUES(6,'Psychedelia');
+INSERT INTO "styles" VALUES(7,'Dance');
+INSERT INTO "styles" VALUES(8,'Metal');
+INSERT INTO "styles" VALUES(9,'Punk');
+INSERT INTO "styles" VALUES(10,'Easy Listening');
+INSERT INTO "styles" VALUES(11,'Singer-SongWriter');
+INSERT INTO "styles" VALUES(12,'R&B');
+INSERT INTO "styles" VALUES(13,'Hip Hop');
+INSERT INTO "styles" VALUES(14,'Brazilian Music');
+INSERT INTO "styles" VALUES(15,'Ambient Pop');
+INSERT INTO "styles" VALUES(16,'Ambient');
+INSERT INTO "styles" VALUES(17,'Hip-Hop');
 CREATE INDEX idx_albums_artist_id ON albums(artist_id);
 CREATE INDEX idx_lh_year ON listen_history(listen_year);
 CREATE INDEX idx_lh_album ON listen_history(album_id);
@@ -2907,7 +3947,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums',539);
 INSERT INTO "sqlite_sequence" VALUES('albums_2025',416);
 INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('artists',313);
-INSERT INTO "sqlite_sequence" VALUES('genres',265);
-INSERT INTO "sqlite_sequence" VALUES('styles',78);
 INSERT INTO "sqlite_sequence" VALUES('listen_history',1583);
+INSERT INTO "sqlite_sequence" VALUES('genres',137);
+INSERT INTO "sqlite_sequence" VALUES('styles',17);
 COMMIT;
