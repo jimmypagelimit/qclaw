@@ -8,3 +8,6 @@ tmp/
 _cleaners_*.jpg
 task-artifact_*.md
 task-summary_*.md
+_music*.db
+database.sql
+_music_backup*.db
