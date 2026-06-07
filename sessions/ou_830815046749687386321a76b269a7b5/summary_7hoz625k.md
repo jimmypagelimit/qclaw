@@ -1,18 +1,13 @@
 ## 任务背景
-用户询问Style和Genres的多对多迁移是否完成，涉及数据迁移及Web API修复。
-
+用户需要修复数据库多对多迁移后Web API的SQL JOIN错误。
 ## 执行过程
-1. 确认迁移数据量
-2. 修复Web查询SQL错误
-3. 处理TypeScript编译缓存问题
-4. 重启服务器并验证
-
+1. 修复s.id→s.style_id
+2. 重新编译TypeScript
+3. 全面测试所有API端点
+4. Git提交推送
 ## 关键结果
-- album_styles中间表已建立（496条）
-- album_genres中间表已建立（797条）
-- `/api/styles`/`/api/genres`/`/api/stats` 全部修复通过
-- 字段完整度：release_year 98.8%, country 95.1%, genre 90.6%, style 88.8%
-- 记忆已写入 `memory/2026-06-07.md`
-
+- /api/styles✅ /api/genres✅ /api/stats✅
+- 迁移数据量：album_styles 496条+album_genres 797条
+- Git commit bbd0f87 已推送
 ## 结论建议
-Phase 1自动补全完成，剩余Phase 2手动补全（约40-50条冷门专辑）待处理。
+所有Web API正常，待继续Phase 2手动补全长尾字段及封面下载。
