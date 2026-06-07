@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "数据库修复验证",
+  "name": "数据恢复与补全",
   "status": "active",
   "createdAt": "2026-05-21T23:29:55.380Z",
-  "updatedAt": "2026-06-07T02:17:05.676Z",
+  "updatedAt": "2026-06-07T04:47:30.591Z",
   "agents": [
     {
       "id": "agent_3tj7bsnd",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_7hoz625k",
-    "title": "数据库修复验证",
+    "title": "数据恢复与补全",
     "createdAt": "2026-05-21T23:29:55.380Z",
     "file": "summary_7hoz625k.md"
   },
-  "lastMessageCount": 71
+  "lastMessageCount": 81
 }
