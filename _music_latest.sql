@@ -1706,7 +1706,7 @@ INSERT INTO "albums" VALUES(378,'Frizzle Fry','Primus','美国','加利福尼亚
 INSERT INTO "albums" VALUES(379,'To Pimp a Butterfly','Kendrick Lamar','美国','加利福尼亚州','Conscious Hip Hop, Jazz Rap, Neo-Soul, Funk, Poetry',4.38,'《To Pimp a Butterfly》是 Kendrick Lamar 于2015年3月15日发行的第三张录音室专辑，以其深刻的政治性、诗意的歌词和丰富的音乐性被誉为当代最具影响力的嘻哈作品之一。专辑融合了爵士、放克、灵魂与说唱元素，探讨了黑人身份、社会不公、精神挣扎与自我救赎等议题。代表作包括《King Kunta》《Alright》《The Blacker the Berry》《How Much a Dollar Cost》等。制作阵容包括 Thundercat、Flying Lotus、Terrace Martin、Kamasi Washington 等，展现出极高的艺术水准与文化厚度。',0,'2025-10-27',2,'Top Dawg唱片','covers/379-Kendrick_Lamar-To_Pimp_a_Butterfly.jpg','78:59',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2015','Hip Hop','Anthony "Top Dawg" Tiffith, Dr. Dre, Sounwave, Terrace Martin',77,204,27,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(380,'Masterpiece','Big Thief','美国','纽约','Indie Rock, Indie Folk, Americana, Folk Rock, Slacker Rock',3.71,'《Masterpiece》是 Big Thief 于2016年5月27日发行的首张录音室专辑，由 Adrianne Lenker 领衔创作，展现出情感浓烈、旋律细腻的独立摇滚风格。专辑融合了民谣与摇滚传统，歌词充满诗意与怀旧气息，描绘家庭、爱与自我探索等主题。代表曲目包括《Masterpiece》《Vegas》《Interstate》《Paul》《Real Love》等，制作由 Andrew Sarlo 操刀，录音于2015年7月1日至12日完成，发行方为 Saddle Creek 与 4AD。',0,'2025-10-27',1,'4AD','covers/380-Big_Thief-Masterpiece.jpg','8:41',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016','Folk,Rock','Andrew Sarlo, James Krivchenia',21,205,24,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(381,'Diamond Jubilee','Cindy Lee','加拿大','温哥华','Hypnagogic Pop, Psychedelic Pop',3.87,'Cindy Lee 的第七张录音室专辑，融合 Brill Building、迷幻流行、Lo-fi 独立摇滚等复古风格，呈现出浓厚的怀旧氛围与非二元性别视角。专辑时长超过两小时，共收录 32 首曲目，被誉为“私人压片”式的 DIY 音乐杰作，在 RateYourMusic 上获得极高评价。',0,'2024-03-29',1,'Superior Viaduct','covers/381-Cindy_Lee-Diamond_Jubilee.jpg','3:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2024','Rock','Patrick Flegel, Steven Lind',37,206,1,NULL,NULL,NULL);
-INSERT INTO "albums" VALUES(382,'Teens of Denial','Car Seat Headrest','美国','弗吉尼亚州','Indie Rock, Power Pop, Garage Rock Revival, Art Rock',3.91,'Car Seat Headrest 于 2016 年推出的录音室专辑，由 Matador 唱片发行。专辑以青少年成长、精神健康、药物、孤独与自我怀疑等主题为核心，融合激烈的吉他、密集的编曲与诗意歌词，展现出强烈的情绪张力与哲思色彩。被誉为“完美的独立摇滚蒸馏物”，在 RYM 上获得超过 2.5 万条评分，位列 2016 年第 10 名。',0,'2025-10-28',8,'Matador唱片','covers/382-Car_Seat_Headrest-Teens_of_Denial.jpg','67:56',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016','Rock','Steve Fisk',31,207,1,3.92,0,'');
+INSERT INTO "albums" VALUES(382,'Teens of Denial','Car Seat Headrest','美国','弗吉尼亚州','Indie Rock, Power Pop, Garage Rock Revival, Art Rock',3.91,'Car Seat Headrest 于 2016 年推出的录音室专辑，由 Matador 唱片发行。专辑以青少年成长、精神健康、药物、孤独与自我怀疑等主题为核心，融合激烈的吉他、密集的编曲与诗意歌词，展现出强烈的情绪张力与哲思色彩。被誉为“完美的独立摇滚蒸馏物”，在 RYM 上获得超过 2.5 万条评分，位列 2016 年第 10 名。',0,'2025-10-28',6,'Matador唱片','covers/382-Car_Seat_Headrest-Teens_of_Denial.jpg','67:56',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016','Rock','Steve Fisk',31,207,1,3.92,0,'');
 INSERT INTO "albums" VALUES(383,'Nervous Young Man','Car Seat Headrest','美国','弗吉尼亚州','Slacker Rock, Singer-Songwriter, Indietronica, Indie Folk, Noise Pop, Art Rock',3.83,'《Nervous Young Man》是 Car Seat Headrest 于 2013 年 8 月 23 日发行的双碟专辑，时长超过 2 小时，共收录 20 首曲目。专辑以 lo-fi 质感和极具情绪张力的歌词著称，涵盖青春焦虑、孤独、性取向、死亡、自我怀疑等主题，展现 Will Toledo 独立创作的高峰。被誉为“私人压片”式 DIY 音乐杰作，是其 Matador 唱片签约前最重要的作品之一。',0,'2025-10-28',4,'自发行','covers/383-Car_Seat_Headrest-Nervous_Young_Man.jpg','3:34',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2013','Rock','Will Toledo',31,208,1,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(384,'Making a Door Less Open','Car Seat Headrest','美国','弗吉尼亚州','Indietronica, Indie Rock, Alternative Dance, Synthpop',2.85,'《Making a Door Less Open》是 Car Seat Headrest 于 2020 年 5 月 1 日发行的录音室专辑，由 Matador唱片 发行。专辑融合电子流行与另类摇滚元素，尝试打破既有风格界限，呈现出更为分裂与实验性的声音结构。尽管在乐迷间评价两极，但部分曲目如《Life Worth Missing》《Deadlines (Hostile)》仍被认为保留了乐队的情绪张力与创作特色。',0,'2025-10-28',1,'Matador唱片','covers/384-Car_Seat_Headrest-Making_a_Door_Less_Open.jpg','47:27',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2020','Rock,Pop','Will Toledo, Andrew Katz',31,209,17,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(385,'Monomania','Car Seat Headrest','美国','弗吉尼亚州','Slacker Rock, Noise Pop, Indietronica, Singer-Songwriter, Bedroom Pop',3.78,'《Monomania》是 Car Seat Headrest 于 2012 年 8 月 1 日发行的录音室专辑，呈现出极具情绪张力的 lo-fi 音色与密集编曲。专辑围绕分手、抑郁、性取向、孤独与自我厌恶等主题展开，歌词充满愤怒、悲伤与渴望，被视为 Will Toledo 最具个人色彩的作品之一。代表曲目包括《Souls》《Anchorite (Love You Very Much)》《Times to Die》，在乐迷间拥有极高的共鸣度。',0,'2025-10-28',0,'自发行','covers/385-Car_Seat_Headrest-Monomania.jpg','61:22',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012','Rock','Will Toledo',31,210,1,3.35,0,'');
@@ -1855,6 +1855,7 @@ INSERT INTO "albums" VALUES(543,'Wendy Eisenberg','Wendy Eisenberg','US',NULL,'S
 INSERT INTO "albums" VALUES(544,'Vol.II','Angine de Poitrine','France',NULL,'Math Rock',3.58,NULL,0,NULL,1,NULL,'covers/537-Angine_de_Poitrine-Vol.II.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(545,'幻象波谱星','刺猬','中国','大陆','Dream Pop',NULL,NULL,0,'2024-09-19',2,'摩登天空',NULL,'53:13:00',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2014-04-20','Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(546,'藏著并不等于遗忘','魏如萱','Taiwan',NULL,'Indie Pop',NULL,NULL,0,NULL,1,NULL,'/covers/538-Car_Seat_Headrest-Teen_of_Denial.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(547,'Teen of Denial (Joes Story)','Car Seat Headrest','美国','北美洲','Indie Rock',NULL,NULL,0,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016','Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -4221,14 +4222,14 @@ INSERT INTO "listen_history" VALUES(2604,542,'2026-02-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2605,543,'2026-01-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2606,543,'2026-02-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2607,544,'2026-01-15',2026,'','');
-INSERT INTO "listen_history" VALUES(2608,382,'2026-01-15',2026,'','');
-INSERT INTO "listen_history" VALUES(2609,382,'2026-02-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2610,446,'2026-01-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2611,446,'2026-02-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2612,546,'2026-12-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2613,323,'2026-01-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2614,323,'2026-03-15',2026,'','');
 INSERT INTO "listen_history" VALUES(2615,323,'2026-06-01',2026,'','');
+INSERT INTO "listen_history" VALUES(2616,547,'2026-01-15',2026,'','rebuild');
+INSERT INTO "listen_history" VALUES(2617,547,'2026-02-15',2026,'','rebuild');
 CREATE TABLE styles (
         style_id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL UNIQUE
@@ -4334,13 +4335,13 @@ CREATE INDEX idx_lh_year ON listen_history(listen_year);
 CREATE INDEX idx_lh_album ON listen_history(album_id);
 DELETE FROM "sqlite_sequence";
 INSERT INTO "sqlite_sequence" VALUES('albums_2024',261);
-INSERT INTO "sqlite_sequence" VALUES('albums',546);
+INSERT INTO "sqlite_sequence" VALUES('albums',547);
 INSERT INTO "sqlite_sequence" VALUES('albums_2025',416);
 INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('artists',313);
 INSERT INTO "sqlite_sequence" VALUES('genres',352);
 INSERT INTO "sqlite_sequence" VALUES('styles',96);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',2615);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',2617);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',496);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',797);
 COMMIT;
