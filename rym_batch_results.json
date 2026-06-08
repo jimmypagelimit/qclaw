@@ -1,0 +1,1680 @@
+[
+  {
+    "album_name": "Disintegration",
+    "artist_name": "The Cure",
+    "rym_title": "Disintegration",
+    "rym_artist": "The Cure",
+    "rym_rating": "4.26",
+    "rym_num_ratings": "59,797",
+    "rym_num_reviews": "610",
+    "rym_genres": [
+      "gothic rock",
+      "post punk",
+      "dream pop",
+      "ethereal wave"
+    ]
+  },
+  {
+    "album_name": "Psychocandy",
+    "artist_name": "The Jesus and Mary Chain",
+    "rym_title": "Psychocandy",
+    "rym_artist": "The Jesus and Mary Chain",
+    "rym_rating": "3.71",
+    "rym_num_ratings": "22,099",
+    "rym_num_reviews": "309",
+    "rym_genres": [
+      "noise pop",
+      "post punk",
+      "shoegaze",
+      "noise rock",
+      "brill building",
+      "gothic rock"
+    ]
+  },
+  {
+    "album_name": "Loveless",
+    "artist_name": "My Bloody Valentine",
+    "rym_title": "My Bloody Valentine",
+    "rym_artist": "my bloody valentine",
+    "rym_rating": "3.72",
+    "rym_num_ratings": "263",
+    "rym_genres": [
+      "shoegaze",
+      "noise pop",
+      "noise rock",
+      "dream pop",
+      "post punk"
+    ]
+  },
+  {
+    "album_name": "Daydream Nation",
+    "artist_name": "Sonic Youth",
+    "rym_title": "Daydream Nation",
+    "rym_artist": "Sonic Youth",
+    "rym_rating": "4.04",
+    "rym_num_ratings": "44,126",
+    "rym_num_reviews": "551",
+    "rym_genres": [
+      "noise rock",
+      "alternative rock",
+      "slacker rock",
+      "post punk",
+      "experimental rock",
+      "art punk",
+      "post hardcore"
+    ]
+  },
+  {
+    "album_name": "EVOL",
+    "artist_name": "Sonic Youth",
+    "rym_title": "Sonic Youth",
+    "rym_artist": "Sonic Youth",
+    "rym_rating": "3.32",
+    "rym_num_ratings": "8,174",
+    "rym_num_reviews": "93",
+    "rym_genres": [
+      "art punk",
+      "noise rock",
+      "experimental rock",
+      "post punk",
+      "dance punk",
+      "post rock",
+      "no wave"
+    ]
+  },
+  {
+    "album_name": "Master of Reality",
+    "artist_name": "Black Sabbath",
+    "rym_title": "Master of Reality",
+    "rym_artist": "Black Sabbath",
+    "rym_rating": "4.14",
+    "rym_num_ratings": "45,068",
+    "rym_num_reviews": "577",
+    "rym_genres": [
+      "heavy metal",
+      "traditional doom metal"
+    ]
+  },
+  {
+    "album_name": "Dirt",
+    "artist_name": "Alice In Chains",
+    "rym_title": "Alice in Chains",
+    "rym_artist": "Alice in Chains",
+    "rym_rating": "3.76",
+    "rym_num_ratings": "15,695",
+    "rym_num_reviews": "233",
+    "rym_genres": [
+      "grunge",
+      "alternative metal",
+      "sludge metal",
+      "doom metal"
+    ]
+  },
+  {
+    "album_name": "Rubber Soul",
+    "artist_name": "The Beatles",
+    "rym_title": "Rubber Soul",
+    "rym_artist": "The Beatles",
+    "rym_rating": "4.02",
+    "rym_num_ratings": "61,021",
+    "rym_num_reviews": "921",
+    "rym_genres": [
+      "pop rock",
+      "folk rock",
+      "psychedelic pop",
+      "folk pop",
+      "british rhythm and blues",
+      "british beat boom"
+    ]
+  },
+  {
+    "album_name": "Revolver",
+    "artist_name": "The Beatles",
+    "rym_title": "Revolver",
+    "rym_artist": "The Beatles",
+    "rym_rating": "4.24",
+    "rym_num_ratings": "80,211",
+    "rym_num_reviews": "1,425",
+    "rym_genres": [
+      "pop rock",
+      "psychedelic pop",
+      "psychedelic rock",
+      "baroque pop"
+    ]
+  },
+  {
+    "album_name": "Please Please Me",
+    "artist_name": "The Beatles",
+    "rym_title": "Please Please Me",
+    "rym_artist": "The Beatles",
+    "rym_rating": "3.35",
+    "rym_num_ratings": "35,382",
+    "rym_num_reviews": "631",
+    "rym_genres": [
+      "merseybeat",
+      "pop rock",
+      "rock and roll",
+      "british rhythm and blues",
+      "british beat boom"
+    ]
+  },
+  {
+    "album_name": "Abbey Road",
+    "artist_name": "The Beatles",
+    "rym_title": "Abbey Road",
+    "rym_artist": "The Beatles",
+    "rym_rating": "4.30",
+    "rym_num_ratings": "85,608",
+    "rym_num_reviews": "1,281",
+    "rym_genres": [
+      "pop rock",
+      "psychedelic pop",
+      "progressive pop",
+      "blues rock",
+      "art rock",
+      "art pop"
+    ]
+  },
+  {
+    "album_name": "Plastic Ono Band",
+    "artist_name": "John Lennon",
+    "rym_title": "John Lennon / Plastic Ono Band",
+    "rym_artist": "John Lennon",
+    "rym_rating": "3.89",
+    "rym_num_ratings": "19,311",
+    "rym_num_reviews": "365",
+    "rym_genres": [
+      "singer songwriter",
+      "pop rock",
+      "contemporary folk",
+      "blues rock",
+      "piano rock"
+    ]
+  },
+  {
+    "album_name": "Ram",
+    "artist_name": "Paul McCartney",
+    "rym_title": "McCartney",
+    "rym_artist": "Paul McCartney",
+    "rym_rating": "3.42",
+    "rym_num_ratings": "8,752",
+    "rym_num_reviews": "245",
+    "rym_genres": [
+      "pop rock",
+      "singer songwriter",
+      "folk pop",
+      "folk rock",
+      "blues rock"
+    ]
+  },
+  {
+    "album_name": "All Things Must Pass",
+    "artist_name": "George Harrison",
+    "rym_title": "All Things Must Pass",
+    "rym_artist": "George Harrison",
+    "rym_rating": "4.13",
+    "rym_num_ratings": "25,172",
+    "rym_num_reviews": "432",
+    "rym_genres": [
+      "pop rock",
+      "singer songwriter",
+      "folk rock",
+      "jam band",
+      "psychedelic pop"
+    ]
+  },
+  {
+    "album_name": "Purple Rain",
+    "artist_name": "Prince",
+    "rym_title": "Purple Rain",
+    "rym_artist": "Prince and The Revolution",
+    "rym_rating": "4.15",
+    "rym_num_ratings": "32,748",
+    "rym_num_reviews": "392",
+    "rym_genres": [
+      "pop rock",
+      "film soundtrack",
+      "dance pop",
+      "funk rock",
+      "minneapolis sound",
+      "synthpop",
+      "progressive soul"
+    ]
+  },
+  {
+    "album_name": "Presence",
+    "artist_name": "Led Zeppelin",
+    "rym_title": "Led Zeppelin",
+    "rym_artist": "Led Zeppelin",
+    "rym_rating": "3.92",
+    "rym_num_ratings": "45,311",
+    "rym_num_reviews": "685",
+    "rym_genres": [
+      "hard rock",
+      "blues rock",
+      "psychedelic rock"
+    ]
+  },
+  {
+    "album_name": "The Piper at the Gates of Dawn",
+    "artist_name": "Pink Floyd",
+    "rym_title": "The Piper at the Gates of Dawn",
+    "rym_artist": "Pink Floyd",
+    "rym_rating": "3.77",
+    "rym_num_ratings": "44,325",
+    "rym_num_reviews": "790",
+    "rym_genres": [
+      "psychedelic rock",
+      "psychedelic pop",
+      "space rock",
+      "experimental rock",
+      "toytown pop",
+      "english underground"
+    ]
+  },
+  {
+    "album_name": "The Dark Side of the Moon",
+    "artist_name": "Pink Floyd",
+    "rym_title": "The Dark Side of the Moon",
+    "rym_artist": "Pink Floyd",
+    "rym_rating": "4.27",
+    "rym_num_ratings": "107,068",
+    "rym_num_reviews": "1,676",
+    "rym_genres": [
+      "art rock",
+      "progressive rock",
+      "psychedelic rock",
+      "space rock"
+    ]
+  },
+  {
+    "album_name": "Close to the Edge",
+    "artist_name": "Yes",
+    "rym_title": "Close to the Edge",
+    "rym_artist": "Yes",
+    "rym_rating": "4.19",
+    "rym_num_ratings": "41,182",
+    "rym_num_reviews": "634",
+    "rym_genres": [
+      "symphonic prog"
+    ]
+  },
+  {
+    "album_name": "Synchronicity",
+    "artist_name": "The Police",
+    "rym_title": "Synchronicity",
+    "rym_artist": "The Police",
+    "rym_rating": "3.64",
+    "rym_num_ratings": "11,945",
+    "rym_num_reviews": "227",
+    "rym_genres": [
+      "new wave",
+      "pop rock",
+      "art rock",
+      "sophisti pop",
+      "progressive pop"
+    ]
+  },
+  {
+    "album_name": "Heaven or Las Vegas",
+    "artist_name": "Cocteau Twins",
+    "rym_title": "Heaven or Las Vegas",
+    "rym_artist": "Cocteau Twins",
+    "rym_rating": "4.20",
+    "rym_num_ratings": "57,393",
+    "rym_num_reviews": "451",
+    "rym_genres": [
+      "dream pop",
+      "ethereal wave",
+      "shoegaze",
+      "baggy"
+    ]
+  },
+  {
+    "album_name": "Crooked Rain, Crooked Rain",
+    "artist_name": "Pavement",
+    "rym_title": "Crooked Rain, Crooked Rain",
+    "rym_artist": "Pavement",
+    "rym_rating": "3.97",
+    "rym_num_ratings": "28,604",
+    "rym_num_reviews": "310",
+    "rym_genres": [
+      "indie rock",
+      "slacker rock",
+      "noise pop"
+    ]
+  },
+  {
+    "album_name": "Life's Rich Pageant",
+    "artist_name": "R.E.M.",
+    "rym_title": "Lifes Rich Pageant",
+    "rym_artist": "R.E.M.",
+    "rym_rating": "3.82",
+    "rym_num_ratings": "9,909",
+    "rym_num_reviews": "159",
+    "rym_genres": [
+      "jangle pop",
+      "alternative rock",
+      "folk rock"
+    ]
+  },
+  {
+    "album_name": "American Idiot",
+    "artist_name": "Green Day",
+    "rym_title": "American Idiot",
+    "rym_artist": "Green Day",
+    "rym_rating": "3.42",
+    "rym_num_ratings": "28,050",
+    "rym_num_reviews": "592",
+    "rym_genres": [
+      "pop punk",
+      "alternative rock",
+      "rock opera",
+      "pop rock"
+    ]
+  },
+  {
+    "album_name": "In Rainbows",
+    "artist_name": "Radiohead",
+    "rym_title": "In Rainbows",
+    "rym_artist": "Radiohead",
+    "rym_rating": "4.33",
+    "rym_num_ratings": "105,739",
+    "rym_num_reviews": "1,154",
+    "rym_genres": [
+      "art rock",
+      "alternative rock",
+      "electronic",
+      "dream pop",
+      "art pop",
+      "krautrock"
+    ]
+  },
+  {
+    "album_name": "Arrival",
+    "artist_name": "ABBA",
+    "rym_title": "ABBA",
+    "rym_artist": "ABBA",
+    "rym_rating": "3.35",
+    "rym_num_ratings": "3,600",
+    "rym_num_reviews": "56",
+    "rym_genres": [
+      "europop",
+      "pop rock"
+    ]
+  },
+  {
+    "album_name": "The Visitors",
+    "artist_name": "ABBA",
+    "rym_title": "ABBA",
+    "rym_artist": "ABBA",
+    "rym_rating": "3.35",
+    "rym_num_ratings": "3,600",
+    "rym_num_reviews": "56",
+    "rym_genres": [
+      "europop",
+      "pop rock"
+    ]
+  },
+  {
+    "album_name": "Monomania",
+    "artist_name": "Car Seat Headrest",
+    "rym_title": "Monomania",
+    "rym_artist": "Deerhunter",
+    "rym_rating": "3.35",
+    "rym_num_ratings": "4,817",
+    "rym_num_reviews": "60",
+    "rym_genres": [
+      "indie rock",
+      "noise pop",
+      "slacker rock",
+      "neo psychedelia",
+      "garage rock",
+      "shitgaze",
+      "garage psych"
+    ]
+  },
+  {
+    "album_name": "Teens of Denial",
+    "artist_name": "Car Seat Headrest",
+    "rym_title": "Teens of Denial",
+    "rym_artist": "Car Seat Headrest",
+    "rym_rating": "3.92",
+    "rym_num_ratings": "27,325",
+    "rym_num_reviews": "171",
+    "rym_genres": [
+      "indie rock",
+      "power pop",
+      "garage rock revival",
+      "art rock"
+    ]
+  },
+  {
+    "album_name": "Twin Fantasy",
+    "artist_name": "Car Seat Headrest",
+    "rym_title": "Twin Fantasy",
+    "rym_artist": "Car Seat Headrest",
+    "rym_rating": "3.82",
+    "rym_num_ratings": "22,077",
+    "rym_num_reviews": "165",
+    "rym_genres": [
+      "slacker rock",
+      "singer songwriter",
+      "noise pop",
+      "furry music"
+    ]
+  },
+  {
+    "album_name": "Capacity",
+    "artist_name": "Big Thief",
+    "rym_title": "Capacity",
+    "rym_artist": "Big Thief",
+    "rym_rating": "3.66",
+    "rym_num_ratings": "7,928",
+    "rym_num_reviews": "54",
+    "rym_genres": [
+      "indie rock",
+      "indie folk",
+      "dream pop",
+      "americana"
+    ]
+  },
+  {
+    "album_name": "Dragon New Warm Mountain I Believe in You",
+    "artist_name": "Big Thief",
+    "rym_title": "Dragon New Warm Mountain I Believe in You",
+    "rym_artist": "Big Thief",
+    "rym_rating": "3.99",
+    "rym_num_ratings": "26,279",
+    "rym_num_reviews": "235",
+    "rym_genres": [
+      "indie folk",
+      "folk rock",
+      "americana",
+      "indie rock",
+      "alt country",
+      "singer songwriter",
+      "neo psychedelia",
+      "country folk"
+    ]
+  },
+  {
+    "album_name": "On Avery Island",
+    "artist_name": "Neutral Milk Hotel",
+    "rym_title": "On Avery Island",
+    "rym_artist": "Neutral Milk Hotel",
+    "rym_rating": "3.65",
+    "rym_num_ratings": "19,266",
+    "rym_num_reviews": "181",
+    "rym_genres": [
+      "slacker rock",
+      "psychedelic folk",
+      "indie folk",
+      "noise pop",
+      "neo psychedelia",
+      "drone",
+      "singer songwriter"
+    ]
+  },
+  {
+    "album_name": "Wintersun",
+    "artist_name": "Wintersun",
+    "rym_title": "Wintersun",
+    "rym_artist": "Wintersun",
+    "rym_rating": "3.66",
+    "rym_num_ratings": "4,988",
+    "rym_num_reviews": "96",
+    "rym_genres": [
+      "melodic death metal",
+      "power metal",
+      "folk metal",
+      "symphonic metal",
+      "melodic black metal"
+    ]
+  },
+  {
+    "album_name": "New Bermuda",
+    "artist_name": "Deafheaven",
+    "rym_title": "New Bermuda",
+    "rym_artist": "Deafheaven",
+    "rym_rating": "3.60",
+    "rym_num_ratings": "10,431",
+    "rym_num_reviews": "94",
+    "rym_genres": [
+      "blackgaze",
+      "atmospheric black metal",
+      "post rock",
+      "post metal"
+    ]
+  },
+  {
+    "album_name": "Sunbather",
+    "artist_name": "Deafheaven",
+    "rym_title": "Sunbather",
+    "rym_artist": "Deafheaven",
+    "rym_rating": "3.79",
+    "rym_num_ratings": "31,644",
+    "rym_num_reviews": "302",
+    "rym_genres": [
+      "blackgaze",
+      "post metal",
+      "post rock",
+      "screamo"
+    ]
+  },
+  {
+    "album_name": "The Jester Race",
+    "artist_name": "In Flames",
+    "rym_title": "The Jester Race",
+    "rym_artist": "In Flames",
+    "rym_rating": "3.74",
+    "rym_num_ratings": "8,132",
+    "rym_num_reviews": "120",
+    "rym_genres": [
+      "melodic death metal",
+      "gothenburg sound"
+    ]
+  },
+  {
+    "album_name": "Megadeth",
+    "artist_name": "Megadeth",
+    "rym_title": "Megadeth",
+    "rym_artist": "Megadeth",
+    "rym_rating": "2.62",
+    "rym_num_ratings": "3,801",
+    "rym_num_reviews": "101",
+    "rym_genres": [
+      "heavy metal",
+      "thrash metal"
+    ]
+  },
+  {
+    "album_name": "Symbolic",
+    "artist_name": "Death",
+    "rym_title": "Symbolic",
+    "rym_artist": "Death",
+    "rym_rating": "4.15",
+    "rym_num_ratings": "30,477",
+    "rym_num_reviews": "367",
+    "rym_genres": [
+      "technical death metal",
+      "progressive metal",
+      "melodic death metal"
+    ]
+  },
+  {
+    "album_name": "Kiss Me Kiss Me Kiss Me",
+    "artist_name": "The Cure",
+    "rym_title": "Kiss Me Kiss Me Kiss Me",
+    "rym_artist": "The Cure",
+    "rym_rating": "3.67",
+    "rym_num_ratings": "18,971",
+    "rym_num_reviews": "190",
+    "rym_genres": [
+      "post punk",
+      "alternative rock",
+      "new wave",
+      "gothic rock",
+      "neo psychedelia",
+      "pop rock"
+    ]
+  },
+  {
+    "album_name": "The Head on the Door",
+    "artist_name": "The Cure",
+    "rym_title": "The Head on the Door",
+    "rym_artist": "The Cure",
+    "rym_rating": "3.86",
+    "rym_num_ratings": "22,782",
+    "rym_num_reviews": "200",
+    "rym_genres": [
+      "post punk",
+      "new wave",
+      "alternative rock",
+      "gothic rock",
+      "jangle pop"
+    ]
+  },
+  {
+    "album_name": "Pornography",
+    "artist_name": "The Cure",
+    "rym_title": "Pornography",
+    "rym_artist": "The Cure",
+    "rym_rating": "4.08",
+    "rym_num_ratings": "39,781",
+    "rym_num_reviews": "388",
+    "rym_genres": [
+      "gothic rock",
+      "post punk",
+      "coldwave",
+      "neo psychedelia"
+    ]
+  },
+  {
+    "album_name": "Wild Mood Swings",
+    "artist_name": "The Cure",
+    "rym_title": "Wild Mood Swings",
+    "rym_artist": "The Cure",
+    "rym_rating": "2.79",
+    "rym_num_ratings": "5,609",
+    "rym_num_reviews": "107",
+    "rym_genres": [
+      "alternative rock",
+      "pop rock",
+      "chamber pop"
+    ]
+  },
+  {
+    "album_name": "The Cure",
+    "artist_name": "The Cure",
+    "rym_title": "The Cure",
+    "rym_artist": "The Cure",
+    "rym_rating": "2.94",
+    "rym_num_ratings": "5,927",
+    "rym_num_reviews": "111",
+    "rym_genres": [
+      "alternative rock",
+      "gothic rock",
+      "post punk",
+      "neo psychedelia"
+    ]
+  },
+  {
+    "album_name": "Misery Is a Butterfly",
+    "artist_name": "Blonde Redhead",
+    "rym_title": "Blonde Redhead",
+    "rym_artist": "Blonde Redhead",
+    "rym_rating": "3.38",
+    "rym_num_ratings": "1,856",
+    "rym_num_reviews": "29",
+    "rym_genres": [
+      "noise rock",
+      "indie rock",
+      "post hardcore",
+      "post rock",
+      "experimental rock",
+      "post punk"
+    ]
+  },
+  {
+    "album_name": "Wall of Eyes",
+    "artist_name": "The Smile",
+    "rym_title": "Wall of Eyes",
+    "rym_artist": "The Smile",
+    "rym_rating": "3.57",
+    "rym_num_ratings": "16,232",
+    "rym_num_reviews": "144",
+    "rym_genres": [
+      "art rock",
+      "post rock",
+      "krautrock",
+      "neo psychedelia",
+      "ambient pop"
+    ]
+  },
+  {
+    "album_name": "Crimson",
+    "artist_name": "Edge of Sanity",
+    "rym_title": "Crimson",
+    "rym_artist": "Edge of Sanity",
+    "rym_rating": "3.91",
+    "rym_num_ratings": "8,925",
+    "rym_num_reviews": "138",
+    "rym_genres": [
+      "melodic death metal",
+      "progressive metal"
+    ]
+  },
+  {
+    "album_name": "De mysteriis Dom Sathanas",
+    "artist_name": "Mayhem",
+    "rym_title": "De mysteriis Dom Sathanas",
+    "rym_artist": "Mayhem",
+    "rym_rating": "3.78",
+    "rym_num_ratings": "17,063",
+    "rym_num_reviews": "228",
+    "rym_genres": [
+      "black metal"
+    ]
+  },
+  {
+    "album_name": "Hasta la raiz",
+    "artist_name": "Natalia Lafourcade",
+    "rym_title": "Natalia Lafourcade",
+    "rym_artist": "Natalia Lafourcade",
+    "rym_rating": "3.19",
+    "rym_num_ratings": "606",
+    "rym_num_reviews": "6",
+    "rym_genres": [
+      "latin pop",
+      "pop rock",
+      "dance pop",
+      "bossa nova",
+      "drum and bass",
+      "latin alternative",
+      "teen pop",
+      "latin house"
+    ]
+  },
+  {
+    "album_name": "Cancionera",
+    "artist_name": "Natalia Lafourcade",
+    "rym_title": "Natalia Lafourcade",
+    "rym_artist": "Natalia Lafourcade",
+    "rym_rating": "3.19",
+    "rym_num_ratings": "606",
+    "rym_num_reviews": "6",
+    "rym_genres": [
+      "latin pop",
+      "pop rock",
+      "dance pop",
+      "bossa nova",
+      "drum and bass",
+      "latin alternative",
+      "teen pop",
+      "latin house"
+    ]
+  },
+  {
+    "album_name": "Soldatenschicksale",
+    "artist_name": "Kanonenfieber",
+    "rym_title": "Soldatenschicksale",
+    "rym_artist": "Kanonenfieber",
+    "rym_rating": "4.00",
+    "rym_num_ratings": "2",
+    "rym_genres": [
+      "melodic death metal",
+      "melodic black metal"
+    ]
+  },
+  {
+    "album_name": "Red",
+    "artist_name": "King Crimson",
+    "rym_title": "Crimson / Red",
+    "rym_artist": "Prefab Sprout",
+    "rym_rating": "3.48",
+    "rym_num_ratings": "968",
+    "rym_num_reviews": "18",
+    "rym_genres": [
+      "sophisti pop",
+      "jangle pop",
+      "art pop",
+      "singer songwriter"
+    ]
+  },
+  {
+    "album_name": "In the Court of the Crimson King",
+    "artist_name": "King Crimson",
+    "rym_title": "In the Court of the Crimson King",
+    "rym_artist": "King Crimson",
+    "rym_rating": "4.34",
+    "rym_num_ratings": "86,841",
+    "rym_num_reviews": "1,180",
+    "rym_genres": [
+      "progressive rock",
+      "art rock",
+      "symphonic prog",
+      "jazz rock",
+      "free improvisation",
+      "psychedelic rock"
+    ]
+  },
+  {
+    "album_name": "Breakfast in America",
+    "artist_name": "Supertramp",
+    "rym_title": "Breakfast in America",
+    "rym_artist": "Supertramp",
+    "rym_rating": "3.90",
+    "rym_num_ratings": "14,112",
+    "rym_num_reviews": "181",
+    "rym_genres": [
+      "progressive pop",
+      "pop rock",
+      "piano rock",
+      "art pop"
+    ]
+  },
+  {
+    "album_name": "Famous Last Words",
+    "artist_name": "Supertramp",
+    "rym_title": "Famous Last Words",
+    "rym_artist": "My Chemical Romance",
+    "rym_rating": "3.96",
+    "rym_num_ratings": "1,012",
+    "rym_num_reviews": "6",
+    "rym_genres": [
+      "rock opera",
+      "alternative rock",
+      "glam rock",
+      "emo pop",
+      "power pop",
+      "symphonic rock",
+      "heavy metal",
+      "post rock"
+    ]
+  },
+  {
+    "album_name": "Hunky Dory",
+    "artist_name": "David Bowie",
+    "rym_title": "Hunky Dory",
+    "rym_artist": "David Bowie",
+    "rym_rating": "3.99",
+    "rym_num_ratings": "45,103",
+    "rym_num_reviews": "599",
+    "rym_genres": [
+      "pop rock",
+      "glam rock",
+      "art rock",
+      "singer songwriter",
+      "piano rock",
+      "art pop",
+      "baroque pop"
+    ]
+  },
+  {
+    "album_name": "Savior",
+    "artist_name": "Green Day",
+    "rym_title": "Savior",
+    "rym_artist": "Rise Against",
+    "rym_rating": "3.66",
+    "rym_num_ratings": "373",
+    "rym_num_reviews": "1",
+    "rym_genres": [
+      "melodic hardcore",
+      "alternative rock",
+      "pop punk",
+      "skate punk"
+    ]
+  },
+  {
+    "album_name": "Creature of Habit",
+    "artist_name": "Courtney Barnett",
+    "rym_title": "Creatures of Habit",
+    "rym_artist": "Kiltro",
+    "rym_rating": "3.70",
+    "rym_num_ratings": "711",
+    "rym_num_reviews": "9",
+    "rym_genres": [
+      "indie folk",
+      "latin rock",
+      "latin alternative",
+      "psychedelic folk"
+    ]
+  },
+  {
+    "album_name": "American Football",
+    "artist_name": "American Football",
+    "rym_title": "American Football",
+    "rym_artist": "American Football",
+    "rym_rating": "3.88",
+    "rym_num_ratings": "43,111",
+    "rym_num_reviews": "351",
+    "rym_genres": [
+      "midwest emo",
+      "math rock",
+      "post rock",
+      "slowcore"
+    ]
+  },
+  {
+    "album_name": "Secret love",
+    "artist_name": "Dry Cleaning",
+    "rym_title": "Secret Love",
+    "rym_artist": "Dry Cleaning",
+    "rym_rating": "3.10",
+    "rym_num_ratings": "3,312",
+    "rym_num_reviews": "60",
+    "rym_genres": [
+      "indie rock",
+      "post punk",
+      "neo psychedelia",
+      "art punk",
+      "jangle pop",
+      "windmill scene"
+    ]
+  },
+  {
+    "album_name": "Loney People With Power",
+    "artist_name": "deafHeaven",
+    "rym_title": "Lonely People With Power",
+    "rym_artist": "Deafheaven",
+    "rym_rating": "3.88",
+    "rym_num_ratings": "21,522",
+    "rym_num_reviews": "263",
+    "rym_genres": [
+      "blackgaze",
+      "post metal",
+      "post rock",
+      "screamo",
+      "black metal"
+    ]
+  },
+  {
+    "album_name": "Middle of Nowhere",
+    "artist_name": "Kacey Musgraves",
+    "rym_title": "Kacey Musgraves",
+    "rym_artist": "Kacey Musgraves",
+    "rym_rating": "2.80",
+    "rym_num_ratings": "48",
+    "rym_num_reviews": "1",
+    "rym_genres": [
+      "country pop"
+    ]
+  },
+  {
+    "album_name": "Train on the Island",
+    "artist_name": "Aldous Harding",
+    "rym_title": "Aldous Harding",
+    "rym_artist": "Aldous Harding",
+    "rym_rating": "3.47",
+    "rym_num_ratings": "748",
+    "rym_num_reviews": "5",
+    "rym_genres": [
+      "contemporary folk",
+      "singer songwriter",
+      "chamber folk"
+    ]
+  },
+  {
+    "album_name": "The Mountain",
+    "artist_name": "Gorillaz",
+    "rym_title": "Gorillaz",
+    "rym_artist": "Gorillaz",
+    "rym_rating": "3.55",
+    "rym_num_ratings": "32,779",
+    "rym_num_reviews": "245",
+    "rym_genres": [
+      "trip hop",
+      "alternative rock",
+      "dub",
+      "hip hop",
+      "neo psychedelia"
+    ]
+  },
+  {
+    "album_name": "Marathon",
+    "artist_name": "Maria BC",
+    "rym_title": "Marathon",
+    "rym_artist": "Santana",
+    "rym_rating": "2.90",
+    "rym_num_ratings": "598",
+    "rym_num_reviews": "22",
+    "rym_genres": [
+      "pop rock",
+      "latin rock",
+      "jazz rock",
+      "aor",
+      "yacht rock"
+    ]
+  },
+  {
+    "album_name": "Angel in Plainclothes",
+    "artist_name": "Angelo De Augustine",
+    "rym_title": "Angel in Plainclothes",
+    "rym_artist": "Angelo De Augustine",
+    "rym_rating": "3.44",
+    "rym_num_ratings": "319",
+    "rym_num_reviews": "2",
+    "rym_genres": [
+      "singer songwriter",
+      "indie folk",
+      "chamber folk"
+    ]
+  },
+  {
+    "album_name": "Hell for a Basement",
+    "artist_name": "drug bug",
+    "rym_title": "Hell for a Basement",
+    "rym_artist": "drug bug",
+    "rym_rating": "3.54",
+    "rym_num_ratings": "2,991",
+    "rym_num_reviews": "42",
+    "rym_genres": [
+      "indie rock",
+      "art rock",
+      "indie folk",
+      "emo",
+      "chamber pop",
+      "slacker rock",
+      "progressive rock",
+      "noise rock"
+    ]
+  },
+  {
+    "album_name": "U",
+    "artist_name": "underscores",
+    "rym_title": "underscores: U",
+    "rym_artist": "v1v1",
+    "rym_genres": [
+      "electropop",
+      "indietronica",
+      "mashup",
+      "electro house",
+      "complextro",
+      "future bass"
+    ]
+  },
+  {
+    "album_name": "Girlfriend",
+    "artist_name": "Grace Ives",
+    "rym_title": "My Girlfriend's Girlfriend",
+    "rym_artist": "Type O Negative",
+    "rym_rating": "3.79",
+    "rym_num_ratings": "287",
+    "rym_num_reviews": "2",
+    "rym_genres": [
+      "gothic metal",
+      "alternative metal",
+      "doom metal",
+      "psychedelic rock"
+    ]
+  },
+  {
+    "album_name": "Nothing's About to Happen to Me",
+    "artist_name": "Mitski",
+    "rym_title": "Nothing's About to Happen to Me",
+    "rym_artist": "Mitski",
+    "rym_rating": "3.39",
+    "rym_num_ratings": "7,545",
+    "rym_num_reviews": "102",
+    "rym_genres": [
+      "singer songwriter",
+      "americana",
+      "indie rock",
+      "slacker rock",
+      "country folk",
+      "chamber pop",
+      "indie folk"
+    ]
+  },
+  {
+    "album_name": "Death in the Business of Whaling",
+    "artist_name": "Searows",
+    "rym_title": "Death in the Business of Whaling",
+    "rym_artist": "Searows",
+    "rym_rating": "3.36",
+    "rym_num_ratings": "2,249",
+    "rym_num_reviews": "29",
+    "rym_genres": [
+      "indie folk",
+      "singer songwriter",
+      "slowcore",
+      "dream pop",
+      "chamber folk"
+    ]
+  },
+  {
+    "album_name": "Post Recovery",
+    "artist_name": "midwest post death",
+    "rym_title": "Post Recovery",
+    "rym_artist": "midwest, post death",
+    "rym_rating": "3.48",
+    "rym_num_ratings": "367",
+    "rym_num_reviews": "7",
+    "rym_genres": [
+      "noise pop",
+      "slacker rock",
+      "emo",
+      "garage punk",
+      "chamber pop",
+      "shitgaze",
+      "furry music"
+    ]
+  },
+  {
+    "album_name": "Necropalace",
+    "artist_name": "Worm",
+    "rym_title": "Necropalace",
+    "rym_artist": "Worm",
+    "rym_rating": "3.59",
+    "rym_num_ratings": "2,271",
+    "rym_num_reviews": "22",
+    "rym_genres": [
+      "symphonic black metal",
+      "gothic metal",
+      "melodic black metal",
+      "progressive metal",
+      "neoclassical metal",
+      "death doom metal"
+    ]
+  },
+  {
+    "album_name": "An Undying Love for a Burning World",
+    "artist_name": "Neurosis",
+    "rym_title": "An Undying Love for a Burning World",
+    "rym_artist": "Neurosis",
+    "rym_rating": "3.84",
+    "rym_num_ratings": "8,671",
+    "rym_num_reviews": "101",
+    "rym_genres": [
+      "atmospheric sludge metal",
+      "post rock",
+      "doom metal",
+      "post industrial",
+      "post hardcore"
+    ]
+  },
+  {
+    "album_name": "It's the Long Goodbye",
+    "artist_name": "The Twilight Sad",
+    "rym_title": "It's the Long Goodbye",
+    "rym_artist": "The Twilight Sad",
+    "rym_rating": "3.49",
+    "rym_num_ratings": "1,443",
+    "rym_num_reviews": "18",
+    "rym_genres": [
+      "post punk revival",
+      "shoegaze",
+      "gothic rock",
+      "darkwave",
+      "noise pop"
+    ]
+  },
+  {
+    "album_name": "Blood At Ease",
+    "artist_name": "Blood At Ease",
+    "rym_title": "Ill at Ease",
+    "rym_artist": "Preoccupations",
+    "rym_rating": "3.01",
+    "rym_num_ratings": "897",
+    "rym_num_reviews": "13",
+    "rym_genres": [
+      "post punk",
+      "new wave",
+      "coldwave",
+      "gothic rock",
+      "post punk revival"
+    ]
+  },
+  {
+    "album_name": "Days of Ash",
+    "artist_name": "U2",
+    "rym_title": "Days of Ash",
+    "rym_artist": "U2",
+    "rym_rating": "2.68",
+    "rym_num_ratings": "606",
+    "rym_num_reviews": "18",
+    "rym_genres": [
+      "pop rock",
+      "alternative rock",
+      "big music",
+      "garage rock revival"
+    ]
+  },
+  {
+    "album_name": "Under Cover",
+    "artist_name": "Ozzy Osbourne",
+    "rym_title": "The Essential Ozzy Osbourne",
+    "rym_artist": "Ozzy Osbourne",
+    "rym_rating": "3.82",
+    "rym_num_ratings": "468",
+    "rym_num_reviews": "15",
+    "rym_genres": [
+      "heavy metal",
+      "hard rock"
+    ]
+  },
+  {
+    "album_name": "Living's Deal",
+    "artist_name": "Explosicum",
+    "rym_title": "Living's Deal",
+    "rym_artist": "Explosicum",
+    "rym_rating": "3.26",
+    "rym_num_ratings": "33",
+    "rym_genres": [
+      "thrash metal",
+      "crossover thrash"
+    ]
+  },
+  {
+    "album_name": "Almighty So 2",
+    "artist_name": "Chief Keef",
+    "rym_title": "Almighty So 2",
+    "rym_artist": "Chief Keef",
+    "rym_rating": "3.52",
+    "rym_num_ratings": "7,072",
+    "rym_num_reviews": "47",
+    "rym_genres": [
+      "chicago drill",
+      "hardcore hip hop",
+      "gangsta rap",
+      "trap",
+      "chipmunk soul",
+      "midwest hip hop"
+    ]
+  },
+  {
+    "album_name": "That! Feel! Good!",
+    "artist_name": "Jessie Ware",
+    "rym_title": "That! Feels Good!",
+    "rym_artist": "Jessie Ware",
+    "rym_rating": "3.73",
+    "rym_num_ratings": "14,095",
+    "rym_num_reviews": "143",
+    "rym_genres": [
+      "disco",
+      "dance pop",
+      "diva house",
+      "philly soul",
+      "boogie",
+      "funk"
+    ]
+  },
+  {
+    "album_name": "The Apple Tree Under the Sea",
+    "artist_name": "Hemlocke Springs",
+    "rym_title": "The Apple Tree Under the Sea",
+    "rym_artist": "hemlocke springs",
+    "rym_rating": "3.50",
+    "rym_num_ratings": "4,835",
+    "rym_num_reviews": "53",
+    "rym_genres": [
+      "synthpop",
+      "dance pop",
+      "alternative dance",
+      "art pop",
+      "darkwave"
+    ]
+  },
+  {
+    "album_name": "Blame the Clown",
+    "artist_name": "Twisted Teens",
+    "rym_title": "Blame the Clown",
+    "rym_artist": "Twisted Teens",
+    "rym_rating": "3.42",
+    "rym_num_ratings": "601",
+    "rym_num_reviews": "4",
+    "rym_genres": [
+      "slacker rock",
+      "garage rock",
+      "alt country",
+      "cowpunk"
+    ]
+  },
+  {
+    "album_name": "Overspace & Supertime",
+    "artist_name": "Cryptic Shift",
+    "rym_title": "Overspace &amp; Supertime",
+    "rym_artist": "Cryptic Shift",
+    "rym_rating": "3.63",
+    "rym_num_ratings": "2,681",
+    "rym_num_reviews": "30",
+    "rym_genres": [
+      "technical thrash metal",
+      "progressive metal",
+      "technical death metal",
+      "avant garde metal",
+      "jazz fusion"
+    ]
+  },
+  {
+    "album_name": "Setting Fire to the Sky",
+    "artist_name": "Urne",
+    "rym_title": "Setting Fire to the Sky",
+    "rym_artist": "Urne",
+    "rym_rating": "3.31",
+    "rym_num_ratings": "315",
+    "rym_num_reviews": "2",
+    "rym_genres": [
+      "progressive metal",
+      "metalcore"
+    ]
+  },
+  {
+    "album_name": "Peanut",
+    "artist_name": "Otto Benson",
+    "rym_title": "Otto Motto",
+    "rym_artist": "By Divine Right",
+    "rym_rating": "4.00",
+    "rym_num_ratings": "4",
+    "rym_genres": [
+      "indie rock"
+    ]
+  },
+  {
+    "album_name": "Some Things Never Leave",
+    "artist_name": "Annabelle Dinda",
+    "rym_title": "Some Things Never Change",
+    "rym_artist": "Supertramp",
+    "rym_rating": "2.81",
+    "rym_num_ratings": "554",
+    "rym_num_reviews": "10",
+    "rym_genres": [
+      "pop rock",
+      "progressive pop",
+      "adult contemporary",
+      "jazz pop",
+      "smooth jazz",
+      "blues rock"
+    ]
+  },
+  {
+    "album_name": "An Evergreen Joke",
+    "artist_name": "Snorkmaiden",
+    "rym_title": "An Evergreen Joke",
+    "rym_artist": "Snorkmaiden",
+    "rym_rating": "2.75",
+    "rym_num_ratings": "4",
+    "rym_genres": [
+      "indie folk",
+      "indie rock",
+      "drone",
+      "singer songwriter",
+      "slacker rock"
+    ]
+  },
+  {
+    "album_name": "Singin' to an Empty Chair",
+    "artist_name": "Ratboys",
+    "rym_title": "Singin' to an Empty Chair",
+    "rym_artist": "Ratboys",
+    "rym_rating": "3.39",
+    "rym_num_ratings": "1,720",
+    "rym_num_reviews": "17",
+    "rym_genres": [
+      "indie rock",
+      "alt country",
+      "power pop"
+    ]
+  },
+  {
+    "album_name": "The Sound of One Car Crashing",
+    "artist_name": "threadbaron",
+    "rym_title": "The Sound of One Car Crashing",
+    "rym_artist": "threadbaron",
+    "rym_rating": "3.36",
+    "rym_num_ratings": "97",
+    "rym_num_reviews": "3",
+    "rym_genres": [
+      "indie rock",
+      "neo psychedelia",
+      "art rock",
+      "emo",
+      "post hardcore",
+      "chamber pop",
+      "slacker rock"
+    ]
+  },
+  {
+    "album_name": "No ritmo da Terra",
+    "artist_name": "Antropoceno",
+    "rym_title": "No ritmo da Terra",
+    "rym_artist": "Antropoceno",
+    "rym_rating": "3.68",
+    "rym_num_ratings": "3,479",
+    "rym_num_reviews": "43",
+    "rym_genres": [
+      "post rock",
+      "afoxe",
+      "post metal",
+      "candomble music",
+      "neo psychedelia",
+      "nature recordings",
+      "capoeira music",
+      "samba"
+    ]
+  },
+  {
+    "album_name": "tanquemante",
+    "artist_name": "Inundaremos",
+    "rym_title": "tanquemante",
+    "rym_artist": "Inundaremos",
+    "rym_rating": "3.69",
+    "rym_num_ratings": "882",
+    "rym_num_reviews": "4",
+    "rym_genres": [
+      "chamber pop",
+      "indie rock",
+      "indie pop",
+      "folk rock",
+      "art rock",
+      "neo psychedelia",
+      "chamber folk",
+      "nueva escena chilena"
+    ]
+  },
+  {
+    "album_name": "Everything",
+    "artist_name": "Black Sea Dahu",
+    "rym_title": "Black Sea",
+    "rym_artist": "XTC",
+    "rym_rating": "3.86",
+    "rym_num_ratings": "7,826",
+    "rym_num_reviews": "121",
+    "rym_genres": [
+      "new wave",
+      "post punk",
+      "pop rock",
+      "dance punk",
+      "art rock",
+      "power pop"
+    ]
+  },
+  {
+    "album_name": "Picture Day",
+    "artist_name": "The Fencesitters",
+    "rym_title": "Picture Day",
+    "rym_artist": "The Fencesitters",
+    "rym_rating": "3.46",
+    "rym_num_ratings": "877",
+    "rym_num_reviews": "13",
+    "rym_genres": [
+      "indie rock",
+      "power pop",
+      "indie folk",
+      "emo",
+      "art rock",
+      "noise pop",
+      "indietronica",
+      "post hardcore"
+    ]
+  },
+  {
+    "album_name": "Help",
+    "artist_name": "Various Artists War Child Records",
+    "rym_title": "War Child",
+    "rym_artist": "Jethro Tull",
+    "rym_rating": "3.30",
+    "rym_num_ratings": "2,913",
+    "rym_num_reviews": "82",
+    "rym_genres": [
+      "progressive rock",
+      "folk rock",
+      "british folk rock",
+      "hard rock",
+      "symphonic rock"
+    ]
+  },
+  {
+    "album_name": "El hambre y las ganas de comer",
+    "artist_name": "La Estrategia del Caracol",
+    "rym_title": "El hambre y las ganas de comer",
+    "rym_artist": "La Estrategia del Caracol",
+    "rym_rating": "3.73",
+    "rym_num_ratings": "1,661",
+    "rym_num_reviews": "14",
+    "rym_genres": [
+      "post hardcore",
+      "midwest emo",
+      "emo pop",
+      "math pop",
+      "noise rock",
+      "nueva escena chilena",
+      "math rock"
+    ]
+  },
+  {
+    "album_name": "Something Worth Waiting For",
+    "artist_name": "Friko",
+    "rym_title": "Something Worth Waiting For",
+    "rym_artist": "Friko",
+    "rym_rating": "3.52",
+    "rym_num_ratings": "2,483",
+    "rym_num_reviews": "35",
+    "rym_genres": [
+      "indie rock",
+      "chamber pop",
+      "power pop",
+      "noise pop",
+      "indie folk"
+    ]
+  },
+  {
+    "album_name": "You Are in My Dreams",
+    "artist_name": "Kisses",
+    "rym_title": "In My Dreams",
+    "rym_artist": "Danny L Harle",
+    "rym_rating": "3.56",
+    "rym_num_ratings": "597",
+    "rym_num_reviews": "2",
+    "rym_genres": [
+      "bubblegum bass",
+      "electropop",
+      "euro house"
+    ]
+  },
+  {
+    "album_name": "It's Fine to Dream",
+    "artist_name": "You Are an Angel",
+    "rym_title": "It's Fine to Dream",
+    "rym_artist": "You Are an Angel",
+    "rym_rating": "3.46",
+    "rym_num_ratings": "1,366",
+    "rym_num_reviews": "21",
+    "rym_genres": [
+      "indie rock",
+      "emo pop",
+      "power pop",
+      "indietronica",
+      "midwest emo",
+      "bitpop",
+      "art rock",
+      "furry music"
+    ]
+  },
+  {
+    "album_name": "American Road in New Jersey",
+    "artist_name": "American Road In New Jersey",
+    "rym_title": "American Road in New Jersey",
+    "rym_artist": "American Road in New Jersey",
+    "rym_rating": "3.28",
+    "rym_num_ratings": "257",
+    "rym_num_reviews": "2",
+    "rym_genres": [
+      "indie folk",
+      "ambient pop",
+      "dream pop",
+      "post rock"
+    ]
+  },
+  {
+    "album_name": "Jessica Pratt",
+    "artist_name": "Asher White",
+    "rym_title": "Jessica Pratt",
+    "rym_artist": "Jessica Pratt",
+    "rym_rating": "3.57",
+    "rym_num_ratings": "1,681",
+    "rym_num_reviews": "19",
+    "rym_genres": [
+      "contemporary folk",
+      "singer songwriter",
+      "psychedelic folk",
+      "loner folk",
+      "freak folk",
+      "new weird america"
+    ]
+  },
+  {
+    "album_name": "Itinerary",
+    "artist_name": "Jo's Moving Day",
+    "rym_title": "Itinerary",
+    "rym_artist": "Jo's Moving Day",
+    "rym_rating": "3.59",
+    "rym_num_ratings": "346",
+    "rym_num_reviews": "1",
+    "rym_genres": [
+      "shoegaze",
+      "dream pop"
+    ]
+  },
+  {
+    "album_name": "Casino",
+    "artist_name": "Richard Sallis",
+    "rym_title": "Casino",
+    "rym_artist": "Al Di Meola",
+    "rym_rating": "3.73",
+    "rym_num_ratings": "1,238",
+    "rym_num_reviews": "20",
+    "rym_genres": [
+      "jazz fusion",
+      "latin jazz",
+      "flamenco jazz",
+      "progressive rock"
+    ]
+  },
+  {
+    "album_name": "Repetition",
+    "artist_name": "Kill-Kennie",
+    "rym_title": "Repetition",
+    "rym_artist": "Unwound",
+    "rym_rating": "4.02",
+    "rym_num_ratings": "16,823",
+    "rym_num_reviews": "84",
+    "rym_genres": [
+      "post hardcore",
+      "noise rock",
+      "post punk",
+      "art punk",
+      "emo"
+    ]
+  },
+  {
+    "album_name": "Cainite",
+    "artist_name": "The Mensis Ritual",
+    "rym_title": "The Ritual",
+    "rym_artist": "Testament",
+    "rym_rating": "3.24",
+    "rym_num_ratings": "2,534",
+    "rym_num_reviews": "47",
+    "rym_genres": [
+      "heavy metal",
+      "thrash metal"
+    ]
+  },
+  {
+    "album_name": "Is It Gonna Happen Again?",
+    "artist_name": "jody",
+    "rym_title": "Is It Gonna Happen Again？",
+    "rym_artist": "jody积融",
+    "rym_rating": "3.50",
+    "rym_num_ratings": "836",
+    "rym_num_reviews": "5",
+    "rym_genres": [
+      "alternative randb",
+      "alt pop",
+      "2 step",
+      "dance pop",
+      "electropop",
+      "breakbeat",
+      "mandopop"
+    ]
+  },
+  {
+    "album_name": "Is It Gonna Happen Again?",
+    "artist_name": "jody",
+    "rym_title": "Is It Gonna Happen Again？",
+    "rym_artist": "jody积融",
+    "rym_rating": "3.50",
+    "rym_num_ratings": "836",
+    "rym_num_reviews": "5",
+    "rym_genres": [
+      "alternative randb",
+      "alt pop",
+      "2 step",
+      "dance pop",
+      "electropop",
+      "breakbeat",
+      "mandopop"
+    ]
+  }
+]

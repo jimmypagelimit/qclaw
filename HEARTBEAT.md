@@ -28,7 +28,8 @@
   "lastChecks": {
     "covers": 0,
     "covers_total": 216,
-    "covers_remaining": 279
+    "covers_remaining": 279,
+    "c_drive_check": "2026-06-08"
   }
 }
 ```
@@ -81,8 +82,9 @@ if used_gb > 50:
 {
   "lastChecks": {
     "rss": 0,
-    "weekly_review": "2026-04-26",
+    "weekly_review": "2026-06-08",
     "monthly_review": "2026-05-01",
+    "c_drive_check": "2026-06-08",
     "covers": 0,
     "covers_total": 216,
     "covers_remaining": 279

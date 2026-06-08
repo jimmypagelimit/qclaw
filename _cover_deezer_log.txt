@@ -1,0 +1,12 @@
+Remaining: 9
+FAIL [71] 大只佬 (V是兔子) - no Deezer result
+FAIL [117] 郑钧=zj (郑钧) - no Deezer result
+FAIL [139] The Fly II (苍蝇) - no Deezer result
+FAIL [163] 金陵祭 (黑麒麟) - no Deezer result
+FAIL [227] Голос сталі (The Voice of Steel) (Nokturnal Mortum) - no Deezer result
+FAIL [449] 每一刻都是崭新的 (It's New for Every Moment) (许巍 [Xu Wei]) - no Deezer result
+FAIL [471] 漩渦重構實驗 Vortex Reconstruction Experiment (猿 [Yuan] & 鍋一楠 [Guo Yinan]) - no Deezer result
+FAIL [524] Is It Gonna Happen Again? (jody积融) - no Deezer result
+FAIL [525] 脱轨 (谢甜柒) - no Deezer result
+
+Done: 0 ok, 9 failed

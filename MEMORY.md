@@ -19,10 +19,10 @@
 
 ## 重要规则
 
-### 专辑入库同步规则（2026-05-23 确立，持续深化）
+### 专辑入库同步规则（2026-06-08 重构）
 **每次用户新增专辑时，必须执行完整流程：**
-1. ✅ 停止 Web 服务（避免 sql.js 内存冲突）
-2. ✅ 写入年份表（`albums_YYYY`）+ 总表
+1. ✅ 停止 Web 服务（避免 sqlite3 锁冲突）
+2. ✅ 写入 `albums` 总表 + `listen_history` 表（年度表已废弃）
 3. ✅ 繁简转换（繁体入库必须先转简体，见下方规则）
 4. ✅ 下载封面（iTunes > Deezer > 网易云，保存为 `{id}-{artist}-{album}.jpg`）
 5. ✅ 复制封面到 `album-tracker/public/covers/`（Web 访问路径）
@@ -31,7 +31,7 @@
 8. ✅ Git add + commit + push
 
 **判重依据**：`album_name + artist`（非 `album_id`）
-**双表同步**：写入年份表 + albums 总表，只增加 `total_listen_count`
+**单表模式**：只操作 `albums` + `listen_history`，不再使用年度表
 
 ### 繁简转换规则（2026-05-27 确立）⭐
 **核心原则**：繁体入库的专辑必须先转为简体
@@ -93,27 +93,34 @@
 - 月度/专题/年榜/双面计划/听歌随想/新专速递
 
 ### 听歌记录数据库（album-tracker 项目）⭐ 长期维护
-- **SQLite**: \\10.0.2.4\qemu\原创计划\music\music
+- **SQLite**: `\\10.0.2.4\qemu\原创计划\music\music`（UNC路径）
 - **CLI 工具**: {workspace_root_dir}\tasks\2026-05-12-long-term-project\album-tracker
 - **Web 界面**: http://localhost:3456（`node dist/server.js` 启动）
 - **Python 3.11**: C:\Python311\python.exe
-- **统计规则**: 总排行查 albums 表，年度排行查 albums_YYYY 表
-- **数据库现状**: albums 495条 | albums_2026 122条
+- **统计规则**: 总排行查 `albums` 表，年度排行查 `listen_history` + `albums` JOIN（**不再使用年度表**）
+- **数据库现状**: albums 517条 | listen_history 1028条 | artists 313条
 
-### 听歌记录维护流程（2026-05-12 起 ⭐ 终身维护）
+### 听歌记录维护流程（2026-06-08 重构 ⭐ 终身维护）
 - **用户不再维护 Markdown**，改为直接告诉我要听/已听的专辑
 - 我直接操作数据库（Web界面或API/CLI）
-- **双表同步**：写入年份表 + albums 总表
+- **单表模式**：只操作 `albums` + `listen_history`（**年度表已废弃**）
 - **同步规则**:
-- 专辑不存在 → 新增记录
-- 专辑已存在 → **只增加** `total_listen_count`（判重依据：album_name + artist）
+- 专辑不存在 → 新增记录到 `albums`，写入 `listen_history`
+- 专辑已存在 → **只增加** `total_listen_count`，新增 `listen_history` 记录（判重依据：album_name + artist）
 - Markdown 文件已清空，仅保留空文件占位
 - 导入脚本: `album-tracker/scripts/import_2026.py`（默认华语新+外语新，`--all`全四类）
 - [详细操作手册](ALBUM_TRACKER_RULES.md)
 
 
+## RYM 抓取工具（2026-06-08 确立）⭐
+- **CloakBrowser** 绕过 Cloudflare，脚本 `rym_tool.py`
+- 用法: `C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"`
+- 关键规则: headless=False, 首页等20秒, JS click进入专辑, 正则提取
+- 已验证4张专辑成功，详见 TOOLS.md
+
 ## 常用网站
 - 匿名旅行者: https://www.anontraveler.com（音乐流派百科）
+- RYM: https://rateyourmusic.com（需 CloakBrowser 绕 CF）
 
 ## 身体保养计划（2026-05-01起）⭐
 - 晨间：洗脸+面霜+防晒 | 晚间：洁面+保湿+早睡
@@ -127,3 +134,7 @@
 ## RSS体系（2026-05-01建成）
 - 153源：44音乐+62文学+25历史哲学+22Reddit
 - 详见 `RSS-SOURCES.md`，检查逻辑见 `HEARTBEAT.md`
+
+## 用户身份与偏好
+
+- 张树家二孩出生（2026年6月前后）

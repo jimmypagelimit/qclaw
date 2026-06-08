@@ -1,0 +1,30 @@
+Missing covers: 27
+OK [215] 喀什科尔胡杨 (刀郎) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/4b/52/fa4b5278-f42c-ac68-19db-2f8bcd4d99dd/3617382791647.jpg/600x600bb.jpg
+OK [327] 夜官巡场 (装咖人) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/64/07/67/64076768-966c-c221-c8a2-10433d8ee7ad/cover_5000x5000.jpg/600x600bb.jpg
+OK [545] 幻象波谱星 (刺猬) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/7a/47/6e7a4718-0811-aba3-722f-74159fda921e/25UMGIM42330.rgb.jpg/600x600bb.jpg
+OK [17] 淡淡幽情 (邓丽君) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/d7/4b/26d74b28-5b53-b449-149b-f2f0f8a306dc/10UMGIM24111.rgb.jpg/600x600bb.jpg
+OK [18] 一些次要的时刻 (卧轨的火车) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/42/a1/c8/42a1c817-26bb-666b-16bf-6a21a83b91f1/6941636736021_1.jpg/600x600bb.jpg
+OK [23] 时代在召唤 (假假条) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e4/20/99/e4209983-6f6e-91a0-2b9d-a44a2de96f6e/cover.jpg/600x600bb.jpg
+OK [58] Psychocandy (The Jesus and Mary Chain) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b0/68/9d/b0689dca-7b1a-a582-68e7-e179ee655a95/artwork.jpg/600x600bb.jpg
+OK [60] Loney People With Power (deafHeaven) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/82/6a/fc826a19-49f2-025e-ba21-43789ec44a8b/075679623966.jpg/600x600bb.jpg
+OK [63] Synchronicity (The Police) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a4/67/ba/a467ba62-87df-9d10-98d2-c517f68ac870/16UMGIM60882.rgb.jpg/600x600bb.jpg
+OK [64] New Bermuda (Deafheaven) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/ba/16/3e/ba163e2d-80d1-13f8-506a-2d9dde0c1c2b/0045778742509.png/600x600bb.jpg
+OK [65] EVOL (Sonic Youth) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music/v4/62/1c/76/621c7676-d45d-9484-186a-6dcbbed75974/818756010934_cover.jpg/600x600bb.jpg
+OK [67] Kiss Me Kiss Me Kiss Me (The Cure) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/5b/b5/1d5bb58f-f4f8-e660-fcd2-dcc6e4ec931c/859732131595_cover.jpg/600x600bb.jpg
+OK [69] Capacity (Big Thief) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/f2/e7/a8f2e7cd-9052-bb15-951e-0e820e32bff6/191400075450.png/600x600bb.jpg
+OK [70] 碎片 (黄贯中) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e1/a7/b4/e1a7b43a-f3f8-60b0-2cff-df6e2b03808b/cover.jpg/600x600bb.jpg
+FAIL [71] 大只佬 (V是兔子) - no iTunes result
+FAIL [117] 郑钧=zj (郑钧) - no iTunes result
+FAIL [139] The Fly II (苍蝇) - no iTunes result
+FAIL [163] 金陵祭 (黑麒麟) - no iTunes result
+FAIL [227] Голос сталі (The Voice of Steel) (Nokturnal Mortum) - no iTunes result
+OK [367] Tea with Flower Fragrance (张福全) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7d/3f/9f/7d3f9fe1-570e-3235-7872-7e809dc32ab9/TCD-4013.jpg/600x600bb.jpg
+OK [440] 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window) (声音碎片 [Sound Fragment]) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/06/fa/8306fa23-6022-4e2e-bfdf-eaffd02d2329/25UMGIM42442.rgb.jpg/600x600bb.jpg
+FAIL [449] 每一刻都是崭新的 (It's New for Every Moment) (许巍 [Xu Wei]) - no iTunes result
+FAIL [471] 漩渦重構實驗 Vortex Reconstruction Experiment (猿 [Yuan] & 鍋一楠 [Guo Yinan]) - no iTunes result
+FAIL [524] Is It Gonna Happen Again? (jody积融) - no iTunes result
+FAIL [525] 脱轨 (谢甜柒) - no iTunes result
+OK [541] Chinese Football (Chinese Football) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b0/99/40/b099403d-e643-4d17-8628-1cdae9b6b6ec/859753607338_cover.jpg/600x600bb.jpg
+OK [49] Disintegration (The Cure) - iTunes: https://is1-ssl.mzstatic.com/image/thumb/Music/93/3c/2c/mzi.ujtdsknz.jpg/600x600bb.jpg
+
+Done: 18 ok, 9 failed

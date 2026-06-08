@@ -1,0 +1,16 @@
+{
+  "test_album": "Twin Fantasy - Car Seat Headrest",
+  "info": {
+    "title": "N/A",
+    "artist": "Car Seat Headrest",
+    "rating": "N/A",
+    "num_ratings": ",",
+    "num_reviews": "165",
+    "genres": [],
+    "styles": []
+  },
+  "screenshots": [
+    "rym_test_search.png",
+    "rym_test_album.png"
+  ]
+}

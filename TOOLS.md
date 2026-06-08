@@ -142,7 +142,8 @@ Cloudflare 拦截时优先用此方案。
 
 ### Cloudflare 拦截
 - `web_fetch` 被强 CF 站（RYM、The Quietus、Slant、BrooklynVegan）拦截是常态
-- **优先用 opencli + CDP！**
+- **RYM 优先用 CloakBrowser + RYM Tool**（见下方）
+- 其他 CF 站用 opencli + CDP
 - 替代数据源：AnyDecentMusic（`anydecentmusic.com`）无 CF，有加权评分
 
 ### 乐评汇编 Skill
@@ -178,6 +179,47 @@ print(os.path.exists("G:\\音乐编年史"))
 ### AnyDecentMusic
 - **网址**：https://anydecentmusic.com
 - **用途**：综合评分聚合，无 CF
+
+### RYM (RateYourMusic) ⭐⭐ CloakBrowser 方案
+- **网址**：https://rateyourmusic.com
+- **有 Cloudflare 保护**，`web_fetch` / 普通 Playwright 全部 403/503
+- **唯一可用方案**：CloakBrowser + `rym_tool.py`
+
+**安装依赖**：
+```
+C:\Python311\Scripts\pip.exe install cloakbrowser
+```
+
+**脚本**：`C:\Users\qujt\.qclaw\workspace\rym_tool.py`
+
+**用法**：
+```
+C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"
+```
+
+**输出**：
+- JSON 文件（专辑名、艺人、评分/5、评价数、流派、风格）
+- 截图（搜索页 + 专辑页）
+
+**关键规则（已验证，不可违反）**：
+1. `launch(headless=False)` — 必须 headless=False，headless 被 CF 识别
+2. 首页等 20 秒 — CF challenge 完成需要时间，不可跳过
+3. 搜索框选择器 `#ui_search_input_main_search` — 稳定可用
+4. **进入专辑页必须用 JS `link.click()`，不能用 `page.goto()`** — 直接跳转被 CF 503
+5. 提取用正则 from `page.content()` — JS 动态渲染，locator 不可靠
+6. `delay=60` 模拟人工输入速度
+
+**实测成功**（2026-06-08）：
+- Car Seat Headrest - Twin Fantasy: 3.82/5, 22,077 ratings
+- The Cure - Disintegration: 4.26/5, 59,795 ratings
+- Sonic Youth - Daydream Nation: 4.04/5, 44,124 ratings
+- Paul McCartney - The Boys of Dungeon Lane: 3.42/5, 1,616 ratings
+
+**已知限制**：
+- 评论数（Reviews）提取不稳定
+- 风格（Style）经常提取不到
+- 每张专辑约 50-60 秒（CF 等待占大头）
+- 单次只能抓一张专辑
 
 ### Metal-Archives
 - **网址**：https://www.metal-archives.com
@@ -242,4 +284,4 @@ print(data)
 
 ---
 
-_Last updated: 2026-05-22_
+_Last updated: 2026-06-08_
