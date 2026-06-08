@@ -113,14 +113,17 @@ app.get('/api/albums', async (req, res) => {
         let countSql;
         const params = [];
         if (yearNum) {
-            // 按年份筛选：发行年份（release_year 为 TEXT 类型）
+            // 按年份筛选：收听年份（LEFT JOIN 保留有记录的所有专辑）
             const yearStr = String(yearNum);
-            sql = `SELECT a.*, COALESCE(lh.cnt, 0) as year_listen_count
+            sql = `SELECT a.*, COUNT(lh.id) as year_listen_count
              FROM albums a
-             LEFT JOIN (SELECT album_id, COUNT(id) as cnt FROM listen_history WHERE listen_year = ? GROUP BY album_id) lh ON a.album_id = lh.album_id
-             WHERE a.release_year = ?`;
-            countSql = `SELECT COUNT(*) as total FROM albums a WHERE a.release_year = ?`;
-            params.push(yearStr, yearStr);
+             INNER JOIN listen_history lh ON a.album_id = lh.album_id
+             WHERE lh.listen_year = ?`;
+            countSql = `SELECT COUNT(DISTINCT a.album_id) as total
+                  FROM albums a
+                  JOIN listen_history lh ON a.album_id = lh.album_id
+                  WHERE lh.listen_year = ?`;
+            params.push(yearStr);
         }
         else {
             sql = 'SELECT a.* FROM albums a WHERE 1=1';
@@ -161,7 +164,9 @@ app.get('/api/albums', async (req, res) => {
         };
         const direction = dir === 'asc' ? 'ASC' : 'DESC';
         const sortCol = sortMap[sort] || (yearNum ? 'year_listen_count' : 'a.total_listen_count');
-        // no GROUP BY needed (LEFT JOIN subquery handles aggregation)
+        if (yearNum) {
+            sql += ` GROUP BY a.album_id`;
+        }
         sql += ` ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction} LIMIT ? OFFSET ?`;
         allParams.push(Number(limit), Number(offset));
         const albums = (0, database_1.query)(sql, allParams);
