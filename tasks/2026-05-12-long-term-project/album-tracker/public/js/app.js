@@ -107,7 +107,7 @@ function renderArtistLeaderboard(artists) {
   const container = document.getElementById('artist-leaderboard');
   if (!artists.length) { container.innerHTML = '<div class="chart-empty">暂无数据</div>'; return; }
   container.innerHTML = artists.map((ar, i) => {
-    const url = ar.cover_image_url ? '/' + ar.cover_image_url.replace(/^\/+/, '') : null;
+    const url = ar.image_url ? '/' + ar.image_url.replace(/^\/+/, '') : null;
     const cover = url
       ? `<img class="lb-cover" src="${url}" loading="lazy">`
       : `<div class="lb-cover-placeholder">🎵</div>`;

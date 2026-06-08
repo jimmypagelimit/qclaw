@@ -342,30 +342,33 @@ app.get('/api/artists', async (req, res) => {
     const sortMap: Record<string, string> = {
       listen: 'total_listen_count',
       score:  'avg_rating',
-      name:    'artist',
+      name:    'name',
     };
     const direction = dir === 'asc' ? 'ASC' : 'DESC';
     const sortCol = sortMap[sort as string] || 'total_listen_count';
 
     const sql = `
       SELECT 
-        artist, 
-        SUM(total_listen_count) as total_listen_count,
-        AVG(overall_score) as avg_rating
-      FROM albums 
-      GROUP BY artist 
+        artist_id,
+        name as artist,
+        total_listen_count,
+        avg_rating,
+        image_url
+      FROM artists 
       ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction}
       LIMIT ?
     `;
     const artists = query<any>(sql, [Number(limit)]);
 
-    // 为每个艺人附加一张封面（取收听次数最多的有封面专辑）
+    // 没有艺人头像的，fallback 到最佳专辑封面
     for (const ar of artists) {
-      const coverRow = queryOne<{ cover_image_url: string }>(
-        `SELECT cover_image_url FROM albums WHERE artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY total_listen_count DESC LIMIT 1`,
-        [ar.artist]
-      );
-      (ar as any).cover_image_url = coverRow?.cover_image_url || null;
+      if (!ar.image_url) {
+        const coverRow = queryOne<{ cover_image_url: string }>(
+          `SELECT cover_image_url FROM albums WHERE artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY total_listen_count DESC LIMIT 1`,
+          [ar.artist]
+        );
+        ar.image_url = coverRow?.cover_image_url || null;
+      }
     }
 
     res.json({ artists });
