@@ -295,6 +295,11 @@ app.get('/api/artists', async (req, res) => {
       LIMIT ?
     `;
         const artists = (0, database_1.query)(sql, [Number(limit)]);
+        // 为每个艺人附加一张封面（取收听次数最多的有封面专辑）
+        for (const ar of artists) {
+            const coverRow = (0, database_1.queryOne)(`SELECT cover_image_url FROM albums WHERE artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY total_listen_count DESC LIMIT 1`, [ar.artist]);
+            ar.cover_image_url = coverRow?.cover_image_url || null;
+        }
         res.json({ artists });
     }
     catch (error) {

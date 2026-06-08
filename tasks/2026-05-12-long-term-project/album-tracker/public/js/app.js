@@ -106,12 +106,20 @@ async function loadArtistLeaderboard() {
 function renderArtistLeaderboard(artists) {
   const container = document.getElementById('artist-leaderboard');
   if (!artists.length) { container.innerHTML = '<div class="chart-empty">暂无数据</div>'; return; }
-  container.innerHTML = artists.map((ar, i) => `
-    <div class="lb-item">
+  container.innerHTML = artists.map((ar, i) => {
+    const url = ar.cover_image_url ? '/' + ar.cover_image_url.replace(/^\/+/, '') : null;
+    const cover = url
+      ? `<img class="lb-cover" src="${url}" loading="lazy">`
+      : `<div class="lb-cover-placeholder">🎵</div>`;
+    return `<div class="lb-item">
       <span class="lb-rank">${i + 1}</span>
-      <div class="lb-artist-name">${escapeHtml(ar.artist || ar.name)}</div>
+      ${cover}
+      <div class="lb-info">
+        <div class="lb-artist-name">${escapeHtml(ar.artist || ar.name)}</div>
+      </div>
       <span class="lb-count">${ar.total_listen_count || 0} 次</span>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 // ==================== 专辑库 ====================
