@@ -5,12 +5,13 @@
  * 用法: node dist/server.js
  * 默认端口: 3456
  *
- * 核心逻辑：所有写操作（新增/收听/编辑/删除）都同步操作年份表 + 总表
- * 跨表关联依据：album_name + artist
+ * 架构：单表 albums + listen_history
+ * 年度数据通过 listen_history JOIN albums 查询
+ * 不再使用 albums_YYYY 年度表
  */
 
 import express from 'express';
-import { initDatabase, closeDatabase, query, queryOne, execute, getTableCount } from './db/database';
+import { initDatabase, closeDatabase, query, queryOne, execute, getTableCount, saveDatabase } from './db/database';
 import path from 'path';
 
 const app = express();
@@ -29,56 +30,30 @@ function currentYear(): number {
   return new Date().getFullYear();
 }
 
-/** 根据年份获取年表名 */
-function yearTable(year: number): string {
-  return `albums_${year}`;
-}
-
-/** 获取所有年表名 */
-function getYearTables(): string[] {
-  return ['albums_2024', 'albums_2025', 'albums_2026'];
-}
-
-/** 在指定表中按 album_name + artist 查找专辑 */
-function findAlbumByKeys(table: string, albumName: string, artistName: string): any {
-  return queryOne<any>(
-    `SELECT * FROM ${table} WHERE album_name = ? AND artist = ?`,
-    [albumName, artistName]
+/** 获取所有有 listen_history 的年份 */
+function getListenYears(): number[] {
+  const rows = query<{ listen_year: number }>(
+    'SELECT DISTINCT listen_year FROM listen_history ORDER BY listen_year'
   );
-}
-
-/** 在指定表中插入专辑记录 */
-function insertAlbumInto(table: string, data: Record<string, any>) {
-  const fields = [
-    'album_name', 'artist', 'country', 'region', 'genre', 'rating',
-    'description', 'is_compilation', 'first_listen_date', 'total_listen_count',
-    'release_company', 'cover_image_url', 'duration', 'release_year', 'style', 'producer'
-  ];
-  const values = fields.map(f => data[f] ?? null);
-  // 确保 total_listen_count 至少为 1
-  const tlcIndex = fields.indexOf('total_listen_count');
-  if (!values[tlcIndex]) values[tlcIndex] = 1;
-  // 确保 first_listen_date 有值
-  const fldIndex = fields.indexOf('first_listen_date');
-  if (!values[fldIndex]) values[fldIndex] = new Date().toISOString().split('T')[0];
-
-  execute(
-    `INSERT INTO ${table} (${fields.join(', ')}) VALUES (${fields.map(() => '?').join(', ')})`,
-    values
-  );
+  return rows.map(r => r.listen_year);
 }
 
 // ==================== API 路由 ====================
 
-// 年度收听排行（各年表收听次数 Top 3）
+// 年度收听排行（各年 Top 3，从 listen_history 查询）
 app.get('/api/top-by-year', async (_req, res) => {
   try {
     const result: Record<string, any> = {};
-    for (const ytbl of getYearTables()) {
-      const year = parseInt(ytbl.replace('albums_', ''));
+    for (const year of getListenYears()) {
       const top = query(
-        `SELECT album_name, artist, total_listen_count, cover_image_url
-         FROM ${ytbl} ORDER BY total_listen_count DESC LIMIT 3`
+        `SELECT a.album_name, a.artist, COUNT(lh.id) as listen_count, a.cover_image_url
+         FROM listen_history lh
+         JOIN albums a ON lh.album_id = a.album_id
+         WHERE lh.listen_year = ?
+         GROUP BY lh.album_id
+         ORDER BY listen_count DESC
+         LIMIT 3`,
+        [year]
       );
       result[String(year)] = top;
     }
@@ -91,21 +66,21 @@ app.get('/api/top-by-year', async (_req, res) => {
 // 仪表盘统计
 app.get('/api/stats', async (_req, res) => {
   try {
-    const tables = ['albums', ...getYearTables()];
-    const result: Record<string, any> = { tables: {} };
+    const result: Record<string, any> = {};
 
-    for (const table of tables) {
-      const count = getTableCount(table);
-      const listens = query<any>(`SELECT COALESCE(SUM(total_listen_count), 0) as total FROM ${table}`);
-      const topAlbum = queryOne<any>(
-        `SELECT * FROM ${table} ORDER BY total_listen_count DESC LIMIT 1`
-      );
-      result.tables[table] = {
-        count,
-        totalListens: listens[0]?.total || 0,
-        topAlbum: topAlbum || null,
-      };
-    }
+    // 总表统计
+    const albumCount = getTableCount('albums');
+    const totalListens = queryOne<{ total: number }>(
+      'SELECT COALESCE(SUM(total_listen_count), 0) as total FROM albums'
+    );
+    const topAlbum = queryOne<any>(
+      'SELECT * FROM albums ORDER BY total_listen_count DESC LIMIT 1'
+    );
+    result.albums = {
+      count: albumCount,
+      totalListens: totalListens?.total || 0,
+      topAlbum: topAlbum || null,
+    };
 
     // 使用 album_genres 中间表统计 genre 分布
     const genres = query<any>(
@@ -118,21 +93,6 @@ app.get('/api/stats', async (_req, res) => {
        ORDER BY count DESC 
        LIMIT 10`
     );
-    const countries = query<any>(
-      `SELECT country, COUNT(*) as count FROM albums WHERE country IS NOT NULL AND country != '' GROUP BY country ORDER BY count DESC LIMIT 10`
-    );
-
-    // 各年份收听次数（从年份表汇总）
-    const yearListens: Record<string, number> = {};
-    for (const ytbl of getYearTables()) {
-      const year = parseInt(ytbl.replace('albums_', ''));
-      const r = query<any>(
-        `SELECT COALESCE(SUM(total_listen_count), 0) as total FROM ${ytbl}`
-      );
-      yearListens[String(year)] = r[0]?.total || 0;
-    }
-
-    result.genres = genres;
 
     // 使用 album_styles 中间表统计 style 分布
     const styles = query<any>(
@@ -145,6 +105,21 @@ app.get('/api/stats', async (_req, res) => {
        ORDER BY count DESC 
        LIMIT 10`
     );
+
+    const countries = query<any>(
+      `SELECT country, COUNT(*) as count FROM albums WHERE country IS NOT NULL AND country != '' GROUP BY country ORDER BY count DESC LIMIT 10`
+    );
+
+    // 各年份收听次数（从 listen_history 查询）
+    const yearListens: Record<string, number> = {};
+    const yearRows = query<{ listen_year: number; total: number }>(
+      'SELECT listen_year, COUNT(*) as total FROM listen_history GROUP BY listen_year ORDER BY listen_year'
+    );
+    for (const row of yearRows) {
+      yearListens[String(row.listen_year)] = row.total;
+    }
+
+    result.genres = genres;
     result.styles = styles;
     result.countries = countries;
     result.yearListens = yearListens;
@@ -155,65 +130,105 @@ app.get('/api/stats', async (_req, res) => {
   }
 });
 
-// 搜索专辑
+// 搜索专辑（始终查 albums 表）
 app.get('/api/albums', async (req, res) => {
   try {
     const {
-      search, genre, country, artist,
-      table = 'albums', limit = 20, offset = 0,
+      search, genre, country, artist, year,
+      limit = 20, offset = 0,
       sort = 'listen',  // listen | score | name | artist | year
       dir = 'desc',     // asc | desc
     } = req.query;
 
-    let sql = `SELECT * FROM ${table} WHERE 1=1`;
+    const yearNum = year ? Number(year) : null;
+
+    let sql: string;
+    let countSql: string;
     const params: any[] = [];
 
-    if (search) {
-      sql += ` AND (album_name LIKE ? OR artist LIKE ?)`;
-      params.push(`%${search}%`, `%${search}%`);
+    if (yearNum) {
+      // 按年份筛选：从 listen_history 查
+      sql = `SELECT a.*, COUNT(lh.id) as year_listen_count
+             FROM albums a
+             JOIN listen_history lh ON a.album_id = lh.album_id
+             WHERE lh.listen_year = ?`;
+      countSql = `SELECT COUNT(DISTINCT a.album_id) as total
+                  FROM albums a
+                  JOIN listen_history lh ON a.album_id = lh.album_id
+                  WHERE lh.listen_year = ?`;
+      params.push(yearNum);
+    } else {
+      sql = 'SELECT a.* FROM albums a WHERE 1=1';
+      countSql = 'SELECT COUNT(*) as total FROM albums a WHERE 1=1';
     }
-    if (genre) { 
-      sql += ` AND EXISTS (SELECT 1 FROM album_genres ag JOIN genres g ON ag.genre_id = g.genre_id WHERE ag.album_id = ${table}.album_id AND g.name LIKE ?)`; 
-      params.push(`%${genre}%`); 
-    }
-    if (country) { sql += ` AND country = ?`; params.push(country); }
-    if (artist) { sql += ` AND artist LIKE ?`; params.push(`%${artist}%`); }
 
-    const countResult = query<any>(
-      sql.replace('SELECT *', 'SELECT COUNT(*) as total'), params
-    );
+    const filterParams: any[] = [];
+
+    if (search) {
+      sql += ' AND (a.album_name LIKE ? OR a.artist LIKE ?)';
+      countSql += ' AND (a.album_name LIKE ? OR a.artist LIKE ?)';
+      filterParams.push(`%${search}%`, `%${search}%`);
+    }
+    if (genre) {
+      sql += ' AND EXISTS (SELECT 1 FROM album_genres ag JOIN genres g ON ag.genre_id = g.genre_id WHERE ag.album_id = a.album_id AND g.name LIKE ?)';
+      countSql += ' AND EXISTS (SELECT 1 FROM album_genres ag JOIN genres g ON ag.genre_id = g.genre_id WHERE ag.album_id = a.album_id AND g.name LIKE ?)';
+      filterParams.push(`%${genre}%`);
+    }
+    if (country) {
+      sql += ' AND a.country = ?';
+      countSql += ' AND a.country = ?';
+      filterParams.push(country);
+    }
+    if (artist) {
+      sql += ' AND a.artist LIKE ?';
+      countSql += ' AND a.artist LIKE ?';
+      filterParams.push(`%${artist}%`);
+    }
+
+    const allParams = [...params, ...filterParams];
+    const countResult = query<any>(countSql, allParams);
     const total = countResult[0]?.total || 0;
 
-    // 排序映射
+    // 排序
     const sortMap: Record<string, string> = {
-      listen: 'total_listen_count',
-      score:  'overall_score',
-      name:   'album_name',
-      artist: 'artist',
-      year:   'release_year',
+      listen: yearNum ? 'year_listen_count' : 'a.total_listen_count',
+      score:  'a.overall_score',
+      name:   'a.album_name',
+      artist: 'a.artist',
+      year:   'a.release_year',
     };
     const direction = dir === 'asc' ? 'ASC' : 'DESC';
-    const sortCol = sortMap[sort as string] || 'total_listen_count';
-    // NULL 值排最后
-    sql += ` ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction} LIMIT ? OFFSET ?`;
-    params.push(Number(limit), Number(offset));
+    const sortCol = sortMap[sort as string] || (yearNum ? 'year_listen_count' : 'a.total_listen_count');
 
-    const albums = query(sql, params);
+    if (yearNum) {
+      sql += ` GROUP BY a.album_id`;
+    }
+    sql += ` ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction} LIMIT ? OFFSET ?`;
+    allParams.push(Number(limit), Number(offset));
+
+    const albums = query(sql, allParams);
     res.json({ albums, total, limit: Number(limit), offset: Number(offset) });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
 });
 
-// 专辑详情
+// 专辑详情（始终查 albums 表）
 app.get('/api/albums/:id', async (req, res) => {
   try {
-    const { table = 'albums' } = req.query;
     const album = queryOne<any>(
-      `SELECT * FROM ${table} WHERE album_id = ?`,
+      'SELECT * FROM albums WHERE album_id = ?',
       [Number(req.params.id)]
     );
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
+
+    // 附加年度收听统计
+    const yearStats = query<{ listen_year: number; count: number }>(
+      'SELECT listen_year, COUNT(*) as count FROM listen_history WHERE album_id = ? GROUP BY listen_year ORDER BY listen_year',
+      [Number(req.params.id)]
+    );
+    (album as any).yearStats = yearStats;
+
     res.json(album);
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -223,9 +238,9 @@ app.get('/api/albums/:id', async (req, res) => {
 // 艺术家专辑列表
 app.get('/api/artist/:name', async (req, res) => {
   try {
-    const { table = 'albums', limit = 50 } = req.query;
+    const { limit = 50 } = req.query;
     const albums = query(
-      `SELECT * FROM ${table} WHERE artist LIKE ? ORDER BY total_listen_count DESC LIMIT ?`,
+      'SELECT * FROM albums WHERE artist LIKE ? ORDER BY total_listen_count DESC LIMIT ?',
       [`%${req.params.name}%`, Number(limit)]
     );
     res.json(albums);
@@ -237,16 +252,28 @@ app.get('/api/artist/:name', async (req, res) => {
 // 排行榜
 app.get('/api/top', async (req, res) => {
   try {
-    const { limit = 10, year, table } = req.query;
-    let tableName = 'albums';
-    if (table) tableName = table as string;
-    else if (year) tableName = `albums_${year}`;
+    const { limit = 10, year } = req.query;
 
-    const albums = query(
-      `SELECT * FROM ${tableName} ORDER BY total_listen_count DESC LIMIT ?`,
-      [Number(limit)]
-    );
-    res.json({ tableName, albums });
+    if (year) {
+      const yearNum = Number(year);
+      const albums = query(
+        `SELECT a.*, COUNT(lh.id) as year_listen_count
+         FROM albums a
+         JOIN listen_history lh ON a.album_id = lh.album_id
+         WHERE lh.listen_year = ?
+         GROUP BY a.album_id
+         ORDER BY year_listen_count DESC
+         LIMIT ?`,
+        [yearNum, Number(limit)]
+      );
+      res.json({ year: yearNum, albums });
+    } else {
+      const albums = query(
+        'SELECT * FROM albums ORDER BY total_listen_count DESC LIMIT ?',
+        [Number(limit)]
+      );
+      res.json({ year: null, albums });
+    }
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
@@ -255,11 +282,10 @@ app.get('/api/top', async (req, res) => {
 // 风格分布
 app.get('/api/genres', async (req, res) => {
   try {
-    const { table = 'albums', limit = 20 } = req.query;
-    // 使用 album_genres 中间表
+    const { limit = 20 } = req.query;
     const genres = query<any>(
       `SELECT g.name as genre, COUNT(*) as count 
-       FROM ${table} a 
+       FROM albums a 
        JOIN album_genres ag ON a.album_id = ag.album_id 
        JOIN genres g ON ag.genre_id = g.genre_id 
        WHERE g.name IS NOT NULL AND g.name != '' 
@@ -277,11 +303,10 @@ app.get('/api/genres', async (req, res) => {
 // 风格分布
 app.get('/api/styles', async (req, res) => {
   try {
-    const { table = 'albums', limit = 20 } = req.query;
-    // 使用 album_styles 中间表
+    const { limit = 20 } = req.query;
     const styles = query<any>(
       `SELECT s.name as style, COUNT(*) as count 
-       FROM ${table} a 
+       FROM albums a 
        JOIN album_styles ast ON a.album_id = ast.album_id 
        JOIN styles s ON ast.style_id = s.style_id 
        WHERE s.name IS NOT NULL AND s.name != '' 
@@ -299,10 +324,10 @@ app.get('/api/styles', async (req, res) => {
 // 国家分布
 app.get('/api/countries', async (req, res) => {
   try {
-    const { table = 'albums', limit = 20 } = req.query;
+    const { limit = 20 } = req.query;
     const countries = query<any>(
-      `SELECT country, COUNT(*) as count FROM ${table} WHERE country IS NOT NULL AND country != '' GROUP BY country ORDER BY count DESC LIMIT ?`,
-      [Number(limit)]
+      'SELECT country, COUNT(*) as count FROM albums WHERE country IS NOT NULL AND country != ? GROUP BY country ORDER BY count DESC LIMIT ?',
+      ['', Number(limit)]
     );
     res.json(countries);
   } catch (error: any) {
@@ -310,14 +335,14 @@ app.get('/api/countries', async (req, res) => {
   }
 });
 
-// ==================== 写操作（双表同步） ====================
+// ==================== 写操作（单表 albums + listen_history） ====================
 
 /**
  * 新增专辑
  * body: { ..., year: 2026 }
  * 逻辑：
- *   1. 写入年份表 albums_YYYY
- *   2. 写入总表 albums（如已存在则只 +1 total_listen_count）
+ *   1. 写入 albums 表（判重：album_name + artist，已存在则 +1 total_listen_count）
+ *   2. 写入 listen_history
  */
 app.post('/api/albums', async (req, res) => {
   try {
@@ -334,55 +359,73 @@ app.post('/api/albums', async (req, res) => {
     }
 
     const yr = Number(year);
-    const yt = yearTable(yr);
 
-    const record = {
-      album_name, artist, country, region, genre, rating,
-      description, is_compilation, first_listen_date, total_listen_count,
-      release_company, cover_image_url, duration, release_year, style, producer,
-    };
+    // 查找是否已存在
+    const existing = queryOne<any>(
+      'SELECT * FROM albums WHERE album_name = ? AND artist = ?',
+      [album_name, artist]
+    );
 
-    // 1. 写入年份表（判重：album_name + artist）
-    const existingInYear = findAlbumByKeys(yt, album_name, artist);
-    if (existingInYear) {
-      // 年份表已存在，只 +1
-      const newCount = existingInYear.total_listen_count + 1;
-      execute(`UPDATE ${yt} SET total_listen_count = ? WHERE album_id = ?`, [newCount, existingInYear.album_id]);
+    if (existing) {
+      // 已存在，+1 total_listen_count
+      const newCount = existing.total_listen_count + 1;
+      execute('UPDATE albums SET total_listen_count = ? WHERE album_id = ?', [newCount, existing.album_id]);
     } else {
-      // 年份表不存在，新增
-      insertAlbumInto(yt, record);
+      // 新增
+      const fields = [
+        'album_name', 'artist', 'country', 'region', 'genre', 'rating',
+        'description', 'is_compilation', 'first_listen_date', 'total_listen_count',
+        'release_company', 'cover_image_url', 'duration', 'release_year', 'style', 'producer'
+      ];
+      const values = fields.map(f => {
+        const val = (f === 'album_name' ? album_name : f === 'artist' ? artist : 
+                     f === 'country' ? country : f === 'region' ? region : f === 'genre' ? genre :
+                     f === 'rating' ? rating : f === 'description' ? description : 
+                     f === 'is_compilation' ? is_compilation : f === 'first_listen_date' ? first_listen_date :
+                     f === 'total_listen_count' ? total_listen_count : f === 'release_company' ? release_company :
+                     f === 'cover_image_url' ? cover_image_url : f === 'duration' ? duration :
+                     f === 'release_year' ? release_year : f === 'style' ? style : f === 'producer' ? producer : null) ?? null;
+        return val;
+      });
+      // 确保 total_listen_count 至少为 1
+      const tlcIndex = fields.indexOf('total_listen_count');
+      if (!values[tlcIndex]) values[tlcIndex] = 1;
+      // 确保 first_listen_date 有值
+      const fldIndex = fields.indexOf('first_listen_date');
+      if (!values[fldIndex]) values[fldIndex] = new Date().toISOString().split('T')[0];
+
+      execute(
+        `INSERT INTO albums (${fields.join(', ')}) VALUES (${fields.map(() => '?').join(', ')})`,
+        values
+      );
     }
 
-    // 2. 写入总表 albums（判重：album_name + artist）
-    const existingInTotal = findAlbumByKeys('albums', album_name, artist);
-    if (existingInTotal) {
-      // 总表已存在，只 +1
-      const newCount = existingInTotal.total_listen_count + 1;
-      execute(`UPDATE albums SET total_listen_count = ? WHERE album_id = ?`, [newCount, existingInTotal.album_id]);
-    } else {
-      // 总表不存在，新增
-      insertAlbumInto('albums', record);
+    // 写入 listen_history
+    const album = queryOne<any>(
+      'SELECT * FROM albums WHERE album_name = ? AND artist = ?',
+      [album_name, artist]
+    );
+    if (album) {
+      execute(
+        'INSERT INTO listen_history (album_id, listen_date, listen_year, notes, source) VALUES (?, ?, ?, ?, ?)',
+        [album.album_id, new Date().toISOString().split('T')[0], yr, '', '']
+      );
     }
 
-    const result = findAlbumByKeys('albums', album_name, artist);
-    res.json({ success: true, album: result, yearTable: yt });
+    saveDatabase();
+    res.json({ success: true, album });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
 });
 
 /**
- * 更新专辑
- * body: { album_name, artist, ..., year: 2026 }
- * 逻辑：用 album_name + artist 在两张表里找到对应记录，分别更新
+ * 更新专辑（只操作 albums 表）
  */
 app.put('/api/albums/:id', async (req, res) => {
   try {
-    const sourceTable = req.query.table as string || 'albums';
     const id = Number(req.params.id);
     const fields = req.body;
-    const year = fields.year || currentYear();
-    delete fields.year; // 不写入 year 字段
 
     const allowedFields = [
       'album_name', 'artist', 'country', 'region', 'genre', 'rating',
@@ -403,31 +446,11 @@ app.put('/api/albums/:id', async (req, res) => {
       return;
     }
 
-    // 获取原始记录，用于跨表关联
-    const original = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
-    if (!original) { res.status(404).json({ error: '专辑未找到' }); return; }
-
-    // 用 album_name + artist 在两张表里都找到并更新
-    const lookupName = fields.album_name || original.album_name;
-    const lookupArtist = fields.artist || original.artist;
-
-    // 更新来源表
     params.push(id);
-    execute(`UPDATE ${sourceTable} SET ${setClauses.join(', ')} WHERE album_id = ?`, params);
+    execute(`UPDATE albums SET ${setClauses.join(', ')} WHERE album_id = ?`, params);
 
-    // 更新另一张表
-    const otherTable = sourceTable === 'albums' ? yearTable(Number(year)) : 'albums';
-    const otherAlbum = findAlbumByKeys(otherTable, original.album_name, original.artist);
-    if (otherAlbum) {
-      const otherParams: any[] = setClauses.map(clause => {
-        const field = clause.split(' = ')[0];
-        return fields[field];
-      });
-      otherParams.push(otherAlbum.album_id);
-      execute(`UPDATE ${otherTable} SET ${setClauses.join(', ')} WHERE album_id = ?`, otherParams);
-    }
-
-    const updated = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const updated = queryOne<any>('SELECT * FROM albums WHERE album_id = ?', [id]);
+    saveDatabase();
     res.json({ success: true, album: updated });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -436,30 +459,20 @@ app.put('/api/albums/:id', async (req, res) => {
 
 /**
  * 删除专辑
- * 逻辑：从总表和所有年份表中删除（通过 album_name + artist 关联）
  */
 app.delete('/api/albums/:id', async (req, res) => {
   try {
-    const sourceTable = req.query.table as string || 'albums';
     const id = Number(req.params.id);
 
-    const album = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const album = queryOne<any>('SELECT * FROM albums WHERE album_id = ?', [id]);
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
 
-    // 从来源表删除
-    execute(`DELETE FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    // 先删 listen_history
+    execute('DELETE FROM listen_history WHERE album_id = ?', [id]);
+    // 再删 albums
+    execute('DELETE FROM albums WHERE album_id = ?', [id]);
 
-    // 从另一张表删除（如果来源是年份表，也删总表；如果来源是总表，也删所有年份表）
-    if (sourceTable === 'albums') {
-      for (const yt of getYearTables()) {
-        const found = findAlbumByKeys(yt, album.album_name, album.artist);
-        if (found) execute(`DELETE FROM ${yt} WHERE album_id = ?`, [found.album_id]);
-      }
-    } else {
-      const found = findAlbumByKeys('albums', album.album_name, album.artist);
-      if (found) execute(`DELETE FROM albums WHERE album_id = ?`, [found.album_id]);
-    }
-
+    saveDatabase();
     res.json({ success: true, deleted: album });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -468,55 +481,41 @@ app.delete('/api/albums/:id', async (req, res) => {
 
 /**
  * 记录收听
- * body: { count: 1, year: 2026, table: 'albums' }
+ * body: { count: 1, year: 2026 }
  * 逻辑：
- *   1. 在年份表中找到该专辑（album_name + artist），如不存在则新增，+1
- *   2. 在总表中找到该专辑，+1
+ *   1. albums 表 +1 total_listen_count
+ *   2. 写入 listen_history
  */
 app.post('/api/albums/:id/listen', async (req, res) => {
   try {
-    const sourceTable = req.query.table as string || 'albums';
     const id = Number(req.params.id);
     const { count = 1, year = currentYear() } = req.body;
     const yr = Number(year);
-    const yt = yearTable(yr);
 
-    // 从来源表获取专辑信息
-    const album = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
+    const album = queryOne<any>('SELECT * FROM albums WHERE album_id = ?', [id]);
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
 
-    const albumName = album.album_name;
-    const artistName = album.artist;
+    // +1 total_listen_count
+    const newCount = album.total_listen_count + Number(count);
+    execute('UPDATE albums SET total_listen_count = ? WHERE album_id = ?', [newCount, id]);
 
-    // 1. 更新年份表
-    const yearAlbum = findAlbumByKeys(yt, albumName, artistName);
-    if (yearAlbum) {
-      // 年份表中已存在，+1
-      const newCount = yearAlbum.total_listen_count + Number(count);
-      execute(`UPDATE ${yt} SET total_listen_count = ? WHERE album_id = ?`, [newCount, yearAlbum.album_id]);
-    } else {
-      // 年份表中不存在，新增记录
-      insertAlbumInto(yt, { ...album, total_listen_count: Number(count) });
+    // 设置首次收听日期（如果为空）
+    if (!album.first_listen_date) {
+      const today = new Date().toISOString().split('T')[0];
+      execute('UPDATE albums SET first_listen_date = ? WHERE album_id = ?', [today, id]);
     }
 
-    // 2. 更新总表 albums
-    const totalAlbum = findAlbumByKeys('albums', albumName, artistName);
-    if (totalAlbum) {
-      const newCount = totalAlbum.total_listen_count + Number(count);
-      execute(`UPDATE albums SET total_listen_count = ? WHERE album_id = ?`, [newCount, totalAlbum.album_id]);
-      // 设置首次收听日期（如果为空）
-      if (!totalAlbum.first_listen_date) {
-        const today = new Date().toISOString().split('T')[0];
-        execute(`UPDATE albums SET first_listen_date = ? WHERE album_id = ?`, [today, totalAlbum.album_id]);
-      }
-    } else {
-      // 总表中不存在（理论上不应该），新增
-      insertAlbumInto('albums', { ...album, total_listen_count: Number(count) });
+    // 写入 listen_history
+    for (let i = 0; i < Number(count); i++) {
+      execute(
+        'INSERT INTO listen_history (album_id, listen_date, listen_year, notes, source) VALUES (?, ?, ?, ?, ?)',
+        [id, new Date().toISOString().split('T')[0], yr, '', '']
+      );
     }
 
-    // 返回来源表的更新结果
-    const updated = queryOne<any>(`SELECT * FROM ${sourceTable} WHERE album_id = ?`, [id]);
-    res.json({ success: true, album: updated, yearTable: yt });
+    const updated = queryOne<any>('SELECT * FROM albums WHERE album_id = ?', [id]);
+    saveDatabase();
+    res.json({ success: true, album: updated });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
@@ -527,7 +526,6 @@ app.post('/api/albums/:id/listen', async (req, res) => {
 async function start() {
   await initDatabase();
   console.log(`\n🎧 专辑数据库 Web 服务器已启动`);
-  console.log(`   数据库: G:/原创计划/music`);
   console.log(`   访问: http://localhost:${PORT}`);
   console.log(`\n按 Ctrl+C 停止服务器\n`);
 

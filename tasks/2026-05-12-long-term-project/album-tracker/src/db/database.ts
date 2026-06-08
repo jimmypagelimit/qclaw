@@ -35,7 +35,7 @@ export async function initDatabase(dbPath?: string): Promise<SqlJsDatabase> {
   db = new SQL.Database(fileBuffer);
 
   console.log(`✅ 已连接数据库: ${dbFilePath}`);
-  console.log(`   表: albums, albums_2024, albums_2025, albums_2026`);
+  console.log(`   表: albums, listen_history, artists, genres, styles`);
 
   return db;
 }
