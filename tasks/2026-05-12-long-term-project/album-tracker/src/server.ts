@@ -147,16 +147,14 @@ app.get('/api/albums', async (req, res) => {
     const params: any[] = [];
 
     if (yearNum) {
-      // 按年份筛选：从 listen_history 查
-      sql = `SELECT a.*, COUNT(lh.id) as year_listen_count
+      // 按年份筛选：发行年份（release_year 为 TEXT 类型）
+      const yearStr = String(yearNum);
+      sql = `SELECT a.*, COALESCE(lh.cnt, 0) as year_listen_count
              FROM albums a
-             JOIN listen_history lh ON a.album_id = lh.album_id
-             WHERE lh.listen_year = ?`;
-      countSql = `SELECT COUNT(DISTINCT a.album_id) as total
-                  FROM albums a
-                  JOIN listen_history lh ON a.album_id = lh.album_id
-                  WHERE lh.listen_year = ?`;
-      params.push(yearNum);
+             LEFT JOIN (SELECT album_id, COUNT(id) as cnt FROM listen_history WHERE listen_year = ? GROUP BY album_id) lh ON a.album_id = lh.album_id
+             WHERE a.release_year = ?`;
+      countSql = `SELECT COUNT(*) as total FROM albums a WHERE a.release_year = ?`;
+      params.push(yearStr, yearStr);
     } else {
       sql = 'SELECT a.* FROM albums a WHERE 1=1';
       countSql = 'SELECT COUNT(*) as total FROM albums a WHERE 1=1';
@@ -186,7 +184,8 @@ app.get('/api/albums', async (req, res) => {
     }
 
     const allParams = [...params, ...filterParams];
-    const countResult = query<any>(countSql, allParams);
+    const countParams = yearNum ? [params[0], ...filterParams] : allParams;
+    const countResult = query<any>(countSql, countParams);
     const total = countResult[0]?.total || 0;
 
     // 排序
@@ -200,9 +199,7 @@ app.get('/api/albums', async (req, res) => {
     const direction = dir === 'asc' ? 'ASC' : 'DESC';
     const sortCol = sortMap[sort as string] || (yearNum ? 'year_listen_count' : 'a.total_listen_count');
 
-    if (yearNum) {
-      sql += ` GROUP BY a.album_id`;
-    }
+    // no GROUP BY needed (LEFT JOIN subquery handles aggregation)
     sql += ` ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction} LIMIT ? OFFSET ?`;
     allParams.push(Number(limit), Number(offset));
 
