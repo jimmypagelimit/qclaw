@@ -1,7 +1,7 @@
 // ==================== 全局状态 ====================
 const API = '/api';
 let currentPage = 'dashboard';
-let currentTable = 'albums';
+let currentYear = '';
 let searchOffset = 0;
 let currentAlbumId = null;
 let currentAlbumData = null;
@@ -44,31 +44,20 @@ async function loadDashboard() {
     const data = await api('/stats');
 
     const albumsTable = data.tables?.albums || {};
-    const albums2024 = data.tables?.albums_2024 || {};
-    const albums2025 = data.tables?.albums_2025 || {};
-    const albums2026 = data.tables?.albums_2026 || {};
+    const yearListens = data.yearListens || {};
 
     document.getElementById('stats-grid').innerHTML = `
       <div class="stat-card highlight">
         <div class="label">总库</div>
-        <div class="value">${albumsTable.count || 0}</div>
-        <div class="sub">${albumsTable.totalListens || 0} 次收听</div>
+        <div class="value">${data.albums?.count || 0}</div>
+        <div class="sub">${data.albums?.totalListens || 0} 次收听</div>
       </div>
+      ${Object.entries(yearListens).sort().map(([y, c]) => `
       <div class="stat-card">
-        <div class="label">2024 年</div>
-        <div class="value">${albums2024.count || 0}</div>
-        <div class="sub">${albums2024.totalListens || 0} 次收听</div>
-      </div>
-      <div class="stat-card">
-        <div class="label">2025 年</div>
-        <div class="value">${albums2025.count || 0}</div>
-        <div class="sub">${albums2025.totalListens || 0} 次收听</div>
-      </div>
-      <div class="stat-card">
-        <div class="label">2026 年</div>
-        <div class="value">${albums2026.count || 0}</div>
-        <div class="sub">${albums2026.totalListens || 0} 次收听</div>
-      </div>`;
+        <div class="label">${y} 年</div>
+        <div class="value">${c}</div>
+        <div class="sub">次收听</div>
+      </div>`).join('')}`;
 
     renderBarChart('genre-chart', data.genres || []);
     renderBarChart('country-chart', data.countries || []);
@@ -92,17 +81,19 @@ async function renderYearCompareChart() {
       const albums = data[y] || [];
       if (!albums.length) return '';
       const top = albums[0];
+      const topCount = top.listen_count || top.total_listen_count || 0;
       return `<div class="bar-item">
         <span class="bar-label">${y}年</span>
-        <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (top.total_listen_count / 20) * 100)}%"></div></div>
-        <span class="bar-count">${top.total_listen_count}次 · ${escapeHtml(top.album_name || '')}</span>
-      </div>` + albums.slice(1).map(a =>
-        `<div class="bar-item" style="padding-left:64px">
+        <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (topCount / 20) * 100)}%"></div></div>
+        <span class="bar-count">${topCount}次 · ${escapeHtml(top.album_name || '')}</span>
+      </div>` + albums.slice(1).map(a => {
+        const aCount = a.listen_count || a.total_listen_count || 0;
+        return `<div class="bar-item" style="padding-left:64px">
           <span class="bar-label" style="font-size:12px">${escapeHtml(a.album_name || '')}</span>
-          <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (a.total_listen_count / 20) * 100)}%"></div></div>
-          <span class="bar-count">${a.total_listen_count}次</span>
-        </div>`
-      ).join('');
+          <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (aCount / 20) * 100)}%"></div></div>
+          <span class="bar-count">${aCount}次</span>
+        </div>`;
+      }).join('');
     }).join('');
   } catch (err) {
     container.innerHTML = '<div class="chart-empty">加载失败</div>';
@@ -156,7 +147,7 @@ document.getElementById('search-btn')?.addEventListener('click', () => {
 document.getElementById('search-input')?.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') { searchOffset = 0; searchAlbums(); }
 });
-document.getElementById('search-table')?.addEventListener('change', () => {
+document.getElementById('search-year')?.addEventListener('change', () => {
   searchOffset = 0;
   searchAlbums();
 });
@@ -188,13 +179,14 @@ document.getElementById('view-list')?.addEventListener('click', () => {
 
 async function searchAlbums() {
   const q = document.getElementById('search-input')?.value || '';
-  const table = document.getElementById('search-table')?.value || 'albums';
+  const year = document.getElementById('search-year')?.value || '';
   const sortBy = document.getElementById('sort-by')?.value || 'listen';
-  currentTable = table;
+  currentYear = year;
 
   try {
     const sortDir = document.getElementById('sort-dir')?.value || 'desc';
-    const url = `/albums?search=${encodeURIComponent(q)}&table=${table}&limit=40&offset=${searchOffset}&sort=${sortBy}&dir=${sortDir}`;
+    const yearParam = year ? `&year=${year}` : '';
+    const url = `/albums?search=${encodeURIComponent(q)}${yearParam}&limit=40&offset=${searchOffset}&sort=${sortBy}&dir=${sortDir}`;
     const data = await api(url);
 
     if (albumViewMode === 'grid') renderAlbumsGrid(data.albums || [], data.total, data.limit);
@@ -222,7 +214,7 @@ function renderAlbumsGrid(albums, total, limit) {
       : `<div class="album-card-placeholder"><div class="placeholder-icon">💿</div><div class="placeholder-artist">${escapeHtml(a.artist)}</div></div>`;
     const meta = [a.release_year && String(a.release_year).slice(0, 4), a.country, a.genre?.split(',')[0].trim()].filter(Boolean);
     return `<div class="album-card" onclick="showAlbumDetail(${a.album_id})" style="animation-delay:${i * 0.03}s">
-      <div class="album-card-cover">${coverHtml}<div class="album-card-listen-badge">${a.total_listen_count}</div></div>
+      <div class="album-card-cover">${coverHtml}<div class="album-card-listen-badge">${a.year_listen_count || a.total_listen_count}</div></div>
       <div class="album-card-info">
         <div class="album-card-title" title="${escapeHtml(a.album_name)}">${escapeHtml(a.album_name)}</div>
         <div class="album-card-artist" title="${escapeHtml(a.artist)}">${escapeHtml(a.artist)}</div>
@@ -252,7 +244,7 @@ function renderAlbumsTable(albums, total, limit) {
       <td>${a.genre ? escapeHtml(a.genre) : '-'}</td>
       <td>${a.country || '-'}</td>
       <td>${a.release_year || '-'}</td>
-      <td class="listen-count">${a.total_listen_count}</td>
+      <td class="listen-count">${a.year_listen_count || a.total_listen_count}</td>
     </tr>`;
   }).join('');
   renderPagination(total, limit);
@@ -275,7 +267,7 @@ function goPage(offset) {
 // ==================== 专辑详情（只读） ====================
 function showAlbumDetail(id) {
   currentAlbumId = id;
-  api(`/albums/${id}?table=${currentTable}`).then(album => {
+  api(`/albums/${id}`).then(album => {
     currentAlbumData = album;
     document.getElementById('modal-title').textContent = album.album_name;
     const url = coverUrl(album);
