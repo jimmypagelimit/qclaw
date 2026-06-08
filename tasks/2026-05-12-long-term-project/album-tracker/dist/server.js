@@ -273,6 +273,34 @@ app.get('/api/countries', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
+// 艺人排行榜
+app.get('/api/artists', async (req, res) => {
+    try {
+        const { sort = 'listen', dir = 'desc', limit = 10 } = req.query;
+        const sortMap = {
+            listen: 'total_listen_count',
+            score: 'avg_rating',
+            name: 'artist',
+        };
+        const direction = dir === 'asc' ? 'ASC' : 'DESC';
+        const sortCol = sortMap[sort] || 'total_listen_count';
+        const sql = `
+      SELECT 
+        artist, 
+        SUM(total_listen_count) as total_listen_count,
+        AVG(overall_score) as avg_rating
+      FROM albums 
+      GROUP BY artist 
+      ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction}
+      LIMIT ?
+    `;
+        const artists = (0, database_1.query)(sql, [Number(limit)]);
+        res.json({ artists });
+    }
+    catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
 // ==================== 写操作（单表 albums + listen_history） ====================
 /**
  * 新增专辑

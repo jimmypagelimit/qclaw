@@ -38,12 +38,10 @@ function switchPage(page) {
   if (page === 'albums') searchAlbums();
 }
 
-// ==================== 仪表盘 ====================
+// ==================== 仪表盘（简化版）====================
 async function loadDashboard() {
   try {
     const data = await api('/stats');
-
-    const albumsTable = data.tables?.albums || {};
     const yearListens = data.yearListens || {};
 
     document.getElementById('stats-grid').innerHTML = `
@@ -57,108 +55,73 @@ async function loadDashboard() {
         <div class="label">${y} 年</div>
         <div class="value">${c}</div>
         <div class="sub">次收听</div>
-      </div>`).join('')}`;
+      </div>`).join('')}
+    `;
 
-    renderBarChart('genre-chart', data.genres || []);
-    renderBarChart('country-chart', data.countries || []);
-    renderYearListenChart(data.yearListens || {});
-    renderYearCompareChart();
+    loadAlbumLeaderboard();
+    loadArtistLeaderboard();
   } catch (err) {
     showToast('加载仪表盘失败: ' + err.message, 'error');
   }
 }
 
-async function renderYearCompareChart() {
-  const container = document.getElementById('year-compare-chart');
+async function loadAlbumLeaderboard() {
   try {
-    const data = await api('/top-by-year');
-    const years = Object.keys(data).sort();
-    if (!years.length) {
-      container.innerHTML = '<div class="chart-empty">暂无数据</div>';
-      return;
-    }
-    container.innerHTML = years.map(y => {
-      const albums = data[y] || [];
-      if (!albums.length) return '';
-      const top = albums[0];
-      const topCount = top.listen_count || top.total_listen_count || 0;
-      return `<div class="bar-item">
-        <span class="bar-label">${y}年</span>
-        <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (topCount / 20) * 100)}%"></div></div>
-        <span class="bar-count">${topCount}次 · ${escapeHtml(top.album_name || '')}</span>
-      </div>` + albums.slice(1).map(a => {
-        const aCount = a.listen_count || a.total_listen_count || 0;
-        return `<div class="bar-item" style="padding-left:64px">
-          <span class="bar-label" style="font-size:12px">${escapeHtml(a.album_name || '')}</span>
-          <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, (aCount / 20) * 100)}%"></div></div>
-          <span class="bar-count">${aCount}次</span>
-        </div>`;
-      }).join('');
-    }).join('');
+    const data = await api('/albums?sort=listen&dir=desc&limit=10');
+    renderAlbumLeaderboard(data.albums || []);
   } catch (err) {
-    container.innerHTML = '<div class="chart-empty">加载失败</div>';
+    document.getElementById('album-leaderboard').innerHTML = '<div class="chart-empty">加载失败</div>';
   }
 }
 
-function renderBarChart(containerId, items) {
-  const container = document.getElementById(containerId);
-  if (!items?.length) {
-    container.innerHTML = '<div class="chart-empty">暂无数据</div>';
-    return;
-  }
-  const max = items[0].count;
-  container.innerHTML = items.map(item => {
-    const pct = Math.max(2, (item.count / max) * 100);
-    const label = item.genre || item.country || '未知';
-    return `<div class="bar-item">
-      <span class="bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span>
-      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-      <span class="bar-count">${item.count}</span>
+function renderAlbumLeaderboard(albums) {
+  const container = document.getElementById('album-leaderboard');
+  if (!albums.length) { container.innerHTML = '<div class="chart-empty">暂无数据</div>'; return; }
+  container.innerHTML = albums.map((a, i) => {
+    const url = a.cover_image_url ? '/' + a.cover_image_url.replace(/^\/+/, '') : null;
+    const cover = url
+      ? `<img class="lb-cover" src="${url}" loading="lazy">`
+      : `<div class="lb-cover-placeholder">🎵</div>`;
+    return `<div class="lb-item">
+      <span class="lb-rank">${i + 1}</span>
+      ${cover}
+      <div class="lb-info">
+        <div class="lb-title">${escapeHtml(a.album_name)}</div>
+        <div class="lb-artist">${escapeHtml(a.artist)}</div>
+      </div>
+      <span class="lb-count">${a.total_listen_count || a.year_listen_count || 0} 次</span>
     </div>`;
   }).join('');
 }
 
-function renderYearListenChart(yearListens) {
-  const container = document.getElementById('listen-trend-chart');
-  // yearListens: { '2024': 123, '2025': 234, '2026': 56 }
-  const years = Object.keys(yearListens).sort();
-  if (!years.length) {
-    container.innerHTML = '<div class="chart-empty">暂无数据</div>';
-    return;
+async function loadArtistLeaderboard() {
+  try {
+    const data = await api('/artists?sort=listen&dir=desc&limit=10');
+    renderArtistLeaderboard(data.artists || []);
+  } catch (err) {
+    document.getElementById('artist-leaderboard').innerHTML = '<div class="chart-empty">加载失败</div>';
   }
-  const max = Math.max(...Object.values(yearListens));
-  container.innerHTML = years.map(y => {
-    const pct = Math.max(3, (yearListens[y] / max) * 100);
-    return `<div class="bar-item">
-      <span class="bar-label">${y} 年</span>
-      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-      <span class="bar-count">${yearListens[y]} 次</span>
-    </div>`;
-  }).join('');
+}
+
+function renderArtistLeaderboard(artists) {
+  const container = document.getElementById('artist-leaderboard');
+  if (!artists.length) { container.innerHTML = '<div class="chart-empty">暂无数据</div>'; return; }
+  container.innerHTML = artists.map((ar, i) => `
+    <div class="lb-item">
+      <span class="lb-rank">${i + 1}</span>
+      <div class="lb-artist-name">${escapeHtml(ar.artist || ar.name)}</div>
+      <span class="lb-count">${ar.total_listen_count || 0} 次</span>
+    </div>`).join('');
 }
 
 // ==================== 专辑库 ====================
 let albumViewMode = 'grid';
 
-document.getElementById('search-btn')?.addEventListener('click', () => {
-  searchOffset = 0;
-  searchAlbums();
-});
-document.getElementById('search-input')?.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') { searchOffset = 0; searchAlbums(); }
-});
-document.getElementById('search-year')?.addEventListener('change', () => {
-  searchOffset = 0;
-  searchAlbums();
-});
-document.getElementById('sort-by')?.addEventListener('change', () => {
-  searchOffset = 0;
-  searchAlbums();
-});
-document.getElementById('sort-dir')?.addEventListener('change', () => {
-  searchOffset = 0;
-  searchAlbums();
-});
+document.getElementById('search-btn')?.addEventListener('click', () => { searchOffset = 0; searchAlbums(); });
+document.getElementById('search-input')?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { searchOffset = 0; searchAlbums(); } });
+document.getElementById('search-year')?.addEventListener('change', () => { searchOffset = 0; searchAlbums(); });
+document.getElementById('sort-by')?.addEventListener('change', () => { searchOffset = 0; searchAlbums(); });
+document.getElementById('sort-dir')?.addEventListener('change', () => { searchOffset = 0; searchAlbums(); });
 
 document.getElementById('view-grid')?.addEventListener('click', () => {
   albumViewMode = 'grid';
@@ -181,14 +144,13 @@ async function searchAlbums() {
   const q = document.getElementById('search-input')?.value || '';
   const year = document.getElementById('search-year')?.value || '';
   const sortBy = document.getElementById('sort-by')?.value || 'listen';
+  const sortDir = document.getElementById('sort-dir')?.value || 'desc';
   currentYear = year;
 
   try {
-    const sortDir = document.getElementById('sort-dir')?.value || 'desc';
     const yearParam = year ? `&year=${year}` : '';
     const url = `/albums?search=${encodeURIComponent(q)}${yearParam}&limit=40&offset=${searchOffset}&sort=${sortBy}&dir=${sortDir}`;
     const data = await api(url);
-
     if (albumViewMode === 'grid') renderAlbumsGrid(data.albums || [], data.total, data.limit);
     else renderAlbumsTable(data.albums || [], data.total, data.limit);
   } catch (err) {
@@ -211,7 +173,7 @@ function renderAlbumsGrid(albums, total, limit) {
     const url = coverUrl(a);
     const coverHtml = url
       ? `<img src="${url}" alt="${escapeHtml(a.album_name)}" loading="lazy">`
-      : `<div class="album-card-placeholder"><div class="placeholder-icon">💿</div><div class="placeholder-artist">${escapeHtml(a.artist)}</div></div>`;
+      : `<div class="album-card-placeholder"><div class="placeholder-icon">🎵</div><div class="placeholder-artist">${escapeHtml(a.artist)}</div></div>`;
     const meta = [a.release_year && String(a.release_year).slice(0, 4), a.country, a.genre?.split(',')[0].trim()].filter(Boolean);
     return `<div class="album-card" onclick="showAlbumDetail(${a.album_id})" style="animation-delay:${i * 0.03}s">
       <div class="album-card-cover">${coverHtml}<div class="album-card-listen-badge">${a.year_listen_count || a.total_listen_count}</div></div>
@@ -236,7 +198,7 @@ function renderAlbumsTable(albums, total, limit) {
     const url = coverUrl(a);
     const coverHtml = url
       ? `<img src="${url}" alt="" class="table-cover">`
-      : `<div class="table-cover-placeholder">💿</div>`;
+      : `<div class="table-cover-placeholder">🎵</div>`;
     return `<tr onclick="showAlbumDetail(${a.album_id})">
       <td>${coverHtml}</td>
       <td class="cell-title" title="${escapeHtml(a.album_name)}">${escapeHtml(a.album_name)}</td>
@@ -264,7 +226,7 @@ function goPage(offset) {
   searchAlbums();
 }
 
-// ==================== 专辑详情（只读） ====================
+// ==================== 专辑详情（只读）====================
 function showAlbumDetail(id) {
   currentAlbumId = id;
   api(`/albums/${id}`).then(album => {
@@ -275,16 +237,15 @@ function showAlbumDetail(id) {
       ? `<div class="detail-cover"><img src="${url}" alt="${escapeHtml(album.album_name)}"></div>`
       : '';
 
-    // 评分维度
     const scoreFields = [
-      { key: 'rating_composition', label: '作曲' },
-      { key: 'rating_lyrics', label: '歌词意境' },
-      { key: 'rating_creativity', label: '创意' },
-      { key: 'rating_arrangement', label: '编曲' },
-      { key: 'rating_emotion', label: '情感表达' },
-      { key: 'rating_rhythm', label: '节奏律动' },
-      { key: 'rating_production', label: '制作质量' },
-      { key: 'rating_replay', label: '耐听度' },
+      { key: 'composition_score', label: '作曲' },
+      { key: 'lyrics_meaning_score', label: '歌词意境' },
+      { key: 'creativity_score', label: '创意' },
+      { key: 'arrangement_score', label: '编曲' },
+      { key: 'vocal_performance_score', label: '情感表达' },
+      { key: 'instrumental_performance_score', label: '节奏律动' },
+      { key: 'sincerity_score', label: '制作质量' },
+      { key: 'subjective_score', label: '耐听度' },
     ];
     const hasScores = scoreFields.some(f => album[f.key] && album[f.key] > 0);
     const scoresHtml = hasScores ? `<div class="detail-scores">
