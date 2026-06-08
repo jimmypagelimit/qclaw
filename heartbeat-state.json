@@ -11,12 +11,12 @@
         "covers_remaining": 279,
         "monthly_review": "2026-05-01",
         "covers_total": 510,
-        "c_drive_check": "2026-06-08T09:31:00+08:00",
+        "c_drive_check": "2026-06-08T19:01:00+08:00",
         "religion_rss": "2026-06-06T01:01:00+08:00",
         "metal_rss": "2026-06-06T01:01:00+08:00",
-        "daily_summary": "2026-06-07T17:02:00+08:00"
+        "daily_summary": "2026-06-08T17:02:00+08:00"
     },
-    "lastHeartbeat": "2026-06-08T09:31:00+08:00",
+    "lastHeartbeat": "2026-06-08T17:07:00+08:00",
     "notes": {
         "2026-05-25": "06:01首次heartbeat：C盘35.1GB正常；G/H盘未挂载跳过封面下载和音乐库同步；Indie文学双RSS检查完成并发送飞书通知（G→P2P用户）。17:01每日总结：Windows 10性能优化完成，Git commit成功(74d8bf4)，Push失败(GitHub错误)，飞书通知失败(400错误)。19:31 evening heartbeat：G/H盘仍未挂载，所有任务已完成或推迟。",
         "2026-05-26": "06:46 heartbeat：C盘34.7GB正常；G/H盘未挂载；网络受限（Google DNS失败，仅国内/飞书可达），所有RSS源无法抓取，跳过今日全部RSS检查；宗教RSS未更新（上次05-23）。",
@@ -24,6 +24,6 @@
         "2026-06-05": "10:31 heartbeat：C盘33.4GB正常；H盘未挂载跳过封面下载和音乐库同步；网络仍受限（无法访问国际RSS源），跳过Indie音乐和文学RSS检查。15:31 heartbeat：C盘33.4GB正常；网络已恢复，成功抓取Indie线+文学线RSS；飞书通知发送失败（message工具在heartbeat上下文中target默认heartbeat导致400错误），结果写入artifact文件。19:31 heartbeat：执行每日工作总结与推送（补17:00任务）；Git commit (617d4c3) + push成功；飞书通知仍失败(400错误)，写入artifact。21:01 evening heartbeat：H盘仍未挂载；今日所有任务已完成（Indie RSS + 文学RSS + 每日总结）；进行输出质量反思。",
         "2026-06-06": "01:01 首次heartbeat：C盘34.9GB正常；H盘未挂载跳过封面下载和音乐库同步；Metal/Hardcore RSS检查完成（Decibel: Burnt by the Sun重组重大新闻；No Clean Singing: Triage/Woewarden视频首发；Invisible Oranges: 5月发行回顾）；宗教RSS检查完成（Lion's Roar: 佛教慈悲文章；Tricycle: 越南离散文学；Christianity Today: 书籍评论）。飞书通知待发送。14:31 heartbeat：G盘UNC路径已通（net use）；专辑封面补下载完成（3/10成功：Panopticon、Wendy Eisenberg、Angine de Poitrine；7失败：刀郎/装咖人/海朋森/郑钧/假假条等中文专辑iTunes无封面）。16:40 heartbeat：每日工作总结与推送完成（Git commit 0615a3d + push成功）；飞书通知仍失败（400错误），写入artifact。",
         "2026-06-07": "16:01 heartbeat：C盘40.6GB正常；H盘未挂载跳过封面下载和音乐库同步；网络完全不可用（国内+国际均无法访问），周日深挖线RSS检查推迟；专辑封面下载推迟（H盘未挂载）。待17:00执行每日工作总结。17:02 heartbeat：每日工作总结与推送完成（Git commit 9ee2dfa + push成功）；飞书通知发送成功；H盘仍未挂载，封面下载和音乐库同步推迟。20:31 heartbeat：网络已恢复；周日深挖线RSS检查完成（Bandcamp Daily/Vince Staples新专辑、The Quietus/M.John Harrison小说、The Line of Best Fit/Primavera Sound报道、Metal Hammer/Rock im Park、Toilet Ov Hell/Backrooms影评、UPEE/何韵诗乐评、Reddit阿根廷摇滚史）；飞书通知失败（400错误），写入artifact文件；周日身心回顾提醒已写入artifact文件。",
-        "2026-06-08": "08:45 heartbeat：C盘41.6GB正常；H盘未挂载；Indie线RSS检查完成（Pitchfork: Olivia Rodrigo与The Cure的Robert Smith首发新歌'what's wrong with me'、Ariana Grande启动Eternal Sunshine巡演、The Cure在Primavera Sound演出冷门曲目、Death Cab for Cutie新专辑I Built You a Tower、Modest Mouse独立发行专辑、Osees惊喜发布新专辑Off Course；Stereogum: Pitfest因乐迷死亡提前结束、Morgan Wallen扔保安手机并取消演出；Consequence: Gorillaz在Primavera Sound由巴勒斯坦活动家介绍登场）。09:02 heartbeat：文学线RSS检查完成（Guardian: Olivia Laing论孤独被极右翼武器化、读者Top100小说、Marjane Satrapi讣告；Literary Hub: Zadie Smith论艺术自主性、Allen Ginsberg百年、夏季酷儿书单；Electric Lit: 夏季酷儿书籍；Brittle Paper: 西非公路驻地写作、非洲文学奖项；Reddit: 经典小说重读讨论、跨国声誉差异）。09:31 heartbeat：C盘空间复查正常(41.6GB)；H盘仍未挂载；进行输出质量反思。"
+        "2026-06-08": "08:47 heartbeat：C盘41.6GB正常；H盘未挂载；Indie线RSS检查完成（Pitchfork: Olivia Rodrigo与The Cure的Robert Smith首发新歌'what's wrong with me'、Ariana Grande启动Eternal Sunshine巡演、The Cure在Primavera Sound演出冷门曲目、Death Cab for Cutie新专辑I Built You a Tower、Modest Mouse独立发行专辑、Osees惊喜发布新专辑Off Course；Stereogum: Pitfest因乐迷死亡提前结束、Morgan Wallen扔保安手机并取消演出；Consequence: Gorillaz在Primavera Sound由巴勒斯坦活动家介绍登场）。09:02 heartbeat：文学线RSS检查完成（Guardian: Olivia Laing论孤独被极右翼武器化、读者Top100小说、Marjane Satrapi讣告；Literary Hub: Zadie Smith论艺术自主性、Allen Ginsberg百年、夏季酷儿书单；Electric Lit: 夏季酷儿书籍；Brittle Paper: 西非公路驻地写作、非洲文学奖项；Reddit: 经典小说重读讨论、跨国声誉差异）。09:31 heartbeat：C盘空间复查正常(41.6GB)；H盘仍未挂载；进行输出质量反思。17:02 heartbeat：每日工作总结与推送完成（Git commit b24a05e + push成功）；飞书通知写入artifact（heartbeat上下文message工具400错误）。17:07 heartbeat：专辑封面下载尝试失败（G盘未挂载，脚本需要访问G:\原创计划\music）。19:01 heartbeat：C盘42.1GB正常；G/H盘仍未挂载；专辑封面下载和荒岛唱片同步均推迟；所有定时任务已完成。"
     }
 }
