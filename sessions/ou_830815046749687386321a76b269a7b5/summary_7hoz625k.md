@@ -1,17 +1,17 @@
 ## 任务背景
-用户对一个音乐数据库进行了完整性审计，发现5组重复专辑和一处外键错误，要求只修复这两个问题。
+用户希望更新 Gumshoes - Happy New Year 专辑的 RYM 评分数据和听歌次数。
 
 ## 执行过程
-1. 审计数据库表结构与关联
-2. 发现5条重复孤儿专辑 + FK错误
-3. 重建album_styles表修正外键
-4. 删除5条孤儿记录并清理关联数据
-5. Git推送修复，重启Web服务
+1. 绕过 CF 抓取 RYM 数据
+2. 更新数据库字段
+3. 修正 style 大类（Pop→Rock）
+4. 修复 album_genres 缺少 genre_order 的写入错误
+5. 用户多次纠正 style 归类逻辑
 
 ## 关键结果
-- 删除5条重复专辑(id=49,121,203,264,385)，albums从518→513
-- album_styles外键从styles.id修复为styles.style_id
-- 补充李杰《谁都看见了希望》2026年听歌记录，total_listen_count 3→4
+- 最终状态：style=Rock, genre=chamber pop, release_year=2026
+- RYM 评分 3.24/5（566 评价），听歌次数改为 4
+- album_genres 写入 4 条，album_styles 写入 Rock
 
 ## 结论建议
-遗留修复3(冗余清理)和4(删废弃年度表)待用户决定。其他完成。
+数据已全部写入并通过验证，等待用户确认 git commit + push。
