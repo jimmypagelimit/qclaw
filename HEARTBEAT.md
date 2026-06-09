@@ -15,7 +15,7 @@
 
 ## 🖼️ 专辑封面每日补全（album-tracker）
 
-- **脚本**: `cd {workspace_root_dir}\tasks\2026-05-12-long-term-project\album-tracker && node dist/download-covers.js --count 10`
+- **脚本**: `cd C:\Users\qujt\.qclaw\workspace\tasks\2026-05-12-long-term-project\album-tracker; node dist/download-covers.js --count 10`
 - **每天至少 10 张**，按排名顺序（收听次数+评分高的优先）
 - 来源优先级：iTunes > Deezer > 网易云
 - 需先停 Web 服务器（sql.js 内存模型独占写），下载完再重启
