@@ -1,0 +1,432 @@
+[
+  {
+    "slug": "ambient",
+    "name": "",
+    "depth": 0
+  },
+  {
+    "slug": "ambient",
+    "name": "ambient",
+    "depth": 0
+  },
+  {
+    "slug": "blues",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "blues",
+    "name": "blues",
+    "depth": 0
+  },
+  {
+    "slug": "classical-music",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "classical-music",
+    "name": "classical-music",
+    "depth": 0
+  },
+  {
+    "slug": "country",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "country",
+    "name": "country",
+    "depth": 0
+  },
+  {
+    "slug": "dance",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "dance",
+    "name": "dance",
+    "depth": 0
+  },
+  {
+    "slug": "easy-listening",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "easy-listening",
+    "name": "easy-listening",
+    "depth": 0
+  },
+  {
+    "slug": "electronic",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "electronic",
+    "name": "electronic",
+    "depth": 0
+  },
+  {
+    "slug": "experimental",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "experimental",
+    "name": "experimental",
+    "depth": 0
+  },
+  {
+    "slug": "folk",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "folk",
+    "name": "folk",
+    "depth": 0
+  },
+  {
+    "slug": "hip-hop",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "hip-hop",
+    "name": "hip-hop",
+    "depth": 0
+  },
+  {
+    "slug": "industrial-and-noise",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "industrial-and-noise",
+    "name": "industrial-and-noise",
+    "depth": 0
+  },
+  {
+    "slug": "jazz",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "jazz",
+    "name": "jazz",
+    "depth": 0
+  },
+  {
+    "slug": "metal",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "metal",
+    "name": "metal",
+    "depth": 0
+  },
+  {
+    "slug": "musical-theatre-and-entertainment",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "musical-theatre-and-entertainment",
+    "name": "musical-theatre-and-entertainment",
+    "depth": 0
+  },
+  {
+    "slug": "new-age",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "new-age",
+    "name": "new-age",
+    "depth": 0
+  },
+  {
+    "slug": "pop",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "pop",
+    "name": "pop",
+    "depth": 0
+  },
+  {
+    "slug": "psychedelia",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "psychedelia",
+    "name": "psychedelia",
+    "depth": 0
+  },
+  {
+    "slug": "punk",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "punk",
+    "name": "punk",
+    "depth": 0
+  },
+  {
+    "slug": "randb",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "randb",
+    "name": "randb",
+    "depth": 0
+  },
+  {
+    "slug": "reggae-ska-dancehall",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "reggae-ska-dancehall",
+    "name": "reggae-ska-dancehall",
+    "depth": 0
+  },
+  {
+    "slug": "regional-music",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "regional-music",
+    "name": "regional-music",
+    "depth": 0
+  },
+  {
+    "slug": "rock",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "rock",
+    "name": "rock",
+    "depth": 0
+  },
+  {
+    "slug": "scenes-and-movements",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "scenes-and-movements",
+    "name": "scenes-and-movements",
+    "depth": 0
+  },
+  {
+    "slug": "singer-songwriter",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "singer-songwriter",
+    "name": "singer-songwriter",
+    "depth": 0
+  },
+  {
+    "slug": "spoken-word",
+    "name": "",
+    "depth": 5
+  },
+  {
+    "slug": "spoken-word",
+    "name": "spoken-word",
+    "depth": 0
+  },
+  {
+    "slug": "ambient-pop",
+    "name": "ambient-pop",
+    "depth": 4
+  },
+  {
+    "slug": "asmr",
+    "name": "asmr",
+    "depth": 9
+  },
+  {
+    "slug": "audio-documentary",
+    "name": "audio-documentary",
+    "depth": 8
+  },
+  {
+    "slug": "beatboxing",
+    "name": "beatboxing",
+    "depth": 8
+  },
+  {
+    "slug": "bugle-call",
+    "name": "bugle-call",
+    "depth": 8
+  },
+  {
+    "slug": "childrens-music",
+    "name": "childrens-music",
+    "depth": 8
+  },
+  {
+    "slug": "comedy",
+    "name": "comedy",
+    "depth": 6
+  },
+  {
+    "slug": "concert-band",
+    "name": "concert-band",
+    "depth": 6
+  },
+  {
+    "slug": "dark-cabaret",
+    "name": "dark-cabaret",
+    "depth": 8
+  },
+  {
+    "slug": "darkwave",
+    "name": "darkwave",
+    "depth": 8
+  },
+  {
+    "slug": "field-recordings",
+    "name": "field-recordings",
+    "depth": 6
+  },
+  {
+    "slug": "gospel",
+    "name": "gospel",
+    "depth": 6
+  },
+  {
+    "slug": "hanmai",
+    "name": "hanmai",
+    "depth": 6
+  },
+  {
+    "slug": "hauntology",
+    "name": "hauntology",
+    "depth": 8
+  },
+  {
+    "slug": "hymn",
+    "name": "hymn",
+    "depth": 8
+  },
+  {
+    "slug": "jingles",
+    "name": "jingles",
+    "depth": 6
+  },
+  {
+    "slug": "mantra",
+    "name": "mantra",
+    "depth": 8
+  },
+  {
+    "slug": "march",
+    "name": "march",
+    "depth": 6
+  },
+  {
+    "slug": "marching-band",
+    "name": "marching-band",
+    "depth": 6
+  },
+  {
+    "slug": "mashup",
+    "name": "mashup",
+    "depth": 6
+  },
+  {
+    "slug": "mechanical-music",
+    "name": "mechanical-music",
+    "depth": 8
+  },
+  {
+    "slug": "parlour-music",
+    "name": "parlour-music",
+    "depth": 8
+  },
+  {
+    "slug": "sacred-singing-circle",
+    "name": "sacred-singing-circle",
+    "depth": 8
+  },
+  {
+    "slug": "slowed-and-reverb",
+    "name": "slowed-and-reverb",
+    "depth": 8
+  },
+  {
+    "slug": "sound-effects",
+    "name": "sound-effects",
+    "depth": 8
+  },
+  {
+    "slug": "toypop",
+    "name": "toypop",
+    "depth": 6
+  },
+  {
+    "slug": "worldbeat",
+    "name": "worldbeat",
+    "depth": 8
+  },
+  {
+    "slug": "cueca-brava",
+    "name": "cueca-brava",
+    "depth": 0
+  },
+  {
+    "slug": "morris-music",
+    "name": "morris-music",
+    "depth": 0
+  },
+  {
+    "slug": "coplas-cajamarquinas",
+    "name": "coplas-cajamarquinas",
+    "depth": 0
+  },
+  {
+    "slug": "spiritual-art-song",
+    "name": "spiritual-art-song",
+    "depth": 0
+  },
+  {
+    "slug": "tbm",
+    "name": "tbm",
+    "depth": 0
+  },
+  {
+    "slug": "mugithi",
+    "name": "mugithi",
+    "depth": 0
+  },
+  {
+    "slug": "free-funk",
+    "name": "free-funk",
+    "depth": 0
+  },
+  {
+    "slug": "hollandse-school",
+    "name": "hollandse-school",
+    "depth": 0
+  },
+  {
+    "slug": "boston-hardcore",
+    "name": "boston-hardcore",
+    "depth": 0
+  }
+]

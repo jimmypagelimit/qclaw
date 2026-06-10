@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-26T20:20:57.691Z",
+  "updatedAt": "2026-06-10T08:52:37.913Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -310,6 +310,192 @@
         "soulseek",
         "使用",
         "方法"
+      ]
+    },
+    "memory:memory/2026-05-05.md:151:167": {
+      "key": "memory:memory/2026-05-05.md:151:167",
+      "path": "memory/2026-05-05.md",
+      "startLine": 151,
+      "endLine": 167,
+      "source": "memory",
+      "snippet": "- 数据来源优先级讨论： 1. Wikipedia「History of [风格]」- 最稳定，有来源可引用 2. RateYourMusic (RYM) - Genre Chart按年代拉排名，有专辑影响关系图（需CDP浏览器绕过CF） 3. Pitchfork/Stereogum回顾文 - \"In Defense of\"系列分析风格边界 4. AllMusic Genre Guide - 编辑视角，按子风格分类里程碑 5. 匿名旅行者 (anontraveler.com) - 风格边界和子分类定义 6. 音乐类书籍：《Our Band Could Be Your Life》《Rip It Up and Start Again》 - 制作流程：选定风格→Wikipedia时间线→RYM确认里程碑→Pitchfork补充→MusicBrainz验证→结构化输出 - 起步风格推荐：Post-Punk（资料多）、Shoegaze（小众深度），避开极端金属（资料分散） - 输出结构建议：起源→奠基专辑→关键转折→当代状态→推荐收听路径 - 已创建 artifact: task-artifact_2026-05-05_1448.md ## Indie Folk 风格脉络讨论（延续） - 张树选定 Indie Folk 作为风格脉络分析视频的第一个目标风格 - 已提供 Indie Folk 脉络框架： - 起源：1960s民谣复兴（Bob Dylan/Joni Mitchell/Neil Young） - 奠基：1990s独立",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3943331658840179,
+      "maxScore": 0.3943331658840179,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "pitchfork/stereogum回顾文",
+        "anontraveler.com",
+        "post-punk",
+        "task-artifact-2026-05-05-1448.md",
+        "dylan/joni",
+        "mitchell/neil",
+        "数据",
+        "来源"
+      ]
+    },
+    "memory:memory/2026-03-28.md:28:60": {
+      "key": "memory:memory/2026-03-28.md:28:60",
+      "path": "memory/2026-03-28.md",
+      "startLine": 28,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- 功能：搜索 B 站视频、获取 UP 主信息、视频详情 - 依赖：browser-use、playwright、智谱 AI API - 状态：GLM API 触发速率限制，待恢复 ### screenshot-tool Skill（新建） - 路径：C:\\Users\\15206\\.qclaw\\workspace\\skills\\screenshot-tool\\ - 功能：Playwright 网页截图 - 使用：py -3.11 scripts/screenshot.py --url xxx --output xxx.png ### music-cover-fetcher Skill（新建） - 路径：C:\\Users\\15206\\.qclaw\\workspace\\skills\\music-cover-fetcher\\ - 功能：从 Wikipedia/Discogs/MusicBrainz 获取专辑封面 - 使用：python scripts/fetch_cover.py \"专辑\" \"艺人\" -o cover.png ### rss-reader Skill（新建） - 路径：C:\\Users\\15206\\.qclaw\\workspace\\skills\\rss-reader\\ - 功能：读取 19 个音乐媒体 RSS 源 - 源：Pitchfork, Stereogum, NME, MetalSucks 等 ### 音乐资讯 - Paul McCartney 新专辑《The Boys of Dungeon Lane》- 2026",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3878335803747177,
+      "maxScore": 0.3878335803747177,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "browser-use",
+        "screenshot-tool",
+        "3.11",
+        "scripts/screenshot.py",
+        "xxx.png",
+        "music-cover-fetcher",
+        "wikipedia/discogs/musicbrainz",
+        "scripts/fetch-cover.py"
+      ]
+    },
+    "memory:memory/2026-05-02.md:26:56": {
+      "key": "memory:memory/2026-05-02.md:26:56",
+      "path": "memory/2026-05-02.md",
+      "startLine": 26,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- 国际：LRCLIB（免费无需Key）、Musixmatch（需Key）、Genius（注释丰富） - **技术栈**：LRC格式标准（时间戳[mm:ss.xx]）、UTF-8编码 **推荐方案**： 1. LRCGET批量扫描`G:\\音乐编年史`+`H:\\私人\\荒岛唱片` 2. 163MusicLyrics补充匹配失败的中文字曲 3. 如需自动化开发，搭建网易云API本地服务 **关键文件**：task-summary_20260502_1330.md（完整研究报告） ## 14:17 - 会话压缩前持久化 **会话摘要**： - 用户询问歌词获取方法（音乐编年史+荒岛唱片） - 完成歌词获取技术路线研究报告 - 覆盖：GUI工具（LRCGET/163MusicLyrics）、API接口（LRCLIB/网易云/Musixmatch/Genius）、网页抓取方案 - 推荐LRCGET作为主力批量工具 **待处理任务**： - LRCGET安装测试（待用户确认） - 网易云API本地服务搭建（可选） ## 14:34 - LRCLIB 数据来源深度调查 **问题**：LRCGET 的歌词数据到底从哪来？ **调查结论**： - **LRCLIB GitHub**：`https://github.com/tranxuanthang/lrclib` - **技术栈**：Rust + Axum + SQLite3，完全开源 - **数据来源**： 1. **社区贡献**（主要来源）—— 用户通过API提交",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3729614943265915,
+      "maxScore": 0.3729614943265915,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "ss.xx",
+        "utf-8编码",
+        "task-summary-20260502-1330.md",
+        "lrcget/163musiclyrics",
+        "lrclib/网易云/musixmatch/genius",
+        "github.com/tranxuanthang/lrclib",
+        "国际",
+        "lrclib"
+      ]
+    },
+    "memory:memory/2026-04-09.md:41:77": {
+      "key": "memory:memory/2026-04-09.md:41:77",
+      "path": "memory/2026-04-09.md",
+      "startLine": 41,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "- MEMORY.md: 添加技术经验笔记（CDP 代理、MSYS2 Python 问题） - memory/2026-04-07.md, memory/2026-04-08.md: 添加每日日志 - .gitignore: 更新，排除 wang_xiaokun/, lyrics/, temp_*, yt-dlp.exe, lcm.db - analyze_html.py: HTML 分析脚本 - genius_lyrics.py: Genius 歌词抓取脚本 ## Courtney Barnett 音乐人调研 用户询问 Courtney Barnett 最新专辑《Creature of Habit》(2026.3) 封面含义。 **调研结果：** - 封面是已故德裔美国摄影师 **Lilo Hess** (1916-2003) 的作品 - 内容：**褐色隐士蜘蛛（Brown Recluse Spider）的黑白特写照片** - 设计团队：Regrets Only, LLC - Lilo Hess 曾为 LIFE 杂志拍摄，作品在 MoMA 展出 **封面意义解读：** - 标题 \"Creature of Habit\" 双关：习惯的动物 / 生物 - 蜘蛛是真正的\"习惯性生物\"——织网、捕食遵循固定模式 - \"Recluse（隐士）\" 暗示独居、自我封闭——呼应专辑主题 来源： - Instagram: regretsonly.llc - METROMOD Archive: Lilo Hess - MoMA: Lilo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36937189698219297,
+      "maxScore": 0.36937189698219297,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "memory/2026-04-07.md",
+        "memory/2026-04-08.md",
+        "wang-xiaokun",
+        "yt-dlp.exe",
+        "lcm.db",
+        "analyze-html.py",
+        "genius-lyrics.py"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:31": {
+      "key": "memory:memory/2026-05-02.md:1:31",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "## 13:30 - 歌词获取方法研究 **研究结论**： - **主力工具**：LRCGET（LRCLIB官方客户端，批量扫描本地音乐库，开源免费） - **中文补充**：163MusicLyrics（网易云/QQ音乐，支持翻译+罗马音） - **API接口**： - 国内：网易云API（Binaryify项目，15k+星，147个接口） - 国际：LRCLIB（免费无需Key）、Musixmatch（需Key）、Genius（注释丰富） - **技术栈**：LRC格式标准（时间戳[mm:ss.xx]）、UTF-8编码 **推荐方案**： 1. LRCGET批量扫描`G:\\音乐编年史`+`H:\\私人\\荒岛唱片` 2. 163MusicLyrics补充匹配失败的中文字曲 3. 如需自动化开发，搭建网易云API本地服务 **关键文件**：task-summary_20260502_1330.md（完整研究报告） ## 13:30 - 歌词获取方法研究 **研究结论**： - **主力工具**：LRCGET（LRCLIB官方客户端，批量扫描本地音乐库，开源免费） - **中文补充**：163MusicLyrics（网易云/QQ音乐，支持翻译+罗马音） - **API接口**： - 国内：网易云API（Binaryify项目，15k+星，147个接口） - 国际：LRCLIB（免费无需Key）、Musixmatch（需Key）、Genius（注释丰富） - **技术栈**：LRC格式标准（时间戳[mm:s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36614182889461516,
+      "maxScore": 0.36614182889461516,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "网易云/qq音乐",
+        "ss.xx",
+        "utf-8编码",
+        "task-summary-20260502-1330.md",
+        "歌词",
+        "获取",
+        "方法",
+        "研究"
+      ]
+    },
+    "memory:memory/2026-05-05.md:163:179": {
+      "key": "memory:memory/2026-05-05.md:163:179",
+      "path": "memory/2026-05-05.md",
+      "startLine": 163,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "- 张树选定 Indie Folk 作为风格脉络分析视频的第一个目标风格 - 已提供 Indie Folk 脉络框架： - 起源：1960s民谣复兴（Bob Dylan/Joni Mitchell/Neil Young） - 奠基：1990s独立摇滚+民谣融合（Pavement/Sebadoh/Bright Eyes） - 关键：Iron & Wine《The Creek Drank the Cradle》(2002) 确立卧室民谣美学 - 爆发：Sufjan Stevens《Illinois》(2005)、Bon Iver《For Emma》(2007)、Fleet Foxes(2008)、Father John Misty - 当代：Phoebe Bridgers/boygenius、Big Thief、Adrianne Lenker、环境民谣（Grouper） - 中国：张悬（安溥）、陈绮贞、曹方、程璧 - 数据来源：Wikipedia Indie folk、RYM Genre Chart、AllMusic、网易云/音乐类书籍（待确认） - 张树想从专辑排名视频转向风格影响脉络分析，Indie Folk 是第一个选题 ## Indie Rock 风格脉络讨论 - 张树提出 Indie Rock 作为第二个风格脉络分析目标（第一个是 Indie Folk） - 已提供 Indie Rock 脉络框架： - 起源：1980s独立厂牌（SST/Sub Pop/Touch & Go）、R.E.M./Hüsker Dü/Minu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36432428061962124,
+      "maxScore": 0.36432428061962124,
+      "firstRecalledAt": "2026-06-10T08:52:37.913Z",
+      "lastRecalledAt": "2026-06-10T08:52:37.913Z",
+      "queryHashes": [
+        "de68511f15bd"
+      ],
+      "recallDays": [
+        "2026-06-10"
+      ],
+      "conceptTags": [
+        "dylan/joni",
+        "mitchell/neil",
+        "pavement/sebadoh/bright",
+        "bridgers/boygenius",
+        "网易云/音乐类书籍",
+        "sst/sub",
+        "pop/touch",
+        "r.e.m"
       ]
     }
   }

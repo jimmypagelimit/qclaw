@@ -110,7 +110,7 @@
 - Markdown 文件已清空，仅保留空文件占位
 - 导入脚本: `album-tracker/scripts/import_2026.py`（默认华语新+外语新，`--all`全四类）
 - [详细操作手册](ALBUM_TRACKER_RULES.md)
-
+- sql.js 是内存数据库，每次改 DB 后必须重启 Web 服务：kill 进程 → 释放端口 → node dist/server.js
 
 ## RYM 抓取工具（2026-06-08 确立）⭐
 - **CloakBrowser** 绕过 Cloudflare，脚本 `rym_tool.py`

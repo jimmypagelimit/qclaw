@@ -1,21 +1,22 @@
-{
-  "lastChecks": {
-    "covers": "2026-06-09T09:01:00+08:00",
-    "covers_total": 504,
-    "covers_remaining": 7,
-    "c_drive_check": "2026-06-09T09:01:00+08:00",
-    "c_drive_used_gb": 43.1,
-    "music_sync": "2026-06-09T09:01:00+08:00"
-  },
-  "notes": {
-    "2026-05-22": "封面下载：数据库在G:盘（未挂载），covers目录本地为空，脚本找到0张。已发送金属动态飞书通知。",
-    "2026-05-23": "封面下载：G/H盘均未挂载，跳过所有下载和同步。",
-    "2026-05-25-a": "首次heartbeat：G/H盘均未挂载，跳过封面下载和音乐库同步；C盘35.1GB正常。",
-    "2026-05-25-b": "Indie文学RSS已检查，飞书通知已发送（G→P2P用户）。",
-    "2026-05-27-a": "G/H盘均未挂载，跳过封面下载和音乐库同步；C盘约30GB，正常（阈值50GB）。",
-    "2026-05-27-b": "周三 Metal/Hardcore + 文学动态已检查，飞书通知已发送（用户 ou_830815046749687386321a76b269a7b5）。",
-    "2026-06-06": "封面下载：3成功/7失败（中文专辑iTunes无数据）。covers_total=504, covers_remaining=7。C盘36.4GB正常。H盘未挂载跳过同步。飞书通知400错误待修复。",
-    "2026-06-09-a": "首次heartbeat：C盘43.1GB正常。H盘未挂载跳过封面下载和音乐同步。输出质量反思已完成。",
-    "2026-06-09-b": "周二 Metal/Hardcore 音乐线检查完成。Decibel(NCS/AngryMetalGuy RSS 均有6月8日更新：Kallohonka新视频、FINAL SELF专辑首播、CORRUPTION PACT专辑、Mirror of My Soul评论。Feishu通知格式待修复。"
-  }
+﻿{
+    "lastChecks":  {
+                       "covers":  "2026-06-10T04:10:00+08:00",
+                       "covers_total":  504,
+                       "covers_remaining":  7,
+                       "c_drive_check":  "2026-06-10T04:10:00+08:00",
+                       "c_drive_used_gb":  43.4,
+                       "music_sync":  "2026-06-10T04:10:00+08:00"
+                   },
+    "notes":  {
+                  "2026-05-22":  "封面下载：数据库在G:盘（未挂载），covers目录本地为空，脚本找到0张。已发送金属动态飞书通知。",
+                  "2026-05-23":  "封面下载：G/H盘均未挂载，跳过所有下载和同步。",
+                  "2026-05-25-a":  "首次heartbeat：G/H盘均未挂载，跳过封面下载和音乐库同步；C盘35.1GB正常。",
+                  "2026-05-25-b":  "Indie文学RSS已检查，飞书通知已发送（G→P2P用户）。",
+                  "2026-05-27-a":  "G/H盘均未挂载，跳过封面下载和音乐库同步；C盘约30GB，正常（阈值50GB）。",
+                  "2026-05-27-b":  "周三 Metal/Hardcore + 文学动态已检查，飞书通知已发送（用户 ou_830815046749687386321a76b269a7b5）。",
+                  "2026-06-06":  "封面下载：3成功/7失败（中文专辑iTunes无数据）。covers_total=504, covers_remaining=7。C盘36.4GB正常。H盘未挂载跳过同步。飞书通知400错误待修复。",
+                  "2026-06-09-a":  "首次heartbeat：C盘43.1GB正常。H盘未挂载跳过封面下载和音乐同步。输出质量反思已完成。",
+                  "2026-06-09-b":  "周二 Metal/Hardcore 音乐线检查完成。Decibel(NCS/AngryMetalGuy RSS 均有6月8日更新：Kallohonka新视频、FINAL SELF专辑首播、CORRUPTION PACT专辑、Mirror of My Soul评论。Feishu通知格式待修复。",
+                  "2026-06-10":  "C盘43.4GB正常。专辑封面下载：6张检查，0成功/6失败（iTunes/Deezer/网易云均无）。H盘未挂载跳过音乐同步。Metal/Hardcore RSS检查完成：NCS中国地下金属专题、IO黑金属盘点、No Echo 2026 Hardcore榜单、Lambgoat巡演消息、AMG评论。飞书通知400错误（target格式待修复）。"
+              }
 }

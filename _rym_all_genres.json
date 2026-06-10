@@ -1,0 +1,278 @@
+{
+  "ambient": {
+    "name": "\n                  ",
+    "url": "/genre/ambient/"
+  },
+  "blues": {
+    "name": "\n                  ",
+    "url": "/genre/blues/"
+  },
+  "classical-music": {
+    "name": "\n                  ",
+    "url": "/genre/classical-music/"
+  },
+  "country": {
+    "name": "\n                  ",
+    "url": "/genre/country/"
+  },
+  "dance": {
+    "name": "\n                  ",
+    "url": "/genre/dance/"
+  },
+  "easy-listening": {
+    "name": "\n                  ",
+    "url": "/genre/easy-listening/"
+  },
+  "electronic": {
+    "name": "\n                  ",
+    "url": "/genre/electronic/"
+  },
+  "experimental": {
+    "name": "\n                  ",
+    "url": "/genre/experimental/"
+  },
+  "folk": {
+    "name": "\n                  ",
+    "url": "/genre/folk/"
+  },
+  "hip-hop": {
+    "name": "\n                  ",
+    "url": "/genre/hip-hop/"
+  },
+  "industrial-and-noise": {
+    "name": "\n                  ",
+    "url": "/genre/industrial-and-noise/"
+  },
+  "jazz": {
+    "name": "\n                  ",
+    "url": "/genre/jazz/"
+  },
+  "metal": {
+    "name": "\n                  ",
+    "url": "/genre/metal/"
+  },
+  "musical-theatre-and-entertainment": {
+    "name": "\n                  ",
+    "url": "/genre/musical-theatre-and-entertainment/"
+  },
+  "new-age": {
+    "name": "\n                  ",
+    "url": "/genre/new-age/"
+  },
+  "pop": {
+    "name": "\n                  ",
+    "url": "/genre/pop/"
+  },
+  "psychedelia": {
+    "name": "\n                  ",
+    "url": "/genre/psychedelia/"
+  },
+  "punk": {
+    "name": "\n                  ",
+    "url": "/genre/punk/"
+  },
+  "randb": {
+    "name": "\n                  ",
+    "url": "/genre/randb/"
+  },
+  "reggae-ska-dancehall": {
+    "name": "\n                  ",
+    "url": "/genre/reggae-ska-dancehall/"
+  },
+  "regional-music": {
+    "name": "\n                  ",
+    "url": "/genre/regional-music/"
+  },
+  "rock": {
+    "name": "\n                  ",
+    "url": "/genre/rock/"
+  },
+  "scenes-and-movements": {
+    "name": "\n                  ",
+    "url": "/genre/scenes-and-movements/"
+  },
+  "singer-songwriter": {
+    "name": "\n                  ",
+    "url": "/genre/singer-songwriter/"
+  },
+  "spoken-word": {
+    "name": "\n                  ",
+    "url": "/genre/spoken-word/"
+  },
+  "ambient-pop": {
+    "name": "Ambient Pop",
+    "url": "/genre/ambient-pop/"
+  },
+  "asmr": {
+    "name": "ASMR",
+    "url": "/genre/asmr/"
+  },
+  "audio-documentary": {
+    "name": "Audio Documentary",
+    "url": "/genre/audio-documentary/"
+  },
+  "beatboxing": {
+    "name": "Beatboxing",
+    "url": "/genre/beatboxing/"
+  },
+  "bugle-call": {
+    "name": "Bugle Call",
+    "url": "/genre/bugle-call/"
+  },
+  "childrens-music": {
+    "name": "Children's Music",
+    "url": "/genre/childrens-music/"
+  },
+  "comedy": {
+    "name": "Comedy",
+    "url": "/genre/comedy/"
+  },
+  "concert-band": {
+    "name": "Concert Band",
+    "url": "/genre/concert-band/"
+  },
+  "dark-cabaret": {
+    "name": "Dark Cabaret",
+    "url": "/genre/dark-cabaret/"
+  },
+  "darkwave": {
+    "name": "Darkwave",
+    "url": "/genre/darkwave/"
+  },
+  "field-recordings": {
+    "name": "Field Recordings",
+    "url": "/genre/field-recordings/"
+  },
+  "gospel": {
+    "name": "Gospel",
+    "url": "/genre/gospel/"
+  },
+  "hanmai": {
+    "name": "Hanmai",
+    "url": "/genre/hanmai/"
+  },
+  "hauntology": {
+    "name": "Hauntology",
+    "url": "/genre/hauntology/"
+  },
+  "hymn": {
+    "name": "Hymn",
+    "url": "/genre/hymn/"
+  },
+  "jingles": {
+    "name": "Jingles",
+    "url": "/genre/jingles/"
+  },
+  "mantra": {
+    "name": "Mantra",
+    "url": "/genre/mantra/"
+  },
+  "march": {
+    "name": "March",
+    "url": "/genre/march/"
+  },
+  "marching-band": {
+    "name": "Marching Band",
+    "url": "/genre/marching-band/"
+  },
+  "mashup": {
+    "name": "Mashup",
+    "url": "/genre/mashup/"
+  },
+  "mechanical-music": {
+    "name": "Mechanical Music",
+    "url": "/genre/mechanical-music/"
+  },
+  "parlour-music": {
+    "name": "Parlour Music",
+    "url": "/genre/parlour-music/"
+  },
+  "sacred-singing-circle": {
+    "name": "Sacred Singing Circle",
+    "url": "/genre/sacred-singing-circle/"
+  },
+  "slowed-and-reverb": {
+    "name": "Slowed &amp; Reverb",
+    "url": "/genre/slowed-and-reverb/"
+  },
+  "sound-effects": {
+    "name": "Sound Effects",
+    "url": "/genre/sound-effects/"
+  },
+  "toypop": {
+    "name": "Toypop",
+    "url": "/genre/toypop/"
+  },
+  "worldbeat": {
+    "name": "Worldbeat",
+    "url": "/genre/worldbeat/"
+  },
+  "cueca-brava": {
+    "name": "Cueca brava",
+    "url": "/genre/cueca-brava/"
+  },
+  "cueca": {
+    "name": "Cueca",
+    "url": "/genre/cueca/"
+  },
+  "morris-music": {
+    "name": "Morris Music",
+    "url": "/genre/morris-music/"
+  },
+  "coplas-cajamarquinas": {
+    "name": "Coplas cajamarquinas",
+    "url": "/genre/coplas-cajamarquinas/"
+  },
+  "spiritual-art-song": {
+    "name": "Spiritual Art Song",
+    "url": "/genre/spiritual-art-song/"
+  },
+  "lied": {
+    "name": "Lied",
+    "url": "/genre/lied/"
+  },
+  "tbm": {
+    "name": "TBM",
+    "url": "/genre/tbm/"
+  },
+  "techno": {
+    "name": "Techno",
+    "url": "/genre/techno/"
+  },
+  "ebm": {
+    "name": "EBM",
+    "url": "/genre/ebm/"
+  },
+  "mugithi": {
+    "name": "Mugithi",
+    "url": "/genre/mugithi/"
+  },
+  "free-funk": {
+    "name": "Free Funk",
+    "url": "/genre/free-funk/"
+  },
+  "funk": {
+    "name": "Funk",
+    "url": "/genre/funk/"
+  },
+  "free-jazz": {
+    "name": "Free Jazz",
+    "url": "/genre/free-jazz/"
+  },
+  "hollandse-school": {
+    "name": "Hollandse School",
+    "url": "/genre/hollandse-school/"
+  },
+  "avant-garde-jazz": {
+    "name": "Avant-Garde Jazz",
+    "url": "/genre/avant-garde-jazz/"
+  },
+  "boston-hardcore": {
+    "name": "Boston Hardcore",
+    "url": "/genre/boston-hardcore/"
+  },
+  "hardcore-punk-1": {
+    "name": "Hardcore [Punk]",
+    "url": "/genre/hardcore-punk-1/"
+  }
+}

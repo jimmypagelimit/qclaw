@@ -13,6 +13,11 @@
 ### 铁律
 - 所有脚本、API 调用、数据处理 → **必须用 Python**
 - 只有 Python 明显不合适时才考虑 Node.js/CMD
+
+### ⚠️ GBK编码铁律（2026-06-10 事故后确立，永久生效）
+- Windows 控制台 GBK 编码会导致中文乱码，**禁止用 print() 查看数据库中的中文**
+- 查询中文数据**必须用 `repr(name)` 或写入文件查看**，否则乱码可能导致误删
+- 删除任何记录前**必须用 repr() 确认中文内容**
 - **PowerShell 永远不用，没有例外**
 - Git 操作必须用 Git Bash（`cmd /c "C:\Progra~1\Git\bin\bash.exe -l ..."`）
 
@@ -220,6 +225,30 @@ C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"
 - 风格（Style）经常提取不到
 - 每张专辑约 50-60 秒（CF 等待占大头）
 - 单次只能抓一张专辑
+
+### RYM 风格/流派树抓取 ⭐（2026-06-10 验证）
+
+**目标**：获取 RYM 任意流派的完整子流派树形结构
+
+**方法**：CloakBrowser + `/genre/{slug}/` 页面
+
+**关键步骤**：
+1. `launch(headless=False)` → 首页等 30 秒过 CF
+2. **用 `window.location.href = '/genre/{slug}/'` 导航**（不用 `page.goto()`，会被 CF 503）
+3. 等 25 秒让页面加载完成
+4. 用正则提取所有子流派链接：`href="/genre/([^"]+)"[^>]*>([^<]+)</a>`
+5. 过滤出包含目标流派 slug 的链接即为全部子流派
+
+**已验证数据**（2026-06-10）：
+- Rock: **81 个子流派**（9 大分支：Early/Garage/Indie/Folk/Psych/Hard/Glam/Industrial/Regional）
+- Genres 首页 (`/genre/`) 是卡片目录，不是树形视图，展开后 2776 个唯一流派但 `<li>` 嵌套深度不可靠
+- **单流派页面** (`/genre/rock/` 等) 才列出完整的直接子流派列表
+
+**重要发现**：
+- `<a>` 链接文本 = 流派名 ✅ 正确
+- `img alt` 属性 = 专辑封面描述 ❌ 不是流派名（如 "Kendrick Lamar - To Pimp a Butterfly, Cover art"）
+- Hierarchy 区域的 "Expand Hierarchy" 按钮点击后数量不变（页面已列出全部）
+- RYM 流派树是**扁平列表**（一层子流派），非多层嵌套
 
 ### Metal-Archives
 - **网址**：https://www.metal-archives.com

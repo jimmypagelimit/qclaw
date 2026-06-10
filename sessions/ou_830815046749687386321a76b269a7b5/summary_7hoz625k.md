@@ -1,17 +1,17 @@
 ## 任务背景
-用户希望更新 Gumshoes - Happy New Year 专辑的 RYM 评分数据和听歌次数。
+用户请求从 rateyourmusic.com 爬取 Rock 风格的子风格树形图。
 
 ## 执行过程
-1. 绕过 CF 抓取 RYM 数据
-2. 更新数据库字段
-3. 修正 style 大类（Pop→Rock）
-4. 修复 album_genres 缺少 genre_order 的写入错误
-5. 用户多次纠正 style 归类逻辑
+1. 使用 CloakBrowser headless=False 绕过 Cloudflare 保护
+2. 尝试访问 /genre/ 首页失败，改为直接访问 /genre/rock/ 单流派页面
+3. 通过 window.location.href 导航 + 25-30秒等待通过 CF challenge
+4. 提取 81 个 Rock 子流派并整理为 9 大分支
+5. 用户确认后，将抓取方法写入 TOOLS.md 和 MEMORY.md 长期记忆
 
 ## 关键结果
-- 最终状态：style=Rock, genre=chamber pop, release_year=2026
-- RYM 评分 3.24/5（566 评价），听歌次数改为 4
-- album_genres 写入 4 条，album_styles 写入 Rock
+- 成功获取 RYM Rock 完整子流派列表（81个）
+- 整理为结构化 JSON 和树形图
+- 抓取方法已永久记录：CloakBrowser + /genre/{slug}/ + 链接文本提取
 
 ## 结论建议
-数据已全部写入并通过验证，等待用户确认 git commit + push。
+RYM 风格分支抓取方案已验证有效，下次可直接复用。可继续扩展抓取 Metal、Punk 等其他顶级流派。
