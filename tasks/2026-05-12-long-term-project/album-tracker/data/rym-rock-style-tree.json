@@ -1,0 +1,1311 @@
+{
+  "metadata": {
+    "source": "RateYourMusic /genre/rock/ + database curation",
+    "total_styles": 162,
+    "rock_subgenres": 98,
+    "exported": "2026-06-10"
+  },
+  "tree": {
+    "id": 1,
+    "name": "Rock",
+    "rym_slug": null,
+    "parent_id": 0,
+    "category": null,
+    "children": [
+      {
+        "id": 67,
+        "name": "Americana",
+        "rym_slug": "americana",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 113,
+        "name": "Bard Rock",
+        "rym_slug": "bard-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 108,
+        "name": "British Folk Rock",
+        "rym_slug": "british-folk-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 109,
+        "name": "Celtic Rock",
+        "rym_slug": "celtic-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 61,
+        "name": "Folk Rock",
+        "rym_slug": "folk-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 54,
+        "name": "Indie Folk",
+        "rym_slug": "indie-folk",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 112,
+        "name": "Mittelalter-Rock",
+        "rym_slug": "mittelalter-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 110,
+        "name": "Nordic Folk Rock",
+        "rym_slug": "nordic-folk-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 111,
+        "name": "Pinoy Folk Rock",
+        "rym_slug": "pinoy-folk-rock",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 65,
+        "name": "Psychedelic Folk",
+        "rym_slug": "psychedelic-folk",
+        "parent_id": 1,
+        "category": "Folk Rock",
+        "children": []
+      },
+      {
+        "id": 104,
+        "name": "Crack Rock Steady",
+        "rym_slug": "crack-rock-steady",
+        "parent_id": 1,
+        "category": "Garage / Punk",
+        "children": []
+      },
+      {
+        "id": 103,
+        "name": "Frat Rock",
+        "rym_slug": "frat-rock",
+        "parent_id": 1,
+        "category": "Garage / Punk",
+        "children": []
+      },
+      {
+        "id": 70,
+        "name": "Garage Rock",
+        "rym_slug": "garage-rock",
+        "parent_id": 1,
+        "category": "Garage / Punk",
+        "children": []
+      },
+      {
+        "id": 101,
+        "name": "Garage Rock Revival",
+        "rym_slug": "garage-rock-revival",
+        "parent_id": 1,
+        "category": "Garage / Punk",
+        "children": []
+      },
+      {
+        "id": 102,
+        "name": "Punk Rock",
+        "rym_slug": "punk-rock",
+        "parent_id": 1,
+        "category": "Garage / Punk",
+        "children": []
+      },
+      {
+        "id": 145,
+        "name": "Acoustic Rock",
+        "rym_slug": "acoustic-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 140,
+        "name": "Country Rock",
+        "rym_slug": "country-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 142,
+        "name": "Funk Rock",
+        "rym_slug": "funk-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 136,
+        "name": "Glam Rock",
+        "rym_slug": "glam-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 146,
+        "name": "Heartland Rock",
+        "rym_slug": "heartland-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 141,
+        "name": "Jazz-Rock",
+        "rym_slug": "jazz-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 143,
+        "name": "Latin Rock",
+        "rym_slug": "latin-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 139,
+        "name": "Piano Rock",
+        "rym_slug": "piano-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 58,
+        "name": "Pop Rock",
+        "rym_slug": "pop-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 147,
+        "name": "Pub Rock",
+        "rym_slug": "pub-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 137,
+        "name": "Soft Rock",
+        "rym_slug": "soft-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 144,
+        "name": "Tropical Rock",
+        "rym_slug": "tropical-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 138,
+        "name": "Yacht Rock",
+        "rym_slug": "yacht-rock",
+        "parent_id": 1,
+        "category": "Glam / Pop / Soft",
+        "children": []
+      },
+      {
+        "id": 127,
+        "name": "Blues Rock",
+        "rym_slug": "blues-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 128,
+        "name": "Boogie Rock",
+        "rym_slug": "boogie-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 169,
+        "name": "Classic Rock",
+        "rym_slug": "classic-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 134,
+        "name": "Deathrock",
+        "rym_slug": "deathrock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 135,
+        "name": "Gothic Rock",
+        "rym_slug": "gothic-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 125,
+        "name": "Hard Rock",
+        "rym_slug": "hard-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 133,
+        "name": "Occult Rock",
+        "rym_slug": "occult-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 130,
+        "name": "Roots Rock",
+        "rym_slug": "roots-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 132,
+        "name": "Sleaze Rock",
+        "rym_slug": "sleaze-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 129,
+        "name": "Southern Rock",
+        "rym_slug": "southern-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 126,
+        "name": "Stoner Rock",
+        "rym_slug": "stoner-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 131,
+        "name": "Swamp Rock",
+        "rym_slug": "swamp-rock",
+        "parent_id": 1,
+        "category": "Hard / Heavy",
+        "children": []
+      },
+      {
+        "id": 50,
+        "name": "Alternative Rock",
+        "rym_slug": "alternative-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 59,
+        "name": "Blackgaze",
+        "rym_slug": "blackgaze",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 174,
+        "name": "Chinese Indie",
+        "rym_slug": "chinese-indie",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 176,
+        "name": "Dream Pop",
+        "rym_slug": "dream-pop",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 178,
+        "name": "Emo",
+        "rym_slug": "emo",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 106,
+        "name": "Geek Rock",
+        "rym_slug": "geek-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 51,
+        "name": "Indie Rock",
+        "rym_slug": "indie-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 175,
+        "name": "Lo-Fi",
+        "rym_slug": "lo-fi",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 171,
+        "name": "Noise",
+        "rym_slug": "noise",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 52,
+        "name": "Noise Pop",
+        "rym_slug": "noise-pop",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 107,
+        "name": "Noise Rock",
+        "rym_slug": "noise-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 53,
+        "name": "Post-Punk",
+        "rym_slug": "post-punk",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 74,
+        "name": "Post-Rock",
+        "rym_slug": "post-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 177,
+        "name": "Shoegaze",
+        "rym_slug": "shoegaze",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 105,
+        "name": "Slacker Rock",
+        "rym_slug": "slacker-rock",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 66,
+        "name": "Slowcore",
+        "rym_slug": "slowcore",
+        "parent_id": 1,
+        "category": "Indie / Alternative",
+        "children": []
+      },
+      {
+        "id": 150,
+        "name": "Beat Rock",
+        "rym_slug": "beat-rock",
+        "parent_id": 1,
+        "category": "Industrial / Electronic",
+        "children": []
+      },
+      {
+        "id": 148,
+        "name": "Industrial Rock",
+        "rym_slug": "industrial-rock",
+        "parent_id": 1,
+        "category": "Industrial / Electronic",
+        "children": []
+      },
+      {
+        "id": 149,
+        "name": "Machine Rock",
+        "rym_slug": "machine-rock",
+        "parent_id": 1,
+        "category": "Industrial / Electronic",
+        "children": []
+      },
+      {
+        "id": 121,
+        "name": "Acid Rock",
+        "rym_slug": "acid-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 46,
+        "name": "Art Rock",
+        "rym_slug": "art-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 60,
+        "name": "Experimental Rock",
+        "rym_slug": "experimental-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 117,
+        "name": "Krautrock",
+        "rym_slug": "krautrock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 116,
+        "name": "Math Rock",
+        "rym_slug": "math-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 68,
+        "name": "Neo-Psychedelia",
+        "rym_slug": "neo-psychedelia",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 170,
+        "name": "Prog Rock",
+        "rym_slug": "prog-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 115,
+        "name": "Progressive Rock",
+        "rym_slug": "progressive-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 79,
+        "name": "Psychedelia",
+        "rym_slug": "psychedelia",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 114,
+        "name": "Psychedelic Rock",
+        "rym_slug": "psychedelic-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 120,
+        "name": "Raga Rock",
+        "rym_slug": "raga-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 123,
+        "name": "Rock Musical",
+        "rym_slug": "rock-musical",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 122,
+        "name": "Rock Opera",
+        "rym_slug": "rock-opera",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 118,
+        "name": "Space Rock",
+        "rym_slug": "space-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 119,
+        "name": "Space Rock Revival",
+        "rym_slug": "space-rock-revival",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 124,
+        "name": "Symphonic Rock",
+        "rym_slug": "symphonic-rock",
+        "parent_id": 1,
+        "category": "Psychedelic / Progressive / Art",
+        "children": []
+      },
+      {
+        "id": 151,
+        "name": "Afro-Rock",
+        "rym_slug": "afro-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 154,
+        "name": "Alpenrock",
+        "rym_slug": "alpenrock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 164,
+        "name": "Anatolian Rock",
+        "rym_slug": "anatolian-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 172,
+        "name": "Chinese Rock",
+        "rym_slug": "chinese-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 165,
+        "name": "Christian Rock",
+        "rym_slug": "christian-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 166,
+        "name": "Comedy Rock",
+        "rym_slug": "comedy-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 153,
+        "name": "Deutschrock",
+        "rym_slug": "deutschrock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 155,
+        "name": "Indorock",
+        "rym_slug": "indorock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 157,
+        "name": "Konsrock",
+        "rym_slug": "konsrock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 167,
+        "name": "Rap Rock",
+        "rym_slug": "rap-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 168,
+        "name": "Reggae Rock",
+        "rym_slug": "reggae-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 160,
+        "name": "Rock Kapak",
+        "rym_slug": "rock-kapak",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 158,
+        "name": "Rock andaluz",
+        "rym_slug": "rock-andaluz",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 159,
+        "name": "Rock andino",
+        "rym_slug": "rock-andino",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 161,
+        "name": "Rock rural",
+        "rym_slug": "rock-rural",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 163,
+        "name": "Sufi Rock",
+        "rym_slug": "sufi-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 173,
+        "name": "Taiwanese Rock",
+        "rym_slug": "taiwanese-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 162,
+        "name": "Tolai Rock",
+        "rym_slug": "tolai-rock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 156,
+        "name": "Vikingarock",
+        "rym_slug": "vikingarock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 152,
+        "name": "Zamrock",
+        "rym_slug": "zamrock",
+        "parent_id": 1,
+        "category": "Regional / World Rock",
+        "children": []
+      },
+      {
+        "id": 98,
+        "name": "Rock & Roll",
+        "rym_slug": "rock-and-roll",
+        "parent_id": 1,
+        "category": "Rock & Roll / Early Rock",
+        "children": []
+      },
+      {
+        "id": 99,
+        "name": "Rockabilly",
+        "rym_slug": "rockabilly",
+        "parent_id": 1,
+        "category": "Rock & Roll / Early Rock",
+        "children": []
+      },
+      {
+        "id": 100,
+        "name": "Surf Rock",
+        "rym_slug": "surf-rock",
+        "parent_id": 1,
+        "category": "Rock & Roll / Early Rock",
+        "children": []
+      }
+    ]
+  },
+  "categories": {
+    "Folk Rock": [
+      {
+        "id": 67,
+        "name": "Americana",
+        "rym_slug": "americana"
+      },
+      {
+        "id": 113,
+        "name": "Bard Rock",
+        "rym_slug": "bard-rock"
+      },
+      {
+        "id": 108,
+        "name": "British Folk Rock",
+        "rym_slug": "british-folk-rock"
+      },
+      {
+        "id": 109,
+        "name": "Celtic Rock",
+        "rym_slug": "celtic-rock"
+      },
+      {
+        "id": 61,
+        "name": "Folk Rock",
+        "rym_slug": "folk-rock"
+      },
+      {
+        "id": 54,
+        "name": "Indie Folk",
+        "rym_slug": "indie-folk"
+      },
+      {
+        "id": 112,
+        "name": "Mittelalter-Rock",
+        "rym_slug": "mittelalter-rock"
+      },
+      {
+        "id": 110,
+        "name": "Nordic Folk Rock",
+        "rym_slug": "nordic-folk-rock"
+      },
+      {
+        "id": 111,
+        "name": "Pinoy Folk Rock",
+        "rym_slug": "pinoy-folk-rock"
+      },
+      {
+        "id": 65,
+        "name": "Psychedelic Folk",
+        "rym_slug": "psychedelic-folk"
+      }
+    ],
+    "Garage / Punk": [
+      {
+        "id": 104,
+        "name": "Crack Rock Steady",
+        "rym_slug": "crack-rock-steady"
+      },
+      {
+        "id": 103,
+        "name": "Frat Rock",
+        "rym_slug": "frat-rock"
+      },
+      {
+        "id": 70,
+        "name": "Garage Rock",
+        "rym_slug": "garage-rock"
+      },
+      {
+        "id": 101,
+        "name": "Garage Rock Revival",
+        "rym_slug": "garage-rock-revival"
+      },
+      {
+        "id": 102,
+        "name": "Punk Rock",
+        "rym_slug": "punk-rock"
+      }
+    ],
+    "Glam / Pop / Soft": [
+      {
+        "id": 145,
+        "name": "Acoustic Rock",
+        "rym_slug": "acoustic-rock"
+      },
+      {
+        "id": 140,
+        "name": "Country Rock",
+        "rym_slug": "country-rock"
+      },
+      {
+        "id": 142,
+        "name": "Funk Rock",
+        "rym_slug": "funk-rock"
+      },
+      {
+        "id": 136,
+        "name": "Glam Rock",
+        "rym_slug": "glam-rock"
+      },
+      {
+        "id": 146,
+        "name": "Heartland Rock",
+        "rym_slug": "heartland-rock"
+      },
+      {
+        "id": 141,
+        "name": "Jazz-Rock",
+        "rym_slug": "jazz-rock"
+      },
+      {
+        "id": 143,
+        "name": "Latin Rock",
+        "rym_slug": "latin-rock"
+      },
+      {
+        "id": 139,
+        "name": "Piano Rock",
+        "rym_slug": "piano-rock"
+      },
+      {
+        "id": 58,
+        "name": "Pop Rock",
+        "rym_slug": "pop-rock"
+      },
+      {
+        "id": 147,
+        "name": "Pub Rock",
+        "rym_slug": "pub-rock"
+      },
+      {
+        "id": 137,
+        "name": "Soft Rock",
+        "rym_slug": "soft-rock"
+      },
+      {
+        "id": 144,
+        "name": "Tropical Rock",
+        "rym_slug": "tropical-rock"
+      },
+      {
+        "id": 138,
+        "name": "Yacht Rock",
+        "rym_slug": "yacht-rock"
+      }
+    ],
+    "Hard / Heavy": [
+      {
+        "id": 127,
+        "name": "Blues Rock",
+        "rym_slug": "blues-rock"
+      },
+      {
+        "id": 128,
+        "name": "Boogie Rock",
+        "rym_slug": "boogie-rock"
+      },
+      {
+        "id": 169,
+        "name": "Classic Rock",
+        "rym_slug": "classic-rock"
+      },
+      {
+        "id": 134,
+        "name": "Deathrock",
+        "rym_slug": "deathrock"
+      },
+      {
+        "id": 135,
+        "name": "Gothic Rock",
+        "rym_slug": "gothic-rock"
+      },
+      {
+        "id": 125,
+        "name": "Hard Rock",
+        "rym_slug": "hard-rock"
+      },
+      {
+        "id": 133,
+        "name": "Occult Rock",
+        "rym_slug": "occult-rock"
+      },
+      {
+        "id": 130,
+        "name": "Roots Rock",
+        "rym_slug": "roots-rock"
+      },
+      {
+        "id": 132,
+        "name": "Sleaze Rock",
+        "rym_slug": "sleaze-rock"
+      },
+      {
+        "id": 129,
+        "name": "Southern Rock",
+        "rym_slug": "southern-rock"
+      },
+      {
+        "id": 126,
+        "name": "Stoner Rock",
+        "rym_slug": "stoner-rock"
+      },
+      {
+        "id": 131,
+        "name": "Swamp Rock",
+        "rym_slug": "swamp-rock"
+      }
+    ],
+    "Indie / Alternative": [
+      {
+        "id": 50,
+        "name": "Alternative Rock",
+        "rym_slug": "alternative-rock"
+      },
+      {
+        "id": 59,
+        "name": "Blackgaze",
+        "rym_slug": "blackgaze"
+      },
+      {
+        "id": 174,
+        "name": "Chinese Indie",
+        "rym_slug": "chinese-indie"
+      },
+      {
+        "id": 176,
+        "name": "Dream Pop",
+        "rym_slug": "dream-pop"
+      },
+      {
+        "id": 178,
+        "name": "Emo",
+        "rym_slug": "emo"
+      },
+      {
+        "id": 106,
+        "name": "Geek Rock",
+        "rym_slug": "geek-rock"
+      },
+      {
+        "id": 51,
+        "name": "Indie Rock",
+        "rym_slug": "indie-rock"
+      },
+      {
+        "id": 175,
+        "name": "Lo-Fi",
+        "rym_slug": "lo-fi"
+      },
+      {
+        "id": 171,
+        "name": "Noise",
+        "rym_slug": "noise"
+      },
+      {
+        "id": 52,
+        "name": "Noise Pop",
+        "rym_slug": "noise-pop"
+      },
+      {
+        "id": 107,
+        "name": "Noise Rock",
+        "rym_slug": "noise-rock"
+      },
+      {
+        "id": 53,
+        "name": "Post-Punk",
+        "rym_slug": "post-punk"
+      },
+      {
+        "id": 74,
+        "name": "Post-Rock",
+        "rym_slug": "post-rock"
+      },
+      {
+        "id": 177,
+        "name": "Shoegaze",
+        "rym_slug": "shoegaze"
+      },
+      {
+        "id": 105,
+        "name": "Slacker Rock",
+        "rym_slug": "slacker-rock"
+      },
+      {
+        "id": 66,
+        "name": "Slowcore",
+        "rym_slug": "slowcore"
+      }
+    ],
+    "Industrial / Electronic": [
+      {
+        "id": 150,
+        "name": "Beat Rock",
+        "rym_slug": "beat-rock"
+      },
+      {
+        "id": 148,
+        "name": "Industrial Rock",
+        "rym_slug": "industrial-rock"
+      },
+      {
+        "id": 149,
+        "name": "Machine Rock",
+        "rym_slug": "machine-rock"
+      }
+    ],
+    "Psychedelic / Progressive / Art": [
+      {
+        "id": 121,
+        "name": "Acid Rock",
+        "rym_slug": "acid-rock"
+      },
+      {
+        "id": 46,
+        "name": "Art Rock",
+        "rym_slug": "art-rock"
+      },
+      {
+        "id": 60,
+        "name": "Experimental Rock",
+        "rym_slug": "experimental-rock"
+      },
+      {
+        "id": 117,
+        "name": "Krautrock",
+        "rym_slug": "krautrock"
+      },
+      {
+        "id": 116,
+        "name": "Math Rock",
+        "rym_slug": "math-rock"
+      },
+      {
+        "id": 68,
+        "name": "Neo-Psychedelia",
+        "rym_slug": "neo-psychedelia"
+      },
+      {
+        "id": 170,
+        "name": "Prog Rock",
+        "rym_slug": "prog-rock"
+      },
+      {
+        "id": 115,
+        "name": "Progressive Rock",
+        "rym_slug": "progressive-rock"
+      },
+      {
+        "id": 79,
+        "name": "Psychedelia",
+        "rym_slug": "psychedelia"
+      },
+      {
+        "id": 114,
+        "name": "Psychedelic Rock",
+        "rym_slug": "psychedelic-rock"
+      },
+      {
+        "id": 120,
+        "name": "Raga Rock",
+        "rym_slug": "raga-rock"
+      },
+      {
+        "id": 123,
+        "name": "Rock Musical",
+        "rym_slug": "rock-musical"
+      },
+      {
+        "id": 122,
+        "name": "Rock Opera",
+        "rym_slug": "rock-opera"
+      },
+      {
+        "id": 118,
+        "name": "Space Rock",
+        "rym_slug": "space-rock"
+      },
+      {
+        "id": 119,
+        "name": "Space Rock Revival",
+        "rym_slug": "space-rock-revival"
+      },
+      {
+        "id": 124,
+        "name": "Symphonic Rock",
+        "rym_slug": "symphonic-rock"
+      }
+    ],
+    "Regional / World Rock": [
+      {
+        "id": 151,
+        "name": "Afro-Rock",
+        "rym_slug": "afro-rock"
+      },
+      {
+        "id": 154,
+        "name": "Alpenrock",
+        "rym_slug": "alpenrock"
+      },
+      {
+        "id": 164,
+        "name": "Anatolian Rock",
+        "rym_slug": "anatolian-rock"
+      },
+      {
+        "id": 172,
+        "name": "Chinese Rock",
+        "rym_slug": "chinese-rock"
+      },
+      {
+        "id": 165,
+        "name": "Christian Rock",
+        "rym_slug": "christian-rock"
+      },
+      {
+        "id": 166,
+        "name": "Comedy Rock",
+        "rym_slug": "comedy-rock"
+      },
+      {
+        "id": 153,
+        "name": "Deutschrock",
+        "rym_slug": "deutschrock"
+      },
+      {
+        "id": 155,
+        "name": "Indorock",
+        "rym_slug": "indorock"
+      },
+      {
+        "id": 157,
+        "name": "Konsrock",
+        "rym_slug": "konsrock"
+      },
+      {
+        "id": 167,
+        "name": "Rap Rock",
+        "rym_slug": "rap-rock"
+      },
+      {
+        "id": 168,
+        "name": "Reggae Rock",
+        "rym_slug": "reggae-rock"
+      },
+      {
+        "id": 160,
+        "name": "Rock Kapak",
+        "rym_slug": "rock-kapak"
+      },
+      {
+        "id": 158,
+        "name": "Rock andaluz",
+        "rym_slug": "rock-andaluz"
+      },
+      {
+        "id": 159,
+        "name": "Rock andino",
+        "rym_slug": "rock-andino"
+      },
+      {
+        "id": 161,
+        "name": "Rock rural",
+        "rym_slug": "rock-rural"
+      },
+      {
+        "id": 163,
+        "name": "Sufi Rock",
+        "rym_slug": "sufi-rock"
+      },
+      {
+        "id": 173,
+        "name": "Taiwanese Rock",
+        "rym_slug": "taiwanese-rock"
+      },
+      {
+        "id": 162,
+        "name": "Tolai Rock",
+        "rym_slug": "tolai-rock"
+      },
+      {
+        "id": 156,
+        "name": "Vikingarock",
+        "rym_slug": "vikingarock"
+      },
+      {
+        "id": 152,
+        "name": "Zamrock",
+        "rym_slug": "zamrock"
+      }
+    ],
+    "Rock & Roll / Early Rock": [
+      {
+        "id": 98,
+        "name": "Rock & Roll",
+        "rym_slug": "rock-and-roll"
+      },
+      {
+        "id": 99,
+        "name": "Rockabilly",
+        "rym_slug": "rockabilly"
+      },
+      {
+        "id": 100,
+        "name": "Surf Rock",
+        "rym_slug": "surf-rock"
+      }
+    ]
+  }
+}
