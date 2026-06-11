@@ -1,15 +1,20 @@
 ## 任务背景
-用户需要将 Porcelain Stars 的专辑 Rosemary 信息入库到音乐数据库。
+用户需要将新发现的专辑信息录入个人音乐数据库（SQLite），包括元数据、封面、曲目和收听记录。
+
 ## 执行过程
-1. 定位专辑信息（Apple Music/Spotify/Reddit 等来源）
-2. 排查 SQLite 数据库路径（NAS 不通，本地多次尝试后找到 _music_latest.db）
-3. 从 iTunes 获取封面和曲目
-4. 执行入库（首次因封面 404 回滚，重试成功）
-5. 清理临时脚本，写入每日记忆文件
+1. 定位 Porcelain Stars - Rosemary 专辑
+2. 解决数据库路径缺失问题
+3. 从 iTunes/Discogs 抓取元数据入库
+4. 用户发图识别 Greg Mendez - Beauty Land
+5. 新建艺人记录并完整入库
+6. 补全 junction 表缺失数据
+
 ## 关键结果
-- Porcelain Stars - Rosemary 成功入库（album_id: 551）
-- 风格: Alternative，9首/26min，封面已下载
-- 临时生成脚本已全部清理
-- 记忆已写入 memory/2026-06-11.md
+- Porcelain Stars - Rosemary (album_id=551) 入库完成，风格 Emo/Blackgaze/Baroque Pop
+- Greg Mendez - Beauty Land (album_id=552) 入库完成，新建艺人 artist_id=317
+- 封面已下载并备份到 NAS
+- Git commit + push 完成 (b3c9274)
+- database.sql 已导出
+
 ## 结论建议
-数据库已恢复正常可用，后续可继续抓取 RYM 评分或入库更多专辑。
+两张 2026 年新专辑均已成功入库，数据完整。RYM 评分暂未抓取（页面导航问题），后续可补充。

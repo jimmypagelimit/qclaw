@@ -803,6 +803,7 @@ INSERT INTO "album_genres" VALUES(810,549,356,3);
 INSERT INTO "album_genres" VALUES(811,549,360,4);
 INSERT INTO "album_genres" VALUES(812,190,24,1);
 INSERT INTO "album_genres" VALUES(813,552,5,0);
+INSERT INTO "album_genres" VALUES(814,551,5,0);
 CREATE TABLE album_styles (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         album_id INTEGER NOT NULL,
@@ -1341,6 +1342,7 @@ INSERT INTO "album_styles" VALUES(535,454,177,0);
 INSERT INTO "album_styles" VALUES(536,497,178,0);
 INSERT INTO "album_styles" VALUES(537,515,177,0);
 INSERT INTO "album_styles" VALUES(538,552,51,0);
+INSERT INTO "album_styles" VALUES(539,551,97,0);
 CREATE TABLE "albums" (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -1886,7 +1888,7 @@ INSERT INTO "albums" VALUES(548,'Happy New Year','Gumshoes','美国','欧美','c
 INSERT INTO "albums" VALUES(549,'In Blue Time','Ira Dot',NULL,NULL,'chamber pop',NULL,NULL,0,NULL,2,NULL,'/covers/549-Ira Dot-In Blue Time.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026','Rock',NULL,315,NULL,NULL,3.42,31,'https://rateyourmusic.com/release/album/ira-dot/in-blue-time/');
 INSERT INTO "albums" VALUES(550,'怎么断句呢','周华健',NULL,NULL,'Mandopop',NULL,NULL,0,NULL,1,'滚石唱片','/covers/550-周华健-怎么断句呢.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026','Pop',NULL,316,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "albums" VALUES(551,'Rosemary','Porcelain Stars',NULL,NULL,'Rock/Pop',NULL,'1. Venus / Mascara (3:33) | 2. Vestige (3:53) | 3. Severine (3:14) | 4. Hecate''s Embrace (2:05) | 5. Asteria (3:28) | 6. Siofra (3:30) | 7. In Dreams (3:24) | 8. Madonna (1:55) | 9. Endless, Dreamless (5:21)',0,'2026-01-31',1,NULL,'/covers/porcelain-stars-rosemary.jpg','31 min',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026','Emo, Blackgaze, Baroque Pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "albums" VALUES(552,'Beauty Land','Greg Mendez','US','US','Alternative Rock',NULL,NULL,0,'2026-06-11',1,'','/covers/552-Greg Mendez-Beauty Land.jpg','25:06',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026','Indie Rock',NULL,317,5,51,NULL,NULL,NULL);
+INSERT INTO "albums" VALUES(552,'Beauty Land','Greg Mendez','US','US','Alternative Rock',NULL,NULL,0,'2026-06-11',1,'','/covers/552-Greg Mendez-Beauty Land.jpg','25:06',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026','Indie Folk, Slacker Rock, Slowcore',NULL,317,5,51,3.44,880,'https://rateyourmusic.com/release/greg-mendez/beauty-land/');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -4464,6 +4466,6 @@ INSERT INTO "sqlite_sequence" VALUES('artists',317);
 INSERT INTO "sqlite_sequence" VALUES('genres',360);
 INSERT INTO "sqlite_sequence" VALUES('styles',178);
 INSERT INTO "sqlite_sequence" VALUES('listen_history',2628);
-INSERT INTO "sqlite_sequence" VALUES('album_genres',813);
-INSERT INTO "sqlite_sequence" VALUES('album_styles',538);
+INSERT INTO "sqlite_sequence" VALUES('album_genres',814);
+INSERT INTO "sqlite_sequence" VALUES('album_styles',539);
 COMMIT;
