@@ -1,14 +1,15 @@
 {
-  "lastChecks": {
-    "rss": 0,
-    "weekly_review": "2026-06-08",
-    "monthly_review": "2026-05-01",
-    "c_drive_check": "2026-06-10",
-    "covers": 10,
-    "covers_total": 216,
-    "covers_remaining": 279,
-    "music_check": "2026-06-10",
-    "literature_check": "2026-06-10",
-    "daily_summary": "2026-06-10"
-  }
+    "lastChecks": {
+        "rss": 0,
+        "weekly_review": "2026-06-08",
+        "monthly_review": "2026-05-01",
+        "c_drive_check": "2026-06-11",
+        "covers": 11,
+        "covers_total": 219,
+        "covers_remaining": 279,
+        "music_check": "2026-06-11",
+        "philosophy_check": "2026-06-11",
+        "literature_check": "2026-06-10",
+        "daily_summary": "2026-06-10"
+    }
 }

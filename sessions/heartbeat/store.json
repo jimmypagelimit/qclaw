@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "我已经处理了以下事项",
+  "name": "会话摘要",
   "status": "active",
   "createdAt": "2026-05-22T00:10:05.395Z",
-  "updatedAt": "2026-06-09T19:40:07.869Z",
+  "updatedAt": "2026-06-10T21:36:45.791Z",
   "agents": [
     {
       "id": "agent_inui3px0",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_fst2sfpr",
-    "title": "我已经处理了以下事项",
+    "title": "会话摘要",
     "createdAt": "2026-05-22T00:10:05.395Z",
     "file": "summary_fst2sfpr.md"
   },
-  "lastMessageCount": 38
+  "lastMessageCount": 22
 }

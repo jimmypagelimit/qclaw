@@ -1,0 +1,112 @@
+{
+  "artist_csh": {
+    "name": "artist_csh",
+    "url": "https://rateyourmusic.com/music/car-seat-headrest/",
+    "title": "",
+    "length": 73684,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "artist_beatles": {
+    "name": "artist_beatles",
+    "url": "https://rateyourmusic.com/music/the-beatles/",
+    "title": "",
+    "length": 73560,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "genre_rock": {
+    "name": "genre_rock",
+    "url": "https://rateyourmusic.com/genre/rock/",
+    "title": "",
+    "length": 458067,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "genre_indie_rock": {
+    "name": "genre_indie_rock",
+    "url": "https://rateyourmusic.com/genre/indie-rock/",
+    "title": "",
+    "length": 122435,
+    "cf_blocked": false,
+    "has_content": true,
+    "ratings_sample": [],
+    "ratings_count": 0,
+    "sample_links": [
+      "//pagead2.googlesyndication.com",
+      "/release/album/sonic-youth/daydream-nation/",
+      "/artist/car-seat-headrest",
+      "/artist/the-jesus-and-mary-chain",
+      "/genre/britpop/",
+      "//tpc.googlesyndication.com",
+      "/artist/red-house-painters",
+      "/genres/",
+      "/charts/top/album/all-time/g:indie%2drock/",
+      "/account/login",
+      "/genre/punk/",
+      "/artist/the-microphones",
+      "/artist/modest-mouse",
+      "//cdn.sonemic.net/2.5/img/sonemic.png",
+      "/genre/pop/",
+      "/genre/grunge/",
+      "/artist/pavement",
+      "/lists/",
+      "//imasdk.googleapis.com",
+      "/genre/shoegaze/",
+      "/charts/",
+      "/release/album/my-bloody-valentine/loveless/",
+      "/artist/interpol",
+      "//cdn.sonemic.net",
+      "/artist/my-bloody-valentine",
+      "//www.googletagmanager.com",
+      "//securepubads.g.doubleclick.net",
+      "/release/album/unwound/leaves-turn-inside-you/",
+      "/artist/the-white-stripes",
+      "/genre/punk-rock/"
+    ],
+    "albums_sample": [
+      "In Rainbows",
+      "Spiral Scratch"
+    ]
+  },
+  "charts_top": {
+    "name": "charts_top",
+    "url": "https://rateyourmusic.com/charts/top/album/",
+    "title": "",
+    "length": 584787,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "charts_2010s": {
+    "name": "charts_2010s",
+    "url": "https://rateyourmusic.com/charts/top/album/2010s/",
+    "title": "",
+    "length": 638316,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "release_calendar": {
+    "name": "release_calendar",
+    "url": "https://rateyourmusic.com/release-calendar/",
+    "title": "",
+    "length": 73684,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "search": {
+    "name": "search",
+    "url": "https://rateyourmusic.com/search?search-term=Car+Seat+Headrest&search-type=artists",
+    "title": "",
+    "length": 73978,
+    "cf_blocked": true,
+    "has_content": true
+  },
+  "user_profile": {
+    "name": "user_list",
+    "url": "https://rateyourmusic.com/user/rymuser/r/list/1",
+    "title": "请稍候…",
+    "length": 31775,
+    "cf_blocked": true,
+    "has_content": true
+  }
+}

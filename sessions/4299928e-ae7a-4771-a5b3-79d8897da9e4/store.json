@@ -1,0 +1,25 @@
+{
+  "id": "4299928e-ae7a-4771-a5b3-79d8897da9e4",
+  "name": "哲学RSS检查",
+  "status": "active",
+  "createdAt": "2026-06-10T23:43:42.788Z",
+  "updatedAt": "2026-06-10T23:43:42.789Z",
+  "agents": [
+    {
+      "id": "agent_pf7xo6na",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-10T23:43:42.788Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_vibhtswe",
+    "title": "哲学RSS检查",
+    "createdAt": "2026-06-10T23:43:42.789Z",
+    "file": "summary_vibhtswe.md"
+  },
+  "lastMessageCount": 18
+}
