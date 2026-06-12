@@ -1,5 +1,5 @@
 #!/bin/bash
-cd C:/Users/qujt/.qclaw/workspace/tasks/rym-expert
-git add data/artists/ data/genres/
-git commit -m "RYM 艺人碟库: 10位艺人 + 10个流派树"
+cd /c/Users/qujt/.qclaw/workspace
+git add tasks/rym-expert/data/ tasks/rym-expert/docs/NEW-RELEASES-KB.md _rym_yearly_charts.py heartbeat_2026-06-12_1601.md
+git commit -m "Round 3: RYM yearly charts + new releases + KB"
 git push

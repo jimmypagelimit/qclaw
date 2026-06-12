@@ -1,18 +1,15 @@
 ## 任务背景
-用户（张树）想抓取 RYM (RateYourMusic) 网站关于 Noise Rock 流派及其完整的子流派层级树。
+恢复因误删git submodule指针而丢失的tasks/rym-expert目录及其文件。
 
 ## 执行过程
-1. 探索流派页面结构，尝试定位子流派区域。
-2. 发现通用容器显示无关内容，非目标区域。
-3. 搜索“Subgenres of”等关键词，未找到明确的子流派菜单标题。
-4. 尝试分析 noise-rock 页面，检查父流派关系，发现链接混在乐评文本中。
-5. 最终确认 RYM 的流派页面结构不直观，子流派层级树位置不明确。
+1. 从a71804e commit恢复rym_explore/原始文件
+2. 将根目录下的rym_explore/移动到tasks/rym-expert/
+3. 添加.gitignore排除大文件，重新commit推送
 
 ## 关键结果
-- 抓取了 rock / indie-rock / noise-rock 等页面HTML和文本。
-- 确认通用流派容器 (`page_features_secondary_metadata_genres_primary`) 显示的是热门相关流派，非子流派。
-- 未能定位到直接的子流派层级树区域，任务暂时卡住。
-- 记录了探索过程到 `memory/2026-06-12.md`。
+- 已恢复38个文件（5个JSON跟踪，33个HTML/PNG被排除）
+- commit f365435已推送至GitHub
+- tasks/rym-expert现为普通目录，不再使用submodule
 
 ## 结论建议
-任务处于暂停状态，需要用户（张树）进一步指示 RYM 上子流派层级的确切位置，才能继续编写爬虫脚本。
+文件恢复完成。工作区根目录尚有临时脚本和RYM文件待清理。
