@@ -1,0 +1,3 @@
+# Large HTML/PNG files - keep only JSON/text
+*.html
+*.png

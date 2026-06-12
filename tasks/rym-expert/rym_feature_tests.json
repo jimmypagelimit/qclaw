@@ -1,0 +1,65 @@
+{
+  "tests": [
+    {
+      "ok": false,
+      "error": "Page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "url": "https://rateyourmusic.com/search?search-term=Car+Seat+Headrest&search-type=albums",
+      "name": "search_albums"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/search?search-term=Car+Seat+Headrest&search-type=artists",
+      "name": "search_artists"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/genre/noise-rock/",
+      "name": "genre_noise_rock"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/genre/post-punk/",
+      "name": "genre_post_punk"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/search?search-term=刺猬乐队&search-type=artists",
+      "name": "search_chinese"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/charts/top/album/indie-rock/",
+      "name": "charts_indie_rock"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/charts/top/album/2010s/",
+      "name": "charts_2010s"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/music/sonic-youth/",
+      "name": "artist_sonic_youth"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/release-calendar/",
+      "name": "release_calendar"
+    },
+    {
+      "ok": false,
+      "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+      "url": "https://rateyourmusic.com/release-calendar/?release_date=upcoming",
+      "name": "upcoming_releases"
+    }
+  ],
+  "ok_count": 0
+}

@@ -1,0 +1,1068 @@
+{
+  "all_time": [
+    {
+      "rank": 1,
+      "album": "To Pimp a Butterfly",
+      "artist": "Kendrick Lamar",
+      "rating": "4.38",
+      "count": "106k",
+      "genres": [
+        "Conscious Hip Hop",
+        "Jazz Rap"
+      ],
+      "date": "15 March 2015",
+      "album_url": "/release/album/kendrick-lamar/to-pimp-a-butterfly/",
+      "artist_url": "/artist/kendrick-lamar"
+    },
+    {
+      "rank": 2,
+      "album": "OK Computer",
+      "artist": "Radiohead",
+      "rating": "4.30",
+      "count": "134k",
+      "genres": [
+        "Alternative Rock",
+        "Art Rock"
+      ],
+      "date": "16 June 1997",
+      "album_url": "/release/album/radiohead/ok-computer/",
+      "artist_url": "/artist/radiohead"
+    },
+    {
+      "rank": 3,
+      "album": "In Rainbows",
+      "artist": "Radiohead",
+      "rating": "4.33",
+      "count": "104k",
+      "genres": [
+        "Art Rock",
+        "Alternative Rock"
+      ],
+      "date": "10 October 2007",
+      "album_url": "/release/album/radiohead/in-rainbows/",
+      "artist_url": "/artist/radiohead"
+    },
+    {
+      "rank": 4,
+      "album": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "rating": "4.37",
+      "count": "93k",
+      "genres": [
+        "Progressive Rock",
+        "Art Rock"
+      ],
+      "date": "12 September 1975",
+      "album_url": "/release/album/pink-floyd/wish-you-were-here/",
+      "artist_url": "/artist/pink-floyd"
+    },
+    {
+      "rank": 5,
+      "album": "In the Court of the Crimson King",
+      "artist": "King Crimson",
+      "rating": "4.33",
+      "count": "86k",
+      "genres": [
+        "Progressive Rock",
+        "Art Rock"
+      ],
+      "date": "10 October 1969",
+      "album_url": "/release/album/king-crimson/in-the-court-of-the-crimson-king/",
+      "artist_url": "/artist/king-crimson"
+    },
+    {
+      "rank": 6,
+      "album": "Good Kid, M.A.A.D City",
+      "artist": "Kendrick Lamar",
+      "rating": "4.33",
+      "count": "88k",
+      "genres": [
+        "Conscious Hip Hop"
+      ],
+      "date": "22 October 2012",
+      "album_url": "/release/album/kendrick-lamar/good-kid-m_a_a_d-city/",
+      "artist_url": "/artist/kendrick-lamar"
+    },
+    {
+      "rank": 7,
+      "album": "Kid A",
+      "artist": "Radiohead",
+      "rating": "4.25",
+      "count": "108k",
+      "genres": [
+        "Art Rock",
+        "Electronic"
+      ],
+      "date": "3 October 2000",
+      "album_url": "/release/album/radiohead/kid-a/",
+      "artist_url": "/artist/radiohead"
+    },
+    {
+      "rank": 8,
+      "album": "The Dark Side of the Moon",
+      "artist": "Pink Floyd",
+      "rating": "4.27",
+      "count": "105k",
+      "genres": [
+        "Art Rock",
+        "Progressive Rock"
+      ],
+      "date": "23 March 1973",
+      "album_url": "/release/album/pink-floyd/the-dark-side-of-the-moon/",
+      "artist_url": "/artist/pink-floyd"
+    },
+    {
+      "rank": 9,
+      "album": "Madvillainy",
+      "artist": "Madvillain",
+      "rating": "4.33",
+      "count": "79k",
+      "genres": [
+        "Abstract Hip Hop"
+      ],
+      "date": "23 March 2004",
+      "album_url": "/release/album/madvillain/madvillainy/",
+      "artist_url": "/artist/madvillain"
+    },
+    {
+      "rank": 10,
+      "album": "Loveless",
+      "artist": "my bloody valentine",
+      "rating": "4.25",
+      "count": "95k",
+      "genres": [
+        "Shoegaze",
+        "Noise Pop"
+      ],
+      "date": "11 November 1991",
+      "album_url": "/release/album/my-bloody-valentine/loveless/",
+      "artist_url": "/artist/my-bloody-valentine"
+    },
+    {
+      "rank": 11,
+      "album": "Abbey Road",
+      "artist": "The Beatles",
+      "rating": "4.30",
+      "count": "84k",
+      "genres": [
+        "Pop Rock"
+      ],
+      "date": "26 September 1969",
+      "album_url": "/release/album/the-beatles/abbey-road/",
+      "artist_url": "/artist/the-beatles"
+    },
+    {
+      "rank": 12,
+      "album": "Remain in Light",
+      "artist": "Talking Heads",
+      "rating": "4.26",
+      "count": "70k",
+      "genres": [
+        "New Wave",
+        "Post-Punk",
+        "Funk Rock"
+      ],
+      "date": "8 October 1980",
+      "album_url": "/release/album/talking-heads/remain-in-light/",
+      "artist_url": "/artist/talking-heads"
+    },
+    {
+      "rank": 13,
+      "album": "The Rise and Fall of Ziggy Stardust and The Spiders From Mars",
+      "artist": "David Bowie",
+      "rating": "4.26",
+      "count": "72k",
+      "genres": [
+        "Glam Rock",
+        "Pop Rock"
+      ],
+      "date": "16 June 1972",
+      "album_url": "/release/album/david-bowie/the-rise-and-fall-of-ziggy-stardust-and-the-spiders-from-mars/",
+      "artist_url": "/artist/david-bowie"
+    },
+    {
+      "rank": 15,
+      "album": "Illmatic",
+      "artist": "Nas",
+      "rating": "4.27",
+      "count": "64k",
+      "genres": [
+        "Boom Bap",
+        "Hardcore Hip Hop"
+      ],
+      "date": "19 April 1994",
+      "album_url": "/release/album/nas/illmatic/",
+      "artist_url": "/artist/nas"
+    },
+    {
+      "rank": 16,
+      "album": "Revolver",
+      "artist": "The Beatles",
+      "rating": "4.23",
+      "count": "79k",
+      "genres": [
+        "Pop Rock",
+        "Psychedelic Pop"
+      ],
+      "date": "5 August 1966",
+      "album_url": "/release/album/the-beatles/revolver/",
+      "artist_url": "/artist/the-beatles"
+    },
+    {
+      "rank": 17,
+      "album": "Paranoid",
+      "artist": "Black Sabbath",
+      "rating": "4.24",
+      "count": "68k",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "date": "18 September 1970",
+      "album_url": "/release/album/black-sabbath/paranoid/",
+      "artist_url": "/artist/black-sabbath"
+    },
+    {
+      "rank": 18,
+      "album": "Vespertine",
+      "artist": "Björk",
+      "rating": "4.28",
+      "count": "56k",
+      "genres": [
+        "Art Pop",
+        "Electronic",
+        "Glitch Pop"
+      ],
+      "date": "27 August 2001",
+      "album_url": "/release/album/bjork/vespertine/",
+      "artist_url": "/artist/bjork"
+    },
+    {
+      "rank": 19,
+      "album": "Disintegration",
+      "artist": "The Cure",
+      "rating": "4.26",
+      "count": "59k",
+      "genres": [
+        "Gothic Rock",
+        "Post-Punk"
+      ],
+      "date": "2 May 1989",
+      "album_url": "/release/album/the-cure/disintegration/",
+      "artist_url": "/artist/the-cure"
+    },
+    {
+      "rank": 21,
+      "album": "The Velvet Underground &amp; Nico",
+      "artist": "The Velvet Underground",
+      "rating": "4.19",
+      "count": "78k",
+      "genres": [
+        "Art Rock",
+        "Experimental Rock"
+      ],
+      "date": "12 March 1967",
+      "album_url": "/release/album/the-velvet-underground-nico/the-velvet-underground-and-nico/",
+      "artist_url": "/artist/the-velvet-underground"
+    },
+    {
+      "rank": 22,
+      "album": "A Love Supreme",
+      "artist": "John Coltrane",
+      "rating": "4.30",
+      "count": "46k",
+      "genres": [
+        "Spiritual Jazz"
+      ],
+      "date": "",
+      "album_url": "/release/album/john-coltrane/a-love-supreme/",
+      "artist_url": "/artist/john-coltrane"
+    },
+    {
+      "rank": 23,
+      "album": "Animals",
+      "artist": "Pink Floyd",
+      "rating": "4.21",
+      "count": "67k",
+      "genres": [
+        "Progressive Rock",
+        "Art Rock"
+      ],
+      "date": "21 January 1977",
+      "album_url": "/release/album/pink-floyd/animals/",
+      "artist_url": "/artist/pink-floyd"
+    },
+    {
+      "rank": 24,
+      "album": "Red",
+      "artist": "King Crimson",
+      "rating": "4.27",
+      "count": "46k",
+      "genres": [
+        "Progressive Rock",
+        "Art Rock"
+      ],
+      "date": "6 October 1974",
+      "album_url": "/release/album/king-crimson/red/",
+      "artist_url": "/artist/king-crimson"
+    },
+    {
+      "rank": 25,
+      "album": "Kind of Blue",
+      "artist": "Miles Davis",
+      "rating": "4.24",
+      "count": "53k",
+      "genres": [
+        "Modal Jazz",
+        "Cool Jazz"
+      ],
+      "date": "17 August 1959",
+      "album_url": "/release/album/miles-davis/kind-of-blue/",
+      "artist_url": "/artist/miles-davis"
+    },
+    {
+      "rank": 26,
+      "album": "Songs in the Key of Life",
+      "artist": "Stevie Wonder",
+      "rating": "4.31",
+      "count": "34k",
+      "genres": [
+        "Progressive Soul",
+        "Soul"
+      ],
+      "date": "28 September 1976",
+      "album_url": "/release/album/stevie-wonder/songs-in-the-key-of-life/",
+      "artist_url": "/artist/stevie-wonder"
+    },
+    {
+      "rank": 27,
+      "album": "Pet Sounds",
+      "artist": "The Beach Boys",
+      "rating": "4.19",
+      "count": "64k",
+      "genres": [
+        "Baroque Pop"
+      ],
+      "date": "16 May 1966",
+      "album_url": "/release/album/the-beach-boys/pet-sounds/",
+      "artist_url": "/artist/the-beach-boys"
+    },
+    {
+      "rank": 28,
+      "album": "Igor",
+      "artist": "Tyler, The Creator",
+      "rating": "4.11",
+      "count": "83k",
+      "genres": [
+        "Neo-Soul"
+      ],
+      "date": "17 May 2019",
+      "album_url": "/release/album/tyler-the-creator/igor/",
+      "artist_url": "/artist/tyler-the-creator"
+    },
+    {
+      "rank": 29,
+      "album": "Heaven or Las Vegas",
+      "artist": "Cocteau Twins",
+      "rating": "4.20",
+      "count": "57k",
+      "genres": [
+        "Dream Pop"
+      ],
+      "date": "17 September 1990",
+      "album_url": "/release/album/cocteau-twins/heaven-or-las-vegas/",
+      "artist_url": "/artist/cocteau-twins"
+    },
+    {
+      "rank": 30,
+      "album": "Long Season",
+      "artist": "Fishmans",
+      "rating": "4.22",
+      "count": "52k",
+      "genres": [
+        "Neo-Psychedelia",
+        "Dream Pop"
+      ],
+      "date": "25 October 1996",
+      "album_url": "/release/album/fishmans/long-season/",
+      "artist_url": "/artist/fishmans"
+    },
+    {
+      "rank": 31,
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "rating": "4.09",
+      "count": "96k",
+      "genres": [
+        "Pop Rap",
+        "Hip Hop"
+      ],
+      "date": "22 November 2010",
+      "album_url": "/release/album/kanye-west/my-beautiful-dark-twisted-fantasy/",
+      "artist_url": "/artist/kanye-west"
+    },
+    {
+      "rank": 32,
+      "album": "The College Dropout",
+      "artist": "Kanye West",
+      "rating": "4.15",
+      "count": "76k",
+      "genres": [
+        "Chipmunk Soul",
+        "Pop Rap"
+      ],
+      "date": "10 February 2004",
+      "album_url": "/release/album/kanye-west/the-college-dropout/",
+      "artist_url": "/artist/kanye-west"
+    },
+    {
+      "rank": 33,
+      "album": "Dummy",
+      "artist": "Portishead",
+      "rating": "4.19",
+      "count": "60k",
+      "genres": [
+        "Trip Hop"
+      ],
+      "date": "22 August 1994",
+      "album_url": "/release/album/portishead/dummy/",
+      "artist_url": "/artist/portishead"
+    },
+    {
+      "rank": 34,
+      "album": "Enter the Wu-Tang (36 Chambers)",
+      "artist": "Wu-Tang Clan",
+      "rating": "4.22",
+      "count": "52k",
+      "genres": [
+        "Boom Bap",
+        "Hardcore Hip Hop"
+      ],
+      "date": "9 November 1993",
+      "album_url": "/release/album/wu-tang-clan/enter-the-wu-tang-36-chambers/",
+      "artist_url": "/artist/wu-tang-clan"
+    },
+    {
+      "rank": 35,
+      "album": "Spiderland",
+      "artist": "Slint",
+      "rating": "4.16",
+      "count": "63k",
+      "genres": [
+        "Post-Rock",
+        "Post-Hardcore",
+        "Math Rock"
+      ],
+      "date": "27 March 1991",
+      "album_url": "/release/album/slint/spiderland/",
+      "artist_url": "/artist/slint"
+    },
+    {
+      "rank": 36,
+      "album": "The Money Store",
+      "artist": "Death Grips",
+      "rating": "4.11",
+      "count": "74k",
+      "genres": [
+        "Industrial Hip Hop",
+        "Hardcore Hip Hop",
+        "Experimental Hip Hop"
+      ],
+      "date": "24 April 2012",
+      "album_url": "/release/album/death-grips/the-money-store/",
+      "artist_url": "/artist/death-grips"
+    },
+    {
+      "rank": 37,
+      "album": "Pink Moon",
+      "artist": "Nick Drake",
+      "rating": "4.19",
+      "count": "55k",
+      "genres": [
+        "Contemporary Folk",
+        "Singer-Songwriter"
+      ],
+      "date": "25 February 1972",
+      "album_url": "/release/album/nick-drake/pink-moon/",
+      "artist_url": "/artist/nick-drake"
+    },
+    {
+      "rank": 38,
+      "album": "In the Aeroplane Over the Sea",
+      "artist": "Neutral Milk Hotel",
+      "rating": "4.08",
+      "count": "84k",
+      "genres": [
+        "Indie Folk",
+        "Indie Rock"
+      ],
+      "date": "10 February 1998",
+      "album_url": "/release/album/neutral-milk-hotel/in-the-aeroplane-over-the-sea/",
+      "artist_url": "/artist/neutral-milk-hotel"
+    },
+    {
+      "rank": 39,
+      "album": "Souvlaki",
+      "artist": "Slowdive",
+      "rating": "4.15",
+      "count": "62k",
+      "genres": [
+        "Dream Pop",
+        "Shoegaze"
+      ],
+      "date": "1 June 1993",
+      "album_url": "/release/album/slowdive/souvlaki/",
+      "artist_url": "/artist/slowdive"
+    },
+    {
+      "rank": 40,
+      "album": "The Queen Is Dead",
+      "artist": "The Smiths",
+      "rating": "4.13",
+      "count": "68k",
+      "genres": [
+        "Jangle Pop",
+        "Indie Pop"
+      ],
+      "date": "16 June 1986",
+      "album_url": "/release/album/the-smiths/the-queen-is-dead/",
+      "artist_url": "/artist/the-smiths"
+    }
+  ],
+  "2010s": [
+    {
+      "rank": 1,
+      "album": "To Pimp a Butterfly",
+      "artist": "Kendrick Lamar",
+      "rating": "4.38",
+      "count": "106k",
+      "genres": [
+        "Conscious Hip Hop",
+        "Jazz Rap"
+      ],
+      "date": "15 March 2015",
+      "album_url": "/release/album/kendrick-lamar/to-pimp-a-butterfly/",
+      "artist_url": "/artist/kendrick-lamar"
+    },
+    {
+      "rank": 2,
+      "album": "Good Kid, M.A.A.D City",
+      "artist": "Kendrick Lamar",
+      "rating": "4.33",
+      "count": "88k",
+      "genres": [
+        "Conscious Hip Hop"
+      ],
+      "date": "22 October 2012",
+      "album_url": "/release/album/kendrick-lamar/good-kid-m_a_a_d-city/",
+      "artist_url": "/artist/kendrick-lamar"
+    },
+    {
+      "rank": 3,
+      "album": "Igor",
+      "artist": "Tyler, The Creator",
+      "rating": "4.11",
+      "count": "83k",
+      "genres": [
+        "Neo-Soul"
+      ],
+      "date": "17 May 2019",
+      "album_url": "/release/album/tyler-the-creator/igor/",
+      "artist_url": "/artist/tyler-the-creator"
+    },
+    {
+      "rank": 4,
+      "album": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "rating": "4.09",
+      "count": "96k",
+      "genres": [
+        "Pop Rap",
+        "Hip Hop"
+      ],
+      "date": "22 November 2010",
+      "album_url": "/release/album/kanye-west/my-beautiful-dark-twisted-fantasy/",
+      "artist_url": "/artist/kanye-west"
+    },
+    {
+      "rank": 5,
+      "album": "The Money Store",
+      "artist": "Death Grips",
+      "rating": "4.11",
+      "count": "74k",
+      "genres": [
+        "Industrial Hip Hop",
+        "Hardcore Hip Hop",
+        "Experimental Hip Hop"
+      ],
+      "date": "24 April 2012",
+      "album_url": "/release/album/death-grips/the-money-store/",
+      "artist_url": "/artist/death-grips"
+    },
+    {
+      "rank": 6,
+      "album": "Blonde",
+      "artist": "Frank Ocean",
+      "rating": "4.09",
+      "count": "69k",
+      "genres": [
+        "Alternative R&amp;B",
+        "Art Pop"
+      ],
+      "date": "20 August 2016",
+      "album_url": "/release/album/frank-ocean/blonde/",
+      "artist_url": "/artist/frank-ocean"
+    },
+    {
+      "rank": 7,
+      "album": "Atrocity Exhibition",
+      "artist": "Danny Brown",
+      "rating": "4.14",
+      "count": "52k",
+      "genres": [
+        "Experimental Hip Hop",
+        "Hardcore Hip Hop"
+      ],
+      "date": "30 September 2016",
+      "album_url": "/release/album/danny-brown/atrocity-exhibition-1/",
+      "artist_url": "/artist/danny-brown"
+    },
+    {
+      "rank": 8,
+      "album": "★ [Blackstar]",
+      "artist": "David Bowie",
+      "rating": "4.15",
+      "count": "46k",
+      "genres": [
+        "Art Rock"
+      ],
+      "date": "8 January 2016",
+      "album_url": "/release/album/david-bowie/★-blackstar/",
+      "artist_url": "/artist/david-bowie"
+    },
+    {
+      "rank": 9,
+      "album": "Carrie &amp; Lowell",
+      "artist": "Sufjan Stevens",
+      "rating": "4.10",
+      "count": "39k",
+      "genres": [
+        "Indie Folk",
+        "Singer-Songwriter"
+      ],
+      "date": "31 March 2015",
+      "album_url": "/release/album/sufjan-stevens/carrie-and-lowell/",
+      "artist_url": "/artist/sufjan-stevens"
+    },
+    {
+      "rank": 10,
+      "album": "Piñata",
+      "artist": "Freddie Gibbs &amp; Madlib",
+      "rating": "4.09",
+      "count": "35k",
+      "genres": [
+        "Gangsta Rap",
+        "Coke Rap"
+      ],
+      "date": "18 March 2014",
+      "album_url": "/release/album/freddie-gibbs-and-madlib/pinata/",
+      "artist_url": "/artist/freddie-gibbs-and-madlib"
+    },
+    {
+      "rank": 11,
+      "album": "To Be Kind",
+      "artist": "Swans",
+      "rating": "4.06",
+      "count": "37k",
+      "genres": [
+        "Experimental Rock",
+        "Post-Rock"
+      ],
+      "date": "13 May 2014",
+      "album_url": "/release/album/swans/to-be-kind/",
+      "artist_url": "/artist/swans"
+    },
+    {
+      "rank": 12,
+      "album": "Twin Fantasy",
+      "artist": "Car Seat Headrest",
+      "rating": "4.03",
+      "count": "41k",
+      "genres": [
+        "Indie Rock"
+      ],
+      "date": "16 February 2018",
+      "album_url": "/release/album/car-seat-headrest/twin-fantasy-2/",
+      "artist_url": "/artist/car-seat-headrest"
+    },
+    {
+      "rank": 13,
+      "album": "A Moon Shaped Pool",
+      "artist": "Radiohead",
+      "rating": "3.97",
+      "count": "57k",
+      "genres": [
+        "Art Pop",
+        "Art Rock",
+        "Chamber Pop"
+      ],
+      "date": "8 May 2016",
+      "album_url": "/release/album/radiohead/a-moon-shaped-pool/",
+      "artist_url": "/artist/radiohead"
+    },
+    {
+      "rank": 14,
+      "album": "Titanic Rising",
+      "artist": "Weyes Blood",
+      "rating": "4.00",
+      "count": "37k",
+      "genres": [
+        "Baroque Pop",
+        "Art Pop"
+      ],
+      "date": "5 April 2019",
+      "album_url": "/release/album/weyes-blood/titanic-rising/",
+      "artist_url": "/artist/weyes-blood"
+    },
+    {
+      "rank": 15,
+      "album": "Jenny Death",
+      "artist": "Death Grips",
+      "rating": "4.06",
+      "count": "25k",
+      "genres": [
+        "Noise Rock",
+        "Experimental Hip Hop",
+        "Industrial Hip Hop"
+      ],
+      "date": "19 March 2015",
+      "album_url": "/release/album/death-grips/jenny-death/",
+      "artist_url": "/artist/death-grips"
+    },
+    {
+      "rank": 16,
+      "album": "Flower Boy",
+      "artist": "Tyler, The Creator",
+      "rating": "3.90",
+      "count": "64k",
+      "genres": [
+        "Hip Hop",
+        "Neo-Soul"
+      ],
+      "date": "21 July 2017",
+      "album_url": "/release/album/tyler-the-creator/flower-boy/",
+      "artist_url": "/artist/tyler-the-creator"
+    },
+    {
+      "rank": 17,
+      "album": "Yeezus",
+      "artist": "Kanye West",
+      "rating": "3.86",
+      "count": "76k",
+      "genres": [
+        "Experimental Hip Hop",
+        "Industrial Hip Hop"
+      ],
+      "date": "18 June 2013",
+      "album_url": "/release/album/kanye-west/yeezus/",
+      "artist_url": "/artist/kanye-west"
+    },
+    {
+      "rank": 18,
+      "album": "We Got It From Here… Thank You 4 Your Service",
+      "artist": "A Tribe Called Quest",
+      "rating": "4.05",
+      "count": "24k",
+      "genres": [
+        "Conscious Hip Hop",
+        "Jazz Rap"
+      ],
+      "date": "11 November 2016",
+      "album_url": "/release/album/a-tribe-called-quest/we-got-it-from-here…-thank-you-4-your-service/",
+      "artist_url": "/artist/a-tribe-called-quest"
+    },
+    {
+      "rank": 19,
+      "album": "Bottomless Pit",
+      "artist": "Death Grips",
+      "rating": "3.96",
+      "count": "40k",
+      "genres": [
+        "Industrial Hip Hop",
+        "Abstract Hip Hop",
+        "Experimental Hip Hop"
+      ],
+      "date": "6 May 2016",
+      "album_url": "/release/album/death-grips/bottomless-pit/",
+      "artist_url": "/artist/death-grips"
+    },
+    {
+      "rank": 20,
+      "album": "The Seer",
+      "artist": "Swans",
+      "rating": "4.01",
+      "count": "27k",
+      "genres": [
+        "Experimental Rock",
+        "Post-Rock"
+      ],
+      "date": "28 August 2012",
+      "album_url": "/release/album/swans/the-seer/",
+      "artist_url": "/artist/swans"
+    },
+    {
+      "rank": 21,
+      "album": "KIDS SEE GHOSTS",
+      "artist": "KIDS SEE GHOSTS",
+      "rating": "3.88",
+      "count": "55k",
+      "genres": [
+        "Pop Rap",
+        "Experimental Hip Hop"
+      ],
+      "date": "8 June 2018",
+      "album_url": "/release/album/kids-see-ghosts/kids-see-ghosts/",
+      "artist_url": "/artist/kids-see-ghosts"
+    },
+    {
+      "rank": 22,
+      "album": "Have One on Me",
+      "artist": "Joanna Newsom",
+      "rating": "4.05",
+      "count": "14k",
+      "genres": [
+        "Chamber Folk",
+        "Singer-Songwriter",
+        "Progressive Folk"
+      ],
+      "date": "23 February 2010",
+      "album_url": "/release/album/joanna-newsom/have-one-on-me/",
+      "artist_url": "/artist/joanna-newsom"
+    },
+    {
+      "rank": 23,
+      "album": "A Crow Looked at Me",
+      "artist": "Mount Eerie",
+      "rating": "3.99",
+      "count": "24k",
+      "genres": [
+        "Singer-Songwriter",
+        "Indie Folk"
+      ],
+      "date": "24 March 2017",
+      "album_url": "/release/album/mount-eerie/a-crow-looked-at-me/",
+      "artist_url": "/artist/mount-eerie"
+    },
+    {
+      "rank": 24,
+      "album": "Some Rap Songs",
+      "artist": "Earl Sweatshirt",
+      "rating": "3.92",
+      "count": "42k",
+      "genres": [
+        "Abstract Hip Hop",
+        "Experimental Hip Hop",
+        "Drumless"
+      ],
+      "date": "30 November 2018",
+      "album_url": "/release/album/earl-sweatshirt/some-rap-songs/",
+      "artist_url": "/artist/earl-sweatshirt"
+    },
+    {
+      "rank": 26,
+      "album": "The Life of Pablo",
+      "artist": "Kanye West",
+      "rating": "3.83",
+      "count": "67k",
+      "genres": [
+        "Pop Rap",
+        "Experimental Hip Hop"
+      ],
+      "date": "14 February 2016",
+      "album_url": "/release/album/kanye-west/the-life-of-pablo/",
+      "artist_url": "/artist/kanye-west"
+    },
+    {
+      "rank": 27,
+      "album": "The Glowing Man",
+      "artist": "Swans",
+      "rating": "3.99",
+      "count": "19k",
+      "genres": [
+        "Post-Rock",
+        "Experimental Rock"
+      ],
+      "date": "17 June 2016",
+      "album_url": "/release/album/swans/the-glowing-man/",
+      "artist_url": "/artist/swans"
+    },
+    {
+      "rank": 28,
+      "album": "0",
+      "artist": "青葉市子",
+      "rating": "4.01",
+      "count": "16k",
+      "genres": [
+        "Contemporary Folk",
+        "Singer-Songwriter"
+      ],
+      "date": "23 October 2013",
+      "album_url": "/release/album/青葉市子/0/",
+      "artist_url": "/artist/青葉市子"
+    },
+    {
+      "rank": 29,
+      "album": "Channel Orange",
+      "artist": "Frank Ocean",
+      "rating": "3.87",
+      "count": "50k",
+      "genres": [
+        "Alternative R&amp;B",
+        "Contemporary R&amp;B",
+        "Neo-Soul"
+      ],
+      "date": "10 July 2012",
+      "album_url": "/release/album/frank-ocean/channel-orange/",
+      "artist_url": "/artist/frank-ocean"
+    },
+    {
+      "rank": 30,
+      "album": "This Is Happening",
+      "artist": "LCD Soundsystem",
+      "rating": "3.94",
+      "count": "29k",
+      "genres": [
+        "Indietronica",
+        "Dance-Punk Revival",
+        "Dance-Punk"
+      ],
+      "date": "18 May 2010",
+      "album_url": "/release/album/lcd-soundsystem/this-is-happening/",
+      "artist_url": "/artist/lcd-soundsystem"
+    },
+    {
+      "rank": 31,
+      "album": "Plastic Beach",
+      "artist": "Gorillaz",
+      "rating": "3.88",
+      "count": "42k",
+      "genres": [
+        "Electropop",
+        "Art Pop",
+        "Indietronica"
+      ],
+      "date": "9 March 2010",
+      "album_url": "/release/album/gorillaz/plastic-beach/",
+      "artist_url": "/artist/gorillaz"
+    },
+    {
+      "rank": 32,
+      "album": "Mista Thug Isolation",
+      "artist": "Lil Ugly Mane",
+      "rating": "3.94",
+      "count": "24k",
+      "genres": [
+        "Memphis Rap"
+      ],
+      "date": "11 February 2012",
+      "album_url": "/release/album/lil-ugly-mane/mista-thug-isolation/",
+      "artist_url": "/artist/lil-ugly-mane"
+    },
+    {
+      "rank": 34,
+      "album": "Teens of Denial",
+      "artist": "Car Seat Headrest",
+      "rating": "3.91",
+      "count": "27k",
+      "genres": [
+        "Indie Rock"
+      ],
+      "date": "20 May 2016",
+      "album_url": "/release/album/car-seat-headrest/teens-of-denial/",
+      "artist_url": "/artist/car-seat-headrest"
+    },
+    {
+      "rank": 35,
+      "album": "무너지기",
+      "artist": "공중도둑",
+      "rating": "3.92",
+      "count": "25k",
+      "genres": [
+        "Neo-Psychedelia",
+        "Folktronica",
+        "Psychedelic Pop"
+      ],
+      "date": "31 July 2018",
+      "album_url": "/release/album/공중도둑/무너지기/",
+      "artist_url": "/artist/공중도둑"
+    },
+    {
+      "rank": 36,
+      "album": "Koi no yokan",
+      "artist": "Deftones",
+      "rating": "3.93",
+      "count": "22k",
+      "genres": [
+        "Alternative Metal"
+      ],
+      "date": "13 November 2012",
+      "album_url": "/release/album/deftones/koi-no-yokan/",
+      "artist_url": "/artist/deftones"
+    },
+    {
+      "rank": 37,
+      "album": "Bloom",
+      "artist": "Beach House",
+      "rating": "3.88",
+      "count": "32k",
+      "genres": [
+        "Dream Pop",
+        "Indie Pop"
+      ],
+      "date": "15 May 2012",
+      "album_url": "/release/album/beach-house/bloom/",
+      "artist_url": "/artist/beach-house"
+    },
+    {
+      "rank": 38,
+      "album": "Rodeo",
+      "artist": "Travis Scott",
+      "rating": "3.86",
+      "count": "38k",
+      "genres": [
+        "Trap"
+      ],
+      "date": "4 September 2015",
+      "album_url": "/release/album/travis-scott/rodeo/",
+      "artist_url": "/artist/travis-scott-1"
+    },
+    {
+      "rank": 39,
+      "album": "Oil of Every Pearl's Un-Insides",
+      "artist": "SOPHIE",
+      "rating": "3.87",
+      "count": "32k",
+      "genres": [
+        "Deconstructed Club",
+        "Bubblegum Bass"
+      ],
+      "date": "15 June 2018",
+      "album_url": "/release/album/sophie/oil-of-every-pearls-un-insides/",
+      "artist_url": "/artist/sophie-1"
+    },
+    {
+      "rank": 40,
+      "album": "Just Got Back From the Discomfort - We're Alright",
+      "artist": "The Brave Little Abacus",
+      "rating": "3.91",
+      "count": "20k",
+      "genres": [
+        "Midwest Emo",
+        "Experimental Rock"
+      ],
+      "date": "29 May 2010",
+      "album_url": "/release/album/the-brave-little-abacus/just-got-back-from-the-discomfort-were-alright/",
+      "artist_url": "/artist/the-brave-little-abacus"
+    }
+  ]
+}
