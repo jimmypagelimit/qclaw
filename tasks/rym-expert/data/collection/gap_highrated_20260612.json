@@ -1,0 +1,92 @@
+[
+  {
+    "release_id": "16003394",
+    "album": "Imaginal Disk",
+    "artist": "Magdalena Bay",
+    "rating": 4.1,
+    "ratings": "",
+    "release_date": "23 August 2024",
+    "genres": [
+      "Neo-Psychedelia",
+      "Synthpop",
+      "Chillwave"
+    ],
+    "rym_url": "/release/album/magdalena-bay/imaginal-disk/",
+    "chart_year": "2024"
+  },
+  {
+    "release_id": "14741829",
+    "album": "Ants From Up There",
+    "artist": "Black Country, New Road",
+    "rating": 4.04,
+    "ratings": "",
+    "release_date": "4 February 2022",
+    "genres": [
+      "Art Rock",
+      "Post-Rock",
+      "Chamber Pop"
+    ],
+    "rym_url": "/release/album/black-country-new-road/ants-from-up-there-1/",
+    "chart_year": "2022"
+  },
+  {
+    "release_id": "14926349",
+    "album": "The Forever Story",
+    "artist": "JID",
+    "rating": 4.01,
+    "ratings": "",
+    "release_date": "26 August 2022",
+    "genres": [
+      "Conscious Hip Hop",
+      "Trap",
+      "Neo-Soul"
+    ],
+    "rym_url": "/release/album/jid/the-forever-story/",
+    "chart_year": "2022"
+  },
+  {
+    "release_id": "12166155",
+    "album": "De todas las flores",
+    "artist": "Natalia Lafourcade",
+    "rating": 4.0,
+    "ratings": "",
+    "release_date": "28 October 2022",
+    "genres": [
+      "Singer-Songwriter",
+      "Chamber Folk",
+      "Bolero"
+    ],
+    "rym_url": "/release/album/natalia-lafourcade/de-todas-las-flores/",
+    "chart_year": "2022"
+  },
+  {
+    "release_id": "12984831",
+    "album": "LP!",
+    "artist": "JPEGMAFIA",
+    "rating": 4.0,
+    "ratings": "",
+    "release_date": "22 October 2021",
+    "genres": [
+      "Experimental Hip Hop",
+      "Hardcore Hip Hop",
+      "Cloud Rap"
+    ],
+    "rym_url": "/release/album/jpegmafia/lp/",
+    "chart_year": "2021"
+  },
+  {
+    "release_id": "11643355",
+    "album": "アダンの風",
+    "artist": "青葉市子",
+    "rating": 4.0,
+    "ratings": "",
+    "release_date": "2 December 2020",
+    "genres": [
+      "Chamber Folk",
+      "Singer-Songwriter",
+      "Ambient"
+    ],
+    "rym_url": "/release/album/青葉市子/アダンの風/",
+    "chart_year": "2020"
+  }
+]
