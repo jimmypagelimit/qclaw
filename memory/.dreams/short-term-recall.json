@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-10T08:52:37.913Z",
+  "updatedAt": "2026-06-11T19:05:00.540Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -496,6 +496,68 @@
         "sst/sub",
         "pop/touch",
         "r.e.m"
+      ]
+    },
+    "memory:memory/2026-05-01.md:129:156": {
+      "key": "memory:memory/2026-05-01.md:129:156",
+      "path": "memory/2026-05-01.md",
+      "startLine": 129,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "- **需要手动创建**：通过OpenClaw UI或直接告知用户打开QClaw设置cron --- # Session 2026-05-01 17:09 ## Reddit 社区 RSS 添加 - 用户要求音乐/文学/历史均添加 Reddit 社区 - 验证 Reddit .rss feed 可用（7个测5个 200，2个 DNS 偶发失败） - 添加 22 个社区：音乐10(indieheads/shoegaze/postrock/noiserock/postpunk/Metal/blackmetal/LetsTalkMusic/experimentalmusic/indie_rock) + 文学6(literature/TrueLit/poetry/WorldLiterature/AskLiteraryStudies/ChineseLanguage) + 历史哲学6(AskHistorians/history/HistoryofIdeas/philosophy/ChineseHistory/medihist) - HEARTBEAT.md 轮换策略更新，总源数 105→127 ## AOTY 周五推送 Cron 创建失败 - exec 环境无法运行 node/openclaw CLI（SIGKILL 超时） - 多次尝试均失败：bat/sh/ps/py/环境变量设置 - 需用户手动在 QClaw UI 创建 cron 任务 ## 待确认：音乐编年史野孩子专辑去重 - 用户要求删除音乐编年史里与荒岛唱片重复的部分 - 重复项：",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3655307501554489,
+      "maxScore": 0.3655307501554489,
+      "firstRecalledAt": "2026-06-11T19:05:00.540Z",
+      "lastRecalledAt": "2026-06-11T19:05:00.540Z",
+      "queryHashes": [
+        "1145bf0a9afd"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "用户要求音乐/文学/历史均添加",
+        "heartbeat.md",
+        "node/openclaw",
+        "bat/sh/ps/py/环境变量设置",
+        "需要",
+        "创建",
+        "通过",
+        "openclaw"
+      ]
+    },
+    "memory:memory/2026-06-06.md:273:307": {
+      "key": "memory:memory/2026-06-06.md:273:307",
+      "path": "memory/2026-06-06.md",
+      "startLine": 273,
+      "endLine": 307,
+      "source": "memory",
+      "snippet": "3. **TODO 撰写**：2条V总结/今天感觉不错/为什么叫命题说话和为什么坚持不换，生活切片穿插，独立音乐时长为纵轴 4. **家庭大事**：用户二孩出生，照顾家人中，听歌停滞 5. **RSS 独立音乐动态推送**（Osees 新专辑、Pitchfork/Stereogum 等） 6. **每日工作总结已完成**（16:10-17:00 封面补全、RSS 检查、Git push） 7. **磁盘状态**：G盘 ✅ | 原创计划✅ | C盘荒岛唱片❌ --- ## 18:07 - Pre-compaction flush (end of session) ### 专辑数据库重构计划已提交 **用户需求**：重构当前专辑库表结构，支持艺人排名，减少冗余 **方案要点**（详见上方长回复）： - **新增 artists 表**：艺人独立，支持排名和聚合统计 - **合并年度表**：新增 listen_history 表替代多张年度表 - **字典表**：genres/styles 标准化 - **4阶段迁移策略**：建新表 → 迁移数据 → 切换 → 清理 - **回滚安全**：保留旧表，导出现有备份 **用户尚未回复确认方案**，等后续会话继续 # 2026-06-06 日志 ## 会话启动 ### 系统配置 - OS: Windows_NT 10.0.19045 (x64) | Node: v22.21.1 | Shell: powershell - Model: qclaw/modelroute | Channel: feishu - PowerShel",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35220845341682433,
+      "maxScore": 0.35220845341682433,
+      "firstRecalledAt": "2026-06-11T19:05:00.540Z",
+      "lastRecalledAt": "2026-06-11T19:05:00.540Z",
+      "queryHashes": [
+        "1145bf0a9afd"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "备份",
+        "2条v总结/今天感觉不错/为什么叫命题说话和为什么坚持不换",
+        "pitchfork/stereogum",
+        "10-17",
+        "pre-compaction",
+        "listen-history",
+        "genres/styles",
+        "windows-nt"
       ]
     }
   }

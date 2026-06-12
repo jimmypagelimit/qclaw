@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" id="page_search" class="rym page_search scope_music  logged-out  noTouch theme_light"><head>
+<!DOCTYPE html><html lang="en" id="page_home" class="rym page_home scope_music nonsubscriber logged-out  noTouch theme_light"><head>
 
       
 <link rel="preconnect" href="//cdn.sonemic.net">
@@ -18,10 +18,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" href="//cdn.sonemic.net/2.5/img/sonemic.png" type="image/png">
-<title>Search - Rate Your Music</title>
-      <meta name="description" content="Rate Your Music is an online community of people who love music. Catalog, rate, tag, and review your music. List and review the concerts you've attended, and track upcoming shows.   When you rate your music, the site's music/social recommender can recommend similar music and users with similar music taste."><meta name="robots" content="max-image-preview:large">
+<title>Welcome! - Rate Your Music</title>
+      <meta name="description" content="Rate Your Music is an online community of people who love music.  Catalog, rate, tag, and review your music.  List and review the concerts you've attended, and track upcoming shows.   When you rate your music, the site's music/social recommender can recommend similar music and users with similar music taste. "><meta name="robots" content="max-image-preview:large"> <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:site" content="@Sonemic">
+                <meta property="og:site_name" content="Rate Your Music">
+
+                <meta property="og:url" content="https://rateyourmusic.com">
+                <meta property="og:type" content="website">
+                <meta property="og:title" content="Rate Your Music - RYM/Sonemic"><meta property="og:description" content="Rate Your Music is an online community of people who love music. Catalog, rate, tag, and review your music. List and review the concerts you've attended, and track upcoming shows. When you rate your music, the site's music/social recommender can recommend similar music and users with similar music taste.">
+<meta property="og:image" content="https://cdn.sonemic.net/3.0/img/logo/sonemic-512.png">
+
          <!-- Global site tag (gtag.js) - Google Analytics -->
-         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CPSL518SBG&amp;cx=c&amp;gtm=4e6691"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-59057-1"></script>
+         <script src="https://cdn.hadronid.net/hadron.js?url=https%3A%2F%2Frateyourmusic.com%2F&amp;ref=https%3A%2F%2Frateyourmusic.com%2F%3F__cf_chl_tk%3DIgtlU5dgmX8dEC2xPpfsmSFEBzped9g.IKpddlfaBWA-1781240075-1.0.1.1-6rEv9V9OoAFo0SKUxkMad.FMmV.Arf.m5kqfrr8we7A&amp;_it=amazon&amp;partner_id=403"></script><script async="" src="https://c.amazon-adsystem.com/aax2/apstag.js" id="pw_aps_tag"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CPSL518SBG&amp;cx=c&amp;gtm=4e66a1"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-59057-1"></script>
          <script>
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
@@ -58,7 +66,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 .ui_button{line-height:1.5em;font-size:1em;padding:.5em 1em;min-width:1.5em;font-weight:bold;font-family:"ProximaNova",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;font-feature-settings:"ss06" 1,"ss09" 1;text-align:center;text-decoration:none;display:inline-block;margin-right:.25em;cursor:pointer;background:var(--btn-primary-background-default);color:var(--btn-primary-text);border-radius:3px;border:none}.ui_button_text_plain{background:none;border:none;padding:0;margin:0;font-weight:normal;color:var(--surface-primary);display:inline;font-size:1em;touch-action:manipulation}.ui_button_text{background:none;border:none;padding:0;margin:0;font-weight:normal;color:var(--link-text-default);display:inline;cursor:pointer;font-size:1em;user-select:none;touch-action:manipulation}.ui_button_text:hover{color:var(--link-text-hover)}.ui_button_text:disabled{color:var(--link-text-disabled);cursor:default}.ui_button_text.primary{font-weight:bold}.ui_button:hover{background:var(--btn-primary-background-hover);color:var(--btn-primary-text)}.ui_button:active{background:var(--btn-primary-background-active)}.ui_button:disabled{cursor:default;color:var(--btn-primary-text-disabled);background:var(--btn-primary-background-disabled)}.ui_button.secondary{background:var(--btn-secondary-background-default);color:var(--btn-secondary-text)}.ui_button.secondary:hover{background:var(--btn-secondary-background-hover)}.ui_button.secondary:active{background:var(--btn-secondary-background-active)}.ui_button.secondary:disabled{cursor:default;background:var(--btn-secondary-background-disabled)}.ui_button.button_expand{width:100%;margin-right:0;font-size:1em;background:var(--btn-expand-background-default);color:var(--btn-expand-text);border-radius:3px;line-height:1.75;border:none;cursor:pointer;user-select:none;text-align:center}.ui_button.button_expand .ui_button_expand_text_expanded{display:none}.section_expanded .ui_button.button_expand .ui_button_expand_text_expanded{display:block}.section_expanded .ui_button.button_expand .ui_button_expand_text_default{display:none}.ui_button.button_expand:hover{background:var(--btn-expand-background-hover)}.ui_button.button_expand:active{background:var(--btn-expand-background-active)}.ui_button.button_expand:disabled{background:var(--btn-expand-background-disabled);color:var(--btn-expand-text-disabled)}.ui_button.button_create_playlist{background:var(--btn-secondary-background-selected);border:3px solid var(--btn-secondary-background-hover);color:var(--btn-secondary-text);border-radius:25px;padding:.5em 2em}.ui_button.button_create_playlist:hover{background:var(--btn-secondary-background-hover)}.btn,input[type=button],input[type=submit]{line-height:1.4em;font-size:1em;padding:.25em .8em;min-width:1.5em;font-weight:bold;font-family:"ProximaNova",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;font-feature-settings:"ss06" 1,"ss09" 1;text-align:center;text-decoration:none;display:inline-block;margin-right:.25em}.btn_small{font-size:.9em}@media only screen and (max-width:48.1em){.btn_small{font-size:1em}}.btn_xsmall{padding:.25em .5em;font-size:.9em}.btn.blue_btn,.darkgray_btn,.red_btn,.darkred_btn{width:auto;max-width:25em;text-align:center;border:1px solid transparent}.flat_btn{border:1px solid var(--ui-detail-neutral)}.flat_btn.disabled,.flat_btn.disabled:hover{border:1px solid var(--ui-detail-neutral)}.flat_btn:hover{border:1px solid var(--ui-detail-neutral)}.blue_btn:hover{text-decoration:none}.blue_btn.disabled,.blue_btn.disabled:hover{text-decoration:none}.expand_button,a.expand_button,li.expand_button{display:block;line-height:2.5em;font-weight:bold;text-align:center;border-radius:3px;margin-top:.5em;margin-bottom:.5em;text-decoration:none}
 .ui_search{background:var(--surface-secondary);border-radius:25px;position:relative;display:inline-block}header .ui_search{display:block}.ui_search_icon,.ui_clear_icon{position:absolute;top:.5em;font-size:1.2em;color:var(--text-secondary);z-index:2}.ui_search_icon{margin-left:.7em}i.ui_clear_icon{top:0;right:0;cursor:pointer;width:2.3em;text-align:center;line-height:2!important;display:none}.ui_search_frame.active i.ui_clear_icon{display:inline}.ui_search_frame.has_content i.ui_clear_icon{display:inline}.ui_search_debug{float:right;margin-left:.5em;line-height:2.5;font-size:.9em}.ui_search_debug a{color:var(--text-secondary)}.ui_clear_icon:hover{color:var(--text-secondary)}.ui_search_input{width:100%;color:var(--text-primary);outline:none;border:none;background:transparent;padding:0;padding-left:2.5em;padding-right:2.5em}.ui_search_object_category_label{text-align:right;font-size:1.3em;line-height:2;color:var(--text-secondary);padding-right:.5em}.ui_search_close{max-width:40em;margin:0 auto;display:none}.ui_search_close_bar{cursor:pointer;float:right;line-height:2em;font-size:2em;text-align:right;padding-right:.5em;color:var(--secondary-text)}.ui_search_rest{margin-top:.5em;width:40em;background:var(--background);box-shadow:1px 1px 3px rgba(0,0,0,.3);border-radius:3px;display:none}.ui_search_frame.active .ui_search_rest{display:block;position:absolute}.ui_search_type,.ui_search_results_frame{background:var(--surface-primary);padding:.5em 0}.ui_search_results_frame{height:28em;overflow-y:auto}@media only screen and (max-width:48.1em){header .ui_search_results_frame{height:calc(90vh - 5em)}}.ui_search_frame_inner{max-width:80em;margin:0 auto;font-size:.75em;padding:.5em;line-height:1.3;text-align:left;z-index:50}.ui_search_results_help{padding:1em;text-align:center;font-size:1.2em;line-height:1.3;color:var(--text-secondary)}.ui_search_results_help p{color:var(--text-secondary)}.ui_search_results_help i.fa{margin-left:.5em;margin-right:.5em}.ui_search_type{color:var(--text-secondary);padding:.5em;padding-left:1em;padding-right:1em;font-size:1.2em;border-bottom:1px solid var(--ui-detail-neutral);display:none}.ui_search_results{display:none;flex-direction:column;align-items:stretch}.ui_search_frame.active .ui_search_type,.ui_search_frame.active .ui_search_results{display:block}.ui_search_object_label{color:var(--text-secondary);font-size:.9em;margin-right:.25em;margin-left:.25em}.ui_search_scope_selector_item.selected{border-bottom:3px solid var(--background);font-weight:bold}.ui_search_scope_selector_item{min-width:2em;padding-left:.25em;padding-right:.25em;color:var(--text-secondary);line-height:2em;text-align:center;display:inline-block;cursor:pointer;user-select:none}.ui_search_object_category_only_btn{float:right;margin-left:.5em;font-size:.7em;background:var(--background);margin-top:.6em;font-weight:bold;line-height:1.6em;padding-left:1em;border-radius:3px;padding-right:1em;cursor:pointer}.ui_search_scope_selector_item.selected{cursor:default}.ui_search_scope_selector_item_music:hover{color:#207bbf!important}.ui_search_scope_selector_item_film:hover{color:#b96f00!important}.ui_search_scope_selector_item_games:hover{color:#c21c1c!important}.ui_search_scope_selector_item_music.selected{color:#207bbf;border-color:#207bbf!important}.ui_search_scope_selector_item_film.selected{color:#b96f00;border-color:#b96f00!important}.ui_search_scope_selector_item_games.selected{color:#c21c1c;border-color:#c21c1c!important}.ui_search_object_select_frame{position:relative;display:inline-block}.ui_search_object_select{background:var(--surface-primary);border:none;font-weight:bold;color:var(--text-primary);font-size:1em}.ui_search_configure{float:right;margin-left:1em;min-width:2em;padding-left:.25em;padding-right:.25em;color:var(--mono-8);line-height:2em;cursor:pointer;position:relative}.ui_search_configure:hover{background:var(--mono-f8)}.ui_search_result{display:flex;align-items:center;justify-content:center;border-radius:1px;background:var(--mono-f8);cursor:pointer;margin-bottom:.33em;padding-left:.5em;padding-right:.5em}.ui_search_result:hover{background:var(--mono-f0)}.ui_search_result_info{margin-top:.2em;margin-bottom:.2em;margin-left:1em;flex-grow:1}.ui_search_result_info_subtext,.ui_search_result_date_loc_info,.ui_search_result_hint,.ui_search_result_genres{margin-bottom:.15em}.ui_search_result_info_name{padding-top:.25em;font-size:1.2em;color:#207bbf}.ui_search_result_info_subtext{font-size:.9em;font-weight:bold;color:var(--mono-6)}.ui_search_result_date_loc_info .flag{float:left;margin-right:.4em}.ui_search_result_music_performers,.ui_search_result_music_composers{margin-top:.1em;font-weight:bold;color:var(--mono-5)}.ui_search_result_open_external,.ui_search_result_shortcut_frame{text-align:right;color:var(--mono-9);font-size:1.1em;min-height:2em;cursor:pointer;padding:.4em;padding-right:.6em;padding-left:.6em}.ui_search_result_open_external:hover,.ui_search_result_shortcut_frame:hover{background:var(--mono-d);color:var(--mono-6)}.ui_search_result_relevant_aka,.ui_search_result_name_display_original{font-size:.8em;color:var(--mono-8);margin-left:.3em}.ui_search_result_date_loc_info{font-size:.9em;color:var(--mono-6)}.ui_search_result_hint,.ui_search_result_debug{color:var(--mono-8);font-size:.9em;display:none}.ui_search_result_debug{display:none}.ui_search_result_image_bkg{width:5em;height:5em;background-color:var(--mono-f0)!important;box-shadow:1px 1px 0px var(--mono-c);background-position:center center!important;background-size:cover!important}.ui_search_result.result_film .ui_search_result_image_bkg{width:5em;height:7em}.ui_search_result.result_descriptor .ui_search_result_image_bkg{visibility:hidden;height:1px}.ui_search_result_action{align-self:flex-start;text-align:right}.ui_search_result_genres,.ui_search_result_genre_details{font-size:.9em;color:var(--mono-8)}.ui_search_result_film_directors,.ui_search_result_film_starring{margin-right:.25em;font-size:.9em;color:var(--mono-8)}.ui_search_context_indicator{margin-right:10em;color:var(--mono-9);line-height:4;padding-left:2em;padding-right:1em;overflow:hidden;text-align:right;white-space:nowrap;font-style:italic}.ui_search_context_indicator_inner{pointer-events:none;float:right}.ui_search_result_shortcut{font-size:.7em;width:98%;padding:1%;display:none}.ui_search_result_shortcut_frame.clicked .ui_search_result_shortcut{display:inline}.ui_search_result_shortcut_frame.clicked i{display:none}.ui_search_frame_outer{position:relative;height:2.5em;display:inline-block}header .ui_search_frame.active{position:initial;width:100%}header .ui_search_frame_outer{position:initial;display:block}.ui_search_frame.active{position:absolute;width:40em;z-index:3000}.ui_search_autocomplete_result{font-size:1.4em;font-weight:bold;padding:.33em 1em;display:block;width:100%;text-align:left;scroll-margin-top:3em;color:var(--text-primary)}.ui_search_autocomplete_result:hover,.ui_search_autocomplete_result:active,.ui_search_autocomplete_result:focus{background:var(--surface-secondary)}@media only screen and (max-width:48.1em){.ui_search_frame.active,header .ui_search_frame.active{background:var(--mono-f);position:fixed;top:0;left:0;right:0;bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0em;z-index:3000}.ui_search_clear{clear:both}.ui_search_rest{border:none;box-shadow:none;padding:0;width:100%}.ui_search_frame.active .ui_search_rest{position:relative}.ui_search_frame.active .ui_search_close{display:block}.ui_search_results_frame{position:relative;overflow-y:visible}.ui_search_frame.active .ui_search_frame_inner{padding:0}}
 .ui_page_nav_frame{white-space:nowrap;z-index:3;display:none}.ui_page_nav{text-align:left;margin:0 auto;font-size:1.2em;list-style-type:none;padding-left:.5em;text-align:left;padding:.25em;overflow-x:auto}.ui_page_nav li{display:inline-block;padding:.55em .55em;margin:.25em;border-radius:.25em;background:var(--mono-f8);min-width:8em;text-align:center;color:var(--gen-blue-med)}@media only screen and (max-width:48.1em){.ui_page_nav li{min-width:27%}}
-#frame-div-gpt-ad-1465817209349-56{background:var(--mono-f);border:none;top:10em}.page_search #content{padding:0}.page_search_results{padding:2em;padding-left:5em;margin:0 auto;padding-right:1em}.page_search_img_cell{width:8em;padding:1em;max-height:8em}.page_search_img{width:6em;max-height:8em}@media only screen and (max-width:48.1em){.page_search_results{padding:0em}.page_search h3{padding:0 .5em}.page_search_img_cell{width:6em;padding:.5em;padding-right:0}.page_search_img{width:5em}}
+.page_section_features_frame h2{margin-bottom:.5em}.page_section_feature_image{width:15em;height:15em;object-fit:contain}@media only screen and (max-width:48.1em){.page_section_feature_image{width:9em;height:9em}}.page_section_feature{display:flex}.page_section_feature:hover{background:var(--mono-f8)}.page_section_feature_info{padding:0 1.5em;flex:1;display:flex;flex-direction:column;justify-content:center}.page_section_feature_info h3{font-size:1.6em;color:var(--mono-0);font-weight:bold;color:var(--gen-blue-dark);line-height:1.3}.page_section_feature_info p{color:var(--text-primary);font-size:1.1em;line-height:1.3;margin:0}
+i.fa-twitter{color:#27aecf;text-shadow:1px 1px var(--mono-e)}i.fa-instagram{color:#c13584}div.page_home_section_column_left{padding:2em .5em!important}@media only screen and (max-width:48.1em){div.page_home_section_column_left{padding:.5em 0!important}}div.page_home_section_column_right{padding:2em;padding-left:3em!important;padding-right:0em!important}.page_home_section_follow_icons .fa-facebook-square{color:#3b5998;text-shadow:1px 1px var(--mono-e)}.page_home_section_header{text-align:left;color:var(--mono-8);font-size:.7em}.page_home_section_header h2{color:var(--mono-5);font-weight:bold;background:-webkit-linear-gradient(80deg,var(--gen-blue-darker),var(--gen-blue-neon));background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5em}.page_home_sections{max-width:105em;margin:0 auto}.page_home_section_features_content{display:flex;flex-wrap:wrap}.page_home_section_new_releases{font-size:1.1em}.page_home_section_features_feature{flex-basis:33.333%;flex-shrink:0;flex-grow:0}.page_home_section_features_feature.feature_first{flex-basis:100%;text-align:center}.page_home_section_features_feature.feature_first{max-width:35em;margin:0 auto}.page_home_section_features_feature_inner{margin:.5em;width:100%;padding-bottom:100%;position:relative}.page_home_section_features_feature_inner_img{max-width:100%;position:absolute;top:0;left:0}.feature_hidden{display:none}.page_home_section_development_content p{color:var(--mono-5);line-height:1.33;font-size:1em}.page_home_section{margin-top:2.5em;margin-bottom:1.5em}h3.page_home_section_featured_content_date_header{font-size:1.2em;color:var(--mono-6);margin-bottom:.25em;margin-top:0;padding-bottom:.25em;text-align:right;border-bottom:1px solid var(--mono-e);display:none}.page_home_section_featured_content_item_inner{position:relative}.page_home_section_featured_content_content_item_banner{position:absolute;right:-.25em;top:-.5em;padding-left:1em;padding-right:1em;line-height:2;font-size:.9em;background:var(--mono-f8);z-index:2;box-shadow:1px 1px 3px rgba(0,0,0,.15);color:var(--gen-blue-dark)}.page_home_section_featured_content_content_item{padding-bottom:.5em;padding-top:.5em;margin-bottom:.5em;position:relative}.page_review_feature_body_inner{padding-bottom:2rem;line-height:1.4}.ui_featured_content_board_post{background:var(--mono-f7);border-radius:3px;padding:1em;padding-top:2em;padding-left:2em;padding-right:2em}.page_home_section_featured_content_content_item .page_section_dynamic_fade_cover{background:linear-gradient(to bottom,rgba(128,128,128,0),var(--mono-f7))}.page_home_intro{display:flex;flex-direction:row;justify-content:space-between;margin:0 auto;max-width:85em}.page_home_intro_content{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-bottom:1em}.page_home_intro_content_logo{display:flex;flex-direction:column;justify-content:flex-start;background:url(https://e.snmc.io/3.0/img/logo/sonemic-512.png) center center no-repeat;background-size:contain;width:8em;height:8em;margin-right:2em}.page_home_intro_content_text{display:flex;flex-flow:column wrap;flex:1;line-height:1.4;max-width:60em}.page_home_intro_content_text_header{font-size:2.3em;font-weight:normal;color:var(--mono-5)}.page_home_intro_content_text_sitename{color:var(--mono-5);font-weight:bold;background:-webkit-linear-gradient(80deg,var(--gen-blue-darker),var(--gen-blue-neon));background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block}.page_home_intro_content_text-sub{padding:.4em 1em 0 0;font-size:1.1em}.page_home_intro_content_text-sub a{text-decoration:none}.page_home_section_follow_icons{display:flex;flex-direction:row;justify-content:space-between;font-size:2em}.page_home_section_follow_icons i{margin-left:.8em}.page_stats{display:flex;flex-flow:row wrap;justify-content:flex-start;margin:1.5em auto 0em auto;padding:.8em 0;max-width:85em;line-height:1.8;border-bottom:solid 1px var(--mono-e2);border-top:solid 1px var(--mono-e2)}.page_stat{margin-right:1.6em;font-weight:bold}.page_stat_count{color:var(--mono-6);font-weight:bold}@media screen and (max-width: 688px){.page_home_intro{flex-direction:column-reverse}.page_home_intro_content_logo{width:4em;height:4em;margin:0 1.2em 0 .4em}.page_home_section_follow_icons{justify-content:center;font-size:1.8em;padding:.4em}.page_home_intro_content_text_header{font-size:1.8em}.page_home_intro_content_text-sub{font-size:1.3rem}.page_home_intro_content_text-sub a{text-decoration:none}}@media screen and (max-width: 410px){.page_home_intro_content_text_header{font-size:1.4em}.page_home_intro_content_text-sub{font-size:.9em}}.row .row{margin:0}@media screen and (max-width: 688px){.page_stats{margin:2em auto 0em .8em;padding:.8em 0;line-height:1.8;justify-content:center}}.page_features_secondary_metadata_field .ui_media_links{font-size:1.3em;margin:1.2em 0em;justify-content:flex-start}@media only screen and (max-width:922px){div.page_home_section_column_right{padding-left:.8rem!important}}@media only screen and (max-width:48.1em){.page_home_section_featured_content_content{padding:0}div.page_features_secondary_metadata{padding:0}div.ui_featured_content_review div.page_feature_main_inner{padding:0!important;padding-left:0!important}.page_home_sections{padding-top:.5em}.page_home_intro_content{margin-left:3.5em;padding-top:0}.page_features_secondary_metadata{margin-top:.5em}.ui_featured_content_review{padding:1em}.page_home_intro_inner{margin-top:4.5em}.page_home_intro_content{margin:0}.page_home_intro_content_header{font-size:1.3em}.page_home_section_featured_content{xmargin-top:1em}}
+:root{--blue: #333388}.newmusic_main_container{margin:0 auto;box-sizing:border-box;line-height:1.7;width:100%;max-width:105em}.view_more{font-size:1em;font-weight:bold;width:100%;color:var(--mono-3);border-radius:3px;padding:.5em 0 .5em 0;margin:2em auto .4em auto;background-color:var(--mono-e8);text-align:center;cursor:pointer;outline:none;user-select:none}.view_more:hover{background:var(--mono-db)}.view_more_active{font-size:1em;font-weight:bold;width:100%;color:var(--mono-3);border-radius:3px;padding:.5em 0 .5em 0;margin:2em auto .4em auto;background-color:var(--mono-d);text-align:center;cursor:default;outline:none;user-select:none}#newmusic_sections_container{display:flex;flex-flow:row wrap}.newmusic_sections_left{flex:2 1 0%;padding:0}.newmusic_sections_right{flex:1;padding:0}.newmusic_sections_left #topcharts_container{flex:2 1 0%;margin-bottom:.6em;padding:.8em .2em .8em .2em}.newmusic_sections_left #newreleases_container{flex:2 1 0%;margin-bottom:.6em;padding:.8em 2em .8em .2em}.newmusic_sections_right #mostlistened_container{flex:1 1 0%;margin-bottom:.6em;padding:.8em .2em .8em .2em;height:100%}.section_header_selectorline{display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start}.section_header .section_heading_primary{font-size:1.4em;font-weight:normal;margin-bottom:.4em;background:-webkit-linear-gradient(80deg,var(--gen-blue-darkest),var(--gen-blue-neon));background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.newmusic_signup_message{padding:.8em;padding-bottom:2em}.newmusic_signup_message .blue_btn{margin-top:.8em}.newmusic_anchor{visibility:hidden;position:relative;top:-85px}@media only screen and (max-width: 688px){.newmusic_sections_left .topcharts_container{padding:1em 0}.newmusic_sections_left #newreleases_container{flex:2 1 0%;margin-bottom:.8em;padding:.8em .2em .8em .2em}}.page_new_releases{padding:3em}.page_new_releases_toolbar{padding-top:1em;padding-bottom:1em}.page_new_releases_selector_header{color:var(--mono-8);font-size:1em;margin-bottom:.5em;font-weight:bold}.page_new_releases_selector_option{min-width:8em;color:var(--mono-4);display:inline-block;line-height:3;text-align:center;border-bottom:3px solid transparent;cursor:pointer}.page_new_releases_selector_option.selected{font-weight:bold;border-bottom:3px solid var(--mono-d);cursor:none}.page_new_releases_toolbar_filter{float:left;margin-right:2em;margin-top:1em}.page_new_releases_toolbar_grouping{float:left;margin-top:1em}.page_new_releases_toolbar_genre_search,.page_new_releases_toolbar_exclusions{margin-top:1.5em}.page_new_releases_notification_banner{margin:0 auto;margin-bottom:2em;padding:.75em;padding-left:2em;padding-right:2em;line-height:2;background:var(--mono-e);border-radius:5px;font-size:1.2em;color:#336}.page_new_releases_notification_banner a{margin-left:1em;float:right}.page_new_releases_exclusions_manage{font-size:1.1em;color:var(--mono-5)}.page_new_releases_selector_options{float:left}.page_new_releases_selector_customize{float:right;margin-left:1em;border-radius:3px;padding:.25em;padding-left:1.5em;padding-right:1.5em;background:var(--mono-e);color:var(--mono-6);font-weight:bold;cursor:pointer;font-size:1.4em}.page_new_releases_list{list-style-type:none;margin-bottom:1em}.page_new_releases_list_item{margin-top:.5em}.page_new_releases_list_item_art,.page_new_releases_list_item_no_art{float:left;position:relative;width:6.5em;height:6.5em}.page_new_releases_list_item_no_art{background:var(--mono-d);border-radius:3px}.page_new_releases_list_item_info_release_date{position:absolute;bottom:0;left:0;right:0;line-height:1.5;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.4));color:var(--mono-f);font-weight:bold;text-align:center;border-bottom-left-radius:3px;border-bottom-right-radius:3px}.page_new_releases_list_item_info{margin-left:6.5em;padding:.25em;padding-left:1em;padding-right:1em}.page_new_releases_list_item_art img{max-width:6.5em;max-height:6.5em;border-radius:3px}.page_new_releases_list_item_info_title{font-size:1.1em;line-height:1.2;margin-bottom:.25em}.page_new_releases_list_item_info_artist{font-size:.9em;line-height:1.2;margin-bottom:.33em}.page_new_releases_list_item_info_genres{font-size:.9em;margin-bottom:.25em;color:var(--mono-6)}.page_new_releases_list_item_info_metadata{font-size:.9em;color:var(--mono-6)}.page_new_releases_list_item_info_options_frame{float:right;position:relative}.page_new_releases_list_item_info_options_btn{padding:.3em;color:var(--mono-6);padding-left:1em;padding-right:1em;background:var(--mono-e);border-radius:3px;cursor:pointer}.page_new_releases_list_item_info_options_menu{padding:.6rem 0 .6rem 0;position:absolute;display:none;right:.5rem;top:2.5rem;width:24rem;background:var(--mono-e8);z-index:2000}.page_new_releases_list_item_info_options_menu_item{padding:.7rem 1.4rem;line-height:1.3;color:var(--mono-6);border-bottom:1px solid var(--mono-d)}.page_new_releases_list_item_info_options_menu_item:last-child{border-bottom:none;padding-bottom:1rem}.page_new_releases_list_item_info_options_menu_item:hover{cursor:pointer;background:var(--mono-f2)}.page_new_releases_list_item_info_options_menu .manage_item{border-bottom:1px solid var(--mono-d)}.page_new_releases_list_item_info_options_menu_item .manage{font-weight:bold;text-decoration:none}.page_new_releases_list_item_info_options_menu a{text-decoration:none}@media only screen and (max-width:48.1em){.page_new_releases{padding:1em}.page_new_releases_notification_banner a{margin-top:1em}.page_new_releases_notification_banner{line-height:1.5}}.topcharts_content{margin-top:-1em;margin-bottom:1em}.topcharts_info_headers{display:flex;justify-content:flex-end;align-items:center;padding-top:.6em;margin-bottom:.6em;padding-right:1em}.topcharts_info_header_item{font-size:.9em;color:var(--mono-4);text-decoration:none;cursor:default;margin-left:1.2em;text-align:right;min-width:4.2em}.topcharts_itembox{display:grid;grid-template-columns:.8fr .1fr 1.5fr 1fr 1fr;grid-template-rows:1fr 1.2fr;grid-template-areas:"topcharts_item_artbox topcharts_position topcharts_textbox_top topcharts_textbox_top topcharts_item_statsbox" "topcharts_item_artbox topcharts_position topcharts_textbox_bottom topcharts_textbox_bottom topcharts_item_medialinkbox";padding:1em 1em;background:linear-gradient(to right,var(--mono-f3),var(--mono-fd));line-height:1.6;border-bottom:1px solid var(--mono-db);scroll-margin-top:3em;position:relative}.topcharts_item_artbox{display:flex;flex-flow:row nowrap;align-items:flex-start;width:12em;margin:.8em 1.4em .8em 1em;grid-area:topcharts_item_artbox}.topcharts_item_art_crop{display:flex;justify-content:center;align-items:center;flex-basis:12em;overflow:hidden;position:relative}.topcharts_item_art_crop img{display:flex;justify-content:center;align-items:center;flex-basis:12em;overflow:hidden;width:100%;position:absolute;top:0;left:0}.topcharts_item_art_blocked{z-index:3;background:var(--mono-4);position:absolute;top:.5em;bottom:.5em;left:.5em;right:.5em}.topcharts_item_art_blocked_inner{display:flex;align-items:center;justify-content:center;text-align:center;flex:1;color:#fff;font-weight:bold;text-shadow:1px 1px 3px rgba(0,0,0,.1);height:100%;padding:1em}.topcharts_textbox_top{display:flex;flex-flow:column nowrap;justify-content:flex-start;margin-top:.4em;grid-area:topcharts_textbox_top}.topcharts_position{display:block;padding-right:.6em;font-size:1.7em;text-align:right;color:var(--gen-blue-darker);grid-area:topcharts_position}.topcharts_item_title{font-size:1.5em;text-decoration:none;line-height:1.3;color:var(--gen-blue-darkest)}.topcharts_item_artist{font-size:1.2em}.topcharts_item_releasedate{color:var(--mono-4);font-size:1em;margin-top:.1em}.topcharts_textbox_bottom{display:flex;flex-flow:column wrap;flex:1;font-size:.95em;padding-right:1em;grid-area:topcharts_textbox_bottom}a.topcharts_item_genres,.topcharts_item_genres{font-size:1em;font-weight:bold;color:var(--gen-blue-med)}a.topcharts_item_secondarygenres,.topcharts_item_secondarygenres{color:var(--gen-blue-med)}.topcharts_item_descriptors{color:var(--mono-5)}.topcharts_item_descriptors_container{padding-top:.3em;line-height:1.2}.topcharts_item_medialinkbox{display:flex;justify-content:flex-end;margin-top:3em;grid-area:topcharts_item_medialinkbox}.topcharts_item_statsbox{display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;align-self:flex-start;width:13.5em;margin-left:auto;margin-bottom:1em;grid-area:topcharts_item_statsbox}.topcharts_stat_category_mobile{display:none}.topcharts_stat{min-width:3.5em;text-align:center;font-size:1.1em;color:var(--mono-4)}.topcharts_avg_rating_stat{font-weight:bold;font-size:1.2em;min-width:3.5em;background:linear-gradient(-10deg,var(--gen-blue-darker),#44c6ea);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.topcharts_item_medialinks .ui_media_links{display:flex;flex-flow:row nowrap;justify-content:flex-end;margin:0}.topcharts_item_medialinks .ui_media_link_btn{width:1.9em;height:1.9em;margin-left:.2em;margin-top:.4em}.topcharts_itembox.chart_item_film{grid-template-columns:1fr .15fr 1fr 1fr 1fr;grid-template-rows:.4fr 1.2fr}.chart_item_film .topcharts_item_artbox{margin-bottom:1em}.chart_item_film .topcharts_position{color:var(--gen-yellow-dark)}.chart_item_film a.topcharts_item_genres,.chart_item_film .topcharts_item_genres{color:#b96f00!important}.chart_item_film .topcharts_avg_rating_stat{background:linear-gradient(-10deg,#f37121,#edc518);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.charts_item_film .topcharts_item_statbox{background-color:#adff2f}.charts_page .chart_item_film .topcharts_item_medialinks .ui_media_link_btn{display:none}@media only screen and (max-width: 688px){.topcharts_itembox.chart_item_film{padding:2rem 3rem 2rem 3rem;grid-template-columns:100%;grid-template-rows:1fr .2fr .1fr .1fr .1fr;grid-template-areas:"topcharts_item_artbox" "topcharts_position" "topcharts_textbox_top" "topcharts_textbox_bottom" "topcharts_item_statsbox"}.chart_item_film .topcharts_item_statsbox{margin:0;padding:0}.chart_item_film .topcharts_textbox_bottom{line-height:1}}a.newreleases_settings_btn{width:1.8em;font-size:1.5em;color:var(--mono-6);padding:.2em 0em 0 .4em}.newreleases_content{display:flex;flex-flow:column nowrap;padding:.8em .6em;background-color:var(--mono-fa)}.newreleases_info_headers{display:flex;flex-basis:60%;margin-right:3em;justify-content:flex-end;align-items:center;border-bottom:solid .5px var(--mono-e2);margin-bottom:1em;padding-bottom:.1em}.newreleases_info_header_items_left{text-decoration:none;margin-right:auto}.newreleases_info_header_items_left .newreleases_sort_btn{cursor:pointer;display:inline-block;color:var(--gen-blue-darkest)}.newreleases_sort_btn_active{font-weight:bold}.newreleases_info_header_items_right{display:flex;flex-basis:13em;justify-content:space-between}.newreleases_info_header_item{font-size:.9em;color:var(--mono-4);text-decoration:none;cursor:default;text-align:right;min-width:4.8em}.newreleases_itembox{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-bottom:.6em;flex:1}.newreleases_item_artbox{display:flex;width:6.8em;height:6.8em;overflow:hidden;border-radius:.2em;justify-content:flex-start;align-items:center;margin-top:.4em;margin-right:1em;outline:none}.newreleases_item_artbox a img{border-radius:.2em;min-height:6.8em;max-width:100%}.newreleases_text_stats_container{display:flex;flex-flow:column nowrap;flex:1}.newreleases_item_releasedate{color:var(--mono-4);font-size:.9em;margin-top:.1em}.newreleases_item_title{font-size:1.2em;line-height:1.2}.newreleases_item_artist{font-size:1em;padding-top:.2em}.newreleases_item_textbox_artistalbum{display:flex;flex-flow:column wrap;margin-right:.5em;margin-bottom:.5em;max-width:30em}.newreleases_itembox_genres_stats{display:flex;flex-flow:row nowrap;justify-content:space-between;border-bottom:solid .5px var(--mono-e8);padding-bottom:.6em}.newreleases_item_textbox_genre{line-height:1.2;margin-top:.1em}.newreleases_item_statbox{display:flex;flex-flow:row nowrap;flex-basis:11em;justify-content:space-between;margin-top:-4.8em}.newreleases_item_genres{font-size:.9em;color:var(--gen-blue-med)}.newreleases_stat{min-width:4.5em;text-align:center;padding:0em .4em 0 .4em;font-size:1em;color:var(--mono-4)}.newreleases_avg_rating_stat{font-weight:bold;font-size:1.1em;padding:0em .2em;margin-top:-.1em;min-width:4.5em;background:linear-gradient(-10deg,var(--gen-blue-darker),var(--gen-blue-neon));-webkit-background-clip:text;-webkit-text-fill-color:transparent}a .fa-ellipsis-v{color:var(--mono-3);font-size:1.2em;padding:1em .5em .4em .6em}.page_new_releases_list .newreleases_itembox{display:flex;flex-flow:row nowrap;justify-content:space-between;flex:1;margin-bottom:.8em}.page_new_releases_list .newreleases_content{display:flex;flex-flow:column nowrap;padding:1em 1em;background-color:var(--mono-fa)}.page_new_releases_list .newreleases_item_artbox{display:flex;justify-content:flex-start;align-items:center;flex-basis:3.6em;min-width:3.6em;height:3.6em;margin-right:.9em;margin-top:.3em;border-radius:.2em;overflow:hidden;outline:none}.page_new_releases_list .newreleases_item_artbox a img{border-radius:.2em;min-height:3.6em}.page_new_releases_list .newreleases_text_stats_container{display:flex;flex-flow:column nowrap;flex:1}.page_new_releases_list .newreleases_item_releasedate{font-size:.8em;color:var(--mono-4);margin-right:1em}.page_new_releases_list .newreleases_item_title{font-size:1em;margin-bottom:.25em}.page_new_releases_list .newreleases_item_artist{font-size:.95em}.page_new_releases_list .newreleases_item_textbox_artistalbum{display:flex;flex-flow:column nowrap;line-height:1.2}.page_new_releases_list .newreleases_itembox_genres_stats{display:flex;flex-flow:row nowrap;justify-content:space-between;border-bottom:solid .5px var(--mono-e8);padding-bottom:.8em}.page_new_releases_list .newreleases_item_textbox_genre{flex:1;margin-right:.5em}.page_new_releases_list .newreleases_item_genres{font-size:.8em;color:var(--mono-4)}.page_new_releases_list .newreleases_stat{min-width:2em;color:var(--mono-4);font-size:.9em;text-align:center;font-weight:lighter}.page_new_releases_list .newreleases_avg_rating_stat{font-weight:bold;font-size:1.1em;padding:0 .5em;margin-top:-.1em;background:linear-gradient(-10deg,var(--gen-blue-darker),var(--gen-blue-neon));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.page_new_release_overlay{display:none;z-index:500;background:rgba(0,0,0,.2);position:fixed;top:0;left:0;right:0;bottom:0}.page_new_releases_list .newreleases_item_statbox{display:flex;flex-flow:row nowrap;justify-content:space-between;flex-basis:10.5em;margin-top:.2em;min-width:9.5em}.page_new_releases_list .newreleases_item_filterbtn{min-width:1.4em;padding-top:.1em;margin-right:0;margin-left:.5em}.frontpage_newreleases_info_headers{display:flex;flex-flow:row nowrap;margin-right:2em;justify-content:flex-end;align-items:center;border-bottom:solid .5px var(--mono-db);margin-bottom:1em;padding-bottom:.2em}.frontpage_newreleases_info_header_items_right{display:flex;justify-content:space-between;flex-basis:10.5em}.frontpage_newreleases_info_header_items_right span{min-width:4.1em}@media screen and (max-width: 922px){.page_new_releases_list .newreleases_itembox{display:flex;flex-flow:row nowrap;justify-content:space-between;flex:1;margin-bottom:1em}.frontpage_newreleases_info_headers{display:flex;flex-flow:row nowrap;margin-right:1.5em;justify-content:flex-end;align-items:flex-start;border-bottom:solid .5px rgba(0,0,0,.05);margin-bottom:1em;padding-bottom:.3em}.frontpage_newreleases_info_header_items_right{flex-basis:10.5em}.page_new_releases_list .newreleases_item_artbox{flex-basis:4.2em;min-width:4.2em;height:4.2em;border-radius:.2em;margin-right:.6em}.page_new_releases_list .newreleases_item_artbox a img{border-radius:.2em;min-height:4.2em}.page_new_releases_list .newreleases_item_textbox_genre{flex:1;margin-right:.4em}.page_new_releases_list .newreleases_item_genres{font-size:.8em}.page_new_releases_list .newreleases_item_filterbtn{padding-top:.1em;margin-right:0;margin-left:.2em}.page_new_releases_list .newreleases_stat{min-width:3em}.page_new_releases_list .newreleases_item_statbox{margin-top:.25em;min-width:8em}.page_new_releases_list .newreleases_avg_rating_stat{min-width:3em}}.mostlistened_container{margin-left:.6em}.mostlistened_content{display:flex;flex-flow:column nowrap;padding:.5em .5em}.mostlistened_itembox{display:flex;flex-flow:row nowrap;align-items:center;justify-content:flex-start;padding-bottom:.8em;margin-bottom:1em;word-break:break-word;border-bottom:solid .3px var(--mono-c)}.mostlistened_position{align-self:flex-start;text-align:center;min-width:1.5em;font-size:1em;color:var(--mono-4);border-radius:0 0 3px 0;line-height:1;padding:.2em .2em;margin-right:.8em;margin-top:-1em;box-shadow:.05em .05em .3em rgba(0,0,0,.1)}.mostlistened_item_artbox{flex-basis:3.5em;min-width:3.5em;padding-right:.5em;line-height:0}.mostlistened_item_art{border-radius:10em;width:3.5em;height:3.5em}.mostlistened_item_textbox{display:flex;flex-flow:column nowrap;flex:1;line-height:1.3;margin-left:1em}.mostlistened_item_title:link,.mostlistened_item_title:visited{font-size:1.15em;text-decoration:none;color:var(--gen-blue-darker)}.mostlistened_item_artist{font-size:1em;margin-bottom:.1em}.mostlistened_item_numplays{display:flex;flex-direction:row;color:var(--mono-6)}@media screen and (max-width: 922px){.newmusic_sections_container{flex-flow:column}#newmusic_sections_container{flex-flow:column}.topcharts_item_medialinkbox{align-self:flex-end}}@media screen and (max-width: 688px){.newmusic_main_container{padding:0}#newmusic_sections_container{flex-flow:column}.newmusic_sections_left .newreleases_container{padding:0}.topcharts_info_headers{display:none}.topcharts_itembox{padding:1.2em 2em 1em 2em;grid-template-columns:100%;grid-template-rows:min-content auto;grid-template-areas:"topcharts_item_artbox" "topcharts_position" "topcharts_textbox_top" "topcharts_textbox_bottom" "topcharts_item_statsbox" "topcharts_item_medialinkbox";margin:0 -1em;line-height:1.6}.topcharts_item_artbox{margin:0 auto;width:14em}.topcharts_item_art_crop{width:14em;min-height:14em;flex-basis:14em}.topcharts_textbox_top{margin:0em;padding-top:0em;line-height:}.topcharts_position{display:block;padding-right:0em;text-align:center;font-size:2.4em}.topcharts_position_desktop{display:none}.topcharts_item_title{font-size:1.2em}.topcharts_item_artist{font-size:1.1em}.topcharts_item_releasedate{font-size:.9em}.topcharts_textbox_bottom{padding:0;margin:.8em 0 1.2em 0}.topcharts_item_textbox_genre{align-items:center;line-height:1.2}.topcharts_item_statsbox{display:flex;flex-flow:row nowrap;width:100%;justify-content:flex-start;align-self:flex-start;margin-top:0em;margin-bottom:.5em}.topcharts_item_medialinkbox{justify-content:flex-start;align-items:center;margin-top:0em}.topcharts_item_medialinks .ui_media_links{display:flex;flex-flow:row nowrap;justify-content:flex-start}.topcharts_stat_category_mobile{display:inline-block;font-size:1em;text-align:right}.topcharts_stat{font-size:1em;font-weight:bold;text-align:left;margin-right:1.5em;margin-left:.4em;min-width:2em;color:var(--mono-4)}.topcharts_avg_rating_stat{font-size:1.1em;margin-right:1.5rem}.topcharts_item_medialinks .ui_media_link_btn{width:2.4em;height:2.5em;margin-left:0em;margin-right:.4em;margin-top:.2em}a .fa-ellipsis-v{padding:.3em .6em .1em .6em}.newreleases_info_headers{margin-right:1.5em}.newreleases_info_header_items_left{font-size:.9em;margin-top:-.1em}.newreleases_info_header_items_right{flex-basis:8.8em}.newreleases_info_header_item{font-size:.8em;text-align:right;min-width:3em}.newreleases_itembox{margin-bottom:.5em}.newreleases_item_artbox{flex-basis:4.3em;min-width:4.3em;height:4.3em;margin-right:1em}.newreleases_item_artbox a img{min-height:4.3em}.newreleases_item_releasedate{font-size:.8em}.newreleases_item_textbox_genre{margin-right:1em;flex:1}.newreleases_item_genres{font-size:.8em}.newreleases_stat{min-width:2em;font-size:.9em;text-align:center;padding:0 .4em 0 .4em}.newreleases_avg_rating_stat{font-weight:bold;font-size:1em;padding:0 .2em;margin-top:-.1em}.newreleases_item_statbox{flex-basis:8em;justify-content:space-between;margin-top:0;min-width:8.5em}.newreleases_item_filterbtn{width:1.4em;margin-right:0}.mostlistened_content{display:flex;flex-flow:column nowrap;padding:.8em .6em .8em 0}}
+.ui_jumpto_bar{position:fixed;top:6.5em;right:.5em;z-index:100}@media only screen and (min-width: 48em){.ui_jumpto_bar{display:none}}.ui_jumpto_bar_inner{position:relative}.ui_jumpto_bar_btn{width:2em;line-height:1.5;font-size:2em;text-align:center;background:var(--mono-9);opacity:.3;color:var(--mono-f);border-radius:3px;cursor:pointer}.ui_jumpto_bar_btn:hover{opacity:1}.ui_jumpto_sections{position:absolute;right:0;display:none}.ui_jumpto_item{background:rgba(0,0,0,.8);font-size:1em;color:var(--mono-f);width:15em;padding:.5em;padding-left:2em;padding-right:2em;border-bottom:1px solid var(--mono-e)}.ui_jumpto_item:hover{background:rgba(50,50,50,.8);cursor:pointer}
+.subsection_selector{display:flex;justify-content:flex-start;margin-bottom:1.2em;color:var(--mono-6);font-size:1.1em}.subsection_selector_btn{border-bottom:solid .5px var(--mono-c);margin-right:1.4em;cursor:pointer}.subsection_selector a{color:var(--mono-5);text-decoration:none}.subsection_selector_btn_active{font-weight:bold;color:var(--gen-blue-darkest)}
 </style><script id="base_script">window.rym_dist = '//cdn.sonemic.net/dist/rym25';
 var r=(a,o,i)=>new Promise((e,t)=>{var s=l=>{try{d(i.next(l))}catch(n){t(n)}},c=l=>{try{d(i.throw(l))}catch(n){t(n)}},d=l=>l.done?e(l.value):Promise.resolve(l.value).then(s,c);d((i=i.apply(a,o)).next())});window.RYMtemplate=window.RYMtemplate||{};function ensureTemplateLoaded(a){return r(this,null,function*(){if(RYMtemplate[a])return;let o=[];return yield import((window.rym_dist||"//e.snmc.io")+"/dist/template/"+a+".js?v="+window.rym_dist_version).then(e=>{o=e.compiledTemplate.dependencies.map(t=>ensureTemplateLoaded(t)),window.RYMtemplate[a]=e.compiledTemplate.template}),Promise.all(o)})}function getTemplate(a){return function(){return r(this,null,function*(){return window.RYMtemplate=window.RYMtemplate||{},RYMtemplate[a]||(yield ensureTemplateLoaded(a)),RYMtemplate[a]})}()}function renderTemplate(a,o){return function(){return r(this,null,function*(){return window.RYMtemplate=window.RYMtemplate||{},RYMtemplate[a]||(yield ensureTemplateLoaded(a)),RYMtemplate[a].render(o,RYMtemplate)})}()}function applyLazyLoadBehavior(a,o,i){a.classList.remove("lazyload-initialized"),a.classList.add("lazyload-complete");let e=[a,...a.children];for(var t of e)t.dataset.srcset&&(t.srcset=t.dataset.srcset,delete t.dataset.srcset),window.devicePixelRatio>1&&t.dataset.bkg2x?(t.style.backgroundImage=`url('${t.dataset.bkg2x}')`,delete t.dataset.bkg2x,delete t.dataset.bkg):t.dataset.bkg&&(t.style.backgroundImage=`url('${t.dataset.bkg}')`,delete t.dataset.bkg),t.dataset.src&&(t.src=t.dataset.src,delete t.dataset.src),t.dataset.connatixScriptId&&(a.classList.remove("lazyload-creative-initialized"),i&&!window.bscFound&&window.connatixScripts[t.dataset.connatixScriptId]&&(window.connatixScripts[t.dataset.connatixScriptId](),window.connatixScripts[t.dataset.connatixScriptId]=null,console.log("loaded connatix video"))),t.dataset.suggestions&&(console.log("loading suggestions"),RYMsuggestions.load($(t))),t.dataset.medialink&&(console.log("loading media link"),ui.media_links.loadUnit(t));!o&&a.dataset.adcode&&typeof adVisibilityChanged!="undefined"&&adVisibilityChanged(a.dataset.adcode,i)}window.refreshLazyLoadList=function(){const a=document.querySelectorAll(".lazyload");for(let e=0;e<a.length;e++)a[e].classList.remove("lazyload"),a[e].classList.add("lazyload-initialized"),typeof window.lazyloadObserver!="undefined"?window.lazyloadObserver.observe(a[e]):applyLazyLoadBehavior(a[e],!0);const o=document.querySelectorAll(".lazyload-creative");for(let e=0;e<o.length;e++)o[e].classList.remove("lazyload-creative"),o[e].classList.add("lazyload-creative-initialized"),typeof window.lazyloadObserverAds!="undefined"?window.lazyloadObserverAds.observe(o[e]):applyLazyLoadBehavior(o[e],!0);const i=document.querySelectorAll(".ui_section_nav_marker");for(let e=0;e<i.length;e++)i[e].classList.remove("lazyload-creative"),i[e].classList.add("lazyload-creative-initialized"),typeof window.sectionNavMarkerObserver!="undefined"&&window.sectionNavMarkerObserver.observe(i[e])},rymQ(function(){if(typeof IntersectionObserver=="undefined")return;window.lazyloadObserver=new IntersectionObserver(i=>{for(let e=0;e<i.length;e++)if(i[e].isIntersecting){const t=i[e].target;lazyloadObserver.unobserve(t),applyLazyLoadBehavior(t,!1)}},{rootMargin:"300px 50px 300px 50px"}),window.lazyloadObserverAds=new IntersectionObserver(i=>{console.log(i,i);for(let e=0;e<i.length;e++){const t=i[e].target;applyLazyLoadBehavior(t,!1,i[e].isIntersecting)}},{rootMargin:"100px 0px 100px 0px"});function a(i,e,t){var s=i.scrollLeft,c=e-s,d=0,l=5,n=function(){d+=l;var f;i.scrollLeft=f,d<t&&setTimeout(n,l)};n()}if(document.getElementById("ui_section_nav")){let i=parseInt(window.getComputedStyle(document.getElementById("ui_section_nav")).height)||0;i+=parseInt(window.getComputedStyle(document.getElementById("page_header")).height)||0,window.sectionNavMarkerObserver=new IntersectionObserver(e=>{let t=null;for(let s=0;s<e.length;s++){let c=null;console.log(e[s].target.id,e[s].isIntersecting);let d=document.getElementById(`ui_section_nav_${e[s].target.id}`);e[s].isIntersecting?(t=d,d.classList.add("active")):d.classList.remove("active")}t&&(console.log(`scrolling to ${t.offsetLeft}`),document.getElementById("ui_section_nav").scroll({left:t.offsetLeft,behavior:"smooth"}))},{rootMargin:`-${i}px 0px 0px 0px`})}}),rymQ(function(){refreshLazyLoadList()});
 </script><link id="css-bundle" rel="stylesheet" href="//cdn.sonemic.net/dist/rym25/css/bundle.css?v=d9d17652-b15b-42b5-8f47-82aaba602ce7" type="text/css">
@@ -206,13 +218,35 @@ var r=(a,o,i)=>new Promise((e,t)=>{var s=l=>{try{d(i.next(l))}catch(n){t(n)}},c=
                   }
 
                
-             .ui_fundraiser_bar_inner  { width: 100.0%; background: #595; } </style><script>
+             .ui_fundraiser_bar_inner  { width: 100.0%; background: #595; } </style>
+         <!-- Playwire header tag --> 
+         <script data-cfasync="false">
+           window.ramp = window.ramp || {};
+           window.ramp.que = window.ramp.que || [];
+           window.ramp.override = {
+               settings: {
+                   multiSelect: true
+               }
+           };
+      
+         </script>         
+      
+         <script>
+
+            window.ramp.custom_tags = ["rateyourmusic","home","false"];
+
+            window.ramp.que.push( () => {
+
+               window.ramp.setCustomGamKvs({"site":"rateyourmusic","pagetype":"home","logged_in":false,"enable_floating":true,"enable_adhesions":true});
+            });
+         </script>
+      <script>
           var ts = new Date().valueOf();
 
-          var cx='b5ffa73e9748c08e6814ad3e96eec18b';
+          var cx='71b8b024dab50badd1c763974fe3b1b2';
          rymQ(function() { $("body").on("mousemove touchend",function(n){$("body").off("mousemove touchend");var o,t=!!window.opr&&!!opr.addons||!!window.opera||navigator.userAgent.indexOf(" OPR/")>=0,e="undefined"!=typeof InstallTrigger,i=Object.prototype.toString.call(window.HTMLElement).indexOf("Constructor")>0,r=!!document.documentMode,d=!r&&!!window.StyleMedia,a=!!window.chrome&&!!window.chrome.webstore,c=(a||t)&&!!window.CSS,s=!1;navigator.webdriver;a&&window.chrome;try{navigator.permissions.query({name:"notifications"}).then(function(n){"denied"===Notification.permission&&"prompt"===n.state&&!0})}catch(n){o=n}try{null[0]()}catch(n){o=n}o.stack.indexOf("phantomjs")>-1&&(s=!0);var u=window.outerHeight,w=window.innerHeight,m=window.outerWidth,h=window.innerWidth,p=document.documentElement.hasAttribute("webdriver"),v=document.documentElement.hasAttribute("hola_ext_inject"),l=!!("ontouchstart"in window)||"ontouchstart"in document.documentElement,f=navigator.hardwareConcurrency,g=navigator.appCodeName,y=navigator.plugins,b=new Array;for(var x in y){var j=y[x];if(j)for(var C in j){var O=j[C];O&&O.description&&b.push(O.description.substr(0,12))}}var S={a:t,b:e,c:i,d:r,e:d,f:a,g:c,h:s,i:u,j:p,l:l,m:f,n:g,o:b.join(":"),p:w,q:m,r:h,s:v,t:s,cx:cx,ts:ts};rym.request.post("SecChk",S,null,"script")}); });
       </script>
-<script type="text/javascript">rymQ(function() { rym.session.init(0, '0', '', {});});</script><script> window.streamingPreferences = {"preferred_link":"sonemic","service_regions":{"applemusic":"TH","bandcamp":"TH","deezer":"TH","qobuz":"TH","soundcloud":"TH","spotify":"TH","tidal":"TH","youtube":"TH"},"prefer_open":false}</script></head><body id="page_body" class="">
+<script type="text/javascript">rymQ(function() { rym.session.init(0, '0', '', {});});</script><script> window.streamingPreferences = {"preferred_link":"sonemic","service_regions":{"applemusic":"CA","bandcamp":"CA","deezer":"CA","qobuz":"CA","soundcloud":"CA","spotify":"CA","tidal":"CA","youtube":"CA"},"prefer_open":false}</script><script id="__gamera__" async="" src="https://metrics.rapidedge.io/gamera.js?ltv=1&amp;audience=1&amp;partner=playwire"></script><script type="text/javascript" async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js?network-code=154013155"></script><script type="text/javascript" async="" src="https://cdn.intergient.com/prebid/prebid.6ee18588acea12be620c.js"></script><script type="text/javascript" async="" src="https://cdn.intergient.com/ramp_core.js"></script><script type="text/javascript" src="//cdn.intergient.com/pageos/V.20260608.1/pageos.js" async=""></script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><link rel="stylesheet" href="https://config.playwire.com/1025628/v2/websites/76421/styles.css"><script type="text/javascript" src="https://prod.uidapi.com/static/js/uid2-sdk-2.0.0.js" id="uid2SDKScript"></script><script type="text/javascript" src="https://btloader.com/tag?o=5150306120761344&amp;upapi=true" async=""></script><script type="text/javascript" src="https://tags.crwdcntrl.net/lt/c/17138/sync.min.js" async="" id="lotameScript"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202606100101/pubads_impl.js?cb=31099114" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202606110101/gpt" rel="compression-dictionary"><script async="" src="https://fundingchoicesmessages.google.com/i/154013155?ers=3"></script><script src="https://config.aps.amazon-adsystem.com/configs/bd056b42-51db-43ce-9a8e-3b11319b5d1f" type="text/javascript" async="async"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWI5LlXzjsebn5RSSzhxQ3RhEFm9E3LEr9EMF6GiX4xpdRkqoZp-TY3xmqJyFicHoBM_PhFy6ckoeBJtX5RFGkbBcHtwQVoFITFmdjcdLQlgJXKvDX3d_yq2-IPLqgYEcxEZBqeCg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxMjQwMDk1LDYzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3JhdGV5b3VybXVzaWMuY29tLyIsbnVsbCxbWzgsImZCLUVPcE9LUE40Il0sWzksInpoLUNOIl0sWzE4LCJbW1tudWxsLDk0MThdXV0iXSxbMzUsIjE3ODEyNDAwOTUiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwicmF0ZXlvdXJtdXNpYy5jb20iXSxbMjksImZhbHNlIl1dXQ"></script><script esp-signal="true" src="https://connectid.analytics.yahoo.com/connectId-gpt.js"></script><script esp-signal="true" src="https://oa.openxcdn.net/esp.js"></script><script esp-signal="true" src="https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"></script><script esp-signal="true" src="https://static.criteo.net/js/ld/publishertag.ids.js"></script><script src="//cdn.id5-sync.com/api/1.0/id5-api.js"></script><script src="https://tags.crwdcntrl.net/lt/c/16576/sync.min.js"></script><script src="//secure.cdn.fastclick.net/js/pubcid/latest/pubcid.min.js"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxUqTYhLUq04uFaMk_l778Ae40IOhD0QRAq5hlUly8IjOZK94CSo65gvijE5K0ufaHBGbkB5aaDm5rlY7w84Px39Py84mtgihl9_n7UMNv6yVWcLUseVkAWYHOvGuUkmYqpp5DdVrw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxMjQwMDk2LDM3NDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vcmF0ZXlvdXJtdXNpYy5jb20vIixudWxsLFtbOCwiZkItRU9wT0tQTjQiXSxbOSwiemgtQ04iXSxbMTgsIltbW251bGwsOTQxOF1dXSJdLFszNSwiMTc4MTI0MDA5NSJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCJyYXRleW91cm11c2ljLmNvbSJdLFsyOSwiZmFsc2UiXV1d"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWC20s36dkdDlfCPyGkLHJqKKQmqZcNPE1XBcj58LL-um82Xdmq9neguQa5pg3yfnsRg8A1XtV5Q0ESQhGk1Bc5j4r506bw8gzuIR2jStF1gS7SP3e7f5aiKQrov9Oihf1-pIoqkQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzgxMjQwMDk5LDE0NjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly9yYXRleW91cm11c2ljLmNvbS8iLG51bGwsW1s4LCJmQi1FT3BPS1BONCJdLFs5LCJ6aC1DTiJdLFsxOCwiW1tbbnVsbCw5NDE4XV1dIl0sWzM1LCIxNzgxMjQwMDk1Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsInJhdGV5b3VybXVzaWMuY29tIl0sWzI5LCJmYWxzZSJdXV0"></script></head><body id="page_body" class="">
 
             <script>
                window.themes = ['light', 'eve', 'night'];
@@ -318,7 +352,7 @@ var r=(a,o,i)=>new Promise((e,t)=>{var s=l=>{try{d(i.next(l))}catch(n){t(n)}},c=
 
 
    <form onsubmit="event.preventDefault(); RYMsearch.redirSearch(event, 'main_search');">
-   <input autocomplete="off" aria-label="Search" value="Beauty Land Greg Mendez" id="ui_search_input_main_search" placeholder="Search..." class="ui_search_input" onfocus="rymQ(function() {RYMsearch.onFocus(event, 'main_search')})" onblur="rymQ(function() {RYMsearch.onBlur(event, 'main_search')})" onkeydown="rymQ(function() {RYMsearch.onKeyDown(event, 'main_search')})" oninput="rymQ(function() {RYMsearch.onInput(event, 'main_search')})">
+   <input autocomplete="off" aria-label="Search" value="" id="ui_search_input_main_search" placeholder="Search..." class="ui_search_input" onfocus="rymQ(function() {RYMsearch.onFocus(event, 'main_search')})" onblur="rymQ(function() {RYMsearch.onBlur(event, 'main_search')})" onkeydown="rymQ(function() {RYMsearch.onKeyDown(event, 'main_search')})" oninput="rymQ(function() {RYMsearch.onInput(event, 'main_search')})">
    </form> </div> <div class="ui_search_rest"> <div class="ui_search_type"> <div id="ui_search_debug_main_search" class="ui_search_debug"></div> <span class="ui_search_object_label">Search:</span> <span id="ui_search_scope_selector_main_search" class="ui_search_object_selector"> <input type="hidden" name="ui_search_scope_main_search" id="ui_search_scope_main_search" value="music"> <span id="ui_search_scope_selector_music_main_search" onclick="rymQ(function() {RYMsearch.onClickSearchScope(event, 'main_search', 'music');})" class="ui_search_scope_selector_item ui_search_scope_selector_item_music selected"> Music
   </span> <span id="ui_search_scope_selector_film_main_search" onclick="rymQ(function() {RYMsearch.onClickSearchScope(event, 'main_search', 'film');})" class="ui_search_scope_selector_item ui_search_scope_selector_item_film"> Film
   </span> <span id="ui_search_scope_selector_games_main_search" style="display:none" onclick="rymQ(function() {RYMsearch.onClickSearchScope(event, 'main_search', 'games');})" class="ui_search_scope_selector_item ui_search_scope_selector_item_games"> Games
@@ -374,440 +408,13 @@ var r=(a,o,i)=>new Promise((e,t)=>{var s=l=>{try{d(i.next(l))}catch(n){t(n)}},c=
                 document.write('<div class=note style="margin-bottom:1em;"><b>Note:</b> Not all scripts could be loaded. You may need to upgrade to a newer browser version in order to use this site.</div>');
               }
          </script>
-      <div class="row"><div id="column_container_left" class="large-8 columns"><!-- begin search -->
-            <div class="page_search_results"><table style="width:100%;padding:0;margin:0;"><tbody><tr><td style="padding:0;margin:0;vertical-align:top;"><div style="padding-left:0.8em;font-size:1.3em;margin-top:1em;margin-bottom:1em;color:var(--mono-9);">Search results for <b>Beauty Land Greg Mendez</b></div>
-
-<!--a-->
-<div class="clear"> </div><h3>Artists</h3><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/artist/greg-mendez"><img class="page_search_img lazyload-complete" src="//cdn.sonemic.net/i/150/w/531153b59d409849c5b032c2f4eacaab/10950038"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table><tbody><tr><!--m--><td style="padding:0;"><b><a href="/artist/greg-mendez" class="searchpage artist" title="[Artist1769682]">Greg Mendez</a></b></td><td style="text-align:right;"><span class="smallgray">[Artist1769682]</span></td></tr></tbody></table><!--n--><span class="subinfo">
-       
-        <a class="smallgreen" href="/genre/singer-songwriter/">Singer-Songwriter</a><br>
-       <div style="margin-top:7px;"> &nbsp;
-       </div>
-
-       <div style="margin-top:0.7em; font-size:0.9em; color:var(--mono-8)"><i class="far fa-question-circle"></i> Indie Singer-Songwriter from Philadelphia, PA</div></span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/artist/greg-freeman-1"><img class="page_search_img lazyload-complete" src="//cdn.sonemic.net/i/150/w/7b24c5857e4740f72c342b245e780e3d/10515635"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table><tbody><tr><!--m--><td style="padding:0;"><b><a href="/artist/greg-freeman-1" class="searchpage artist" title="[Artist1740757]">Greg Freeman</a></b></td><td style="text-align:right;"><span class="smallgray">[Artist1740757]</span></td></tr></tbody></table><!--n--><span class="subinfo">
-       a.k.a: Cavities<br>
-        <a class="smallgreen" href="/genre/alt-country/">Alt-Country</a>, <a class="smallgreen" href="/genre/slacker-rock/">Slacker Rock</a>, <a class="smallgreen" href="/genre/noise-pop/">Noise Pop</a><br>
-       <div style="margin-top:7px;"><span class="ui_flag" title="United States"><img alt="United States" src="https://cdn.sonemic.net/3.0/img/flags/4x3/us.svg"></span> &nbsp;
-       </div>
-
-       <div style="margin-top:0.7em; font-size:0.9em; color:var(--mono-8)"><i class="far fa-question-circle"></i> Alt-Country musician from Vermont</div></span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/artist/greg-foat"><img class="page_search_img lazyload-complete" src="//cdn.sonemic.net/i/150/w/6162da68f6f92dfd576d0e1fc1be1b6b/10102826"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table><tbody><tr><!--m--><td style="padding:0;"><b><a href="/artist/greg-foat" class="searchpage artist" title="[Artist1247851]">Greg Foat</a></b></td><td style="text-align:right;"><span class="smallgray">[Artist1247851]</span></td></tr></tbody></table><!--n--><span class="subinfo">
-       a.k.a: Foat<br>
-        <a class="smallgreen" href="/genre/jazz-fusion/">Jazz Fusion</a>, <a class="smallgreen" href="/genre/cool-jazz/">Cool Jazz</a>, <a class="smallgreen" href="/genre/nu-jazz/">Nu Jazz</a><br>
-       <div style="margin-top:7px;"><span class="ui_flag" title="United Kingdom"><img alt="United Kingdom" src="https://cdn.sonemic.net/3.0/img/flags/4x3/gb.svg"></span> &nbsp;
-       </div>
-
-       <div style="margin-top:0.7em; font-size:0.9em; color:var(--mono-8)"><i class="far fa-question-circle"></i> British Jazz musician</div></span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 0.7341772151898734));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/artist/greg_stuart"><img class="page_search_img lazyload-complete" src="//cdn.sonemic.net/i/150/w/905848a17c458588a02390ec03572b43/5429071"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table><tbody><tr><!--m--><td style="padding:0;"><b><a href="/artist/greg_stuart" class="searchpage artist" title="[Artist986529]">Greg Stuart</a></b></td><td style="text-align:right;"><span class="smallgray">[Artist986529]</span></td></tr></tbody></table><!--n--><span class="subinfo">
-       
-        <a class="smallgreen" href="/genre/drone/">Drone</a>, <a class="smallgreen" href="/genre/reductionism/">Reductionism</a>, <a class="smallgreen" href="/genre/indeterminacy/">Indeterminacy</a><br>
-       <div style="margin-top:7px;"><span class="ui_flag" title="United States"><img alt="United States" src="https://cdn.sonemic.net/3.0/img/flags/4x3/us.svg"></span> &nbsp;
-       </div>
-
-       <div style="margin-top:0.7em; font-size:0.9em; color:var(--mono-8)"><i class="far fa-question-circle"></i> Percussionist from South Carolina</div></span></td></tr></tbody></table><a class="expand_button" href="/search?searchterm=Beauty+Land+Greg+Mendez&amp;searchtype=a">Search only Artists</a><br><br><h3>Releases</h3><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/release/album/greg-mendez/greg-mendez/"><img class="page_search_img lazyload-complete" src="//cdn.sonemic.net/i/150/w/531153b59d409849c5b032c2f4eacaab/10950038"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table width="100%"><tbody><tr><td><a href="/artist/greg-mendez" class="artist">Greg Mendez</a> - <i><a href="/release/album/greg-mendez/greg-mendez/" class="searchpage">Greg Mendez</a></i><br><div class="clear"> </div><table class="mbgen" style="border:none;padding:0;margin-left:-0.25em;margin-top:0.5em;border-top:1px solid var(--mono-e)"><tbody><tr>
-           
-                     <td style="width:4em;">2023</td>
-                     <td style="width:5em;"></td>
-                     <td style="width:5em;">Lossless Digital </td>
-
-                     <td style="width:9em;"><a href="/label/forged_artifacts/" class="label">Forged Artifacts</a></td>
-                     <td style="width:6em;"></td></tr><tr><td colspan="5"><b>Tracks:</b> <span class="rendered_text">Rev. John / Friend</span>, <span class="rendered_text">Shark's Mouth</span>, <span class="rendered_text">Cop Caller</span>, <span class="rendered_text">Maria</span>, <span class="rendered_text">Goodbye / Trouble</span>, <span class="rendered_text">Sweetie</span>, <span class="rendered_text">Clearer Picture (of You)</span>, <span class="rendered_text">Best Behavior</span>, <span class="rendered_text">Hoping You're Doing Okay</span> </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/release/album/greg-mendez/greg-mendez-2/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/b76d82df524017de966a90c6cd6a783e/10958419"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table width="100%"><tbody><tr><td><a href="/artist/greg-mendez" class="artist">Greg Mendez</a> - <i><a href="/release/album/greg-mendez/greg-mendez-2/" class="searchpage">Greg Mendez</a></i><br><div class="clear"> </div><table class="mbgen" style="border:none;padding:0;margin-left:-0.25em;margin-top:0.5em;border-top:1px solid var(--mono-e)"><tbody><tr>
-           
-                     <td style="width:4em;">2023</td>
-                     <td style="width:5em;"><span class="ui_flag" title="United States"><img alt="United States" src="https://cdn.sonemic.net/3.0/img/flags/4x3/us.svg"></span> </td>
-                     <td style="width:5em;">Vinyl </td>
-
-                     <td style="width:9em;"><a href="/label/forged_artifacts/" class="label">Forged Artifacts</a></td>
-                     <td style="width:6em;">FA111</td></tr><tr><td colspan="5"><b>Tracks:</b> <span class="rendered_text">Rev. John / Friend</span>, <span class="rendered_text">Shark's Mouth</span>, <span class="rendered_text">Cop Caller</span>, <span class="rendered_text">Maria</span>, <span class="rendered_text">Goodbye / Trouble</span>, <span class="rendered_text">Sweetie</span>, <span class="rendered_text">Clearer Picture (of You)</span>, <span class="rendered_text">Best Behavior</span>, <span class="rendered_text">Hoping You're Doing Okay</span> </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/release/album/greg-mendez/greg-mendez-4/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/0fce3250f0bd10c911d9ec95f1238fca/13685131"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table width="100%"><tbody><tr><td><a href="/artist/greg-mendez" class="artist">Greg Mendez</a> - <i><a href="/release/album/greg-mendez/greg-mendez-4/" class="searchpage">Greg Mendez</a></i><br><div class="clear"> </div><table class="mbgen" style="border:none;padding:0;margin-left:-0.25em;margin-top:0.5em;border-top:1px solid var(--mono-e)"><tbody><tr>
-           
-                     <td style="width:4em;">2024</td>
-                     <td style="width:5em;"></td>
-                     <td style="width:5em;">Lossless Digital </td>
-
-                     <td style="width:9em;"><a href="/label/dead-oceans/" class="label">Dead Oceans</a></td>
-                     <td style="width:6em;"></td></tr><tr><td colspan="5"><b>Tracks:</b> <span class="rendered_text">Rev. John / Friend</span>, <span class="rendered_text">Shark's Mouth</span>, <span class="rendered_text">Cop Caller</span>, <span class="rendered_text">Maria</span>, <span class="rendered_text">Goodbye / Trouble</span>, <span class="rendered_text">Sweetie</span>, <span class="rendered_text">Clearer Picture (Of You)</span>, <span class="rendered_text">Best Behavior</span>, <span class="rendered_text">Hoping You're Doing Okay</span> </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/release/album/greg-mendez/greg-mendez-3/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/8bd9a4fb752c87e37456388c0154736a/10958422"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;"><table width="100%"><tbody><tr><td><a href="/artist/greg-mendez" class="artist">Greg Mendez</a> - <i><a href="/release/album/greg-mendez/greg-mendez-3/" class="searchpage">Greg Mendez</a></i><br><div class="clear"> </div><table class="mbgen" style="border:none;padding:0;margin-left:-0.25em;margin-top:0.5em;border-top:1px solid var(--mono-e)"><tbody><tr>
-           
-                     <td style="width:4em;">2023</td>
-                     <td style="width:5em;"><span class="ui_flag" title="United States"><img alt="United States" src="https://cdn.sonemic.net/3.0/img/flags/4x3/us.svg"></span> </td>
-                     <td style="width:5em;">Vinyl </td>
-
-                     <td style="width:9em;"><a href="/label/forged_artifacts/" class="label">Forged Artifacts</a></td>
-                     <td style="width:6em;">FA111</td></tr><tr><td colspan="5"><b>Tracks:</b> <span class="rendered_text">Rev. John / Friend</span>, <span class="rendered_text">Shark's Mouth</span>, <span class="rendered_text">Cop Caller</span>, <span class="rendered_text">Maria</span>, <span class="rendered_text">Goodbye / Trouble</span>, <span class="rendered_text">Sweetie</span>, <span class="rendered_text">Clearer Picture (of You)</span>, <span class="rendered_text">Best Behavior</span>, <span class="rendered_text">Hoping You're Doing Okay</span> </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><a class="expand_button" href="/search?searchterm=Beauty+Land+Greg+Mendez&amp;searchtype=l">Search only Releases</a><br><br><h3>Songs</h3><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/song/future-death/mender-bender/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/25a6ede681636e240c0408484d3b6d9f/6003823"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;">
-
-<table><tbody><tr><td style="padding:0;"><b><a href="/song/future-death/mender-bender/" class="searchpage">
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Mender Bender</span>
-</span>
-</a></b></td><td style="text-align:right;"><span class="smallgray">[Song10574009]</span></td></tr></tbody></table><span style="margin-top:0.25em;font-size:1em;">
-   <b style="color:var(--text-secondary);font-weight:bold">
-
-
-                  <span>
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Future Death</span>
-</span>
-</span> 
-
-
-</b>
-            <div style="margin-top:0.43em;font-size:0.925em;color:var(--text-secondary)">
-                  <span class="genre comma_separated first">Punk Rock</span>
-            </div>
-
-       <div style="margin-top:7px;"> </div>
-
-
-</span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 0.9848173984407058));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/song/patti-smith/land/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/0b03d61718f1c759f389ef71d5c59cc5/8224054"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;">
-
-<table><tbody><tr><td style="padding:0;"><b><a href="/song/patti-smith/land/" class="searchpage">
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Land</span>
-</span>
-</a></b></td><td style="text-align:right;"><span class="smallgray">[Song305217]</span></td></tr></tbody></table><span style="margin-top:0.25em;font-size:1em;">
-   <b style="color:var(--text-secondary);font-weight:bold">
-
-
-                  <span>
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Patti Smith</span>
-</span>
-</span> 
-
-
-</b>
-            <div style="margin-top:0.43em;font-size:0.925em;color:var(--text-secondary)">
-                  <span class="genre comma_separated first">Beat Poetry</span>
-            </div>
-
-       <div style="margin-top:7px;"> </div>
-
-
-</span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.0));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/song/deftones/beauty-school/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/f2f2ebfd999a35913caa9d6f8d956e91/9747702"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;">
-
-<table><tbody><tr><td style="padding:0;"><b><a href="/song/deftones/beauty-school/" class="searchpage">
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Beauty School</span>
-</span>
-</a></b></td><td style="text-align:right;"><span class="smallgray">[Song4325805]</span></td></tr></tbody></table><span style="margin-top:0.25em;font-size:1em;">
-   <b style="color:var(--text-secondary);font-weight:bold">
-
-
-                  <span>
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Deftones</span>
-</span>
-</span> 
-
-
-</b>
-            <div style="margin-top:0.43em;font-size:0.925em;color:var(--text-secondary)">
-                  <span class="genre comma_separated first">Alternative Rock</span>
-            </div>
-
-       <div style="margin-top:7px;"> </div>
-
-
-         <div style="margin-top:7px;font-style:italic"><div>I like you when</div> <div>When you take off your face</div> <div>Put away all your teeth</div> <div>And take us way underneath</div> <div>Cause you could die if you take it alone</div> <div></div>   </div>
-         
-
-
-</span></td></tr></tbody></table><table style="margin-bottom:0.5em;"><tbody><tr class="infobox">
-            <td class="page_search_img_cell"><div style="position:relative;width:100%;padding-bottom:calc( min( 8em, 100% / 1.018716577540107));">
-                              <div style="position:absolute;top:0;left:0;">
-                                 <a href="/song/roxy-music/beauty-queen/"><img class="page_search_img lazyload-initialized" data-src="//cdn.sonemic.net/i/150/w/5b6f2f4041314cb318f373a547f0bae4/12182723"></a>
-                              </div>
-                             </div>
-
-            </td><td style="padding-left:18px;">
-
-<table><tbody><tr><td style="padding:0;"><b><a href="/song/roxy-music/beauty-queen/" class="searchpage">
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Beauty Queen</span>
-</span>
-</a></b></td><td style="text-align:right;"><span class="smallgray">[Song8096112]</span></td></tr></tbody></table><span style="margin-top:0.25em;font-size:1em;">
-   <b style="color:var(--text-secondary);font-weight:bold">
-
-
-                  <span>
-<span class="ui_name_locale ">
-<span class="ui_name_locale_original">Roxy Music</span>
-</span>
-</span> 
-
-
-</b>
-            <div style="margin-top:0.43em;font-size:0.925em;color:var(--text-secondary)">
-                  <span class="genre comma_separated first">Glam Rock</span>
-            </div>
-
-       <div style="margin-top:7px;"> </div>
-
-
-         <div style="margin-top:7px;font-style:italic"><div>Valerie please believe</div> <div>It never could work out</div> <div>The time to make plans</div> <div>Has passed, faded away</div> <div>Oh the way you look</div> <div>Makes my starry eyes shiver</div>   </div>
-         
-
-
-</span></td></tr></tbody></table><div style="text-align:right"><a id="search_morelink" style="margin-right:1em;" href="/search?searchterm=Beauty+Land+Greg+Mendez&amp;searchtype=music&amp;page=2">More Results</a><br><br></div><!--z--><div style="padding:1em;"></div></td></tr></tbody></table>
-               
-            </div>
-           <!-- end search --><div class="column_filler" id="column_filler_left"></div></div>
-           <div id="column_container_right" class="large-4 columns"><div class="column_filler" id="column_filler_right"></div></div></div>
-         <div class="clearfix"></div>
-         <!-- end content and content_wrapper -->
-               </div>
-             </div>
-          </div>
-
-
-
-          <div class="overlay_invisible" id="overlay_invisible"></div>
-
-          <div class="ui_cropper_frame" id="ui_cropper_frame"></div>
-
-          <div class="modal_parent_frame" id="modal_parent_frame">
-             <div onclick="rym.closeModal();" id="modal_overlay" class="modal_overlay" style="">Close <i class="fa fa-times"></i></div>
-             <div onclick="rym.closeModal();" id="modal_overlay_invisible" class="modal_overlay_invisible" style=""></div>
-             <div id="modal_parent_frame_inner" class="modal_parent_frame_inner">
-                    <div id="modal_content" class="modal_content">
-                    </div>
-             </div>
-          </div>
-
-          <div class="modal_parent_frame_level_2" id="modal_parent_frame_level_2">
-             <div onclick="rym.closeModal2();" id="modal_overlay_level_2" class="modal_overlay" style="">Close <i class="fa fa-times"></i></div>
-             <div onclick="rym.closeModal2();" id="modal_overlay_invisible_level_2" class="modal_overlay_invisible" style=""></div>
-             <div id="modal_parent_frame_inner_level_2" class="modal_parent_frame_inner_level_2">
-                    <div id="modal_content_level_2" class="modal_content">
-                    </div>
-             </div>
-          </div>
-
-
-
-             <!-- ~~~~~~~~ end content ~~~~~~~~~~~~~~~ -->
-            <div class="ui_chooser_results_frame" id="ui_chooser_results_frame">
-                <div class="ui_chooser_results bg-fff alternate" id="ui_chooser_results">
-                </div>
-            </div>  
-
-
-
-             <div id="voting_ui_frame"></div>
-
-          <div style="clear:both;"></div>
       
-               <script> 
-                   document.querySelectorAll('.mobile-sticky-ad').forEach( item => {
-                     console.log ('setting sticky timer for ' + item.id)
-                     setTimeout(function () {
-                        item.classList.add('seen')
-                     }, 2000);
-                   });
-               </script>
+   <style>
+      #page_home .desktop-sticky-persist-ad {
+         top:3em;
+      }
+   </style>
+<!-- /31961696/Sonemic/main-970x250-top -->
+            <div data-nosnippet="" class="page_creative_frame header-leaderboard lazyload-creative-initialized lazyload-complete" id="frame-div-gpt-ad-1465817209349-221" data-adcode="div-gpt-ad-1465817209349-221" style="margin:0 auto;display: flex;flex-direction:column; align-items: center;margin-bottom:1em;min-height:160px;min-width:975px;">
+
          
-<footer>
-  <div class="footer_inner">
-
-     <div class="footer_main_section"><div class="minilogo_frame"><div class="minilogo"> <div class="logo_sonemic_bw_24"></div>
-                        <span class="minilogo_text">Rate Your Music</span>
-                        
-                    </div></div>
-
-
-        <div class="copyright">© 2000-2026 Sonemic, Inc.</div>
-          
-
-
-        <div class="clearfix"></div>
-
-        <div class="clearfix"></div>
-
-        <div class="social_icons"> 
-           <a rel="noopener" title="Follow us on Facebook" href="https://facebook.com/sonemic.network/" target="_blank"><i class="fab fa-facebook-square"></i></a> 
-           <a rel="noopener" title="Follow us on Twitter" href="https://twitter.com/sonemic/" target="_blank"><i class="fab fa-twitter-square"></i></a> 
-           <a rel="noopener" title="Follow us on Instagram" href="https://instagram.com/sonemic/" target="_blank"><i class="fab fa-instagram-square"></i></a> 
-           <a rel="noopener" title="Follow us on Spotify" href="https://open.spotify.com/user/sonemic.com" target="_blank"><i class="fab fa-spotify"></i></a> 
-           <a rel="noopener" title="Subscribe to our weekly newsletter" href="https://mailchi.mp/sonemic-selects/newsletter" target="_blank"><i class="fa fa-envelope"></i></a> 
-     
-        </div>
-
-
-     </div> 
-  
-  <div id="expand_full_footer" class="mobile_expandable_full mobile_expand_footer">
-
-        <div id="expand_full_header_footer" class="mobile_expandable_full_header" onclick="RYMmobile.mobileExpand.toggleFull('footer');">
-
-           <div class="mobile_expandable_full_icons">
-              <div class="mobile_expandable_full_expand_icon_expanded">
-                 <i class="fa fa-caret-down"></i>
-              </div>
-              <div class="mobile_expandable_full_expand_icon_hidden">
-                 <i class="fa fa-caret-right"></i>
-              </div>
-           </div>
-
-           <div id="expand_full_name_footer" class="mobile_expandable_full_name">
-              Site links
-           </div>
-
-        </div>
-
-        <div id="expand_full_content_footer" class="mobile_expandable_full_content">
-           
-     <div class="footer_sections">
-
-        <div class="footer_section" id="section_network">
-           <div class="footer_header">RYM Network</div>
-           <div class="footer_sub_links">
-              <a class="asonemic" href="https://rateyourmusic.com/">
-                  RYM
-                  
-                  <span class="sub">music</span></a>
-              <a class="asonemic" href="https://sonemic.com/">Sonemic <span class="sub">roadmap</span></a>
-              <a class="aglitchwave" href="https://glitchwave.com/">Glitchwave <span class="sub">video games (beta)</span></a>
-              <a class="aforum" href="https://rym.fm/">Discussion <span class="sub">rym.fm</span></a>
-           </div>
-        </div>
-        <div class="footer_section">
-           <div class="footer_header">Info</div>
-           <div class="footer_sub_links">
-              <a href="/wiki/RYM:FAQ">FAQ</a>
-              <a href="/development/">Development status</a>
-              <a href="/rymzilla/" class="has_tip">RYMzilla</a>
-              <a href="/submissions/">Submissions</a>
-              <a href="/data-access/register-interest/">Data access / API</a>
-           </div>
-        </div>
-        <div class="footer_section">
-           <div class="footer_header">Policy</div>
-           <div class="footer_sub_links">
-              
-              <a href="/wiki/">Database standards</a>
-              <a class="" href="/privacy">Privacy <span style="font-size:0.875em;"><br>(Updated: 29 Sep 2025)</span></a>
-              <a class="" href="/tos">Terms of service <span style="display:none;font-size:0.875em;">(Updated: 12 Aug 2024)</span></a>
-           </div>
-        </div>
-        <div class="footer_section">
-           <div class="footer_header">Contact us</div>
-           <div class="footer_sub_links">
-              <a href="/contact">Support / Feedback</a>
-              
-           </div>
-        </div>
-     </div>
-  
-        </div>
-     </div>
-  
- 
-     <div style="clear:both;"></div>
-  </div>
-
-</footer><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0a0eb0a0b0ad4a0',t:'MTc4MTE4NDA3OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script src="https://cdn.sonemic.net/2.5/js/jquery.min.2.js"></script><script src="//cdn.sonemic.net/dist/rym25/js/bundle.js?v=d9d17652-b15b-42b5-8f47-82aaba602ce7"></script>
-            <script type="module" id="module_dep_community">
-                import * as community from 'https://cdn.sonemic.net/dist/rym25/js/core/community.mjs?v=d9d17652-b15b-42b5-8f47-82aaba602ce7';
-                window.core = window.core || {};
-                window.core.community = community;
-
-
-            if ( window.core.community._initPage !== undefined ) {
-               rymQ(window.core.community._initPage);
-            }
-            </script>
-
-         <script>
-
-           window.addEventListener('DOMContentLoaded', (event) => {
-
-               for ( var i in window.ryminit ) {
-                  var fn = window.ryminit[i];
-                  window.ryminit[i] = null;
-                  if ( fn ) {
-                     fn();
-                  }
-               }
-
-               window.ryminit = null;
-            });
-
-         </script>
-      <script src="//cdn.sonemic.net/dist/rym25/js/legacy/basereq.js?v=d9d17652-b15b-42b5-8f47-82aaba602ce7"></script>
-<script type="text/javascript" src="//cdn.sonemic.net/2.5/js/jquery-appear-b1.js"></script>
-<script type="text/javascript" src="//cdn.sonemic.net/2.5/js/taggerf.v2.js"></script>
-<script type="text/javascript" src="//cdn.sonemic.net/2.5/js/ratingv4.js"></script><div id="tiptip_holder" style="pointer-events:none;max-width:1200px;"><div id="tiptip_arrow"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content"></div></div></body></html>

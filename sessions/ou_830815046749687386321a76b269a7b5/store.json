@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "音乐专辑入库",
+  "name": "RYM流派树探索",
   "status": "active",
   "createdAt": "2026-05-21T23:29:55.380Z",
-  "updatedAt": "2026-06-11T12:31:10.923Z",
+  "updatedAt": "2026-06-12T06:12:07.138Z",
   "agents": [
     {
       "id": "agent_3tj7bsnd",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_7hoz625k",
-    "title": "音乐专辑入库",
+    "title": "RYM流派树探索",
     "createdAt": "2026-05-21T23:29:55.380Z",
     "file": "summary_7hoz625k.md"
   },
-  "lastMessageCount": 166
+  "lastMessageCount": 63
 }

@@ -1,20 +1,18 @@
 ## 任务背景
-用户需要将新发现的专辑信息录入个人音乐数据库（SQLite），包括元数据、封面、曲目和收听记录。
+用户（张树）想抓取 RYM (RateYourMusic) 网站关于 Noise Rock 流派及其完整的子流派层级树。
 
 ## 执行过程
-1. 定位 Porcelain Stars - Rosemary 专辑
-2. 解决数据库路径缺失问题
-3. 从 iTunes/Discogs 抓取元数据入库
-4. 用户发图识别 Greg Mendez - Beauty Land
-5. 新建艺人记录并完整入库
-6. 补全 junction 表缺失数据
+1. 探索流派页面结构，尝试定位子流派区域。
+2. 发现通用容器显示无关内容，非目标区域。
+3. 搜索“Subgenres of”等关键词，未找到明确的子流派菜单标题。
+4. 尝试分析 noise-rock 页面，检查父流派关系，发现链接混在乐评文本中。
+5. 最终确认 RYM 的流派页面结构不直观，子流派层级树位置不明确。
 
 ## 关键结果
-- Porcelain Stars - Rosemary (album_id=551) 入库完成，风格 Emo/Blackgaze/Baroque Pop
-- Greg Mendez - Beauty Land (album_id=552) 入库完成，新建艺人 artist_id=317
-- 封面已下载并备份到 NAS
-- Git commit + push 完成 (b3c9274)
-- database.sql 已导出
+- 抓取了 rock / indie-rock / noise-rock 等页面HTML和文本。
+- 确认通用流派容器 (`page_features_secondary_metadata_genres_primary`) 显示的是热门相关流派，非子流派。
+- 未能定位到直接的子流派层级树区域，任务暂时卡住。
+- 记录了探索过程到 `memory/2026-06-12.md`。
 
 ## 结论建议
-两张 2026 年新专辑均已成功入库，数据完整。RYM 评分暂未抓取（页面导航问题），后续可补充。
+任务处于暂停状态，需要用户（张树）进一步指示 RYM 上子流派层级的确切位置，才能继续编写爬虫脚本。
