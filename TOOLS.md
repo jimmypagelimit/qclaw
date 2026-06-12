@@ -1,5 +1,24 @@
 # TOOLS.md - Local Notes
 
+## ⚠️ 听歌记录数据库路径（最高优先级，2026-06-12 确立）
+
+**唯一正确的数据库路径**（Web 服务 `database.ts` 中 `DEFAULT_DB_PATH`）：
+```
+C:\Users\qujt\.qclaw\workspace\_music_latest.db
+```
+
+### 禁止使用的路径
+- ❌ `album-tracker/_music_latest.db` — 是副本，可能过期
+- ❌ `album-tracker/music.db` — 空文件
+- ❌ `\\10.0.2.4\qemu\原创计划\music\music` — UNC 路径已废弃
+
+### 操作规则
+1. 所有数据库查询/更新/插入 **必须用上述唯一路径**
+2. Web 服务运行时 **必须先停服务再操作数据库**
+3. 操作完成后 **必须重启 Web 服务**
+
+---
+
 ## 命令执行优先级（永久规则）
 
 **Python 永远是绝对第一选择** ✅

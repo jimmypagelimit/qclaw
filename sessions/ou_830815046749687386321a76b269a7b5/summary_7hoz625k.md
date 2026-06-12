@@ -1,15 +1,14 @@
 ## 任务背景
-恢复因误删git submodule指针而丢失的tasks/rym-expert目录及其文件。
-
+用户发现音乐数据库查询与Web服务实际数据不一致，需要彻底解决数据库路径错误问题。
 ## 执行过程
-1. 从a71804e commit恢复rym_explore/原始文件
-2. 将根目录下的rym_explore/移动到tasks/rym-expert/
-3. 添加.gitignore排除大文件，重新commit推送
-
+1. 排查源码database.ts确认实际数据库路径
+2. 比对本地与QEMU挂载盘的数据库文件
+3. 发现昨天入库的3张专辑写错了位置
+4. 修复数据到正确数据库文件
 ## 关键结果
-- 已恢复38个文件（5个JSON跟踪，33个HTML/PNG被排除）
-- commit f365435已推送至GitHub
-- tasks/rym-expert现为普通目录，不再使用submodule
-
+- 正确数据库路径：`workspace/_music_latest.db`（非子目录副本）
+- TOOLS.md已固化路径规则
+- 补回3张专辑：Porcelain Stars、Greg Mendez、Feeble Little Horse
+- Web服务正常（519张，1044条记录）
 ## 结论建议
-文件恢复完成。工作区根目录尚有临时脚本和RYM文件待清理。
+问题已修复，后续查库需先看TOOLS.md确认路径。建议建立本地到QEMU盘的自动同步机制作为备份。

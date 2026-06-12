@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-11T19:05:00.540Z",
+  "updatedAt": "2026-06-12T10:02:09.026Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -558,6 +558,161 @@
         "listen-history",
         "genres/styles",
         "windows-nt"
+      ]
+    },
+    "memory:memory/2026-06-06.md:1114:1138": {
+      "key": "memory:memory/2026-06-06.md:1114:1138",
+      "path": "memory/2026-06-06.md",
+      "startLine": 1114,
+      "endLine": 1138,
+      "source": "memory",
+      "snippet": "1. **18:07** — 提交重构方案（建artists+genres+styles+listen_history表） 2. **18:24** — 重连后发现迁移已完成（之前批次自动完成的？） 3. **18:52** — 用户确认彻底完成 4. **18:52-19:00** — 新增artists API端点 + Git提交 + 验证 ✅ # 2026-06-06 日志 ## 🔊 discord 收不到飞书消息 - 原因：飞书没有把 discord 群发的消息转发到 agent session - 解决方案：需要飞书 App 的群聊内@agent，才能由飞书 channel 转发给 agent ## 🔊 listen_history 迁移修复 **问题根因**：之前迁移时 listen_history 每个专辑每年只插了 1 条记录，没有按 total_listen_count 展开。 - 旧表 `albums_2024.SUM(total_listen_count)` = 409，新表 listen_history 2024年只有 243 条，差 166 条 - listen_date 也全是空（560 条全部为空） **修复**： - 清空 listen_history，从旧表 `albums_2024/2025/2026` 按 total_listen_count 展开插入 - 日期均匀分散到全年（≤12次用每月15日，>12次用 timedelta 分散） - 同步 albums.total_listen_count 和 artists 统计字段 -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39335162639617915,
+      "maxScore": 0.39335162639617915,
+      "firstRecalledAt": "2026-06-12T10:02:09.026Z",
+      "lastRecalledAt": "2026-06-12T10:02:09.026Z",
+      "queryHashes": [
+        "cc8a5c84b9fb"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "listen-history表",
+        "52-19",
+        "listen-history",
+        "total-listen-count",
+        "albums-2024.sum",
+        "listen-date",
+        "albums-2024/2025/2026",
+        "albums.total-listen-count"
+      ]
+    },
+    "memory:memory/2026-03-25.md:1:24": {
+      "key": "memory:memory/2026-03-25.md:1:24",
+      "path": "memory/2026-03-25.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-03-25 ## 今日事项 ### 荒岛唱片同步 - 用户要求：**互相补充模式**，永远不删除 - 更新了 sync.sh 脚本 - 手动同步了王梵瑞《青春》 ### 本地音乐库查询 - 朴树：4张专辑（爱如少年、每一刻都是崭新的、自由时光、万丈光芒） - 许巍：4张专辑 + 2张演唱会 + 1张待解压 - 李健：无完整专辑，只有散曲 - 王梵瑞：有《青春》专辑 - Led Zeppelin：无专辑，只有图片 ### RYM Skill - 创建了 rym-screenshot skill，通过 CDP 截图获取 RYM 页面内容 - 绕过 Cloudflare 验证 ### 飞书通道 - 用户询问配置飞书通道（可发图片） - 待用户创建飞书应用并提供 App ID 和 App Secret",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3819481611251831,
+      "maxScore": 0.3819481611251831,
+      "firstRecalledAt": "2026-06-12T10:02:09.026Z",
+      "lastRecalledAt": "2026-06-12T10:02:09.026Z",
+      "queryHashes": [
+        "cc8a5c84b9fb"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "sync.sh",
+        "rym-screenshot",
+        "今日",
+        "事项",
+        "唱片",
+        "同步",
+        "用户",
+        "要求"
+      ]
+    },
+    "memory:memory/2026-06-08.md:412:436": {
+      "key": "memory:memory/2026-06-08.md:412:436",
+      "path": "memory/2026-06-08.md",
+      "startLine": 412,
+      "endLine": 436,
+      "source": "memory",
+      "snippet": "-- 应改为 LEFT JOIN，或按 release_year 查 ``` 选项： - A: 按 `release_year`（专辑发行年份）筛选 - B: 保持 `listen_year`，改用 `LEFT JOIN` - C: 加参数区分 `year_type=release|listen` ### 待用户回复 - 用户尚未回复选哪个方案 # 2026-06-08 ## year-filter 修复（两次迭代） - **问题 1**：年份筛选 `JOIN listen_history` 只返回有收听记录的专辑，2026 年 60 张只返回 ~40 张。改成 `release_year`（LEFT JOIN），全部返回但不包含海朋森等非 2026 年发行的专辑 - **问题 2**：用户指出海朋森等专辑搜不到了。改回 `listen_year` + INNER JOIN + GROUP BY，同时修复 GROUP BY 缺失导致的 SQL 500 错误 - **最终方案**：`listen_year` + `INNER JOIN (listen_history GROUP BY album_id)` + `GROUP BY a.album_id` - **最终结果**：2026 年可搜到 142 张收听专辑（含海朋森、Paul McCartney 等非 2026 年发行但 2026 年收听的） - **关键教训**：年份筛选按**收听年份**而非发行年份，因为用户找的是\"某年听过什么\" ## perf_mode 相关 - 飞书消息强行改为 5 回合 compacti",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3738917768001556,
+      "maxScore": 0.3738917768001556,
+      "firstRecalledAt": "2026-06-12T10:02:09.026Z",
+      "lastRecalledAt": "2026-06-12T10:02:09.026Z",
+      "queryHashes": [
+        "cc8a5c84b9fb"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "release-year",
+        "listen-year",
+        "year-type",
+        "year-filter",
+        "listen-history",
+        "album-id",
+        "a.album-id",
+        "perf-mode"
+      ]
+    },
+    "memory:memory/2026-03-31.md:61:89": {
+      "key": "memory:memory/2026-03-31.md:61:89",
+      "path": "memory/2026-03-31.md",
+      "startLine": 61,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "| 歌词来源 | 单一（AZLyrics） | 多源（AZLyrics + Genius + 手动） | | 翻译 | 调 GLM API | 我自己翻译 | | 反爬检测 | 无 | 检测验证页面 | | Git push | 需要密码 | 配置 token | | 进度通知 | 有时忘发 | 长任务完成后自动发飞书 | --- ## 技能沉淀 ### 新增工具 1. `wechat_to_kindle_v2.py` - 微信文章 → EPUB（带图片） 2. `twin_fantasy_v2.py` - 歌词抓取 + EPUB 生成 3. `make_final_epub.py` - 从本地文件生成 EPUB ### Kindle 发书流程 1. 格式：EPUB（不能 MOBI） 2. 必须带图片 3. 邮箱：JIMMYPAGELIMIT_ACFYFR@KINDLE.com 4. 主题：Convert 5. 163 邮箱 SMTP 发送 --- ## 下一步 - [ ] 配置 Git token 实现 push - [ ] 补全 Twin Fantasy 缺失的 2 首歌词（用户手动提供） - [ ] 整理歌词工具，支持多源",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3729012459516525,
+      "maxScore": 0.3729012459516525,
+      "firstRecalledAt": "2026-06-12T10:02:09.026Z",
+      "lastRecalledAt": "2026-06-12T10:02:09.026Z",
+      "queryHashes": [
+        "cc8a5c84b9fb"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "wechat-to-kindle-v2.py",
+        "twin-fantasy-v2.py",
+        "make-final-epub.py",
+        "jimmypagelimit-acfyfr",
+        "kindle.com",
+        "歌词",
+        "来源",
+        "单一"
+      ]
+    },
+    "memory:memory/2026-06-06.md:1070:1120": {
+      "key": "memory:memory/2026-06-06.md:1070:1120",
+      "path": "memory/2026-06-06.md",
+      "startLine": 1070,
+      "endLine": 1120,
+      "source": "memory",
+      "snippet": "- 返回艺人信息 + 该艺人的所有专辑（按年份降序） ### 验证结果 ```bash # 艺人排名 GET /api/artists?limit=3 → 魏如萱(66) | The Cure(35) | 苏紫旭(32) ✅ # 艺人搜索 GET /api/artists?search=魏如萱 → 魏如萱(66次, 13张) ✅ # 艺人详情 GET /api/artists/306 → 魏如萱详情 + 13张专辑列表 ✅ ``` ### Git 提交 - Commit: `9814f25` - feat: add /api/artists endpoints - `git add -f dist/server.js` (dist/ 在 gitignore 中，需强制) - Push: ✅ 成功 ### 临时文件清理 需清理的临时脚本： - `_insert_artists.py` - `_git_commit.py` ### 数据库迁移最终状态 | 组件 | 状态 | 说明 | |------|------|------| | albums 表 | ✅ 505条 | 含 artist_id/genre_id/style_id | | artists 表 | ✅ 313条 | 含 total_listen_count, album_count | | genres 表 | ✅ 21条 | | | styles 表 | ✅ 153条 | | | listen_history 表 | ✅ 560条 | 2024:243 + 2025:192 + 2026:125",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37017859518527985,
+      "maxScore": 0.37017859518527985,
+      "firstRecalledAt": "2026-06-12T10:02:09.026Z",
+      "lastRecalledAt": "2026-06-12T10:02:09.026Z",
+      "queryHashes": [
+        "cc8a5c84b9fb"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "api/artists",
+        "api/artists/306",
+        "dist/server.js",
+        "insert-artists.py",
+        "git-commit.py",
+        "artist-id/genre-id/style-id",
+        "total-listen-count",
+        "album-count"
       ]
     }
   }

@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "Heartbeat检查",
+  "name": "Heartbeat 19:15",
   "status": "active",
   "createdAt": "2026-05-22T00:10:05.395Z",
-  "updatedAt": "2026-06-12T02:02:46.697Z",
+  "updatedAt": "2026-06-12T11:18:26.377Z",
   "agents": [
     {
       "id": "agent_inui3px0",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_fst2sfpr",
-    "title": "Heartbeat检查",
+    "title": "Heartbeat 19:15",
     "createdAt": "2026-05-22T00:10:05.395Z",
     "file": "summary_fst2sfpr.md"
   },
-  "lastMessageCount": 20
+  "lastMessageCount": 38
 }
