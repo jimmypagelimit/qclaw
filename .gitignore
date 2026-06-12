@@ -8,8 +8,6 @@ tmp/
 _cleaners_*.jpg
 task-artifact_*.md
 task-summary_*.md
-_music*.db
-_music_backup*.db
 
 # Album cover images (backup on NAS)
 tasks/2026-05-12-long-term-project/album-tracker/public/covers/artist-*.jpg
