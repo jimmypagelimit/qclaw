@@ -1,18 +1,23 @@
 ## 任务背景
-用户对音乐数据库进行多次操作，包括收听计数更新、专辑入库等。
+
+用户查询2026年听歌排行并更新各专辑收听次数，同时发现并修复total_listen_count与listen_history不同步的bug。
 
 ## 执行过程
-1. Panopticon专辑收听数2→3
-2. 内存刷写至2026-06-13.md
-3. 确认Pitchfork乐评翻译完成
-4. 内存二次刷写
-5. Teens of Style(2015)标准流程入库
-6. 第三次内存刷写
+
+1. 查询并确认2026年TOP3专辑
+2. 修复Natalia Lafourcade专辑封面
+3. 更新Teens of Denial收听次数
+4. 发现total_listen_count不随listen_history自动更新
+5. 手动同步total_listen_count并制定新写入规范
 
 ## 关键结果
-- Panopticon — Det hjemsøkte hjertet 收听数加一
-- Car Seat Headrest - Twin Fantasy 和 Teens of Denial 乐评翻译完成
-- Teens of Style 入库成功（album_id=554，RYM 3.36/5）
+
+- 2026TOP3确定：Tizzy Bac / Inundaremos / Natalia Lafourcade
+- Natalia Lafourcade封面已从iTunes重新下载替换
+- Teens of Denial收听+1（2→3次）
+- total_listen_count已同步（6→7）
+- 发现无trigger机制，新规则：每次加收听必须同时更新total_listen_count
 
 ## 结论建议
-Teens of Denial 译文中药物/酗酒段落的翻译风格待用户确认。
+
+已完成当日收听统计维护与封面修复，后续操作需注意total_listen_count的同步更新，建议考虑加数据库trigger实现自动化。

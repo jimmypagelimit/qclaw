@@ -60,8 +60,8 @@ app.get('/api/stats', async (_req, res) => {
         const result = {};
         // 总表统计
         const albumCount = (0, database_1.getTableCount)('albums');
-        const totalListens = (0, database_1.queryOne)('SELECT COALESCE(SUM(total_listen_count), 0) as total FROM albums');
-        const topAlbum = (0, database_1.queryOne)('SELECT * FROM albums ORDER BY total_listen_count DESC LIMIT 1');
+        const totalListens = (0, database_1.queryOne)('SELECT COUNT(*) as total FROM listen_history');
+        const topAlbum = (0, database_1.queryOne)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a ORDER BY cnt DESC LIMIT 1');
         result.albums = {
             count: albumCount,
             totalListens: totalListens?.total || 0,
@@ -156,14 +156,14 @@ app.get('/api/albums', async (req, res) => {
         const total = countResult[0]?.total || 0;
         // 排序
         const sortMap = {
-            listen: yearNum ? 'year_listen_count' : 'a.total_listen_count',
+            listen: yearNum ? 'year_listen_count' : 'cnt',
             score: 'a.overall_score',
             name: 'a.album_name',
             artist: 'a.artist',
             year: 'a.release_year',
         };
         const direction = dir === 'asc' ? 'ASC' : 'DESC';
-        const sortCol = sortMap[sort] || (yearNum ? 'year_listen_count' : 'a.total_listen_count');
+        const sortCol = sortMap[sort] || (yearNum ? 'year_listen_count' : 'cnt');
         if (yearNum) {
             sql += ` GROUP BY a.album_id`;
         }
@@ -197,7 +197,7 @@ app.get('/api/albums/:id', async (req, res) => {
 app.get('/api/artist/:name', async (req, res) => {
     try {
         const { limit = 50 } = req.query;
-        const albums = (0, database_1.query)('SELECT * FROM albums WHERE artist LIKE ? ORDER BY total_listen_count DESC LIMIT ?', [`%${req.params.name}%`, Number(limit)]);
+        const albums = (0, database_1.query)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a WHERE a.artist LIKE ? ORDER BY cnt DESC LIMIT ?', [`%${req.params.name}%`, Number(limit)]);
         res.json(albums);
     }
     catch (error) {
@@ -220,7 +220,7 @@ app.get('/api/top', async (req, res) => {
             res.json({ year: yearNum, albums });
         }
         else {
-            const albums = (0, database_1.query)('SELECT * FROM albums ORDER BY total_listen_count DESC LIMIT ?', [Number(limit)]);
+            const albums = (0, database_1.query)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a ORDER BY cnt DESC LIMIT ?', [Number(limit)]);
             res.json({ year: null, albums });
         }
     }
@@ -280,17 +280,17 @@ app.get('/api/artists', async (req, res) => {
     try {
         const { sort = 'listen', dir = 'desc', limit = 10 } = req.query;
         const sortMap = {
-            listen: 'total_listen_count',
+            listen: 'total_listens',
             score: 'avg_rating',
             name: 'name',
         };
         const direction = dir === 'asc' ? 'ASC' : 'DESC';
-        const sortCol = sortMap[sort] || 'total_listen_count';
+        const sortCol = sortMap[sort] || 'total_listens';
         const sql = `
       SELECT 
         artist_id,
         name as artist,
-        total_listen_count,
+        (SELECT COALESCE(SUM((SELECT COUNT(*) FROM listen_history lh2 WHERE lh2.album_id = a2.album_id)), 0) FROM albums a2 WHERE a2.artist_id = artists.artist_id) as total_listens,
         avg_rating,
         image_url
       FROM artists 
@@ -301,7 +301,7 @@ app.get('/api/artists', async (req, res) => {
         // 没有艺人头像的，fallback 到最佳专辑封面
         for (const ar of artists) {
             if (!ar.image_url) {
-                const coverRow = (0, database_1.queryOne)(`SELECT cover_image_url FROM albums WHERE artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY total_listen_count DESC LIMIT 1`, [ar.artist]);
+                const coverRow = (0, database_1.queryOne)(`SELECT cover_image_url FROM albums a WHERE a.artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) DESC LIMIT 1`, [ar.artist]);
                 ar.image_url = coverRow?.cover_image_url || null;
             }
         }
@@ -316,12 +316,12 @@ app.get('/api/artists', async (req, res) => {
  * 新增专辑
  * body: { ..., year: 2026 }
  * 逻辑：
- *   1. 写入 albums 表（判重：album_name + artist，已存在则 +1 total_listen_count）
+ *   1. 写入 albums 表（判重：album_name + artist，已存在则 listen_history +1）
  *   2. 写入 listen_history
  */
 app.post('/api/albums', async (req, res) => {
     try {
-        const { album_name, artist, country, region, genre, rating, description, is_compilation, first_listen_date, total_listen_count, release_company, cover_image_url, duration, release_year, style, producer, year = currentYear(), } = req.body;
+        const { album_name, artist, country, region, genre, rating, description, is_compilation, first_listen_date, release_company, cover_image_url, duration, release_year, style, producer, year = currentYear(), } = req.body;
         if (!album_name || !artist) {
             res.status(400).json({ error: 'album_name 和 artist 为必填项' });
             return;
@@ -329,16 +329,11 @@ app.post('/api/albums', async (req, res) => {
         const yr = Number(year);
         // 查找是否已存在
         const existing = (0, database_1.queryOne)('SELECT * FROM albums WHERE album_name = ? AND artist = ?', [album_name, artist]);
-        if (existing) {
-            // 已存在，+1 total_listen_count
-            const newCount = existing.total_listen_count + 1;
-            (0, database_1.execute)('UPDATE albums SET total_listen_count = ? WHERE album_id = ?', [newCount, existing.album_id]);
-        }
-        else {
+        if (!existing) {
             // 新增
             const fields = [
                 'album_name', 'artist', 'country', 'region', 'genre', 'rating',
-                'description', 'is_compilation', 'first_listen_date', 'total_listen_count',
+                'description', 'is_compilation', 'first_listen_date',
                 'release_company', 'cover_image_url', 'duration', 'release_year', 'style', 'producer'
             ];
             const values = fields.map(f => {
@@ -346,16 +341,12 @@ app.post('/api/albums', async (req, res) => {
                     f === 'country' ? country : f === 'region' ? region : f === 'genre' ? genre :
                         f === 'rating' ? rating : f === 'description' ? description :
                             f === 'is_compilation' ? is_compilation : f === 'first_listen_date' ? first_listen_date :
-                                f === 'total_listen_count' ? total_listen_count : f === 'release_company' ? release_company :
+                                f === 'release_company' ? release_company :
                                     f === 'cover_image_url' ? cover_image_url : f === 'duration' ? duration :
                                         f === 'release_year' ? release_year : f === 'style' ? style : f === 'producer' ? producer : null) ?? null;
                 return val;
             });
-            // 确保 total_listen_count 至少为 1
-            const tlcIndex = fields.indexOf('total_listen_count');
-            if (!values[tlcIndex])
-                values[tlcIndex] = 1;
-            // 确保 first_listen_date 有值
+            
             const fldIndex = fields.indexOf('first_listen_date');
             if (!values[fldIndex])
                 values[fldIndex] = new Date().toISOString().split('T')[0];
@@ -382,7 +373,7 @@ app.put('/api/albums/:id', async (req, res) => {
         const fields = req.body;
         const allowedFields = [
             'album_name', 'artist', 'country', 'region', 'genre', 'rating',
-            'description', 'is_compilation', 'first_listen_date', 'total_listen_count',
+            'description', 'is_compilation', 'first_listen_date',
             'release_company', 'cover_image_url', 'duration', 'release_year', 'style', 'producer'
         ];
         const setClauses = [];
@@ -433,7 +424,7 @@ app.delete('/api/albums/:id', async (req, res) => {
  * 记录收听
  * body: { count: 1, year: 2026 }
  * 逻辑：
- *   1. albums 表 +1 total_listen_count
+ *   1. listen_history 写一条记录
  *   2. 写入 listen_history
  */
 app.post('/api/albums/:id/listen', async (req, res) => {
@@ -446,9 +437,7 @@ app.post('/api/albums/:id/listen', async (req, res) => {
             res.status(404).json({ error: '专辑未找到' });
             return;
         }
-        // +1 total_listen_count
-        const newCount = album.total_listen_count + Number(count);
-        (0, database_1.execute)('UPDATE albums SET total_listen_count = ? WHERE album_id = ?', [newCount, id]);
+
         // 设置首次收听日期（如果为空）
         if (!album.first_listen_date) {
             const today = new Date().toISOString().split('T')[0];

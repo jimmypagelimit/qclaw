@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "音乐库操作",
+  "name": "收听统计维护",
   "status": "active",
   "createdAt": "2026-05-21T23:29:55.380Z",
-  "updatedAt": "2026-06-13T04:52:46.320Z",
+  "updatedAt": "2026-06-13T11:12:49.191Z",
   "agents": [
     {
       "id": "agent_3tj7bsnd",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_7hoz625k",
-    "title": "音乐库操作",
+    "title": "收听统计维护",
     "createdAt": "2026-05-21T23:29:55.380Z",
     "file": "summary_7hoz625k.md"
   },
-  "lastMessageCount": 107
+  "lastMessageCount": 76
 }
