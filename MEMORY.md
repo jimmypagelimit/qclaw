@@ -138,3 +138,7 @@
 ## 用户身份与偏好
 
 - 张树家二孩出生（2026年6月前后）
+
+## 经验与决策
+
+- style=大类（Rock/Pop/Folk/Punk/Metal），genre=细分类（RYM 细类）

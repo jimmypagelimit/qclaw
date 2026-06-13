@@ -1,0 +1,25 @@
+{
+  "id": "85672584-6de4-4312-b283-3fdb0765cbd7",
+  "name": "专辑封面补全",
+  "status": "active",
+  "createdAt": "2026-06-13T00:34:23.827Z",
+  "updatedAt": "2026-06-13T00:34:23.827Z",
+  "agents": [
+    {
+      "id": "agent_c0rfmrkf",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-13T00:34:23.827Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_bvz8zasl",
+    "title": "专辑封面补全",
+    "createdAt": "2026-06-13T00:34:23.827Z",
+    "file": "summary_bvz8zasl.md"
+  },
+  "lastMessageCount": 38
+}

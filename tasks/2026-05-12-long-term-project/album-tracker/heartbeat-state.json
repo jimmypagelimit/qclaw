@@ -1,10 +1,11 @@
 {
   "lastChecks": {
-    "covers": "2026-06-12T05:21:00+08:00",
-    "covers_total": 504,
-    "covers_remaining": 5,
-    "c_drive_check": "2026-06-12T05:20:00+08:00",
-    "c_drive_used_gb": 45.4,
+    "covers": "2026-06-13T13:26:00+08:00",
+    "covers_total": 505,
+    "covers_remaining": 0,
+    "covers_done": true,
+    "c_drive_check": "2026-06-13T19:01:00+08:00",
+    "c_drive_used_gb": 50.2,
     "music_sync": "2026-06-10T04:10:00+08:00"
   },
   "notes": {
@@ -17,6 +18,11 @@
     "2026-06-06": "[prev note]",
     "2026-06-09-a": "[prev note]",
     "2026-06-09-b": "[prev note]",
-    "2026-06-12": "C盘5.4GB正常(H<50GB) H/D盘未挂载跳过同步 封面：1/6成功(郑钧=zj) 5张未找到(许巍/猿&一楠/苍蝇/黑麒麟/Nokturnal Mortum) 本地DB队列耗尽 Indie+哲学+文学动态已检查 日总结17:00"
+    "2026-06-12": "C盘45.4GB正常(<50GB) H/D盘未挂载跳过同步 封面：1/6成功(郑钧=zj) 5张未找到(许巍/猿&一楠/苍蝇/黑麒麟/Nokturnal Mortum) 本地DB队列耗尽 Indie+哲学+文学动态已检查 日总结17:00",
+    "2026-06-13": "C盘46.5GB正常(<50GB) 封面下载：1/10成功(郑钧=zj) 9张未找到 输出质量已反思 周六=Metal/Hardcore线(深夜跳过) 宗教动态(周六任务，深夜跳过)",
+    "2026-06-13-c": "C盘46.5GB正常(<50GB) H/D盘未挂载跳过同步 封面0/10冷门无源 Metal/Hardcore+宗教RSS已检查 飞书发送400失败(bot可能已移出群)",
+    "2026-06-13-afternoon": "C盘47.6GB正常(<50GB) 封面06:01已跑(0/10) H/D盘未挂载跳过 Metal/Hardcore+宗教RSS已检查 再次确认飞书400：bot已从群移出，无法发送通知",
+    "2026-06-13-final": "C盘47.6GB正常(<50GB) 封面任务完成：505张全部处理，最后4张均无源(假假条/刀郎/装咖人/张福全) 剩余covers_remaining=0，covers_done=true，队列已清空",
+    "2026-06-13-1901": "C盘50.2GB告警(>50GB阈值) H/D盘未挂载跳过同步 封面任务已完成无需运行 Metal/Hardcore+宗教RSS已检查 日总结19:01 commit+push"
   }
 }

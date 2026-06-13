@@ -1,0 +1,25 @@
+{
+  "id": "10cb004c-c4a4-4204-8381-3e4af5f7e4b8",
+  "name": "宗教动态汇总",
+  "status": "active",
+  "createdAt": "2026-06-13T00:34:03.250Z",
+  "updatedAt": "2026-06-13T00:34:03.250Z",
+  "agents": [
+    {
+      "id": "agent_j0w4bzvi",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-13T00:34:03.250Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_c00q6jgz",
+    "title": "宗教动态汇总",
+    "createdAt": "2026-06-13T00:34:03.250Z",
+    "file": "summary_c00q6jgz.md"
+  },
+  "lastMessageCount": 27
+}
