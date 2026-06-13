@@ -1,0 +1,135 @@
+[
+  {
+    "url": "https://pitchfork.com/reviews/albums/olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love",
+    "album": "you seem pretty sad for a girl so in love",
+    "artist": "Olivia Rodrigo",
+    "pitchfork_score": 8.3,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Pop/R&B",
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "label": "Geffen",
+    "release_year": "2026",
+    "review_date": "June 12, 2026",
+    "author": "Molly Mary O’Brien",
+    "author_names": [
+      "Molly Mary O’Brien"
+    ],
+    "bnm": true,
+    "bnr": false,
+    "dek": "The pop star’s third album is a heartbreaking account of an intense romance and its demise. Its mood is perfectly reflected in the music, and her evolution as a songwriter is a sight to behold.",
+    "image_url": "https://media.pitchfork.com/photos/6a1064f4cdd971dc49dbe97b/2:3/w_800,h_1200,c_limit/Olivia%20Rodrigo%20-%20You%20Seem%20Pretty%20Sad%20for%20a%20Girl%20So%20in%20Love%20album%20art%20(no%20sticker).png",
+    "publish_date": "June 12, 2026",
+    "content_title": null,
+    "position": 1
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/skrillex-soma",
+    "album": "SOMA",
+    "artist": "Skrillex",
+    "pitchfork_score": 7.4,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Electronic",
+    "genres": [
+      "Electronic"
+    ],
+    "label": "Owsla",
+    "release_year": "2026",
+    "review_date": "June 12, 2026",
+    "author": "Kiana Mickles",
+    "author_names": [
+      "Kiana Mickles"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "Brazilian funk, techno, trance, Miami bass, dubstep, and even tech-house all find a place on Sonny Moore’s latest, a stylistic and collaborative free-for-all that rarely settles in one place for long.",
+    "image_url": "https://media.pitchfork.com/photos/6a21bc30fc892426f2169b0a/3:2/w_3000,h_2000,c_limit/Soma_Cover_Final.jpeg",
+    "publish_date": "June 12, 2026",
+    "content_title": null,
+    "position": 2
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/baauer-u",
+    "album": "U",
+    "artist": "Baauer",
+    "pitchfork_score": 6.9,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Electronic",
+    "genres": [
+      "Electronic"
+    ],
+    "label": "LuckyMe",
+    "release_year": "2026",
+    "review_date": "June 12, 2026",
+    "author": "Hattie Lindert",
+    "author_names": [
+      "Hattie Lindert"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "Positioned as a return to the dancefloor, the Brooklyn-based producer’s first album in six years is filled with chopped-up throwback samples. It’s crowd-pleasing and joyful but somewhat anemic.",
+    "image_url": "https://media.pitchfork.com/photos/69e7df2081912dd21c7a0155/3:2/w_3000,h_2000,c_limit/Baauer_U%203000.jpg",
+    "publish_date": "June 12, 2026",
+    "content_title": null,
+    "position": 3
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/ali-sethi-gregory-rogove-room-jhoom",
+    "album": "Room Jhoom",
+    "artist": "Ali Sethi",
+    "pitchfork_score": 7.4,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Experimental / Pop/R&B",
+    "genres": [
+      "Experimental",
+      "Pop",
+      "R&B"
+    ],
+    "label": "Zubberdust Media",
+    "release_year": "2026",
+    "review_date": "June 12, 2026",
+    "author": "Arman Khan",
+    "author_names": [
+      "Arman Khan"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "The Pakistani American musician’s latest collaborative album is a quiet meditation on separation and yearning.",
+    "image_url": "https://media.pitchfork.com/photos/6a2b0683146023d76d3367b1/2:3/w_2000,h_3000,c_limit/Ali%20Sethi%20Gregory%20Rogove%20Room%20Jhoom.jpg",
+    "publish_date": "June 12, 2026",
+    "content_title": null,
+    "position": 4
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/yhwh-nailgun-magazine",
+    "album": "Magazine",
+    "artist": "YHWH Nailgun",
+    "pitchfork_score": 8,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Rock",
+    "genres": [
+      "Rock"
+    ],
+    "label": "4AD",
+    "release_year": "2026",
+    "review_date": "June 11, 2026",
+    "author": "Grayson Haver Currin",
+    "author_names": [
+      "Grayson Haver Currin"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "Though only half the length of their 2025 breakthrough debut, the New York quartet’s second album is dense with ideas and enlivened by purpose.",
+    "image_url": "https://media.pitchfork.com/photos/6a1ed6c7049d13b070a25593/2:3/w_2666,h_3999,c_limit/YHWH_magazine%20packshot%20(3).jpg",
+    "publish_date": "June 11, 2026",
+    "content_title": null,
+    "position": 5
+  }
+]

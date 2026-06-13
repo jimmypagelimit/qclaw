@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://pitchfork.com/reviews/albums/car-seat-headrest-teen-of-denial-joes-story",
+    "album": "Teen of Denial: Joe’s Story",
+    "artist": "Car Seat Headrest",
+    "pitchfork_score": 6.8,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Rock",
+    "genres": [
+      "Rock"
+    ],
+    "label": "Matador",
+    "release_year": "2026",
+    "review_date": "May 28, 2026",
+    "author": "Ethan Beck",
+    "author_names": [
+      "Ethan Beck"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "Will Toledo tinkers with his breakthrough release, rerecording pieces, changing lyrics, and swapping out some tracks. Even its more perplexing choices offer a reminder of the original record’s charm.",
+    "image_url": "https://media.pitchfork.com/photos/6a0cb11dc470b3acbf4b7052/3:2/w_2046,h_1364,c_limit/1%20(17).jpg",
+    "publish_date": "May 28, 2026",
+    "content_title": null,
+    "position": 1
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/car-seat-headrest-the-scholars",
+    "album": "The Scholars",
+    "artist": "Car Seat Headrest",
+    "pitchfork_score": 6.5,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Rock",
+    "genres": [
+      "Rock"
+    ],
+    "label": "Matador",
+    "release_year": "2025",
+    "review_date": "May 8, 2025",
+    "author": "Arielle Gordon",
+    "author_names": [
+      "Arielle Gordon"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "In aiming to write a rock opera for the playlist era, Will Toledo crafts some of his band’s most inspired compositions&#8212;but weighs them down with a confusing plot and endless stylistic changeups.",
+    "image_url": "https://media.pitchfork.com/photos/67c610011fa37ce9c4121573/2:3/w_2667,h_4000,c_limit/Car-Seat-Headrest-The-Scholars.jpeg",
+    "publish_date": "May 8, 2025",
+    "content_title": null,
+    "position": 2
+  },
+  {
+    "url": "https://pitchfork.com/reviews/albums/car-seat-headrest-making-a-door-less-open",
+    "album": "Making a Door Less Open",
+    "artist": "Car Seat Headrest",
+    "pitchfork_score": 6.6,
+    "reader_score": null,
+    "reader_count": null,
+    "genre": "Rock",
+    "genres": [
+      "Rock"
+    ],
+    "label": "Matador",
+    "release_year": "2020",
+    "review_date": "May 1, 2020",
+    "author": "Ian Cohen",
+    "author_names": [
+      "Ian Cohen"
+    ],
+    "bnm": false,
+    "bnr": false,
+    "dek": "On his odd and ambitious new album, singer-songwriter Will Toledo dons a gas mask, adds electronic textures, and tries to separate himself from the indie fame of Car Seat Headrest.",
+    "image_url": "https://media.pitchfork.com/photos/5ea73861fbaf7a0008dcf2a5/1:1/w_800,h_800,c_limit/Making%20a%20Door%20Less%20Open_Car%20Seat%20Headrest.jpg",
+    "publish_date": "May 1, 2020",
+    "content_title": null,
+    "position": 3
+  }
+]
