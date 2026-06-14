@@ -4,11 +4,11 @@
     "covers_total": 505,
     "covers_remaining": 0,
     "covers_done": true,
-    "c_drive_check": "2026-06-14T09:58:00+08:00",
-    "c_drive_used_gb": 51.3,
-    "c_drive_alert": true,
+    "c_drive_check": "2026-06-14T19:03:00+08:00",
+    "c_drive_used_gb": 47.0,
+    "c_drive_alert": false,
     "music_sync": "2026-06-10T04:10:00+08:00",
-    "c_drive_check": "2026-06-14T11:06:00+08:00"
+    "weekly_review": "2026-06-14"
   },
   "notes": {
     "2026-05-22": "[prev note]",
@@ -29,6 +29,7 @@
     "2026-06-13-1934": "C盘50.2GB告警已记录(上次19:01检查) 封面任务已完成 covers_remaining=0",
     "2026-06-14-0631": "C盘50.8GB告警(>50GB阈值) H/D盘未挂载跳过同步 封面任务已完成 周日深挖线RSS已检查(Bandcamp/Quietus/LoBF/Paste/Toilet)",
     "2026-06-14-0958": "C盘51.3GB告警(持续上涨，06:31→09:58从50.8→51.3GB,+0.5GB/3.5h) 飞书400仍失败(bot被移出群) 封面任务已完成 周日文学RSS无重要更新(Reactor/Index/Orion均常规) 输出质量反思：昨日多次heartbeat注意到C盘快速涨(47.6→50.2→50.8→51.3)，应建议用户清理",
-    "2026-06-14-1106": "C盘51.3GB告警(G:drive不存在+music_sync报错) Web服务器已重启(port 3456) 封面任务已完成 covers_done=true G盘/H盘/D盘均未挂载，music_sync无法运行"
+    "2026-06-14-1106": "C盘51.3GB告警(G:drive不存在+music_sync报错) Web服务器已重启(port 3456) 封面任务已完成 covers_done=true G盘/H盘/D盘均未挂载，music_sync无法运行",
+    "2026-06-14-1903": "C盘47.0GB正常(<50GB阈值，比上午11:06的51.3GB下降了4.3GB) 今日所有heartbeat任务已完成：输出质量反思+Tizzy Bac入库+RYM诊断+四项目代号确立+17:01日总结 周日身心回顾提醒待发(20:00-21:30)"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "id": "e42fc8cc-b048-47e6-a899-b0def2216639",
+  "name": "独立音乐深挖",
+  "status": "active",
+  "createdAt": "2026-06-14T03:04:43.174Z",
+  "updatedAt": "2026-06-14T03:04:43.175Z",
+  "agents": [
+    {
+      "id": "agent_0bd0u4hh",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-14T03:04:43.174Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_yx45j5yg",
+    "title": "独立音乐深挖",
+    "createdAt": "2026-06-14T03:04:43.175Z",
+    "file": "summary_yx45j5yg.md"
+  },
+  "lastMessageCount": 31
+}
