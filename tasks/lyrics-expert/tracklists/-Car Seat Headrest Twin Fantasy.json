@@ -1,0 +1,56 @@
+{
+  "artist": "\"",
+  "album": "Car Seat Headrest\\ \\Twin Fantasy\\",
+  "tracks": [
+    {
+      "position": 1,
+      "title": "My Boy (Twin Fantasy)",
+      "duration_ms": 172000
+    },
+    {
+      "position": 2,
+      "title": "Beach Life‐in‐Death",
+      "duration_ms": 799000
+    },
+    {
+      "position": 3,
+      "title": "Stop Smoking (We Love You)",
+      "duration_ms": 89000
+    },
+    {
+      "position": 4,
+      "title": "Sober to Death",
+      "duration_ms": 304000
+    },
+    {
+      "position": 5,
+      "title": "Nervous Young Inhumans",
+      "duration_ms": 325000
+    },
+    {
+      "position": 6,
+      "title": "Bodys",
+      "duration_ms": 406000
+    },
+    {
+      "position": 7,
+      "title": "Cute Thing",
+      "duration_ms": 339000
+    },
+    {
+      "position": 8,
+      "title": "High to Death",
+      "duration_ms": 459000
+    },
+    {
+      "position": 9,
+      "title": "Famous Prophets (Stars)",
+      "duration_ms": 970000
+    },
+    {
+      "position": 10,
+      "title": "Twin Fantasy (Those Boys)",
+      "duration_ms": 414000
+    }
+  ]
+}
