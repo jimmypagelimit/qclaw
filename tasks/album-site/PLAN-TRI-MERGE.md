@@ -288,24 +288,41 @@ Phase 3 (旧列清理)      → 最后一步，确认无依赖后执行
 
 ---
 
-## 九、MusicBrainz 数据源说明（2026-06-14）
+## 九、MusicBrainz 数据源说明（2026-06-15 更新）
 
-### 接口可用性（实测）
+### API 路径（官方文档确认，全对）
 
-| 接口 | 状态 | 用途 |
+| 操作 | 路径 | 说明 |
 |------|------|------|
-| `/ws/2/release/` 搜索 | ✅ Python 可通 | 查 MBID、年份、发行版本 |
-| `/ws/2/artist/` 搜索 | ✅ Python 可通 | 查艺人 MBID、国家 |
-| `/ws/2/release-group/{mbid}?inc=genres` | ❌ SSL 握手失败 | Genre tags 获取失败 |
-| `coverartarchive.org` 封面 | ❌ SSL 握手失败 | 封面下载失败 |
+| 搜索 release-group | `/ws/2/release-group/?query=...&fmt=json` | 拿 MBID + 年份 |
+| 查询 release-group | `/ws/2/release-group/{mbid}?inc=genres&fmt=json` | 拿流派 tags |
+| 搜索 release | `/ws/2/release/?query=...&fmt=json` | 拿 release ID（用于封面）|
+| 查询 release | `/ws/2/release/{mbid}?inc=url-rels&fmt=json` | 拿 Cover Art Archive 关系 |
+| Cover Art | `https://coverartarchive.org/release/{release_id}` | 直接拿封面 URL |
 
-### 原因分析
-Python 3.11 urllib/requests 在 Windows 上 TLS 1.3 握手时，对 musicbrainz.org 部分后端节点（coverartarchive.org、所有 `/release-group/` 请求）报 `UNEXPECTED_EOF_WHILE_READING`。curl 可通，说明服务器正常，是 Python SSL 栈兼容性问题。
+### Windows 可用性（实测，2026-06-14~15）
 
-### 可用场景
-- **MBID 获取**：搜索专辑/艺人得到 MusicBrainz ID，后续可用于精确查询
-- **年份/发行信息确认**：RYM 搜索结果的 `date` 字段
-- **中转站**：MBID → Discogs/其他支持 MBID 查询的 API
+| 工具 | 搜索 API | lookup/release-group | Cover Art |
+|------|--------|---------------------|----------|
+| Python urllib | ❌ 间歇失败 | ❌ 必挂 | ❌ 必挂 |
+| Python requests | ❌ 间歇失败 | ❌ 必挂 | ❌ 必挂 |
+| Windows curl (Schannel) | ❌ 间歇失败 | ❌ 必挂 | ❌ 必挂 |
+
+**错误一致**：`SSL: UNEXPECTED_EOF_WHILE_READING` (Python) / `schannel: failed to receive handshake` (curl)
+
+### 根因
+MusicBrainz CDN（Fastly）的 TLS 配置与 Windows 客户端（无论 Python SSL 还是 curl/Schannel）不兼容。不是路径问题，是 Windows 全平台问题。Mac/Linux (OpenSSL) 可以通。
+
+### 间歇性说明
+- 搜索 API 有时能通（不同 CDN 节点行为不同）
+- lookup/release-group/Cover Art 基本必挂
+- 昨天（06-14）全天挂，今天（06-15）可能部分恢复
+
+### S 项目中的定位
+1. **不依赖 MusicBrainz 作为自动化数据源**（Windows 不可靠）
+2. **手动查 MBID**（Mac/Linux 上跑，或网页手动查）
+3. **辅助用途**：MBID 可对接 Discogs 等支持 MBID 查询的 API
+4. **优先级最低**：RYM + Pitchfork 为主，MusicBrainz 备查
 
 ### User-Agent 要求
 所有请求必须带 `User-Agent`，格式：`App名/版本 (联系方式)`
@@ -315,6 +332,9 @@ headers={'User-Agent': 'AlbumTracker/1.0 (jim@example.com)'}
 
 ### 限速
 1 req/sec，超速会 503。
+
+### 结论
+路径全对，Windows 上跑不通。S 项目不依赖此数据源，偶尔手动补 MBID 即可。
 
 ---
 
