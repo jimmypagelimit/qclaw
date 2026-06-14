@@ -1,0 +1,31 @@
+============================================================
+网易云音乐 - 全面歌词API测试
+英文歌搜索: 10首
+  歌曲: Fill In The Blank (id=410846252)
+  原歌词: 2361 chars, 有时间戳: True
+  翻译歌词: 947 chars, 有时间戳: True
+  翻译样本已保存: C:\Users\qujt\.qclaw\workspace\tasks\lyrics-expert\reports\netease_translated_sample.lrc
+
+刺猬乐队搜索: 1首
+  歌曲: 犬ぽち！ (id=2750872982)
+  原歌词: 639 chars
+  翻译: 525 chars
+
+============================================================
+LyricsTranslate - 爬取测试
+艺人页面: status=200, length=144421
+歌曲链接数: 25
+翻译链接数: 0
+  歌词页面 (car-seat-headrest-its-only-sex): status=200, length=98859
+  找到 ltf class: 1 个
+    内容: 'The other night I cried while thinking of having sex with you'
+  相关CSS class: ['header__body header-main', 'header__profile-text', 'text', 'page page -text', 'content', 'content__container', 'content__content', 'content__content', 'top__title-text', 'bg js-song-tr', 'songs__action-btn hide_t', 'request__row-content -album', 'request__row-content -album', 'text', 'text', 'text', 'notice-warning__text', 'notice-warning__text', 'notice-warning__text', 'translate', 'translate__body -flex', 'translate__block', 'translate__title', 'ltf', 'translate__btns', 'translate__btns-thanks', 'text', 'translate__thanks-count', 'translate__thanks-hint', 'translate__btns-share']
+
+搜索页: status=0, length=0
+
+============================================================
+LRCLIB - 中文歌词测试
+刺猬乐队搜索: 0结果
+
+============================================================
+=== 汇总 ===

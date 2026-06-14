@@ -1,0 +1,48 @@
+{
+  "LRCLIB": {
+    "status": 200,
+    "results": 20,
+    "synced": true,
+    "plain": true,
+    "free": true,
+    "api": true,
+    "notes": "英文歌命中率高，无中文，有LRC时间戳"
+  },
+  "Musixmatch": {
+    "status": 0,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "LyricsTranslate": {
+    "status": 0
+  },
+  "Genius": {
+    "status": 0,
+    "error": "HTTP Error 404: Not Found",
+    "notes": "CF拦截或超时"
+  },
+  "AZLyrics": {
+    "status": 0,
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Lyrics.com": {
+    "status": 200,
+    "page_len": 144257,
+    "has_results": true
+  },
+  "Genius_API": {
+    "status": 0
+  },
+  "ChartLyrics": {
+    "status": 0
+  },
+  "NetEase": {
+    "status": 200,
+    "songs": 5,
+    "has_lrc": true,
+    "has_translated": false,
+    "notes": "中文歌词首选，有翻译歌词，API需Referer"
+  },
+  "OVH": {
+    "status": 0
+  }
+}

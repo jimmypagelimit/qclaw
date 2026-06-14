@@ -1,0 +1,20 @@
+{
+  "NetEase": {
+    "search_status": 200,
+    "songs_found": 10,
+    "has_original_lrc": true,
+    "has_translated_lrc": true,
+    "has_timestamps": true,
+    "sample_song": "Fill In The Blank",
+    "sample_id": 410846252
+  },
+  "NetEase_Chinese": {
+    "has_original": true,
+    "has_translation": true,
+    "lrc_length": 639
+  },
+  "LRCLIB_Chinese": {
+    "results": 0,
+    "any_lyrics": false
+  }
+}
