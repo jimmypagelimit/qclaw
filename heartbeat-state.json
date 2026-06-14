@@ -12,10 +12,11 @@
     "rss_music_sunday_done": true,
     "weekly_review": "2026-06-08",
     "monthly_review": "2026-05-01",
-    "last_heartbeat": "2026-06-14T15:32:00+08:00",
-    "feishu_error": null,
+    "last_heartbeat": "2026-06-14T17:01:00+08:00",
+    "feishu_error": "400: 飞书 bot 推送失败，需用户处理 bot 加群/权限问题",
     "feishu_last_check": "2026-06-14",
     "covers_error": null,
-    "weekly_review_due": true
+    "weekly_review_due": true,
+    "daily_summary_done": true
   }
 }
