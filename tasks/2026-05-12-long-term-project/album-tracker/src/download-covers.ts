@@ -21,7 +21,7 @@ import * as path from 'path';
 import https from 'https';
 import http from 'http';
 
-const DB_PATH = 'G:/原创计划/music';
+const DB_PATH = path.join(__dirname, '..', 'music');
 const COVERS_DIR = path.join(__dirname, '..', 'covers');
 const DB_TABLES = ['albums', 'albums_2024', 'albums_2025', 'albums_2026'];
 

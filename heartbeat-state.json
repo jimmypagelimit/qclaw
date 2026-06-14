@@ -1,18 +1,21 @@
 {
   "lastChecks": {
-    "covers": 10,
+    "covers": 20,
     "covers_total": 216,
     "covers_remaining": 279,
     "c_drive_check": "2026-06-14",
-    "c_drive_exceeded": true,
-    "c_drive_used_gb": 51.2,
+    "c_drive_exceeded": false,
+    "c_drive_used_gb": 47.0,
+    "feishu_c_drive_alert": null,
     "rss": 54,
     "rss_music_sunday": "2026-06-14",
+    "rss_music_sunday_done": true,
     "weekly_review": "2026-06-08",
     "monthly_review": "2026-05-01",
-    "last_heartbeat": "2026-06-14T00:39:00+08:00",
-    "feishu_error": "message tool 400 error - need troubleshooting",
-    "covers_error": "G:\\原创计划\\music not found",
+    "last_heartbeat": "2026-06-14T15:32:00+08:00",
+    "feishu_error": null,
+    "feishu_last_check": "2026-06-14",
+    "covers_error": null,
     "weekly_review_due": true
   }
 }
