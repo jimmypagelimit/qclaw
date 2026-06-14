@@ -61,7 +61,11 @@ app.get('/api/stats', async (_req, res) => {
         // 总表统计
         const albumCount = (0, database_1.getTableCount)('albums');
         const totalListens = (0, database_1.queryOne)('SELECT COUNT(*) as total FROM listen_history');
-        const topAlbum = (0, database_1.queryOne)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a ORDER BY cnt DESC LIMIT 1');
+        const topAlbum = (0, database_1.queryOne)(`SELECT a.*, COUNT(lh.id) as cnt 
+         FROM albums a 
+         LEFT JOIN listen_history lh ON a.album_id = lh.album_id 
+         GROUP BY a.album_id 
+         ORDER BY cnt DESC LIMIT 1`);
         result.albums = {
             count: albumCount,
             totalListens: totalListens?.total || 0,
@@ -156,14 +160,14 @@ app.get('/api/albums', async (req, res) => {
         const total = countResult[0]?.total || 0;
         // 排序
         const sortMap = {
-            listen: yearNum ? 'year_listen_count' : 'cnt',
+            listen: yearNum ? 'year_listen_count' : '(SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id)',
             score: 'a.overall_score',
             name: 'a.album_name',
             artist: 'a.artist',
             year: 'a.release_year',
         };
         const direction = dir === 'asc' ? 'ASC' : 'DESC';
-        const sortCol = sortMap[sort] || (yearNum ? 'year_listen_count' : 'cnt');
+        const sortCol = sortMap[sort] || (yearNum ? 'year_listen_count' : '(SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id)');
         if (yearNum) {
             sql += ` GROUP BY a.album_id`;
         }
@@ -197,7 +201,7 @@ app.get('/api/albums/:id', async (req, res) => {
 app.get('/api/artist/:name', async (req, res) => {
     try {
         const { limit = 50 } = req.query;
-        const albums = (0, database_1.query)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a WHERE a.artist LIKE ? ORDER BY cnt DESC LIMIT ?', [`%${req.params.name}%`, Number(limit)]);
+        const albums = (0, database_1.query)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as cnt FROM albums a WHERE artist LIKE ? ORDER BY cnt DESC LIMIT ?', [`%${req.params.name}%`, Number(limit)]);
         res.json(albums);
     }
     catch (error) {
@@ -279,29 +283,32 @@ app.get('/api/countries', async (req, res) => {
 app.get('/api/artists', async (req, res) => {
     try {
         const { sort = 'listen', dir = 'desc', limit = 10 } = req.query;
-        const sortMap = {
-            listen: 'total_listens',
-            score: 'avg_rating',
-            name: 'name',
-        };
         const direction = dir === 'asc' ? 'ASC' : 'DESC';
-        const sortCol = sortMap[sort] || 'total_listens';
+        // 收听次数从 listen_history 实时计算
         const sql = `
       SELECT 
-        artist_id,
-        name as artist,
-        (SELECT COALESCE(SUM((SELECT COUNT(*) FROM listen_history lh2 WHERE lh2.album_id = a2.album_id)), 0) FROM albums a2 WHERE a2.artist_id = artists.artist_id) as total_listens,
-        avg_rating,
-        image_url
-      FROM artists 
-      ORDER BY ${sortCol} IS NULL, ${sortCol} ${direction}
+        a.artist_id,
+        a.name as artist,
+        a.avg_rating,
+        a.image_url,
+        COUNT(lh.id) as listen_count
+      FROM artists a
+      LEFT JOIN albums al ON a.name = al.artist
+      LEFT JOIN listen_history lh ON al.album_id = lh.album_id
+      GROUP BY a.artist_id, a.name, a.avg_rating, a.image_url
+      ORDER BY ${sort === 'listen' ? 'listen_count' : sort === 'score' ? 'a.avg_rating' : 'a.name'} IS NULL,
+               ${sort === 'listen' ? 'listen_count' : sort === 'score' ? 'a.avg_rating' : 'a.name'} ${direction}
       LIMIT ?
     `;
         const artists = (0, database_1.query)(sql, [Number(limit)]);
-        // 没有艺人头像的，fallback 到最佳专辑封面
+        // 没有艺人头像的，fallback 到最佳专辑封面（按收听次数）
         for (const ar of artists) {
             if (!ar.image_url) {
-                const coverRow = (0, database_1.queryOne)(`SELECT cover_image_url FROM albums a WHERE a.artist = ? AND cover_image_url IS NOT NULL AND cover_image_url != '' ORDER BY (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) DESC LIMIT 1`, [ar.artist]);
+                const coverRow = (0, database_1.queryOne)(`SELECT cover_image_url FROM albums al
+           JOIN listen_history lh ON al.album_id = lh.album_id
+           WHERE al.artist = ? AND al.cover_image_url IS NOT NULL AND al.cover_image_url != ''
+           GROUP BY al.album_id
+           ORDER BY COUNT(lh.id) DESC LIMIT 1`, [ar.artist]);
                 ar.image_url = coverRow?.cover_image_url || null;
             }
         }
@@ -316,7 +323,7 @@ app.get('/api/artists', async (req, res) => {
  * 新增专辑
  * body: { ..., year: 2026 }
  * 逻辑：
- *   1. 写入 albums 表（判重：album_name + artist，已存在则 listen_history +1）
+ *   1. 写入 albums 表（判重：album_name + artist，已存在则写入 listen_history）
  *   2. 写入 listen_history
  */
 app.post('/api/albums', async (req, res) => {
@@ -329,7 +336,11 @@ app.post('/api/albums', async (req, res) => {
         const yr = Number(year);
         // 查找是否已存在
         const existing = (0, database_1.queryOne)('SELECT * FROM albums WHERE album_name = ? AND artist = ?', [album_name, artist]);
-        if (!existing) {
+        if (existing) {
+            // 已存在，写入 listen_history 新增一条收听记录
+            (0, database_1.execute)('INSERT INTO listen_history (album_id, listen_date, listen_year, notes, source) VALUES (?, ?, ?, ?, ?)', [existing.album_id, new Date().toISOString().split('T')[0], yr, '', '']);
+        }
+        else {
             // 新增
             const fields = [
                 'album_name', 'artist', 'country', 'region', 'genre', 'rating',
@@ -346,7 +357,7 @@ app.post('/api/albums', async (req, res) => {
                                         f === 'release_year' ? release_year : f === 'style' ? style : f === 'producer' ? producer : null) ?? null;
                 return val;
             });
-            
+            // 确保 first_listen_date 有值
             const fldIndex = fields.indexOf('first_listen_date');
             if (!values[fldIndex])
                 values[fldIndex] = new Date().toISOString().split('T')[0];
@@ -420,12 +431,11 @@ app.delete('/api/albums/:id', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-/**
+/*
  * 记录收听
  * body: { count: 1, year: 2026 }
  * 逻辑：
- *   1. listen_history 写一条记录
- *   2. 写入 listen_history
+ *   写入 listen_history
  */
 app.post('/api/albums/:id/listen', async (req, res) => {
     try {
@@ -437,15 +447,14 @@ app.post('/api/albums/:id/listen', async (req, res) => {
             res.status(404).json({ error: '专辑未找到' });
             return;
         }
-
+        // 写入 listen_history（count 条记录）
+        for (let i = 0; i < Number(count); i++) {
+            (0, database_1.execute)('INSERT INTO listen_history (album_id, listen_date, listen_year, notes, source) VALUES (?, ?, ?, ?, ?)', [id, new Date().toISOString().split('T')[0], yr, '', '']);
+        }
         // 设置首次收听日期（如果为空）
         if (!album.first_listen_date) {
             const today = new Date().toISOString().split('T')[0];
             (0, database_1.execute)('UPDATE albums SET first_listen_date = ? WHERE album_id = ?', [today, id]);
-        }
-        // 写入 listen_history
-        for (let i = 0; i < Number(count); i++) {
-            (0, database_1.execute)('INSERT INTO listen_history (album_id, listen_date, listen_year, notes, source) VALUES (?, ?, ?, ?, ?)', [id, new Date().toISOString().split('T')[0], yr, '', '']);
         }
         const updated = (0, database_1.queryOne)('SELECT * FROM albums WHERE album_id = ?', [id]);
         (0, database_1.saveDatabase)();

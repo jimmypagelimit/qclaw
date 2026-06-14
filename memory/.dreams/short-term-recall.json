@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-13T12:20:10.554Z",
+  "updatedAt": "2026-06-13T14:03:01.474Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -1067,16 +1067,17 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-06-08 记忆 ## 09:31 - Heartbeat 首次执行 ### 执行的任务 1. ✅ 读取 HEARTBEAT.md 并遵循执行 2. ✅ C: 盘空间检查 - 41.6 GB (正常，<50GB) 3. ✅ 检查 H: 盘挂载状态 - 未挂载（跳过封面下载和音乐同步） 4. ✅ 更新 heartbeat-state.json（记录今日检查时间） 5. ✅ 输出质量反思（检查昨日输出） ### 输出质量反思结果 **自查问题：** - ✅ 无过程堆砌 - 技术排查记录有必要 - ✅ 无信息轰炸 - 使用表格/代码块/emoji组织 - ⚠️ 记忆文件有重复内容（昨日文件写入了3次相同内容） - ✅ 无过度解读 - 用户问什么答什么 - ✅ 无废话 - 直接执行，结果导向 **改进措施：** - 今天写记忆文件时先检查是否已存在相同内容 - 将 RYM CloakBrowser 方案封装为可复用脚本 ### 今日已完成任务 - ✅ Indie 音乐 RSS 检查 (08:47) - ✅ 文学 RSS 检查 (09:02) - ✅ C: 盘空间监控 (09:31) ### 待执行任务 - ⏳ 17:00 每日工作总结与推送 - ❌ 专辑封面下载（H:盘未挂载，跳过） - ❌ 荒岛唱片同步（H:盘未挂载，跳过） ### 今日不执行的任务 - ❌ Metal/Hardcore RSS（仅周二/四/六） - ❌ 深挖线 RSS（仅周日） - ❌ 历史/哲学 RSS（仅周二/四） - ❌ 宗教 RSS（仅周六） - ❌ 周日身心回顾（仅周日） -",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7853120535612106,
+      "totalScore": 1.170524078607559,
       "maxScore": 0.39893676340579987,
       "firstRecalledAt": "2026-06-13T03:31:42.148Z",
-      "lastRecalledAt": "2026-06-13T03:31:50.196Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
       "queryHashes": [
         "06d78e67f9f1",
-        "a87935319079"
+        "a87935319079",
+        "8b2592882a7c"
       ],
       "recallDays": [
         "2026-06-13"
@@ -1161,15 +1162,16 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-06-12 日志 ## 下午 heartbeat（17:27） ### 封面补全 - 执行 `_dl_missing_covers.py`，扫描20张缺封面专辑 - 结果：17张已有cover_image_url（之前已手动补），3张极端地下专辑确实无封面： - 227 Nokturnal Mortum - Голос сталі（乌克兰黑金属） - 163 黑麒麟 - 金陵祭 - 139 苍蝇 - The Fly II - iTunes/Deezer均无收录，属于正常情况 - Web服务正常（516张专辑，1041条记录） ### RYM Expert 项目（tasks/rym-expert/） - JS location.href 绕过 CF 全流程验证成功 - Charts 7年代数据 + 年度 Charts 2020-2025 + 新发片 抓取完成 - 已生成 docs/CHARTS-KB.md, docs/GENRES-KB.md, docs/NEW-RELEASES-KB.md 等 - album-tracker 数据库回填：132/518 张专辑已有RYM数据（25%覆盖率） - cron `rym-deepen` 已删除，RYM项目不再自动推进 ### Pitchfork Expert 项目（tasks/pitchfork-expert/） - opencli browser work 方案验证成功 - 评分从 JSON `\"rating\"` 字段提取，album名从 `dangerousHed` 数组匹配 - git comm",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6080845121764997,
+      "totalScore": 1.0015532348775724,
       "maxScore": 0.6080845121764997,
       "firstRecalledAt": "2026-06-13T03:31:50.196Z",
-      "lastRecalledAt": "2026-06-13T03:31:50.196Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
       "queryHashes": [
-        "a87935319079"
+        "a87935319079",
+        "8b2592882a7c"
       ],
       "recallDays": [
         "2026-06-13"
@@ -1586,6 +1588,130 @@
         "90.4",
         "92.7",
         "下一步"
+      ]
+    },
+    "memory:memory/2026-05-12.md:132:160": {
+      "key": "memory:memory/2026-05-12.md:132:160",
+      "path": "memory/2026-05-12.md",
+      "startLine": 132,
+      "endLine": 160,
+      "source": "memory",
+      "snippet": "1. 创建 `src/download-covers.ts` — Node.js 批量封面下载脚本 - 按排名顺序查询无封面专辑（收听+评分排序） - 三源优先级：iTunes > Deezer > 网易云 - 下载到 covers/ 目录，自动更新所有表 cover_image_url - 参数：`--count` (默认10) / `--offset` 2. 构建脚本更新，输出 `dist/download-covers.js` 3. 首次运行 `--count 15`：**15/15 全部成功** - 刺猬/郑智化/魏如萱/张雨生/葬尸湖/霜冻前夜/Sufjan Stevens/Lin Yifei/Nas/The Cure/Car Seat Headrest 4. HEARTBEAT.md 新增「🖼️ 专辑封面每日补全」任务 **今日实际完成（19:36-20:30）：** 1. 创建 `src/download-covers.ts` 脚本（iTunes > Deezer > 网易云） 2. 构建输出 `dist/download-covers.js` 3. 批量下载共 **216 张封面**（4批次） - 批次1: 15/15 ✅ - 批次2: 50/50 ✅（offset=25） - 批次3: 49/50 ✅（飞出迷楼失败） - 批次4: 48/50 ✅（飞出迷楼、刀郎III 失败） - 批次5: 44/50 ✅（累计6张失败） 4. HEARTBEAT.md 新增每",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3857143521308899,
+      "maxScore": 0.3857143521308899,
+      "firstRecalledAt": "2026-06-13T14:03:01.474Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
+      "queryHashes": [
+        "8b2592882a7c"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "src/download-covers.ts",
+        "node.js",
+        "cover-image-url",
+        "dist/download-covers.js",
+        "15/15",
+        "刺猬/郑智化/魏如萱/张雨生/葬尸湖/霜冻前夜/sufjan",
+        "stevens/lin",
+        "yifei/nas/the"
+      ]
+    },
+    "memory:memory/2026-06-13.md:310:356": {
+      "key": "memory:memory/2026-06-13.md:310:356",
+      "path": "memory/2026-06-13.md",
+      "startLine": 310,
+      "endLine": 356,
+      "source": "memory",
+      "snippet": "## 专辑封面每日补全 ✅ 完成 - 505张全部处理完毕，covers_remaining=0，covers_done=true - 最后一批：假假条、刀郎、装咖人、张福全均无可用源 ## Pitchfork Expert v3.0 - 重构为纯 HTTP scraper（`__PRELOADED_STATE__`） - 支持搜索功能，0 errors - Commit: 5e9e897 ## 独立音乐动态 - 周六 Metal/Hardcore 线已检查 ## 宗教动态 - 周六宗教RSS已检查 --- ## 19:01 每日工作总结 ### 今日完成 - ✅ 专辑封面补全任务终结：505张全部处理完毕 - ✅ Teens of Style 入库（Car Seat Headrest） - ✅ Pitchfork Expert v3.0 纯HTTP重构 - ✅ Metal/Hardcore RSS动态检查 - ✅ 宗教RSS动态检查 - ✅ 输出质量反思 ### 系统状态 - ⚠️ C盘已用 50.2GB，超过50GB告警阈值 - H/D盘未挂载，荒岛唱片同步跳过 - 飞书通知：bot已从群移出，无法发送通知（需用户重新加bot入群） ### Git 提交 - 本次 commit：heartbeat状态更新、每日记忆、session摘要等 # 2026-06-13 周六 ## 2026年听歌TOP3（各5次） - Tizzy Bac - 如果看見地獄我就不怕魔鬼 - Inundaremos - tanquemante - Natalia Lafourcad",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3816361546516418,
+      "maxScore": 0.3816361546516418,
+      "firstRecalledAt": "2026-06-13T14:03:01.474Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
+      "queryHashes": [
+        "8b2592882a7c"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "covers-remaining",
+        "covers-done",
+        "v3.0",
+        "preloaded-state",
+        "metal/hardcore",
+        "50.2gb",
+        "h/d盘未挂载",
+        "专辑"
+      ]
+    },
+    "memory:memory/2026-06-13.md:82:121": {
+      "key": "memory:memory/2026-06-13.md:82:121",
+      "path": "memory/2026-06-13.md",
+      "startLine": 82,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "- ✅ Metal/Hardcore RSS动态检查 - ✅ 宗教RSS动态检查 - ✅ 输出质量反思 ### 系统状态 - ⚠️ C盘已用 50.2GB，超过50GB告警阈值 - H/D盘未挂载，荒岛唱片同步跳过 - 飞书通知：bot已从群移出，无法发送通知（需用户重新加bot入群） ### Git 提交 - 本次 commit：heartbeat状态更新、每日记忆、session摘要等 ### 19:07 - 2026年听歌统计 - 2026年听歌TOP3并列最多（各5次）：Tizzy Bac—如果看見地獄我就不怕魔鬼、Inundaremos—tanquemante、Natalia Lafourcade—Hasta la raíz - Natalia Lafourcade — Hasta la raíz 封面不对，需要修复 # 2026-06-13 周六 ## 2026年听歌TOP3（各5次） - Tizzy Bac - 如果看見地獄我就不怕魔鬼 - Inundaremos - tanquemante - Natalia Lafourcade - Hasta la raíz ## Natalia Lafourcade 封面修复 - album_id: 458 - 旧封面不对（来自错误来源） - 新封面已从 iTunes 下载（http mzstatic CDN） - 文件：458-Natalia_Lafourcade-Hasta_la_raíz.jpg - artifact: teens_of_style_insert_20260613.md（封面修复由用户",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38111555278301235,
+      "maxScore": 0.38111555278301235,
+      "firstRecalledAt": "2026-06-13T14:03:01.474Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
+      "queryHashes": [
+        "8b2592882a7c"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "metal/hardcore",
+        "50.2gb",
+        "h/d盘未挂载",
+        "album-id",
+        "metal",
+        "hardcore",
+        "rss",
+        "动态"
+      ]
+    },
+    "memory:memory/2026-06-13.md:180:219": {
+      "key": "memory:memory/2026-06-13.md:180:219",
+      "path": "memory/2026-06-13.md",
+      "startLine": 180,
+      "endLine": 219,
+      "source": "memory",
+      "snippet": "- ✅ Metal/Hardcore RSS动态检查 - ✅ 宗教RSS动态检查 - ✅ 输出质量反思 ### 系统状态 - ⚠️ C盘已用 50.2GB，超过50GB告警阈值 - H/D盘未挂载，荒岛唱片同步跳过 - 飞书通知：bot已从群移出，无法发送通知（需用户重新加bot入群） ### Git 提交 - 本次 commit：heartbeat状态更新、每日记忆、session摘要等 ### 19:07 - 2026年听歌统计 - 2026年听歌TOP3并列最多（各5次）：Tizzy Bac—如果看見地獄我就不怕魔鬼、Inundaremos—tanquemante、Natalia Lafourcade—Hasta la raíz - Natalia Lafourcade — Hasta la raíz 封面不对，需要修复 # 2026-06-13 周六 ## 2026年听歌TOP3（各5次） - Tizzy Bac - 如果看見地獄我就不怕魔鬼 - Inundaremos - tanquemante - Natalia Lafourcade - Hasta la raíz ## Natalia Lafourcade 封面修复 - album_id: 458 - 旧封面不对（来自错误来源） - 新封面已从 iTunes 下载（http mzstatic CDN） - 文件：458-Natalia_Lafourcade-Hasta_la_raíz.jpg - artifact: teens_of_style_insert_20260613.md（封面修复由用户",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38111555278301235,
+      "maxScore": 0.38111555278301235,
+      "firstRecalledAt": "2026-06-13T14:03:01.474Z",
+      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
+      "queryHashes": [
+        "8b2592882a7c"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "metal/hardcore",
+        "50.2gb",
+        "h/d盘未挂载",
+        "album-id",
+        "metal",
+        "hardcore",
+        "rss",
+        "动态"
       ]
     }
   }

@@ -1,0 +1,12 @@
+[OK] stats
+  count=520, totalListens=1049
+  top=Car Seat Headrest - Twin Fantasy
+[OK] top
+  Car Seat Headrest - Twin Fantasy (13次)
+  魏如萱 - 不允许哭泣的场合 (12次)
+  张雨生 - 口是心非 (11次)
+[FAIL] albums-sort-listen: HTTP Error 500: Internal Server Error
+[OK] albums-sort-score
+  Feeble Little Horse - Bitknot (1次)
+  陈力 - 红楼梦 (4次)
+  The Beatles - Rubber Soul (2次)

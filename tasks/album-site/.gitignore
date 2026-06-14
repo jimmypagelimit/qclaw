@@ -1,0 +1,19 @@
+# tasks/album-site/ 项目结构
+
+## theneedledrop/
+- 数据 + 脚本
+
+## allmusic/
+- 数据 + 脚本
+
+## nme/
+- 数据 + 脚本
+
+## chartmasters/
+- 数据 + 脚本
+
+## docs/
+- 文档
+
+## shared/
+- 共享工具脚本
