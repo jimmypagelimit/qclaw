@@ -1,22 +1,24 @@
 {
   "lastChecks": {
-    "covers": 20,
-    "covers_total": 216,
-    "covers_remaining": 279,
-    "c_drive_check": "2026-06-14",
+    "covers": 33, "covers_attempted_today": true, "covers_blocked": [], "covers_total": 216, "covers_remaining": 0, "covers_error": null,
+    "c_drive_check": "2026-06-15",
     "c_drive_exceeded": false,
-    "c_drive_used_gb": 47.0,
+    "c_drive_used_gb": 47.9,
     "feishu_c_drive_alert": null,
-    "rss": 54,
+    "rss": 55,
+    "rss_music_monday": "2026-06-15",
+    "rss_music_monday_done": true,
     "rss_music_sunday": "2026-06-14",
     "rss_music_sunday_done": true,
+    "rss_literature_monday": "2026-06-15",
+    "rss_literature_monday_done": true,
     "weekly_review": "2026-06-14",
-    "monthly_review": "2026-05-01",
-    "last_heartbeat": "2026-06-14T19:31:00+08:00",
-    "feishu_error": "400: 飞书 bot 推送失败，需用户处理 bot 加群/权限问题",
-    "feishu_last_check": "2026-06-14",
-    "covers_error": "all 10 albums failed - no covers found",
     "weekly_review_due": false,
-    "daily_summary_done": true
+    "monthly_review": "2026-05-01",
+    "last_heartbeat": "2026-06-15T07:13:00+08:00",
+    "feishu_error": "400: 飞书 bot 推送失败，需用户处理 bot 加群/权限问题",
+    "feishu_last_check": "2026-06-15",
+    "daily_summary_done": false,
+    "quality_reflection_done": true
   }
 }

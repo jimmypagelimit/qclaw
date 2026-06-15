@@ -1,18 +1,14 @@
 ## 任务背景
-用户测试 RateYourMusic 爬虫，遇到 Cloudflare Turnstile 验证拦截；后讨论 MusicBrainz API 集成到专辑项目。
-
+用户完成了L项目的歌词批量获取管道开发和运行。
 ## 执行过程
-1. RYM CloakBrowser 测试：Turnstile 验证码卡住
-2. 升级 cloakbrowser 至 v0.3.31（已最新）仍失败
-3. 用户决定明天再试，记录暂停至 artifact
-4. 讨论 MusicBrainz API 使用情况
-5. 实测各接口：搜索 API 通，但 release-group 和 Cover Art SSL 失败
-6. 更新 PLAN-TRI-MERGE.md 集成 MusicBrainz
-
+1. 完善LRCLIB批量处理脚本
+2. 修复GBK编码和null字符文件名bug
+3. 跑完20张英文专辑批量任务
+4. 提交代码到Git并排除歌词数据
 ## 关键结果
-- RYM 爬虫暂停，Cloudflare 升级拦截
-- MusicBrainz 搜索 API 可用，但 genre/cover 因 Python SSL 问题不可用
-- 更新 `tasks/album-site/PLAN-TRI-MERGE.md` 第九节
-
+- 成功获取249个LRC文件，覆盖35张专辑
+- 命中OK=64 FAIL=4 SKIP=35(中文专辑)
+- key脚本：lrclib_batch.py和batch_runner.py
+- Git commit 375c16f提交成功
 ## 结论建议
-明天 heartbeat 自动重试 RYM；MusicBrainz 搜索 API 可先用（查 MBID/年份），Cover Art 需另寻源。
+管道已跑通，下一步处理中文专辑和小众英文专辑补充。

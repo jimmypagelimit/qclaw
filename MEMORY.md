@@ -88,6 +88,25 @@
 - Git操作用 Git Bash（有credential helper），不用PowerShell
 - 命令执行优先级: Python > Node.js > CMD > Git Bash（PowerShell 永久禁用）
 
+## L项目（Lyrics Expert）⭐ 2026-06-15 确立
+- **位置**: `tasks/lyrics-expert/`
+- **管道**: Playwright(MusicBrainz曲目表) → LRCLIB(歌词) → 本地保存
+- `lyrics_pipeline.py`: 完整歌词获取管道（搜索MB→选release→提取曲目→LRCLIB获取歌词→保存到lyrics/）
+- `mb_playwright.py`: 仅MusicBrainz曲目表提取（供后续调用）
+- `mb_tracklist.py`: 独立曲目提取脚本
+- **歌词目录**: `tasks/lyrics-expert/lyrics/{Artist}/{Album}/`（.lrc时间戳歌词 + .txt纯文本）
+- **曲目表目录**: `tasks/lyrics-expert/tracklists/`
+- **已验证成功**: Car Seat Headrest - Twin Fantasy (10/10首，18个文件)
+- **MusicBrainz曲目表获取方法**:
+  1. Playwright搜索release-group（search?type=release_group&method=indexed）
+  2. 选Album类型（跳过Remix/Single）
+  3. 打开release-group页面 → 找 `table.tbl.mergeable-table` → 提取release行（`/release/xxx/cover-art` 去掉/cover-art后缀）
+  4. 优先选Digital Media release → 打开release页面 → 提取tracklist（`table.tbl.medium` 中tr的td[0]=序号 td[1]=标题 td[3]=时长）
+- **限流注意**: MB频繁请求会被ERR_CONNECTION_CLOSED，需等待冷却
+- **MB SSL问题**: API方式urllib/requests SSL失败(UNEXPECTED_EOF_WHILE_READING)，Playwright真实浏览器可绕过
+- **LRCLIB**: 英文歌命中率接近100%，无中文歌词
+- **扩展方向**: 可接入LyricsTranslate（多语种翻译）和Musixmatch（时间戳对齐）
+
 ## 原创计划
 - 路径: \\10.0.2.4\qemu\原创计划
 - 月度/专题/年榜/双面计划/听歌随想/新专速递
