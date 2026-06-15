@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "歌词批量处理完成",
+  "name": "翻译完成",
   "status": "active",
   "createdAt": "2026-05-21T23:29:55.380Z",
-  "updatedAt": "2026-06-15T01:26:18.328Z",
+  "updatedAt": "2026-06-15T03:17:02.558Z",
   "agents": [
     {
       "id": "agent_3tj7bsnd",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_7hoz625k",
-    "title": "歌词批量处理完成",
+    "title": "翻译完成",
     "createdAt": "2026-05-21T23:29:55.380Z",
     "file": "summary_7hoz625k.md"
   },
-  "lastMessageCount": 78
+  "lastMessageCount": 58
 }

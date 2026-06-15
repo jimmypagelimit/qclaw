@@ -1,0 +1,21 @@
+# Grace Ives — Girlfriend
+
+> 评分：8.4  | BNM：是  |   | 2026年3月20日
+
+---
+
+[Grace Ives](https://pitchfork.com/artists/grace-ives/) 在過去幾年裡一直將原型格式——[童謠](https://graceives.bandcamp.com/album/4-future-babes)、[手機鈴聲](https://graceives.bandcamp.com/album/ringtones-vol-1)、[朝九晚五](https://pitchfork.com/reviews/tracks/grace-ives-angel-of-business/)——打磨成一套如此精工細作的晦暗流行標準，以至於隱藏了其中的個人混沌。她做的是魅力十足的混亂故事：受傷的自尊、愛爾蘭式退場（不辭而別）、散漫的思緒。按艾夫斯自己的估計，在2022年突破專輯《[*Janky Star*](https://pitchfork.com/reviews/albums/grace-ives-janky-star/)》發行後的三年裡，她一直在崩盤：喝太多、把別人推開、摔倒等等。最終，她戒了酒，前往洛杉磯，學會了開車，[為自己的行車配上了](https://www.instagram.com/p/DVd74GmjEqs/?img_index=1)[彼得·加布里埃爾](https://pitchfork.com/artists/1670-peter-gabriel/)、[Mitski](https://pitchfork.com/artists/32541-mitski/)，以及她個人史上最愛的歌曲——[Kesha](https://pitchfork.com/artists/30345-keha/)的「Die Young」。
+
+完全可以理解，她的全新專輯《*Girlfriend*》——輝煌而令人振奮的自我嚴肅之作——就是在這段時間裡完成的：它的累積效果就像在車裡對著收音機縱情高歌。《Girlfriend》將《Janky Star》的日記式、小擺設式魅力放大成了一座 высоко-драмати流行紀念碑，獻給那些嘗試、失敗、再接再厲的人。與永恆的傑克·安托諾夫剋星阿里爾·萊希茨海德（Ariel Rechtshaid）和約翰·德博爾德（John DeBold）攜手合作，艾夫斯擁抱了她早期作品的雜耍表演魅力，讓微小的東西聽起來宏大：、管風琴和鋁板琴，將「[Everything Is Embarrassing](https://www.youtube.com/watch?v=rEamE0MYPkg&list=RDrEamE0MYPkg&start_radio=1)」的凌亂酷感導入一出悲喜劇式的火車殘骸。
+
+在這個諸多流行音樂聽起來都被設計成最小阻力的時代，艾夫斯來自邊緣的模糊明信片構成了一個真正的啟示。慢慢地，我開始將《Girlfriend》這個標題讀作一個表達同情的告誡，而非識別性名詞——就像對一個邋遢的朋友說：「姐妹……*真的假的*？」艾夫斯意識到，有時候堅持下去的唯一方式是誠實地聳聳肩：好吧，那事就發生了唄。「What If?」——在調性上處於麥莉·賽勒斯「[See You Again](https://www.youtube.com/watch?v=t-hi0yCeOJ0&list=RDt-hi0yCeOJ0&start_radio=1)」和珍妮絲·喬普林的「[Me and Bobby McGee](https://www.youtube.com/watch?v=sfjon-ZTqzU&list=RDsfjon-ZTqzU&start_radio=1)」之間——在一瞬間從調戲轉向悔恨。在「Garden」中，她接受了某個時代的終結，提醒自己「能從自尊的地獄中解放出來是幸運的」，用一種可被描述為淚眼婆娑的輕聲顫音。《Girlfriend》以艾夫斯那沙啞有力的女中音驅動，有著休息廳歌手的音色和金繼（日本修復漆器）的質感。
+
+《Girlfriend》以卓越的清晰度綜合了放縱的感覺，證明了艾夫斯那套多年在家裡用505音序器搗鼓出來的全方位技能。「Now I」開篇像一個搭便車的人一樣接住你，帶著艾夫斯高亢的音色從大海飛向開放的道路。從這裡開始，酷女孩離開了現場，輪到「祝福這一切混亂」的時刻了。源自艾夫斯2017年在 Bandcamp 上發布的[手機鈴聲](https://graceives.bandcamp.com/track/high-in-church)的「Avalanche」，將暴風雨般的填充段和鋼琴叮咚聲席捲成一場行走中的自然災害，而其敘事者正是這種自然災害的化身。「我想要、想要、想要，我拿、拿、拿，對我製造的混亂感到抱歉而不感到抱歉，」艾夫斯喃喃自語，在節拍的四散爆發中及時躲閃。在「Dance With Me」中，她懇求一個平凡的戀人「出來玩玩」，就像[掛在消防逃生梯上的](https://www.youtube.com/watch?v=_L7_U4rku-4&list=RD_L7_U4rku-4&start_radio=1) Mimi Marquez，試圖為「世界的重量」快速解壓。
+
+《Girlfriend》感覺永遠在空中，在抵達下一個目的地之前的峰值速度那一刻。最典型的例子、中央曲目「My Mans」擁有望成為艾夫斯職業生涯迄今最佳副歌的東西：一場嘆息小提琴、背景和聲和大鋼琴功率和弦的颱風，足以為過去二十五年愛情片裡在雨中接吻的情侶配樂。「我遇到的每個男人都讓我完整，我需要一個能回報我愛的戀人，」她哀號，然後簡化為：「只想確認我還活著。」（《Girlfriend》……）以為已經達到表演高峰了？準備好迎接第三幕的鼓機 Loop——它聽起來像是直接從共和時代的「[Apologize](https://www.youtube.com/watch?v=ZSM3w1v-A_Y&list=RDZSM3w1v-A_Y&start_radio=1)」裡拿出來的——以如此真誠的鎮定注入混音，有那麼一瞬你會懷疑艾夫斯是不是在開玩笑。她不是。
+
+萊希茨海德——其眾多 credit 中包括 [Sky Ferreira](https://pitchfork.com/artists/30673-sky-ferreira/) 的傑作《*Night Time, My Time*》——沒有動艾夫斯的原始配方。相反，他裝飾了 mise en scène，讓她風情萬種的讚美詩聽起來與它們的情感版圖一樣豐富。（艾夫斯[開玩笑地將](https://www.nytimes.com/2026/03/17/arts/music/grace-ives-girlfriend.html)他的錄音室配置比作艾比路錄音棚。）這裡的每首歌都可以是一支單曲，但合在一起，它們的總和大於各部分之和。「Drink Up」中震撼的副歌在「Stupid Bitches」中以完整面貌重現；她在輕盈的「Fire 2」上燃燒的橋段，照亮了她在「Garden」中走向某種堅實地基的道路。她就位於生命狂野心臟的旁邊：總是置身其中，指尖觸摸脈搏。
+
+在艾夫斯的手中，真誠從不聽起來甜膩。她在「Stupid Bitches」中將這一切帶回家，這是對她自己最糟糕本能的反駁，是她迄今錄製的最全面自我賦權的歌曲。在她那充滿嘲弄的「蕭瑟賤人不能傷害我」中，存在著一種在[西尼德·奧康娜](https://pitchfork.com/artists/3135-sinead-oconnor/)的「也許它[聽起來刻薄](https://www.youtube.com/watch?v=yhfATC9baPo&list=RDyhfATC9baPo&start_radio=1)」、[菲奧娜·蘋果](https://pitchfork.com/artists/116-fiona-apple/)[像草莓一樣](https://www.youtube.com/watch?v=8whTAkkBv6U&list=RD8whTAkkBv6U&start_radio=1)蔓延、[葛洛莉亞·蓋娜芙](https://www.youtube.com/watch?v=6dYWe1c3OyU&list=RD6dYWe1c3OyU&start_radio=1)頑強倖存中聽到的歷史悠久的女性韌性。艾夫斯不僅已經擺脫了那個不斷縮水的「卧室流行」名號；她現在正在書寫經典。
+
+艾夫斯[最近告訴《*Vogue*》](https://www.vogue.com/article/grace-ives-singles-interview)，「老我可能會對『My Mans』上那種不廢話的縱情高歌有點尴尬」。我懂——自2010年代末以來，虛無主義和反諷一直主導著偉大的美國氛圍，為大量糗帖電子流行樂鋪平了道路。但在《[Marty Supreme](https://pitchfork.com/reviews/albums/daniel-lopatin-marty-supreme-original-soundtrack/)》和[小丑復興](https://hellgatenyc.com/everyone-is-a-clown-now/)以及[Quad God](https://www.youtube.com/watch?v=98LsvKRJwy4)之間的某個地方，事情發生了轉變：長期以來被認為可恥和煩人的「不那麼低調的努力家」[已經崛起並接管了地球](https://pitchfork.com/news/taylor-swifts-eras-tour-becomes-first-in-history-to-gross-dollar1-billion-pollstar-says/)。「我只是讓它尴尬去吧，」艾夫斯在「Stupid Bitches」中決心說道，聽起來像她那一代人的聲音（或者至少是[*一個*聲音](https://www.youtube.com/shorts/a0JaWRsf4Hw)。）無論你多麼拼命，生活都會讓你遍體鱗傷——還不如把這件事堅持到底。

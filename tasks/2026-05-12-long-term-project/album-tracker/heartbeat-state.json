@@ -4,14 +4,15 @@
     "covers_total": 505,
     "covers_remaining": 0,
     "covers_done": true,
-    "c_drive_check": "2026-06-15T03:36:00+08:00",
-    "c_drive_used_gb": 47.9,
+    "c_drive_check": "2026-06-15T06:11:00+08:00",
+    "c_drive_used_gb": 48.0,
     "c_drive_alert": false,
     "music_sync": "2026-06-10T04:10:00+08:00",
     "weekly_review": "2026-06-14"
   },
   "notes": {
     "2026-05-22": "[prev note]",
+    "2026-06-15-0431": "C盘47.0GB正常(04:22检查) 封面505张全部完成(covers_done=true) 飞书400仍失败(bot被移出群) Indie线RSS：Oliver Tree直升机坠毁去世32岁+The Fall最终专辑秋季发行+Guardian Books夏季70本好书 文学线：Lithub周报+NYRB无新内容",
     "2026-05-23": "[prev note]",
     "2026-05-25-a": "[prev note]",
     "2026-05-25-b": "[prev note]",
@@ -31,6 +32,7 @@
     "2026-06-14-0958": "C盘51.3GB告警(持续上涨，06:31→09:58从50.8→51.3GB,+0.5GB/3.5h) 飞书400仍失败(bot被移出群) 封面任务已完成 周日文学RSS无重要更新(Reactor/Index/Orion均常规) 输出质量反思：昨日多次heartbeat注意到C盘快速涨(47.6→50.2→50.8→51.3)，应建议用户清理",
     "2026-06-14-1106": "C盘51.3GB告警(G:drive不存在+music_sync报错) Web服务器已重启(port 3456) 封面任务已完成 covers_done=true G盘/H盘/D盘均未挂载，music_sync无法运行",
     "2026-06-14-1903": "C盘47.0GB正常(<50GB阈值，比上午11:06的51.3GB下降了4.3GB) 今日所有heartbeat任务已完成：输出质量反思+Tizzy Bac入库+RYM诊断+四项目代号确立+17:01日总结 周日身心回顾提醒待发(20:00-21:30)",
-    "2026-06-15": "封面任务兜底扫描02:32-02:33完成，最后20张(分两批)均无源(苍蝇/黑麒麟/Nokturnal Mortum/声音碎片/海朋森等) 全部505张已处理完毕，covers_done=true C盘47.0GB(昨日19:03正常)"
+    "2026-06-15": "封面任务兜底扫描02:32-02:33完成，最后20张(分两批)均无源(苍蝇/黑麒麟/Nokturnal Mortum/声音碎片/海朋森等) 全部505张已处理完毕，covers_done=true C盘47.0GB(昨日19:03正常)",
+    "2026-06-15-0611": "C盘48.0GB正常(<50GB) 封面任务已完成 周一Indie线RSS：Oliver Tree巴西直升机坠毁去世32岁+The Fall最终专辑Post-Script秋季发行+Mesh新专辑The Truth Doesn't Matter专访+Boards of Canada Inferno+Death Cab/Modest Mouse新专辑讨论+Beck Odelay 30周年"
   }
 }

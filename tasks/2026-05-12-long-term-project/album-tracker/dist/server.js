@@ -130,7 +130,7 @@ app.get('/api/albums', async (req, res) => {
             params.push(yearStr);
         }
         else {
-            sql = 'SELECT a.* FROM albums a WHERE 1=1';
+            sql = `SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as total_listen_count FROM albums a WHERE 1=1`;
             countSql = 'SELECT COUNT(*) as total FROM albums a WHERE 1=1';
         }
         const filterParams = [];

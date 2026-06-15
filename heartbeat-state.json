@@ -15,10 +15,10 @@
     "weekly_review": "2026-06-14",
     "weekly_review_due": false,
     "monthly_review": "2026-05-01",
-    "last_heartbeat": "2026-06-15T07:13:00+08:00",
+    "last_heartbeat": "2026-06-15T10:31:00+08:00",
     "feishu_error": "400: 飞书 bot 推送失败，需用户处理 bot 加群/权限问题",
     "feishu_last_check": "2026-06-15",
-    "daily_summary_done": false,
+    "daily_summary_done": true,
     "quality_reflection_done": true
   }
 }

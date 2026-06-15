@@ -1,7 +1,7 @@
 // ==================== 全局状态 ====================
 const API = '/api';
 let currentPage = 'dashboard';
-let currentYear = '';
+let currentYear = '2026';
 let searchOffset = 0;
 let currentAlbumId = null;
 let currentAlbumData = null;
@@ -312,3 +312,7 @@ function escapeHtml(str) {
 
 // ==================== 初始化 ====================
 loadDashboard();
+
+// 默认选中2026年
+const yearSelect = document.getElementById('search-year');
+if (yearSelect) yearSelect.value = '2026';
