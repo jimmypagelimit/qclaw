@@ -280,6 +280,21 @@ function showAlbumDetail(id) {
         <div class="detail-row"><span class="detail-label">首次收听</span><span class="detail-value">${album.first_listen_date || '-'}</span></div>
       </div>
       ${scoresHtml}
+      
+      <!-- 曲目列表 -->
+      <div class="detail-tracks">
+        <div class="detail-section-title">🎵 曲目 (${(album.tracks || []).length})</div>
+        ${renderTracks(album.tracks)}
+      </div>
+      
+      <!-- 外部评分 -->
+      ${renderExternalRatings(album.external_ratings)}
+      
+      <!-- 乐评链接 -->
+      ${album.review_url
+        ? `<div class="detail-review-link"><a href="${escapeHtml(album.review_url)}" target="_blank" rel="noopener">📖 阅读中文乐评 →</a></div>`
+        : ''}
+      
       <div class="detail-desc"><div class="detail-section-title">📝 描述</div><div class="desc-text">${escapeHtml(album.description || '无描述')}</div></div>
       <div class="detail-cli-hint">💡 编辑 / 删除 / 收听请使用 CLI 工具</div>
     `;
@@ -300,6 +315,56 @@ function showToast(msg, type = 'success') {
   toast.textContent = msg;
   toast.className = `toast ${type} show`;
   setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+// ==================== 曲目列表渲染 ====================
+function renderTracks(tracks) {
+  if (!tracks || !tracks.length) {
+    return '<div class="tracks-empty">暂无曲目信息</div>';
+  }
+  return `<div class="tracks-list">
+    <div class="tracks-header">
+      <span class="track-col-num">#</span>
+      <span class="track-col-name">曲名</span>
+      <span class="track-col-dur">时长</span>
+    </div>
+    ${tracks.map((t, i) => {
+      const dur = t.duration ? formatDuration(t.duration) : '-';
+      return `<div class="track-row ${i % 2 === 0 ? 'track-even' : 'track-odd'}">
+        <span class="track-col-num">${t.track_number}</span>
+        <span class="track-col-name" title="${escapeHtml(t.track_name)}">${escapeHtml(t.track_name)}</span>
+        <span class="track-col-dur">${dur}</span>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+function formatDuration(seconds) {
+  if (!seconds || seconds <= 0) return '-';
+  const m = Math.floor(seconds / 60);
+  const s = String(seconds % 60).padStart(2, '0');
+  return `${m}:${s}`;
+}
+
+// ==================== 外部评分渲染 ====================
+function renderExternalRatings(ratings) {
+  if (!ratings || !ratings.length) return '';
+  return `<div class="detail-external-ratings">
+    <div class="detail-section-title">⭐ 外部评分</div>
+    <div class="external-ratings-grid">
+      ${ratings.map(r => {
+        const badgeClass = r.source === 'rym' ? 'badge-rym' : 'badge-pitchfork';
+        const srcLabel = r.source === 'rym' ? 'RYM' : 'Pitchfork';
+        const details = r.ratings_count ? ` · ${r.ratings_count} 评` : '';
+        const link = r.url ? ` <a href="${escapeHtml(r.url)}" target="_blank" rel="noopener" class="rating-link">↗</a>` : '';
+        return `<div class="external-rating-card">
+          <div class="rating-badge ${badgeClass}">${srcLabel}</div>
+          <div class="rating-score">${r.score || '-'}<span class="rating-scale">/${r.score_scale ? r.score_scale.replace('out_of_','') : ''}</span></div>
+          <div class="rating-meta">${details}${link}</div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
 }
 
 // ==================== 工具函数 ====================

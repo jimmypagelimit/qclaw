@@ -183,7 +183,7 @@ app.get('/api/albums', async (req, res) => {
 // 专辑详情（始终查 albums 表）
 app.get('/api/albums/:id', async (req, res) => {
     try {
-        const album = (0, database_1.queryOne)('SELECT * FROM albums WHERE album_id = ?', [Number(req.params.id)]);
+        const album = (0, database_1.queryOne)('SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as total_listen_count FROM albums a WHERE a.album_id = ?', [Number(req.params.id)]);
         if (!album) {
             res.status(404).json({ error: '专辑未找到' });
             return;
@@ -191,6 +191,13 @@ app.get('/api/albums/:id', async (req, res) => {
         // 附加年度收听统计
         const yearStats = (0, database_1.query)('SELECT listen_year, COUNT(*) as count FROM listen_history WHERE album_id = ? GROUP BY listen_year ORDER BY listen_year', [Number(req.params.id)]);
         album.yearStats = yearStats;
+        // 附加曲目列表
+        album.tracks = (0, database_1.query)('SELECT track_number, track_name, duration FROM tracks WHERE album_id = ? ORDER BY track_number', [Number(req.params.id)]);
+        // 附加外部评分
+        album.external_ratings = (0, database_1.query)('SELECT source, score, score_scale, ratings_count, url FROM external_ratings WHERE album_id = ?', [Number(req.params.id)]);
+        // 附加 P 项目乐评链接（从 external_ratings 取 pitchfork 的 url）
+        const reviewRow = (0, database_1.queryOne)('SELECT url FROM external_ratings WHERE album_id = ? AND source = "pitchfork" LIMIT 1', [Number(req.params.id)]);
+        album.review_url = reviewRow?.url || null;
         res.json(album);
     }
     catch (error) {

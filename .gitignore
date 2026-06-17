@@ -1,5 +1,5 @@
 node_modules/
-dist/
+# dist/  # 提交编译后的 server.js
 *.log
 .env
 .DS_Store

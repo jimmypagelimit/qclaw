@@ -1229,6 +1229,169 @@ h3 {
   margin-left: auto;
 }
 
+/* ==================== 曲目列表 ==================== */
+
+.detail-tracks {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.tracks-empty {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: 13px;
+  padding: 12px 0;
+}
+
+.tracks-list {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tracks-header {
+  display: flex;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.track-row {
+  display: flex;
+  padding: 6px 12px;
+  transition: background 0.15s;
+}
+
+.track-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.track-even {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.track-col-num {
+  width: 32px;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+}
+
+.track-col-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.track-col-dur {
+  width: 48px;
+  flex-shrink: 0;
+  text-align: right;
+  color: var(--text-secondary);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+}
+
+/* ==================== 外部评分 ==================== */
+
+.detail-external-ratings {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.external-ratings-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.external-rating-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  min-width: 160px;
+}
+
+.rating-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.badge-rym {
+  background: #2a3a4a;
+  color: #8ab4f8;
+}
+
+.badge-pitchfork {
+  background: #3a2a2a;
+  color: #f8a88a;
+}
+
+.rating-score {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.rating-scale {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.rating-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.rating-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.rating-link:hover {
+  opacity: 0.8;
+}
+
+/* ==================== 乐评链接 ==================== */
+
+.detail-review-link {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.detail-review-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.detail-review-link a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .leaderboard-grid { grid-template-columns: 1fr; }
+  .external-ratings-grid { flex-direction: column; }
 }

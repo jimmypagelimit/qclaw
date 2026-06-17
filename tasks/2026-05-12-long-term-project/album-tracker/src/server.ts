@@ -223,7 +223,7 @@ app.get('/api/albums', async (req, res) => {
 app.get('/api/albums/:id', async (req, res) => {
   try {
     const album = queryOne<any>(
-      'SELECT * FROM albums WHERE album_id = ?',
+      'SELECT a.*, (SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id) as total_listen_count FROM albums a WHERE a.album_id = ?',
       [Number(req.params.id)]
     );
     if (!album) { res.status(404).json({ error: '专辑未找到' }); return; }
@@ -234,6 +234,25 @@ app.get('/api/albums/:id', async (req, res) => {
       [Number(req.params.id)]
     );
     (album as any).yearStats = yearStats;
+
+    // 附加曲目列表
+    (album as any).tracks = query<any>(
+      'SELECT track_number, track_name, duration FROM tracks WHERE album_id = ? ORDER BY track_number',
+      [Number(req.params.id)]
+    );
+
+    // 附加外部评分
+    (album as any).external_ratings = query<any>(
+      'SELECT source, score, score_scale, ratings_count, url FROM external_ratings WHERE album_id = ?',
+      [Number(req.params.id)]
+    );
+
+    // 附加 P 项目乐评链接（从 external_ratings 取 pitchfork 的 url）
+    const reviewRow = queryOne<any>(
+      'SELECT url FROM external_ratings WHERE album_id = ? AND source = "pitchfork" LIMIT 1',
+      [Number(req.params.id)]
+    );
+    (album as any).review_url = reviewRow?.url || null;
 
     res.json(album);
   } catch (error: any) {
