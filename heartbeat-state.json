@@ -23,10 +23,10 @@
     "weekly_review": "2026-06-14",
     "weekly_review_due": false,
     "monthly_review": "2026-05-01",
-    "last_heartbeat": "2026-06-17T09:01:00+08:00",
-    "feishu_error": "400: feishu push still failing on 2026-06-17 retry, bot permission issue persists",
+    "last_heartbeat": "2026-06-17T16:18:00+08:00",
+    "feishu_error": "400: feishu push still failing on 2026-06-17 16:18 retry, bot permission issue persists",
     "feishu_last_check": "2026-06-17",
-    "daily_summary_done": false,
+    "daily_summary_done": true,
     "quality_reflection_done": true,
     "c_drive_alert_pending": false
   }

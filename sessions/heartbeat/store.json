@@ -1,0 +1,25 @@
+{
+  "id": "heartbeat",
+  "name": "每日总结",
+  "status": "active",
+  "createdAt": "2026-06-17T08:20:20.581Z",
+  "updatedAt": "2026-06-17T08:20:20.581Z",
+  "agents": [
+    {
+      "id": "agent_gwyx7z3m",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-17T08:20:20.581Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_cmt62s1g",
+    "title": "每日总结",
+    "createdAt": "2026-06-17T08:20:20.581Z",
+    "file": "summary_cmt62s1g.md"
+  },
+  "lastMessageCount": 30
+}

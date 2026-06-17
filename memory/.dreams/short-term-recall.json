@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T07:35:50.867Z",
+  "updatedAt": "2026-06-17T07:46:05.890Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -974,21 +974,23 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-05-28 Heartbeat 记录 ## 01:01 首次 heartbeat ### 系统状态 - **C盘空间**：30.1GB / 50GB 阈值 ✅ 正常 - **G/H盘挂载**：未挂载 ⏸️ 跳过封面下载和音乐库同步 - **网络**：正常，RSS 源可访问 ### 执行任务 1. **C盘空间监控** ✅ - 已检查，30.1GB 正常，不发告警 2. **Metal/Hardcore RSS 检查** ✅ - 周四任务，已抓取9个核心源 ### Metal/Hardcore RSS 结果 **💿 新发行** - Callous Faulter - *Callous Faulter* (澳洲前卫金属/后金属，Gutter Prince Cabal，6月1日) - Crocell - *Swarm of Insects* (丹麦死亡金属，NCS专辑首发) - Monolord - *Neverending* (瑞典厄运金属，Relapse) - Trelldom - *...by the word...* (挪威前卫黑金属，Gaahl新作) - Elder - *Through Zero* (德国前卫摇滚/重型迷幻) - Maladie - *The Dance of Tragedies* (德国前卫黑金属) - Sabotør - *Første Aksjon* (挪威抵抗运动主题重金属/鞭击) **🎸 巡演/活动** - Agalloch 10年后首次美国演出（芝加哥/剑桥/布鲁克林，8月） - Metal Church + Ar",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.1619979739189148,
+      "totalScore": 1.5122043162584304,
       "maxScore": 0.39245772659778594,
       "firstRecalledAt": "2026-06-13T03:31:42.148Z",
-      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "lastRecalledAt": "2026-06-17T07:46:05.890Z",
       "queryHashes": [
         "06d78e67f9f1",
         "3c62d4ff6102",
-        "9e9ae98ec84b"
+        "9e9ae98ec84b",
+        "ae33b046d3a4"
       ],
       "recallDays": [
         "2026-06-13",
-        "2026-06-16"
+        "2026-06-16",
+        "2026-06-17"
       ],
       "conceptTags": [
         "网络",
@@ -1761,18 +1763,20 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Heartbeat 2026-05-01 10:30 ## Tasks completed - **月度评估提醒**：5月1日，发飞书提醒张树回顾4月身心状态 - **RSS 动态检查**：Pitchfork、Stereogum、Metal Injection、MetalSucks、Consequence、UPEE 共6个源 - **飞书推送**：月度提醒 + 音乐动态摘要（Loathe/Jpegmafia/Interpol-DIIV/Magnetic Fields×Fleet Foxes） ## Key findings 无重大炸弹级新闻。值得关注的： - **Loathe** 新专辑 *A Stranger To You*（7/17），首单\"Revenant\"被称迄今最重 - **Interpol** 北美巡演，嘉宾有 DIIV（盯鞋党关注） - **Jpegmafia** 第六张专辑 5/21 发行 - **UPEE** 今日乐评：张悬《神的游戏》(2012) ## State updated heartbeat-state.json: monthly_review → \"2026-05-01\" --- # Session 2026-05-01 13:05 ## HEARTBEAT.md 清理完成 - 修复格式错误：删除 `### 🧠 思想/哲学` 前的幽灵字符 'n' - 删除重复的 `❌ 已验证不可用（全球）` 表（与上方主不可用表重复，且 Granta 在可用表中已标记 ✅） - 更新统计表：欧洲大陆",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.40186704993247985,
+      "totalScore": 0.7626246184110641,
       "maxScore": 0.40186704993247985,
       "firstRecalledAt": "2026-06-16T00:31:36.400Z",
-      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "lastRecalledAt": "2026-06-17T07:46:05.890Z",
       "queryHashes": [
-        "9e9ae98ec84b"
+        "9e9ae98ec84b",
+        "ae33b046d3a4"
       ],
       "recallDays": [
-        "2026-06-16"
+        "2026-06-16",
+        "2026-06-17"
       ],
       "conceptTags": [
         "7/17",
@@ -2000,6 +2004,37 @@
         "covers-total",
         "36.4",
         "heartbeat-2026-06-06-1431.md"
+      ]
+    },
+    "memory:memory/2026-05-04.md:21:32": {
+      "key": "memory:memory/2026-05-04.md:21:32",
+      "path": "memory/2026-05-04.md",
+      "startLine": 21,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "- git状态：HEARTBEAT.md modified，其他文件待commit ## 待处理/未完成 - 希腊装甲兵：用户问了但会话打断，未查完 - Denise Ho：上次会话未完成 - 智利专辑 El Hambre y las Ganas de Comer：用户要求查Bandcamp未完成 ## git commit备注 - HEARTBEAT.md: 投递目标更新 - skills/: 新技能 - task-summary文件: 日任务记录",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3580911189317703,
+      "maxScore": 0.3580911189317703,
+      "firstRecalledAt": "2026-06-17T07:46:05.890Z",
+      "lastRecalledAt": "2026-06-17T07:46:05.890Z",
+      "queryHashes": [
+        "ae33b046d3a4"
+      ],
+      "recallDays": [
+        "2026-06-17"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "待处理/未完成",
+        "task-summary文件",
+        "git",
+        "状态",
+        "heartbeat",
+        "modified",
+        "其他"
       ]
     }
   }
