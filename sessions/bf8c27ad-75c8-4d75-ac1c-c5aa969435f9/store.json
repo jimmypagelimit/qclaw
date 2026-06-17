@@ -1,0 +1,25 @@
+{
+  "id": "bf8c27ad-75c8-4d75-ac1c-c5aa969435f9",
+  "name": "深度翻译",
+  "status": "active",
+  "createdAt": "2026-06-17T04:04:34.980Z",
+  "updatedAt": "2026-06-17T04:04:34.980Z",
+  "agents": [
+    {
+      "id": "agent_qzev4pgh",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-17T04:04:34.980Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_0etrdlwc",
+    "title": "深度翻译",
+    "createdAt": "2026-06-17T04:04:34.980Z",
+    "file": "summary_0etrdlwc.md"
+  },
+  "lastMessageCount": 30
+}

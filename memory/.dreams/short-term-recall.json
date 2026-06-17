@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-13T14:03:01.474Z",
+  "updatedAt": "2026-06-16T07:35:50.867Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -974,18 +974,21 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-05-28 Heartbeat 记录 ## 01:01 首次 heartbeat ### 系统状态 - **C盘空间**：30.1GB / 50GB 阈值 ✅ 正常 - **G/H盘挂载**：未挂载 ⏸️ 跳过封面下载和音乐库同步 - **网络**：正常，RSS 源可访问 ### 执行任务 1. **C盘空间监控** ✅ - 已检查，30.1GB 正常，不发告警 2. **Metal/Hardcore RSS 检查** ✅ - 周四任务，已抓取9个核心源 ### Metal/Hardcore RSS 结果 **💿 新发行** - Callous Faulter - *Callous Faulter* (澳洲前卫金属/后金属，Gutter Prince Cabal，6月1日) - Crocell - *Swarm of Insects* (丹麦死亡金属，NCS专辑首发) - Monolord - *Neverending* (瑞典厄运金属，Relapse) - Trelldom - *...by the word...* (挪威前卫黑金属，Gaahl新作) - Elder - *Through Zero* (德国前卫摇滚/重型迷幻) - Maladie - *The Dance of Tragedies* (德国前卫黑金属) - Sabotør - *Første Aksjon* (挪威抵抗运动主题重金属/鞭击) **🎸 巡演/活动** - Agalloch 10年后首次美国演出（芝加哥/剑桥/布鲁克林，8月） - Metal Church + Ar",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.39245772659778594,
+      "totalScore": 1.1619979739189148,
       "maxScore": 0.39245772659778594,
       "firstRecalledAt": "2026-06-13T03:31:42.148Z",
-      "lastRecalledAt": "2026-06-13T03:31:42.148Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
       "queryHashes": [
-        "06d78e67f9f1"
+        "06d78e67f9f1",
+        "3c62d4ff6102",
+        "9e9ae98ec84b"
       ],
       "recallDays": [
-        "2026-06-13"
+        "2026-06-13",
+        "2026-06-16"
       ],
       "conceptTags": [
         "网络",
@@ -1067,20 +1070,23 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-06-08 记忆 ## 09:31 - Heartbeat 首次执行 ### 执行的任务 1. ✅ 读取 HEARTBEAT.md 并遵循执行 2. ✅ C: 盘空间检查 - 41.6 GB (正常，<50GB) 3. ✅ 检查 H: 盘挂载状态 - 未挂载（跳过封面下载和音乐同步） 4. ✅ 更新 heartbeat-state.json（记录今日检查时间） 5. ✅ 输出质量反思（检查昨日输出） ### 输出质量反思结果 **自查问题：** - ✅ 无过程堆砌 - 技术排查记录有必要 - ✅ 无信息轰炸 - 使用表格/代码块/emoji组织 - ⚠️ 记忆文件有重复内容（昨日文件写入了3次相同内容） - ✅ 无过度解读 - 用户问什么答什么 - ✅ 无废话 - 直接执行，结果导向 **改进措施：** - 今天写记忆文件时先检查是否已存在相同内容 - 将 RYM CloakBrowser 方案封装为可复用脚本 ### 今日已完成任务 - ✅ Indie 音乐 RSS 检查 (08:47) - ✅ 文学 RSS 检查 (09:02) - ✅ C: 盘空间监控 (09:31) ### 待执行任务 - ⏳ 17:00 每日工作总结与推送 - ❌ 专辑封面下载（H:盘未挂载，跳过） - ❌ 荒岛唱片同步（H:盘未挂载，跳过） ### 今日不执行的任务 - ❌ Metal/Hardcore RSS（仅周二/四/六） - ❌ 深挖线 RSS（仅周日） - ❌ 历史/哲学 RSS（仅周二/四） - ❌ 宗教 RSS（仅周六） - ❌ 周日身心回顾（仅周日） -",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.170524078607559,
+      "totalScore": 1.9539984941482542,
       "maxScore": 0.39893676340579987,
       "firstRecalledAt": "2026-06-13T03:31:42.148Z",
-      "lastRecalledAt": "2026-06-13T14:03:01.474Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
       "queryHashes": [
         "06d78e67f9f1",
         "a87935319079",
-        "8b2592882a7c"
+        "8b2592882a7c",
+        "3c62d4ff6102",
+        "9e9ae98ec84b"
       ],
       "recallDays": [
-        "2026-06-13"
+        "2026-06-13",
+        "2026-06-16"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -1318,18 +1324,20 @@
       "endLine": 347,
       "source": "memory",
       "snippet": "- 准备提交 album tracker 脚本、封面、heartbeat 日志、memory 文件 - 执行每日 commit + push ## 17:44 每日工作总结与推送（heartbeat） - ✅ Git commit + push 成功（e2906c6 → origin/main） - ⚠️ 飞书通知失败：群 `oc_85fa2f97d8d5d3b11eedad80146293e6` user_count=0，Bot 可能未加入该群 - 需要用户将飞书 Bot 手动加入群聊 --- *本文件为 2026-05-25 的记忆记录，追加内容请继续往下写，不要覆盖已有内容。* ### 05:03 - G盘路径修复 - G盘是网络映射盘，每次启动可能掉导致数据库连接失败 - 修复album-tracker数据库路径：从硬编码G:/改为UNC路径\\\\10.0.2.4\\qemu\\原创计划\\music，不再依赖G盘映射",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3836507201194763,
-      "maxScore": 0.3836507201194763,
+      "totalScore": 0.7691885620355605,
+      "maxScore": 0.38553784191608426,
       "firstRecalledAt": "2026-06-13T11:02:34.801Z",
-      "lastRecalledAt": "2026-06-13T11:02:34.801Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
       "queryHashes": [
-        "e5ec179b7cdc"
+        "e5ec179b7cdc",
+        "0e443aa7615d"
       ],
       "recallDays": [
-        "2026-06-13"
+        "2026-06-13",
+        "2026-06-16"
       ],
       "conceptTags": [
         "网络",
@@ -1712,6 +1720,286 @@
         "hardcore",
         "rss",
         "动态"
+      ]
+    },
+    "memory:memory/2026-06-08.md:149:188": {
+      "key": "memory:memory/2026-06-08.md:149:188",
+      "path": "memory/2026-06-08.md",
+      "startLine": 149,
+      "endLine": 188,
+      "source": "memory",
+      "snippet": "`task-summary_20260608_1213.md` # 2026-06-08 记忆 ## 09:31 - Heartbeat 首次执行 ### 执行的任务 1. ✅ 读取 HEARTBEAT.md 并遵循执行 2. ✅ C: 盘空间检查 - 41.6 GB (正常，<50GB) 3. ✅ 检查 H: 盘挂载状态 - 未挂载（跳过封面下载和音乐同步） 4. ✅ 更新 heartbeat-state.json（记录今日检查时间） 5. ✅ 输出质量反思（检查昨日输出） ### 输出质量反思结果 **自查问题：** - ✅ 无过程堆砌 - 技术排查记录有必要 - ✅ 无信息轰炸 - 使用表格/代码块/emoji组织 - ⚠️ 记忆文件有重复内容（昨日文件写入了3次相同内容） - ✅ 无过度解读 - 用户问什么答什么 - ✅ 无废话 - 直接执行，结果导向 **改进措施：** - 今天写记忆文件时先检查是否已存在相同内容 - 将 RYM CloakBrowser 方案封装为可复用脚本 ### 今日已完成任务 - ✅ Indie 音乐 RSS 检查 (08:47) - ✅ 文学 RSS 检查 (09:02) - ✅ C: 盘空间监控 (09:31) ### 待执行任务 - ⏳ 17:00 每日工作总结与推送 - ❌ 专辑封面下载（H:盘未挂载，跳过） - ❌ 荒岛唱片同步（H:盘未挂载，跳过） ### 今日不执行的任务 - ❌ Metal/Hardcore RSS（仅周二/四/六） - ❌ 深挖线 RSS（仅周日） - ❌ 历史/哲学 RSS（仅周二/四） -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7712570756673813,
+      "maxScore": 0.39225874841213226,
+      "firstRecalledAt": "2026-06-15T22:31:54.161Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "queryHashes": [
+        "3c62d4ff6102",
+        "9e9ae98ec84b"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "task-summary-20260608-1213.md",
+        "heartbeat.md",
+        "41.6",
+        "heartbeat-state.json",
+        "使用表格/代码块/emoji组织",
+        "metal/hardcore",
+        "仅周二/四/六",
+        "历史/哲学"
+      ]
+    },
+    "memory:memory/2026-05-01.md:1:36": {
+      "key": "memory:memory/2026-05-01.md:1:36",
+      "path": "memory/2026-05-01.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# Heartbeat 2026-05-01 10:30 ## Tasks completed - **月度评估提醒**：5月1日，发飞书提醒张树回顾4月身心状态 - **RSS 动态检查**：Pitchfork、Stereogum、Metal Injection、MetalSucks、Consequence、UPEE 共6个源 - **飞书推送**：月度提醒 + 音乐动态摘要（Loathe/Jpegmafia/Interpol-DIIV/Magnetic Fields×Fleet Foxes） ## Key findings 无重大炸弹级新闻。值得关注的： - **Loathe** 新专辑 *A Stranger To You*（7/17），首单\"Revenant\"被称迄今最重 - **Interpol** 北美巡演，嘉宾有 DIIV（盯鞋党关注） - **Jpegmafia** 第六张专辑 5/21 发行 - **UPEE** 今日乐评：张悬《神的游戏》(2012) ## State updated heartbeat-state.json: monthly_review → \"2026-05-01\" --- # Session 2026-05-01 13:05 ## HEARTBEAT.md 清理完成 - 修复格式错误：删除 `### 🧠 思想/哲学` 前的幽灵字符 'n' - 删除重复的 `❌ 已验证不可用（全球）` 表（与上方主不可用表重复，且 Granta 在可用表中已标记 ✅） - 更新统计表：欧洲大陆",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40186704993247985,
+      "maxScore": 0.40186704993247985,
+      "firstRecalledAt": "2026-06-16T00:31:36.400Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "queryHashes": [
+        "9e9ae98ec84b"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "7/17",
+        "5/21",
+        "heartbeat-state.json",
+        "monthly-review",
+        "heartbeat.md",
+        "思想/哲学",
+        "heartbeat",
+        "tasks"
+      ]
+    },
+    "memory:memory/2026-06-08.md:129:157": {
+      "key": "memory:memory/2026-06-08.md:129:157",
+      "path": "memory/2026-06-08.md",
+      "startLine": 129,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "上午完成了数据库重构（废除年度表），用户要求同步更新文档。 ### 更新内容 **MEMORY.md** 更新 3 处： - 专辑入库同步规则：双表同步 → 单表模式（年度表已废弃） - 听歌记录数据库：统计规则改为 JOIN，数据库现状更新为 albums 517条 | listen_history 1028条 | artists 313条 - 听歌记录维护流程：双表同步 → 单表模式 **ALBUM_TRACKER_RULES.md** 完全重写（10.5KB）： - 标准操作流程更新为 10 步（单表模式） - 数据库架构部分重写（废除 albums_2024/2025/2026 年度表） - 新增「错误6：listen_history album_id 映射错误」（记录此次修复经验） - 新增工具脚本 `_audit_mapping.py` ✅ 和 `_rebuild_listen_history.py` ✅ 状态标记 - Web 查询逻辑：server.ts 4个API端点 + 前端 index.html/app.js 同步更新 ### 待办（远程路径） - 远程路径可达时，复制 `_music_latest.db` 到 `\\\\10.0.2.4\\qemu\\原创计划\\music\\music` - 远程路径可达时，复制 `database.sql` 到 `\\\\10.0.2.4\\qemu\\原创计划\\music\\database.sql` ### task-summary `task-summary_20260608_1213.md` # 2026-06-08 记忆",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38223903477191923,
+      "maxScore": 0.38223903477191923,
+      "firstRecalledAt": "2026-06-16T00:31:36.400Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "queryHashes": [
+        "9e9ae98ec84b"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "listen-history",
+        "album-tracker-rules.md",
+        "10.5kb",
+        "albums-2024/2025/2026",
+        "album-id",
+        "audit-mapping.py",
+        "rebuild-listen-history.py"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:43": {
+      "key": "memory:memory/2026-04-20.md:1:43",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# 2026-04-20 工作日志 ## HEARTBEAT RSS 检查 (09:43) ### 重大新闻 - **The Strokes**：Coachella 演出结尾播放反战视频（伊朗/加沙轰炸画面），配合 \"Oblivius\" 演出 - **Madonna**：新单曲 \"I Feel So Free\" 发布，Confessions II 首支预览 - **Olivia Rodrigo**：与 Addison Rae 同台表演，首演新曲 \"Drop Dead\" - **Justin Bieber**：Coachella Weekend 2 压轴，嘉宾 SZA、Billie Eilish ### RSS 源状态 - ✅ Pitchfork — 稳定 - ✅ Stereogum — 稳定 - ✅ Metal Injection — 稳定 - ✅ UPEE — 稳定 ### 状态更新 - 飞书通知：✅ 已发送 (om_x100b516c1f2350a0c3214da6c9bc512) - heartbeat-state.json：✅ 已更新 - Git commit：✅ 9a09ab2 --- ## 用户问答 ### 退格乐队 - 成立时间：2016年夏天，北京 - 风格：后朋克 + 新迷幻 + Krautrock - 成员：郑冬（主唱/吉他）、阿辉、瓜瓜、毛特 - 厂牌：兵马司唱片 - 专辑：《群蚁蚀象》 - 郑冬歌词特点：动物意象写都市分裂感（《大象》=物质欲望、《火烈鸟》=冷漠割裂、《蝼蚁》=社",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37733006477355957,
+      "maxScore": 0.37733006477355957,
+      "firstRecalledAt": "2026-06-16T00:31:36.400Z",
+      "lastRecalledAt": "2026-06-16T00:31:36.400Z",
+      "queryHashes": [
+        "9e9ae98ec84b"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "伊朗/加沙轰炸画面",
+        "heartbeat-state.json",
+        "主唱/吉他",
+        "工作",
+        "日志",
+        "heartbeat",
+        "rss",
+        "检查"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:34": {
+      "key": "memory:memory/2026-04-30.md:1:34",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-30 工作日志 ## HEARTBEAT RSS 检查（14:56 CST / 06:56 UTC） ### RSS 源状态 - ✅ Pitchfork — 稳定 - ✅ Stereogum — 稳定（retry 后成功） - ✅ Metal Injection — 稳定 - ✅ UPEE — 稳定 - ⚠️ NME — 失败 ### 今日新闻量较少，无重大发布 **Pitchfork:** Tori Amos《In Times of Dragons》、Kneecap《FENIAN》(Irish rap)、Yu Su《Foundry》(华裔)、Alex G在YouTube发布两首未发行曲 **Stereogum:** Nia Archives新专辑《Emotional Junglist》(7月)、Nixon Boyd首张个人专辑 **Metal:** Zao批评TuneCore误标AI音乐；Cradle of Filth新专辑创作中 **UPEE:** LEPYUTIN专访 ### 飞书通知 - ✅ 已发送 (om_x100b501b95b35ca8c2dae0fd0f6bdc9) - heartbeat-state.json ✅ 已更新 (rss_music: 1745997480000) ## 用户请求：五一五天独立音乐学习计划（19:49 CST） 用户确认方向：**独立音乐相关学习**。已为他定制五天计划并发送飞书。 ### 五天计划核心结构 | 天 | 主题 | 核心内容",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3797454237937927,
+      "maxScore": 0.3797454237937927,
+      "firstRecalledAt": "2026-06-16T07:35:50.867Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
+      "queryHashes": [
+        "0e443aa7615d"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "heartbeat-state.json",
+        "rss-music",
+        "工作",
+        "日志",
+        "heartbeat",
+        "rss",
+        "检查",
+        "cst"
+      ]
+    },
+    "memory:memory/2026-06-13.md:43:90": {
+      "key": "memory:memory/2026-06-13.md:43:90",
+      "path": "memory/2026-06-13.md",
+      "startLine": 43,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "- 飞书通知：bot已从群移出，无法发送通知（需用户重新加bot入群） ### Git 提交 - 本次 commit：heartbeat状态更新、每日记忆、session摘要等 # 2026-06-13 周六 ## Teens of Style 入库 - 新增专辑：Car Seat Headrest - Teens of Style (2015) - album_id: 554 - RYM: 3.36/5 (8,270 ratings) - 风格：slacker rock, noise pop, power pop - 收听：1次（2026-06-13） - 封面：RYM 截图（iTunes/Deezer 无此专辑） - artifact: teens_of_style_insert_20260613.md ## 专辑封面每日补全 ✅ 完成 - 505张全部处理完毕，covers_remaining=0，covers_done=true - 最后一批：假假条、刀郎、装咖人、张福全均无可用源 ## Pitchfork Expert v3.0 - 重构为纯 HTTP scraper（`__PRELOADED_STATE__`） - 支持搜索功能，0 errors - Commit: 5e9e897 ## 独立音乐动态 - 周六 Metal/Hardcore 线已检查 ## 宗教动态 - 周六宗教RSS已检查 --- ## 19:01 每日工作总结 ### 今日完成 - ✅ 专辑封面补全任务终结：505张全部处理完毕 - ✅ Teens of Style 入库（C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3730162769556045,
+      "maxScore": 0.3730162769556045,
+      "firstRecalledAt": "2026-06-16T07:35:50.867Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
+      "queryHashes": [
+        "0e443aa7615d"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "album-id",
+        "3.36/5",
+        "itunes/deezer",
+        "covers-remaining",
+        "covers-done",
+        "v3.0",
+        "preloaded-state",
+        "metal/hardcore"
+      ]
+    },
+    "memory:memory/2026-05-05.md:120:138": {
+      "key": "memory:memory/2026-05-05.md:120:138",
+      "path": "memory/2026-05-05.md",
+      "startLine": 120,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "## 荒岛唱片同步纳入每日 heartbeat - 张树要求：每日 sync 不用他提醒，主动做 - 已更新 HEARTBEAT.md，新增「💿 荒岛唱片每日同步」检查项 - 逻辑：heartbeat 时检查 H/C 盘挂载→已挂载则自动跑 sync.sh→通知结果 ## 张树指令：每日 heartbeat 反思输出质量 - 张树要求以后要时常反思自己的输出问题，每日用 heartbeat 反思 - 已在 HEARTBEAT.md 顶部添加「🪞 输出质量反思（每日）」section - 自检四项：过程堆砌 / 信息轰炸 / 过度解读 / 废话 - 发现问题→记入 memory，下次改进 ## 每日17:00工作总结push（新增） - 张树要求：每日17:00左右自动总结一天工作并推送 - 已更新 HEARTBEAT.md，新增「📋 每日17:00工作总结+push」检查项 - 逻辑：heartbeat检测到17:00窗口→生成工作汇总→发飞书群→完成 ## 中国摇滚十大女主唱搜索失败（新增） - 尝试多种搜索均被安全拦截：Google/Bing Captcha、Baidu/NetEase 拦截页面 - 唯一获取信息：Wikipedia 中国摇滚页面提到 Cobra(眼镜蛇乐队) 1989年全女子乐队 - 重要教训：这类排名类问题无权威来源，且搜索引擎全被拦截时应承认无法回答",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3614545553922653,
+      "maxScore": 0.3614545553922653,
+      "firstRecalledAt": "2026-06-16T07:35:50.867Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
+      "queryHashes": [
+        "0e443aa7615d"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "h/c",
+        "sync.sh",
+        "google/bing",
+        "baidu/netease",
+        "唱片",
+        "同步",
+        "纳入"
+      ]
+    },
+    "memory:memory/2026-06-06.md:181:225": {
+      "key": "memory:memory/2026-06-06.md:181:225",
+      "path": "memory/2026-06-06.md",
+      "startLine": 181,
+      "endLine": 225,
+      "source": "memory",
+      "snippet": "2. Wendy Eisenberg - Wendy Eisenberg（iTunes, 53968B） 3. Vol.II - Angine de Poitrine（iTunes, 156229B） ❌ 失败（所有源均未找到）： 4. 喀什科尔胡杨 - 刀郎 5. 夜官巡场 - 装咖人 6. She Came Back From the Square - 海朋森 7. 我不要别的历史 - 海朋森[Hiperson] 8. 郑钧=zj - 郑钧 9. 时代在召唤 - 假假条 10. Tea with Flower Fragrance - 张福全 **环境**: G盘UNC路径已通（`\\10.0.2.4\\qemu`），`net use G:` 映射成功 **数据库**: heartbeat-state.json 已更新（covers: 2026-06-06T14:31, covers_remaining: 7, covers_total: 504） ### C盘空间监控 ✅ - 已用：36.4 GB（低于50GB阈值，正常） - 无需告警 ### 荒岛唱片同步 ❌ - H盘未挂载 → 跳过 ### 飞书通知 400 错误（持续）⚠️ - `message` 工具在 heartbeat 上下文中发送失败（400错误） - 已写入 artifact 文件 `heartbeat-2026-06-06-1431.md` - 需要找到正确的飞书群发送方式 ### 待执行（17:00） - [ ] 每日工作总结与推送（commit + push + 飞书通知） ---",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35943371057510376,
+      "maxScore": 0.35943371057510376,
+      "firstRecalledAt": "2026-06-16T07:35:50.867Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
+      "queryHashes": [
+        "0e443aa7615d"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "vol.ii",
+        "10.0.2.4",
+        "heartbeat-state.json",
+        "2026-06-06t14",
+        "covers-remaining",
+        "covers-total",
+        "36.4",
+        "heartbeat-2026-06-06-1431.md"
+      ]
+    },
+    "memory:memory/2026-06-06.md:474:518": {
+      "key": "memory:memory/2026-06-06.md:474:518",
+      "path": "memory/2026-06-06.md",
+      "startLine": 474,
+      "endLine": 518,
+      "source": "memory",
+      "snippet": "2. Wendy Eisenberg - Wendy Eisenberg（iTunes, 53968B） 3. Vol.II - Angine de Poitrine（iTunes, 156229B） ❌ 失败（所有源均未找到）： 4. 喀什科尔胡杨 - 刀郎 5. 夜官巡场 - 装咖人 6. She Came Back From the Square - 海朋森 7. 我不要别的历史 - 海朋森[Hiperson] 8. 郑钧=zj - 郑钧 9. 时代在召唤 - 假假条 10. Tea with Flower Fragrance - 张福全 **环境**: G盘UNC路径已通（`\\10.0.2.4\\qemu`），`net use G:` 映射成功 **数据库**: heartbeat-state.json 已更新（covers: 2026-06-06T14:31, covers_remaining: 7, covers_total: 504） ### C盘空间监控 ✅ - 已用：36.4 GB（低于50GB阈值，正常） - 无需告警 ### 荒岛唱片同步 ❌ - H盘未挂载 → 跳过 ### 飞书通知 400 错误（持续）⚠️ - `message` 工具在 heartbeat 上下文中发送失败（400错误） - 已写入 artifact 文件 `heartbeat-2026-06-06-1431.md` - 需要找到正确的飞书群发送方式 ### 待执行（17:00） - [ ] 每日工作总结与推送（commit + push + 飞书通知） ---",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3594336479902267,
+      "maxScore": 0.3594336479902267,
+      "firstRecalledAt": "2026-06-16T07:35:50.867Z",
+      "lastRecalledAt": "2026-06-16T07:35:50.867Z",
+      "queryHashes": [
+        "0e443aa7615d"
+      ],
+      "recallDays": [
+        "2026-06-16"
+      ],
+      "conceptTags": [
+        "vol.ii",
+        "10.0.2.4",
+        "heartbeat-state.json",
+        "2026-06-06t14",
+        "covers-remaining",
+        "covers-total",
+        "36.4",
+        "heartbeat-2026-06-06-1431.md"
       ]
     }
   }

@@ -1,0 +1,15 @@
+# LIVE: New Young Pony Club – Purcell Room, Queen Elizabeth Hall, London, 14/06/2026
+
+**Source:** God Is in the TV  
+**Date:** 2026-06-15  
+**Link:** https://www.godisinthetvzine.co.uk/2026/06/15/live/
+
+---
+
+New Young Pony Club were always outliers. Beamed into a scene which valued grot and grime (messy hair, dirty Converse, unwashed drainpipe jeans) they appeared in their sequins and lip gloss like an angelic, high-gloss antidote. Their futuristic funk was a corollary to the ascendent sounds of DFA Records, of bootleg remixes that shocked genre-phobic indie gatekeepers. Their debut single 2006's 'Ice Cream' was a lascivious opening shot ("come on and dip your dipper"), a juddering-disco tantric slither whose bassline recalled the Bow-Chicka-Bow-Bow of 70's porn, while singer Ty Bulmer's vocals were dominatrix-lite, a full throttle and totally believable promise of "I can give you what you want."
+
+But it turns out that 'Ice Cream' was an anomaly in their catalogue. Over three diverse, excellent albums between 2007 and 2013 they lurched from P-Funk to gothic post-punk, lyrically exorcising the memory of dysfunctional parents, narcissistic party monsters and more. But such was the monolithic power of the cheeky wink of 'Ice Cream' that the band stayed pegged with a sort of one hit wonder-itis and were never allowed to break out of a glass ceiling. Thanks to a largely white music media which tokenised the idea of a band featuring a female drummer (Sarah Jones), a female keyboardist (Lou Hayter) and fronted by Bulmer herself, a black woman.
+
+But time has been kind to their catalogue. And tonight during their first gig in 12 years, as part of Harry Styles' Meltdown, the band who were always an excellent, tight unit, shine as if they've never been away. After a triumphant cancer battle, Bulmer's lyrical couplets ('Get Lucky''s insistent "I'm gonna get free this time" and 'The Bomb"'s nirvana state of "DANCE-ING") hit with a transcendent, life-affirming joy. While her acidic observations of New Rave's school of pretty poseurs and wasted wannabes ('Dolls', 'We Want To') crack with wisdom, like the storied caption to a post on the Indie Sleaze Instagram page. The beating heart of NYPC is still Sarah Jones' octopus-like drumming: it feels simultaneously Herculean and deeply felt. While the interplays (between guitarist Andy Spence's taut guitar lines and Al Doyle's bass; and the tripart harmonies between Bulmer, Jones and Hayter) are present and correct. This was, it turns out, the secret sauce which the band always had at their disposal. And there's a clarity in hearing their catalogue anew tonight. In the post-Poptimism climate, NYPC were pioneers; their songs are fireworks of pure joy, beamed in from an intergalactic disco. From the mirthful, lyrically divine 'We Want To' ("Let's go out and get VACANT!") to the anthemic "Ah-ha-ha-ha"'s of 'The Get Go', NYPC's gig is a cool corrective: they are one of the greatest bands of the British punk-indie scene of the noughties.
+
+Related

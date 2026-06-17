@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "翻译完成",
+  "name": "C盘阈值改60G",
   "status": "active",
   "createdAt": "2026-05-21T23:29:55.380Z",
-  "updatedAt": "2026-06-15T03:17:02.558Z",
+  "updatedAt": "2026-06-17T04:14:34.952Z",
   "agents": [
     {
       "id": "agent_3tj7bsnd",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_7hoz625k",
-    "title": "翻译完成",
+    "title": "C盘阈值改60G",
     "createdAt": "2026-05-21T23:29:55.380Z",
     "file": "summary_7hoz625k.md"
   },
-  "lastMessageCount": 58
+  "lastMessageCount": 67
 }

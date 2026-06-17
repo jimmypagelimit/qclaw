@@ -1,0 +1,25 @@
+{
+  "id": "45faa814-de36-492d-ad7b-d9c920e0f9f3",
+  "name": "会话摘要",
+  "status": "active",
+  "createdAt": "2026-06-15T18:09:14.786Z",
+  "updatedAt": "2026-06-15T18:09:14.786Z",
+  "agents": [
+    {
+      "id": "agent_27yf9mwg",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-15T18:09:14.786Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_mst1kdwx",
+    "title": "会话摘要",
+    "createdAt": "2026-06-15T18:09:14.786Z",
+    "file": "summary_mst1kdwx.md"
+  },
+  "lastMessageCount": 34
+}

@@ -74,6 +74,7 @@
 ### Kindle
 - 格式EPUB，必须带图片排版，邮箱 JIMMYPAGELIMIT_ACFYFR@KINDLE.com
 - 主题"Convert"，附件名"attached.epub"
+- total_listen_count 字段已彻底删除，收听次数完全从 listen_history 实时计算
 
 ## 联系方式
 - 邮箱: 15206651142@163.com（授权码: WWPkQKMPCMP4TPpx）
@@ -106,18 +107,22 @@
 - **MB SSL问题**: API方式urllib/requests SSL失败(UNEXPECTED_EOF_WHILE_READING)，Playwright真实浏览器可绕过
 - **LRCLIB**: 英文歌命中率接近100%，无中文歌词
 - **扩展方向**: 可接入LyricsTranslate（多语种翻译）和Musixmatch（时间戳对齐）
+- **LRCLIB**: 英文歌命中率接近100%，无中文歌词
+- **网易云**: 中文歌词主力源，API需Referer头，有翻译歌词+时间戳
+- **MB SSL问题**: Windows下间歇性不可用，Playwright可绕过
+- **扩展方向**: LyricsTranslate（冷门补充）
 
 ## 原创计划
 - 路径: \\10.0.2.4\qemu\原创计划
 - 月度/专题/年榜/双面计划/听歌随想/新专速递
 
 ### 听歌记录数据库（album-tracker 项目）⭐ 长期维护
-- **SQLite**: `\\10.0.2.4\qemu\原创计划\music\music`（UNC路径）
+- **SQLite**: `C:\Users\qujt\.qclaw\workspace\_music_latest.db`（唯一正确路径，2026-06-12确立）
 - **CLI 工具**: {workspace_root_dir}\tasks\2026-05-12-long-term-project\album-tracker
 - **Web 界面**: http://localhost:3456（`node dist/server.js` 启动）
 - **Python 3.11**: C:\Python311\python.exe
 - **统计规则**: 总排行查 `albums` 表，年度排行查 `listen_history` + `albums` JOIN（**不再使用年度表**）
-- **数据库现状**: albums 517条 | listen_history 1028条 | artists 313条
+- 数据库现状: albums 523条 | RYM评分覆盖率22.6%
 
 ### 听歌记录维护流程（2026-06-08 重构 ⭐ 终身维护）
 - **用户不再维护 Markdown**，改为直接告诉我要听/已听的专辑
@@ -136,6 +141,11 @@
 - 用法: `C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"`
 - 关键规则: headless=False, 首页等20秒, JS click进入专辑, 正则提取
 - 已验证4张专辑成功，详见 TOOLS.md
+- RYM 抓取工具（2026-06-15 升级）⭐
+- **批量回填**：`rym_fill_v3.py`，每天凌晨2点cron跑20张
+- **单专辑查询**：`rym_tool.py`
+- CloakBrowser绕CF，headless=False，正则提取avg_rating
+- 评分字段：`rymv2_score`（float）
 
 ## 常用网站
 - 匿名旅行者: https://www.anontraveler.com（音乐流派百科）
