@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "每日总结",
+  "name": "歌词源验证",
   "status": "active",
   "createdAt": "2026-06-17T08:20:20.581Z",
-  "updatedAt": "2026-06-17T08:20:20.581Z",
+  "updatedAt": "2026-06-17T08:52:02.189Z",
   "agents": [
     {
       "id": "agent_gwyx7z3m",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_cmt62s1g",
-    "title": "每日总结",
+    "title": "歌词源验证",
     "createdAt": "2026-06-17T08:20:20.581Z",
     "file": "summary_cmt62s1g.md"
   },
-  "lastMessageCount": 30
+  "lastMessageCount": 14
 }
