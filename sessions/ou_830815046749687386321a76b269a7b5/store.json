@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "专辑详情重构",
+  "name": "音乐管理沉淀",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-17T08:18:59.104Z",
+  "updatedAt": "2026-06-18T05:21:16.284Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_6u4m9737",
-    "title": "专辑详情重构",
+    "title": "音乐管理沉淀",
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 209
+  "lastMessageCount": 79
 }
