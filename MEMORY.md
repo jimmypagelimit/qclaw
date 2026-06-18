@@ -75,6 +75,7 @@
 - 格式EPUB，必须带图片排版，邮箱 JIMMYPAGELIMIT_ACFYFR@KINDLE.com
 - 主题"Convert"，附件名"attached.epub"
 - total_listen_count 字段已彻底删除，收听次数完全从 listen_history 实时计算
+- 下载封面（网易云API > iTunes > Deezer > MusicBrainz Cover Art Archive），绝对禁止用网页截图
 
 ## 联系方式
 - 邮箱: 15206651142@163.com（授权码: WWPkQKMPCMP4TPpx）
@@ -122,7 +123,7 @@
 - **Web 界面**: http://localhost:3456（`node dist/server.js` 启动）
 - **Python 3.11**: C:\Python311\python.exe
 - **统计规则**: 总排行查 `albums` 表，年度排行查 `listen_history` + `albums` JOIN（**不再使用年度表**）
-- 数据库现状: albums 523条 | RYM评分覆盖率22.6%
+- 数据库现状: albums 524条 | MBID覆盖率90.3% | 描述覆盖率97.3% | RYM评分覆盖率25%
 
 ### 听歌记录维护流程（2026-06-08 重构 ⭐ 终身维护）
 - **用户不再维护 Markdown**，改为直接告诉我要听/已听的专辑
@@ -142,7 +143,7 @@
 - 关键规则: headless=False, 首页等20秒, JS click进入专辑, 正则提取
 - 已验证4张专辑成功，详见 TOOLS.md
 - RYM 抓取工具（2026-06-15 升级）⭐
-- **批量回填**：`rym_fill_v3.py`，每天凌晨2点cron跑20张
+- ⭐ 批量禁令（2026-06-16确立）：禁止批量爬取RYM，废除rym_fill_v3.py和所有cron任务；只能单专辑查询（rym_tool.py）
 - **单专辑查询**：`rym_tool.py`
 - CloakBrowser绕CF，headless=False，正则提取avg_rating
 - 评分字段：`rymv2_score`（float）

@@ -26,9 +26,9 @@
     "feishu_error": "400: feishu push still failing on 2026-06-17 16:18 retry, bot permission issue persists",
     "feishu_last_check": "2026-06-18",
     "feishu_last_push_error": "2026-06-18T09:28",
-    "daily_summary_done": false,
+    "daily_summary_done": true,
     "quality_reflection_done": true,
     "c_drive_alert_pending": false
   },
-  "last_heartbeat": "2026-06-18T15:31:00+08:00"
+  "last_heartbeat": "2026-06-18T16:31:00+08:00"
 }
