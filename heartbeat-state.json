@@ -6,10 +6,10 @@
     "covers_total": 216,
     "covers_remaining": 0,
     "covers_error": "no such column: total_listen_count - DB schema mismatch, script needs fix",
-    "c_drive_check": "2026-06-18",
+    "c_drive_check": "2026-06-19",
     "c_drive_exceeded": false,
-    "c_drive_used_gb": 45.9,
-    "c_drive_free_gb": 253.4,
+    "c_drive_used_gb": 47.0,
+    "c_drive_free_gb": 252.4,
     "feishu_c_drive_alert": "skipped_ok",
     "rss": 56,
     "rss_history_tuesday": "2026-06-16",
@@ -30,5 +30,5 @@
     "quality_reflection_done": true,
     "c_drive_alert_pending": false
   },
-  "last_heartbeat": "2026-06-18T16:31:00+08:00"
+  "last_heartbeat": "2026-06-19T00:31:00+08:00"
 }

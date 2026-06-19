@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "心跳监控",
+  "name": "MBID 修复",
   "status": "active",
   "createdAt": "2026-06-17T08:20:20.581Z",
-  "updatedAt": "2026-06-18T01:30:47.130Z",
+  "updatedAt": "2026-06-18T14:08:00.835Z",
   "agents": [
     {
       "id": "agent_gwyx7z3m",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_cmt62s1g",
-    "title": "心跳监控",
+    "title": "MBID 修复",
     "createdAt": "2026-06-17T08:20:20.581Z",
     "file": "summary_cmt62s1g.md"
   },
-  "lastMessageCount": 29
+  "lastMessageCount": 45
 }

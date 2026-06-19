@@ -13,6 +13,7 @@
 import express from 'express';
 import { initDatabase, closeDatabase, query, queryOne, execute, getTableCount, saveDatabase } from './db/database';
 import path from 'path';
+import fs from 'fs';
 
 const app = express();
 const PORT = process.env.PORT || 3456;
@@ -260,7 +261,115 @@ app.get('/api/albums/:id', async (req, res) => {
   }
 });
 
-// 艺术家专辑列表
+// 歌词API
+// 歌词API（使用数据库路径，fallback 到目录扫描）
+app.get('/api/albums/:id/lyrics', (req, res) => {
+  try {
+    const album = queryOne<any>(
+      'SELECT artist, album_name FROM albums WHERE album_id = ?',
+      [Number(req.params.id)]
+    );
+    if (!album) { res.json({ tracks: [] }); return; }
+
+    // 1. 先查数据库中的歌词路径
+    const dbTracks = query<any>(
+      'SELECT track_number, track_name, lyrics_text_path, lyrics_lrc_path FROM tracks WHERE album_id = ? ORDER BY track_number',
+      [Number(req.params.id)]
+    );
+
+    // 检查是否已有路径（说明该专辑已处理过）
+    const hasPaths = dbTracks.some(t => t.lyrics_text_path || t.lyrics_lrc_path);
+
+    if (hasPaths) {
+      // 直接使用数据库路径读取文件
+      const lyricsTracks = dbTracks.map(t => {
+        let text = null;
+        let lrc = null;
+        try {
+          if (t.lyrics_text_path && fs.existsSync(t.lyrics_text_path)) {
+            text = fs.readFileSync(t.lyrics_text_path, 'utf-8').trim();
+          }
+          if (t.lyrics_lrc_path && fs.existsSync(t.lyrics_lrc_path)) {
+            lrc = fs.readFileSync(t.lyrics_lrc_path, 'utf-8').trim();
+          }
+        } catch (e) {
+          console.error('Error reading lyrics file:', e);
+        }
+        return {
+          number: t.track_number,
+          name: t.track_name,
+          text,
+          lrc,
+        };
+      });
+      res.json({ tracks: lyricsTracks });
+      return;
+    }
+
+    // 2. 无数据库路径，fallback 到目录扫描（未处理的专辑）
+    const lyricsRoot = path.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
+    if (!fs.existsSync(lyricsRoot)) { res.json({ tracks: [] }); return; }
+
+    const aName = album.artist.toLowerCase();
+    const bName = album.album_name.toLowerCase();
+    let matchedDir: string | null = null;
+    for (const artistDir of fs.readdirSync(lyricsRoot)) {
+      const aPath = path.join(lyricsRoot, artistDir);
+      if (!fs.statSync(aPath).isDirectory() || artistDir.toLowerCase() !== aName) continue;
+      for (const albumDir of fs.readdirSync(aPath)) {
+        const bPath = path.join(aPath, albumDir);
+        if (!fs.statSync(bPath).isDirectory() || albumDir.toLowerCase() !== bName) continue;
+        matchedDir = bPath;
+        break;
+      }
+      if (matchedDir) break;
+    }
+    if (!matchedDir) { res.json({ tracks: [] }); return; }
+
+    const allFiles = fs.readdirSync(matchedDir);
+    const txtMap = new Map<string, string>();
+    const lrcMap = new Map<string, string>();
+    for (const f of allFiles) {
+      const base = path.basename(f, path.extname(f));
+      const key = base.toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (f.endsWith('.txt')) txtMap.set(key, path.join(matchedDir, f));
+      else if (f.endsWith('.lrc')) lrcMap.set(key, path.join(matchedDir, f));
+    }
+
+    const lyricsTracks: Array<{number: number; name: string; text: string|null; lrc: string|null}> = [];
+    const usedKeys = new Set<string>();
+
+    for (const t of dbTracks) {
+      const key = t.track_name.toLowerCase().replace(/[^a-z0-9]/g, '');
+      usedKeys.add(key);
+      const txtPath = txtMap.get(key);
+      const lrcPath = lrcMap.get(key);
+      lyricsTracks.push({
+        number: t.track_number,
+        name: t.track_name,
+        text: txtPath ? fs.readFileSync(txtPath, 'utf-8').trim() : null,
+        lrc: lrcPath ? fs.readFileSync(lrcPath, 'utf-8').trim() : null,
+      });
+    }
+
+    let extraNum = dbTracks.length + 1;
+    for (const [key, fpath] of txtMap) {
+      if (usedKeys.has(key)) continue;
+      usedKeys.add(key);
+      const name = path.basename(fpath, '.txt');
+      lyricsTracks.push({
+        number: extraNum++,
+        name,
+        text: fs.readFileSync(fpath, 'utf-8').trim(),
+        lrc: lrcMap.get(key) ? fs.readFileSync(lrcMap.get(key)!, 'utf-8').trim() : null,
+      });
+    }
+
+    res.json({ tracks: lyricsTracks });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
 app.get('/api/artist/:name', async (req, res) => {
   try {
     const { limit = 50 } = req.query;

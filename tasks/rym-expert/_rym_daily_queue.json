@@ -1,0 +1,31 @@
+{
+  "done": [],
+  "pending": [
+    {
+      "id": 275,
+      "artist": "魏如萱",
+      "album": "不允许哭泣的场合",
+      "listens": 12
+    },
+    {
+      "id": 46,
+      "artist": "张雨生",
+      "album": "口是心非",
+      "listens": 11
+    },
+    {
+      "id": 178,
+      "artist": "葬尸湖",
+      "album": "奕秋",
+      "listens": 11
+    },
+    {
+      "id": 156,
+      "artist": "David Bowie",
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "listens": 10
+    }
+  ],
+  "total": 388,
+  "remaining": 388
+}

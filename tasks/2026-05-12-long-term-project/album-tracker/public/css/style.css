@@ -1395,3 +1395,127 @@ h3 {
   .leaderboard-grid { grid-template-columns: 1fr; }
   .external-ratings-grid { flex-direction: column; }
 }
+
+/* ==================== 歌词 ==================== */
+
+.detail-lyrics {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.lyrics-block {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 24px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.lyrics-section {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.lyrics-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.lyrics-section:first-child {
+  padding-top: 0;
+}
+
+.lyrics-track-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.lyrics-track-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  color: var(--warm-gold);
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.lyrics-track-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.lyrics-timestamp-badge {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.lyrics-text {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  padding-left: 32px;
+}
+
+/* LRC timestamp lines */
+.lrc-line {
+  display: block;
+}
+
+.lrc-time {
+  font-family: 'IBM Plex Sans', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+/* Track lyric badge in tracklist */
+.track-col-lyrics {
+  width: 32px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.track-lyric-badge {
+  font-size: 12px;
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Lyrics scrollbar */
+.lyrics-block::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lyrics-block::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lyrics-block::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.lyrics-block::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .lyrics-text { padding-left: 16px; font-size: 14px; }
+  .lyrics-block { padding: 16px; }
+}

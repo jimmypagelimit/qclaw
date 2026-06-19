@@ -237,8 +237,13 @@ function goPage(offset) {
 // ==================== 专辑详情（只读）====================
 function showAlbumDetail(id) {
   currentAlbumId = id;
-  api(`/albums/${id}`).then(album => {
+  Promise.all([
+    api(`/albums/${id}`),
+    api(`/albums/${id}/lyrics`).catch(() => ({ tracks: [] })),
+  ]).then(([album, lyricsData]) => {
     currentAlbumData = album;
+    const lyricsMap = Object.fromEntries((lyricsData.tracks || []).map(t => [t.number || t.name, t]));
+    const hasAnyLyrics = (lyricsData.tracks || []).some(t => t.text || t.lrc);
     document.getElementById('modal-title').textContent = album.album_name;
     const url = coverUrl(album);
     const coverHtml = url
@@ -284,8 +289,11 @@ function showAlbumDetail(id) {
       <!-- 曲目列表 -->
       <div class="detail-tracks">
         <div class="detail-section-title">🎵 曲目 (${(album.tracks || []).length})</div>
-        ${renderTracks(album.tracks)}
+        ${renderTracks(album.tracks, lyricsMap)}
       </div>
+
+      <!-- 歌词大块 -->
+      ${hasAnyLyrics ? renderLyricsBlock(lyricsData.tracks, album.tracks) : ''}
       
       <!-- 外部评分 -->
       ${renderExternalRatings(album.external_ratings)}
@@ -318,7 +326,7 @@ function showToast(msg, type = 'success') {
 }
 
 // ==================== 曲目列表渲染 ====================
-function renderTracks(tracks) {
+function renderTracks(tracks, lyricsMap) {
   if (!tracks || !tracks.length) {
     return '<div class="tracks-empty">暂无曲目信息</div>';
   }
@@ -327,16 +335,65 @@ function renderTracks(tracks) {
       <span class="track-col-num">#</span>
       <span class="track-col-name">曲名</span>
       <span class="track-col-dur">时长</span>
+      <span class="track-col-lyrics"></span>
     </div>
     ${tracks.map((t, i) => {
       const dur = t.duration ? formatDuration(t.duration) : '-';
+      const lt = lyricsMap?.[t.track_number] || lyricsMap?.[t.track_name];
+      const badge = lt?.text ? '<span class="track-lyric-badge" title="有歌词">📜</span>' : '';
       return `<div class="track-row ${i % 2 === 0 ? 'track-even' : 'track-odd'}">
         <span class="track-col-num">${t.track_number}</span>
         <span class="track-col-name" title="${escapeHtml(t.track_name)}">${escapeHtml(t.track_name)}</span>
         <span class="track-col-dur">${dur}</span>
+        <span class="track-col-lyrics">${badge}</span>
       </div>`;
     }).join('')}
   </div>`;
+}
+
+// ==================== 歌词大块渲染 ====================
+function renderLyricsBlock(lyricsTracks, dbTracks) {
+  if (!lyricsTracks || !lyricsTracks.length) return '';
+  // Merge: prefer DB track order, append extras
+  const dbNames = new Set((dbTracks || []).map(t => t.track_name.toLowerCase().replace(/[^a-z0-9]/g, '')));
+  const ordered = [...lyricsTracks.filter(t => dbNames.has((t.name || '').toLowerCase().replace(/[^a-z0-9]/g, ''))),
+                 ...lyricsTracks.filter(t => !dbNames.has((t.name || '').toLowerCase().replace(/[^a-z0-9]/g, '')))];
+
+  // Find max track number for section numbering
+  const sections = ordered.filter(t => t.text || t.lrc);
+  if (!sections.length) return '';
+
+  return `<div class="detail-lyrics">
+    <div class="detail-section-title">📝 歌词</div>
+    <div class="lyrics-block">
+      ${sections.map(s => {
+        const content = s.lrc ? formatLrc(s.lrc) : escapeHtml(s.text || '');
+        return `<div class="lyrics-section">
+          <div class="lyrics-track-header">
+            <span class="lyrics-track-num">${s.number}.</span>
+            <span class="lyrics-track-name">${escapeHtml(s.name)}</span>
+            ${s.lrc ? '<span class="lyrics-timestamp-badge">⏱</span>' : ''}
+          </div>
+          <div class="lyrics-text">${content}</div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+}
+
+function formatLrc(lrcText) {
+  const lines = lrcText.split('\n');
+  return lines.map(line => {
+    // [mm:ss.xx] or [mm:ss.xxx]
+    const match = line.match(/^\[(\d{2}):(\d{2})[\.:]\d{2,3}\]/);
+    if (match) {
+      const text = line.replace(/^\[\d{2}:\d{2}[\.:]\d{2,3}\]\s*/, '');
+      if (!text) return '';
+      return `<span class="lrc-line"><span class="lrc-time">${match[1]}:${match[2]}</span> ${escapeHtml(text)}</span>`;
+    }
+    if (!line.trim()) return '<br>';
+    return escapeHtml(line);
+  }).filter(l => l).join('\n');
 }
 
 function formatDuration(seconds) {
@@ -346,7 +403,7 @@ function formatDuration(seconds) {
   return `${m}:${s}`;
 }
 
-// ==================== 外部评分渲染 ====================
+}// ==================== 外部评分渲染 ====================
 function renderExternalRatings(ratings) {
   if (!ratings || !ratings.length) return '';
   return `<div class="detail-external-ratings">
