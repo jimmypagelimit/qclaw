@@ -403,7 +403,7 @@ function formatDuration(seconds) {
   return `${m}:${s}`;
 }
 
-}// ==================== 外部评分渲染 ====================
+// ==================== 外部评分渲染 ====================
 function renderExternalRatings(ratings) {
   if (!ratings || !ratings.length) return '';
   return `<div class="detail-external-ratings">

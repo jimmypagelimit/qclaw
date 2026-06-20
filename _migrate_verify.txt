@@ -1,0 +1,22 @@
+Migrated 309 artists
+
+id=1, Windir: country=挪威, region=维斯特兰
+id=2, ABBA: country=瑞典, region=
+id=3, AC/DC: country=澳大利亚, region=悉尼
+id=4, Adrianne Lenker: country=美国, region=印第安纳波利斯
+id=5, Adrianne Lenker & Buck Meek: country=美国, region=印第安纳波利斯
+id=6, Agalloch: country=美国, region=波特兰
+id=7, Aldous Harding: country=美国, region=
+id=8, Alice In Chains: country=英国, region=
+id=9, American Football: country=美国, region=
+id=10, American Road In New Jersey: country=美国, region=
+
+Artists with no country: 9
+
+Artists with conflicting countries: 6
+  Paul McCartney: 2 different countries
+  The Cure: 2 different countries
+  Tizzy Bac: 2 different countries
+  U2: 2 different countries
+  张雨生: 2 different countries
+  陈楚生: 2 different countries

@@ -1,0 +1,25 @@
+{
+  "id": "0fd3f61c-ba21-40c4-8789-f0ee6151b105",
+  "name": "金属翻译",
+  "status": "active",
+  "createdAt": "2026-06-19T10:45:46.576Z",
+  "updatedAt": "2026-06-19T10:45:46.576Z",
+  "agents": [
+    {
+      "id": "agent_58il2iqm",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-19T10:45:46.576Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_d43ps6ke",
+    "title": "金属翻译",
+    "createdAt": "2026-06-19T10:45:46.576Z",
+    "file": "summary_d43ps6ke.md"
+  },
+  "lastMessageCount": 132
+}

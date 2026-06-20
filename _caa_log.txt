@@ -1,0 +1,7 @@
+[CAA] 开始扫描数据库...
+[CAA] 需处理专辑数：1
+[CAA] 开始扫描数据库...
+[CAA] DB: C:/Users/qujt/.qclaw/workspace/_music_latest.db
+[CAA] covers目录: C:/Users/qujt/.qclaw/workspace/tasks/2026-05-12-long-term-project/album-tracker/public/covers
+[CAA] 需处理专辑数：0
+[CAA] 完成！OK=0  SKIP=0  FAIL=0  / 总计=0

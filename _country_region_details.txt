@@ -1,0 +1,90 @@
+
+=== XW (3张) ===
+  id=479, Richard Sallis - Casino, country='XW'
+  id=517, 苏紫旭 & The Paramecia - 悲歌欢唱 Lamenting in Delight, country='XW'
+  id=522, midwest, post death - Post Recovery, country='XW'
+
+=== Worldwide (2张) ===
+  id=17, 邓丽君 - 淡淡幽情, country='Worldwide'
+  id=18, 卧轨的火车 - 一些次要的时刻, country='Worldwide'
+
+=== 空字符串 (23张) ===
+  id=423, 张雨生 - 雨生欢禧城, country=''
+  id=427, 施鑫文月 - 巴蜀文艺复兴：第二章, country=''
+  id=429, 梁博 - 精气神, country=''
+  id=430, 张雨生 - 雨后星空, country=''
+  id=434, 安抚狮子 - 醒, country=''
+  id=439, 木马 [Muma] - 木马 (Muma), country=''
+  id=446, 海朋森 [Hiperson] - 我不要别的历史, country=''
+  id=447, 刺猬 [Hedgehog] - Honeyed and Killed, country=''
+  id=448, 缺省 [Default] - 共同的土地 A Mutual Ground, country=''
+  id=451, 刺猬 [Hedgehog] - 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected), country=''
+  id=465, 小雨乐队 - 春戏, country=''
+  id=468, Lay Lady Lay - 苹果上的豹, country=''
+  id=469, 文雀 [Sparrow] - 两语, country=''
+  id=470, 觀觀 - 东方分子, country=''
+  id=471, 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 漩渦重構實驗 Vortex Reconstruction Experiment, country=''
+  id=472, 羊与马群 - You Can't Eat It so You Keep It as a Pet, country=''
+  id=474, 何韻詩 [HOCC] - Rive-Sud, Montréal, country=''
+  id=475, L8ching - 春子 Haruko, country=''
+  id=477, The Mensis Ritual - Cainite, country=''
+  id=480, Kill-Kennie - Repetition, country=''
+  id=489, threadbaron - The Sound of One Car Crashing, country=''
+  id=508, 魚住英里奈 [Erina Uozumi] - 永遠なんて Eien nante, country=''
+  id=525, 谢甜柒 - 脱轨, country=''
+
+=== None (8张) ===
+  id=549, Ira Dot - In Blue Time, country=None
+  id=550, 周华健 - 怎么断句呢, country=None
+  id=551, Porcelain Stars - Rosemary, country=None
+  id=553, Feeble Little Horse - Bitknot, country=None
+  id=554, Car Seat Headrest - Teens of Style, country=None
+  id=556, Big Thief - U.F.O.F., country=None
+  id=557, Big Thief - Double Infinity, country=None
+  id=559, 陈楚生 - 荒芜之境, country=None
+
+=== US (17张) ===
+  id=59, Car Seat Headrest - Monomania, country='US'
+  id=60, deafHeaven - Loney People With Power, country='US'
+  id=61, Wintersun - Wintersun, country='US'
+  id=65, Sonic Youth - EVOL, country='US'
+  id=69, Big Thief - Capacity, country='US'
+  id=88, Pavement - Crooked Rain,Crooked Rain, country='US'
+  id=165, Death - Symbolic, country='US'
+  id=455, Paul McCartney - Ram, country='US'
+  id=456, George Harrison - All Things Must Pass, country='US'
+  id=461, Sonic Youth - Daydream Nation, country='US'
+  id=488, Ratboys - Singin' to an Empty Chair, country='US'
+  id=490, Otto Benson - Peanut, country='US'
+  id=496, Twisted Teens - Blame the Clown, country='US'
+  id=519, Maria BC - Marathon, country='US'
+  id=543, Wendy Eisenberg - Wendy Eisenberg, country='US'
+  id=552, Greg Mendez - Beauty Land, country='US'
+  id=555, Olivia Rodrigo - you seem pretty sad for a girl so in love, country='US'
+
+=== UK (4张) ===
+  id=62, Led Zeppelin - Presence, country='UK'
+  id=63, The Police - Synchronicity, country='UK'
+  id=66, The Cure - The Head on the Door, country='UK'
+  id=482, Urne - Setting Fire to the Sky, country='UK'
+
+=== China (6张) ===
+  id=433, Jo's Moving Day - Itinerary, country='China'
+  id=443, 海朋森 - She Came Back From the Square, country='China'
+  id=444, 嘎调 [The Gar] - 嘎调, country='China'
+  id=466, Pu Poo Platter - 地下河 Undercurrent, country='China'
+  id=473, 秘密行动 - Cacophonic Symphony, country='China'
+  id=521, otay:onii - 愛在屎邊邊 Love Is in the Shit, country='China'
+
+=== Germany (3张) ===
+  id=67, The Cure - Kiss Me Kiss Me Kiss Me, country='Germany'
+  id=452, In Flames - The Jester Race, country='Germany'
+  id=459, Kanonenfieber - Soldatenschicksale, country='Germany'
+
+=== Taiwan (2张) ===
+  id=518, Tizzy Bac - 告密的心 (The Tell-Tale Heart), country='Taiwan'
+  id=520, Tizzy Bac - 如果看見地獄，我就不怕魔鬼, country='Taiwan'
+
+=== Europe (2张) ===
+  id=58, The Jesus and Mary Chain - Psychocandy, country='Europe'
+  id=454, My Bloody Valentine - Loveless, country='Europe'

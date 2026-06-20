@@ -1,0 +1,121 @@
+Phase2 MBID 补充报告（37 张待处理）
+======================================================================
+
+[1/37] Ira Dot - In Blue Time
+  [FAIL] 无结果 (artist=Ira Dot, album=In Blue Time)
+[2/37] Lay Lady Lay - 苹果上的豹
+  [FAIL] 无结果 (artist=Lay Lady Lay, album=苹果上的豹)
+[3/37] Various Artists War Child Records - Help(2)
+  [FAIL] 无结果 (artist=Various Artists War Child Records, album=Help(2))
+[4/37] V是兔子 - 大只佬
+  [FAIL] 无结果 (artist=V是兔子, album=大只佬)
+[5/37] 假假条 - 时代在召唤
+  [FAIL] 无结果 (artist=假假条, album=时代在召唤)
+[6/37] 刺猬 [Hedgehog] - Honeyed and Killed
+  [FAIL] 无结果 (artist=刺猬 [Hedgehog], album=Honeyed and Killed)
+[7/37] 刺猬 [Hedgehog] - 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected)
+  [FAIL] 无结果 (artist=刺猬 [Hedgehog], album=乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected))
+[8/37] 声音碎片 [Sound Fragment] - 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window)
+  [FAIL] 无结果 (artist=声音碎片 [Sound Fragment], album=没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window))
+[9/37] 大忘杠 - 荒腔走板 选段
+  [FAIL] 无结果 (artist=大忘杠, album=荒腔走板 选段)
+[10/37] 大波浪 - 蓝色的脸
+  [FAIL] 无结果 (artist=大波浪, album=蓝色的脸)
+[11/37] 天鹅与花朵 - 月下世界
+  [FAIL] 无结果 (artist=天鹅与花朵, album=月下世界)
+[12/37] 天鹅与花朵 - 遇雨而生
+  [FAIL] 无结果 (artist=天鹅与花朵, album=遇雨而生)
+[13/37] 安抚狮子 - 醒
+  [FAIL] 无结果 (artist=安抚狮子, album=醒)
+[14/37] 张雨生 - 卡拉OK.台北.我
+  [FAIL] 无结果 (artist=张雨生, album=卡拉OK.台北.我)
+[15/37] 张雨生 - 时空乐界
+  [FAIL] 无结果 (artist=张雨生, album=时空乐界)
+[16/37] 张雨生 - 雨后星空
+  [FAIL] 无结果 (artist=张雨生, album=雨后星空)
+[17/37] 惘闻 - 看不见的城市
+  [FAIL] 无结果 (artist=惘闻, album=看不见的城市)
+[18/37] 水树 - 北之国 IV
+  [FAIL] 无结果 (artist=水树, album=北之国 IV)
+[19/37] 王杰 - 苏醒
+  [FAIL] 无结果 (artist=王杰, album=苏醒)
+[20/37] 王齐铭 - 夜郎溪
+  [FAIL] 无结果 (artist=王齐铭, album=夜郎溪)
+[21/37] 王齐铭 - 生活麻辣烫
+  [FAIL] 无结果 (artist=王齐铭, album=生活麻辣烫)
+[22/37] 罗大佑 - 春龙交响夜2024
+  [FAIL] 无结果 (artist=罗大佑, album=春龙交响夜2024)
+[23/37] 罗大佑 - 皇后大道东
+  [FAIL] 无结果 (artist=罗大佑, album=皇后大道东)
+[24/37] 羊与马群 - You Can't Eat It so You Keep It as a Pet
+  [FAIL] 无结果 (artist=羊与马群, album=You Can't Eat It so You Keep It as a Pet)
+[25/37] 自然卷 - Cest La Vie
+  [FAIL] 无结果 (artist=自然卷, album=Cest La Vie)
+[26/37] 苏紫旭&The Paramecia - 泪水与共
+  [FAIL] 无结果 (artist=苏紫旭&The Paramecia, album=泪水与共)
+[27/37] 葬尸湖 - 悲秋之赋
+  [FAIL] 无结果 (artist=葬尸湖, album=悲秋之赋)
+[28/37] 葬尸湖、英吉沙 - 司命楼兰
+  [FAIL] 无结果 (artist=葬尸湖、英吉沙, album=司命楼兰)
+[29/37] 觀觀 - 东方分子
+  [FAIL] 无结果 (artist=觀觀, album=东方分子)
+[30/37] 许景淳 - 你来自何方
+  [FAIL] 无结果 (artist=许景淳, album=你来自何方)
+[31/37] 谢甜柒 - 脱轨
+  [FAIL] 无结果 (artist=谢甜柒, album=脱轨)
+[32/37] 郁冬 - 露天电影院
+  [FAIL] 无结果 (artist=郁冬, album=露天电影院)
+[33/37] 陈楚生 - 荒芜之境
+  [FAIL] 无结果 (artist=陈楚生, album=荒芜之境)
+[34/37] 高枫 - 丰收
+  [FAIL] 无结果 (artist=高枫, album=丰收)
+[35/37] 高枫 - 天那边的爱
+  [FAIL] 无结果 (artist=高枫, album=天那边的爱)
+[36/37] 魏如萱 - 大事发声旅行团 & 魏如萱专场
+  [FAIL] 无结果 (artist=魏如萱, album=大事发声旅行团 & 魏如萱专场)
+[37/37] 魏如萱 - 甜蜜生活
+  [FAIL] 无结果 (artist=魏如萱, album=甜蜜生活)
+
+======================================================================
+Phase2 新增: 0 条
+仍失败: 37 张
+最终覆盖率: 480/517 = 92.8%
+
+失败列表（需手动处理）:
+  id=549 | Ira Dot - In Blue Time
+  id=468 | Lay Lady Lay - 苹果上的豹
+  id=499 | Various Artists War Child Records - Help(2)
+  id=71 | V是兔子 - 大只佬
+  id=23 | 假假条 - 时代在召唤
+  id=447 | 刺猬 [Hedgehog] - Honeyed and Killed
+  id=451 | 刺猬 [Hedgehog] - 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected)
+  id=440 | 声音碎片 [Sound Fragment] - 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window)
+  id=329 | 大忘杠 - 荒腔走板 选段
+  id=262 | 大波浪 - 蓝色的脸
+  id=431 | 天鹅与花朵 - 月下世界
+  id=432 | 天鹅与花朵 - 遇雨而生
+  id=434 | 安抚狮子 - 醒
+  id=94 | 张雨生 - 卡拉OK.台北.我
+  id=422 | 张雨生 - 时空乐界
+  id=430 | 张雨生 - 雨后星空
+  id=406 | 惘闻 - 看不见的城市
+  id=357 | 水树 - 北之国 IV
+  id=21 | 王杰 - 苏醒
+  id=391 | 王齐铭 - 夜郎溪
+  id=428 | 王齐铭 - 生活麻辣烫
+  id=348 | 罗大佑 - 春龙交响夜2024
+  id=170 | 罗大佑 - 皇后大道东
+  id=472 | 羊与马群 - You Can't Eat It so You Keep It as a Pet
+  id=372 | 自然卷 - Cest La Vie
+  id=137 | 苏紫旭&The Paramecia - 泪水与共
+  id=293 | 葬尸湖 - 悲秋之赋
+  id=239 | 葬尸湖、英吉沙 - 司命楼兰
+  id=470 | 觀觀 - 东方分子
+  id=338 | 许景淳 - 你来自何方
+  id=525 | 谢甜柒 - 脱轨
+  id=3 | 郁冬 - 露天电影院
+  id=559 | 陈楚生 - 荒芜之境
+  id=40 | 高枫 - 丰收
+  id=41 | 高枫 - 天那边的爱
+  id=287 | 魏如萱 - 大事发声旅行团 & 魏如萱专场
+  id=290 | 魏如萱 - 甜蜜生活

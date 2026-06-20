@@ -1,0 +1,25 @@
+{
+  "id": "93c3dbad-4ef3-4592-90ab-e7d598cde84a",
+  "name": "歌词计划",
+  "status": "active",
+  "createdAt": "2026-06-19T17:12:06.403Z",
+  "updatedAt": "2026-06-19T17:12:06.403Z",
+  "agents": [
+    {
+      "id": "agent_75hyu6ep",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-06-19T17:12:06.403Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_d4aw74z6",
+    "title": "歌词计划",
+    "createdAt": "2026-06-19T17:12:06.403Z",
+    "file": "summary_d4aw74z6.md"
+  },
+  "lastMessageCount": 64
+}

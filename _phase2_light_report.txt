@@ -1,0 +1,27 @@
+Phase2 轻量版：处理 10 张
+======================================================================
+
+[1/10] Ira Dot - In Blue Time
+  [FAIL] 无结果
+[2/10] Lay Lady Lay - 苹果上的豹
+  [FAIL] 无结果
+[3/10] Various Artists War Child Records - Help(2)
+  [FAIL] 无结果
+[4/10] V是兔子 - 大只佬
+  [FAIL] 无结果
+[5/10] 假假条 - 时代在召唤
+  [FAIL] 无结果
+[6/10] 刺猬 [Hedgehog] - Honeyed and Killed
+  [FAIL] 无结果
+[7/10] 刺猬 [Hedgehog] - 乌鸦谷 - 晕晕众生,命命相连 (Crow Valley - It's All Connected)
+  [FAIL] 无结果
+[8/10] 声音碎片 [Sound Fragment] - 没有鸟鸣, 关上窗吧 (No Bird Is Singing Now Close the Window)
+  [FAIL] 无结果
+[9/10] 大忘杠 - 荒腔走板 选段
+  [FAIL] 无结果
+[10/10] 大波浪 - 蓝色的脸
+  [FAIL] 无结果
+
+======================================================================
+本轮新增: 0 条
+覆盖率: 480/517 = 92.8%
