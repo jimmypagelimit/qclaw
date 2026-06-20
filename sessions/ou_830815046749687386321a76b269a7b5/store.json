@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "音乐专辑入库与品味总结",
+  "name": "会话摘要",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-20T11:16:50.475Z",
+  "updatedAt": "2026-06-20T13:22:17.799Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_6u4m9737",
-    "title": "音乐专辑入库与品味总结",
+    "title": "会话摘要",
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 79
+  "lastMessageCount": 42
 }
