@@ -4800,8 +4800,6 @@ INSERT INTO "albums" VALUES(590,'Constellations For The Lonely','Doves','UK','Eu
 INSERT INTO "albums" VALUES(591,'MAYHEM','Lady Gaga','US','North America',NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2025,'Pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(592,'Glutton For Punishment','Heartworms','UK','Europe',NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2025,'Post-Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(593,'Doolittle','Pixies','US',NULL,'Alternative Rock',NULL,NULL,0,NULL,NULL,'/covers/593-Pixies-Doolittle.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1989,'Alternative Rock / Noise Pop / Post-Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
-INSERT INTO "albums" VALUES(594,'Lush','Snail Mail',NULL,NULL,NULL,NULL,'',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2018,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
-INSERT INTO "albums" VALUES(595,'Valentine','Snail Mail',NULL,NULL,NULL,NULL,'',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2021,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -5792,7 +5790,6 @@ INSERT INTO "artists" VALUES(319,'Porcelain Stars','[]','美国',NULL,1,0.0,0,'2
 INSERT INTO "artists" VALUES(320,'Feeble Little Horse','[]','美国',NULL,1,0.0,0,'2026-06-14 10:30:09','','');
 INSERT INTO "artists" VALUES(321,'Tucker Zimmerman','[]','美国',NULL,1,0.0,0,'2026-06-20 19:00:11','','');
 INSERT INTO "artists" VALUES(322,'苏醒','[]','中国',NULL,1,0.0,0,'2026-06-20 19:04:53','','');
-INSERT INTO "artists" VALUES(323,'Snail Mail','[]','US',NULL,1,0.0,0,'2026-06-21 17:15:44','','');
 CREATE TABLE external_charts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     album_id INTEGER,
@@ -7903,8 +7900,6 @@ INSERT INTO "listen_history" VALUES(2812,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2813,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2814,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2815,555,'2026-06-21',2026,'','personal');
-INSERT INTO "listen_history" VALUES(2816,594,'2026-06-21',2026,'','');
-INSERT INTO "listen_history" VALUES(2817,595,'2026-06-21',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,

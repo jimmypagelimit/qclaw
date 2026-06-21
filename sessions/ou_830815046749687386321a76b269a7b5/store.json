@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "独立音乐讨论",
+  "name": "Snail Mail入库",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-21T09:13:11.433Z",
+  "updatedAt": "2026-06-21T09:50:57.537Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_6u4m9737",
-    "title": "独立音乐讨论",
+    "title": "Snail Mail入库",
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 73
+  "lastMessageCount": 75
 }
