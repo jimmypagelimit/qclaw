@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "Snail Mail入库",
+  "name": "音乐库入库事故与纠正",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-21T09:50:57.537Z",
+  "updatedAt": "2026-06-21T20:26:44.225Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_6u4m9737",
-    "title": "Snail Mail入库",
+    "title": "音乐库入库事故与纠正",
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 75
+  "lastMessageCount": 76
 }

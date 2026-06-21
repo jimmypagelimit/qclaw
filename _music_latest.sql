@@ -4800,6 +4800,7 @@ INSERT INTO "albums" VALUES(590,'Constellations For The Lonely','Doves','UK','Eu
 INSERT INTO "albums" VALUES(591,'MAYHEM','Lady Gaga','US','North America',NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2025,'Pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(592,'Glutton For Punishment','Heartworms','UK','Europe',NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2025,'Post-Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(593,'Doolittle','Pixies','US',NULL,'Alternative Rock',NULL,NULL,0,NULL,NULL,'/covers/593-Pixies-Doolittle.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1989,'Alternative Rock / Noise Pop / Post-Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(594,'Rituals of Shame','Warning',NULL,NULL,NULL,NULL,'UK doom metal. Relapse Records. 5 tracks: Rituals of Shame, Stations, Night Comes Down, Landing Lights, Teacher. 20-year follow-up to the classic Watching from a Distance (2006). Recorded at The Arch Studio (former church in Southport).',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -5790,6 +5791,7 @@ INSERT INTO "artists" VALUES(319,'Porcelain Stars','[]','美国',NULL,1,0.0,0,'2
 INSERT INTO "artists" VALUES(320,'Feeble Little Horse','[]','美国',NULL,1,0.0,0,'2026-06-14 10:30:09','','');
 INSERT INTO "artists" VALUES(321,'Tucker Zimmerman','[]','美国',NULL,1,0.0,0,'2026-06-20 19:00:11','','');
 INSERT INTO "artists" VALUES(322,'苏醒','[]','中国',NULL,1,0.0,0,'2026-06-20 19:04:53','','');
+INSERT INTO "artists" VALUES(324,'Warning','[]','UK',NULL,1,0.0,0,'2026-06-22 04:28:45','','');
 CREATE TABLE external_charts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     album_id INTEGER,
@@ -7900,6 +7902,7 @@ INSERT INTO "listen_history" VALUES(2812,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2813,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2814,593,'2026-06-21',2026,'','personal');
 INSERT INTO "listen_history" VALUES(2815,555,'2026-06-21',2026,'','personal');
+INSERT INTO "listen_history" VALUES(2818,594,'2026-06-22',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -13119,10 +13122,10 @@ DELETE FROM "sqlite_sequence";
 INSERT INTO "sqlite_sequence" VALUES('albums_2024',261);
 INSERT INTO "sqlite_sequence" VALUES('albums_2025',416);
 INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
-INSERT INTO "sqlite_sequence" VALUES('artists',323);
+INSERT INTO "sqlite_sequence" VALUES('artists',324);
 INSERT INTO "sqlite_sequence" VALUES('genres',360);
 INSERT INTO "sqlite_sequence" VALUES('styles',178);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',2817);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',2818);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
