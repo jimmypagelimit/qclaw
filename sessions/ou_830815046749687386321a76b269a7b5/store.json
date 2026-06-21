@@ -1,9 +1,9 @@
 {
   "id": "ou_830815046749687386321a76b269a7b5",
-  "name": "会话摘要",
+  "name": "音乐生命",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-20T13:22:17.799Z",
+  "updatedAt": "2026-06-21T08:02:49.931Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_6u4m9737",
-    "title": "会话摘要",
+    "title": "音乐生命",
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 42
+  "lastMessageCount": 52
 }

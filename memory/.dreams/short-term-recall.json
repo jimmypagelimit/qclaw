@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-20T12:01:58.811Z",
+  "updatedAt": "2026-06-21T06:03:39.733Z",
   "entries": {
     "memory:memory/2026-05-14.md:38:71": {
       "key": "memory:memory/2026-05-14.md:38:71",
@@ -135,26 +135,28 @@
       "endLine": 98,
       "source": "memory",
       "snippet": "**重要决定：用户选择继续完善 Web UI（展示统计方向），不走 CLI 完善。Web UI 只做展示统计，维护操作全走 CLI。** ## 注意事项 - git push 必须用 Git Bash（有 credential helper），PowerShell 会卡凭据弹窗 - album-tracker 项目路径：`tasks/2026-05-12-long-term-project/album-tracker` - Web 服务器：`node dist/server.js`，端口 3456 - 数据库现状：albums 495条 | albums_2026 122条 - 封面进度：216张完成，~279张剩余（HEARTBEAT 每日自动跑10张） # 2026-05-13 周三 ## 上午任务执行记录 - 09:34 开始执行今日任务 - ✅ H:和C:盘已挂载，同步完成（B/C/G文件夹） - ✅ 独立音乐RSS（Indie线：Pitchfork/Stereogum/BrooklynVegan）已抓取并通知 - ✅ 文学RSS（中文网页+韩国+东南亚）部分完成，英文源（The Millions）已获取，中文源URL待修正 - ✅ 输出质量反思（周二）：无问题 - 无过程堆砌 - 直答，无多余搜索过程 - 无信息轰炸 - 飞书通知简洁 - 无过度解读 - 未添加不必要分析 - 无废话 - 避免了\"让我试试\"等 ## 输出质量反思（周二 2026-05-12） 回顾昨日输出： - 魚住英里奈照片",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5081985920667647,
+      "totalScore": 2.8875207751989365,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T17:40:37.183Z",
-      "lastRecalledAt": "2026-06-19T16:31:55.646Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
       "queryHashes": [
         "62b9fba333fe",
         "e5ec179b7cdc",
         "d65973d69b58",
         "157e07b53c4e",
-        "1deda4a7c63c"
+        "1deda4a7c63c",
+        "d5d365b3d419"
       ],
       "recallDays": [
         "2026-05-22",
         "2026-06-13",
         "2026-06-18",
         "2026-06-19",
-        "2026-06-20"
+        "2026-06-20",
+        "2026-06-21"
       ],
       "conceptTags": [
         "album-tracker",
@@ -1091,13 +1093,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-06-08 记忆 ## 09:31 - Heartbeat 首次执行 ### 执行的任务 1. ✅ 读取 HEARTBEAT.md 并遵循执行 2. ✅ C: 盘空间检查 - 41.6 GB (正常，<50GB) 3. ✅ 检查 H: 盘挂载状态 - 未挂载（跳过封面下载和音乐同步） 4. ✅ 更新 heartbeat-state.json（记录今日检查时间） 5. ✅ 输出质量反思（检查昨日输出） ### 输出质量反思结果 **自查问题：** - ✅ 无过程堆砌 - 技术排查记录有必要 - ✅ 无信息轰炸 - 使用表格/代码块/emoji组织 - ⚠️ 记忆文件有重复内容（昨日文件写入了3次相同内容） - ✅ 无过度解读 - 用户问什么答什么 - ✅ 无废话 - 直接执行，结果导向 **改进措施：** - 今天写记忆文件时先检查是否已存在相同内容 - 将 RYM CloakBrowser 方案封装为可复用脚本 ### 今日已完成任务 - ✅ Indie 音乐 RSS 检查 (08:47) - ✅ 文学 RSS 检查 (09:02) - ✅ C: 盘空间监控 (09:31) ### 待执行任务 - ⏳ 17:00 每日工作总结与推送 - ❌ 专辑封面下载（H:盘未挂载，跳过） - ❌ 荒岛唱片同步（H:盘未挂载，跳过） ### 今日不执行的任务 - ❌ Metal/Hardcore RSS（仅周二/四/六） - ❌ 深挖线 RSS（仅周日） - ❌ 历史/哲学 RSS（仅周二/四） - ❌ 宗教 RSS（仅周六） - ❌ 周日身心回顾（仅周日） -",
-      "recallCount": 13,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.1432245671749115,
+      "totalScore": 5.897548282146454,
       "maxScore": 0.4630758315324783,
       "firstRecalledAt": "2026-06-13T03:31:42.148Z",
-      "lastRecalledAt": "2026-06-20T12:01:58.811Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
       "queryHashes": [
         "06d78e67f9f1",
         "a87935319079",
@@ -1111,14 +1113,17 @@
         "270b988507ac",
         "1deda4a7c63c",
         "49dd809fe8f9",
-        "6a52ab795754"
+        "6a52ab795754",
+        "69671817e012",
+        "d5d365b3d419"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-16",
         "2026-06-17",
         "2026-06-19",
-        "2026-06-20"
+        "2026-06-20",
+        "2026-06-21"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -1266,13 +1271,13 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-05-13 周三 ## 上午任务执行记录 - 09:34 开始执行今日任务 - ✅ H:和C:盘已挂载，同步完成（B/C/G文件夹） - ✅ 独立音乐RSS（Indie线：Pitchfork/Stereogum/BrooklynVegan）已抓取并通知 - ✅ 文学RSS（中文网页+韩国+东南亚）部分完成，英文源（The Millions）已获取，中文源URL待修正 - ✅ 输出质量反思（周二）：无问题 - 无过程堆砌 - 直答，无多余搜索过程 - 无信息轰炸 - 飞书通知简洁 - 无过度解读 - 未添加不必要分析 - 无废话 - 避免了\"让我试试\"等 ## 输出质量反思（周二 2026-05-12） 回顾昨日输出： - 魚住英里奈照片识别：直接响应，无不必要过程 - Heartbeat任务：执行无多余细节展示 - 17:00日报：飞书通知简洁 质量检查： - ✅ 无过程堆砌 - ✅ 无信息轰炸 - ✅ 无过度解读 - ✅ 无废话 ## 待完成 - ⏳ ~17:00 每日工作总结（git commit + push + 飞书通知） # 2026-05-13 记忆 ## 上午工作 ### Web UI 重构为纯展示统计（~09:00-12:00） **背景：** 用户要求 Web UI 删除所有维护功能（add/edit/delete/listen），只做展示和统计。维护操作全部通过 CLI 完成。 **改动文件：**",
-      "recallCount": 8,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1710230112075806,
+      "totalScore": 3.9128487974405286,
       "maxScore": 0.42395079135894775,
       "firstRecalledAt": "2026-06-13T11:02:34.801Z",
-      "lastRecalledAt": "2026-06-20T12:01:58.811Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
       "queryHashes": [
         "e5ec179b7cdc",
         "cae702ef5037",
@@ -1281,13 +1286,16 @@
         "5136f18ed367",
         "1deda4a7c63c",
         "49dd809fe8f9",
-        "6a52ab795754"
+        "6a52ab795754",
+        "69671817e012",
+        "d5d365b3d419"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-17",
         "2026-06-18",
-        "2026-06-20"
+        "2026-06-20",
+        "2026-06-21"
       ],
       "conceptTags": [
         "b/c/g文件夹",
@@ -1778,13 +1786,13 @@
       "endLine": 188,
       "source": "memory",
       "snippet": "`task-summary_20260608_1213.md` # 2026-06-08 记忆 ## 09:31 - Heartbeat 首次执行 ### 执行的任务 1. ✅ 读取 HEARTBEAT.md 并遵循执行 2. ✅ C: 盘空间检查 - 41.6 GB (正常，<50GB) 3. ✅ 检查 H: 盘挂载状态 - 未挂载（跳过封面下载和音乐同步） 4. ✅ 更新 heartbeat-state.json（记录今日检查时间） 5. ✅ 输出质量反思（检查昨日输出） ### 输出质量反思结果 **自查问题：** - ✅ 无过程堆砌 - 技术排查记录有必要 - ✅ 无信息轰炸 - 使用表格/代码块/emoji组织 - ⚠️ 记忆文件有重复内容（昨日文件写入了3次相同内容） - ✅ 无过度解读 - 用户问什么答什么 - ✅ 无废话 - 直接执行，结果导向 **改进措施：** - 今天写记忆文件时先检查是否已存在相同内容 - 将 RYM CloakBrowser 方案封装为可复用脚本 ### 今日已完成任务 - ✅ Indie 音乐 RSS 检查 (08:47) - ✅ 文学 RSS 检查 (09:02) - ✅ C: 盘空间监控 (09:31) ### 待执行任务 - ⏳ 17:00 每日工作总结与推送 - ❌ 专辑封面下载（H:盘未挂载，跳过） - ❌ 荒岛唱片同步（H:盘未挂载，跳过） ### 今日不执行的任务 - ❌ Metal/Hardcore RSS（仅周二/四/六） - ❌ 深挖线 RSS（仅周日） - ❌ 历史/哲学 RSS（仅周二/四） -",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.944782835245132,
+      "totalScore": 4.6963060021400445,
       "maxScore": 0.45900781452655787,
       "firstRecalledAt": "2026-06-15T22:31:54.161Z",
-      "lastRecalledAt": "2026-06-20T12:01:58.811Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
       "queryHashes": [
         "3c62d4ff6102",
         "9e9ae98ec84b",
@@ -1795,13 +1803,16 @@
         "270b988507ac",
         "1deda4a7c63c",
         "49dd809fe8f9",
-        "6a52ab795754"
+        "6a52ab795754",
+        "69671817e012",
+        "d5d365b3d419"
       ],
       "recallDays": [
         "2026-06-16",
         "2026-06-17",
         "2026-06-19",
-        "2026-06-20"
+        "2026-06-20",
+        "2026-06-21"
       ],
       "conceptTags": [
         "task-summary-20260608-1213.md",
@@ -2112,18 +2123,20 @@
       "endLine": 28,
       "source": "memory",
       "snippet": "# 2026-06-15 ## L项目管道跑通 + Gemini报告学习 - MB曲目表提取管道完成（Playwright绕过SSL） - Twin Fantasy 10首歌词全部获取（18个文件） - Gemini Deep Research报告学习：全球47个音乐数据库全景 - 汇报以下结论，用户确认：记住曲目获取方法，歌词已保存到L项目lyrics/目录 - MEMORY.md更新：新增L项目章节 ## 2026-06-15 00:55 记忆保存 ### L项目（Lyrics Expert）管道跑通 - **方案**: Playwright → MusicBrainz（获取曲目列表）→ LRCLIB（逐首获取歌词）→ 本地保存 - **验证专辑**: Car Seat Headrest - Twin Fantasy（10/10首全部成功） - **输出**: 18个文件（8首.lrc+.txt, 2首仅.txt），路径: tasks/lyrics-expert/lyrics/Car Seat Headrest Twin Fantasy/ ### MusicBrainz 曲目获取关键方法 1. Playwright 搜索 `site:musicbrainz.org <专辑名> <艺人名>` 2. 找到 release-group 页面（URL含 `/release-group/`） 3. 解析页面提取 `Recording` 列表中的曲名和轨号 4. 如果曲名在标题行（`<h2>曲名</h2>`），优先选 Digital Media releas",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3712239295244217,
-      "maxScore": 0.3712239295244217,
+      "totalScore": 0.776025229692459,
+      "maxScore": 0.4048013001680374,
       "firstRecalledAt": "2026-06-17T10:12:11.178Z",
-      "lastRecalledAt": "2026-06-17T10:12:11.178Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
       "queryHashes": [
-        "3278766150b0"
+        "3278766150b0",
+        "a5d6e1b564eb"
       ],
       "recallDays": [
-        "2026-06-17"
+        "2026-06-17",
+        "2026-06-21"
       ],
       "conceptTags": [
         "歌词已保存到l项目lyrics/目录",
@@ -2335,22 +2348,24 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "## 11:26 Heartbeat 完成项 **🪞 输出质量反思（昨日 2026-05-11）** - ✅ 无过程堆砌、无信息轰炸、无过度解读、无废话 - 亮点：哲学问题回应\"有些黑暗确实没有黎明\"获用户认同 - 确认风格偏好：诚实 > 虚假安慰 **💿 荒岛唱片同步**：已于09:07执行完成（H↔C互相补充） **🏛️ 历史动态（周二=历史日）**： - History Extra: 历史上最伟大发明专家讨论 - Medievalists.net: 中世纪政治讽刺/喝水迷思/堡垒研究/亚瑟王文学史 - World History Encyclopedia: 凯撒利亚数字重建/撒切尔传记 - Smithsonian: 被奴役男孩身份研究/苏格兰威士忌酒厂遗址/澳大利亚岩层 - r/ChineseHistory: 新版社区规则发布 **技术备忘**： - History Today RSS 403错误（CF拦截），跳过 - 其余历史源均正常 --- ## 17:55 每日工作总结 **当日完成项：** 1. ✅ 魚住英里奈照片识别（上午）：识别出弹吉他现场照，现场布旗「春日牧人集」 2. ✅ 荒岛唱片同步（09:51）：Node.js版 sync-complement.js 执行成功，H↔C互相补充，1225个文件同步至H盘 3. ✅ 金属/硬核 RSS（周二轮换）：Decibel/No Clean Singing/Angry Metal Guy/Invisible Orunes/Lambgoat/r/",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5201300650835037,
-      "maxScore": 0.3848333239555359,
+      "totalScore": 1.91092993915081,
+      "maxScore": 0.3907998740673065,
       "firstRecalledAt": "2026-06-17T16:32:07.565Z",
-      "lastRecalledAt": "2026-06-20T12:01:58.811Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
       "queryHashes": [
         "d65973d69b58",
         "5136f18ed367",
         "49dd809fe8f9",
-        "6a52ab795754"
+        "6a52ab795754",
+        "d5d365b3d419"
       ],
       "recallDays": [
         "2026-06-18",
-        "2026-06-20"
+        "2026-06-20",
+        "2026-06-21"
       ],
       "conceptTags": [
         "medievalists.net",
@@ -2613,6 +2628,254 @@
         "写作",
         "正向",
         "传递"
+      ]
+    },
+    "memory:memory/2026-06-21.md:1:28": {
+      "key": "memory:memory/2026-06-21.md:1:28",
+      "path": "memory/2026-06-21.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 每日任务记录 - 2026-06-21 ## 歌词批量补全（6月20日晚启动，跨夜执行） ### 执行摘要 - 启动时间：2026-06-20 ~22:00 - 脚本：`_lyrics_batch.py`（后台 `_run_all_batches.bat`） - 目标：30 批 × 50 首 = 1500 首曲目补全 - 实际完成：9 批（450 首） - 进程原因中断：后台进程在 23:32 被 SIGKILL 杀死 - 本次成功：117 个 LRC + 23 个 TXT - 当前歌词覆盖率：73.7%（3676/4988，曲目总数 4988） ### 缺失原因分析 1. 器乐曲（Daft Punk、Fishmans、The Cure 等）— 无歌词正常 2. 中文专辑（万能青年旅店、卧轨的火车等）— LRCLIB 无中文歌词 3. 网络超时（API 15 秒超时） 4. 冷门曲目未收录 ### 后续计划 1. 完成剩余 21 批（约 1000 首） 2. 实现网易云 API 补全中文歌词 3. 标记器乐曲为\"无歌词\" ## 技术文件 - 脚本：`_lyrics_batch.py` - 任务记录：`lyrics_gap_fill_2026-06-20.md`",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4110805243253708,
+      "maxScore": 0.4110805243253708,
+      "firstRecalledAt": "2026-06-20T17:00:29.551Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
+      "queryHashes": [
+        "a5d6e1b564eb"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "网络",
+        "lyrics-batch.py",
+        "run-all-batches.bat",
+        "73.7",
+        "3676/4988",
+        "lyrics-gap-fill-2026-06-20.md",
+        "每日",
+        "任务"
+      ]
+    },
+    "memory:memory/2026-06-15.md:40:64": {
+      "key": "memory:memory/2026-06-15.md:40:64",
+      "path": "memory/2026-06-15.md",
+      "startLine": 40,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "### 歌词库实测汇总 - **LRCLIB**: 英文首选，免费REST API，命中率100%，有LRC时间戳，无中文 - **网易云音乐**: 中文首选，HTTP API需Referer头，**有中文翻译歌词+时间戳**（最大发现） - 翻译质量不错（实测Fill In The Blank翻译水准良好） - 搜索: `GET music.163.com/api/search/get?s=关键词&type=1&limit=10` - 歌词: `GET music.163.com/api/song/lyric?id={song_id}&lv=1&tv=1` - 返回 `lrc.lyric`(原歌词) + `tlyric.lyric`(翻译歌词)，均有时间戳 - 已知限制：搜索不精确，部分需手机绑定 - **LyricsTranslate**: 可爬取（web_fetch艺人页200OK），歌词在 `<div class=\"ltf\">`，搜索页超时 - **Genius/Musixmatch**: CF拦截/403，需API key或CDP绕过 - **AZLyrics/ChartLyrics/OVH**: 全挂 ### 最终歌词获取策略 - 英文 → LRCLIB（主力） - 中文+翻译 → 网易云音乐（主力） - 冷门补充 → LyricsTranslate（爬页面） - 双语对照 → 网易云原歌词LRC + 翻译LRC按时间戳对齐 ### L项目PLAN.md已全面更新 - Tier分级、实测数据、存储方案、执行路径 - 调研报告保存在 tasks",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4102022290229797,
+      "maxScore": 0.4102022290229797,
+      "firstRecalledAt": "2026-06-20T17:00:29.551Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
+      "queryHashes": [
+        "a5d6e1b564eb"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "music.163.com/api/search/get",
+        "music.163.com/api/song/lyric",
+        "song-id",
+        "lrc.lyric",
+        "tlyric.lyric",
+        "web-fetch艺人页200ok",
+        "genius/musixmatch",
+        "cf拦截/403"
+      ]
+    },
+    "memory:memory/2026-06-19.md:548:559": {
+      "key": "memory:memory/2026-06-19.md:548:559",
+      "path": "memory/2026-06-19.md",
+      "startLine": 548,
+      "endLine": 559,
+      "source": "memory",
+      "snippet": "- 当前剩余 cron：lyrics-plan（每天凌晨1:00推进歌词计划） ### 数据库迁移状态（artists表） - 已建 artists 表，迁移了 309 位艺术家 - **仍未完成**：冲突 artist country 统一、城市级 region 清理、albums 表旧字段删除 - Web 服务未重启，前端可能未更新 ### 07:42 - 取消翻译与入库专辑 - 用户要求取消所有深度翻译任务 - 用户要求张醒婵《手接我的回旋镖》专辑听一次并入库",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.409420982003212,
+      "maxScore": 0.409420982003212,
+      "firstRecalledAt": "2026-06-20T17:00:29.551Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
+      "queryHashes": [
+        "a5d6e1b564eb"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "lyrics-plan",
+        "当前",
+        "剩余",
+        "cron",
+        "lyrics",
+        "plan",
+        "每天",
+        "凌晨"
+      ]
+    },
+    "memory:memory/2026-06-20.md:1:41": {
+      "key": "memory:memory/2026-06-20.md:1:41",
+      "path": "memory/2026-06-20.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 每日任务记录 - 2026-06-20 ## 歌词批量补全启动 ### 任务描述 启动歌词批量补全脚本，使用 LRCLIB API 补全缺歌词的曲目。 ### 执行方式 - 后台运行 `_run_all_batches.bat`（30 批 × 50 首） - 每首限流 0.3 秒，API 超时 15 秒 ### 当前进度 - 完成：9/30 批（约 450 首曲目） - 成功：113 个 LRC + 22 个 TXT - 曲目歌词覆盖率：73.6%（3672/4988） ### 缺失原因 1. 器乐曲（无歌词正常） 2. 中文歌词（LRCLIB 无收录） 3. 网络超时 4. 冷门曲目未收录 ### 后续计划 1. 继续运行剩余 21 批 2. 实现网易云 API 补全中文歌词 3. 标记器乐曲为\"无歌词\" ### 技术文件 - 脚本：`_lyrics_batch.py` - 日志：`_lyrics_fill_log.txt` - 任务记录：`lyrics_gap_fill_2026-06-20.md` --- _记录时间：22:50_ ### 00:52 - 歌词进度与专辑查询 - 歌词补全后台进程被系统kill，只跑了9/30批，73.7%覆盖率 - 用户发送Tucker Zimmerman《Dance Of Love》专辑询问，确认已在数据库中 - 歌词补全任务未完成，需要继续推进",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40579414665699004,
+      "maxScore": 0.40579414665699004,
+      "firstRecalledAt": "2026-06-20T17:00:29.551Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
+      "queryHashes": [
+        "a5d6e1b564eb"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "网络",
+        "run-all-batches.bat",
+        "0.3",
+        "9/30",
+        "73.6",
+        "3672/4988",
+        "lyrics-batch.py",
+        "lyrics-fill-log.txt"
+      ]
+    },
+    "memory:memory/2026-06-14.md:278:319": {
+      "key": "memory:memory/2026-06-14.md:278:319",
+      "path": "memory/2026-06-14.md",
+      "startLine": 278,
+      "endLine": 319,
+      "source": "memory",
+      "snippet": "- 手动查 MBID 可以（偶尔能通） - 封面/流派用 RYM 或手动补 ### 已完成 - ✅ `PLAN-TRI-MERGE.md` 第九节更新为准确结论（commit `6874516`） - ✅ 临时测试文件清理（`_mb_test*.py`、`_mb_curl*.{bat,cmd}` 等） - ✅ Git push 完成 --- _最后更新：2026-06-14 21:57_ --- ## L 项目（Lyrics Expert）初始化（23:00） ### 创建文件 - `tasks/lyrics-expert/PLAN.md` — 项目规划（数据源评估 + 执行路径 + 存储方案） - `tasks/lyrics-expert/_lrclib_test2.py` — LRCLIB API 测试脚本 - `tasks/lyrics-expert/_lrclib_fetch.py` — LRCLIB 批量获取脚本（交互模式） ### LRCLIB 实测结果 - 英文歌 ✅ 正常返回（含 LRC 时间戳 + 纯文本） - **中文歌 ❌ 0 条结果**（LRCLIB 没有中文歌词库） - 中文歌词需走 Lyricstranslate.com ### 卡点 - 数据库无曲目表，获取歌词需要曲目列表 - 待用户决定曲目信息来源（音乐文件元数据 / 手动维护 / 按艺人搜索模式） --- ## L 项目（Lyrics Expert）管道搭建（23:00-23:21） ### 用户建议 - MusicBrainz 可提供曲目表（解决了我之前\"数据库无曲",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40207009613513944,
+      "maxScore": 0.40207009613513944,
+      "firstRecalledAt": "2026-06-20T17:00:29.551Z",
+      "lastRecalledAt": "2026-06-20T17:00:29.551Z",
+      "queryHashes": [
+        "a5d6e1b564eb"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "封面/流派用",
+        "plan-tri-merge.md",
+        "mb-test",
+        "mb-curl",
+        "tasks/lyrics-expert/plan.md",
+        "tasks/lyrics-expert",
+        "lrclib-test2.py",
+        "lrclib-fetch.py"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:43": {
+      "key": "memory:memory/2026-05-11.md:1:43",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# 2026-05-11 日志 ## 对话记录 ### 用户哲学提问与反馈 **时间**：2026-05-11 14:47 **问题**：\"我如何相信痛苦过后会有黎明\" **我的回答策略**： - 拒绝空洞安慰 - 诚实承认\"有些黑暗确实没有黎明\" - 指出\"相信\"是选择不是证明 - 反问：是什么让你问这个？ **用户反馈**（14:49）： > \"你竟然没有安慰我，挺好我喜欢你的个性，更喜欢'有些黑暗确实没有黎明'\" **意义**： - 确认用户对\"诚实 > 虚假安慰\"的偏好 - 这句话\"有些黑暗确实没有黎明\"得到用户认同 - 强化了我的回应风格：不回避黑暗，不假装乐观 --- ## 18:00 Heartbeat 完成项 **荒岛唱片同步**：H盘→C盘（9文件夹）+ C盘→H盘，互相补充模式完成 **独立音乐动态（周一Indie线）**：Pitchfork + Stereogum + Consequence + NME + Post-Punk.com + Aquarium Drunkard + No Echo + r/indieheads - RHCP 3亿版权出售给华纳 - Olof Dreijer 首张专辑《Loud Bloom》乐评 - Elder Island 新专辑《Hello Baby Okay》 - The Weeknd 最终巡演增亚洲站 - 纽约硬核 Sheer Terror 欧洲巡演 **今日commit**：102c066 sync: Desolate I",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3686166852712631,
+      "maxScore": 0.3686166852712631,
+      "firstRecalledAt": "2026-06-21T05:31:49.878Z",
+      "lastRecalledAt": "2026-06-21T05:31:49.878Z",
+      "queryHashes": [
+        "69671817e012"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "post-punk.com",
+        "r/indieheads",
+        "日志",
+        "对话",
+        "记录",
+        "用户",
+        "哲学",
+        "提问"
+      ]
+    },
+    "memory:memory/2026-06-21.md:1:42": {
+      "key": "memory:memory/2026-06-21.md:1:42",
+      "path": "memory/2026-06-21.md",
+      "startLine": 1,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "# 每日任务记录 - 2026-06-21 ## 歌词批量补全（6月20日晚启动，跨夜执行） ### 执行摘要 - 启动时间：2026-06-20 ~22:00 - 脚本：`_lyrics_batch.py`（后台 `_run_all_batches.bat`） - 目标：30 批 × 50 首 = 1500 首曲目补全 - 实际完成：9 批（450 首） - 进程原因中断：后台进程在 23:32 被 SIGKILL 杀死 - 本次成功：117 个 LRC + 23 个 TXT - 当前歌词覆盖率：73.7%（3676/4988，曲目总数 4988） ### 缺失原因分析 1. 器乐曲（Daft Punk、Fishmans、The Cure 等）— 无歌词正常 2. 中文专辑（万能青年旅店、卧轨的火车等）— LRCLIB 无中文歌词 3. 网络超时 4. 冷门曲目未收录 ### 后续计划 1. 完成剩余 21 批（约 1000 首） 2. 实现网易云 API 补全中文歌词 3. 标记器乐曲为\"无歌词\" ### 技术文件 - 脚本：`_lyrics_batch.py` - 任务记录：`lyrics_gap_fill_2026-06-20.md` ## Pitchfork 网站探索（2026-06-21 01:16） ### 目标 确认 Pitchfork 当前结构，为专辑评分/评论补充提供数据源。 ### 关键发现 - 网站可正常访问，无 Cloudflare 拦截 - 评论页评分可通过正则 `\"score\": X.X` 提取（JSON-LD 已失效） - 搜索页",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3585281908512115,
+      "maxScore": 0.3585281908512115,
+      "firstRecalledAt": "2026-06-21T05:31:49.878Z",
+      "lastRecalledAt": "2026-06-21T05:31:49.878Z",
+      "queryHashes": [
+        "69671817e012"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "网络",
+        "lyrics-batch.py",
+        "run-all-batches.bat",
+        "73.7",
+        "3676/4988",
+        "lyrics-gap-fill-2026-06-20.md",
+        "为专辑评分/评论补充提供数据源",
+        "x.x"
+      ]
+    },
+    "memory:memory/2026-05-02.md:290:321": {
+      "key": "memory:memory/2026-05-02.md:290:321",
+      "path": "memory/2026-05-02.md",
+      "startLine": 290,
+      "endLine": 321,
+      "source": "memory",
+      "snippet": "- 《黑暗之光》 - 《2003 逝》（可能是其中一张） ⚠️ **重要**：刚犯了瞎编歌词错误。不要再凭记忆编雷光夏的专辑/歌曲信息。不确定就说不知道。 --- ## 22:24 - 五一假期第二天日报（发飞书） **用户**：下班了，要做日报总结提交 **今日独立音乐动态（RSS扫描）**： - Pitchfork：Lip Critic《Theft World》乐评（纽约electro-punk新锐）；Goldie《Mother》曲目回顾；James Broadnax嘻哈案件引用歌词争议 - Stereogum：Action Bronson新专辑《Planet Frog》（下周发行）；Rostam取消演出 - Consequence：Tim Heidecker讽刺InfoWars文章 **今日工作/会话要点**（见task-summary文件）： 1. 歌词获取方法研究报告（task-summary_20260502_1330.md） 2. LRCLIB数据来源深度调查 3. Soulseek介绍 + CSH新专辑 4. 重大错误×2：时间搞错（《The Scholars》是2025年的） + 瞎编歌词（Big Thief《The Grave》） 5. 雷光夏《榜外》赏析 → 雷光夏→许巍听歌弧线（2011-2018） **飞书日报**：已发送至私聊（`ou_b9a6b98a8be0c723b1719ba17c78df2d`） **用户说\"2003逝\"**：未完成对话，可能是雷光夏某张专辑。⚠️ 不能瞎编，等用户",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3751587450504303,
+      "maxScore": 0.3751587450504303,
+      "firstRecalledAt": "2026-06-21T06:03:39.733Z",
+      "lastRecalledAt": "2026-06-21T06:03:39.733Z",
+      "queryHashes": [
+        "d5d365b3d419"
+      ],
+      "recallDays": [
+        "2026-06-21"
+      ],
+      "conceptTags": [
+        "不要再凭记忆编雷光夏的专辑/歌曲信息",
+        "纽约electro-punk新锐",
+        "今日工作/会话要点",
+        "见task-summary文件",
+        "task-summary-20260502-1330.md",
+        "2011-2018",
+        "黑暗",
+        "可能是"
       ]
     }
   }

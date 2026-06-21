@@ -1,0 +1,435 @@
+=== Batch 1 (offset 0, limit 100) ===
+Found 100 tracks missing lyrics
+[1/100] 卧轨的火车 - 回路II (Circle Route II) (from 一些次要的时刻)
+  -> NOT FOUND
+[2/100] 卧轨的火车 - 轻轻地 (Kissingly) (from 一些次要的时刻)
+  -> NOT FOUND
+[3/100] 卧轨的火车 - 零 (0) (from 一些次要的时刻)
+  -> NOT FOUND
+[4/100] 王啸坤 - 就像你 (from 三十王十三)
+  -> NOT FOUND
+[5/100] 王啸坤 - 残缺的歌（sea side） (from 三十王十三)
+  -> SAVED (LRC: YES, TXT: NO)
+[6/100] 王啸坤 - 浪旅 (from 三十王十三)
+  -> NOT FOUND
+[7/100] 王啸坤 - 重庆3905 (from 三十王十三)
+  -> SAVED (LRC: YES, TXT: NO)
+[8/100] 王啸坤 - 骗子 (from 三十王十三)
+  -> SAVED (LRC: YES, TXT: NO)
+[9/100] 王啸坤 - 长白山 (from 三十王十三)
+=== Batch 1 (offset 0, limit 100) ===
+Found 100 tracks missing lyrics
+[1/100] 卧轨的火车 - 回路II (Circle Route II) (from 一些次要的时刻)
+  -> SAVED (LRC: YES, TXT: NO)
+[10/100] Daft Punk - Nightvision (from Discovery)
+  -> NOT FOUND
+[2/100] 卧轨的火车 - 轻轻地 (Kissingly) (from 一些次要的时刻)
+  -> NOT FOUND
+[11/100] Daft Punk - Veridis Quo (from Discovery)
+  -> NOT FOUND
+[3/100] 卧轨的火车 - 零 (0) (from 一些次要的时刻)
+  -> NOT FOUND
+[12/100] Daft Punk - Short Circuit (from Discovery)
+  -> NOT FOUND
+[13/100] 万能青年旅店 - 早 (from 冀西南林路行)
+  -> NOT FOUND
+[4/100] 王啸坤 - 就像你 (from 三十王十三)
+  -> NOT FOUND
+[14/100] 万能青年旅店 - 平等雲霧 (from 冀西南林路行)
+  -> NOT FOUND
+[5/100] 王啸坤 - 浪旅 (from 三十王十三)
+  -> NOT FOUND
+[15/100] 万能青年旅店 - 繞越 (from 冀西南林路行)
+  -> NOT FOUND
+[6/100] 王啸坤 - 长白山 (from 三十王十三)
+  -> SAVED (LRC: YES, TXT: NO)
+[7/100] Daft Punk - Nightvision (from Discovery)
+  -> NOT FOUND
+[16/100] Fishmans - LONG SEASON 1 (from Long Season)
+=== Batch 1 (offset 0, limit 100) ===
+Found 100 tracks missing lyrics
+[1/100] 卧轨的火车 - 回路II (Circle Route II) (from 一些次要的时刻)
+  -> NOT FOUND
+[8/100] Daft Punk - Veridis Quo (from Discovery)
+  -> SAVED (LRC: YES, TXT: NO)
+[17/100] Fishmans - LONG SEASON 2 (from Long Season)
+  -> NOT FOUND
+[2/100] 卧轨的火车 - 轻轻地 (Kissingly) (from 一些次要的时刻)
+  -> SAVED (LRC: YES, TXT: NO)
+[18/100] Fishmans - LONG SEASON 3 (from Long Season)
+  -> NOT FOUND
+[9/100] Daft Punk - Short Circuit (from Discovery)
+  -> NOT FOUND
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[10/100] 万能青年旅店 - 早 (from 冀西南林路行)
+[3/100] 卧轨的火车 - 零 (0) (from 一些次要的时刻)
+[19/100] Fishmans - LONG SEASON 4 (from Long Season)
+  -> NOT FOUND
+[4/100] 王啸坤 - 就像你 (from 三十王十三)
+  -> NOT FOUND
+[11/100] 万能青年旅店 - 平等雲霧 (from 冀西南林路行)
+  -> NOT FOUND
+[5/100] 王啸坤 - 浪旅 (from 三十王十三)
+  -> SAVED (LRC: YES, TXT: NO)
+[20/100] Fishmans - LONG SEASON 5 (from Long Season)
+  -> NOT FOUND
+[12/100] 万能青年旅店 - 繞越 (from 冀西南林路行)
+  -> SAVED (LRC: YES, TXT: NO)
+[21/100] 万能青年旅店 - 狗尿馆 (from 万能青年旅店)
+  -> NOT FOUND
+[13/100] Fishmans - LONG SEASON 1 (from Long Season)
+  -> NOT FOUND
+[6/100] Daft Punk - Nightvision (from Discovery)
+  -> NOT FOUND
+[22/100] 万能青年旅店 - 洋鸟消夏录 (from 万能青年旅店)
+  -> SAVED (LRC: YES, TXT: NO)
+[14/100] Fishmans - LONG SEASON 2 (from Long Season)
+  -> NOT FOUND
+[7/100] Daft Punk - Veridis Quo (from Discovery)
+  -> NOT FOUND
+[23/100] 陈力 - 说聊斋 (from 红楼梦)
+  -> SAVED (LRC: YES, TXT: NO)
+[15/100] Fishmans - LONG SEASON 3 (from Long Season)
+  -> SAVED (LRC: YES, TXT: NO)
+[24/100] 陈力 - [data track] (from 红楼梦)
+  -> NOT FOUND
+[8/100] Daft Punk - Short Circuit (from Discovery)
+  -> SAVED (LRC: YES, TXT: NO)
+[16/100] Fishmans - LONG SEASON 4 (from Long Season)
+  -> SAVED (LRC: YES, TXT: NO)
+[25/100] John Lennon - Rough Take # 1 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[17/100] Fishmans - LONG SEASON 5 (from Long Season)
+  -> NOT FOUND
+[9/100] 万能青年旅店 - 早 (from 冀西南林路行)
+  -> SAVED (LRC: YES, TXT: NO)
+[26/100] John Lennon - Rough Take # 2 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[18/100] 万能青年旅店 - 狗尿馆 (from 万能青年旅店)
+  -> NOT FOUND
+[10/100] 万能青年旅店 - 平等雲霧 (from 冀西南林路行)
+  -> NOT FOUND
+[27/100] John Lennon - Rock Version Take 1 (Breakdown) (from Plastic Ono Band)
+  -> NOT FOUND
+  -> NOT FOUND
+[19/100] 万能青年旅店 - 洋鸟消夏录 (from 万能青年旅店)
+[11/100] 万能青年旅店 - 繞越 (from 冀西南林路行)
+  -> NOT FOUND
+[12/100] Fishmans - LONG SEASON 1 (from Long Season)
+  -> NOT FOUND
+[28/100] John Lennon - Rock Version Take 2 (from Plastic Ono Band)
+  -> NOT FOUND
+[20/100] 陈力 - 说聊斋 (from 红楼梦)
+  -> SAVED (LRC: YES, TXT: NO)
+[13/100] Fishmans - LONG SEASON 2 (from Long Season)
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[29/100] John Lennon - Takes 7, 8 & 9 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[14/100] Fishmans - LONG SEASON 3 (from Long Season)
+[21/100] 陈力 - [data track] (from 红楼梦)
+  -> SAVED (LRC: YES, TXT: NO)
+[22/100] John Lennon - Rough Take # 1 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[15/100] Fishmans - LONG SEASON 4 (from Long Season)
+  -> NOT FOUND
+[30/100] John Lennon - Takes 13 & 14 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[23/100] John Lennon - Rough Take # 2 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[16/100] Fishmans - LONG SEASON 5 (from Long Season)
+  -> NOT FOUND
+[24/100] John Lennon - Rock Version Take 1 (Breakdown) (from Plastic Ono Band)
+  -> NOT FOUND
+[31/100] John Lennon - Takes 15 - 17 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[32/100] John Lennon - Takes 20 & 21 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[17/100] 万能青年旅店 - 狗尿馆 (from 万能青年旅店)
+  -> NOT FOUND
+[25/100] John Lennon - Rock Version Take 2 (from Plastic Ono Band)
+  -> NOT FOUND
+[33/100] John Lennon - Glad All Over (Jam) (from Plastic Ono Band)
+  -> NOT FOUND
+[18/100] 万能青年旅店 - 洋鸟消夏录 (from 万能青年旅店)
+  -> NOT FOUND
+[34/100] John Lennon - Takes 22 & 23 (from Plastic Ono Band)
+  -> NOT FOUND
+[26/100] John Lennon - Takes 7, 8 & 9 (from Plastic Ono Band)
+  -> NOT FOUND
+[35/100] John Lennon - Takes 24 - 28 (from Plastic Ono Band)
+  -> NOT FOUND
+[19/100] 陈力 - 说聊斋 (from 红楼梦)
+  -> NOT FOUND
+[27/100] John Lennon - Takes 13 & 14 (from Plastic Ono Band)
+  -> NOT FOUND
+[36/100] John Lennon - Take 5 ~ Tutti Frutti (Coda) (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[20/100] 陈力 - [data track] (from 红楼梦)
+  -> SAVED (LRC: YES, TXT: NO)
+[21/100] John Lennon - Rough Take # 1 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> NOT FOUND
+[37/100] John Lennon - Takes 9 & 10 (from Plastic Ono Band)
+[28/100] John Lennon - Takes 15 - 17 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[22/100] John Lennon - Rough Take # 2 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> NOT FOUND
+[29/100] John Lennon - Takes 20 & 21 (from Plastic Ono Band)
+[38/100] John Lennon - Takes 14 - 16 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[39/100] John Lennon - Piano Rehearsal (from Plastic Ono Band)
+  -> NOT FOUND
+  -> NOT FOUND
+[23/100] John Lennon - Rock Version Take 1 (Breakdown) (from Plastic Ono Band)
+[30/100] John Lennon - Glad All Over (Jam) (from Plastic Ono Band)
+  -> NOT FOUND
+[24/100] John Lennon - Rock Version Take 2 (from Plastic Ono Band)
+  -> NOT FOUND
+[40/100] John Lennon - Takes 17 & 18 (from Plastic Ono Band)
+  -> NOT FOUND
+[31/100] John Lennon - Takes 22 & 23 (from Plastic Ono Band)
+  -> NOT FOUND
+[25/100] John Lennon - Takes 7, 8 & 9 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> NOT FOUND
+[41/100] John Lennon - Takes 37 & 38 (from Plastic Ono Band)
+[32/100] John Lennon - Takes 24 - 28 (from Plastic Ono Band)
+  -> NOT FOUND
+[26/100] John Lennon - Takes 13 & 14 (from Plastic Ono Band)
+  -> NOT FOUND
+[33/100] John Lennon - Take 5 ~ Tutti Frutti (Coda) (from Plastic Ono Band)
+  -> NOT FOUND
+[42/100] John Lennon - Stereo Remix (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[34/100] John Lennon - Takes 9 & 10 (from Plastic Ono Band)
+  -> NOT FOUND
+[27/100] John Lennon - Takes 15 - 17 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[43/100] John Lennon - Yoko Ono Poem Game (from Plastic Ono Band)
+  -> NOT FOUND
+[35/100] John Lennon - Takes 14 - 16 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[28/100] John Lennon - Takes 20 & 21 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[36/100] John Lennon - Piano Rehearsal (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[44/100] John Lennon - Long Lost John (from Plastic Ono Band)
+  -> NOT FOUND
+[29/100] John Lennon - Glad All Over (Jam) (from Plastic Ono Band)
+  -> NOT FOUND
+[37/100] John Lennon - Takes 17 & 18 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[45/100] John Lennon - That's Al Right (Mama) (from Plastic Ono Band)
+  -> NOT FOUND
+[30/100] John Lennon - Takes 22 & 23 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[38/100] John Lennon - Takes 37 & 38 (from Plastic Ono Band)
+  -> NOT FOUND
+[46/100] John Lennon - Glad All Over # 2 (from Plastic Ono Band)
+  -> NOT FOUND
+[31/100] John Lennon - Takes 24 - 28 (from Plastic Ono Band)
+  -> NOT FOUND
+[39/100] John Lennon - Stereo Remix (from Plastic Ono Band)
+  -> NOT FOUND
+[32/100] John Lennon - Take 5 ~ Tutti Frutti (Coda) (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[40/100] John Lennon - Yoko Ono Poem Game (from Plastic Ono Band)
+  -> NOT FOUND
+[47/100] John Lennon - Honey Don't ~ Don't Be Cruel ~ Matchbox (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[41/100] John Lennon - Long Lost John (from Plastic Ono Band)
+  -> NOT FOUND
+[48/100] John Lennon - Slow Blues (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[33/100] John Lennon - Takes 9 & 10 (from Plastic Ono Band)
+  -> NOT FOUND
+[49/100] John Lennon - Fast Rocker (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[42/100] John Lennon - That's Al Right (Mama) (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[50/100] John Lennon - The Making Of The John Lennon / Plastic Ono Band Album (from Plastic Ono Band)
+  -> NOT FOUND
+[34/100] John Lennon - Takes 14 - 16 (from Plastic Ono Band)
+  -> NOT FOUND
+[43/100] John Lennon - Glad All Over # 2 (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[35/100] John Lennon - Piano Rehearsal (from Plastic Ono Band)
+  -> NOT FOUND
+[51/100] The Cure - Noheart (instrumental rehearsal) (from Disintegration)
+  -> NOT FOUND
+[36/100] John Lennon - Takes 17 & 18 (from Plastic Ono Band)
+  -> NOT FOUND
+[44/100] John Lennon - Honey Don't ~ Don't Be Cruel ~ Matchbox (from Plastic Ono Band)
+  -> NOT FOUND
+[52/100] The Cure - Esten (instrumental demo) (from Disintegration)
+  -> SAVED (LRC: YES, TXT: NO)
+[37/100] John Lennon - Takes 37 & 38 (from Plastic Ono Band)
+  -> NOT FOUND
+[53/100] The Cure - Delirious Night (rough mix) (from Disintegration)
+  -> NOT FOUND
+[45/100] John Lennon - Slow Blues (from Plastic Ono Band)
+  -> NOT FOUND
+[38/100] John Lennon - Stereo Remix (from Plastic Ono Band)
+  -> NOT FOUND
+[46/100] John Lennon - Fast Rocker (from Plastic Ono Band)
+  -> NOT FOUND
+[54/100] 超载 - 低下头是人间 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> SAVED (LRC: YES, TXT: NO)
+[55/100] 超载 - 感受 (from 超载)
+[47/100] John Lennon - The Making Of The John Lennon / Plastic Ono Band Album (from Plastic Ono Band)
+[39/100] John Lennon - Yoko Ono Poem Game (from Plastic Ono Band)
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[48/100] The Cure - Noheart (instrumental rehearsal) (from Disintegration)
+[56/100] 超载 - 距离 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+[40/100] John Lennon - Long Lost John (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> SAVED (LRC: YES, TXT: NO)
+[41/100] John Lennon - That's Al Right (Mama) (from Plastic Ono Band)
+[57/100] 超载 - 让没一个夜晚充满爱的火焰 (from 超载)
+  -> NOT FOUND
+[49/100] The Cure - Esten (instrumental demo) (from Disintegration)
+  -> NOT FOUND
+[42/100] John Lennon - Glad All Over # 2 (from Plastic Ono Band)
+  -> NOT FOUND
+[50/100] The Cure - Delirious Night (rough mix) (from Disintegration)
+  -> SAVED (LRC: YES, TXT: NO)
+[58/100] 超载 - 九片菱角的回忆 (from 超载)
+  -> NOT FOUND
+[43/100] John Lennon - Honey Don't ~ Don't Be Cruel ~ Matchbox (from Plastic Ono Band)
+  -> NOT FOUND
+[51/100] 超载 - 低下头是人间 (from 超载)
+  -> NOT FOUND
+[44/100] John Lennon - Slow Blues (from Plastic Ono Band)
+  -> NOT FOUND
+[59/100] 超载 - 纯音乐演奏 (from 超载)
+  -> NOT FOUND
+[45/100] John Lennon - Fast Rocker (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[52/100] 超载 - 感受 (from 超载)
+  -> NOT FOUND
+[60/100] The Cure - Spilt Milk (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[46/100] John Lennon - The Making Of The John Lennon / Plastic Ono Band Album (from Plastic Ono Band)
+  -> SAVED (LRC: YES, TXT: NO)
+[53/100] 超载 - 距离 (from 超载)
+  -> NOT FOUND
+[47/100] The Cure - Noheart (instrumental rehearsal) (from Disintegration)
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[61/100] The Cure - Yesterday’s Gone (from Bloodflower)
+[54/100] 超载 - 让没一个夜晚充满爱的火焰 (from 超载)
+  -> NOT FOUND
+[48/100] The Cure - Esten (instrumental demo) (from Disintegration)
+  -> NOT FOUND
+[62/100] The Cure - Faith (Tianneman version) (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[55/100] 超载 - 九片菱角的回忆 (from 超载)
+  -> NOT FOUND
+  -> NOT FOUND
+[49/100] The Cure - Delirious Night (rough mix) (from Disintegration)
+[56/100] 超载 - 纯音乐演奏 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+[63/100] The Cure - The Big Hand (instrumental version) (from Bloodflower)
+  -> NOT FOUND
+[50/100] 超载 - 低下头是人间 (from 超载)
+  -> NOT FOUND
+[57/100] The Cure - Spilt Milk (from Bloodflower)
+  -> NOT FOUND
+[64/100] 陈升 - Sex With Sparrowhawk (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[51/100] 超载 - 感受 (from 超载)
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[65/100] 陈升 - Cp35 Road Movies (from 望乡)
+flower)
+[52/100] 超载 - 距离 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+[53/100] 超载 - 让没一个夜晚充满爱的火焰 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+  -> NOT FOUND
+[66/100] 陈升 - Siggi Stasi (from 望乡)
+[59/100] The Cure - Faith (Tianneman version) (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[54/100] 超载 - 九片菱角的回忆 (from 超载)
+  -> SAVED (LRC: YES, TXT: NO)
+[60/100] The Cure - The Big Hand (instrumental version) (from Bloodflower)
+  -> NOT FOUND
+[67/100] 陈升 - Lascaux (from 望乡)
+  -> NOT FOUND
+[55/100] 超载 - 纯音乐演奏 (from 超载)
+  -> NOT FOUND
+[61/100] 陈升 - Sex With Sparrowhawk (from 望乡)
+  -> NOT FOUND
+[56/100] The Cure - Spilt Milk (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[68/100] 陈升 - Reif á Seltjarnarnesi (from 望乡)
+  -> NOT FOUND
+[57/100] The Cure - Yesterday’s Gone (from Bloodflower)
+  -> NOT FOUND
+[62/100] 陈升 - Cp35 Road Movies (from 望乡)
+  -> NOT FOUND
+[69/100] 陈升 - Made in Japan (from 望乡)
+  -> NOT FOUND
+[58/100] The Cure - Faith (Tianneman version) (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[63/100] 陈升 - Siggi Stasi (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[59/100] The Cure - The Big Hand (instrumental version) (from Bloodflower)
+  -> SAVED (LRC: YES, TXT: NO)
+[70/100] 陈升 - Yaga Dreams (from 望乡)
+  -> NOT FOUND
+[71/100] 陈升 - Pallene (from 望乡)
+  -> NOT FOUND
+[60/100] 陈升 - Sex With Sparrowhawk (from 望乡)
+  -> NOT FOUND
+[64/100] 陈升 - Lascaux (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[72/100] 陈升 - Flavus Nigra (ed21) (from 望乡)
+  -> NOT FOUND
+[61/100] 陈升 - Cp35 Road Movies (from 望乡)
+  -> NOT FOUND
+[73/100] 陈升 - mimami (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[65/100] 陈升 - Reif á Seltjarnarnesi (from 望乡)
+  -> NOT FOUND
+[66/100] 陈升 - Made in Japan (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[74/100] 陈升 - Sternenschwarm (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[62/100] 陈升 - Siggi Stasi (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[67/100] 陈升 - Yaga Dreams (from 望乡)
+  -> NOT FOUND
+  -> NOT FOUND
+[63/100] 陈升 - Lascaux (from 望乡)
+  -> NOT FOUND
+[68/100] 陈升 - Pallene (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[64/100] 陈升 - Reif á Seltjarnarnesi (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[69/100] 陈升 - Flavus Nigra (ed21) (from 望乡)
+  -> NOT FOUND
+[65/100] 陈升 - Made in Japan (from 望乡)
+  -> NOT FOUND
+[70/100] 陈升 - mimami (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[66/100] 陈升 - Yaga Dreams (from 望乡)
+  -> NOT FOUND
+[67/100] 陈升 - Pallene (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[71/100] 陈升 - Sternenschwarm (from 望乡)
+  -> NOT FOUND
+  -> SAVED (LRC: YES, TXT: NO)
+[68/100] 陈升 - Flavus Nigra (ed21) (from 望乡)
+  -> NOT FOUND
+[69/100] 陈升 - mimami (from 望乡)
+  -> SAVED (LRC: YES, TXT: NO)
+[70/100] 陈升 - Sternenschwarm (from 望乡)
+  -> NOT FOUND

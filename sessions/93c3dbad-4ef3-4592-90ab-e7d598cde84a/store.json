@@ -1,9 +1,9 @@
 {
   "id": "93c3dbad-4ef3-4592-90ab-e7d598cde84a",
-  "name": "歌词计划",
+  "name": "歌词计划推进",
   "status": "active",
   "createdAt": "2026-06-19T17:12:06.403Z",
-  "updatedAt": "2026-06-19T17:12:06.403Z",
+  "updatedAt": "2026-06-20T17:12:19.578Z",
   "agents": [
     {
       "id": "agent_75hyu6ep",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_d4aw74z6",
-    "title": "歌词计划",
+    "title": "歌词计划推进",
     "createdAt": "2026-06-19T17:12:06.403Z",
     "file": "summary_d4aw74z6.md"
   },
-  "lastMessageCount": 64
+  "lastMessageCount": 98
 }

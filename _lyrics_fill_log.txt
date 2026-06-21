@@ -1,0 +1,3175 @@
+Processing 200 tracks
+[1/200] Daft Punk - Nightvision
+  -> NOT FOUND
+[2/200] Daft Punk - Veridis Quo
+  -> NOT FOUND
+[3/200] Daft Punk - Short Circuit
+  -> NOT FOUND
+[4/200] 万能青年旅店 - 早
+  -> NOT FOUND
+[5/200] 万能青年旅店 - 平等雲霧
+  -> NOT FOUND
+[6/200] 万能青年旅店 - 繞越
+  -> NOT FOUND
+[7/200] Fishmans - LONG SEASON 1
+  -> NOT FOUND
+[8/200] Fishmans - LONG SEASON 2
+  -> NOT FOUND
+[9/200] Fishmans - LONG SEASON 3
+  -> NOT FOUND
+[10/200] Fishmans - LONG SEASON 4
+  -> NOT FOUND
+[11/200] Fishmans - LONG SEASON 5
+  -> NOT FOUND
+[12/200] 卧轨的火车 - 回路II (Circle Route II)
+  -> NOT FOUND
+[13/200] 卧轨的火车 - 轻轻地 (Kissingly)
+  -> NOT FOUND
+[14/200] 卧轨的火车 - 零 (0)
+  -> NOT FOUND
+[15/200] King Crimson - The Court of the Crimson King (including The Return of the Fire Witch and The Dance of the Puppets)
+  -> LRC saved
+[16/200] Jessie Ware - Hello Love
+  -> LRC saved
+[17/200] 万能青年旅店 - 狗尿馆
+ERROR: The read operation timed out
+  -> NOT FOUND
+[18/200] 万能青年旅店 - 洋鸟消夏录
+  -> NOT FOUND
+[19/200] 万能青年旅店 - 十万嬉皮
+  -> LRC saved
+[20/200] 万能青年旅店 - 在这颗行星所有的酒馆
+  -> LRC saved
+[21/200] 陈力 - 说聊斋
+ERROR: The read operation timed out
+  -> NOT FOUND
+[22/200] 陈力 - [data track]
+  -> NOT FOUND
+[23/200] John Lennon - Take 5 ~ Tutti Frutti (Coda)
+  -> NOT FOUND
+[24/200] John Lennon - The Making Of The John Lennon / Plastic Ono Band Album
+  -> NOT FOUND
+[25/200] John Lennon - Takes 17 & 18
+  -> NOT FOUND
+[26/200] John Lennon - Monitor Mix
+  -> LRC saved
+[27/200] John Lennon - Rough Take # 1
+  -> NOT FOUND
+[28/200] John Lennon - Takes 9 & 10
+  -> NOT FOUND
+[29/200] John Lennon - Yoko Ono Poem Game
+  -> NOT FOUND
+[30/200] John Lennon - Rough Take # 2
+ERROR: The read operation timed out
+  -> NOT FOUND
+[31/200] John Lennon - Long Lost John
+  -> NOT FOUND
+[32/200] John Lennon - Takes 14 - 16
+  -> NOT FOUND
+[33/200] John Lennon - That's Al Right (Mama)
+  -> NOT FOUND
+[34/200] John Lennon - Rock Version Take 1 (Breakdown)
+  -> NOT FOUND
+[35/200] John Lennon - Glad All Over # 2
+  -> NOT FOUND
+[36/200] John Lennon - Rock Version Take 2
+  -> NOT FOUND
+[37/200] John Lennon - Honey Don't ~ Don't Be Cruel ~ Matchbox
+  -> NOT FOUND
+[38/200] John Lennon - Takes 37 & 38
+  -> NOT FOUND
+[39/200] John Lennon - Slow Blues
+  -> NOT FOUND
+[40/200] John Lennon - Stereo Remix
+  -> NOT FOUND
+[41/200] John Lennon - Fast Rocker
+  -> NOT FOUND
+[42/200] John Lennon - Takes 7, 8 & 9
+  -> NOT FOUND
+[43/200] John Lennon - Piano Rehearsal
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/200] John Lennon - Takes 13 & 14
+  -> NOT FOUND
+[45/200] John Lennon - Takes 15 - 17
+
+=== Batch 1 (offset 0) ===
+Processing 50 tracks
+[1/50] Daft Punk - Nightvision
+ERROR: The read operation timed out
+  -> NOT FOUND
+[46/200] John Lennon - Takes 20 & 21
+ERROR: The read operation timed out
+  -> NOT FOUND
+[2/50] Daft Punk - Veridis Quo
+  -> NOT FOUND
+[47/200] John Lennon - Glad All Over (Jam)
+  -> NOT FOUND
+[3/50] Daft Punk - Short Circuit
+  -> NOT FOUND
+[48/200] John Lennon - Takes 22 & 23
+  -> NOT FOUND
+ERROR: The read operation timed out
+  -> NOT FOUND
+[49/200] John Lennon - Takes 24 - 28
+[4/50] 万能青年旅店 - 早
+  -> NOT FOUND
+[50/200] 王啸坤 - 王先生
+  -> NOT FOUND
+[5/50] 万能青年旅店 - 平等雲霧
+  -> NOT FOUND
+[51/200] 王啸坤 - 就像你
+  -> NOT FOUND
+[52/200] 王啸坤 - 残缺的歌（sea side）
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 万能青年旅店 - 繞越
+  -> NOT FOUND
+[53/200] 王啸坤 - 浪旅
+  -> NOT FOUND
+[7/50] Fishmans - LONG SEASON 1
+  -> NOT FOUND
+[54/200] 王啸坤 - 重庆3905
+  -> NOT FOUND
+[55/200] 王啸坤 - 骗子
+ERROR: The read operation timed out
+  -> NOT FOUND
+[8/50] Fishmans - LONG SEASON 2
+  -> NOT FOUND
+[56/200] 王啸坤 - 长白山
+  -> NOT FOUND
+[9/50] Fishmans - LONG SEASON 3
+  -> NOT FOUND
+[10/50] Fishmans - LONG SEASON 4
+ERROR: The read operation timed out
+  -> NOT FOUND
+[57/200] The Cure - Noheart (instrumental rehearsal)
+  -> NOT FOUND
+[11/50] Fishmans - LONG SEASON 5
+  -> NOT FOUND
+[58/200] The Cure - Esten (instrumental demo)
+  -> NOT FOUND
+[12/50] 卧轨的火车 - 回路II (Circle Route II)
+  -> NOT FOUND
+[59/200] The Cure - 2 Late (alternative version / instrumental demo)
+  -> NOT FOUND
+[13/50] 卧轨的火车 - 轻轻地 (Kissingly)
+  -> LRC saved
+[60/200] The Cure - Delirious Night (rough mix)
+  -> NOT FOUND
+[14/50] 卧轨的火车 - 零 (0)
+  -> NOT FOUND
+[61/200] 超载 - 荒原困兽
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] 万能青年旅店 - 狗尿馆
+  -> LRC saved
+[62/200] 超载 - 低下头是人间
+  -> NOT FOUND
+[16/50] 万能青年旅店 - 洋鸟消夏录
+  -> NOT FOUND
+[63/200] 超载 - 感受
+  -> NOT FOUND
+[17/50] 陈力 - 说聊斋
+  -> NOT FOUND
+[18/50] 陈力 - [data track]
+ERROR: The read operation timed out
+  -> NOT FOUND
+[64/200] 超载 - 生命之诗
+  -> LRC saved
+[65/200] 超载 - 距离
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] John Lennon - Take 5 ~ Tutti Frutti (Coda)
+  -> NOT FOUND
+[66/200] 超载 - 让没一个夜晚充满爱的火焰
+  -> NOT FOUND
+[20/50] John Lennon - The Making Of The John Lennon / Plastic Ono Band Album
+  -> NOT FOUND
+[67/200] 超载 - 一九九九
+  -> NOT FOUND
+[21/50] John Lennon - Takes 17 & 18
+  -> TXT saved
+[68/200] 超载 - 九片菱角的回忆
+  -> NOT FOUND
+[22/50] John Lennon - Rough Take # 1
+  -> NOT FOUND
+[69/200] 超载 - 纯音乐演奏
+  -> NOT FOUND
+[23/50] John Lennon - Takes 9 & 10
+  -> NOT FOUND
+[70/200] Pink Floyd - Pow R. Toc H.
+  -> NOT FOUND
+[71/200] The Cure - Spilt Milk
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] John Lennon - Yoko Ono Poem Game
+  -> NOT FOUND
+[72/200] The Cure - Yesterday’s Gone
+  -> NOT FOUND
+[25/50] John Lennon - Rough Take # 2
+  -> NOT FOUND
+[73/200] The Cure - Faith (Tianneman version)
+  -> NOT FOUND
+[26/50] John Lennon - Long Lost John
+  -> NOT FOUND
+[74/200] The Cure - The Big Hand (instrumental version)
+  -> NOT FOUND
+[27/50] John Lennon - Takes 14 - 16
+  -> NOT FOUND
+[28/50] John Lennon - That's Al Right (Mama)
+  -> NOT FOUND
+[75/200] 陈升 - Sex With Sparrowhawk
+  -> NOT FOUND
+  -> NOT FOUND
+[29/50] John Lennon - Rock Version Take 1 (Breakdown)
+[76/200] 陈升 - Cp35 Road Movies
+  -> NOT FOUND
+  -> NOT FOUND
+[30/50] John Lennon - Glad All Over # 2
+[77/200] 陈升 - Siggi Stasi
+  -> NOT FOUND
+[31/50] John Lennon - Rock Version Take 2
+  -> NOT FOUND
+[78/200] 陈升 - Lascaux
+  -> NOT FOUND
+[32/50] John Lennon - Honey Don't ~ Don't Be Cruel ~ Matchbox
+  -> NOT FOUND
+[79/200] 陈升 - Reif á Seltjarnarnesi
+  -> NOT FOUND
+[33/50] John Lennon - Takes 37 & 38
+  -> NOT FOUND
+[80/200] 陈升 - Made in Japan
+  -> NOT FOUND
+[34/50] John Lennon - Slow Blues
+ERROR: The read operation timed out
+  -> NOT FOUND
+[81/200] 陈升 - Yaga Dreams
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] John Lennon - Stereo Remix
+  -> NOT FOUND
+[82/200] 陈升 - Pallene
+  -> NOT FOUND
+[83/200] 陈升 - Flavus Nigra (ed21)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] John Lennon - Fast Rocker
+  -> NOT FOUND
+[84/200] 陈升 - mimami
+  -> NOT FOUND
+[37/50] John Lennon - Takes 7, 8 & 9
+  -> NOT FOUND
+[85/200] 陈升 - Sternenschwarm
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] John Lennon - Piano Rehearsal
+ERROR: The read operation timed out
+  -> NOT FOUND
+[86/200] 陈升 - Ragnarök
+  -> NOT FOUND
+[87/200] 陈升 - Light in the Sky
+  -> NOT FOUND
+[39/50] John Lennon - Takes 13 & 14
+  -> NOT FOUND
+[88/200] 陈升 - Rhea
+  -> NOT FOUND
+[40/50] John Lennon - Takes 15 - 17
+  -> NOT FOUND
+  -> NOT FOUND
+[89/200] 陈升 - Orthodox+Ich(2)
+[41/50] John Lennon - Takes 20 & 21
+  -> NOT FOUND
+[42/50] John Lennon - Glad All Over (Jam)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[90/200] 陈升 - partýstuð
+  -> NOT FOUND
+[43/50] John Lennon - Takes 22 & 23
+  -> NOT FOUND
+[44/50] John Lennon - Takes 24 - 28
+ERROR: The read operation timed out
+  -> NOT FOUND
+[91/200] 陈升 - Marble Clock
+  -> NOT FOUND
+[45/50] 王啸坤 - 王先生
+  -> NOT FOUND
+[92/200] 陈升 - Schattenspiel
+  -> NOT FOUND
+[46/50] 王啸坤 - 就像你
+  -> NOT FOUND
+[93/200] 陈升 - Synthetic Life
+  -> NOT FOUND
+[94/200] 陈升 - Skýjum Ofar
+  -> NOT FOUND
+[47/50] 王啸坤 - 残缺的歌（sea side）
+  -> NOT FOUND
+[95/200] 陈升 - Pressure
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 王啸坤 - 浪旅
+ERROR: The read operation timed out
+  -> NOT FOUND
+[96/200] 陈升 - Cell Chamber
+  -> NOT FOUND
+[49/50] 王啸坤 - 重庆3905
+  -> NOT FOUND
+[50/50] 王啸坤 - 骗子
+ERROR: The read operation timed out
+  -> NOT FOUND
+[97/200] 陈升 - Kalinda
+  -> NOT FOUND
+Batch 1 done! Success: 0/50
+
+=== Batch 2 (offset 50) ===
+Processing 50 tracks
+[1/50] 王啸坤 - 长白山
+  -> NOT FOUND
+[98/200] 陈升 - Smokestacks
+  -> NOT FOUND
+[2/50] The Cure - Noheart (instrumental rehearsal)
+  -> NOT FOUND
+[3/50] The Cure - Esten (instrumental demo)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[99/200] 陈升 - Pondering
+  -> NOT FOUND
+[4/50] The Cure - Delirious Night (rough mix)
+  -> NOT FOUND
+[100/200] 朴树 - 傻子才悲伤
+ERROR: The read operation timed out
+  -> NOT FOUND
+[5/50] 超载 - 低下头是人间
+ERROR: The read operation timed out
+  -> NOT FOUND
+[101/200] 朴树 - 来不及
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 超载 - 感受
+  -> LRC saved
+[102/200] 朴树 - 今夜的滋味
+  -> LRC saved
+[103/200] 朴树 - 苏珊的舞鞋
+ERROR: The read operation timed out
+  -> NOT FOUND
+[7/50] 超载 - 距离
+  -> TXT saved
+[104/200] 朴树 - La Perte
+  -> NOT FOUND
+[8/50] 超载 - 让没一个夜晚充满爱的火焰
+  -> TXT saved
+[105/200] 超级市场 - S.D花园
+  -> NOT FOUND
+[9/50] 超载 - 九片菱角的回忆
+  -> NOT FOUND
+[106/200] 超级市场 - 相爱已无
+  -> NOT FOUND
+[10/50] 超载 - 纯音乐演奏
+  -> NOT FOUND
+[11/50] Pink Floyd - Pow R. Toc H.
+ERROR: The read operation timed out
+  -> NOT FOUND
+[107/200] 超级市场 - 五拍
+  -> NOT FOUND
+[12/50] The Cure - Spilt Milk
+  -> NOT FOUND
+[108/200] 超级市场 - 自由
+  -> NOT FOUND
+[13/50] The Cure - Yesterday’s Gone
+  -> NOT FOUND
+[109/200] 超级市场 - 预知
+  -> NOT FOUND
+[14/50] The Cure - Faith (Tianneman version)
+  -> NOT FOUND
+[15/50] The Cure - The Big Hand (instrumental version)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[110/200] 超级市场 - 塞琳娜之歌
+  -> NOT FOUND
+[16/50] 陈升 - Sex With Sparrowhawk
+  -> NOT FOUND
+[17/50] 陈升 - Cp35 Road Movies
+ERROR: The read operation timed out
+  -> NOT FOUND
+[111/200] 超级市场 - 嗨！向巴哈致敬
+  -> NOT FOUND
+[18/50] 陈升 - Siggi Stasi
+  -> NOT FOUND
+[112/200] 超级市场 - 午夜心境
+  -> NOT FOUND
+[19/50] 陈升 - Lascaux
+  -> NOT FOUND
+[113/200] 超级市场 - 魂之舞
+  -> NOT FOUND
+[20/50] 陈升 - Reif á Seltjarnarnesi
+  -> NOT FOUND
+[114/200] 超级市场 - 节奏之中
+  -> NOT FOUND
+[21/50] 陈升 - Made in Japan
+  -> NOT FOUND
+[115/200] 超级市场 - 都市夜色
+  -> NOT FOUND
+[116/200] 超级市场 - 茉莉花
+ERROR: The read operation timed out
+  -> NOT FOUND
+[22/50] 陈升 - Yaga Dreams
+  -> NOT FOUND
+[117/200] 超级市场 - 感谢年华
+  -> NOT FOUND
+[23/50] 陈升 - Pallene
+  -> NOT FOUND
+[118/200] 超级市场 - 勇往直前
+  -> NOT FOUND
+[24/50] 陈升 - Flavus Nigra (ed21)
+  -> NOT FOUND
+[25/50] 陈升 - mimami
+  -> NOT FOUND
+[119/200] 超级市场 - 康定情歌
+  -> NOT FOUND
+[26/50] 陈升 - Sternenschwarm
+  -> NOT FOUND
+[120/200] Sufjan Stevens - Goodbye Evergreen
+  -> NOT FOUND
+[27/50] 陈升 - Ragnarök
+  -> NOT FOUND
+[28/50] 陈升 - Light in the Sky
+  -> LRC saved
+[121/200] The Jesus and Mary Chain - Entire Album in Enhanced Stereo
+  -> NOT FOUND
+[122/200] Wintersun - Starchild
+ERROR: The read operation timed out
+  -> NOT FOUND
+[29/50] 陈升 - Rhea
+  -> LRC saved
+[123/200] Sonic Youth - Death to Our Friends
+  -> NOT FOUND
+[30/50] 陈升 - Orthodox+Ich(2)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[124/200] The Cure - The Blood
+  -> NOT FOUND
+[31/50] 陈升 - partýstuð
+  -> NOT FOUND
+[32/50] 陈升 - Marble Clock
+ERROR: The read operation timed out
+  -> NOT FOUND
+[125/200] The Cure - Stop Dead (Fitz / F2 Studios demo 2/85)
+  -> TXT saved
+[126/200] The Cure - Mansolidgone (Fitz / F2 Studios demo 2/85)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[33/50] 陈升 - Schattenspiel
+  -> NOT FOUND
+[127/200] The Cure - Lime Time (Fitz / F2 Studios demo 2/85)
+  -> NOT FOUND
+[34/50] 陈升 - Synthetic Life
+  -> NOT FOUND
+[128/200] The Cure - The Exploding Boy (Fitz / F2 Studios demo 2/85)
+  -> NOT FOUND
+[35/50] 陈升 - Skýjum Ofar
+  -> TXT saved
+[129/200] The Cure - Close to Me (Fitz / F2 Studios demo 2/85)
+  -> NOT FOUND
+[36/50] 陈升 - Pressure
+  -> TXT saved
+  -> NOT FOUND
+[37/50] 陈升 - Cell Chamber
+[130/200] The Cure - The Blood (live bootleg – Bercy Paris 12/85)
+  -> NOT FOUND
+[38/50] 陈升 - Kalinda
+  -> TXT saved
+[131/200] 王菲 - 我愿意 (管弦乐版)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] 陈升 - Smokestacks
+ERROR: The read operation timed out
+  -> NOT FOUND
+[132/200] 王菲 - 容易受伤的女人 (国语版)
+  -> NOT FOUND
+[40/50] 陈升 - Pondering
+  -> NOT FOUND
+[133/200] 王菲 - 执迷不悔
+  -> LRC saved
+[134/200] 王菲 - 软弱
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] 朴树 - 今夜的滋味
+  -> LRC saved
+[42/50] 超级市场 - S.D花园
+ERROR: The read operation timed out
+  -> NOT FOUND
+[135/200] 王菲 - 沉醉
+  -> LRC saved
+[136/200] 王菲 - 冷战
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 超级市场 - 相爱已无
+  -> NOT FOUND
+[137/200] 王菲 - 心太野
+  -> LRC saved
+[138/200] 王菲 - 只愿为你守着约
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/50] 超级市场 - 五拍
+  -> NOT FOUND
+  -> NOT FOUND
+[139/200] 王菲 - 只有我自己
+[45/50] 超级市场 - 自由
+  -> NOT FOUND
+[46/50] 超级市场 - 预知
+ERROR: The read operation timed out
+  -> NOT FOUND
+[140/200] 黄贯中 - 哦，咁樣
+  -> NOT FOUND
+[47/50] 超级市场 - 塞琳娜之歌
+  -> NOT FOUND
+[48/50] 超级市场 - 嗨！向巴哈致敬
+ERROR: The read operation timed out
+  -> NOT FOUND
+[141/200] 黄贯中 - 廣東道
+  -> NOT FOUND
+[49/50] 超级市场 - 午夜心境
+ERROR: The read operation timed out
+  -> NOT FOUND
+[142/200] 群星 - 上班族
+  -> NOT FOUND
+[50/50] 超级市场 - 魂之舞
+  -> NOT FOUND
+[143/200] 群星 - 等人就像在喝酒
+  -> NOT FOUND
+  -> NOT FOUND
+[144/200] 左小祖咒 - 乱世情人
+Batch 2 done! Success: 1/50
+
+=== Batch 3 (offset 100) ===
+Processing 50 tracks
+[1/50] 超级市场 - 都市夜色
+  -> NOT FOUND
+[145/200] 左小祖咒 - 再见无数
+  -> NOT FOUND
+[2/50] 超级市场 - 茉莉花
+  -> NOT FOUND
+[146/200] 左小祖咒 - 江浦街的汉庭酒店只有雨季
+  -> NOT FOUND
+[3/50] 超级市场 - 感谢年华
+  -> NOT FOUND
+[147/200] 左小祖咒 - 我爱南京
+  -> NOT FOUND
+[4/50] 超级市场 - 勇往直前
+  -> NOT FOUND
+ERROR: The read operation timed out
+  -> NOT FOUND
+[5/50] 超级市场 - 康定情歌
+[148/200] 左小祖咒 - 南京一夜
+  -> NOT FOUND
+[149/200] 左小祖咒 - 发抖
+  -> NOT FOUND
+[6/50] The Jesus and Mary Chain - Entire Album in Enhanced Stereo
+  -> NOT FOUND
+[150/200] 左小祖咒 - 白鹭飞过大桥
+  -> NOT FOUND
+[151/200] 左小祖咒 - 十里洋场
+ERROR: The read operation timed out
+  -> NOT FOUND
+[7/50] The Cure - The Blood
+  -> NOT FOUND
+[152/200] 左小祖咒 - 2020年一个唱歌的老铁
+  -> LRC saved
+[8/50] The Cure - Mansolidgone (Fitz / F2 Studios demo 2/85)
+  -> NOT FOUND
+[9/50] The Cure - Lime Time (Fitz / F2 Studios demo 2/85)
+  -> NOT FOUND
+[153/200] 左小祖咒 - 大桥下
+ERROR: The read operation timed out
+  -> NOT FOUND
+[10/50] 王菲 - 我愿意 (管弦乐版)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[154/200] 左小祖咒 - 每天
+  -> NOT FOUND
+[11/50] 王菲 - 容易受伤的女人 (国语版)
+  -> NOT FOUND
+[155/200] 左小祖咒 - 森林之歌
+  -> NOT FOUND
+[156/200] 左小祖咒 - 阿嬤的話
+ERROR: The read operation timed out
+  -> NOT FOUND
+[12/50] 王菲 - 软弱
+  -> NOT FOUND
+[157/200] 左小祖咒 - 台灣-咱的寶貝
+  -> NOT FOUND
+[13/50] 王菲 - 冷战
+  -> NOT FOUND
+[158/200] 左小祖咒 - 在你肩上
+  -> NOT FOUND
+[14/50] 王菲 - 只愿为你守着约
+  -> NOT FOUND
+[15/50] 王菲 - 只有我自己
+  -> NOT FOUND
+[159/200] 左小祖咒 - 手牽手 做陣行
+  -> LRC saved
+[16/50] 黄贯中 - 哦，咁樣
+  -> NOT FOUND
+[160/200] 左小祖咒 - 白蘭花
+  -> NOT FOUND
+[17/50] 黄贯中 - 廣東道
+  -> NOT FOUND
+[161/200] 左小祖咒 - 台灣-永遠的故鄉
+  -> NOT FOUND
+[18/50] 群星 - 上班族
+  -> NOT FOUND
+[162/200] Black Sabbath - Embryo
+  -> NOT FOUND
+[19/50] 群星 - 等人就像在喝酒
+  -> LRC saved
+[163/200] Black Sabbath - Solitude
+  -> NOT FOUND
+[20/50] 左小祖咒 - 乱世情人
+  -> LRC saved
+[164/200] 李健 - 非洲黑森林寫真集一日遊 [淚之旅II]
+  -> NOT FOUND
+[165/200] 李健 - 仍是那樣
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 左小祖咒 - 再见无数
+  -> NOT FOUND
+[166/200] 李健 - Goodbye! I Love You
+  -> NOT FOUND
+[22/50] 左小祖咒 - 江浦街的汉庭酒店只有雨季
+  -> NOT FOUND
+[167/200] 李健 - 為你醉心
+  -> NOT FOUND
+[23/50] 左小祖咒 - 我爱南京
+  -> NOT FOUND
+[168/200] 李健 - 情深未忘
+  -> NOT FOUND
+[24/50] 左小祖咒 - 南京一夜
+  -> NOT FOUND
+[169/200] 李健 - 阿寶阿寶
+  -> NOT FOUND
+[170/200] 李健 - 絲線 [默然II]
+ERROR: The read operation timed out
+  -> NOT FOUND
+[25/50] 左小祖咒 - 发抖
+  -> NOT FOUND
+[171/200] 张楚 - 和大伙去乘凉
+  -> NOT FOUND
+[26/50] 左小祖咒 - 白鹭飞过大桥
+  -> TXT saved
+[172/200] Green Day - Living in the ’20s
+  -> NOT FOUND
+[27/50] 左小祖咒 - 十里洋场
+  -> LRC saved
+[173/200] 刺猬 - Opium
+ERROR: The read operation timed out
+  -> NOT FOUND
+[28/50] 左小祖咒 - 2020年一个唱歌的老铁
+  -> NOT FOUND
+[174/200] Neutral Milk Hotel - The King of Carrot Flowers, Pt. One
+  -> NOT FOUND
+[29/50] 左小祖咒 - 大桥下
+  -> LRC saved
+[175/200] Neutral Milk Hotel - The King of Carrot Flowers, Pts. Two & Three
+  -> NOT FOUND
+[30/50] 左小祖咒 - 每天
+  -> NOT FOUND
+  -> LRC saved
+[31/50] 左小祖咒 - 森林之歌
+[176/200] Neutral Milk Hotel - Two-Headed Boy
+  -> NOT FOUND
+  -> LRC saved
+[32/50] 左小祖咒 - 阿嬤的話
+[177/200] Neutral Milk Hotel - The Fool
+  -> NOT FOUND
+[33/50] 左小祖咒 - 台灣-咱的寶貝
+  -> LRC saved
+[178/200] Neutral Milk Hotel - Holland, 1945
+  -> NOT FOUND
+[34/50] 左小祖咒 - 在你肩上
+ERROR: The read operation timed out
+  -> NOT FOUND
+[179/200] Neutral Milk Hotel - Communist Daughter
+  -> NOT FOUND
+[35/50] 左小祖咒 - 手牽手 做陣行
+  -> NOT FOUND
+[36/50] 左小祖咒 - 白蘭花
+  -> LRC saved
+[180/200] Neutral Milk Hotel - Oh Comely
+  -> NOT FOUND
+[37/50] 左小祖咒 - 台灣-永遠的故鄉
+  -> LRC saved
+[181/200] Neutral Milk Hotel - Two-Headed Boy, Pt. Two
+  -> NOT FOUND
+[38/50] Black Sabbath - Embryo
+  -> LRC saved
+[182/200] Pink Floyd - Eclipse
+  -> LRC saved
+[183/200] Pink Floyd - Eclipse
+  -> LRC saved
+[39/50] Black Sabbath - Solitude
+  -> LRC saved
+[40/50] 李健 - 非洲黑森林寫真集一日遊 [淚之旅II]
+ERROR: The read operation timed out
+  -> NOT FOUND
+  -> NOT FOUND
+[41/50] 李健 - 仍是那樣
+[184/200] Pink Floyd - Eclipse (5.1 mix)
+  -> NOT FOUND
+[42/50] 李健 - Goodbye! I Love You
+  -> LRC saved
+[185/200] Pavement - Gold Soundz
+  -> NOT FOUND
+[43/50] 李健 - 為你醉心
+  -> LRC saved
+[186/200] Pavement - 5 − 4 = Unity
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/50] 李健 - 情深未忘
+ERROR: The read operation timed out
+  -> NOT FOUND
+[187/200] Pavement - Range Life
+  -> LRC saved
+[188/200] Pavement - Heaven Is a Truck
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 李健 - 阿寶阿寶
+  -> LRC saved
+[189/200] Pavement - Hit the Plane Down
+  -> NOT FOUND
+[46/50] 李健 - 絲線 [默然II]
+  -> LRC saved
+[190/200] Pavement - Fillmore Jive
+  -> NOT FOUND
+[47/50] 张楚 - 和大伙去乘凉
+  -> TXT saved
+[48/50] Green Day - Living in the ’20s
+  -> LRC saved
+[191/200] 曹方 - 落单·续
+  -> LRC saved
+[49/50] 刺猬 - Opium
+  -> TXT saved
+[192/200] 黄舒骏 - 妳
+  -> NOT FOUND
+[50/50] Neutral Milk Hotel - The King of Carrot Flowers, Pt. One
+  -> NOT FOUND
+[193/200] 黄舒骏 - 戀愛症候群 (live)
+  -> LRC saved
+Batch 3 done! Success: 7/50
+
+=== Batch 4 (offset 150) ===
+Processing 50 tracks
+[1/50] Cocteau Twins - Fifty‐Fifty Clown
+  -> NOT FOUND
+[194/200] Cocteau Twins - Cherry‐Coloured Funk
+  -> LRC saved
+[2/50] Cocteau Twins - Road, River and Rail
+ERROR: The read operation timed out
+  -> NOT FOUND
+[195/200] Cocteau Twins - Pitch the Baby
+  -> LRC saved
+[3/50] Cocteau Twins - Frou‐Frou Foxes in Midsummer Fires
+  -> LRC saved
+[196/200] Cocteau Twins - Fifty‐Fifty Clown
+  -> LRC saved
+[4/50] 黄舒骏 - 青空
+  -> LRC saved
+[197/200] Cocteau Twins - Road, River and Rail
+  -> LRC saved
+  -> NOT FOUND
+[198/200] Cocteau Twins - Frou‐Frou Foxes in Midsummer Fires
+[5/50] Supertramp - Put On Your Old Brown Shoes
+  -> LRC saved
+[199/200] 黄舒骏 - 青空
+  -> LRC saved
+[6/50] Supertramp - Know Who You Are
+  -> NOT FOUND
+[200/200] Supertramp - Put On Your Old Brown Shoes
+  -> LRC saved
+[7/50] ABBA - The Visitors
+  -> LRC saved
+
+Done! Success: 46/200
+  -> LRC saved
+[8/50] ABBA - When All Is Said and Done
+  -> LRC saved
+[9/50] ABBA - Soldiers
+  -> LRC saved
+[10/50] Rita Calypso - Wailing of the Willow
+  -> TXT saved
+[11/50] Rita Calypso - The Drifter
+  -> NOT FOUND
+[12/50] Rita Calypso - The Key Witness
+  -> NOT FOUND
+[13/50] Rita Calypso - Good to Be Around
+  -> NOT FOUND
+[14/50] Rita Calypso - Georgianna Peach Pie
+  -> NOT FOUND
+[15/50] Rita Calypso - On the Trail
+  -> NOT FOUND
+[16/50] The Beatles - Chains
+  -> LRC saved
+[17/50] 深山 - 口 -にゅうどう-
+  -> NOT FOUND
+[18/50] 深山 - 鈍貪丼曇呑
+  -> NOT FOUND
+[19/50] 深山 - 横谷 -どのごとんか-
+  -> NOT FOUND
+[20/50] 深山 - 熊手
+  -> NOT FOUND
+[21/50] 深山 - 鞍部 -りいぶるとふん-
+  -> NOT FOUND
+[22/50] 深山 - 人生の半分
+  -> NOT FOUND
+[23/50] 深山 - 尾根 -いとへん-
+  -> NOT FOUND
+[24/50] 深山 - 両親の呵責
+  -> NOT FOUND
+[25/50] 深山 - 切戸 -けちえん-
+  -> NOT FOUND
+[26/50] 深山 - 下山土寸
+ERROR: The read operation timed out
+  -> NOT FOUND
+[27/50] Arcade Fire - Haïti
+  -> LRC saved
+[28/50] 王梵瑞 - 鼓樓先生
+  -> NOT FOUND
+[29/50] 王梵瑞 - 100KM
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] 王梵瑞 - 萬事如意
+  -> NOT FOUND
+[31/50] 王梵瑞 - Goodbye Darling
+  -> NOT FOUND
+[32/50] 王梵瑞 - 追求吧一生就這麼一次
+  -> NOT FOUND
+[33/50] 王梵瑞 - 自由就是你不想想什麼就不想
+  -> NOT FOUND
+[34/50] 王梵瑞 - 船
+  -> NOT FOUND
+[35/50] 王梵瑞 - 別抱怨 我和你一樣
+  -> NOT FOUND
+[36/50] 王梵瑞 - 快樂的......
+  -> NOT FOUND
+[37/50] Carpenters - This Masquerade
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Carpenters - Jambalaya (On the Bayou)
+  -> LRC saved
+[39/50] Carpenters - Medley: Fun, Fun, Fun
+  -> TXT saved
+[40/50] Carpenters - The End of the World
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] Carpenters - Da Doo Ron Ron (When He Walked Me Home)
+  -> LRC saved
+[42/50] Carpenters - Deadman’s Curve
+  -> LRC saved
+[43/50] Carpenters - Johnny Angel
+  -> LRC saved
+[44/50] Carpenters - The Night Has a Thousand Eyes
+  -> LRC saved
+[45/50] Carpenters - Our Day Will Come
+  -> LRC saved
+[46/50] 陈升 - 湯米先生的誠實告白
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 陈升 - 我的小清新
+  -> LRC saved
+[48/50] 陈升 - 七天戀愛
+  -> NOT FOUND
+[49/50] 陈升 - 打死不再戀愛
+  -> NOT FOUND
+[50/50] 陈升 - 假如你能多看我一眼
+  -> LRC saved
+Batch 4 done! Success: 20/50
+
+=== Batch 5 (offset 200) ===
+Processing 50 tracks
+[1/50] 苍蝇 - Fly Variations
+  -> NOT FOUND
+[2/50] 苍蝇 - Musica Domestica Metastasis
+  -> NOT FOUND
+[3/50] 苍蝇 - The Spider and the Fly
+  -> NOT FOUND
+[4/50] 苍蝇 - More Is Coming
+ERROR: The read operation timed out
+  -> NOT FOUND
+[5/50] 苍蝇 - What's the Magic Word?
+  -> NOT FOUND
+[6/50] 苍蝇 - Dad
+  -> NOT FOUND
+[7/50] 痛仰乐队 - 行星消失的夜空 Starless Night
+  -> NOT FOUND
+[8/50] 痛仰乐队 - 思疆调 Ditty of Xingjiang Memories
+  -> NOT FOUND
+[9/50] Big Thief - Dragon New Warm Mountain I Believe in You
+  -> LRC saved
+[10/50] Big Thief - Promise Is a Pendulum
+  -> LRC saved
+[11/50] Big Thief - Sparrow
+  -> LRC saved
+[12/50] Big Thief - 12,000 Lines
+  -> LRC saved
+[13/50] Big Thief - Little Things
+  -> LRC saved
+[14/50] Big Thief - Dragon New Warm Mountain I Believe in You (Tucson)
+  -> NOT FOUND
+[15/50] Big Thief - Light Is as Is
+  -> NOT FOUND
+[16/50] 新裤子 - You're My Super Star
+  -> NOT FOUND
+[17/50] 新裤子 - T-B
+  -> NOT FOUND
+[18/50] 新裤子 - Magical Shampoo
+  -> NOT FOUND
+[19/50] 新裤子 - Dragon Tiger Panacea
+  -> NOT FOUND
+[20/50] 新裤子 - Culture Club
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 新裤子 - Love Brings Me Home
+  -> NOT FOUND
+[22/50] 新裤子 - Otaku
+  -> NOT FOUND
+[23/50] Sufjan Stevens - Death With Dignity
+  -> LRC saved
+[24/50] Sufjan Stevens - Should Have Known Better
+  -> LRC saved
+[25/50] Sufjan Stevens - Drawn to the Blood
+  -> LRC saved
+[26/50] Sufjan Stevens - Fourth of July
+  -> LRC saved
+[27/50] Sufjan Stevens - The Only Thing
+  -> LRC saved
+[28/50] Sufjan Stevens - John My Beloved
+  -> LRC saved
+[29/50] Sufjan Stevens - No Shade in the Shadow of the Cross
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] 王菲 - 想像
+  -> NOT FOUND
+[31/50] 王菲 - 哪兒
+  -> NOT FOUND
+[32/50] 王菲 - 野三坡
+  -> NOT FOUND
+[33/50] 周杰伦 - 印地安老斑鳩
+  -> LRC saved
+[34/50] 张雨生 - 带我去月球
+  -> LRC saved
+[35/50] 窦唯 - 静安
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] 窦唯 - 禧晤
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] 窦唯 - 语虚何以言知
+  -> NOT FOUND
+[38/50] 窦唯 - 天水
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] 窦唯 - 山秀谷
+  -> NOT FOUND
+[40/50] 窦唯 - 尾声再
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] 二手玫瑰 - 伎俩
+  -> NOT FOUND
+[42/50] 二手玫瑰 - 火车快开
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 二手玫瑰 - 允许部分艺术家先富起来
+  -> NOT FOUND
+[44/50] 二手玫瑰 - 征婚启示
+  -> TXT saved
+[45/50] 二手玫瑰 - 招安
+  -> LRC saved
+[46/50] 二手玫瑰 - 采花
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 二手玫瑰 - 因为所以
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 二手玫瑰 - 嫂子颂
+  -> NOT FOUND
+[49/50] 二手玫瑰 - 公益歌曲
+ERROR: The read operation timed out
+  -> NOT FOUND
+[50/50] 二手玫瑰 - 好花红
+  -> TXT saved
+Batch 5 done! Success: 16/50
+
+=== Batch 6 (offset 250) ===
+Processing 50 tracks
+[1/50] 九宝 - Three Years Old Warrior
+  -> NOT FOUND
+[2/50] Agalloch - Odal
+  -> NOT FOUND
+[3/50] Agalloch - The Lodge
+  -> NOT FOUND
+[4/50] 黑麒麟 - 黑麒乐队_金陵祭壹之《大曲》
+  -> NOT FOUND
+[5/50] 黑麒麟 - 招魂
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 黑麒麟 - 招魂
+  -> NOT FOUND
+[7/50] 黑麒麟 - 千年
+ERROR: The read operation timed out
+  -> NOT FOUND
+[8/50] 黑麒麟 - 千年
+  -> NOT FOUND
+[9/50] 黑麒麟 - 投名状
+  -> NOT FOUND
+[10/50] 黑麒麟 - 投名状
+  -> NOT FOUND
+[11/50] Electric Wizard - The Hills Have Eyes
+  -> NOT FOUND
+[12/50] 张惠妹 - 開門見山
+  -> NOT FOUND
+[13/50] 张惠妹 - 掉了
+  -> NOT FOUND
+[14/50] 张惠妹 - 相愛後動物感傷
+  -> NOT FOUND
+[15/50] 张惠妹 - 靈魂的重量
+  -> NOT FOUND
+[16/50] 张惠妹 - 好膽你就來
+  -> NOT FOUND
+[17/50] 张惠妹 - 聽得見的夢想
+  -> NOT FOUND
+[18/50] Chief Keef - 1,2,3
+  -> TXT saved
+[19/50] Chief Keef - Drifting Away
+ERROR: The read operation timed out
+  -> NOT FOUND
+[20/50] Chief Keef - Never Fly Here
+  -> LRC saved
+[21/50] Chief Keef - Prince Charming
+  -> LRC saved
+[22/50] Chief Keef - Tony Montana Flow
+ERROR: The read operation timed out
+  -> NOT FOUND
+[23/50] Chief Keef - Racks Stuffed Inna Couch
+  -> LRC saved
+[24/50] Bon Jovi - Pink Flamingo
+  -> NOT FOUND
+[25/50] 戴饶 - 铁齿铜牙纪晓岚
+  -> NOT FOUND
+[26/50] 戴饶 - 百姓的事儿牵着走
+  -> NOT FOUND
+[27/50] 戴饶 - 情纠缠
+  -> NOT FOUND
+[28/50] 戴饶 - 布衣知县梵如花
+  -> NOT FOUND
+[29/50] 戴饶 - 寻梦
+  -> NOT FOUND
+[30/50] 戴饶 - 我爱我家
+  -> NOT FOUND
+[31/50] 戴饶 - 百姓的事儿牵着走（伴奏）
+  -> NOT FOUND
+[32/50] 戴饶 - 铁齿铜牙纪晓岚（伴奏）
+  -> NOT FOUND
+[33/50] 葬尸湖 - Whispering Woods
+  -> NOT FOUND
+[34/50] 葬尸湖 - Winter Mirage
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] 葬尸湖 - Valley of Loneness
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] 葬尸湖 - Elapsing Autumn (remastered)
+  -> NOT FOUND
+[37/50] 葬尸湖 - Moon of Frost
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Oasis - Some Might Say
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] Oasis - Roll With It
+
+=== Batch 7 (offset 300) ===
+Processing 50 tracks
+[1/50] Dissection - Thorns of Crimson Death
+
+=== Batch 8 (offset 350) ===
+Processing 50 tracks
+[1/50] 左小祖咒 - 代表
+  -> TXT saved
+[2/50] 左小祖咒 - 弟弟
+  -> NOT FOUND
+[3/50] 林强 - 未振未動
+  -> NOT FOUND
+[4/50] 林强 - 給你的信
+  -> NOT FOUND
+[5/50] 林强 - 天和地
+  -> LRC saved
+[6/50] 林强 - 閃閃爍
+ERROR: The read operation timed out
+  -> NOT FOUND
+[7/50] 林强 - 深山林內有獅
+  -> NOT FOUND
+[8/50] 林强 - 這款的代志
+  -> NOT FOUND
+[9/50] Explosicum - Thrash Out Your Brain
+  -> NOT FOUND
+[10/50] Explosicum - Thrash & Claaaaash
+ERROR: The read operation timed out
+  -> NOT FOUND
+[11/50] Explosicum - N.L.N.S (No Law No Sky)
+  -> NOT FOUND
+[12/50] Explosicum - Living's Deal
+  -> NOT FOUND
+[13/50] Explosicum - Die for Thrash
+  -> NOT FOUND
+[14/50] Explosicum - Faster than Shot
+  -> NOT FOUND
+[15/50] Explosicum - Kill Them All
+  -> NOT FOUND
+[16/50] Explosicum - Dominator
+  -> NOT FOUND
+[17/50] 深山 - 忘忧湖 壹
+  -> NOT FOUND
+[18/50] 深山 - 李凤华
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] 赵季平 - 王进打高俅
+  -> NOT FOUND
+[20/50] 赵季平 - 宫廷舞影
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 赵季平 - 兄弟情谊
+ERROR: The read operation timed out
+  -> NOT FOUND
+[22/50] 赵季平 - 晁盖出征
+  -> NOT FOUND
+[23/50] 赵季平 - 殊死一战
+  -> NOT FOUND
+[24/50] 赵季平 - 军威浩壮
+  -> NOT FOUND
+[25/50] 赵季平 - 梁山好汉
+  -> NOT FOUND
+[26/50] 赵季平 - 林冲夜奔
+ERROR: The read operation timed out
+  -> NOT FOUND
+[27/50] 赵季平 - 武松杀嫂
+  -> NOT FOUND
+[28/50] 赵季平 - 暮鼓晨钟
+  -> NOT FOUND
+[29/50] The Smashing Pumpkins - Obscured
+  -> LRC saved
+[30/50] The Smashing Pumpkins - Whir (As Whirl)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[31/50] The Smashing Pumpkins - Hello Kitty Kat (As Kitty Kat)
+  -> NOT FOUND
+[32/50] The Smashing Pumpkins - Pissant
+  -> LRC saved
+[33/50] The Smashing Pumpkins - French Movie Theme
+ERROR: The read operation timed out
+  -> NOT FOUND
+[34/50] The Smashing Pumpkins - Purr Snickety (As Purr Shnickety)
+  -> NOT FOUND
+[35/50] Black Country,New Road - Mark’s Theme
+  -> NOT FOUND
+[36/50] Black Country,New Road - Chaos Space Marine
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] Black Country,New Road - Good Will Hunting
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Black Country,New Road - Track X
+  -> LRC saved
+[39/50] Black Country,New Road - Mark’s Theme
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] Black Country,New Road - The Place Where He Inserted the Blade
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] Black Country,New Road - Snow Globes
+  -> LRC saved
+[42/50] 刺猬 - 金色褪去, 燃于天际
+  -> NOT FOUND
+[43/50] 刺猬 - 徙鸟
+  -> NOT FOUND
+[44/50] The Beach Boys - You Still Believe In Me
+  -> LRC saved
+[45/50] The Beach Boys - Let's Go Away For A While
+  -> NOT FOUND
+[46/50] The Beach Boys - Pet Sounds
+  -> NOT FOUND
+[47/50] The Beach Boys - Caroline No
+  -> LRC saved
+[48/50] David Bowie - ★
+  -> LRC saved
+[49/50] David Bowie - ’Tis a Pity She Was a Whore
+  -> LRC saved
+[50/50] David Bowie - Lazarus
+  -> LRC saved
+Batch 8 done! Success: 11/50
+
+=== Batch 9 (offset 400) ===
+Processing 50 tracks
+[1/50] 刀郎 - 大眼睛
+  -> LRC saved
+[2/50] 刀郎 - 亚克西
+  -> NOT FOUND
+[3/50] 刀郎 - 再见乌鲁木齐
+  -> NOT FOUND
+[4/50] 刀郎 - 打起手鼓唱起歌
+  -> NOT FOUND
+[5/50] 刀郎 - 冰山上的雪莲
+  -> NOT FOUND
+[6/50] 刀郎 - 世界如此寂寞
+  -> LRC saved
+[7/50] 刀郎 - 西海情歌
+  -> LRC saved
+[8/50] 刀郎 - 德令哈一夜
+  -> NOT FOUND
+[9/50] 刀郎 - 花瓣下的种子
+  -> NOT FOUND
+[10/50] 刀郎 - 孤独的牧羊人
+  -> TXT saved
+[11/50] 刀郎 - 手心里的温柔
+  -> NOT FOUND
+[12/50] 刀郎 - 朝圣者的脚步
+  -> NOT FOUND
+[13/50] 刀郎 - 真爱的胸怀
+  -> NOT FOUND
+[14/50] 刀郎 - 山海天
+  -> NOT FOUND
+[15/50] 刀郎 - 高原的回忆
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] Exodus - Shroud of Urine
+  -> LRC saved
+[17/50] Exodus - Throwing Down
+ERROR: The read operation timed out
+  -> NOT FOUND
+[18/50] Kraftwerk - Spacelab
+  -> NOT FOUND
+[19/50] Kraftwerk - Metropolis
+ERROR: The read operation timed out
+  -> NOT FOUND
+[20/50] Kraftwerk - Neonlicht
+  -> LRC saved
+[21/50] Kraftwerk - Die Mensch·Maschine
+ERROR: The read operation timed out
+  -> NOT FOUND
+[22/50] Stereolab - Contranatura Pt. 2 Instrumental
+  -> NOT FOUND
+[23/50] Stereolab - Contranatura (demo)
+  -> NOT FOUND
+[24/50] Sufjan Stevens - THE BLACK HAWK WAR, or, How to Demolish an Entire Civilization and Still Feel Good About Yourself in the Morning, or, We Apologize for the Inconvenience but You’re Going to Have to Leave Now, or, "I Have Fought the Big Knives and Will Continue to Fight…
+ERROR: The read operation timed out
+  -> NOT FOUND
+[25/50] Sufjan Stevens - Let’s Hear That String Part Again, Because I Don’t Think They Heard It All the Way Out in Bloomington‐normal
+  -> NOT FOUND
+[26/50] Sufjan Stevens - The Seer’s Tower
+ERROR: The read operation timed out
+  -> NOT FOUND
+[27/50] Sufjan Stevens - Go! Chicago! Go! Yeah!
+ERROR: The read operation timed out
+  -> NOT FOUND
+[28/50] Sufjan Stevens - To the Workers of the Rock River Valley Region, I Have an Idea Concerning Your Predicament, and It Involves Tube Socks, a Paper Airplane, and Twenty‐two Able‐bodied Men.
+  -> NOT FOUND
+[29/50] Sufjan Stevens - Out of Egypt, Into the Great Laugh of Mankind, and I Shake the Dirt From My Sandals as I Run
+  -> NOT FOUND
+[30/50] Nokturnal Mortum - Інтро
+  -> NOT FOUND
+[31/50] 林俊杰 - Hey, My Friend
+  -> NOT FOUND
+[32/50] 林俊杰 - 小狗
+  -> NOT FOUND
+[33/50] 林俊杰 - 想太多
+  -> NOT FOUND
+[34/50] 林俊杰 - 勇氣
+  -> NOT FOUND
+[35/50] 林俊杰 - 自己
+  -> NOT FOUND
+[36/50] 林俊杰 - 有你的愛
+  -> NOT FOUND
+[37/50] 林俊杰 - 那麼
+  -> NOT FOUND
+[38/50] Nirvana - Waif Me
+  -> NOT FOUND
+[39/50] Motanka - Oy ty moya Zemle
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] Motanka - Horizon
+  -> NOT FOUND
+[41/50] Motanka - Pace of the Space
+  -> NOT FOUND
+[42/50] Motanka - Khreshchennya
+  -> NOT FOUND
+[43/50] Motanka - What Are You Living For?
+  -> NOT FOUND
+[44/50] Motanka - Kroda
+  -> NOT FOUND
+[45/50] Mägo de Oz - La ínsula de Barataria
+  -> NOT FOUND
+[46/50] Mägo de Oz - Photogallerie
+  -> NOT FOUND
+[47/50] Mägo de Oz - Presseberichte
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] Mägo de Oz - La ínsula de Barataria
+  -> NOT FOUND
+[49/50] Earthside - The Closest I’ve Come
+  -> NOT FOUND
+[50/50] Earthside - Entering the Light
+  -> NOT FOUND
+Batch 9 done! Success: 6/50
+
+=== Batch 10 (offset 450) ===
+Processing 50 tracks
+[1/50] Lifelover - En sång om dig
+ERROR: The read operation timed out
+  -> NOT FOUND
+[2/50] 郑智化 - 吙伊去
+  -> NOT FOUND
+[3/50] 许茹芸 - 難以抗拒妳容顏
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] 许茹芸 - 有妳真的會快樂嗎？
+  -> NOT FOUND
+[5/50] 许茹芸 - 知道
+  -> NOT FOUND
+[6/50] 许茹芸 - 珍藏我的愛情
+  -> NOT FOUND
+[7/50] 许茹芸 - 最想念的季節
+  -> NOT FOUND
+[8/50] 许茹芸 - 想妳的夜
+  -> NOT FOUND
+[9/50] 许茹芸 - 其實快樂很容易
+  -> NOT FOUND
+[10/50] 许茹芸 - 永遠存在
+  -> NOT FOUND
+[11/50] 林忆莲 - 野花
+  -> LRC saved
+[12/50] 林忆莲 - 天大地大
+  -> NOT FOUND
+[13/50] 林忆莲 - 沒有你還是愛你
+ERROR: The read operation timed out
+  -> NOT FOUND
+[14/50] 林忆莲 - 多些那些
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] 林忆莲 - 震撼
+  -> TXT saved
+[16/50] 林忆莲 - 傾斜 (live 93)
+  -> NOT FOUND
+[17/50] 林忆莲 - 天大地大
+ERROR: The read operation timed out
+  -> NOT FOUND
+[18/50] 林忆莲 - 還是不要說抱歉 / 野花
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] 林忆莲 - 三年 (live)
+  -> NOT FOUND
+[20/50] 林忆莲 - 感情不老
+  -> TXT saved
+[21/50] 林忆莲 - 要是有緣
+  -> NOT FOUND
+[22/50] 林忆莲 - 醒醒
+  -> LRC saved
+[23/50] 林忆莲 - 沒結果
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] 林忆莲 - 兩個人的路 / 寵愛
+  -> NOT FOUND
+[25/50] 林忆莲 - 再生戀
+  -> TXT saved
+[26/50] 林忆莲 - Wildflower
+  -> LRC saved
+[27/50] 林忆莲 - 兩個人的路
+  -> NOT FOUND
+[28/50] 林忆莲 - 寵愛
+  -> NOT FOUND
+[29/50] 林忆莲 - 我沒有恨誰
+  -> NOT FOUND
+[30/50] 林忆莲 - 震撼
+  -> TXT saved
+[31/50] 林忆莲 - 假如讓你吻下去
+  -> LRC saved
+[32/50] 林忆莲 - 此情此景
+  -> NOT FOUND
+[33/50] 林忆莲 - 假如讓你吻下去
+  -> LRC saved
+[34/50] 林忆莲 - 明天醒來是
+  -> NOT FOUND
+[35/50] 林忆莲 - 一輩子心情
+  -> NOT FOUND
+[36/50] Red Hot Chili Peppers - The Organic Anti-Beat Box Band
+  -> LRC saved
+[37/50] Red Hot Chili Peppers - Music in My Aeroplane
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Red Hot Chili Peppers - Me and My Friends
+  -> LRC saved
+[39/50] 老狼 - 每一分一秒
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] 老狼 - 那么那么地
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] 老狼 - 鸟儿的幻想
+ERROR: The read operation timed out
+  -> NOT FOUND
+[42/50] 老狼 - 想把我唱给你听
+  -> NOT FOUND
+[43/50] 老狼 - 弄错的车站
+  -> NOT FOUND
+[44/50] 老狼 - 有多远就走多远
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 老狼 - 心中的舞蹈
+  -> TXT saved
+[46/50] Adrianne Lenker - my angel
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 王梵瑞 - 化物
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 王梵瑞 - 証明
+  -> NOT FOUND
+[49/50] 王梵瑞 - 嘘
+  -> NOT FOUND
+[50/50] 王梵瑞 - 閃光
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 10 done! Success: 12/50
+
+=== Batch 11 (offset 500) ===
+Processing 50 tracks
+[1/50] 王梵瑞 - Děnghòu shì
+  -> NOT FOUND
+[2/50] 满江 - 最美的时光
+  -> NOT FOUND
+[3/50] Nas - Life’s a Bitch
+  -> LRC saved
+[4/50] 马飞 - 阳光照射奶西村
+  -> NOT FOUND
+[5/50] 魏如萱 - 怪奇的珍珠
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 魏如萱 - 跩
+  -> LRC saved
+[7/50] 魏如萱 - 劣根
+  -> LRC saved
+[8/50] 魏如萱 - 例如離開
+  -> LRC saved
+[9/50] 魏如萱 - 紙黏土
+  -> LRC saved
+[10/50] 魏如萱 - 好像好像
+  -> LRC saved
+[11/50] 魏如萱 - 哎呀哎呀 (午夜版)
+  -> LRC saved
+[12/50] Carcass - Carnal Forge
+  -> LRC saved
+[13/50] Carcass - This Mortal Coil
+  -> LRC saved
+[14/50] 许嵩 - 乌鸦
+  -> NOT FOUND
+[15/50] 许嵩 - 假摔
+  -> NOT FOUND
+[16/50] 许嵩 - 科幻
+  -> NOT FOUND
+[17/50] 许嵩 - 万古
+ERROR: The read operation timed out
+  -> NOT FOUND
+[18/50] 许嵩 - 冰柜
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] 许嵩 - 超市
+  -> LRC saved
+[20/50] 许嵩 - 隔代
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 许嵩 - 野人
+ERROR: The read operation timed out
+  -> NOT FOUND
+[22/50] 许嵩 - 三尺
+  -> NOT FOUND
+[23/50] 许嵩 - 庞贝
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] 郑宜农 - 新世紀的女兒
+  -> NOT FOUND
+[25/50] 郑宜农 - Speechless
+  -> NOT FOUND
+[26/50] 郑宜农 - 囡仔汗 (Album Version)
+  -> NOT FOUND
+[27/50] 陈楚生 - Legend
+  -> NOT FOUND
+[28/50] 陈楚生 - Charm of Tableland
+  -> NOT FOUND
+[29/50] 陈楚生 - Fly Away With You
+  -> NOT FOUND
+[30/50] 陈楚生 - Laundry Joy
+  -> NOT FOUND
+[31/50] 陈楚生 - T'ang-Ku-La in My Dreams
+ERROR: The read operation timed out
+  -> NOT FOUND
+[32/50] 陈楚生 - To My Mother
+  -> NOT FOUND
+[33/50] 陈楚生 - Walk Into Tibet
+  -> NOT FOUND
+[34/50] 陈楚生 - Pathway to Paradise
+  -> NOT FOUND
+[35/50] 陈楚生 - He Greenland in My Dreams
+  -> NOT FOUND
+[36/50] 陈楚生 - Ocean of Flower
+  -> NOT FOUND
+[37/50] 戴佩妮 - 眼泪笑了
+  -> NOT FOUND
+[38/50] 戴佩妮 - 靠不靠谱
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] 戴佩妮 - 一句一伤
+  -> NOT FOUND
+[40/50] 戴佩妮 - 拍写
+  -> NOT FOUND
+[41/50] 戴佩妮 - 死胡同
+  -> NOT FOUND
+[42/50] 戴佩妮 - 雨念
+  -> NOT FOUND
+[43/50] 佛跳墙 - 啊哦
+  -> NOT FOUND
+[44/50] 佛跳墙 - 祝我们快乐
+  -> NOT FOUND
+[45/50] 佛跳墙 - 跟我一起
+  -> NOT FOUND
+[46/50] 佛跳墙 - GOOD NIGHT
+  -> NOT FOUND
+[47/50] 佛跳墙 - 陪你一天
+  -> NOT FOUND
+[48/50] 佛跳墙 - 给你好看
+ERROR: The read operation timed out
+  -> NOT FOUND
+[49/50] 佛跳墙 - 卸妆
+  -> NOT FOUND
+[50/50] 佛跳墙 - 共舞
+  -> NOT FOUND
+Batch 11 done! Success: 10/50
+
+=== Batch 12 (offset 550) ===
+Processing 50 tracks
+[1/50] 戴佩妮 - Jamie Wilson Solo
+  -> NOT FOUND
+[2/50] 戴佩妮 - Li Shou Xin Solo
+  -> NOT FOUND
+[3/50] 戴佩妮 - Huang Zhong Yue Solo
+  -> NOT FOUND
+[4/50] 戴佩妮 - Wu Qing Long Solo
+  -> NOT FOUND
+[5/50] Dark Fount - 餘燼
+  -> NOT FOUND
+[6/50] 魏如萱 - 黑貓的計謀
+  -> LRC saved
+[7/50] 魏如萱 - 陪著你
+  -> LRC saved
+[8/50] 葬尸湖 - Winter Mirage
+  -> NOT FOUND
+[9/50] 葬尸湖 - Valley of loneness
+  -> NOT FOUND
+[10/50] 葬尸湖 - 孤魂
+  -> NOT FOUND
+[11/50] 罗大佑 - 浮萍
+  -> NOT FOUND
+[12/50] 罗大佑 - The end of the world
+  -> NOT FOUND
+[13/50] 罗大佑 - 一个我喜欢的女孩
+  -> NOT FOUND
+[14/50] 罗大佑 - 嘿!嘿!
+  -> NOT FOUND
+[15/50] 罗大佑 - 可爱的明天
+  -> NOT FOUND
+[16/50] 郑钧 - 回到拉萨
+  -> LRC saved
+[17/50] 郑钧 - 极乐世界
+  -> LRC saved
+[18/50] 郑钧 - 赤裸裸
+  -> LRC saved
+[19/50] 水木年华 - 会有那么一天
+  -> NOT FOUND
+[20/50] 水木年华 - 蜗牛的家
+  -> NOT FOUND
+[21/50] 水木年华 - 我就在你身边
+  -> NOT FOUND
+[22/50] 水木年华 - 野百合也有春天
+  -> NOT FOUND
+[23/50] 郑钧 - 低空飞行
+  -> TXT saved
+[24/50] 郑钧 - 我_ _算什么
+  -> LRC saved
+[25/50] 郑钧 - 天敌
+  -> NOT FOUND
+[26/50] 郑钧 - 斯德哥尔摩
+  -> NOT FOUND
+[27/50] 郑钧 - 父的三北
+ERROR: The read operation timed out
+  -> NOT FOUND
+[28/50] 唐朝 - The Sun
+ERROR: The read operation timed out
+  -> NOT FOUND
+[29/50] 唐朝 - Nine Fourth
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] 唐朝 - Paradise
+  -> NOT FOUND
+[31/50] 唐朝 - Choice
+  -> NOT FOUND
+[32/50] 唐朝 - Soaring Bird
+  -> NOT FOUND
+[33/50] 唐朝 - The Moon Hangs High
+  -> NOT FOUND
+[34/50] 唐朝 - Don't Go Hiding
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] 唐朝 - Legend
+  -> NOT FOUND
+[36/50] 梁博 - 沒結果之後
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] 梁博 - 還是我 還是你
+  -> NOT FOUND
+[38/50] 梁博 - 為何他會離開你
+  -> NOT FOUND
+[39/50] 梁博 - 本色
+  -> NOT FOUND
+[40/50] 梁博 - 聆聽
+  -> NOT FOUND
+[41/50] 梁博 - 再見悲哀
+  -> NOT FOUND
+[42/50] 姜昕 - 我不是随便的花朵
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 魏如萱 - 到底為了誰
+  -> NOT FOUND
+[44/50] 魏如萱 - 小雨的愛
+  -> NOT FOUND
+[45/50] 魏如萱 - 我家在那裡
+  -> NOT FOUND
+[46/50] 魏如萱 - 我就喜歡你
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 魏如萱 - 我找到了
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 魏如萱 - 我沒有錯
+  -> NOT FOUND
+[49/50] 魏如萱 - 萍水相逢的人
+  -> NOT FOUND
+[50/50] 彭坦 - You got me wrong
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 12 done! Success: 7/50
+
+=== Batch 13 (offset 600) ===
+Processing 50 tracks
+[1/50] 彭坦 - Viva allein
+  -> NOT FOUND
+[2/50] 王啸坤 - 鸳鸯泛绿
+  -> NOT FOUND
+[3/50] 王啸坤 - 侬家风月
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] 王啸坤 - 银河落九天
+ERROR: The read operation timed out
+  -> NOT FOUND
+[5/50] 王啸坤 - 秋河飞月
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 王啸坤 - 一点凝烟
+  -> NOT FOUND
+[7/50] 王啸坤 - 雪晴晚望
+  -> NOT FOUND
+[8/50] 王啸坤 - 山雨溪风
+ERROR: The read operation timed out
+  -> NOT FOUND
+[9/50] 张惠妹 - 冲突的很
+  -> NOT FOUND
+[10/50] Geordie Greep - Holy, Holy
+ERROR: The read operation timed out
+  -> NOT FOUND
+[11/50] Metallica - Creeping Death
+  -> LRC saved
+[12/50] Metallica - Wherever I May Roam
+  -> LRC saved
+[13/50] Metallica - Enter Sandman
+  -> LRC saved
+[14/50] 秦凡淇 - 享受
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] Inanna - The Delicate Balance of Terror
+  -> NOT FOUND
+[16/50] Inanna - The Lighthouse
+  -> NOT FOUND
+[17/50] Inanna - Embracing the Fleshless Ecstasy
+  -> NOT FOUND
+[18/50] Inanna - Sea of the Dead
+  -> NOT FOUND
+[19/50] Weakling - Dead as Dreams
+ERROR: The read operation timed out
+  -> NOT FOUND
+[20/50] Weakling - This Entire Fucking Battlefield
+  -> NOT FOUND
+[21/50] Weakling - No One Can Be Called as a Man While He’ll Die
+  -> NOT FOUND
+[22/50] Weakling - Desasters in the Sun
+  -> NOT FOUND
+[23/50] Car Seat Headrest - The Hard Part (Sober to Death demo)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] Car Seat Headrest - KS (Replaced with Cute Thing)
+ERROR: <urlopen error [Errno 11001] getaddrinfo failed>
+  -> NOT FOUND
+[25/50] Car Seat Headrest - The End of the Golden Age (Famous Prophets demo)
+  -> LRC saved
+[26/50] Car Seat Headrest - Pain Star (alternate Famous Prophets Ending)
+  -> NOT FOUND
+[27/50] Car Seat Headrest - Rebelradio (B-Side)
+  -> LRC saved
+[28/50] The Cure - First Visit
+  -> NOT FOUND
+[29/50] The Cure - Shopping Cart Ride
+  -> NOT FOUND
+[30/50] The Cure - Candy Montage
+  -> NOT FOUND
+[31/50] The Cure - Gathering Leaves
+  -> NOT FOUND
+[32/50] The Cure - Mississippi Montage
+  -> NOT FOUND
+[33/50] The Cure - Make Mine a T-Bone
+  -> NOT FOUND
+[34/50] The Cure - Found Money
+  -> NOT FOUND
+[35/50] The Cure - Chase & Confrontation
+  -> NOT FOUND
+[36/50] The Cure - Going Home
+  -> NOT FOUND
+[37/50] The Cure - We Call It a Miracle
+  -> NOT FOUND
+[38/50] The Cure - Rain / Realization
+  -> NOT FOUND
+[39/50] The Cure - Last Visit
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] The Cure - Down the River / End Credits
+
+=== Batch 10 (offset 450) ===
+Processing 50 tracks
+[1/50] Lifelover - En sång om dig
+  -> NOT FOUND
+[41/50] 装咖人 - 芦屋
+  -> LRC saved
+[2/50] 郑智化 - 吙伊去
+  -> NOT FOUND
+[42/50] 装咖人 - ニュードリーム
+  -> NOT FOUND
+[3/50] 许茹芸 - 難以抗拒妳容顏
+  -> NOT FOUND
+[4/50] 许茹芸 - 有妳真的會快樂嗎？
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 装咖人 - 午後の旅
+ERROR: The read operation timed out
+  -> NOT FOUND
+[5/50] 许茹芸 - 知道
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/50] 装咖人 - 回復領域
+  -> NOT FOUND
+[6/50] 许茹芸 - 珍藏我的愛情
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 装咖人 - エンカウンター
+  -> NOT FOUND
+[7/50] 许茹芸 - 最想念的季節
+  -> NOT FOUND
+[46/50] 装咖人 - 降順
+  -> NOT FOUND
+[8/50] 许茹芸 - 想妳的夜
+  -> NOT FOUND
+[9/50] 许茹芸 - 其實快樂很容易
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 装咖人 - 相補
+  -> NOT FOUND
+[10/50] 许茹芸 - 永遠存在
+  -> NOT FOUND
+[11/50] 林忆莲 - 天大地大
+  -> NOT FOUND
+[48/50] 装咖人 - ちんちん
+  -> NOT FOUND
+[49/50] 装咖人 - あなたの夢を運転する
+  -> NOT FOUND
+[12/50] 林忆莲 - 沒有你還是愛你
+  -> NOT FOUND
+[50/50] 装咖人 - リダイヤル
+  -> NOT FOUND
+Batch 13 done! Success: 5/50
+ERROR: The read operation timed out
+  -> NOT FOUND
+
+=== Batch 14 (offset 650) ===
+Processing 50 tracks
+[1/50] 青年 - ハロー流星群
+[13/50] 林忆莲 - 多些那些
+  -> NOT FOUND
+[2/50] 青年 - ベテルギウス
+  -> NOT FOUND
+[14/50] 林忆莲 - 傾斜 (live 93)
+  -> NOT FOUND
+[15/50] 林忆莲 - 天大地大
+ERROR: The read operation timed out
+  -> NOT FOUND
+[3/50] 青年 - twilight
+  -> NOT FOUND
+[16/50] 林忆莲 - 還是不要說抱歉 / 野花
+  -> NOT FOUND
+[4/50] 青年 - 月食
+  -> NOT FOUND
+[17/50] 林忆莲 - 三年 (live)
+  -> NOT FOUND
+[5/50] 青年 - 砂時計
+  -> NOT FOUND
+[18/50] 林忆莲 - 要是有緣
+  -> NOT FOUND
+[19/50] 林忆莲 - 沒結果
+  -> NOT FOUND
+[6/50] 青年 - キャッチ＆ボール
+  -> TXT saved
+[20/50] 林忆莲 - 兩個人的路 / 寵愛
+  -> NOT FOUND
+[21/50] 林忆莲 - 兩個人的路
+  -> NOT FOUND
+[7/50] 青年 - パーティーサイズ
+  -> NOT FOUND
+[22/50] 林忆莲 - 寵愛
+  -> NOT FOUND
+ERROR: The read operation timed out
+  -> NOT FOUND
+[23/50] 林忆莲 - 我沒有恨誰
+[8/50] Baboo - あっかんべー
+ERROR: The read operation timed out
+  -> NOT FOUND
+[9/50] Baboo - 神様のいう通り
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] 林忆莲 - 此情此景
+  -> NOT FOUND
+[25/50] 林忆莲 - 明天醒來是
+  -> NOT FOUND
+[10/50] Baboo - OH MY GIRL!!
+  -> NOT FOUND
+[26/50] 林忆莲 - 一輩子心情
+  -> NOT FOUND
+[11/50] Baboo - CRY BABY
+  -> NOT FOUND
+[27/50] Red Hot Chili Peppers - Music in My Aeroplane
+  -> NOT FOUND
+[12/50] Baboo - おばけハイテンション
+  -> LRC saved
+[28/50] 老狼 - 每一分一秒
+  -> TXT saved
+[29/50] 老狼 - 那么那么地
+  -> NOT FOUND
+[13/50] Baboo - 冬のひまわり
+  -> NOT FOUND
+[14/50] Baboo - GIMME GIMME GIMME
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] 老狼 - 鸟儿的幻想
+  -> NOT FOUND
+[15/50] Baboo - STARRY NIGHT
+  -> NOT FOUND
+[31/50] 老狼 - 想把我唱给你听
+  -> NOT FOUND
+[16/50] Carsick Cars - Hou Dao
+  -> NOT FOUND
+[32/50] 老狼 - 弄错的车站
+  -> NOT FOUND
+[17/50] Carsick Cars - Re Shen
+  -> NOT FOUND
+[33/50] 老狼 - 有多远就走多远
+  -> NOT FOUND
+[18/50] 噬湖 - 茫
+ERROR: The read operation timed out
+  -> NOT FOUND
+[34/50] Adrianne Lenker - my angel
+  -> NOT FOUND
+[19/50] 霜冻前夜 - 冬京 (remaster)
+  -> NOT FOUND
+[20/50] 霜冻前夜 - 淡妆
+  -> LRC saved
+[35/50] 王梵瑞 - 化物
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 霜冻前夜 - 孤翎 (器乐版)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] 王梵瑞 - 証明
+  -> NOT FOUND
+  -> NOT FOUND
+[37/50] 王梵瑞 - 嘘
+[22/50] 霜冻前夜 - 冬京
+  -> NOT FOUND
+[38/50] 王梵瑞 - 閃光
+  -> NOT FOUND
+[39/50] 王梵瑞 - 独白
+ERROR: The read operation timed out
+  -> NOT FOUND
+[23/50] 霜冻前夜 - 平行
+  -> NOT FOUND
+[24/50] 霜冻前夜 - 极夜
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] 王梵瑞 - 口紅
+  -> NOT FOUND
+[25/50] 霜冻前夜 - 冬月拾柒
+  -> NOT FOUND
+[41/50] 王梵瑞 - 渦巻
+ERROR: The read operation timed out
+  -> NOT FOUND
+[26/50] 牛奶咖啡 - 去寻找
+ERROR: The read operation timed out
+  -> NOT FOUND
+[42/50] 王梵瑞 - 約束
+  -> LRC saved
+[27/50] 牛奶咖啡 - 离开的理由
+  -> NOT FOUND
+[43/50] 王梵瑞 - 倒淌河
+  -> NOT FOUND
+[28/50] 牛奶咖啡 - 心生
+  -> NOT FOUND
+[44/50] 王梵瑞 - 遇见明天的你
+ERROR: The read operation timed out
+  -> NOT FOUND
+[29/50] 揽佬SKAI ISYOURGOD - 講令話
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 王梵瑞 - 冬城
+  -> NOT FOUND
+[30/50] MC HotDog - Mr. Almost
+  -> NOT FOUND
+[46/50] 王梵瑞 - 听爱
+  -> LRC saved
+[31/50] MC HotDog - HO-HAI-YAN
+  -> NOT FOUND
+[47/50] 王梵瑞 - Safari
+  -> NOT FOUND
+[48/50] 王梵瑞 - 百花深处
+  -> LRC saved
+[32/50] MC HotDog - THANK U! YAHQQ
+  -> NOT FOUND
+[33/50] MC HotDog - KING WASTED
+  -> NOT FOUND
+[49/50] 王梵瑞 - 当我们在同一个世界
+  -> NOT FOUND
+[50/50] 王梵瑞 - 想说不说
+  -> NOT FOUND
+[34/50] MC HotDog - DRUGS
+  -> NOT FOUND
+Batch 10 done! Success: 5/50
+  -> LRC saved
+[35/50] MC HotDog - CLAP YOUR HANDS
+  -> NOT FOUND
+[36/50] MC HotDog - HOW COULD IT BE?
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] MC HotDog - Fuck HOW THEY FEEL
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] 苏打绿 - 第一乐章 适度的快板
+ERROR: HTTP Error 502: Bad Gateway
+  -> NOT FOUND
+[39/50] 苏打绿 - 第二乐章 慢板
+  -> NOT FOUND
+[40/50] 苏打绿 - 第三乐章 活泼的快板
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] 苏打绿 - [silent]
+ERROR: The read operation timed out
+  -> NOT FOUND
+[42/50] 苏打绿 - 第四乐章 有精神的快板 - 庄严的快板
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 苏打绿 - Weird Cat
+ERROR: <urlopen error [Errno 11001] getaddrinfo failed>
+  -> NOT FOUND
+[44/50] 苏打绿 - Four Seasons
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 苏打绿 - [silence]
+  -> NOT FOUND
+[46/50] 苏打绿 - [silence]
+  -> NOT FOUND
+[47/50] 崔健 - Slackers
+  -> NOT FOUND
+[48/50] 崔健 - The Power of the Powerless
+ERROR: The read operation timed out
+  -> NOT FOUND
+[49/50] 崔健 - The 90's
+  -> NOT FOUND
+[50/50] 崔健 - Caged Bird
+  -> NOT FOUND
+Batch 14 done! Success: 4/50
+
+=== Batch 15 (offset 700) ===
+Processing 50 tracks
+[1/50] 王菲 - 下一站
+  -> NOT FOUND
+[2/50] 王菲 - 有問題
+  -> NOT FOUND
+[3/50] 王菲 - 忘了
+  -> NOT FOUND
+[4/50] 王菲 - 百事可樂廣告“愿望篇”
+  -> NOT FOUND
+[5/50] 王菲 - 寒武紀
+  -> NOT FOUND
+[6/50] 王菲 - 迷魂記
+  -> LRC saved
+[7/50] 王菲 - 新房客
+  -> NOT FOUND
+[8/50] 王菲 - 等等
+  -> LRC saved
+[9/50] 王菲 - 色盲
+  -> LRC saved
+[10/50] 王菲 - 百事可樂廣告“愿望篇”製作特輯
+  -> NOT FOUND
+[11/50] 王菲 - 香奈兒
+  -> NOT FOUND
+[12/50] 王菲 - 打錯了
+  -> LRC saved
+[13/50] 王菲 - 阿修羅
+  -> NOT FOUND
+[14/50] 王菲 - 有時愛情徒有虛名
+  -> NOT FOUND
+[15/50] 王菲 - 心路
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] 王菲 - 女皇的新衣
+  -> NOT FOUND
+[17/50] 王菲 - 祢
+  -> NOT FOUND
+[18/50] 王菲 - 如果你是假的
+  -> NOT FOUND
+[19/50] 王菲 - 流浪的紅舞鞋
+  -> LRC saved
+[20/50] 王菲 - 白痴
+  -> LRC saved
+[21/50] 王菲 - 再見螢火蟲
+  -> LRC saved
+[22/50] 王菲 - 兩個人的聖經
+  -> NOT FOUND
+[23/50] 王菲 - 笑忘書
+  -> LRC saved
+[24/50] 王菲 - 單行道
+  -> NOT FOUND
+[25/50] 王菲 - 螢火蟲
+  -> LRC saved
+[26/50] 王菲 - 流浪的紅舞鞋 (鋼琴版)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[27/50] 王菲 - 給自己的情書
+  -> LRC saved
+[28/50] 指南针 - 枯萎·生命
+  -> NOT FOUND
+[29/50] 张福全 - Pearl-orchid Ta-fang Tea
+  -> NOT FOUND
+[30/50] 张福全 - Plum-blossom Ch`imen Red Tea
+ERROR: The read operation timed out
+  -> NOT FOUND
+[31/50] 张福全 - Lotus Chen-mei Tea
+  -> NOT FOUND
+[32/50] 张福全 - Taitai Mao-chien Tea
+ERROR: The read operation timed out
+  -> NOT FOUND
+[33/50] 张福全 - Rose Green Tea
+  -> NOT FOUND
+[34/50] 张福全 - Osmanthus Lungching Tea
+  -> NOT FOUND
+[35/50] 张福全 - Jasmine Yin-hao Tea
+  -> NOT FOUND
+[36/50] 张福全 - Chrysanthemum Puerh Tea
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] 陈劲 - 勇者之歌
+  -> NOT FOUND
+[38/50] 陈劲 - 拒绝孤独
+  -> NOT FOUND
+[39/50] 陈劲 - 寂寞堂口
+  -> NOT FOUND
+[40/50] 陈劲 - 上一次下一次
+  -> NOT FOUND
+[41/50] 陈劲 - 烛光
+  -> NOT FOUND
+[42/50] 陈劲 - 给天使看的戏
+  -> NOT FOUND
+[43/50] Carsick Cars - The Best VPN So Far
+  -> NOT FOUND
+[44/50] Carsick Cars - 15 Minutes Older
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] Carsick Cars - 灯火
+ERROR: The read operation timed out
+  -> NOT FOUND
+[46/50] Carsick Cars - 围城
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] Carsick Cars - Midnight Driver
+  -> NOT FOUND
+[48/50] Carsick Cars - 庇护所
+ERROR: The read operation timed out
+  -> NOT FOUND
+[49/50] Carsick Cars - Could You Be There ?
+ERROR: The read operation timed out
+  -> NOT FOUND
+[50/50] Carsick Cars - She Will Wait
+  -> NOT FOUND
+Batch 15 done! Success: 10/50
+
+=== Batch 16 (offset 750) ===
+Processing 50 tracks
+[1/50] 九维 - 完犊子
+ERROR: The read operation timed out
+  -> NOT FOUND
+[2/50] 九维 - 我想要
+  -> LRC saved
+[3/50] 九维 - 嗨
+  -> LRC saved
+[4/50] 九维 - 冒着泡泡
+  -> LRC saved
+[5/50] 九维 - 枷锁 / 解锁
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 九维 - 发不了了
+  -> LRC saved
+[7/50] 九维 - 舔着
+  -> LRC saved
+[8/50] Chestnut Bakery - 最后（The Shore)
+  -> NOT FOUND
+[9/50] 陈绮贞 - 勇不勇敢
+  -> NOT FOUND
+[10/50] 陈绮贞 - 有你
+  -> NOT FOUND
+[11/50] 陈绮贞 - 有你
+ERROR: The read operation timed out
+  -> NOT FOUND
+[12/50] Adrianne Lenker - music for indigo
+  -> NOT FOUND
+[13/50] Adrianne Lenker - mostly chimes
+  -> NOT FOUND
+[14/50] The Beatles - The Fool on the Hill
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] The Beatles - Flying
+  -> NOT FOUND
+[16/50] David Bowie - Speed of Life
+ERROR: The read operation timed out
+  -> NOT FOUND
+[17/50] David Bowie - Weeping Wall
+  -> NOT FOUND
+[18/50] The Smiths - Well I Wonder
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] The Smiths - Meat Is Murder
+  -> LRC saved
+[20/50] 陶喆 - Doxology
+  -> NOT FOUND
+[21/50] 陶喆 - 多謝你
+  -> NOT FOUND
+[22/50] 张雨生 - 多夢的歲月
+ERROR: The read operation timed out
+  -> NOT FOUND
+[23/50] 张雨生 - 寧可讓我苦
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] 张雨生 - 把世界分一半給你
+  -> NOT FOUND
+[25/50] 张雨生 - 心底的中國
+ERROR: The read operation timed out
+  -> NOT FOUND
+[26/50] Funeral Mist - Soloduivelsdans I
+  -> NOT FOUND
+[27/50] Funeral Mist - Epigrammen I
+  -> NOT FOUND
+[28/50] Funeral Mist - Epigrammen II
+  -> NOT FOUND
+[29/50] Funeral Mist - Epigrammen III
+  -> NOT FOUND
+[30/50] Funeral Mist - Epigrammen IV
+  -> NOT FOUND
+[31/50] Funeral Mist - Epigrammen V
+  -> NOT FOUND
+[32/50] Funeral Mist - Epigrammen VI
+  -> NOT FOUND
+[33/50] Funeral Mist - Epigrammen VII
+  -> NOT FOUND
+[34/50] Funeral Mist - Epigrammen VIII
+  -> NOT FOUND
+[35/50] Funeral Mist - Epigrammen IX
+  -> NOT FOUND
+[36/50] Funeral Mist - Epigrammen X
+  -> NOT FOUND
+[37/50] Funeral Mist - Epigrammen XI
+  -> NOT FOUND
+[38/50] Funeral Mist - Epigrammen XII
+  -> NOT FOUND
+[39/50] Funeral Mist - Epigrammen XIII
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] Funeral Mist - Epigrammen XIV
+  -> NOT FOUND
+[41/50] Funeral Mist - Epigrammen XV
+  -> NOT FOUND
+[42/50] Funeral Mist - Epigrammen XVI
+  -> NOT FOUND
+[43/50] Funeral Mist - Epigrammen XVII
+  -> NOT FOUND
+[44/50] Funeral Mist - Epigrammen XVIII
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] Funeral Mist - Epigrammen XIX
+  -> NOT FOUND
+[46/50] Funeral Mist - Epigrammen XX
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] Funeral Mist - Etudes I. Tertsen
+  -> NOT FOUND
+[48/50] Funeral Mist - Etudes II. Oktaven
+  -> NOT FOUND
+[49/50] Funeral Mist - Etudes III. Secunden
+  -> NOT FOUND
+[50/50] Funeral Mist - Etudes IV. Allegro Leggiero
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 16 done! Success: 6/50
+
+=== Batch 17 (offset 800) ===
+Processing 50 tracks
+[1/50] 钟立风 - 沒有人理我
+  -> NOT FOUND
+[2/50] 钟立风 - O₂
+  -> NOT FOUND
+[3/50] 钟立风 - 隨心所欲
+  -> NOT FOUND
+[4/50] 钟立风 - 腳踏車
+  -> NOT FOUND
+[5/50] Neutral Milk Hotel - Marching Theme
+  -> NOT FOUND
+[6/50] Neutral Milk Hotel - Pree-Sisters Swallowing A Donkey's Eye
+ERROR: The read operation timed out
+  -> NOT FOUND
+[7/50] 新裤子 - 嘿！你
+  -> NOT FOUND
+[8/50] 新裤子 - 新的恋爱
+  -> LRC saved
+[9/50] 新裤子 - 别对我说失去了Baby
+  -> NOT FOUND
+[10/50] 新裤子 - 每一天
+ERROR: The read operation timed out
+  -> NOT FOUND
+[11/50] 新裤子 - 我是一个服务员
+  -> LRC saved
+[12/50] 新裤子 - 来来去去
+  -> NOT FOUND
+[13/50] 新裤子 - 新裤子 (mix)
+  -> NOT FOUND
+[14/50] 魏如萱 - 一個人回家
+  -> NOT FOUND
+[15/50] 魏如萱 - 生活還欠你甚麼
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] 魏如萱 - 由她去罷
+ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  -> NOT FOUND
+[17/50] 魏如萱 - First Day
+  -> NOT FOUND
+[18/50] 魏如萱 - 世界是一列由東向西駛往的火車
+  -> NOT FOUND
+[19/50] 魏如萱 - Don’t You Worry
+  -> NOT FOUND
+[20/50] 魏如萱 - 雨曾經討厭海
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] 张雨生 - LOVE CONDITION
+  -> NOT FOUND
+[22/50] 张雨生 - 雨(TV MIX)
+  -> NOT FOUND
+[23/50] 张雨生 - LOVE CONDITION(TV MIX)
+  -> NOT FOUND
+[24/50] 海朋森 - 新都人
+  -> LRC saved
+[25/50] 海朋森 - 我进入了绝望的时期
+ERROR: The read operation timed out
+  -> NOT FOUND
+[26/50] 海朋森 - 每天的行军
+  -> NOT FOUND
+[27/50] 海朋森 - 撞进白昼
+  -> NOT FOUND
+[28/50] 海朋森 - 从出生到现在
+  -> NOT FOUND
+[29/50] 海朋森 - 找到了
+  -> LRC saved
+[30/50] 海朋森 - 我不愿再有来生
+  -> NOT FOUND
+[31/50] 海朋森 - 快乐的时光总是短暂的
+  -> NOT FOUND
+[32/50] 施鑫文月 - Surfin' on the Moonlight
+  -> NOT FOUND
+[33/50] 施鑫文月 - 前头跑
+  -> NOT FOUND
+[34/50] Jo's Moving Day - 1968 Itinerary
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] Jo's Moving Day - For Puppy
+  -> NOT FOUND
+[36/50] Jo's Moving Day - Don’t Look Back
+  -> NOT FOUND
+[37/50] 反光镜乐队 - 成长瞬间
+  -> LRC saved
+[38/50] 反光镜乐队 - 晚安北京
+  -> NOT FOUND
+[39/50] 反光镜乐队 - 果儿
+  -> NOT FOUND
+[40/50] 反光镜乐队 - 还我蔚蓝
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] 反光镜乐队 - You Are My Sunshine
+  -> LRC saved
+[42/50] 反光镜乐队 - 陌生的房间
+  -> NOT FOUND
+[43/50] 反光镜乐队 - 毒药
+  -> NOT FOUND
+[44/50] Asher White - Night Faces
+  -> NOT FOUND
+[45/50] Asher White - Mountain'r Lower
+  -> NOT FOUND
+[46/50] Asher White - Half Twain the Jesse
+  -> NOT FOUND
+[47/50] Asher White - Casper
+  -> NOT FOUND
+[48/50] Asher White - Midnight Wheels
+  -> NOT FOUND
+[49/50] Asher White - Streets of Mine
+ERROR: The read operation timed out
+  -> NOT FOUND
+[50/50] Asher White - Titles Under Pressure
+  -> NOT FOUND
+Batch 17 done! Success: 6/50
+
+=== Batch 18 (offset 850) ===
+Processing 50 tracks
+[1/50] 木马 [Muma] - 穿行
+  -> NOT FOUND
+[2/50] 木马 [Muma] - 没有错过时间
+  -> NOT FOUND
+[3/50] 木马 [Muma] - [无标题]
+  -> NOT FOUND
+[4/50] 声音碎片 [Sound Fragment] - 神游
+  -> NOT FOUND
+[5/50] 声音碎片 [Sound Fragment] - 致我的迷茫兄弟
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] 声音碎片 [Sound Fragment] - 伊斯特伍德
+  -> NOT FOUND
+[7/50] 声音碎片 [Sound Fragment] - 送流水
+  -> NOT FOUND
+[8/50] 声音碎片 [Sound Fragment] - 九月行歌
+  -> NOT FOUND
+[9/50] 声音碎片 [Sound Fragment] - 望星空
+  -> NOT FOUND
+[10/50] 声音碎片 [Sound Fragment] - 小凉山
+  -> NOT FOUND
+[11/50] 声音碎片 [Sound Fragment] - 送马玉华到2011年
+  -> NOT FOUND
+[12/50] P.K. 14 - 我会在南京的路上等你
+  -> NOT FOUND
+[13/50] P.K. 14 - 穿过河堤
+  -> NOT FOUND
+[14/50] P.K. 14 - 消失的地平线
+  -> NOT FOUND
+[15/50] P.K. 14 - 一些点缀
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] P.K. 14 - 那个傍晚
+  -> NOT FOUND
+[17/50] P.K. 14 - 有些意外发生地太早
+ERROR: The read operation timed out
+  -> NOT FOUND
+[18/50] P.K. 14 - 孤岛
+  -> NOT FOUND
+[19/50] P.K. 14 - 另一边
+  -> NOT FOUND
+[20/50] P.K. 14 - 多么美妙的夜晚
+  -> NOT FOUND
+[21/50] P.K. 14 - 每一种分离背后的疼痛
+  -> NOT FOUND
+[22/50] P.K. 14 - 错过了
+  -> NOT FOUND
+[23/50] P.K. 14 - 荒原
+  -> NOT FOUND
+[24/50] P.K. 14 - 北方的灵歌
+  -> NOT FOUND
+[25/50] P.K. 14 - 阳台
+ERROR: The read operation timed out
+  -> NOT FOUND
+[26/50] 缺省 [Default] - Meadow
+ERROR: The read operation timed out
+  -> NOT FOUND
+[27/50] 缺省 [Default] - 回环的梦境
+  -> NOT FOUND
+[28/50] 缺省 [Default] - Leave Now, Breathe Now
+  -> NOT FOUND
+[29/50] 缺省 [Default] - 松林
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] 缺省 [Default] - 余烬
+  -> NOT FOUND
+[31/50] 缺省 [Default] - 溪水
+  -> NOT FOUND
+[32/50] 缺省 [Default] - 停滞的冬夜
+  -> NOT FOUND
+[33/50] 缺省 [Default] - Struggler
+  -> NOT FOUND
+[34/50] 缺省 [Default] - 平原
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] 缺省 [Default] - 明日天气如何
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] 雷光夏 [Summer Lei] - お邪魔します
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] 雷光夏 [Summer Lei] - だるまさん
+  -> NOT FOUND
+[38/50] 雷光夏 [Summer Lei] - 死因:被害妄想
+  -> NOT FOUND
+[39/50] 雷光夏 [Summer Lei] - 死因:暮らし
+  -> NOT FOUND
+[40/50] 雷光夏 [Summer Lei] - 教えて
+  -> NOT FOUND
+[41/50] 雷光夏 [Summer Lei] - 食べたい
+  -> NOT FOUND
+[42/50] 雷光夏 [Summer Lei] - 死因:無視
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] 雷光夏 [Summer Lei] - 下半身中毒者
+  -> NOT FOUND
+[44/50] 雷光夏 [Summer Lei] - 有効期限-今日-
+  -> NOT FOUND
+[45/50] 雷光夏 [Summer Lei] - 死因:わからん
+ERROR: The read operation timed out
+  -> NOT FOUND
+[46/50] 雷光夏 [Summer Lei] - 僕が溶けてく帰り路
+  -> NOT FOUND
+[47/50] 雷光夏 [Summer Lei] - 死魔流し
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 雷光夏 [Summer Lei] - 床舐めの天才
+  -> NOT FOUND
+[49/50] 雷光夏 [Summer Lei] - 終日終わり
+  -> NOT FOUND
+[50/50] In Flames - The Jester’s Dance
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 18 done! Success: 0/50
+
+=== Batch 19 (offset 900) ===
+Processing 50 tracks
+[1/50] In Flames - Wayfaerer
+  -> NOT FOUND
+[2/50] My Bloody Valentine - Touched
+  -> NOT FOUND
+[3/50] Paul McCartney - Too Many People
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] Paul McCartney - 3 Legs
+  -> LRC saved
+[5/50] Paul McCartney - Smile Away
+  -> LRC saved
+[6/50] Paul McCartney - Long Haired Lady
+  -> LRC saved
+[7/50] George Harrison - Out of the Blue
+  -> NOT FOUND
+[8/50] George Harrison - Plug Me In
+  -> NOT FOUND
+[9/50] George Harrison - Thanks for the Pepperoni
+  -> NOT FOUND
+[10/50] Alice In Chains - Dam That River
+  -> LRC saved
+[11/50] Alice In Chains - Sickman
+  -> LRC saved
+[12/50] Alice In Chains - Junkhead
+  -> LRC saved
+[13/50] Natalia Lafourcade - Documental
+ERROR: The read operation timed out
+  -> NOT FOUND
+[14/50] Natalia Lafourcade - Te quiero ver
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] Kanonenfieber - Kampf und Sturm (2025)
+  -> NOT FOUND
+[16/50] Kanonenfieber - Die Havarie (2025)
+  -> NOT FOUND
+[17/50] Kanonenfieber - Der Füsilier II (2025)
+  -> NOT FOUND
+[18/50] Kanonenfieber - The Yankee Division March (2025)
+  -> NOT FOUND
+[19/50] Kanonenfieber - Die Fastnacht der Hölle (2025)
+  -> NOT FOUND
+[20/50] Natalia Lafourcade - Lágrimas cancioneras
+  -> NOT FOUND
+[21/50] Sonic Youth - Trilogy: The Wonder / Hyperstation / Eliminator Jr.
+  -> LRC saved
+[22/50] 小雨乐队 - 赛马
+  -> NOT FOUND
+[23/50] 小雨乐队 - 祝福你
+ERROR: The read operation timed out
+  -> NOT FOUND
+[24/50] 小雨乐队 - 赛龙夺锦&游龙戏凤
+  -> NOT FOUND
+[25/50] 小雨乐队 - 金蛇狂舞
+  -> NOT FOUND
+[26/50] Pu Poo Platter - Wen’s Woozy Wrap 文武捲
+  -> NOT FOUND
+[27/50] Pu Poo Platter - Ming’s Cafe 銘豐閣
+  -> NOT FOUND
+[28/50] Pu Poo Platter - Cha Kee 茶記
+ERROR: HTTP Error 502: Bad Gateway
+  -> NOT FOUND
+[29/50] Pu Poo Platter - Wu’s Wonton King 吳記雲吞皇
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] Pu Poo Platter - The 400 Blues 唐詩四百首
+  -> NOT FOUND
+[31/50] jody积融 - 3 Days in Heaven
+  -> NOT FOUND
+[32/50] jody积融 - Judy Garland
+  -> NOT FOUND
+[33/50] jody积融 - This Is Me
+  -> NOT FOUND
+[34/50] jody积融 - The Oh, Oh Song
+  -> NOT FOUND
+[35/50] jody积融 - Happen Again
+  -> NOT FOUND
+[36/50] jody积融 - Love Has Never Been My Friend
+  -> NOT FOUND
+[37/50] jody积融 - Without You
+  -> NOT FOUND
+[38/50] 文雀 [Sparrow] - 神游夜话
+  -> NOT FOUND
+[39/50] 文雀 [Sparrow] - 幻季
+  -> NOT FOUND
+[40/50] 文雀 [Sparrow] - 银湾
+  -> NOT FOUND
+[41/50] 文雀 [Sparrow] - 天目山路
+  -> NOT FOUND
+[42/50] 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 握力
+  -> NOT FOUND
+[43/50] 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 独りよがり
+  -> NOT FOUND
+[44/50] 猿 [Yuan] & 鍋一楠 [Guo Yinan] - イキツギ
+  -> NOT FOUND
+[45/50] 猿 [Yuan] & 鍋一楠 [Guo Yinan] - 日光浴
+  -> NOT FOUND
+[46/50] 何韻詩 [HOCC] - 威廉
+  -> NOT FOUND
+[47/50] 何韻詩 [HOCC] - 小房間
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] 何韻詩 [HOCC] - Neon Days
+  -> NOT FOUND
+[49/50] 何韻詩 [HOCC] - 本世紀最怪
+  -> NOT FOUND
+[50/50] 何韻詩 [HOCC] - 當我知道
+  -> NOT FOUND
+Batch 19 done! Success: 7/50
+
+=== Batch 20 (offset 950) ===
+Processing 50 tracks
+[1/50] The Mensis Ritual - Cainite
+  -> NOT FOUND
+[2/50] The Mensis Ritual - Freeze World
+  -> NOT FOUND
+[3/50] The Mensis Ritual - War Spirit
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] Richard Sallis - Perfect Light
+  -> NOT FOUND
+[5/50] Richard Sallis - Table 41
+  -> NOT FOUND
+[6/50] Richard Sallis - Feels
+  -> NOT FOUND
+[7/50] Richard Sallis - The Castle
+ERROR: The read operation timed out
+  -> NOT FOUND
+[8/50] Richard Sallis - You're a Casino
+  -> NOT FOUND
+[9/50] Richard Sallis - The City
+  -> NOT FOUND
+[10/50] Richard Sallis - Mandolin Gun
+ERROR: The read operation timed out
+  -> NOT FOUND
+[11/50] Richard Sallis - Yesteryear
+  -> NOT FOUND
+[12/50] Kill-Kennie - The Devourment of Intellect
+  -> NOT FOUND
+[13/50] Kill-Kennie - Sonata of the Enslaved
+ERROR: The read operation timed out
+  -> NOT FOUND
+[14/50] Kill-Kennie - The Dust Settles on Our Bones
+ERROR: The read operation timed out
+  -> NOT FOUND
+[15/50] Kill-Kennie - Machines (Even They Have Ghosts)
+  -> NOT FOUND
+[16/50] Kill-Kennie - Cities and Script
+  -> NOT FOUND
+[17/50] Kill-Kennie - The Architects of the Moment
+  -> NOT FOUND
+[18/50] Blood At Ease - Moonglow
+  -> NOT FOUND
+[19/50] Blood At Ease - God Bless the Child
+  -> NOT FOUND
+[20/50] Blood At Ease - La Mer
+ERROR: The read operation timed out
+  -> NOT FOUND
+[21/50] Blood At Ease - Moonlight Serenade
+  -> NOT FOUND
+[22/50] Blood At Ease - Night and Day
+  -> NOT FOUND
+[23/50] Blood At Ease - Sentimental Journey
+  -> NOT FOUND
+[24/50] Blood At Ease - Smoke Gets in Your Eyes
+  -> NOT FOUND
+[25/50] Blood At Ease - The Man I Love
+  -> NOT FOUND
+[26/50] Blood At Ease - Stardust
+  -> NOT FOUND
+[27/50] Blood At Ease - Sophisticated Lady
+ERROR: The read operation timed out
+  -> NOT FOUND
+[28/50] Blood At Ease - Lush Life
+  -> NOT FOUND
+[29/50] American Road In New Jersey - Valencia
+ERROR: The read operation timed out
+  -> NOT FOUND
+[30/50] American Road In New Jersey - Drift
+  -> NOT FOUND
+[31/50] Worm - Gates to the Shadowzone
+ERROR: The read operation timed out
+  -> NOT FOUND
+[32/50] Snorkmaiden - Right now
+  -> NOT FOUND
+[33/50] Snorkmaiden - Say yeah yeah yes
+  -> NOT FOUND
+[34/50] Snorkmaiden - ENJOY
+ERROR: The read operation timed out
+  -> NOT FOUND
+[35/50] Snorkmaiden - 熱帯夜
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] Snorkmaiden - MELT DOWN
+  -> NOT FOUND
+[37/50] Snorkmaiden - Remenber Me
+  -> NOT FOUND
+[38/50] Snorkmaiden - DanceがMusic
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] Ratboys - Spell
+  -> NOT FOUND
+[40/50] Ratboys - Reflective Darks
+  -> NOT FOUND
+[41/50] Ratboys - Turning Cucumbers
+  -> NOT FOUND
+[42/50] Ratboys - Raw
+  -> NOT FOUND
+[43/50] Ratboys - Graduale
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/50] Ratboys - Sparrows
+  -> NOT FOUND
+[45/50] Ratboys - Reverse
+  -> NOT FOUND
+[46/50] Ratboys - Ombra
+  -> NOT FOUND
+[47/50] Ratboys - Kretek
+  -> NOT FOUND
+[48/50] Ratboys - Rim
+  -> NOT FOUND
+[49/50] threadbaron - The End of Us
+  -> NOT FOUND
+[50/50] threadbaron - Tempest
+  -> NOT FOUND
+Batch 20 done! Success: 0/50
+
+=== Batch 21 (offset 1000) ===
+Processing 50 tracks
+[1/50] Otto Benson - Mr. Peanut
+  -> NOT FOUND
+[2/50] Otto Benson - Soy Beans
+  -> NOT FOUND
+[3/50] Otto Benson - Tumor
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] U2 - The Tears of Things
+  -> LRC saved
+[5/50] U2 - Song of the Future
+  -> LRC saved
+[6/50] U2 - Yours Eternally
+  -> LRC saved
+[7/50] Kisses - D7 08 2A 8D 2A 37 FA FE 17 0E 62 39 06 81 C8 A1 49 30 6F ED 56 AD 5E 04
+ERROR: The read operation timed out
+  -> NOT FOUND
+[8/50] Kisses - 46 4D 68 77 64 A0 43 B7 E9 A7 CB B4 BE 68 6B CB A0 5E 10 02 CC 96 EA 75
+  -> NOT FOUND
+[9/50] Kisses - 54 C6 05 1C 13 CC 72 E9 CC DC 84 F2 A3 FF CC 38 1E 94 0D C0 50 5C 3E E8
+  -> NOT FOUND
+[10/50] Kisses - F8 5E BB 63 94 B5 17 BA 74 AC 11 EE 33 86 B2 7E 93 E0 E4 AA B4 CF 1F 64
+  -> NOT FOUND
+[11/50] Kisses - DB 9F 72 A8 B4 1C 62 8A 3C 96 22 8B 5B 03 23 6F 81 16 64 76 3E 0A D8 16
+  -> NOT FOUND
+[12/50] Kisses - E5 42 CC 3C 83 3D A0 76 DE 90 E4 CB 49 99 C9 9F C5 48 7A A8 2F 34 1F BC
+  -> NOT FOUND
+[13/50] Kisses - 97 EF 9C 12 87 06 57 D8 B3 2F 0B 11 21 C7 B2 97 77 91 26 48 27 0E 5D 74
+  -> NOT FOUND
+[14/50] Gorillaz - The Moon Cave
+  -> LRC saved
+[15/50] Gorillaz - The Happy Dictator
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] Gorillaz - The Hardest Thing
+  -> LRC saved
+[17/50] Gorillaz - The Empty Dream Machine
+  -> LRC saved
+[18/50] Gorillaz - The Plastic Guru
+  -> LRC saved
+[19/50] Gorillaz - Casablanca
+  -> LRC saved
+[20/50] Twisted Teens - Wild Connection
+  -> NOT FOUND
+[21/50] Twisted Teens - Little Seed
+  -> NOT FOUND
+[22/50] Twisted Teens - 100 Bill Is Gone!
+  -> NOT FOUND
+[23/50] Twisted Teens - Peekaboo Hand
+  -> NOT FOUND
+[24/50] Twisted Teens - Who Could It Be?
+ERROR: The read operation timed out
+  -> NOT FOUND
+[25/50] Twisted Teens - Circus Clown
+  -> NOT FOUND
+[26/50] Twisted Teens - Hurricane
+  -> NOT FOUND
+[27/50] Twisted Teens - White Hot Coal
+  -> NOT FOUND
+[28/50] Twisted Teens - Corpse Pose
+  -> NOT FOUND
+[29/50] You Are an Angel - (outro)
+  -> NOT FOUND
+[30/50] Cryptic Shift - Cryogenically Frozen
+  -> NOT FOUND
+[31/50] Cryptic Shift - Stratocumulus Evergaol
+  -> NOT FOUND
+[32/50] Cryptic Shift - Hyperspace Topography
+ERROR: The read operation timed out
+  -> NOT FOUND
+[33/50] Cryptic Shift - Hexagonal Eyes (Diverity Trepaphymphasyzm)
+  -> NOT FOUND
+[34/50] underscores - Music
+  -> LRC saved
+[35/50] underscores - Wish U Well
+  -> LRC saved
+[36/50] The Fencesitters - flight song
+  -> NOT FOUND
+[37/50] The Fencesitters - tell you
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Neurosis - Mirror Deep
+ERROR: The read operation timed out
+  -> NOT FOUND
+[39/50] Neurosis - Seething and Scattered
+  -> NOT FOUND
+[40/50] The Twilight Sad - There Must Be Something More To This
+  -> NOT FOUND
+[41/50] The Twilight Sad - There Will Be No Surprise
+  -> NOT FOUND
+[42/50] The Twilight Sad - The Storm
+  -> NOT FOUND
+[43/50] The Twilight Sad - Glorious
+  -> NOT FOUND
+[44/50] The Twilight Sad - Shine On
+  -> NOT FOUND
+[45/50] The Twilight Sad - Radar
+ERROR: The read operation timed out
+  -> NOT FOUND
+[46/50] The Twilight Sad - The Only One
+  -> NOT FOUND
+[47/50] The Twilight Sad - Hang On
+  -> NOT FOUND
+[48/50] The Twilight Sad - Wish You Were Here
+ERROR: The read operation timed out
+  -> NOT FOUND
+[49/50] Courtney Barnett - Wonder
+  -> NOT FOUND
+[50/50] Courtney Barnett - Mostly Patient
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 21 done! Success: 10/50
+
+=== Batch 22 (offset 1050) ===
+Processing 50 tracks
+[1/50] 魚住英里奈 [Erina Uozumi] - 永遠なんて
+  -> NOT FOUND
+[2/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Corriente
+  -> NOT FOUND
+[3/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Código morse
+  -> NOT FOUND
+[4/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Vértigo
+  -> NOT FOUND
+[5/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Raúl Ducci Claro
+ERROR: The read operation timed out
+  -> NOT FOUND
+[6/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Panqui
+  -> NOT FOUND
+[7/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Diversión Tipo 3
+  -> NOT FOUND
+[8/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - Sama Sushi Bar
+  -> NOT FOUND
+[9/50] La Estrategia del Caracol / Cámara Chilena de la Destrucción - GTA Santiago
+  -> NOT FOUND
+[10/50] Friko - Guess
+  -> NOT FOUND
+[11/50] Friko - Hot Air Balloon
+  -> NOT FOUND
+[12/50] Friko - Dear Bicycle
+  -> NOT FOUND
+[13/50] Kacey Musgraves - Rhinestoned
+  -> LRC saved
+[14/50] American Football - The One With the Piano
+  -> NOT FOUND
+[15/50] Aldous Harding - Worms
+  -> NOT FOUND
+[16/50] Aldous Harding - Venus in the Zinnia
+  -> LRC saved
+[17/50] Aldous Harding - San Francisco
+  -> NOT FOUND
+[18/50] Aldous Harding - What Am I Gonna Do?
+  -> NOT FOUND
+[19/50] Aldous Harding - Coats
+  -> LRC saved
+[20/50] Inundaremos - 3300
+  -> NOT FOUND
+[21/50] Inundaremos - 100mts
+  -> NOT FOUND
+[22/50] Inundaremos - Relicario
+  -> NOT FOUND
+[23/50] Inundaremos - Semblante
+  -> NOT FOUND
+[24/50] 苏紫旭 & The Paramecia - 如等春台（As Spring on High)
+  -> NOT FOUND
+[25/50] Tizzy Bac - 是誰吃了我的腦
+ERROR: The read operation timed out
+  -> NOT FOUND
+[26/50] Tizzy Bac - 開放性骨折
+  -> TXT saved
+[27/50] Tizzy Bac - 保險推銷員之死
+  -> TXT saved
+[28/50] Tizzy Bac - 崇高與滑稽
+ERROR: The read operation timed out
+  -> NOT FOUND
+[29/50] Tizzy Bac - 我不想一個人睡
+  -> TXT saved
+[30/50] Tizzy Bac - Dream Is Over
+  -> NOT FOUND
+[31/50] Tizzy Bac - 週日午后的婦女時間
+  -> LRC saved
+[32/50] Tizzy Bac - 忘記丟掉
+  -> TXT saved
+[33/50] Tizzy Bac - Every Dog Has Its Lawn
+  -> LRC saved
+[34/50] Tizzy Bac - Waterfalls
+  -> TXT saved
+[35/50] Tizzy Bac - 俄羅斯輪盤
+ERROR: The read operation timed out
+  -> NOT FOUND
+[36/50] Tizzy Bac - Happy Together Without You, Randal
+ERROR: The read operation timed out
+  -> NOT FOUND
+[37/50] Maria BC - Marathon
+ERROR: The read operation timed out
+  -> NOT FOUND
+[38/50] Maria BC - Peacemaking
+  -> NOT FOUND
+[39/50] Maria BC - Safety
+ERROR: The read operation timed out
+  -> NOT FOUND
+[40/50] Maria BC - Rare
+  -> NOT FOUND
+[41/50] Maria BC - Port authority
+  -> NOT FOUND
+[42/50] Maria BC - The sound
+  -> NOT FOUND
+[43/50] Maria BC - Sabotage
+  -> NOT FOUND
+[44/50] Maria BC - June
+  -> NOT FOUND
+[45/50] Maria BC - Night & day
+  -> NOT FOUND
+[46/50] Maria BC - May this rain
+  -> NOT FOUND
+[47/50] Maria BC - Channels
+ERROR: The read operation timed out
+  -> NOT FOUND
+[48/50] Tizzy Bac - 丹尼爾是個Gay
+  -> LRC saved
+[49/50] otay:onii - Have You Ever
+  -> NOT FOUND
+[50/50] otay:onii - Love From Survivors
+ERROR: The read operation timed out
+  -> NOT FOUND
+Batch 22 done! Success: 11/50
+
+=== Batch 23 (offset 1100) ===
+Processing 50 tracks
+[1/50] jody积融 - mononoware
+  -> NOT FOUND
+[2/50] jody积融 - Cocoon
+  -> NOT FOUND
+[3/50] jody积融 - Zhe Zhou (interlude)
+  -> NOT FOUND
+[4/50] jody积融 - Hush!
+  -> NOT FOUND
+[5/50] jody积融 - HUSH! (rui Remix)
+  -> NOT FOUND
+[6/50] jody积融 - keep it in the fridge
+  -> NOT FOUND
+[7/50] Paul McCartney - First Star of the Night
+  -> NOT FOUND
+[8/50] Chinese Football - 游戏开始
+  -> NOT FOUND
+[9/50] Chinese Football - 守门员
+  -> NOT FOUND
+[10/50] Chinese Football - 游戏暂停
+  -> NOT FOUND
+[11/50] Chinese Football - 地球上最后一个EMO男孩
+  -> NOT FOUND
+[12/50] Chinese Football - 帽子戏法
+  -> NOT FOUND
+[13/50] Chinese Football - 再见米卢
+  -> NOT FOUND
+[14/50] Chinese Football - 游戏结束
+  -> NOT FOUND
+[15/50] Panopticon - Woodland Caribou
+  -> NOT FOUND
+[16/50] Panopticon - The Great Silence, Extinct
+  -> NOT FOUND
+[17/50] Panopticon - The White Cedars
+  -> NOT FOUND
+[18/50] Panopticon - Lyset
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] Wendy Eisenberg - Take a Number
+  -> NOT FOUND
+[20/50] Wendy Eisenberg - Meaning Business
+  -> NOT FOUND
+[21/50] Wendy Eisenberg - Old Myth Dying
+  -> NOT FOUND
+[22/50] Wendy Eisenberg - Vanity Paradox
+  -> NOT FOUND
+[23/50] Wendy Eisenberg - Curious Bird
+  -> NOT FOUND
+[24/50] Wendy Eisenberg - The Ultraworld
+  -> NOT FOUND
+[25/50] Wendy Eisenberg - Will You Dare
+  -> NOT FOUND
+[26/50] Wendy Eisenberg - The Walls
+  -> NOT FOUND
+[27/50] Angine de Poitrine - Fabienk
+  -> LRC saved
+[28/50] Angine de Poitrine - Sarniezz
+  -> NOT FOUND
+[29/50] Angine de Poitrine - Yor Zarad
+  -> NOT FOUND
+[30/50] 刺猬 - 埋葬在阳光下 (Buried in the Sun)
+  -> NOT FOUND
+[31/50] 刺猬 - 杀死你的时代 (Kill Your Age)
+  -> NOT FOUND
+[32/50] 刺猬 - 甜蜜与杀害 (Honeyed and Killed)
+  -> NOT FOUND
+[33/50] 刺猬 - 闪马 (Sparklehorse)
+  -> NOT FOUND
+[34/50] 刺猬 - 纸飞机 (Paper Airplane)
+  -> NOT FOUND
+[35/50] 刺猬 - 白娃娃 (Wet White Doll)
+  -> NOT FOUND
+[36/50] 刺猬 - 疯狂生死恋 (Crazy Love and Dead)
+  -> NOT FOUND
+[37/50] 刺猬 - 橙色 (Orange)
+  -> NOT FOUND
+[38/50] 刺猬 - 最后，我们会一起去海边 (The End)
+  -> NOT FOUND
+[39/50] 刺猬 - 生命意味 (Life Means)
+  -> NOT FOUND
+[40/50] Car Seat Headrest - Optimistic Son
+ERROR: The read operation timed out
+  -> NOT FOUND
+[41/50] Car Seat Headrest - Joe Drives Again
+  -> TXT saved
+[42/50] Car Seat Headrest - The Ravenous House
+ERROR: The read operation timed out
+  -> NOT FOUND
+[43/50] Gumshoes - There's No One Out There
+  -> NOT FOUND
+[44/50] Gumshoes - The Canary
+  -> NOT FOUND
+[45/50] Gumshoes - Spinsters
+  -> NOT FOUND
+[46/50] Gumshoes - Die Pig Die
+  -> NOT FOUND
+[47/50] Gumshoes - Ocean / Island
+  -> NOT FOUND
+[48/50] Gumshoes - Love & Taxes
+  -> NOT FOUND
+[49/50] Gumshoes - City Lights
+  -> NOT FOUND
+[50/50] Gumshoes - Stepping on a Baby Bird
+  -> NOT FOUND
+Batch 23 done! Success: 2/50
+
+=== Batch 24 (offset 1150) ===
+Processing 50 tracks
+[1/50] Porcelain Stars - Vestige
+  -> NOT FOUND
+[2/50] Porcelain Stars - Severine
+  -> NOT FOUND
+[3/50] Porcelain Stars - Hecate's Embrace
+ERROR: The read operation timed out
+  -> NOT FOUND
+[4/50] Porcelain Stars - Siofra
+  -> NOT FOUND
+[5/50] Porcelain Stars - Odalisque
+  -> NOT FOUND
+[6/50] Greg Mendez - Sunsick
+  -> NOT FOUND
+[7/50] Greg Mendez - Geranium
+  -> NOT FOUND
+[8/50] Greg Mendez - Serving Drinks
+  -> NOT FOUND
+[9/50] Greg Mendez - So Mean
+  -> NOT FOUND
+[10/50] Greg Mendez - Concussion
+  -> NOT FOUND
+[11/50] Feeble Little Horse - Doorway
+  -> NOT FOUND
+[12/50] Feeble Little Horse - Poison
+  -> NOT FOUND
+[13/50] Feeble Little Horse - Rewind
+  -> NOT FOUND
+[14/50] Feeble Little Horse - Shady
+  -> NOT FOUND
+[15/50] Feeble Little Horse - Dior
+ERROR: The read operation timed out
+  -> NOT FOUND
+[16/50] Feeble Little Horse - Paris
+ERROR: The read operation timed out
+  -> NOT FOUND
+[17/50] Feeble Little Horse - Cradle
+  -> NOT FOUND
+[18/50] Feeble Little Horse - Guts
+ERROR: The read operation timed out
+  -> NOT FOUND
+[19/50] Feeble Little Horse - Shopping
+  -> NOT FOUND
+[20/50] Feeble Little Horse - DMT
+  -> NOT FOUND
+[21/50] Olivia Rodrigo - stupid song
+  -> LRC saved
+[22/50] Olivia Rodrigo - what’s wrong with me
+  -> LRC saved
+[23/50] Big Thief - Magic Dealer
+  -> LRC saved
+[24/50] Tizzy Bac - キミボシ
+  -> NOT FOUND
+[25/50] Tizzy Bac - 純情スカート (feat. Low land jazz "Seiji Tanzawa")
+  -> NOT FOUND
+[26/50] Tizzy Bac - 私が髪を切った理由
+  -> NOT FOUND
+[27/50] Tizzy Bac - トリノコシティ
+  -> NOT FOUND
+[28/50] Tizzy Bac - 3分30秒
+ERROR: The read operation timed out
+  -> NOT FOUND
+[29/50] Tizzy Bac - からくりピエロ [ live in お泊まりライブ vol.2 ]
+  -> NOT FOUND
+[30/50] Tizzy Bac - キミボシ inst ver.
+  -> NOT FOUND
+[31/50] Tizzy Bac - 純情スカート inst ver.
+  -> NOT FOUND
+[32/50] Tizzy Bac - 私が髪を切った理由 inst ver.
+  -> NOT FOUND
+[33/50] Tizzy Bac - トリノコシティ inst ver.
+  -> NOT FOUND
+[34/50] Tizzy Bac - 3分30秒 inst ver.
+  -> NOT FOUND
+[35/50] Tucker Zimmerman - Old Folks of Farmersville
+  -> TXT saved
+[36/50] Tucker Zimmerman - The Idiot's Maze
+  -> LRC saved
+[37/50] Tucker Zimmerman - Lorelei
+  -> LRC saved
+[38/50] Tucker Zimmerman - The Seasons
+  -> NOT FOUND
+[39/50] Tucker Zimmerman - Burial At Sea
+  -> TXT saved
+[40/50] Tucker Zimmerman - They Don't Say (But It's True)
+  -> TXT saved
+[41/50] Tucker Zimmerman - Leave It On The Porch Outside
+  -> TXT saved
+[42/50] Tucker Zimmerman - The Ram-a-lama-ding-dong Song
+  -> TXT saved
+[43/50] Tucker Zimmerman - Don't Go Crazy (Go In Peace)
+ERROR: The read operation timed out
+  -> NOT FOUND
+[44/50] Tucker Zimmerman - Nobody Knows
+ERROR: The read operation timed out
+  -> NOT FOUND
+[45/50] 苏醒 - 选秀明星
+  -> TXT saved
+[46/50] 苏醒 - 一首想念的歌
+ERROR: The read operation timed out
+  -> NOT FOUND
+[47/50] 苏醒 - MISS PRETTY
+  -> LRC saved
+[48/50] 苏醒 - 后来你好吗
+  -> NOT FOUND
+[49/50] 苏醒 - 1+1等于全世界
+  -> TXT saved
+[50/50] 苏醒 - 想念式
+  -> LRC saved
+Batch 24 done! Success: 14/50
+
+=== Batch 25 (offset 1200) ===
+Processing 0 tracks
+Batch 25 done! Success: 0/0
+
+=== Batch 26 (offset 1250) ===
+Processing 0 tracks
+Batch 26 done! Success: 0/0
+
+=== Batch 27 (offset 1300) ===
+Processing 0 tracks
+Batch 27 done! Success: 0/0
+
+=== Batch 28 (offset 1350) ===
+Processing 0 tracks
+Batch 28 done! Success: 0/0
+
+=== Batch 29 (offset 1400) ===
+Processing 0 tracks
+Batch 29 done! Success: 0/0
+
+=== Batch 30 (offset 1450) ===
+Processing 0 tracks
+Batch 30 done! Success: 0/0

@@ -1,0 +1,40 @@
+[DIR] .git
+[DIR] .idea
+[DIR] .trae
+[DIR] 2025-11
+[DIR] 2025-12
+[DIR] 2025-13
+[DIR] 2025-14
+[DIR] 2025-15
+[DIR] 2025-16
+[DIR] 2025-17
+[DIR] 2025-18
+[DIR] 2025-19
+[DIR] 2025华语TOP26
+[DIR] 2026-01
+[DIR] 2026-02
+[DIR] 2026-03
+[DIR] 2026-04
+[DIR] 2026-05
+[FILE] README.md
+[DIR] Top 25 英伦
+[DIR] Top25 Big Thief
+[DIR] Top25 The Beatles解散后
+[DIR] bin
+[DIR] caogao
+[DIR] code
+[DIR] covers
+[FILE] database.sql
+[FILE] music
+[FILE] music.backup
+[FILE] music_backup_20260608
+[DIR] 个人年榜
+[DIR] 双面计划
+[DIR] 听歌随想
+[DIR] 摇滚专辑年榜
+[DIR] 新专速递
+[FILE] 灵感记录.md
+[DIR] 盯鞋年榜
+[DIR] 美四激流Top25单曲
+[FILE] 视频模板.md
+[DIR] 金属专辑年榜

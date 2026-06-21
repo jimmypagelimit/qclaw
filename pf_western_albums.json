@@ -1,0 +1,692 @@
+[
+  {
+    "id": 19,
+    "artist": "King Crimson",
+    "album": "In the Court of crimson king"
+  },
+  {
+    "id": 20,
+    "artist": "Jessie Ware",
+    "album": "That! Feel! Good!"
+  },
+  {
+    "id": 26,
+    "artist": "John Lennon",
+    "album": "Plastic Ono Band"
+  },
+  {
+    "id": 27,
+    "artist": "John Lennon",
+    "album": "Imagine"
+  },
+  {
+    "id": 42,
+    "artist": "The Cure",
+    "album": "Bloodflower"
+  },
+  {
+    "id": 48,
+    "artist": "R.E.M.",
+    "album": "Life's Rich Pageant"
+  },
+  {
+    "id": 52,
+    "artist": "The Cure",
+    "album": "Pornography"
+  },
+  {
+    "id": 54,
+    "artist": "Peter Murphy",
+    "album": "Deep"
+  },
+  {
+    "id": 56,
+    "artist": "Peter Murphy",
+    "album": "Holy Smoke"
+  },
+  {
+    "id": 58,
+    "artist": "The Jesus and Mary Chain",
+    "album": "Psychocandy"
+  },
+  {
+    "id": 59,
+    "artist": "Car Seat Headrest",
+    "album": "Monomania"
+  },
+  {
+    "id": 60,
+    "artist": "deafHeaven",
+    "album": "Loney People With Power"
+  },
+  {
+    "id": 61,
+    "artist": "Wintersun",
+    "album": "Wintersun"
+  },
+  {
+    "id": 62,
+    "artist": "Led Zeppelin",
+    "album": "Presence"
+  },
+  {
+    "id": 63,
+    "artist": "The Police",
+    "album": "Synchronicity"
+  },
+  {
+    "id": 66,
+    "artist": "The Cure",
+    "album": "The Head on the Door"
+  },
+  {
+    "id": 67,
+    "artist": "The Cure",
+    "album": "Kiss Me Kiss Me Kiss Me"
+  },
+  {
+    "id": 79,
+    "artist": "Black Sabbath",
+    "album": "Master of Reality"
+  },
+  {
+    "id": 82,
+    "artist": "Green Day",
+    "album": "Savior"
+  },
+  {
+    "id": 84,
+    "artist": "Supertramp",
+    "album": "Breakfast In America"
+  },
+  {
+    "id": 89,
+    "artist": "Supertramp",
+    "album": "Crime Of The Century"
+  },
+  {
+    "id": 92,
+    "artist": "Yes",
+    "album": "Close To The Edge"
+  },
+  {
+    "id": 102,
+    "artist": "Supertramp",
+    "album": "Famous Last Words"
+  },
+  {
+    "id": 104,
+    "artist": "Rita Calypso",
+    "album": "Sicalyptico"
+  },
+  {
+    "id": 112,
+    "artist": "Carpenters",
+    "album": "Now & Then"
+  },
+  {
+    "id": 114,
+    "artist": "Supertramp",
+    "album": "Even In The Quietest Moments"
+  },
+  {
+    "id": 115,
+    "artist": "Supertramp",
+    "album": "Crisis? What Crisis?"
+  },
+  {
+    "id": 125,
+    "artist": "Soen",
+    "album": "Cognitive"
+  },
+  {
+    "id": 138,
+    "artist": "my bloody valentine",
+    "album": "loveless"
+  },
+  {
+    "id": 143,
+    "artist": "Jethro Tull",
+    "album": "Thick As A Brick"
+  },
+  {
+    "id": 162,
+    "artist": "Agalloch",
+    "album": "The Mantle"
+  },
+  {
+    "id": 164,
+    "artist": "Electric Wizard",
+    "album": "Dopethrone"
+  },
+  {
+    "id": 171,
+    "artist": "Bon Jovi",
+    "album": "Slippery When Wet"
+  },
+  {
+    "id": 176,
+    "artist": "AC/DC",
+    "album": "T.N.T."
+  },
+  {
+    "id": 182,
+    "artist": "Kraftwerk ",
+    "album": "Trans Europa Express "
+  },
+  {
+    "id": 183,
+    "artist": "Dissection",
+    "album": "Storm of the Light's Bane "
+  },
+  {
+    "id": 184,
+    "artist": "Deep Purple",
+    "album": "Deep Purple in Rock"
+  },
+  {
+    "id": 198,
+    "artist": "Prince",
+    "album": "Purple Rain"
+  },
+  {
+    "id": 199,
+    "artist": "Explosicum",
+    "album": "Living's Deal"
+  },
+  {
+    "id": 209,
+    "artist": "X",
+    "album": "Blue Blood"
+  },
+  {
+    "id": 210,
+    "artist": "David Bowie",
+    "album": "★ [Blackstar]"
+  },
+  {
+    "id": 220,
+    "artist": "Exodus",
+    "album": "Tempo of the Damned"
+  },
+  {
+    "id": 221,
+    "artist": "Novos Baianos",
+    "album": "Acabou chorare"
+  },
+  {
+    "id": 222,
+    "artist": "Annihilator",
+    "album": "Metal"
+  },
+  {
+    "id": 223,
+    "artist": "Kraftwerk",
+    "album": "Die Mensch-Maschine"
+  },
+  {
+    "id": 227,
+    "artist": "Nokturnal Mortum",
+    "album": "Голос сталі (The Voice of Steel)"
+  },
+  {
+    "id": 228,
+    "artist": "The Cure",
+    "album": "Wild Mood Swings"
+  },
+  {
+    "id": 231,
+    "artist": "The Beach Boys",
+    "album": "Surf's Up"
+  },
+  {
+    "id": 234,
+    "artist": "Motanka",
+    "album": "Motanka"
+  },
+  {
+    "id": 236,
+    "artist": "Mägo de Oz",
+    "album": "La leyenda de La Mancha"
+  },
+  {
+    "id": 237,
+    "artist": "Pink Floyd",
+    "album": "Atom Heart Mother"
+  },
+  {
+    "id": 240,
+    "artist": "Earthside",
+    "album": "A Dream in Static"
+  },
+  {
+    "id": 241,
+    "artist": "Burzum",
+    "album": "Filosofem"
+  },
+  {
+    "id": 243,
+    "artist": "Be Persecuted",
+    "album": "End Leaving"
+  },
+  {
+    "id": 244,
+    "artist": "Lifelover",
+    "album": "Pulver"
+  },
+  {
+    "id": 253,
+    "artist": "Adrianne Lenker & Buck Meek",
+    "album": "A-Sides"
+  },
+  {
+    "id": 254,
+    "artist": "Adrianne Lenker & Buck Meek",
+    "album": "B-Sides"
+  },
+  {
+    "id": 269,
+    "artist": "David Bowie",
+    "album": "Hunky Dory"
+  },
+  {
+    "id": 271,
+    "artist": "Carcass",
+    "album": "Heartwork"
+  },
+  {
+    "id": 315,
+    "artist": "Ozzy Osbourne",
+    "album": "Under Cover"
+  },
+  {
+    "id": 318,
+    "artist": "Mayhem",
+    "album": "De mysteriis Dom Sathanas"
+  },
+  {
+    "id": 320,
+    "artist": "Inanna",
+    "album": "Converging Ages"
+  },
+  {
+    "id": 321,
+    "artist": "Edge of Sanity",
+    "album": "Crimson"
+  },
+  {
+    "id": 322,
+    "artist": "Weakling",
+    "album": "Dead as Dreams"
+  },
+  {
+    "id": 324,
+    "artist": "\tWindir",
+    "album": "1184"
+  },
+  {
+    "id": 325,
+    "artist": "The Cure",
+    "album": "The Cure"
+  },
+  {
+    "id": 336,
+    "artist": "Carsick Cars",
+    "album": "Carsick Cars"
+  },
+  {
+    "id": 353,
+    "artist": "Carsick Cars",
+    "album": "You Can Listen, You Can Talk"
+  },
+  {
+    "id": 363,
+    "artist": "Deftones",
+    "album": "Around the Fur"
+  },
+  {
+    "id": 370,
+    "artist": "Carsick Cars",
+    "album": "3"
+  },
+  {
+    "id": 375,
+    "artist": "The Cure",
+    "album": "The Top"
+  },
+  {
+    "id": 378,
+    "artist": "Primus",
+    "album": "Frizzle Fry"
+  },
+  {
+    "id": 387,
+    "artist": "R.E.M.",
+    "album": "Document"
+  },
+  {
+    "id": 394,
+    "artist": "Chestnut Bakery",
+    "album": "Diaries"
+  },
+  {
+    "id": 399,
+    "artist": "Windir",
+    "album": "Arntor"
+  },
+  {
+    "id": 400,
+    "artist": "Adrianne Lenker",
+    "album": "Instrumentals"
+  },
+  {
+    "id": 403,
+    "artist": "The Smiths",
+    "album": "Meat Is Murder"
+  },
+  {
+    "id": 411,
+    "artist": "Lou Reed",
+    "album": "Berlin"
+  },
+  {
+    "id": 412,
+    "artist": "The Beatles",
+    "album": "Let It Be"
+  },
+  {
+    "id": 413,
+    "artist": "Funeral Mist",
+    "album": "Salvation"
+  },
+  {
+    "id": 415,
+    "artist": "Slowdive",
+    "album": "Souvlaki"
+  },
+  {
+    "id": 418,
+    "artist": "Neutral Milk Hotel",
+    "album": "On Avery Island"
+  },
+  {
+    "id": 433,
+    "artist": "Jo's Moving Day",
+    "album": "Itinerary"
+  },
+  {
+    "id": 438,
+    "artist": "Asher White",
+    "album": "Jessica Pratt"
+  },
+  {
+    "id": 452,
+    "artist": "In Flames",
+    "album": "The Jester Race"
+  },
+  {
+    "id": 454,
+    "artist": "My Bloody Valentine",
+    "album": "Loveless"
+  },
+  {
+    "id": 455,
+    "artist": "Paul McCartney",
+    "album": "Ram"
+  },
+  {
+    "id": 456,
+    "artist": "George Harrison",
+    "album": "All Things Must Pass"
+  },
+  {
+    "id": 457,
+    "artist": "Alice In Chains",
+    "album": "Dirt"
+  },
+  {
+    "id": 458,
+    "artist": "Natalia Lafourcade",
+    "album": "Hasta la raíz"
+  },
+  {
+    "id": 459,
+    "artist": "Kanonenfieber",
+    "album": "Soldatenschicksale"
+  },
+  {
+    "id": 460,
+    "artist": "Natalia Lafourcade",
+    "album": "Cancionera"
+  },
+  {
+    "id": 461,
+    "artist": "Sonic Youth",
+    "album": "Daydream Nation"
+  },
+  {
+    "id": 462,
+    "artist": "Blonde Redhead",
+    "album": "Misery Is a Butterfly"
+  },
+  {
+    "id": 476,
+    "artist": "Dry Cleaning",
+    "album": "Secret love"
+  },
+  {
+    "id": 477,
+    "artist": "The Mensis Ritual",
+    "album": "Cainite"
+  },
+  {
+    "id": 478,
+    "artist": "Megadeth",
+    "album": "Megadeth"
+  },
+  {
+    "id": 479,
+    "artist": "Richard Sallis",
+    "album": "Casino"
+  },
+  {
+    "id": 480,
+    "artist": "Kill-Kennie",
+    "album": "Repetition"
+  },
+  {
+    "id": 481,
+    "artist": "Searows",
+    "album": "Death in the Business of Whaling"
+  },
+  {
+    "id": 482,
+    "artist": "Urne",
+    "album": "Setting Fire to the Sky"
+  },
+  {
+    "id": 483,
+    "artist": "Blood At Ease",
+    "album": "Blood At Ease"
+  },
+  {
+    "id": 484,
+    "artist": "American Road In New Jersey",
+    "album": "American Road in New Jersey"
+  },
+  {
+    "id": 485,
+    "artist": "Worm",
+    "album": "Necropalace"
+  },
+  {
+    "id": 486,
+    "artist": "Annabelle Dinda",
+    "album": "Some Things Never Leave"
+  },
+  {
+    "id": 487,
+    "artist": "Snorkmaiden",
+    "album": "An Evergreen Joke"
+  },
+  {
+    "id": 488,
+    "artist": "Ratboys",
+    "album": "Singin' to an Empty Chair"
+  },
+  {
+    "id": 489,
+    "artist": "threadbaron",
+    "album": "The Sound of One Car Crashing"
+  },
+  {
+    "id": 490,
+    "artist": "Otto Benson",
+    "album": "Peanut"
+  },
+  {
+    "id": 491,
+    "artist": "U2",
+    "album": "Days of Ash"
+  },
+  {
+    "id": 492,
+    "artist": "Kisses",
+    "album": "You Are in My Dreams"
+  },
+  {
+    "id": 493,
+    "artist": "Mitski",
+    "album": "Nothing's About to Happen to Me"
+  },
+  {
+    "id": 494,
+    "artist": "Gorillaz",
+    "album": "The Mountain"
+  },
+  {
+    "id": 495,
+    "artist": "Hemlocke Springs",
+    "album": "The Apple Tree Under the Sea"
+  },
+  {
+    "id": 496,
+    "artist": "Twisted Teens",
+    "album": "Blame the Clown"
+  },
+  {
+    "id": 497,
+    "artist": "You Are an Angel",
+    "album": "It's Fine to Dream"
+  },
+  {
+    "id": 498,
+    "artist": "Cryptic Shift",
+    "album": "Overspace & Supertime"
+  },
+  {
+    "id": 499,
+    "artist": "Various Artists War Child Records",
+    "album": "Help(2)"
+  },
+  {
+    "id": 502,
+    "artist": "Black Sea Dahu",
+    "album": "Everything"
+  },
+  {
+    "id": 503,
+    "artist": "The Fencesitters",
+    "album": "Picture Day"
+  },
+  {
+    "id": 504,
+    "artist": "Antropoceno",
+    "album": "No ritmo da Terra"
+  },
+  {
+    "id": 509,
+    "artist": "La Estrategia del Caracol / Cámara Chilena de la Destrucción",
+    "album": "El hambre y las ganas de comer"
+  },
+  {
+    "id": 510,
+    "artist": "drug bug",
+    "album": "Hell for a Basement"
+  },
+  {
+    "id": 513,
+    "artist": "American Football",
+    "album": "American Football [LP4]"
+  },
+  {
+    "id": 516,
+    "artist": "Inundaremos",
+    "album": "tanquemante"
+  },
+  {
+    "id": 522,
+    "artist": "midwest, post death",
+    "album": "Post Recovery"
+  },
+  {
+    "id": 541,
+    "artist": "Chinese Football",
+    "album": "Chinese Football"
+  },
+  {
+    "id": 542,
+    "artist": "Panopticon",
+    "album": "Det hjemsokte hjertet"
+  },
+  {
+    "id": 544,
+    "artist": "Angine de Poitrine",
+    "album": "Vol.II"
+  },
+  {
+    "id": 547,
+    "artist": "Car Seat Headrest",
+    "album": "Teen of Denial (Joes Story)"
+  },
+  {
+    "id": 548,
+    "artist": "Gumshoes",
+    "album": "Happy New Year"
+  },
+  {
+    "id": 549,
+    "artist": "Ira Dot",
+    "album": "In Blue Time"
+  },
+  {
+    "id": 551,
+    "artist": "Porcelain Stars",
+    "album": "Rosemary"
+  },
+  {
+    "id": 556,
+    "artist": "Big Thief",
+    "album": "U.F.O.F."
+  },
+  {
+    "id": 557,
+    "artist": "Big Thief",
+    "album": "Double Infinity"
+  },
+  {
+    "id": 565,
+    "artist": "Natalia Lafourcade",
+    "album": "De Todas las Flores"
+  },
+  {
+    "id": 567,
+    "artist": "Tucker Zimmerman",
+    "album": "Dance Of Love"
+  },
+  {
+    "id": 569,
+    "artist": "Sonic Youth",
+    "album": "Sister"
+  }
+]
