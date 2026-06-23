@@ -281,7 +281,7 @@ C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"
 - **输入**: `video_thumbs/20th_century_indie/`（20张封面）
 - **输出**: `video_thumbs/20th_century_indie_bg/`（PNG，1920×1080）
 - **尺寸**: 1920×1080（16:9）
-- **构图**: 封面放左侧 80px，居中；右侧留文字区
+- **构图**: 封面放左侧 180px，居中；封面尺寸 550px；右侧留文字区
 - **模糊**: GaussianBlur radius=30
 - **暗角**: vignette，强度 0.75
 - **CD外圈**: 深色边框(16px) + 细线(#3C3240)
