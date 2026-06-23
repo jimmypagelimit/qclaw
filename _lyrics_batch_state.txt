@@ -1,7 +1,7 @@
 # 歌词计划批次状态
 # 自动管理，勿手动编辑
 
-current_batch: 2
+current_batch: 3
 batch_size: 100
 total_tracks: 4988
-last_update: 2026-06-21 01:25
+last_update: 2026-06-23 09:30

@@ -7,6 +7,11 @@
 
 import os
 import re
+import io
+import sys
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 STATE_FILE = r'C:\Users\qujt\.qclaw\workspace\_lyrics_batch_state.txt'
 BATCH_SCRIPT = r'C:\Users\qujt\.qclaw\workspace\_lyrics_batch_comprehensive.py'
@@ -55,8 +60,8 @@ def run_batch(batch_num):
     result = subprocess.run(
         ['C:\\Python311\\python.exe', BATCH_SCRIPT, str(batch_num)],
         capture_output=True,
-        text=True,
-        encoding='utf-8'
+        encoding='utf-8',
+        errors='replace'
     )
     
     print(result.stdout)

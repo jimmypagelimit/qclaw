@@ -1,112 +1,80 @@
-# -*- coding: utf-8 -*-
-"""
-批量补全缺歌词 - 分批版（每批50首）
-用法：python _lyrics_batch.py 1   # 处理第1批（1-50）
-      python _lyrics_batch.py 2   # 处理第2批（51-100）
-"""
+#!/usr/bin/env python3
+"""逐专辑处理缺歌词的英文专辑"""
+import json, os, sys, time, sqlite3, urllib.request, urllib.parse
+sys.stdout.reconfigure(encoding='utf-8')
 
-import sqlite3
-import urllib.request
-import urllib.parse
-import json
-import time
-import os
-import sys
-
-DB_PATH = r'C:\Users\qujt\.qclaw\workspace\_music_latest.db'
+DB = r'C:\Users\qujt\.qclaw\workspace\_music_latest.db'
 LYRICS_DIR = r'C:\Users\qujt\.qclaw\workspace\tasks\lyrics-expert\lyrics'
-LOG_FILE = r'C:\Users\qujt\.qclaw\workspace\_lyrics_fill_log.txt'
+UA = 'AlbumTracker/1.0'
 
-def log(msg):
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(msg + '\n')
+def sf(s):
+    return ''.join(c for c in s if c not in '\\/:*?"<>|').strip()[:120]
 
-def search_lrclib(artist, track_name):
-    query = f"{artist} {track_name}"
-    query_encoded = urllib.parse.quote(query)
-    url = f"https://lrclib.net/api/search?q={query_encoded}"
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        resp = urllib.request.urlopen(req, timeout=15)
-        data = json.loads(resp.read().decode())
-        if data and len(data) > 0:
-            for item in data:
-                if item.get('syncedLyrics'):
-                    return item['syncedLyrics'], item.get('plainLyrics', '')
-            if data[0].get('plainLyrics'):
-                return None, data[0]['plainLyrics']
-    except Exception as e:
-        log(f"ERROR: {e}")
-    return None, None
+conn = sqlite3.connect(DB)
 
-def main():
-    batch_num = int(sys.argv[1]) if len(sys.argv) > 1 else 1
-    offset = (batch_num - 1) * 50
+# 目标专辑（缺失最多的英文专辑）
+TARGET_IDS = [413, 26, 325, 483, 519, 488, 553, 496, 506, 508,
+              191, 202, 44, 40, 117, 120, 125, 128, 147, 158,
+              163, 171, 176, 177, 179, 192, 193, 196, 209, 218]
 
-    conn = sqlite3.connect(DB_PATH)
-    c = conn.cursor()
+done = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+album_ids = TARGET_IDS[done:done+3]  # 每次3张
 
-    c.execute('''
-    SELECT t.id, t.album_id, t.track_name, a.artist, a.album_name
-    FROM tracks t
-    JOIN albums a ON t.album_id = a.album_id
-    WHERE t.lyrics_lrc_path IS NULL AND t.lyrics_text_path IS NULL
-    ORDER BY t.album_id, t.track_number
-    LIMIT 50 OFFSET ?
-    ''', (offset,))
-    tracks = c.fetchall()
-
-    log(f"\n=== Batch {batch_num} (offset {offset}) ===")
-    log(f"Processing {len(tracks)} tracks")
-
-    success = 0
-    for i, (track_id, album_id, track_name, artist, album_name) in enumerate(tracks):
-        log(f"[{i+1}/{len(tracks)}] {artist} - {track_name}")
-
-        lrc, txt = search_lrclib(artist, track_name)
-
-        if lrc or txt:
-            artist_safe = artist.replace('/', '_').replace('\\', '_') if artist else 'Unknown'
-            album_safe = album_name.replace('/', '_').replace('\\', '_') if album_name else 'Unknown'
-
-            artist_dir = os.path.join(LYRICS_DIR, artist_safe)
-            os.makedirs(artist_dir, exist_ok=True)
-            album_dir = os.path.join(artist_dir, album_safe)
-            os.makedirs(album_dir, exist_ok=True)
-
-            c2 = conn.cursor()
-            c2.execute('SELECT track_number FROM tracks WHERE id = ?', (track_id,))
-            row = c2.fetchone()
-            track_num = row[0] if row else 1
-
-            if lrc:
-                lrc_file = os.path.join(album_dir, f"{track_num:02d}.lrc")
-                with open(lrc_file, 'w', encoding='utf-8') as f:
-                    f.write(lrc)
-                lrc_path = lrc_file.replace(LYRICS_DIR, '').replace('\\', '/').lstrip('/')
-                c.execute('UPDATE tracks SET lyrics_lrc_path = ? WHERE id = ?', (lrc_path, track_id))
-                log(f"  -> LRC saved")
-                success += 1
-
-            if txt:
-                txt_file = os.path.join(album_dir, f"{track_num:02d}.txt")
-                with open(txt_file, 'w', encoding='utf-8') as f:
-                    f.write(txt)
-                txt_path = txt_file.replace(LYRICS_DIR, '').replace('\\', '/').lstrip('/')
-                c.execute('UPDATE tracks SET lyrics_text_path = ? WHERE id = ?', (txt_path, track_id))
-                if not lrc:
-                    log(f"  -> TXT saved")
-                    success += 1
-
-            conn.commit()
-        else:
-            log(f"  -> NOT FOUND")
-
-        time.sleep(0.3)
-
+if not album_ids:
+    print('ALL_DONE')
     conn.close()
-    log(f"Batch {batch_num} done! Success: {success}/{len(tracks)}")
-    print(f"Batch {batch_num} done! Success: {success}/{len(tracks)}")
+    sys.exit()
 
-if __name__ == '__main__':
-    main()
+total_new = 0
+for aid in album_ids:
+    cur2 = conn.cursor()
+    cur2.execute(
+        'SELECT id, track_number, track_name FROM tracks WHERE album_id=? AND lyrics_lrc_path IS NULL AND lyrics_text_path IS NULL ORDER BY disc_number, track_number',
+        (aid,))
+    tracks = cur2.fetchall()
+    
+    r = conn.execute('SELECT artist, album_name FROM albums WHERE album_id=?', (aid,)).fetchone()
+    if not r or not tracks:
+        continue
+    art, alb = r
+    print('=== [%s] %s - %s (%s tracks) ===' % (aid, art, alb, len(tracks)))
+    
+    album_new = 0
+    for tid, tn, tname in tracks:
+        url = 'https://lrclib.net/api/search?q=' + urllib.parse.quote(art[:30] + ' ' + tname[:40])
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            r2 = urllib.request.urlopen(req, timeout=6)
+            d = json.loads(r2.read())
+            if d:
+                lrc = d[0].get('syncedLyrics', '')
+                plain = d[0].get('plainLyrics', '')
+                base = os.path.join(LYRICS_DIR, sf(art), sf(alb))
+                os.makedirs(base, exist_ok=True)
+                fn = sf(tname)[:80]
+                if lrc:
+                    p = os.path.join(base, fn + '.lrc')
+                    open(p, 'w', encoding='utf-8').write(lrc)
+                    conn.execute('UPDATE tracks SET lyrics_lrc_path=? WHERE id=?', (p, tid))
+                    print('  + [%s] %s' % (tn, tname[:35]))
+                    album_new += 1
+                elif plain:
+                    p = os.path.join(base, fn + '.txt')
+                    open(p, 'w', encoding='utf-8').write(plain)
+                    conn.execute('UPDATE tracks SET lyrics_text_path=? WHERE id=?', (p, tid))
+                    print('  + [%s] %s (txt)' % (tn, tname[:35]))
+                    album_new += 1
+                else:
+                    print('  0 [%s] %s' % (tn, tname[:30]))
+            else:
+                print('  - [%s] %s' % (tn, tname[:30]))
+        except Exception as e:
+            print('  x [%s] %s (%s)' % (tn, tname[:30], str(e)[:20]))
+        time.sleep(0.2)
+    
+    conn.commit()
+    total_new += album_new
+    print('  -> %s new\n' % album_new)
+
+conn.close()
+print('TOTAL_NEW: %s' % total_new)

@@ -153,7 +153,7 @@ def main():
     parser.add_argument('--album-id', type=int, default=None)
     parser.add_argument('--english-only', action='store_true')
     parser.add_argument('--chinese-only', action='store_true')
-    parser.add_argument('--skip-existing', action='store_true', default=True)
+    parser.add_argument('--skip-existing', action='store_true', default=False)
     args = parser.parse_args()
 
     conn = sqlite3.connect(DB)
@@ -169,10 +169,11 @@ def main():
         # 按收听次数排序
         cur.execute("""
             SELECT a.album_id, a.artist, a.album_name, 
-                   COALESCE((SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id), 0) as pc
+                   COALESCE((SELECT COUNT(*) FROM listen_history lh WHERE lh.album_id = a.album_id), 0) as pc,
+                   (SELECT COUNT(*) FROM tracks t2 WHERE t2.album_id = a.album_id AND t2.lyrics_lrc_path IS NULL AND t2.lyrics_text_path IS NULL) as missing_count
             FROM albums a
             WHERE a.album_name != '' AND EXISTS (SELECT 1 FROM tracks t WHERE t.album_id = a.album_id)
-            ORDER BY pc DESC
+            ORDER BY missing_count DESC, pc DESC
         """)
     rows = cur.fetchall()
     conn.close()
@@ -188,11 +189,16 @@ def main():
 
     total_ok = total_fail = total_files = total_skip = 0
 
-    for album_id, artist, album, pc in to_process:
+    for row in to_process:
+        # Handle both 4-col (single album) and 5-col (batch) queries
+        album_id = row[0]
+        artist = row[1]
+        album = row[2]
+        pc = row[3]
         print(f'=== [{album_id}] {artist} - {album} (收听{pc}次) ===')
 
         if args.skip_existing and has_lyrics_dir(artist, album):
-      continue  # 跳过已有歌词，继续下一个
+            continue  # 跳过已有歌词，继续下一个
 
         # 获取曲目表
         conn2 = sqlite3.connect(DB)

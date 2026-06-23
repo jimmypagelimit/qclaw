@@ -1,4 +1,4 @@
-﻿{
+{
     "lastChecks": {
         "covers": 33,
         "covers_attempted_today": true,
@@ -6,11 +6,14 @@
         "covers_total": 216,
         "covers_remaining": 0,
         "covers_error": "no such column: total_listen_count - DB schema mismatch, script needs fix",
-        "c_drive_check": "2026-06-21",
-        "c_drive_used_gb": 58.7,
-        "c_drive_free_gb": 240.7,
+        "c_drive_check": "2026-06-23",
+        "c_drive_used_gb": 59.4,
+        "c_drive_free_gb": 240.0,
         "c_drive_exceeded": false,
-        "feishu_c_drive_alert": "skipped_ok",
+        "feishu_c_drive_alert": "failed_2026-06-23_60.2gb",
+    "feishu_push_error": "400 - c_drive_alert",
+    "feishu_push_error_date": "2026-06-23",
+    "feishu_last_check": "2026-06-23",
         "rss": 56,
         "rss_history_tuesday": "2026-06-16",
         "rss_history_tuesday_done": true,
@@ -31,11 +34,11 @@
         "daily_summary_notified": "2026-06-21T16:59+08:00",
         "git_pushed": "2026-06-21T16:59+08:00",
         "quality_reflection_done": true,
-        "quality_reflection_date": "2026-06-21",
+        "quality_reflection_date": "2026-06-23",
         "c_drive_alert_pending": false
     },
-    "last_heartbeat": "2026-06-21T19:31+08:00",
-    "c_drive_used_gb": 58.7,
-    "c_drive_free_gb": 240.7,
+    "last_heartbeat": "2026-06-23T17:01+08:00",
+    "c_drive_used_gb": 59.4,
+    "c_drive_free_gb": 240.0,
     "c_drive_exceeded": false
 }

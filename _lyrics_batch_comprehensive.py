@@ -13,6 +13,10 @@ import time
 import os
 import sys
 import re
+import io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 DB_PATH = r'C:\Users\qujt\.qclaw\workspace\_music_latest.db'
 LYRICS_DIR = r'C:\Users\qujt\.qclaw\workspace\tasks\lyrics-expert\lyrics'

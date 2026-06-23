@@ -117,7 +117,7 @@ function renderArtistLeaderboard(artists) {
       <div class="lb-info">
         <div class="lb-artist-name">${escapeHtml(ar.artist || ar.name)}</div>
       </div>
-      <span class="lb-count">${ar.total_listen_count || 0} 次</span>
+      <span class="lb-count">${ar.listen_count || 0} 次</span>
     </div>`;
   }).join('');
 }

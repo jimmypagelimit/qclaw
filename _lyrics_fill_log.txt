@@ -3264,3 +3264,189 @@ Batch 30 done! Success: 0/0
   [508] 陈升 - 望乡 - Sternenschwarm
     -> MISS
   [511] 陈升 - 望乡 - Ragnarök
+
+=== Batch 1: Processing 50 tracks ===
+  [4090] Carsick Cars - 3 - [silence]
+    -> MISS
+  [3069] 林忆莲 - Love,Sandy - 三年 (live)
+    -> MISS
+  [3530] 梁博 - 昼夜本色第二季 - 再見悲哀
+    -> MISS
+  [3451] 罗大佑 - 闪亮的日子 - 一个我喜欢的女孩
+    -> MISS
+  [3906] 王菲 - 将爱 - 带我去月球
+    -> MISS
+  [4491] Funeral Mist - Salvation - Epigrammen XV
+    -> MISS
+  [6076] Tizzy Bac - 夏季热 - からくりピエロ [ live in お泊まりライブ vol.2 ]
+    -> MISS
+  [4411] 张雨生 - 大海 - 寧可讓我苦
+    -> MISS
+  [4479] Funeral Mist - Salvation - Epigrammen III
+    -> MISS
+  [4499] Funeral Mist - Salvation - Etudes III. Secunden
+    -> MISS
+  [3890] 郑智化 - 堕落天使 - vintage erotica for men
+    -> MISS
+  [5988] Gumshoes - Happy New Year - Rapture 2
+    -> MISS
+  [3056] 许茹芸 - 如果云知道 - 有妳真的會快樂嗎？
+    -> MISS
+  [5887] otay:onii - 愛在屎邊邊 Love Is in the Shit - Tears Won’t Tell
+    -> MISS
+  [5106] Kisses - You Are in My Dreams - 54 C6 05 1C 13 CC 72 E9 CC DC 84 F2 A3 FF CC 38 1E 94 0D C0 50 5C 3E E8
+    -> MISS
+  [2500] 许镜清 - 西游记原声带 - 凤凰山人
+    -> MISS
+  [5948] Wendy Eisenberg - Wendy Eisenberg - The Ultraworld
+    -> MISS
+  [5901] jody积融 - Is It Gonna Happen Again? - Zhe Zhou (interlude)
+    -> MISS
+  [3992] 王菲 - 唱游 - 新房客
+    -> MISS
+  [4057] 张福全 - Tea with Flower Fragrance - Pearl-orchid Ta-fang Tea
+    -> MISS
+  [4085] Carsick Cars - 3 - 庇护所
+    -> MISS
+  [2879] 林俊杰 - 和自己对话 - 小狗
+    -> MISS
+  [5953] Angine de Poitrine - Vol.II - Sarniezz
+    -> MISS
+  [798] 左小祖咒 - 我爱台湾 - 南京一夜
+    -> MISS
+  [5771] Friko - Something Worth Waiting For - Hot Air Balloon
+    -> MISS
+  [5070] Snorkmaiden - An Evergreen Joke - DanceがMusic
+    -> MISS
+  [3561] 彭坦 - Easy - You (Find love)
+    -> MISS
+  [6156] 苏醒 - 想念式 - 一首想念的歌
+    -> MISS
+  [5820] Inundaremos - tanquemante - 100mts
+    -> MISS
+  [4096] Beyond - 惊喜 - 5d6cc825f260096f0335d91e44fc
+    -> MISS
+  [4683] 木马 [Muma] - 木马 (Muma) - 纯洁
+    -> MISS
+  [824] 李健 - 寂寞星空见歌 - 仍是那樣
+    -> MISS
+  [4356] Adrianne Lenker - Instrumentals - music for indigo
+    -> MISS
+  [4067] 陈劲 - 魔性的释放 - 勇者之歌
+    -> MISS
+  [3840] 苏打绿 - 冬 未了 - [silence]
+    -> MISS
+  [5108] Kisses - You Are in My Dreams - DB 9F 72 A8 B4 1C 62 8A 3C 96 22 8B 5B 03 23 6F 81 16 64 76 3E 0A D8 16
+    -> MISS
+  [2323] 张惠妹 - 阿密特 - 靈魂的重量
+    -> MISS
+  [4315] 陈绮贞 - 时间的歌 - 有你
+    -> MISS
+  [4086] Carsick Cars - 3 - Could You Be There ?
+    -> MISS
+  [215] 万能青年旅店 - 冀西南林路行 - 繞越
+    -> MISS
+  [6168] Sonic Youth - Sister - Stereo Sanctity
+    -> OK (lrc=True, txt=True)
+  [1536] 苏紫旭&The Paramecia - 飞出迷楼 - 融解
+    -> MISS
+  [3050] 郑智化 - 私房歌 - 吙伊去
+    -> MISS
+  [4378] David Bowie - Low - Weeping Wall
+    -> MISS
+  [4582] 魏如萱 - 晚安晚安演唱會 - 雨曾經討厭海
+    -> MISS
+  [810] 左小祖咒 - 台湾 - 手牽手 做陣行
+    -> MISS
+  [3690] The Cure - The Cure - Shopping Cart Ride
+    -> MISS
+  [396] John Lennon - Plastic Ono Band - The Making Of The John Lennon / Plastic Ono Band Album
+    -> MISS
+  [2800] Kraftwerk - Die Mensch-Maschine - Die Mensch·Maschine
+    -> OK (lrc=True, txt=True)
+  [3204] 王梵瑞 - 时光谣 - 听爱
+    -> MISS
+Batch 1 done: LRC=2, TXT=2, Miss=48, Error=0
+
+=== Batch 1/5: 50 tracks ===
+  [2843] OK: Sufjan Stevens - The Seer’s Tower (lrc=True)
+Batch 1 done: +1LRC +1TXT, 49miss
+
+=== Batch 2/5: 50 tracks ===
+  [4017] OK: 王菲 - 心路 (lrc=True)
+  ERROR: Remote end closed connection without response
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  [4013] OK: 王菲 - 流浪的紅舞鞋 (鋼琴版) (lrc=True)
+
+=== Batch 1/5: 50 tracks ===
+  [5043] OK: Worm - Gates to the Shadowzone (lrc=True)
+  [2441] OK: Oasis - She’s Electric (lrc=True)
+
+=== Batch 1/5: 50 tracks ===
+  ERROR: Remote end closed connection without response
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+  [2626] OK: Black Country,New Road - Good Will Hunting (lrc=True)
+  [6153] OK: Tucker Zimmerman - Don't Go Crazy (Go In Peace) (lrc=False)
+  [2518] OK: 左小祖咒 - 的 (lrc=True)
+  [4289] OK: 九维 - 我爱九维哥 (lrc=False)
+Batch 1 done: +2LRC +4TXT, 46miss
+
+=== Batch 2/5: 50 tracks ===
+  [2240] OK: 二手玫瑰 - 公益歌曲 (lrc=True)
+  [2687] OK: David Bowie - Sue (or In a Season of Crime) (lrc=True)
+Batch 2 done: +2LRC +2TXT, 48miss
+
+=== Batch 3/5: 50 tracks ===
+  [6174] OK: Sonic Youth - Master-Dik (lrc=True)
+  [4127] OK: Depeche Mode - Jazz Thieves (lrc=True)
+  [2199] OK: 宋冬野 - 斑马，斑马 (lrc=True)
+  [5852] OK: Tizzy Bac - 俄羅斯輪盤 (lrc=True)
+  [3813] OK: 牛奶咖啡 - 心生 (lrc=False)
+Batch 3 done: +4LRC +5TXT, 45miss
+
+=== Batch 4/5: 50 tracks ===
+  [2245] OK: David Bowie - Starman (lrc=True)
+  [6173] OK: Sonic Youth - White Cross (lrc=True)
+Batch 4 done: +2LRC +2TXT, 48miss
+
+=== Batch 5/5: 50 tracks ===
+  [2243] OK: David Bowie - Soul Love (lrc=True)
+  [4290] OK: 九维 - 完犊子 (lrc=True)
+  [4294] OK: 九维 - 枷锁 / 解锁 (lrc=False)
+Batch 5 done: +2LRC +3TXT, 47miss
+
+=== TOTAL: +12LRC +16TXT, 234miss ===
+Coverage: 3811/4988 = 76.4%
