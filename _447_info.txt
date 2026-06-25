@@ -1,5 +1,0 @@
-album_id: 447
-album_name (UTF-8): Honeyed and Killed
-artist (as GBK decoded): ��� [Hedgehog]
-artist raw repr: '刺猬 [Hedgehog]'
-artist bytes: b'\xe5\x88\xba\xe7\x8c\xac [Hedgehog]'
