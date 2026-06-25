@@ -10014,3 +10014,8 @@ I
 I
 I
 C
+
+-- 2026-06-25: 郑源-擦肩而过
+INSERT INTO artists (artist_id, name, country, region) VALUES (325, '郑源', '中国', '大陆');
+INSERT INTO albums (album_id, album_name, artist, artist_id, release_year, description, status) VALUES (596, '擦肩而过', '郑源', 325, 2008, '《擦肩而过》是郑源2008年发行的专辑，共11首歌曲。', 'active');
+INSERT INTO listen_history (album_id, listen_date, listen_year) VALUES (596, '2026-06-25', 2026);

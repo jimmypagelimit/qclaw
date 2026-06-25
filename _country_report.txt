@@ -1,0 +1,369 @@
+=== country 缺失: 9 ===
+  ID=  59 | 'Friko'
+  ID=  83 | 'L8ching'
+  ID=  95 | 'midwest, post death'
+  ID= 125 | 'Richard Sallis'
+  ID= 179 | '卧轨的火车'
+  ID= 198 | '安溥 [Anpu]'
+  ID= 238 | '海龟先生 [Mr. Turtle]'
+  ID= 271 | '许巍 [Xu Wei]'
+  ID= 283 | '邓丽君'
+
+=== region 缺失: 124 ===
+（只显示前30个）
+  ID=   2 | 'ABBA'
+  ID=   7 | 'Aldous Harding'
+  ID=   8 | 'Alice In Chains'
+  ID=   9 | 'American Football'
+  ID=  10 | 'American Road In New Jersey'
+  ID=  11 | 'Angelo De Augustine'
+  ID=  12 | 'Angine de Poitrine'
+  ID=  13 | 'Annabelle Dinda'
+  ID=  15 | 'Antropoceno'
+  ID=  17 | 'Asher White'
+  ID=  21 | 'Big Thief'
+  ID=  24 | 'Black Sea Dahu'
+  ID=  25 | 'Blonde Redhead'
+  ID=  26 | 'Blood At Ease'
+  ID=  38 | 'Cocteau Twins'
+  ID=  39 | 'Courtney Barnett'
+  ID=  40 | 'Cryptic Shift'
+  ID=  44 | 'deafHeaven'
+  ID=  45 | 'Deafheaven'
+  ID=  46 | 'Death'
+  ID=  51 | 'drug bug'
+  ID=  52 | 'Dry Cleaning'
+  ID=  54 | 'Edge of Sanity'
+  ID=  59 | 'Friko'
+  ID=  62 | 'George Harrison'
+  ID=  63 | 'Gorillaz'
+  ID=  64 | 'Grace Ives'
+  ID=  66 | 'Hemlocke Springs'
+  ID=  67 | 'In Flames'
+  ID=  69 | 'Inundaremos'
+  ... 还有 94 个
+
+=== country + region 都缺失: 9 ===
+  ID=  59 | 'Friko'
+  ID=  83 | 'L8ching'
+  ID=  95 | 'midwest, post death'
+  ID= 125 | 'Richard Sallis'
+  ID= 179 | '卧轨的火车'
+  ID= 198 | '安溥 [Anpu]'
+  ID= 238 | '海龟先生 [Mr. Turtle]'
+  ID= 271 | '许巍 [Xu Wei]'
+  ID= 283 | '邓丽君'
+
+=== 已有 country 的艺人: 312 ===
+  ID=   2 | 'ABBA' | country=瑞典 | region=
+  ID=   3 | 'AC/DC' | country=澳大利亚 | region=悉尼
+  ID=   4 | 'Adrianne Lenker' | country=美国 | region=印第安纳波利斯
+  ID=   5 | 'Adrianne Lenker & Buck Meek' | country=美国 | region=印第安纳波利斯
+  ID=   6 | 'Agalloch' | country=美国 | region=波特兰
+  ID=   7 | 'Aldous Harding' | country=美国 | region=
+  ID=   8 | 'Alice In Chains' | country=英国 | region=
+  ID=   9 | 'American Football' | country=美国 | region=
+  ID=  10 | 'American Road In New Jersey' | country=美国 | region=
+  ID=  11 | 'Angelo De Augustine' | country=美国 | region=
+  ID=  12 | 'Angine de Poitrine' | country=法国 | region=
+  ID=  13 | 'Annabelle Dinda' | country=美国 | region=
+  ID=  14 | 'Annihilator' | country=加拿大 | region=渥太华
+  ID=  15 | 'Antropoceno' | country=巴西 | region=
+  ID=  16 | 'Arcade Fire' | country=加拿大 | region=蒙特利尔
+  ID=  17 | 'Asher White' | country=美国 | region=
+  ID=  18 | 'Baboo' | country=中国 | region=台湾
+  ID=  19 | 'Be Persecuted' | country=中国 | region=江西
+  ID=  20 | 'Beyond' | country=中国 | region=香港
+  ID=  21 | 'Big Thief' | country=美国 | region=
+  ID=  22 | 'Black Country,New Road' | country=英国 | region=剑桥
+  ID=  23 | 'Black Sabbath' | country=英国 | region=伯明翰
+  ID=  24 | 'Black Sea Dahu' | country=美国 | region=
+  ID=  25 | 'Blonde Redhead' | country=美国 | region=
+  ID=  26 | 'Blood At Ease' | country=美国 | region=
+  ID=  27 | 'Blur' | country=英国 | region=埃塞克斯郡
+  ID=  28 | 'Bon Jovi' | country=美国 | region=新泽西
+  ID=  29 | 'Burzum' | country=挪威 | region=卑尔根
+  ID=  30 | 'Can' | country=德国 | region=科隆
+  ID=  31 | 'Car Seat Headrest' | country=美国 | region=弗吉尼亚州
+  ID=  32 | 'Carcass' | country=英国 | region=利物浦
+  ID=  33 | 'Carpenters' | country=美国 | region=加利福尼亚
+  ID=  34 | 'Carsick Cars' | country=中国 | region=大陆
+  ID=  35 | 'Chestnut Bakery' | country=中国 | region=大陆
+  ID=  36 | 'Chief Keef' | country=美国 | region=芝加哥
+  ID= 318 | 'Chinese Football' | country=中国 | region=
+  ID=  37 | 'Cindy Lee' | country=加拿大 | region=温哥华
+  ID=  38 | 'Cocteau Twins' | country=英国 | region=
+  ID=  39 | 'Courtney Barnett' | country=美国 | region=
+  ID=  40 | 'Cryptic Shift' | country=美国 | region=
+  ID=  41 | 'Daft Punk' | country=法国 | region=巴黎
+  ID=  42 | 'Dark Fount' | country=中国 | region=大陆
+  ID=  43 | 'David Bowie' | country=英国 | region=伦敦
+  ID=  45 | 'Deafheaven' | country=英国 | region=
+  ID=  46 | 'Death' | country=美国 | region=
+  ID=  47 | 'Deep Purple' | country=英国 | region=赫特福德郡
+  ID=  48 | 'Deftones' | country=美国 | region=加利福尼亚
+  ID=  49 | 'Depeche Mode' | country=英国 | region=埃塞克斯
+  ID=  50 | 'Dissection' | country=瑞典 | region=西约塔兰省
+  ID=  52 | 'Dry Cleaning' | country=美国 | region=
+  ID=  53 | 'Earthside' | country=美国 | region=纽黑文
+  ID=  54 | 'Edge of Sanity' | country=瑞典 | region=
+  ID=  55 | 'Electric Wizard' | country=英国 | region=萨摩赛特
+  ID=  56 | 'Exodus' | country=美国 | region=旧金山
+  ID=  57 | 'Explosicum' | country=中国 | region=大陆
+  ID= 320 | 'Feeble Little Horse' | country=美国 | region=
+  ID=  58 | 'Fishmans' | country=日本 | region=世田谷
+  ID=  60 | 'Funeral Mist' | country=瑞典 | region=斯德哥尔摩
+  ID=  61 | 'Geordie Greep' | country=英国 | region=伦敦
+  ID=  62 | 'George Harrison' | country=美国 | region=
+  ID=  63 | 'Gorillaz' | country=美国 | region=
+  ID=  64 | 'Grace Ives' | country=美国 | region=
+  ID=  65 | 'Green Day' | country=美国 | region=罗德奥
+  ID= 314 | 'Gumshoes' | country=美国 | region=
+  ID=  66 | 'Hemlocke Springs' | country=美国 | region=
+  ID=  67 | 'In Flames' | country=德国 | region=
+  ID=  68 | 'Inanna' | country=智利 | region=圣地亚哥
+  ID=  69 | 'Inundaremos' | country=智利 | region=
+  ID= 315 | 'Ira Dot' | country=美国 | region=
+  ID=  70 | 'Jessie Ware' | country=英国 | region=伦敦
+  ID=  71 | 'Jethro Tull' | country=英国 | region=贝德福特
+  ID=  72 | "Jo's Moving Day" | country=中国 | region=
+  ID=  74 | 'John Lennon' | country=英国 | region=利物浦
+  ID=  75 | 'Kacey Musgraves' | country=美国 | region=
+  ID=  76 | 'Kanonenfieber' | country=德国 | region=
+  ID=  77 | 'Kendrick Lamar' | country=美国 | region=加利福尼亚州
+  ID=  78 | 'Kill-Kennie' | country=中国 | region=
+  ID=  79 | 'King Crimson' | country=英国 | region=伦敦
+  ID=  80 | 'Kisses' | country=美国 | region=
+  ID=  81 | 'Kraftwerk' | country=德国 | region=杜塞尔多夫
+  ID=  84 | 'La Estrategia del Caracol / Cámara Chilena de la Destrucción' | country=墨西哥 | region=
+  ID=  85 | 'Lay Lady Lay' | country=中国 | region=
+  ID=  86 | 'Led Zeppelin' | country=英国 | region=
+  ID=  87 | 'Lifelover' | country=瑞典 | region=斯德哥尔摩
+  ID=  88 | 'Lou Reed' | country=美国 | region=纽约
+  ID=  91 | 'MC HotDog' | country=中国 | region=台湾
+  ID=  89 | 'Maria BC' | country=美国 | region=
+  ID=  90 | 'Mayhem' | country=挪威 | region=阿克什胡斯
+  ID=  92 | 'Megadeth' | country=美国 | region=
+  ID=  93 | 'Metallica' | country=美国 | region=洛杉矶
+  ID=  94 | 'Michael Jackson' | country=美国 | region=加里
+  ID=  96 | 'Mitski' | country=美国 | region=
+  ID=  97 | 'Motanka' | country=乌克兰 | region=
+  ID=  99 | 'My Bloody Valentine' | country=爱尔兰 | region=
+  ID= 100 | 'Mägo de Oz' | country=西班牙 | region=马德里
+  ID= 101 | 'Nas' | country=美国 | region=纽约
+  ID= 102 | 'Natalia Lafourcade' | country=墨西哥 | region=
+  ID= 103 | 'Neurosis' | country=美国 | region=
+  ID= 104 | 'Neutral Milk Hotel' | country=美国 | region=
+  ID= 105 | 'Nirvana' | country=美国 | region=西雅图
+  ID= 106 | 'Nokturnal Mortum' | country=乌克兰 | region=
+  ID= 107 | 'Novos Baianos' | country=巴西 | region=萨尔瓦多
+  ID= 108 | 'Oasis' | country=英国 | region=曼彻斯特
+  ID= 317 | 'Olivia Rodrigo' | country=美国 | region=
+  ID= 110 | 'Otto Benson' | country=美国 | region=
+  ID= 111 | 'Ozzy Osbourne' | country=英国 | region=西米德兰兹郡
+  ID= 112 | 'P.K. 14' | country=中国 | region=
+  ID= 113 | 'Panopticon' | country=挪威 | region=
+  ID= 114 | 'Paul McCartney' | country=美国 | region=
+  ID= 115 | 'Pavement' | country=美国 | region=
+  ID= 116 | 'Peter Murphy' | country=英国 | region=北安普顿
+  ID= 117 | 'Pink Floyd' | country=英国 | region=伦敦
+  ID= 319 | 'Porcelain Stars' | country=美国 | region=
+  ID= 118 | 'Primus' | country=美国 | region=加利福尼亚州
+  ID= 119 | 'Prince' | country=美国 | region=明尼苏达州
+  ID= 120 | 'Pu Poo Platter' | country=中国 | region=
+  ID= 121 | 'R.E.M.' | country=美国 | region=乔治亚州
+  ID= 122 | 'Radiohead' | country=英国 | region=牛津
+  ID= 123 | 'Ratboys' | country=美国 | region=
+  ID= 124 | 'Red Hot Chili Peppers' | country=美国 | region=洛杉矶
+  ID= 126 | 'Rita Calypso' | country=西班牙 | region=马德里
+  ID= 127 | 'Searows' | country=美国 | region=
+  ID= 128 | 'Slowdive' | country=英国 | region=伯克郡
+  ID= 129 | 'Snorkmaiden' | country=美国 | region=
+  ID= 130 | 'Soen' | country=瑞典 | region=
+  ID= 131 | 'Sonic Youth' | country=美国 | region=
+  ID= 132 | 'Stereolab' | country=英国 | region=伦敦
+  ID= 133 | 'Sufjan Stevens' | country=美国 | region=底特律
+  ID= 134 | 'Supertramp' | country=英国 | region=伦敦
+  ID= 135 | 'System of a Down' | country=美国 | region=加利福尼亚州
+  ID= 136 | 'The Beach Boys' | country=美国 | region=加利福尼亚
+  ID= 137 | 'The Beatles' | country=英国 | region=利物浦
+  ID= 138 | 'The Cure' | country=英国 | region=西萨塞克斯
+  ID= 139 | 'The Fencesitters' | country=美国 | region=
+  ID= 140 | 'The Jesus and Mary Chain' | country=英国 | region=
+  ID= 141 | 'The Mensis Ritual' | country=中国 | region=
+  ID= 142 | 'The Police' | country=英国 | region=
+  ID= 143 | 'The Smashing Pumpkins' | country=美国 | region=芝加哥
+  ID= 144 | 'The Smile' | country=英国 | region=牛津
+  ID= 145 | 'The Smiths' | country=英国 | region=曼彻斯特
+  ID= 146 | 'The Twilight Sad' | country=美国 | region=
+  ID= 148 | 'Tizzy Bac' | country=台湾 | region=
+  ID= 321 | 'Tucker Zimmerman' | country=美国 | region=
+  ID= 149 | 'Twisted Teens' | country=美国 | region=
+  ID= 150 | 'U2' | country=爱尔兰 | region=都柏林
+  ID= 152 | 'Urne' | country=英国 | region=
+  ID= 153 | 'Various Artists War Child Records' | country=美国 | region=
+  ID= 154 | 'V是兔子' | country=中国 | region=
+  ID= 324 | 'Warning' | country=UK | region=
+  ID= 155 | 'Weakling' | country=美国 | region=洛杉矶
+  ID= 156 | 'Wendy Eisenberg' | country=美国 | region=
+  ID=   1 | 'Windir' | country=挪威 | region=维斯特兰
+  ID= 158 | 'Wintersun' | country=美国 | region=
+  ID= 159 | 'Worm' | country=美国 | region=
+  ID= 160 | 'X' | country=日本 | region=千叶
+  ID= 161 | 'Yes' | country=英国 | region=伦敦
+  ID= 162 | 'You Are an Angel' | country=美国 | region=
+  ID=  44 | 'deafHeaven' | country=美国 | region=
+  ID=  51 | 'drug bug' | country=美国 | region=
+  ID=  73 | 'jody积融' | country=中国 | region=
+  ID=  98 | 'my bloody valentine' | country=英国 | region=伦敦
+  ID= 109 | 'otay:onii' | country=中国 | region=
+  ID= 147 | 'threadbaron' | country=中国 | region=
+  ID= 151 | 'underscores' | country=美国 | region=
+  ID= 163 | '万晓利' | country=中国 | region=大陆
+  ID= 164 | '万能青年旅店' | country=中国 | region=大陆
+  ID= 165 | '九宝' | country=中国 | region=内蒙古
+  ID= 166 | '九维' | country=中国 | region=大陆
+  ID= 167 | '二手玫瑰' | country=中国 | region=大陆
+  ID= 168 | '交工乐队' | country=中国 | region=台湾
+  ID= 169 | '伍佰' | country=中国 | region=台湾
+  ID= 170 | '何勇' | country=中国 | region=大陆
+  ID= 171 | '何欣穗' | country=中国 | region=台湾
+  ID= 172 | '何韻詩 [HOCC]' | country=香港 | region=
+  ID= 173 | '佛跳墙' | country=中国 | region=台湾
+  ID= 174 | '假假条' | country=中国 | region=大陆
+  ID= 175 | '刀郎' | country=中国 | region=大陆
+  ID= 176 | '刁寒' | country=中国 | region=大陆
+  ID= 177 | '刺猬' | country=中国 | region=大陆
+  ID= 178 | '刺猬 [Hedgehog]' | country=中国 | region=
+  ID= 180 | '反光镜乐队' | country=中国 | region=
+  ID= 181 | '吴青峰' | country=中国 | region=台湾
+  ID= 182 | '周传雄' | country=中国 | region=台湾
+  ID= 316 | '周华健' | country=台湾 | region=
+  ID= 183 | '周杰伦' | country=中国 | region=台湾
+  ID= 184 | '哪吒' | country=中国 | region=大陆
+  ID= 185 | '唐朝' | country=中国 | region=大陆
+  ID= 186 | '嘎调 [The Gar]' | country=中国 | region=
+  ID= 187 | '噬湖' | country=中国 | region=大陆
+  ID= 188 | '声音玩具' | country=中国 | region=大陆
+  ID= 189 | '声音碎片 [Sound Fragment]' | country=中国 | region=
+  ID= 190 | '夏之禹' | country=中国 | region=大陆
+  ID= 191 | '大忘杠' | country=中国 | region=大陆
+  ID= 192 | '大波浪' | country=中国 | region=大陆
+  ID= 193 | '天鹅与花朵' | country=中国 | region=
+  ID= 194 | '姜昕' | country=中国 | region=大陆
+  ID= 195 | '子曰' | country=中国 | region=大陆
+  ID= 196 | '安抚狮子' | country=中国 | region=
+  ID= 197 | '安溥' | country=中国 | region=台湾
+  ID= 199 | '宋冬野' | country=中国 | region=大陆
+  ID= 200 | '寸铁' | country=中国 | region=大陆
+  ID= 201 | '小雨乐队' | country=中国 | region=
+  ID= 202 | '崔健' | country=中国 | region=大陆
+  ID= 203 | '左小祖咒' | country=中国 | region=大陆
+  ID= 204 | '张悬' | country=中国 | region=台湾
+  ID= 205 | '张惠妹' | country=中国 | region=台湾
+  ID= 206 | '张楚' | country=中国 | region=大陆
+  ID= 207 | '张玮玮' | country=中国 | region=
+  ID= 208 | '张福全' | country=中国 | region=大陆
+  ID= 209 | '张雨生' | country=中国 | region=台湾
+  ID= 210 | '彭坦' | country=中国 | region=大陆
+  ID= 211 | '惘闻' | country=中国 | region=大陆
+  ID= 212 | '戴佩妮' | country=中国 | region=台湾
+  ID= 213 | '戴饶' | country=中国 | region=大陆
+  ID= 214 | '指南针' | country=中国 | region=北京
+  ID= 215 | '揽佬SKAI ISYOURGOD' | country=中国 | region=大陆
+  ID= 216 | '文雀 [Sparrow]' | country=中国 | region=
+  ID= 217 | '新裤子' | country=中国 | region=
+  ID= 218 | '施教日' | country=中国 | region=大陆
+  ID= 219 | '施鑫文月' | country=中国 | region=
+  ID= 220 | '春秋' | country=中国 | region=大陆
+  ID= 221 | '曹方' | country=中国 | region=大陆
+  ID= 222 | '木马 [Muma]' | country=中国 | region=
+  ID= 223 | '朴树' | country=中国 | region=大陆
+  ID= 224 | '李健' | country=中国 | region=大陆
+  ID= 225 | '李杰' | country=中国 | region=大陆
+  ID= 226 | '東京酒吐座' | country=日本 | region=
+  ID= 227 | '林俊杰' | country=中国 | region=台湾
+  ID= 228 | '林强' | country=中国 | region=台湾
+  ID= 229 | '林忆莲' | country=中国 | region=台湾
+  ID= 230 | '梁博' | country=中国 | region=大陆
+  ID= 231 | '梁静茹' | country=中国 | region=台湾
+  ID= 232 | '水木年华' | country=中国 | region=大陆
+  ID= 233 | '水树' | country=中国 | region=大陆
+  ID= 234 | '汪峰' | country=中国 | region=大陆
+  ID= 235 | '海朋森' | country=中国 | region=
+  ID= 236 | '海朋森 [Hiperson]' | country=中国 | region=
+  ID= 237 | '海龟先生' | country=中国 | region=大陆
+  ID= 239 | '深山' | country=中国 | region=大陆
+  ID= 240 | '满江' | country=中国 | region=大陆
+  ID= 241 | '熊天平' | country=中国 | region=台湾
+  ID= 242 | '牛奶咖啡' | country=中国 | region=大陆
+  ID= 243 | '猿 [Yuan] & 鍋一楠 [Guo Yinan]' | country=中国 | region=
+  ID= 244 | '王啸坤' | country=中国 | region=大陆
+  ID= 245 | '王忆灵' | country=中国 | region=大陆
+  ID= 246 | '王杰' | country=中国 | region=台湾
+  ID= 247 | '王梵瑞' | country=中国 | region=大陆
+  ID= 248 | '王菲' | country=中国 | region=大陆
+  ID= 249 | '王齐铭' | country=中国 | region=
+  ID= 250 | '痛仰乐队' | country=中国 | region=
+  ID= 251 | '秘密行动' | country=中国 | region=
+  ID= 252 | '秦凡淇' | country=中国 | region=大陆
+  ID= 253 | '窦唯' | country=中国 | region=大陆
+  ID= 254 | '缺省 [Default]' | country=中国 | region=
+  ID= 255 | '罗大佑' | country=中国 | region=台湾
+  ID= 256 | '羊与马群' | country=中国 | region=
+  ID= 257 | '群星' | country=中国 | region=大陆
+  ID= 258 | '老狼' | country=中国 | region=大陆
+  ID= 259 | '自然卷' | country=中国 | region=台湾
+  ID= 260 | '苍蝇' | country=中国 | region=大陆
+  ID= 261 | '苏打绿' | country=中国 | region=台湾
+  ID= 262 | '苏紫旭 & The Paramecia' | country=中国 | region=大陆
+  ID= 263 | '苏紫旭&The Paramecia' | country=中国 | region=大陆
+  ID= 322 | '苏醒' | country=中国 | region=
+  ID= 264 | '葬尸湖' | country=中国 | region=大陆
+  ID= 265 | '葬尸湖、英吉沙' | country=中国 | region=大陆
+  ID= 266 | '蔡依林' | country=中国 | region=台湾
+  ID= 267 | '装咖人' | country=中国 | region=台湾
+  ID= 268 | '觀觀' | country=中国 | region=
+  ID= 269 | '许嵩' | country=中国 | region=大陆
+  ID= 270 | '许巍' | country=中国 | region=大陆
+  ID= 272 | '许景淳' | country=中国 | region=台湾
+  ID= 273 | '许茹芸' | country=中国 | region=台湾
+  ID= 274 | '许镜清' | country=中国 | region=大陆
+  ID= 275 | '谢天笑' | country=中国 | region=大陆
+  ID= 276 | '谢甜柒' | country=中国 | region=
+  ID= 277 | '赵季平' | country=中国 | region=大陆
+  ID= 278 | '赵雷' | country=中国 | region=大陆
+  ID= 279 | '超级市场' | country=中国 | region=大陆
+  ID= 280 | '超载' | country=中国 | region=大陆
+  ID= 281 | '达明一派' | country=中国 | region=香港
+  ID= 282 | '达达乐队' | country=中国 | region=大陆
+  ID= 284 | '郁冬' | country=中国 | region=大陆
+  ID= 285 | '郑宜农' | country=中国 | region=台湾
+  ID= 286 | '郑智化' | country=中国 | region=台湾
+  ID= 287 | '郑钧' | country=中国 | region=大陆
+  ID= 288 | '鄭宜農 [Enno Cheng]' | country=中国 | region=
+  ID= 289 | '重塑雕像的权利' | country=中国 | region=大陆
+  ID= 290 | '野孩子' | country=中国 | region=大陆
+  ID= 291 | '钟立风' | country=中国 | region=
+  ID= 292 | '门图' | country=中国 | region=
+  ID= 293 | '陈力' | country=中国 | region=大陆
+  ID= 294 | '陈劲' | country=中国 | region=大陆
+  ID= 295 | '陈升' | country=中国 | region=台湾
+  ID= 296 | '陈楚生' | country=中国 | region=大陆
+  ID= 297 | '陈珊妮' | country=中国 | region=台湾
+  ID= 298 | '陈绮贞' | country=中国 | region=台湾
+  ID= 299 | '陶喆' | country=中国 | region=台湾
+  ID= 300 | '雷光夏 [Summer Lei]' | country=中国 | region=
+  ID= 301 | '霜冻前夜' | country=中国 | region=大陆
+  ID= 302 | '青年' | country=中国 | region=台湾
+  ID= 303 | '马飞' | country=中国 | region=大陆
+  ID= 304 | '高旗&超载' | country=中国 | region=大陆
+  ID= 305 | '高枫' | country=中国 | region=大陆
+  ID= 306 | '魏如萱' | country=中国 | region=台湾
+  ID= 307 | '魚住英里奈 [Erina Uozumi]' | country=日本 | region=
+  ID= 308 | '黄安' | country=中国 | region=台湾
+  ID= 309 | '黄舒骏' | country=中国 | region=台湾
+  ID= 310 | '黄贯中' | country=香港 | region=
+  ID= 311 | '黑豹' | country=中国 | region=大陆
+  ID= 312 | '黑麒麟' | country=中国 | region=大陆
+  ID= 313 | '齐秦' | country=中国 | region=台湾

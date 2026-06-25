@@ -1,2 +1,0 @@
-#!/bin/bash
-sed -n '51,150p' "/c/Users/15206/.qclaw/workspace/RSS- SOURCES. md"

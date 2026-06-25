@@ -1,9 +1,9 @@
 {
   "id": "heartbeat",
-  "name": "心跳检查",
+  "name": "Heartbeat检查",
   "status": "active",
   "createdAt": "2026-06-17T08:20:20.581Z",
-  "updatedAt": "2026-06-23T02:47:18.006Z",
+  "updatedAt": "2026-06-23T09:05:09.075Z",
   "agents": [
     {
       "id": "agent_gwyx7z3m",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_cmt62s1g",
-    "title": "心跳检查",
+    "title": "Heartbeat检查",
     "createdAt": "2026-06-17T08:20:20.581Z",
     "file": "summary_cmt62s1g.md"
   },
-  "lastMessageCount": 14
+  "lastMessageCount": 28
 }

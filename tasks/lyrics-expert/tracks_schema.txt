@@ -1,0 +1,11 @@
+tracks表结构:
+  id (INTEGER)
+  album_id (INTEGER)
+  track_number (INTEGER)
+  track_name (TEXT)
+  duration (INTEGER)
+  disc_number (INTEGER)
+  source (TEXT)
+  created_at (TEXT)
+  lyrics_text_path (TEXT)
+  lyrics_lrc_path (TEXT)
