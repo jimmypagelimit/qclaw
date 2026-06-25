@@ -1,4 +1,4 @@
-﻿{
+{
     "lastChecks":  {
                        "covers":  33,
                        "covers_attempted_today":  true,
@@ -9,8 +9,8 @@
                        "covers_remaining":  0,
                        "covers_error":  "no such column: total_listen_count - DB schema mismatch, script needs fix",
                        "c_drive_check":  "2026-06-25T15:25+08:00",
-                       "c_drive_used_gb":  62.0,
-                       "c_drive_free_gb":  237.4,
+                       "c_drive_used_gb":  62.5,
+                       "c_drive_free_gb":  236.9,
                        "c_drive_exceeded":  true,
                        "c_drive_alert_pending":  false,
                        "c_drive_alert_sent_heartbeat":  true,
@@ -26,15 +26,15 @@
                        "weekly_review":  "2026-06-14",
                        "weekly_review_due":  false,
                        "monthly_review":  "2026-05-01",
-                       "feishu_error":  "400: feishu push still failing on 2026-06-25 11:01, bot permission issue persists",
-                       "feishu_last_push_error":  "2026-06-25T11:01",
-                       "daily_summary_done":  false,
-                       "daily_summary_date":  "2026-06-24",
-                       "git_pushed":  "2026-06-23T17:01+08:00",
+                       "feishu_error":  "400: feishu push failed on 2026-06-25T16:06, bot permission issue persists",
+                       "feishu_last_push_error":  "2026-06-25T16:06",
+                       "daily_summary_done":  true,
+                       "daily_summary_date":  "2026-06-25",
+                       "git_pushed":  "2026-06-25T16:05+08:00",
                        "quality_reflection_done":  true,
                        "quality_reflection_date":  "2026-06-25"
                    },
-    "last_heartbeat":  "2026-06-25T11:31+08:00",
+    "last_heartbeat":  "2026-06-25T16:06+08:00",
     "c_drive_used_gb":  62.5,
     "c_drive_free_gb":  236.9,
     "c_drive_exceeded":  true,
