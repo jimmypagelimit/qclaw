@@ -1,0 +1,66 @@
+{
+  "artist": "吴青峰",
+  "album": "马拉美的星期二",
+  "tracks": [
+    {
+      "position": 1,
+      "title": "(......小小牧羊人)",
+      "duration_ms": 0
+    },
+    {
+      "position": 2,
+      "title": "(......海妖沙龍)",
+      "duration_ms": 0
+    },
+    {
+      "position": 3,
+      "title": "(......催眠大師)",
+      "duration_ms": 0
+    },
+    {
+      "position": 4,
+      "title": "(......戀人絮語)",
+      "duration_ms": 0
+    },
+    {
+      "position": 5,
+      "title": "(......千與千尋)",
+      "duration_ms": 0
+    },
+    {
+      "position": 6,
+      "title": "(......老頑固博士)",
+      "duration_ms": 0
+    },
+    {
+      "position": 7,
+      "title": "(......當幽靈失靈)",
+      "duration_ms": 0
+    },
+    {
+      "position": 8,
+      "title": "(......醉鬼阿Q)",
+      "duration_ms": 0
+    },
+    {
+      "position": 9,
+      "title": "(......棕髮少女)",
+      "duration_ms": 0
+    },
+    {
+      "position": 10,
+      "title": "(......侏儒之舞)",
+      "duration_ms": 0
+    },
+    {
+      "position": 11,
+      "title": "(......小王子)",
+      "duration_ms": 0
+    },
+    {
+      "position": 12,
+      "title": "(......睡美人)",
+      "duration_ms": 0
+    }
+  ]
+}

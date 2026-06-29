@@ -1,0 +1,56 @@
+{
+  "artist": "郑智化",
+  "album": "落泪的戏子",
+  "tracks": [
+    {
+      "position": 1,
+      "title": "落淚的戲子",
+      "duration_ms": 334000
+    },
+    {
+      "position": 2,
+      "title": "露水",
+      "duration_ms": 226000
+    },
+    {
+      "position": 3,
+      "title": "大國民",
+      "duration_ms": 274000
+    },
+    {
+      "position": 4,
+      "title": "沉默的羔羊",
+      "duration_ms": 310000
+    },
+    {
+      "position": 5,
+      "title": "我的明天",
+      "duration_ms": 233000
+    },
+    {
+      "position": 6,
+      "title": "風在唱著一首歌",
+      "duration_ms": 356000
+    },
+    {
+      "position": 7,
+      "title": "此生為了美",
+      "duration_ms": 206000
+    },
+    {
+      "position": 8,
+      "title": "有關於承諾",
+      "duration_ms": 264000
+    },
+    {
+      "position": 9,
+      "title": "避風港",
+      "duration_ms": 290000
+    },
+    {
+      "position": 10,
+      "title": "鳳凰花",
+      "duration_ms": 234000
+    }
+  ]
+}

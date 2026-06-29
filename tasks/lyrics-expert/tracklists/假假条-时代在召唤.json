@@ -1,0 +1,26 @@
+{
+  "artist": "假假条",
+  "album": "时代在召唤",
+  "tracks": [
+    {
+      "position": 1,
+      "title": "召喚 (手牽着手,掌向峯頂)",
+      "duration_ms": 0
+    },
+    {
+      "position": 2,
+      "title": "忍耐 (如同宇宙繁星墜八凡間)",
+      "duration_ms": 0
+    },
+    {
+      "position": 3,
+      "title": "与世隔绝 (第三隻眼正在啜)",
+      "duration_ms": 0
+    },
+    {
+      "position": 4,
+      "title": "此時此地的萬物啊 (我在另一邊等你)",
+      "duration_ms": 0
+    }
+  ]
+}

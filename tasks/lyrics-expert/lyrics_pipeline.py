@@ -22,7 +22,8 @@ def mb_get_tracklist(artist, album):
     from urllib.parse import quote
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, args=['--no-sandbox'])
+        # MusicBrainz 无 CF 保护，可用 headless=True
+        browser = p.chromium.launch(headless=True, args=['--no-sandbox'])
         page = browser.new_page()
         
         try:
