@@ -1,11 +1,5 @@
-好，V3 版本已定稿。现在需要找到 C86 歌单的 20 张封面图片来批量生成。我先查一下之前 V2 批量生成时用过的专辑列表，看看封面源文件在哪里。
+我来写一个半年度复盘和P项目推进总结文档。
 
-让我先搜索一下相关的工作目录和文件：
-
-<lcm_grep>
-{
-  "mode": "full_text",
-  "query": "C86 20",
-  "sort": "relevance"
-}
-</lcm_grep>
+<read>
+<path>~/.qclaw/skills/self-improving/SKILL.md</path>
+</read>

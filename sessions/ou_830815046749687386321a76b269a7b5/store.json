@@ -3,7 +3,7 @@
   "name": "会话摘要",
   "status": "active",
   "createdAt": "2026-06-17T06:09:15.828Z",
-  "updatedAt": "2026-06-27T08:27:52.775Z",
+  "updatedAt": "2026-07-06T07:38:49.571Z",
   "agents": [
     {
       "id": "agent_4tgc6gh2",
@@ -21,5 +21,5 @@
     "createdAt": "2026-06-17T06:09:15.828Z",
     "file": "summary_6u4m9737.md"
   },
-  "lastMessageCount": 180
+  "lastMessageCount": 270
 }
