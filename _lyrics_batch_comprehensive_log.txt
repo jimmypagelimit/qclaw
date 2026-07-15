@@ -666,3 +666,208 @@ Found 100 tracks missing lyrics
 Batch 2 done! Successfully added lyrics for 66/100 tracks
 Current coverage: 3897/4988 = 78.1%
 Remaining: 1091 tracks
+=== Batch 3 (offset 200, limit 100) ===
+Found 100 tracks missing lyrics
+[1/100] Stereolab - Contranatura Pt. 2 Instrumental (from Dots and Loops)
+  -> NOT FOUND
+[2/100] Stereolab - Contranatura (demo) (from Dots and Loops)
+  -> NOT FOUND
+[3/100] Sufjan Stevens - THE BLACK HAWK WAR, or, How to Demolish an Entire Civilization and Still Feel Good About Yourself in the Morning, or, We Apologize for the Inconvenience but You’re Going to Have to Leave Now, or, "I Have Fought the Big Knives and Will Continue to Fight… (from Illinois)
+  -> NOT FOUND
+[4/100] Sufjan Stevens - Go! Chicago! Go! Yeah! (from Illinois)
+  -> SAVED (LRC: YES, TXT: NO)
+[5/100] Sufjan Stevens - To the Workers of the Rock River Valley Region, I Have an Idea Concerning Your Predicament, and It Involves Tube Socks, a Paper Airplane, and Twenty‐two Able‐bodied Men. (from Illinois)
+  -> NOT FOUND
+[6/100] Sufjan Stevens - Let’s Hear That String Part Again, Because I Don’t Think They Heard It All the Way Out in Bloomington‐normal (from Illinois)
+  -> NOT FOUND
+[7/100] Sufjan Stevens - Out of Egypt, Into the Great Laugh of Mankind, and I Shake the Dirt From My Sandals as I Run (from Illinois)
+  -> NOT FOUND
+[8/100] Nokturnal Mortum - Інтро (from Голос сталі (The Voice of Steel))
+  -> SAVED (LRC: YES, TXT: NO)
+[9/100] Nirvana - Waif Me (from In Utero)
+  -> SAVED (LRC: YES, TXT: NO)
+[10/100] Motanka - Oy ty moya Zemle (from Motanka)
+  -> NOT FOUND
+[11/100] Motanka - Horizon (from Motanka)
+  -> NOT FOUND
+[12/100] Motanka - Pace of the Space (from Motanka)
+  -> NOT FOUND
+[13/100] Motanka - Khreshchennya (from Motanka)
+  -> NOT FOUND
+[14/100] Motanka - What Are You Living For? (from Motanka)
+  -> NOT FOUND
+[15/100] Motanka - Kroda (from Motanka)
+  -> NOT FOUND
+[16/100] Mägo de Oz - La ínsula de Barataria (from La leyenda de La Mancha)
+  -> NOT FOUND
+[17/100] Mägo de Oz - La ínsula de Barataria (from La leyenda de La Mancha)
+  -> NOT FOUND
+[18/100] Mägo de Oz - Photogallerie (from La leyenda de La Mancha)
+  -> NOT FOUND
+[19/100] Mägo de Oz - Presseberichte (from La leyenda de La Mancha)
+  -> NOT FOUND
+[20/100] Earthside - The Closest I’ve Come (from A Dream in Static)
+  -> NOT FOUND
+[21/100] Earthside - Entering the Light (from A Dream in Static)
+  -> NOT FOUND
+[22/100] Earthside - Skyline (from A Dream in Static)
+  -> NOT FOUND
+[23/100] Earthside - The Ungrounding (from A Dream in Static)
+  -> NOT FOUND
+[24/100] Be Persecuted - Hopeless Far Beyond (from End Leaving)
+  -> NOT FOUND
+[25/100] Be Persecuted - The Last Right (from End Leaving)
+  -> SAVED (LRC: YES, TXT: NO)
+[26/100] Be Persecuted - Curtain Call (from End Leaving)
+  -> NOT FOUND
+[27/100] Lifelover - Vardagsnytt (from Pulver)
+  -> SAVED (LRC: YES, TXT: YES)
+[28/100] 郑智化 - 吙伊去 (from 私房歌)
+  -> SAVED (LRC: YES, TXT: NO)
+[29/100] 林忆莲 - 要是有緣 (from Love,Sandy)
+  -> NOT FOUND
+[30/100] 林忆莲 - 還是不要說抱歉 / 野花 (from Love,Sandy)
+  -> SAVED (LRC: YES, TXT: NO)
+[31/100] 林忆莲 - 兩個人的路 / 寵愛 (from Love,Sandy)
+  -> SAVED (LRC: YES, TXT: NO)
+[32/100] 老狼 - 那么那么地 (from 虎口脱险)
+  -> SAVED (LRC: YES, TXT: NO)
+[33/100] 老狼 - 鸟儿的幻想 (from 虎口脱险)
+  -> SAVED (LRC: YES, TXT: NO)
+[34/100] 老狼 - 想把我唱给你听 (from 虎口脱险)
+  -> SAVED (LRC: YES, TXT: NO)
+[35/100] 老狼 - 弄错的车站 (from 虎口脱险)
+  -> SAVED (LRC: YES, TXT: NO)
+[36/100] 老狼 - 有多远就走多远 (from 虎口脱险)
+  -> SAVED (LRC: YES, TXT: NO)
+[37/100] 王梵瑞 - 独白 (from 青春)
+  -> NOT FOUND
+[38/100] 王梵瑞 - 口紅 (from 青春)
+  -> NOT FOUND
+[39/100] 王梵瑞 - Safari (from 时光谣)
+  -> NOT FOUND
+[40/100] 王梵瑞 - 想说不说 (from 时光谣)
+  -> SAVED (LRC: YES, TXT: NO)
+[41/100] 王梵瑞 - Děnghòu shì (from 等候)
+  -> SAVED (LRC: YES, TXT: NO)
+[42/100] 满江 - 最美的时光 (from 最美的时光)
+  -> SAVED (LRC: YES, TXT: NO)
+[43/100] 马飞 - 阳光照射奶西村 (from 祝你幸福)
+  -> SAVED (LRC: YES, TXT: NO)
+[44/100] 魏如萱 - 怪奇的珍珠 (from 珍珠刑)
+  -> SAVED (LRC: YES, TXT: YES)
+[45/100] 许嵩 - 乌鸦 (from 呼吸之野)
+  -> NOT FOUND
+[46/100] 许嵩 - 假摔 (from 呼吸之野)
+  -> NOT FOUND
+[47/100] 许嵩 - 科幻 (from 呼吸之野)
+  -> NOT FOUND
+[48/100] 许嵩 - 万古 (from 呼吸之野)
+  -> NOT FOUND
+[49/100] 许嵩 - 冰柜 (from 呼吸之野)
+  -> NOT FOUND
+[50/100] 许嵩 - 三尺 (from 呼吸之野)
+  -> NOT FOUND
+[51/100] 许嵩 - 庞贝 (from 呼吸之野)
+  -> NOT FOUND
+[52/100] 郑宜农 - 新世紀的女兒 (from 水逆)
+  -> NOT FOUND
+[53/100] 郑宜农 - Speechless (from 水逆)
+  -> SAVED (LRC: YES, TXT: NO)
+[54/100] 郑宜农 - 囡仔汗 (Album Version) (from 水逆)
+  -> SAVED (LRC: YES, TXT: NO)
+[55/100] 陈楚生 - Walk Into Tibet (from 影之传说)
+  -> NOT FOUND
+[56/100] 陈楚生 - Pathway to Paradise (from 影之传说)
+  -> SAVED (LRC: YES, TXT: NO)
+[57/100] 陈楚生 - Ocean of Flower (from 影之传说)
+  -> SAVED (LRC: YES, TXT: NO)
+[58/100] 戴佩妮 - 眼泪笑了 (from 原谅我就是这样的女生)
+  -> SAVED (LRC: YES, TXT: NO)
+[59/100] 佛跳墙 - 祝我们快乐 (from 佛跳墙)
+  -> SAVED (LRC: YES, TXT: NO)
+[60/100] 佛跳墙 - 跟我一起 (from 佛跳墙)
+  -> SAVED (LRC: YES, TXT: NO)
+[61/100] 佛跳墙 - 卸妆 (from 佛跳墙)
+  -> NOT FOUND
+[62/100] 戴佩妮 - Di Da .. Excuse Me (from 怎样)
+  -> NOT FOUND
+[63/100] 戴佩妮 - Jamie Wilson Solo (from 怎样)
+  -> NOT FOUND
+[64/100] 戴佩妮 - Li Shou Xin Solo (from 怎样)
+  -> NOT FOUND
+[65/100] 戴佩妮 - Huang Zhong Yue Solo (from 怎样)
+  -> NOT FOUND
+[66/100] 戴佩妮 - Wu Qing Long Solo (from 怎样)
+  -> NOT FOUND
+[67/100] Dark Fount - 餘燼 (from 幽浮林涧之雾)
+  -> NOT FOUND
+[68/100] 葬尸湖 - Winter Mirage (from 冬霾)
+  -> NOT FOUND
+[69/100] 葬尸湖 - Valley of loneness (from 冬霾)
+  -> NOT FOUND
+[70/100] 葬尸湖 - 孤魂 (from 妖祭)
+  -> NOT FOUND
+[71/100] 罗大佑 - 浮萍 (from 闪亮的日子)
+  -> SAVED (LRC: YES, TXT: NO)
+[72/100] 罗大佑 - The end of the world (from 闪亮的日子)
+  -> SAVED (LRC: YES, TXT: NO)
+[73/100] 罗大佑 - 一个我喜欢的女孩 (from 闪亮的日子)
+  -> SAVED (LRC: YES, TXT: NO)
+[74/100] 罗大佑 - 嘿!嘿! (from 闪亮的日子)
+  -> SAVED (LRC: YES, TXT: NO)
+[75/100] 罗大佑 - 可爱的明天 (from 闪亮的日子)
+  -> SAVED (LRC: YES, TXT: NO)
+[76/100] 水木年华 - 会有那么一天 (from 水木年华3（新歌+精选）)
+  -> SAVED (LRC: YES, TXT: NO)
+[77/100] 水木年华 - 蜗牛的家 (from 水木年华3（新歌+精选）)
+  -> SAVED (LRC: YES, TXT: NO)
+[78/100] 水木年华 - 我就在你身边 (from 水木年华3（新歌+精选）)
+  -> NOT FOUND
+[79/100] 水木年华 - 野百合也有春天 (from 水木年华3（新歌+精选）)
+  -> SAVED (LRC: YES, TXT: NO)
+[80/100] 郑钧 - 天敌 (from 两只口罩)
+  -> SAVED (LRC: YES, TXT: NO)
+[81/100] 郑钧 - 斯德哥尔摩 (from 两只口罩)
+  -> SAVED (LRC: YES, TXT: NO)
+[82/100] 郑钧 - 父的三北 (from 两只口罩)
+  -> SAVED (LRC: YES, TXT: NO)
+[83/100] 唐朝 - Choice (from 梦回唐朝)
+  -> SAVED (LRC: YES, TXT: NO)
+[84/100] 唐朝 - Don't Go Hiding (from 梦回唐朝)
+  -> SAVED (LRC: YES, TXT: NO)
+[85/100] 姜昕 - 我不是随便的花朵 (from 我不是随便的花朵)
+  -> SAVED (LRC: YES, TXT: NO)
+[86/100] 彭坦 - You (Find love) (from Easy)
+  -> NOT FOUND
+[87/100] 彭坦 - Das leben ist fair (from Easy)
+  -> SAVED (LRC: YES, TXT: NO)
+[88/100] 王啸坤 - 银河落九天 (from 唱片)
+  -> NOT FOUND
+[89/100] 王啸坤 - 秋河飞月 (from 唱片)
+  -> NOT FOUND
+[90/100] 王啸坤 - 雪晴晚望 (from 唱片)
+  -> SAVED (LRC: YES, TXT: NO)
+[91/100] 王啸坤 - 山雨溪风 (from 唱片)
+  -> SAVED (LRC: YES, TXT: NO)
+[92/100] 张惠妹 - 冲突的很 (from 阿密特2)
+  -> SAVED (LRC: YES, TXT: NO)
+[93/100] Geordie Greep - Holy, Holy (from The New Sound)
+  -> SAVED (LRC: YES, TXT: YES)
+[94/100] 秦凡淇 - 享受 (from 好好享受人类的莫名其妙)
+  -> SAVED (LRC: YES, TXT: NO)
+[95/100] Inanna - The Delicate Balance of Terror (from Converging Ages)
+  -> NOT FOUND
+[96/100] Inanna - The Lighthouse (from Converging Ages)
+  -> NOT FOUND
+[97/100] Inanna - Embracing the Fleshless Ecstasy (from Converging Ages)
+  -> NOT FOUND
+[98/100] Inanna - Sea of the Dead (from Converging Ages)
+  -> NOT FOUND
+[99/100] Weakling - Dead as Dreams (from Dead as Dreams)
+  -> NOT FOUND
+[100/100] Weakling - This Entire Fucking Battlefield (from Dead as Dreams)
+  -> SAVED (LRC: YES, TXT: NO)
+Batch 3 done! Successfully added lyrics for 46/100 tracks
+Current coverage: 4310/5015 = 85.9%
+Remaining: 705 tracks

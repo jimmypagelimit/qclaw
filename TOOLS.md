@@ -12,10 +12,17 @@ C:\Users\qujt\.qclaw\workspace\_music_latest.db
 - ❌ `album-tracker/music.db` — 空文件
 - ❌ `\\10.0.2.4\qemu\原创计划\music\music` — UNC 路径已废弃
 
-### 操作规则
-1. 所有数据库查询/更新/插入 **必须用上述唯一路径**
-2. Web 服务运行时 **必须先停服务再操作数据库**
-3. 操作完成后 **必须重启 Web 服务**
+### 操作规则（2026-07-14 重构）
+**写操作：必须用 API，永远不 kill**
+- POST /api/albums — 新增专辑+自动加listen（存在则只加listen）
+- POST /api/albums/:id/listen — 追加收听次数
+- PUT /api/albums/:id — 更新专辑信息
+- sql.js 内存数据库，改完后需重启服务才能同步
+- 首次写操作前 kill+重启一次，之后批量写不需要再 kill
+
+**查操作：随意，直接读 DB 或 API 均可**
+
+**禁止**：直接 sqlite3.connect() + kill 的旧流程
 
 ---
 

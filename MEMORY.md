@@ -148,6 +148,17 @@
 - CloakBrowser绕CF，headless=False，正则提取avg_rating
 - 评分字段：`rymv2_score`（float）
 
+## 数据库操作铁律（2026-07-14 确立）
+**写操作：必须用 API（POST/PUT/DELETE），永远不 kill**
+- POST /api/albums — 新增专辑 + 自动加 listen（存在则只加 listen）
+- POST /api/albums/:id/listen — 追加收听次数
+- PUT /api/albums/:id — 更新专辑信息
+- 封面下载：POST /api/covers/download（如果有）
+- sql.js 是内存数据库，改完要 reload 才能同步
+- 首次写操作前 kill 一次重启服务，之后批量写不需要再 kill
+
+**查操作：随意，可以 kill 也可以直接读 DB**
+
 ## 常用网站
 - 匿名旅行者: https://www.anontraveler.com（音乐流派百科）
 - RYM: https://rateyourmusic.com（需 CloakBrowser 绕 CF）

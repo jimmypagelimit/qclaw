@@ -1,40 +1,40 @@
-import sqlite3, json
+import sqlite3, os, json
 
 db = r'C:\Users\qujt\.qclaw\workspace\_music_latest.db'
 conn = sqlite3.connect(db)
 c = conn.cursor()
 
-result = {}
-
-# Missing count
+# Check current lyrics coverage
 c.execute("SELECT COUNT(*) FROM tracks")
-result['total_tracks'] = c.fetchone()[0]
-c.execute("""SELECT COUNT(*) FROM tracks WHERE (lyrics_text_path IS NOT NULL AND lyrics_text_path != '') OR (lyrics_lrc_path IS NOT NULL AND lyrics_lrc_path != '')""")
-result['has_lyrics'] = c.fetchone()[0]
-result['coverage_pct'] = round(result['has_lyrics'] / result['total_tracks'] * 100, 1)
-result['missing'] = result['total_tracks'] - result['has_lyrics']
+total = c.fetchone()[0]
+c.execute("SELECT COUNT(*) FROM tracks WHERE lyrics_text_path IS NOT NULL OR lyrics_lrc_path IS NOT NULL")
+with_lyrics = c.fetchone()[0]
+c.execute("SELECT COUNT(*) FROM tracks WHERE lyrics_lrc_path IS NOT NULL")
+with_lrc = c.fetchone()[0]
 
-# Top artists with missing lyrics
-c.execute("""SELECT a.artist, COUNT(*) as cnt FROM tracks t JOIN albums a ON t.album_id = a.album_id 
-    WHERE (t.lyrics_text_path IS NULL OR t.lyrics_text_path = '') AND (t.lyrics_lrc_path IS NULL OR t.lyrics_lrc_path = '') 
-    GROUP BY a.artist ORDER BY cnt DESC LIMIT 20""")
-result['top_missing_artists'] = [[r[0], r[1]] for r in c.fetchall()]
+print('Total tracks:', total)
+print('With any lyrics:', with_lyrics, f'({with_lyrics*100/total:.1f}%)')
+print('With LRC:', with_lrc, f'({with_lrc*100/total:.1f}%)')
+print('Missing:', total - with_lyrics, f'({(total-with_lyrics)*100/total:.1f}%)')
 
-# Check if _lyrics_batch.py exists
-import os
-batch_script = r'C:\Users\qujt\.qclaw\workspace\_lyrics_batch.py'
-result['batch_script_exists'] = os.path.exists(batch_script)
+# Check batch state if exists
+batch_state = r'C:\Users\qujt\.qclaw\workspace\_lyrics_batch_state.txt'
+if os.path.exists(batch_state):
+    with open(batch_state) as f:
+        print('\nBatch state:', f.read()[:500])
 
-# Check existing lyrics dir structure
-lyrics_dir = r'C:\Users\qujt\.qclaw\workspace\tasks\lyrics-expert\lyrics'
-if os.path.exists(lyrics_dir):
-    artists = os.listdir(lyrics_dir)
-    result['lyrics_dir_artists'] = len(artists)
-else:
-    result['lyrics_dir_artists'] = 0
-
-with open(r'C:\Users\qujt\.qclaw\workspace\_lyrics_status.json', 'w', encoding='utf-8') as f:
-    json.dump(result, f, ensure_ascii=False, indent=2)
+# Check latest status JSON
+status_file = r'C:\Users\qujt\.qclaw\workspace\_lyrics_status.json'
+if os.path.exists(status_file):
+    with open(status_file) as f:
+        try:
+            data = json.load(f)
+            print('\nStatus JSON keys:', list(data.keys()))
+            if 'last_run' in data:
+                print('Last run:', data.get('last_run'))
+            if 'progress' in data:
+                print('Progress:', data.get('progress'))
+        except:
+            pass
 
 conn.close()
-print('Status written to _lyrics_status.json')
