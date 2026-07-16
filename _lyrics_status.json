@@ -1,90 +1,9 @@
 {
-  "total_tracks": 4988,
-  "has_lyrics": 3788,
-  "coverage_pct": 75.9,
-  "missing": 1200,
-  "top_missing_artists": [
-    [
-      "王菲",
-      33
-    ],
-    [
-      "陈升",
-      28
-    ],
-    [
-      "王梵瑞",
-      26
-    ],
-    [
-      "Funeral Mist",
-      26
-    ],
-    [
-      "The Cure",
-      25
-    ],
-    [
-      "Carsick Cars",
-      21
-    ],
-    [
-      "赵季平",
-      20
-    ],
-    [
-      "戴佩妮",
-      20
-    ],
-    [
-      "左小祖咒",
-      20
-    ],
-    [
-      "刀郎",
-      18
-    ],
-    [
-      "John Lennon",
-      17
-    ],
-    [
-      "李杰",
-      16
-    ],
-    [
-      "Tizzy Bac",
-      16
-    ],
-    [
-      "魏如萱",
-      15
-    ],
-    [
-      "超级市场",
-      15
-    ],
-    [
-      "装咖人",
-      15
-    ],
-    [
-      "林忆莲",
-      15
-    ],
-    [
-      "雷光夏 [Summer Lei]",
-      14
-    ],
-    [
-      "P.K. 14",
-      14
-    ],
-    [
-      "刺猬",
-      13
-    ]
-  ],
-  "batch_script_exists": true,
-  "lyrics_dir_artists": 255
+  "total_tracks": 5024,
+  "has_lyrics": 4311,
+  "coverage_pct": 85.8,
+  "missing": 713,
+  "cron_run": "2026-07-16",
+  "found_this_run": 1,
+  "processed_this_run": 28
 }

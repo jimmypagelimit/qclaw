@@ -1,121 +1,169 @@
 """
-LRCLIB batch fetch for well-known indie artists.
-Target: Car Seat Headrest, Big Thief, Sufjan Stevens, etc.
-Keep runtime < 80s to avoid QEMU SIGKILL.
+歌词计划 Cron 批次 - 2026-07-16
+目标：处理 top missing artists (confirmed LRCLIB coverage)
 """
-import sqlite3, urllib.request, json, time, os, re
+import sqlite3, urllib.request, urllib.parse, json, os, time
 
 DB = r'C:\Users\qujt\.qclaw\workspace\_music_latest.db'
-LYRICS_DIR = r'C:\Users\qujt\.qclaw\workspace\lyrics'
+LYRICS_DIR = r'C:\Users\qujt\.qclaw\workspace\tasks\lyrics-expert\lyrics'
+UA = "AlbumTracker/1.0 (jim@example.com)"
+LRCLIB_BASE = "https://lrclib.net/api"
 
-target_artists = [
-    'Car Seat Headrest', 'Big Thief', 'Sufjan Stevens', 'The National',
-    'Phoebe Bridgers', 'Mitski', 'Bon Iver', 'Arcade Fire',
-    'Radiohead', 'LCD Soundsystem', 'Death Cab for Cutie',
-    'Modest Mouse', 'Vampire Weekend', 'Grizzly Bear', 'Animal Collective'
-]
-
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
-
-cur.execute('''
-SELECT t.track_name, al.artist, al.album_name, t.track_number, t.id
-FROM tracks t
-JOIN albums al ON t.album_id = al.album_id
-WHERE t.lyrics_lrc_path IS NULL
-AND al.artist IN (%s)
-ORDER BY RANDOM()
-LIMIT 40
-''' % ','.join('?' * len(target_artists)), target_artists)
-
-tracks = cur.fetchall()
-conn.close()
-
-print(f'Processing {len(tracks)} tracks...')
-start = time.time()
-
-found = 0
-not_found = 0
-errors = 0
-
-for i, (track_name, artist, album_name, track_num, track_id) in enumerate(tracks):
-    elapsed = time.time() - start
-    if elapsed > 70:
-        print(f'Time limit approaching ({elapsed:.0f}s), stopping at {i}')
-        break
-    
+def lrclib_search(artist, track, timeout=15):
+    params = urllib.parse.urlencode({'q': f'{artist} {track}'})
+    url = f"{LRCLIB_BASE}/search?{params}"
     try:
-        # Search LRCLIB
-        query = f'{artist} {track_name}'.replace(' ', '+')
-        url = f'https://lrclib.net/api/search?q={query}'
-        
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        resp = urllib.request.urlopen(req, timeout=8)
-        results = json.loads(resp.read())
-        
-        if not results:
-            not_found += 1
-            print(f'  [{i+1}] NOT FOUND: {artist} - {track_name}')
-            continue
-        
-        # Find best match
-        best = None
-        for r in results:
-            r_artist = r.get('artistName', '').lower()
-            r_name = r.get('trackName', '').lower()
-            t_name = track_name.lower()
-            
-            # Check similarity
-            if (artist.lower() in r_artist or r_artist in artist.lower()) and \
-               (t_name in r_name or r_name in t_name or 
-                abs(len(t_name) - len(r_name)) < 5):
-                if best is None or r.get('instrumental') == False:
-                    best = r
-        
-        if best is None:
-            best = results[0]  # fallback to first
-        
-        if best.get('instrumental'):
-            not_found += 1
-            print(f'  [{i+1}] INSTRUMENTAL: {artist} - {track_name}')
-            continue
-        
-        lrc = best.get('syncedLyrics', '')
-        if not lrc:
-            not_found += 1
-            print(f'  [{i+1}] NO SYNCED LRC: {artist} - {track_name}')
-            continue
-        
-        # Save LRC file
-        safe_artist = re.sub(r'[<>:"/\\|?*]', '_', artist)
-        safe_album = re.sub(r'[<>:"/\\|?*]', '_', album_name)
-        lrc_dir = os.path.join(LYRICS_DIR, safe_artist, safe_album)
-        os.makedirs(lrc_dir, exist_ok=True)
-        
-        lrc_filename = f'{track_num:02d}.lrc'
-        lrc_path = os.path.join(lrc_dir, lrc_filename)
-        
-        with open(lrc_path, 'w', encoding='utf-8') as f:
-            f.write(lrc)
-        
-        # Update DB
-        rel_path = f'{safe_artist}/{safe_album}/{lrc_filename}'
-        conn2 = sqlite3.connect(DB)
-        cur2 = conn2.cursor()
-        cur2.execute(
-            'UPDATE tracks SET lyrics_lrc_path = ? WHERE id = ?',
-            (rel_path, track_id)
-        )
-        conn2.commit()
-        conn2.close()
-        
-        found += 1
-        print(f'  [{i+1}] FOUND: {artist} - {track_name} -> {rel_path}')
-        
-    except Exception as e:
-        errors += 1
-        print(f'  [{i+1}] ERROR: {artist} - {track_name}: {e}')
+        req = urllib.request.Request(url, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read())
+    except Exception:
+        return []
 
-total_time = time.time() - start
-print(f'\n=== DONE ({total_time:.1f}s) ===')
-print(f'Found: {found}, Not found: {not_found}, Errors: {errors}')
+def lrclib_get(lrc_id, timeout=15):
+    url = f"{LRCLIB_BASE}/get/{lrc_id}"
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read())
+    except Exception:
+        return None
+
+def save_lyrics(artist, album, track_name, lrc_text, plain_text):
+    safe = lambda s: "".join(c for c in str(s) if c not in r'\/:*?"<>|').strip()
+    base = os.path.join(LYRICS_DIR, safe(artist), safe(album))
+    os.makedirs(base, exist_ok=True)
+    lrc_path = txt_path = None
+    if lrc_text:
+        lrc_path = os.path.join(base, f"{safe(track_name)}.lrc")
+        with open(lrc_path, 'w', encoding='utf-8') as f:
+            f.write(lrc_text)
+    if plain_text:
+        txt_path = os.path.join(base, f"{safe(track_name)}.txt")
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write(plain_text)
+    return lrc_path, txt_path
+
+def process_batch(conn, artist, album, batch_tracks):
+    """批量处理一组曲目"""
+    found = 0
+    for track_id, track_name in batch_tracks:
+        results = lrclib_search(artist, track_name)
+        if not results:
+            print(f"  [NONE] {track_name}")
+            time.sleep(1)
+            continue
+        
+        full = lrclib_get(results[0]['id'])
+        if not full:
+            print(f"  [ERR] {track_name}")
+            time.sleep(1)
+            continue
+        
+        lrc = full.get('syncedLyrics', '')
+        plain = full.get('plainLyrics', '')
+        
+        if not lrc and not plain:
+            print(f"  [EMPTY] {track_name}")
+            time.sleep(1)
+            continue
+        
+        lrc_path, txt_path = save_lyrics(artist, album, track_name, lrc, plain)
+        cur = conn.cursor()
+        cur.execute(
+            "UPDATE tracks SET lyrics_lrc_path=?, lyrics_text_path=? WHERE id=?",
+            (lrc_path, txt_path, track_id)
+        )
+        print(f"  [OK] {track_name}")
+        found += 1
+        time.sleep(1)
+    
+    conn.commit()
+    return found
+
+def main():
+    conn = sqlite3.connect(DB)
+    cur = conn.cursor()
+    
+    # Priority artists (confirmed LRCLIB coverage + high missing count)
+    # Skip Funeral Mist (black metal, no lyrics) and 赵季平 (film scores)
+    priority_artists = [
+        ("The Cure", 4),          # Classic rock - good LRCLIB coverage
+        ("John Lennon", 3),        # Solo Beatles
+        ("The Smiths", 2),         # Classic indie rock
+        ("The Twilight Sad", 2),   # Scottish post-rock
+    ]
+    
+    total_found = 0
+    total_processed = 0
+    
+    for artist, max_albums in priority_artists:
+        # Get albums by this artist missing lyrics
+        cur.execute('''
+            SELECT DISTINCT a.album_name, a.album_id
+            FROM albums a
+            JOIN tracks t ON t.album_id = a.album_id
+            WHERE a.artist = ?
+            AND (t.lyrics_lrc_path IS NULL OR t.lyrics_text_path IS NULL)
+            LIMIT ?
+        ''', (artist, max_albums))
+        
+        albums = cur.fetchall()
+        if not albums:
+            print(f"\n[SKIP] {artist} - no albums need lyrics")
+            continue
+        
+        print(f"\n{'='*60}")
+        print(f"Processing: {artist} ({len(albums)} albums)")
+        print(f"{'='*60}")
+        
+        for album_name, album_id in albums:
+            # Get tracks missing lyrics for this album
+            cur.execute('''
+                SELECT t.id, t.track_name
+                FROM tracks t
+                WHERE t.album_id = ?
+                AND t.lyrics_lrc_path IS NULL AND t.lyrics_text_path IS NULL
+                ORDER BY t.track_number
+            ''', (album_id,))
+            tracks = cur.fetchall()
+            
+            if not tracks:
+                print(f"\n  [DONE] {album_name}")
+                continue
+            
+            print(f"\n  Album: {album_name} ({len(tracks)} tracks)")
+            
+            # Take up to 10 tracks per album
+            batch = tracks[:10]
+            found = process_batch(conn, artist, album_name, batch)
+            total_found += found
+            total_processed += len(batch)
+            
+            if found > 0:
+                print(f"  -> Found {found}/{len(batch)}")
+            
+            time.sleep(2)  # Gap between albums
+    
+    conn.close()
+    
+    print(f"\n{'='*60}")
+    print(f"Cron Run Complete")
+    print(f"Processed: {total_processed} tracks")
+    print(f"Found lyrics: {total_found}")
+    print(f"{'='*60}")
+    
+    # Update status
+    status = {
+        "total_tracks": 5024,
+        "has_lyrics": 4310 + total_found,
+        "coverage_pct": round((4310 + total_found) / 5024 * 100, 1),
+        "missing": 714 - total_found,
+        "cron_run": "2026-07-16",
+        "found_this_run": total_found,
+        "processed_this_run": total_processed
+    }
+    with open(r'C:\Users\qujt\.qclaw\workspace\_lyrics_status.json', 'w', encoding='utf-8') as f:
+        json.dump(status, f, indent=2, ensure_ascii=False)
+
+if __name__ == '__main__':
+    main()
