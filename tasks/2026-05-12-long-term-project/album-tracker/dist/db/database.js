@@ -53,7 +53,7 @@ exports.getTableCount = getTableCount;
 const sql_js_1 = __importDefault(require("sql.js"));
 const fs = __importStar(require("fs"));
 // 默认数据库路径（本地副本）
-const DEFAULT_DB_PATH = 'C:\\Users\\qujt\\.qclaw\\workspace\\_music_latest.db';
+const DEFAULT_DB_PATH = '/root/qclaw/tasks/2026-05-12-long-term-project/album-tracker/_music_latest.db';
 let db = null;
 /**
  * 初始化数据库连接
