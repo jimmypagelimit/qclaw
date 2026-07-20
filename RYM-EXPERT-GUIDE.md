@@ -123,7 +123,64 @@
 
 ---
 
-## 五、技术工具箱
+## 五、技术工具箱（更新于 2026-07-20）
+
+### 方案 A：Selenium + Firefox profile（推荐 🏆）
+
+```python
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+opts = Options()
+opts.add_argument("-profile")
+opts.add_argument("/root/.mozilla/firefox/3pdxe3s8.default-esr")
+driver = webdriver.Firefox(options=opts)
+driver.get("https://rateyourmusic.com/charts/top/album/all-time/")
+
+# 提取数据
+import re
+html = driver.page_source
+alts = re.findall(r'alt="([^"]* - [^"]*)"', html)
+ratings = re.findall(r'class="page_charts_section_charts_item_details_average_num"[^>]*>([^<]+)<', html)
+driver.quit()
+```
+
+- **速度**：秒级（无需等待 CF）
+- **依赖**：geckodriver v0.37.0 + selenium
+- **限制**：cf_clearance 有有效期；profile 不能同时被多个 Firefox 进程使用
+
+### 方案 B：computer_use + 真实 Firefox
+
+```python
+# 启动 Firefox
+DISPLAY=:0 firefox-esr --new-window https://rateyourmusic.com/
+
+# 用 computer_use capture 查看页面
+# 点击 CF 验证复选框
+# 通过后用键盘快捷键导航
+```
+
+- **速度**：慢（每次操作需截屏），适合"开门"场景
+- **依赖**：cua-driver 需要 DISPLAY=:0 + AT-SPI 无障碍服务
+
+### 方案 C：CloakBrowser（旧方案）
+
+```python
+from cloakbrowser import launch
+import time
+
+ctx = launch(headless=False)
+page = ctx.new_page()
+
+# 1. 首页等CF
+page.goto('https://rateyourmusic.com/')
+time.sleep(20)
+
+# 2. 之后顺序访问多个目标页
+```
+
+- **问题**：free tier（v146）已被 CF 识别，需要 Pro 版
+- **速度**：单张专辑 50-60 秒
 
 ### 启动脚本（单次 launch 访问多页）
 ```python

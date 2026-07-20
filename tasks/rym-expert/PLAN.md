@@ -14,6 +14,7 @@
 | `data/new-releases/*.json` | ✅ 已有 | 新发片监控 |
 | `data/collection/gap_*.json` | ✅ 已有 | 收藏对比分析 |
 | `rym_tool.py` | ✅ 可用 | CloakBrowser 单专辑抓取 |
+| `Selenium + Firefox profile` | ✅ 新增 2026-07-20 | Charts 秒级抓取，替代 CloakBrowser |
 | `docs/*.md` | ⚠️ 缺失 | 无 INDEX/KB 文档 |
 
 ## 核心增强项
@@ -62,12 +63,13 @@ python rym_cli.py fill-db --limit 50
 - `docs/CHARTS-KB.md` — 榜单汇总
 - `docs/NEW-RELEASES-KB.md` — 新发片动态
 
-## 技术约束
-1. **CloakBrowser 必须**：普通 Playwright 被 CF 识别
-2. **location.href 代替 page.goto**：直接跳转被 503
-3. **首页等待 20-30 秒**：CF challenge 完成需时间
-4. **GBK 编码问题**：控制台打印中文/emoji 会报错
-5. **headless=False**：无头模式被 CF 检测
+## 技术约束（更新于 2026-07-20）
+1. **Selenium + Firefox profile 优先**：复用已有 profile 的 CF cookie，无需每次过 CF
+2. **CloakBrowser 备选**：free tier 被 CF 识别，需要 Pro 版或 computer_use 开门
+3. **cf_clearance 绑定 TLS 指纹**：不能跨工具复用，只能用同一个浏览器上下文
+4. **Firefox profile 互斥**：Selenium 和 GUI Firefox 不能同时使用同一 profile
+5. **computer_use + DISPLAY=:0**：cua-driver 需要 DISPLAY 环境变量，需在 systemd 中配置
+6. **Selenium 支持 headless**：可无头运行，无需真实显示器
 
 ## 执行优先级
 1. **P0**：统一 CLI + 数据库回填（立即可用）

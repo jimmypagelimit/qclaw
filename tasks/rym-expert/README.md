@@ -1,6 +1,7 @@
 # RYM Expert 项目
 
 > 深化增强版 RYM 抓取能力
+> 最后更新：2026-07-20
 
 ## 项目结构
 
@@ -13,8 +14,9 @@ tasks/rym-expert/
 │   ├── charts-yearly/   # 年度榜单数据
 │   ├── collection/      # 收藏对比数据
 │   └── new-releases/    # 新发片数据
-└── docs/
-    └── RYM-KB.md        # RYM 知识库
+├── docs/
+│   └── RYM-KB.md        # RYM 知识库
+└── README.md
 ```
 
 ## 已实现功能
@@ -24,16 +26,22 @@ tasks/rym-expert/
 - 单张专辑搜索：`python rym_tool.py "专辑名" "艺人名"`
 - 输出：JSON + 截图
 
-### 2. 数据库回填 ⚡
+### 2. Charts 排行榜抓取 ✅（2026-07-20 新增 Selenium 方案）
+- **工具**：Selenium + geckodriver + Firefox profile
+- **数据**：专辑名、艺人、评分/5、评分人数
+- **速度**：秒级（比 CloakBrowser 快 10 倍）
+- **输出**：`/tmp/rym_charts.json`（结构化 JSON）
+
+### 3. 数据库回填 ⚡
 - 目标：`_music_latest.db`
 - 字段：`rym_rating`, `rym_ratings_count`, `rym_url`
 - 覆盖率：101/520（19.4%）
 
-### 3. 知识库生成 📚
+### 4. 知识库生成 📚
 - `docs/RYM-KB.md` — RYM 高分榜 Top 50
 - 自动统计覆盖率
 
-### 4. 数据积累 📊
+### 5. 数据积累 📊
 - 年度榜单：2020-2025（约 300+ 条）
 - 新发片监控
 - 收藏对比分析
@@ -53,19 +61,90 @@ tasks/rym-expert/
 - 收藏对比推荐
 - 缺失高分专辑推荐
 
-## 技术约束
+## CF 绕过方案（按推荐顺序）
 
-1. **CloakBrowser 必须**：普通 Playwright 被 CF 识别
-2. **headless=False**：无头模式被检测
-3. **首页等待 20-30 秒**：CF challenge 完成需时间
-4. **location.href 绕 CF**：直接 `page.goto()` 会被 503
-5. **GBK 编码问题**：控制台无法打印中文/emoji
+### 方案 A：Selenium + Firefox profile（推荐 ⭐）
+```python
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+opts = Options()
+opts.add_argument("-profile")
+opts.add_argument("/root/.mozilla/firefox/3pdxe3s8.default-esr")
+driver = webdriver.Firefox(options=opts)
+driver.get("https://rateyourmusic.com/charts/top/album/all-time/")
+# CF 已通过，直接提取数据
+```
+- **原理**：复用 Firefox 已有 profile（含 cf_clearance cookie）
+- **速度**：秒级，无需等待 CF 挑战
+- **依赖**：`geckodriver`（已安装 v0.37.0）+ `selenium`（已安装）
+- **限制**：cf_clearance 有有效期，过期后需重新用真实 Firefox 过 CF
+
+### 方案 B：computer_use + 真实 Firefox（备用）
+- **原理**：用 cua-driver 驱动桌面 Firefox 真实浏览器
+- **流程**：启动 Firefox → 过 CF 挑战 → 键盘快捷键导航 → 提取数据
+- **速度**：慢（每次操作需截屏解析），适合"开门"场景
+- **依赖**：cua-driver 需要 DISPLAY=:0 + AT-SPI 无障碍服务
+
+### 方案 C：CloakBrowser（旧方案，不推荐）
+- **原理**：stealth Chromium，绕过 headless 检测
+- **问题**：free tier（v146）已被 CF 识别，需要 Pro 版（$19/月）
+- **速度**：单张专辑 50-60 秒
+
+## 关键发现（2026-07-20）
+
+### cf_clearance 绑定浏览器指纹
+- Cloudflare 的 `cf_clearance` cookie **绑定到签发时的 TLS 指纹**
+- 导出 cookie 后用 curl/requests/curl_cffi 请求 → 403（指纹不匹配）
+- 即使 curl_cffi 模拟 Firefox 133/144/147 也不行
+- **唯一可行方案**：复用同一个浏览器上下文（profile）
+
+### Firefox 远程调试限制
+- `--remote-debugging-port 9222` 在 Firefox ESR 上不支持 Chrome 的 CDP `/json` 端点
+- Firefox 的远程调试协议与 Chrome 不同，需要特殊处理
+- 推荐使用 Selenium + geckodriver 代替
+
+### Selenium 环境搭建
+```bash
+# 安装 geckodriver（需匹配 Firefox 版本）
+# Firefox ESR 140 → geckodriver 0.37.0
+curl -L -o /tmp/gd.tar.gz "https://github.com/mozilla/geckodriver/releases/download/v0.37.0/geckodriver-v0.37.0-linux64.tar.gz"
+tar xzf /tmp/gd.tar.gz -C /usr/local/bin/
+
+# 安装 selenium
+pip3 install --break-system-packages --ignore-installed selenium
+
+# 使用已有 Firefox profile 启动
+python3 -c "
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+opts = Options()
+opts.add_argument('-profile')
+opts.add_argument('/root/.mozilla/firefox/3pdxe3s8.default-esr')
+driver = webdriver.Firefox(options=opts)
+driver.get('https://rateyourmusic.com/')
+print(driver.title)  # 应显示 Welcome! - Rate Your Music
+driver.quit()
+"
+```
+
+## 技术约束（更新于 2026-07-20）
+
+1. ~~CloakBrowser 必须~~ → **Selenium + Firefox profile 更优**
+2. ~~headless=False~~ → **Selenium 支持 headless 模式**
+3. ~~首页等待 20-30 秒~~ → **复用 profile 无需等待 CF**
+4. **cf_clearance 有有效期**：过期后需重新用真实 Firefox 过 CF
+5. **Firefox profile 不能同时被多个进程使用**：Selenium 和 GUI Firefox 不能同时开
+6. **cua-driver 需要 DISPLAY=:0**：在 systemd 服务中需配置 Environment
 
 ## 快速开始
 
 ```bash
-# 搜索专辑
+# 搜索专辑（CloakBrowser）
 python rym_tool.py "Twin Fantasy" "Car Seat Headrest"
+
+# 抓取 Charts（Selenium，推荐）
+python rym_cli.py charts
 
 # 回填数据库（前50张）
 python rym_db_bridge.py --limit 50
@@ -78,3 +157,4 @@ python rym_kb_builder.py
 
 - [TOOLS.md](../../TOOLS.md) — 技术细节
 - [PLAN.md](PLAN.md) — 深化计划
+- [RYM-EXPERT-GUIDE.md](../../RYM-EXPERT-GUIDE.md) — 能力图谱
