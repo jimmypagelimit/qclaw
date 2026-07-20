@@ -280,28 +280,56 @@ C:\Python311\python.exe rym_tool.py "专辑名" "艺人名"
 - **网址**：https://www.metal-archives.com
 - **注意**：需 opencli + CDP 绕过 Cloudflare
 
-## 视频背景图生成脚本
+## 视频背景图生成脚本（V项目）
 
-### ✅ 敲定版参数（CD风格，2026-05-23）
+### ✅ 敲定版参数（V3最终版，2026-06-27）
 
-- **脚本**: `_gen_batch_bg.py`（`video_thumbs/` 目录下）
-- **输入**: `video_thumbs/20th_century_indie/`（20张封面）
-- **输出**: `video_thumbs/20th_century_indie_bg/`（PNG，1920×1080）
-- **尺寸**: 1920×1080（16:9）
-- **构图**: 封面放左侧 180px，居中；封面尺寸 550px；右侧留文字区
-- **模糊**: GaussianBlur radius=30
-- **暗角**: vignette，强度 0.75
-- **CD外圈**: 深色边框(16px) + 细线(#3C3240)
-- **CD内圈**: 圆环(inner_r=55, hole_r=14)
-- **镜面高光**: 左上角弧形白带
-- **右侧渐暗**: fade_x=封面右边缘+80px
-- **右上装饰**: 三颗金色小圆点
-- **封面边框**: 金色分隔线
+| 参数 | 值 |
+|------|-----|
+| 脚本 | `tasks/v-project/_gen_batch_bg_v3.py`（V2底子+动态配色） |
+| 输入 | `tasks/v-project/cover_sources/input/` |
+| 输出 | `tasks/v-project/output/bg/`（PNG，1920×1080） |
+| 尺寸 | 1920×1080（16:9） |
+| 构图 | 封面左侧 180px，居中；封面尺寸 550px；右侧留文字区 |
+| 模糊 | GaussianBlur radius=30 |
+| 暗角 | vignette 强度 0.75 |
+| CD外圈 | 深色边框(16px) + 细线(#3C3240) |
+| CD内圈 | 圆环(inner_r=55, hole_r=14) |
+| 镜面高光 | 左上角弧形白带 |
+| 右侧渐暗 | fade_x=封面右边缘+80px |
+| 右上装饰 | 三颗圆点（从封面提取主色，非固定金色） |
+| 封面边框 | 金色分隔线（从封面提取主色） |
 
-### 快速生成命令
+### Linux 快速生成
 ```bash
-C:\Python311\python.exe _gen_batch_bg.py
+cd /root/qclaw/tasks/v-project
+python3 _gen_batch_bg_v3.py --input cover_sources/input/ --output output/bg/
+# 单张测试: python3 _gen_batch_bg_v3.py --test 封面路径.jpg
 ```
+
+## RYM 抓取工具（2026-07-20 定稿）
+
+### 核心策略：computer_use 开门 → Selenium 抓数据
+
+CloakBrowser 已废弃，不再使用。
+
+### ✅ 敲定方案
+
+| 步骤 | 工具 | 用途 | 速度 |
+|------|------|------|------|
+| 1. 开门 | computer_use + 真实 Firefox | 通过 CF 验证，生成 cf_clearance | 慢但只做一次 |
+| 2. 抓取 | Selenium + Firefox profile | 复用 cookie，快速提取数据 | 秒级 |
+
+### Selenium 快速抓取
+
+```bash
+python tasks/rym-expert/_rym_charts_selenium.py
+```
+
+### 环境依赖
+- geckodriver v0.37.0（`/usr/local/bin/geckodriver`）
+- selenium（`pip install selenium`）
+- Firefox profile: `3pdxe3s8.default-esr`
 
 ---
 

@@ -63,13 +63,13 @@ python rym_cli.py fill-db --limit 50
 - `docs/CHARTS-KB.md` — 榜单汇总
 - `docs/NEW-RELEASES-KB.md` — 新发片动态
 
-## 技术约束（更新于 2026-07-20）
-1. **Selenium + Firefox profile 优先**：复用已有 profile 的 CF cookie，无需每次过 CF
-2. **CloakBrowser 备选**：free tier 被 CF 识别，需要 Pro 版或 computer_use 开门
-3. **cf_clearance 绑定 TLS 指纹**：不能跨工具复用，只能用同一个浏览器上下文
-4. **Firefox profile 互斥**：Selenium 和 GUI Firefox 不能同时使用同一 profile
-5. **computer_use + DISPLAY=:0**：cua-driver 需要 DISPLAY 环境变量，需在 systemd 中配置
-6. **Selenium 支持 headless**：可无头运行，无需真实显示器
+## 技术约束（2026-07-20 定稿）
+1. **computer_use 开门，Selenium 抓数据**：computer_use 驱动真实 Firefox 过 CF；Selenium 复用 profile 快速抓取
+2. **cf_clearance 绑定 TLS 指纹**：不能跨工具复用，只能用同一个浏览器上下文
+3. **Firefox profile 互斥**：Selenium 和 GUI Firefox 不能同时使用同一 profile
+4. **Selenium 支持 headless**：可无头运行，无需真实显示器
+5. **cua-driver 需要 DISPLAY=:0**：在 systemd 服务中需配置 Environment
+6. **CloakBrowser 已废弃**：free tier 被 CF 识别，不再使用
 
 ## 执行优先级
 1. **P0**：统一 CLI + 数据库回填（立即可用）

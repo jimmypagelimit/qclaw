@@ -61,9 +61,29 @@ tasks/rym-expert/
 - 收藏对比推荐
 - 缺失高分专辑推荐
 
-## CF 绕过方案（按推荐顺序）
+## CF 绕过方案（2026-07-20 定稿）
 
-### 方案 A：Selenium + Firefox profile（推荐 ⭐）
+### 核心流程：computer_use 开门 → Selenium 抓数据
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  步骤 1: computer_use + 真实 Firefox                    │
+│  → 启动 Firefox，导航到 RYM                              │
+│  → 点击 CF 验证复选框（真人操作，CF 不拦）                │
+│  → 关闭 Firefox（cf_clearance 已写入 profile）           │
+│  └────────── 这一步只需几秒，偶尔执行一次 ──────────────┘
+│                              ↓
+│  ┌─────────────────────────────────────────────────────┐ │
+│  │ 步骤 2: Selenium + Firefox profile（复用 cookie）   │ │
+│  │ → 启动 headless Firefox，用已有 profile              │ │
+│  │ → 直接访问任意 RYM 页面（CF 已通过）                  │ │
+│  │ → 提取数据，关闭浏览器                               │ │
+│  │ └────────── 这一步秒级完成，可反复执行 ────────────┘ │
+└─────────────────────────────────────────────────────────┘
+```
+
+### 方案 A：Selenium + Firefox profile（主力 ⭐）
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -75,21 +95,22 @@ driver = webdriver.Firefox(options=opts)
 driver.get("https://rateyourmusic.com/charts/top/album/all-time/")
 # CF 已通过，直接提取数据
 ```
-- **原理**：复用 Firefox 已有 profile（含 cf_clearance cookie）
+- **原理**：复用 Firefox profile 中的 cf_clearance cookie
 - **速度**：秒级，无需等待 CF 挑战
-- **依赖**：`geckodriver`（已安装 v0.37.0）+ `selenium`（已安装）
-- **限制**：cf_clearance 有有效期，过期后需重新用真实 Firefox 过 CF
+- **依赖**：`geckodriver`（v0.37.0）+ `selenium`
+- **限制**：cf_clearance 有有效期（通常几小时到几天），过期后用 computer_use 重新开门
 
-### 方案 B：computer_use + 真实 Firefox（备用）
-- **原理**：用 cua-driver 驱动桌面 Firefox 真实浏览器
-- **流程**：启动 Firefox → 过 CF 挑战 → 键盘快捷键导航 → 提取数据
-- **速度**：慢（每次操作需截屏解析），适合"开门"场景
-- **依赖**：cua-driver 需要 DISPLAY=:0 + AT-SPI 无障碍服务
+### 方案 B：computer_use + 真实 Firefox（开门专用 🚪）
 
-### 方案 C：CloakBrowser（旧方案，不推荐）
-- **原理**：stealth Chromium，绕过 headless 检测
-- **问题**：free tier（v146）已被 CF 识别，需要 Pro 版（$19/月）
-- **速度**：单张专辑 50-60 秒
+- **用途**：用来通过 CF 验证，生成有效的 cf_clearance cookie
+- **流程**：启动 Firefox → 访问 RYM → 点击 CF 复选框 → 关闭
+- **速度**：慢但只做一次，后续用 Selenium 快速抓取
+- **cua-driver 配置**：需在 systemd 服务中设置 DISPLAY=:0
+
+### ~~方案 C：CloakBrowser（已废弃）~~
+
+- ~~free tier 被 CF 识别，Pro 版 $19/月~~
+- ~~不再使用，所有需求由 computer_use + Selenium 替代~~
 
 ## 关键发现（2026-07-20）
 

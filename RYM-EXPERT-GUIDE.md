@@ -123,9 +123,17 @@
 
 ---
 
-## 五、技术工具箱（更新于 2026-07-20）
+## 五、技术工具箱（2026-07-20 定稿）
 
-### 方案 A：Selenium + Firefox profile（推荐 🏆）
+### 核心策略：computer_use 开门 → Selenium 抓数据
+
+```
+Step 1: computer_use 驱动真实 Firefox → 过 CF → 关闭
+                      ↓
+Step 2: Selenium + Firefox profile → 秒级抓取
+```
+
+### 方案 A：Selenium + Firefox profile（主力 🏆）
 
 ```python
 from selenium import webdriver
@@ -149,38 +157,26 @@ driver.quit()
 - **依赖**：geckodriver v0.37.0 + selenium
 - **限制**：cf_clearance 有有效期；profile 不能同时被多个 Firefox 进程使用
 
-### 方案 B：computer_use + 真实 Firefox
+### 方案 B：computer_use + 真实 Firefox（开门专用 🚪）
 
 ```python
-# 启动 Firefox
+# 启动 Firefox（带远程调试端口）
 DISPLAY=:0 firefox-esr --new-window https://rateyourmusic.com/
 
 # 用 computer_use capture 查看页面
-# 点击 CF 验证复选框
-# 通过后用键盘快捷键导航
+# 找到 CF 验证复选框 → 点击
+# 验证通过后关闭 Firefox
+# cf_clearance 已写入 profile，后续可用 Selenium 复用
 ```
 
-- **速度**：慢（每次操作需截屏），适合"开门"场景
-- **依赖**：cua-driver 需要 DISPLAY=:0 + AT-SPI 无障碍服务
+- **用途**：用来通过 CF 验证，生成有效的 cf_clearance cookie
+- **速度**：慢但只做一次，后续用 Selenium 快速抓取
+- **cua-driver 配置**：需在 systemd 服务中设置 DISPLAY=:0
 
-### 方案 C：CloakBrowser（旧方案）
+### ~~方案 C：CloakBrowser（已废弃）~~
 
-```python
-from cloakbrowser import launch
-import time
-
-ctx = launch(headless=False)
-page = ctx.new_page()
-
-# 1. 首页等CF
-page.goto('https://rateyourmusic.com/')
-time.sleep(20)
-
-# 2. 之后顺序访问多个目标页
-```
-
-- **问题**：free tier（v146）已被 CF 识别，需要 Pro 版
-- **速度**：单张专辑 50-60 秒
+- ~~free tier 被 CF 识别，Pro 版 $19/月~~
+- ~~不再使用，所有需求由 computer_use + Selenium 替代~~
 
 ### 启动脚本（单次 launch 访问多页）
 ```python
