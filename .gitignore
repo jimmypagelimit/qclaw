@@ -10,9 +10,7 @@ task-artifact_*.md
 task-summary_*.md
 
 # Album cover images (backup on NAS)
-tasks/2026-05-12-long-term-project/album-tracker/public/covers/artist-*.jpg
 tasks/2026-05-12-long-term-project/album-tracker/public/artists/
-tasks/2026-05-12-long-term-project/album-tracker/public/covers/*.jpg
 # Deleted/duplicate cover files (not needed, saved on NAS)
 tasks/2026-05-12-long-term-project/album-tracker/public/covers/416-Ja_Ja_Tao-*
 tasks/2026-05-12-long-term-project/album-tracker/public/covers/526-Su_Zixu_&_The_Paramecia-*
