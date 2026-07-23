@@ -100,7 +100,7 @@ def make_vignette(w, h, strength=VIGNETTE_STRENGTH):
         r = min(w, h) * 0.72
         d = np.sqrt((x - cx)**2 + (y - cy)**2) / r
         d = np.clip(d, 0, 1)
-        vignette = (1 - strength * (1 - d)) * 255
+        vignette = (1 - strength * d) * 255
         return Image.fromarray(vignette.astype(np.uint8), 'L')
     else:
         img = Image.new('L', (w, h), 255)
@@ -111,7 +111,7 @@ def make_vignette(w, h, strength=VIGNETTE_STRENGTH):
             for x in range(w):
                 d = math.sqrt((x - cx)**2 + (y - cy)**2) / r
                 d = min(1.0, max(0.0, d))
-                v = int(255 * (1 - strength * (1 - d)))
+                v = int(255 * (1 - strength * d))
                 draw.point((x, y), v)
         return img
 
@@ -183,9 +183,22 @@ def process_v3(cover_path, output_path):
     bg = cover.copy().resize((W, H))
     bg = bg.filter(ImageFilter.GaussianBlur(30))
 
-    # 2. 正圆暗角（V2原版，不动）
+    # 2. 正圆暗角（V2原版，修复：乘法混合而非paste）
     vig = make_vignette(W, H, VIGNETTE_STRENGTH)
-    bg.paste(vig, (0, 0), vig)
+    if HAS_NUMPY:
+        bg_arr = np.array(bg, dtype=np.float32)
+        vig_arr = np.array(vig, dtype=np.float32) / 255.0
+        for c in range(3):
+            bg_arr[:, :, c] *= vig_arr
+        bg = Image.fromarray(np.clip(bg_arr, 0, 255).astype(np.uint8), 'RGB')
+    else:
+        for y in range(H):
+            for x in range(W):
+                v = vig.getpixel((x, y)) / 255.0
+                r, g, b = bg.getpixel((x, y))
+                bg.putpixel((x, y), (
+                    int(r * v), int(g * v), int(b * v)
+                ))
 
     # 3. 右侧渐暗（V2原版，不动）
     rf = make_right_fade(W, H, COVER_X + COVER_SIZE + 50, RIGHT_FADE_END)
@@ -228,13 +241,11 @@ def process_v3(cover_path, output_path):
                       W - dx + DOT_RADIUS, DOT_TOP + DOT_RADIUS * 2],
                      fill=dot_color)
 
-    # 6. 封面左上角镜面高光（V2原版）
+    # 6. 封面左上角镜面高光（V2原版，修复：不破坏全局alpha）
     gloss = make_cover_gloss(COVER_X, cover_y, COVER_SIZE)
-    bg.putalpha(gloss)
-    bg = bg.convert('RGBA')
     gloss_rgba = Image.new('RGBA', (W, H), (255, 255, 255, 0))
     gloss_rgba.putalpha(gloss)
-    bg = Image.alpha_composite(bg, gloss_rgba).convert('RGB')
+    bg = Image.alpha_composite(bg.convert('RGBA'), gloss_rgba).convert('RGB')
 
     # 7. 粘贴封面
     bg.paste(cover_resized, (COVER_X, cover_y))
