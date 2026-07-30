@@ -218,17 +218,20 @@ app.get('/api/albums/:id/lyrics', (req, res) => {
         const dbTracks = (0, database_1.query)('SELECT track_number, track_name, lyrics_text_path, lyrics_lrc_path FROM tracks WHERE album_id = ? ORDER BY track_number', [Number(req.params.id)]);
         // 检查是否已有路径（说明该专辑已处理过）
         const hasPaths = dbTracks.some(t => t.lyrics_text_path || t.lyrics_lrc_path);
+        const lyricsRoot = path_1.default.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
         if (hasPaths) {
             // 直接使用数据库路径读取文件
             const lyricsTracks = dbTracks.map(t => {
                 let text = null;
                 let lrc = null;
                 try {
-                    if (t.lyrics_text_path && fs_1.default.existsSync(t.lyrics_text_path)) {
-                        text = fs_1.default.readFileSync(t.lyrics_text_path, 'utf-8').trim();
+                    const txtFullPath = t.lyrics_text_path ? path_1.default.join(lyricsRoot, t.lyrics_text_path) : null;
+                    const lrcFullPath = t.lyrics_lrc_path ? path_1.default.join(lyricsRoot, t.lyrics_lrc_path) : null;
+                    if (txtFullPath && fs_1.default.existsSync(txtFullPath)) {
+                        text = fs_1.default.readFileSync(txtFullPath, 'utf-8').trim();
                     }
-                    if (t.lyrics_lrc_path && fs_1.default.existsSync(t.lyrics_lrc_path)) {
-                        lrc = fs_1.default.readFileSync(t.lyrics_lrc_path, 'utf-8').trim();
+                    if (lrcFullPath && fs_1.default.existsSync(lrcFullPath)) {
+                        lrc = fs_1.default.readFileSync(lrcFullPath, 'utf-8').trim();
                     }
                 }
                 catch (e) {
@@ -245,7 +248,6 @@ app.get('/api/albums/:id/lyrics', (req, res) => {
             return;
         }
         // 2. 无数据库路径，fallback 到目录扫描（未处理的专辑）
-        const lyricsRoot = path_1.default.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
         if (!fs_1.default.existsSync(lyricsRoot)) {
             res.json({ tracks: [] });
             return;
