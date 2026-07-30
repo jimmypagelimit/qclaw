@@ -1,0 +1,7 @@
+风格：旋律说唱MelodicRap
+BPM：110
+KEY：
+-音名：C
+-调号：♯
+-调式：Major
+ Beat Maker : ibogey
