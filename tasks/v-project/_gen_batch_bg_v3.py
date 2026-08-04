@@ -1,13 +1,21 @@
 """
-_gen_batch_bg_v3.py — V3最终版
+_gen_batch_bg_v3.py — V4 精致版
 
-V2底子（完全不动）：
-- 正圆暗角（strength=0.75）
-- 右侧渐暗
+V3底子（完全保留）：
+- 椭圆暗角（平滑过渡）
+- 右侧缓慢渐暗
 - 封面左上角镜面高光
 - CD装饰（深色边框+中心孔）
+- 动态配色（封面边框从封面提取主色）
+- 封面阴影（增加立体感）
+- 轻微胶片颗粒（艺术化纹理）
 
-只改一个：动态配色（右上角圆点+封面边框从封面提取主色）
+V4新增：
+- 去掉右上角圆点
+- 随机模糊半径（35~50，每张不同）
+- 随机色温偏移（冷暖倾向，每张不同）
+- 随机暗角强度、颗粒强度、阴影强度
+- 每张图独一无二的微妙质感
 
 用法:
     python _gen_batch_bg_v3.py --test 封面路径
@@ -44,8 +52,10 @@ CD_HOLE_R = 14
 DOT_RADIUS = 6
 DOT_GAP = 30
 DOT_TOP = 30
-VIGNETTE_STRENGTH = 0.75
-RIGHT_FADE_END = COVER_X + COVER_SIZE + 80
+VIGNETTE_STRENGTH = 0.65
+# 渐暗：从封面右侧开始，缓慢延伸到画面边缘（无硬边界）
+RIGHT_FADE_START = COVER_X + COVER_SIZE  # 封面右边缘开始
+RIGHT_FADE_END = W - 100  # 一直延伸到靠近右边缘
 
 
 # ═══════════════════════════════════════════════════
@@ -93,43 +103,52 @@ def extract_dominant_color(cover_img):
 
 
 def make_vignette(w, h, strength=VIGNETTE_STRENGTH):
-    """正圆暗角（V2原版）"""
+    """椭圆形渐变暗角 — 自然过渡，无硬边界"""
     if HAS_NUMPY:
         y, x = np.ogrid[:h, :w]
         cx, cy = w / 2, h / 2
-        r = min(w, h) * 0.72
-        d = np.sqrt((x - cx)**2 + (y - cy)**2) / r
+        # 椭圆半径：水平宽、垂直窄，让暗角更自然
+        rx = w * 0.55
+        ry = h * 0.65
+        d = np.sqrt(((x - cx) / rx)**2 + ((y - cy) / ry)**2)
         d = np.clip(d, 0, 1)
+        # 平滑曲线 (power curve) 让过渡更柔和
+        d = d ** 1.5
         vignette = (1 - strength * d) * 255
         return Image.fromarray(vignette.astype(np.uint8), 'L')
     else:
         img = Image.new('L', (w, h), 255)
         draw = ImageDraw.Draw(img)
         cx, cy = w // 2, h // 2
-        r = min(w, h) * 0.72
+        rx, ry = w * 0.55, h * 0.65
         for y in range(h):
             for x in range(w):
-                d = math.sqrt((x - cx)**2 + (y - cy)**2) / r
+                d = math.sqrt(((x - cx) / rx)**2 + ((y - cy) / ry)**2)
                 d = min(1.0, max(0.0, d))
+                d = d ** 1.5
                 v = int(255 * (1 - strength * d))
                 draw.point((x, y), v)
         return img
 
 
 def make_right_fade(w, h, fade_start, fade_end):
-    """右侧渐暗（V2原版）"""
+    """右侧渐暗 — 缓慢过渡，无硬边界"""
     fade = Image.new('L', (w, h), 0)
     if HAS_NUMPY:
         x = np.arange(w)
+        # 使用平滑曲线: 0→1 在 fade_start 到 fade_end 之间
         alpha = np.clip((x - fade_start) / (fade_end - fade_start), 0, 1)
-        alpha = alpha * 200
+        # 平滑曲线，让暗部过渡更自然
+        alpha = alpha ** 1.2
+        alpha = alpha * 180  # 最大暗度降低，避免太黑
         fade_arr = np.tile(alpha, (h, 1)).astype(np.uint8)
         fade = Image.fromarray(fade_arr, 'L')
     else:
         draw = ImageDraw.Draw(fade)
         for x in range(w):
             t = min(1.0, max(0.0, (x - fade_start) / (fade_end - fade_start)))
-            v = int(t * 200)
+            t = t ** 1.2
+            v = int(t * 180)
             for y in range(h):
                 fade.putpixel((x, y), v)
     return fade
@@ -176,15 +195,32 @@ def process_v3(cover_path, output_path):
 
     # 动态配色：从封面提取主色
     dom_color = extract_dominant_color(cover)
-    dot_color = dom_color
     border_color = dom_color
 
-    # 1. 模糊背景（V2原版，不动）
-    bg = cover.copy().resize((W, H))
-    bg = bg.filter(ImageFilter.GaussianBlur(30))
+    # 随机种子：每张图引入微小随机差异，体现设计用心
+    rand_seed = hash(cover_path) % 10000
+    random.seed(rand_seed)
 
-    # 2. 正圆暗角（V2原版，修复：乘法混合而非paste）
-    vig = make_vignette(W, H, VIGNETTE_STRENGTH)
+    # 1. 模糊背景（随机半径 35~50，每张图不同）
+    blur_r = random.randint(35, 50)
+    bg = cover.copy().resize((W, H))
+    bg = bg.filter(ImageFilter.GaussianBlur(blur_r))
+
+    # 2. 随机轻微色温偏移（冷暖倾向）
+    if HAS_NUMPY:
+        warm_shift = random.uniform(-8, 8)  # -8冷 +8暖
+        bg_arr = np.array(bg, dtype=np.float32)
+        if warm_shift > 0:
+            bg_arr[:, :, 0] = np.clip(bg_arr[:, :, 0] + warm_shift * 0.5, 0, 255)  # R+
+            bg_arr[:, :, 2] = np.clip(bg_arr[:, :, 2] - warm_shift * 0.3, 0, 255)  # B-
+        else:
+            bg_arr[:, :, 0] = np.clip(bg_arr[:, :, 0] + warm_shift * 0.3, 0, 255)  # R-
+            bg_arr[:, :, 2] = np.clip(bg_arr[:, :, 2] - warm_shift * 0.5, 0, 255)  # B+
+        bg = Image.fromarray(bg_arr.astype(np.uint8), 'RGB')
+
+    # 3. 暗角（随机强度轻微浮动）
+    vig_strength = VIGNETTE_STRENGTH + random.uniform(-0.05, 0.05)
+    vig = make_vignette(W, H, vig_strength)
     if HAS_NUMPY:
         bg_arr = np.array(bg, dtype=np.float32)
         vig_arr = np.array(vig, dtype=np.float32) / 255.0
@@ -200,8 +236,8 @@ def process_v3(cover_path, output_path):
                     int(r * v), int(g * v), int(b * v)
                 ))
 
-    # 3. 右侧渐暗（V2原版，不动）
-    rf = make_right_fade(W, H, COVER_X + COVER_SIZE + 50, RIGHT_FADE_END)
+    # 3. 右侧渐暗 — 缓慢过渡，无硬边界
+    rf = make_right_fade(W, H, RIGHT_FADE_START, RIGHT_FADE_END)
     rf_pixels = rf.load()
     if HAS_NUMPY:
         bg_arr = np.array(bg, dtype=np.float32)
@@ -222,7 +258,27 @@ def process_v3(cover_path, output_path):
                     int(b * (1 - alpha * 0.6))
                 ))
 
-    # 4. 绘制CD装饰（V2原版）
+    # 4. 轻微胶片颗粒（随机强度 2~6，每张图不同）
+    if HAS_NUMPY:
+        grain_std = random.uniform(2, 6)
+        grain = np.random.normal(0, grain_std, (H, W, 3)).astype(np.int16)
+        bg_arr = np.clip(np.array(bg, dtype=np.int16) + grain, 0, 255).astype(np.uint8)
+        bg = Image.fromarray(bg_arr, 'RGB')
+
+    # 5. 封面阴影（随机强度，每张图不同）
+    shadow_intensity = random.uniform(0.25, 0.45)
+    shadow_full = Image.new('L', (W, H), 0)
+    sd = ImageDraw.Draw(shadow_full)
+    sd.ellipse([COVER_X - 12, cover_y - 2,
+                COVER_X + COVER_SIZE + 12, cover_y + COVER_SIZE + 2], fill=100)
+    shadow_full = shadow_full.filter(ImageFilter.GaussianBlur(18))
+    bg_arr = np.array(bg, dtype=np.float32)
+    shadow_arr = np.array(shadow_full, dtype=np.float32) / 255.0
+    for c in range(3):
+        bg_arr[:, :, c] *= (1 - shadow_arr * shadow_intensity)
+    bg = Image.fromarray(np.clip(bg_arr, 0, 255).astype(np.uint8), 'RGB')
+
+    # 6. 绘制CD装饰（V2原版）
     draw = ImageDraw.Draw(bg)
     draw.ellipse([cd_cx - cd_outer_r, cd_cy - cd_outer_r,
                   cd_cx + cd_outer_r, cd_cy + cd_outer_r],
@@ -233,13 +289,6 @@ def process_v3(cover_path, output_path):
     draw.ellipse([cd_cx - CD_HOLE_R, cd_cy - CD_HOLE_R,
                   cd_cx + CD_HOLE_R, cd_cy + CD_HOLE_R],
                  fill=(30, 30, 35), outline=CD_LINE_COLOR, width=1)
-
-    # 5. 右上角装饰圆点（动态配色，非固定金色）
-    for i in range(3):
-        dx = DOT_TOP + i * (DOT_RADIUS * 2 + DOT_GAP)
-        draw.ellipse([W - dx - DOT_RADIUS, DOT_TOP,
-                      W - dx + DOT_RADIUS, DOT_TOP + DOT_RADIUS * 2],
-                     fill=dot_color)
 
     # 6. 封面左上角镜面高光（V2原版，修复：不破坏全局alpha）
     gloss = make_cover_gloss(COVER_X, cover_y, COVER_SIZE)
