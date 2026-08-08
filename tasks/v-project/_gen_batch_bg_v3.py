@@ -322,7 +322,7 @@ def main():
         if not os.path.exists(args.test):
             print(f'[ERROR] 文件不存在: {args.test}')
             sys.exit(1)
-        out = args.test.replace('.jpg', '_v3b.png').replace('.jpeg', '_v3b.png')
+        out = args.test.rsplit('.', 1)[0] + '_v3b.png'
         print(f'[TEST] {args.test}')
         ok = process_v3(args.test, out)
         if ok:
