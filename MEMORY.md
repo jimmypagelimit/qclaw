@@ -100,3 +100,40 @@
 - 删除是自己的锅，要承认。不甩锅给用户的指令格式
 - 任何数据操作（增删改）必须先确认用户意图
 - `trash` > `rm`（可恢复胜过永远消失）
+
+## vivo Xplay6 手机探索（2026-08-13）
+
+### 手机信息
+- 型号：vivo Xplay6 (PD1610)，Android 7.1.1 (API 25)，6GB RAM
+- 序列号：868b722f，USB 连接，屏幕 1080x1920
+- 存储：/data 52G 总，23G 已用，29G 可用 (44%)
+- 无 root（su 不可用）
+
+### 已完成
+- **存储优化**：清理缓存 ~130M（相册缓存38M、vivo.hybrid安装包80M、系统缓存3.4M）
+- **存储分析**：Music 16.2G (95%)，相机 431M，snaptube 194M；flac 222个、wav 42个、m4a 123个
+- **MTP 挂载**：`/run/user/0/gvfs/mtp:host=vivo_vivo_Android_Phone_868b722f/内部存储设备/`
+- **Android 开发环境**：JDK 21 + Android SDK (/opt/android-sdk) + build-tools 30.0.3 + platform-25
+- **HelloApp 测试**：成功构建、签名、安装、启动（修复了 R.java 生成、View→TextView 转型、dex 路径）
+- **vivo 安装机制**：首次 adb install 会弹确认框需输密码（rc:-200），后续安装只需点"安装"；`install_broadcast_control=0` 可关闭 vivo 安装广播控制
+- **锁屏禁用**：`settings put secure lockscreen.disabled 1`，需重启生效，屏幕超时 30 分钟
+- **music-dl**：已在 8080 端口启动 web 模式，手机可访问
+
+### album-tracker 安卓化评估
+- **结论**：必要性不大，Web 版已够用（手机浏览器可访问电脑 3456 端口）
+- **技术可行**但数据同步是最大障碍（单机应用变多端）
+- **更实际的利用**：手机直接访问 music-dl (8080) + adb 推送音乐
+
+### Apple Music ALAC 下载器探索（搁置）
+- **项目**：https://github.com/alacleaker/apple-music-alac-downloader
+- **原理**：Frida hook Apple Music Android 版，拦截 FairPlay DRM 解密，提取 ALAC 无损音频
+- **需要**：无 Google APIs 的 Android 模拟器 + Apple Music 订阅 + Frida
+- **已安装**：Go 1.24.4、Frida 17.17.0、Android 模拟器 37.2.4、API 30 x86_64 系统镜像
+- **障碍**：
+  1. Apple Music 6.5.1 只有 ARM 库（armeabi-v7a），x86_64 模拟器无 ARM 翻译
+  2. 原始版本 3.6.0 beta 4 无法从网上下载（APKMirror 有反爬）
+  3. vivo Xplay6 无 root，无法运行 Frida server
+  4. agent.js hook 的函数名（`SVFootHillSessionCtrl::getPersistentKey`）在 6.5.1 中不存在
+- **关键函数**（6.5.1 中存在）：`SVFootHillSessionCtrl::instance`、`decryptContext`、`NfcRKVnxuKZy04KWbdFu71Ou`
+- **搁置原因**：ARM 设备需 root + x86 模拟器无法运行 ARM 应用，两个条件都不满足
+- **重启条件**：找到有 root 的 ARM 设备，或找到可下载的 3.6.0 beta 4 APK
