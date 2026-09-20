@@ -220,7 +220,7 @@ app.get('/api/albums/:id/lyrics', (req, res) => {
         const hasPaths = dbTracks.some(t => t.lyrics_text_path || t.lyrics_lrc_path);
         const lyricsRoot = path_1.default.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
         if (hasPaths) {
-            // 直接使用数据库路径读取文件
+            // 直接使用数据库路径读取文件（相对 lyricsRoot）
             const lyricsTracks = dbTracks.map(t => {
                 let text = null;
                 let lrc = null;

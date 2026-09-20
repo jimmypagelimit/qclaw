@@ -280,17 +280,21 @@ app.get('/api/albums/:id/lyrics', (req, res) => {
     // 检查是否已有路径（说明该专辑已处理过）
     const hasPaths = dbTracks.some(t => t.lyrics_text_path || t.lyrics_lrc_path);
 
+    const lyricsRoot = path.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
+
     if (hasPaths) {
-      // 直接使用数据库路径读取文件
+      // 直接使用数据库路径读取文件（相对 lyricsRoot）
       const lyricsTracks = dbTracks.map(t => {
         let text = null;
         let lrc = null;
         try {
-          if (t.lyrics_text_path && fs.existsSync(t.lyrics_text_path)) {
-            text = fs.readFileSync(t.lyrics_text_path, 'utf-8').trim();
+          const txtFullPath = t.lyrics_text_path ? path.join(lyricsRoot, t.lyrics_text_path) : null;
+          const lrcFullPath = t.lyrics_lrc_path ? path.join(lyricsRoot, t.lyrics_lrc_path) : null;
+          if (txtFullPath && fs.existsSync(txtFullPath)) {
+            text = fs.readFileSync(txtFullPath, 'utf-8').trim();
           }
-          if (t.lyrics_lrc_path && fs.existsSync(t.lyrics_lrc_path)) {
-            lrc = fs.readFileSync(t.lyrics_lrc_path, 'utf-8').trim();
+          if (lrcFullPath && fs.existsSync(lrcFullPath)) {
+            lrc = fs.readFileSync(lrcFullPath, 'utf-8').trim();
           }
         } catch (e) {
           console.error('Error reading lyrics file:', e);
@@ -307,7 +311,6 @@ app.get('/api/albums/:id/lyrics', (req, res) => {
     }
 
     // 2. 无数据库路径，fallback 到目录扫描（未处理的专辑）
-    const lyricsRoot = path.join(__dirname, '..', '..', '..', 'lyrics-expert', 'lyrics');
     if (!fs.existsSync(lyricsRoot)) { res.json({ tracks: [] }); return; }
 
     const aName = album.artist.toLowerCase();
