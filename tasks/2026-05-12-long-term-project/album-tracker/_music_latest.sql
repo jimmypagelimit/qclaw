@@ -4864,7 +4864,7 @@ INSERT INTO "albums" VALUES(658,'lucy miró al mundo y notó que está girando',
 INSERT INTO "albums" VALUES(659,'吹万','Chui Wan','CN',NULL,'Psychedelic Rock',NULL,NULL,0,NULL,NULL,'/covers/659-Chui Wan-吹万.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2015,'Psychedelic Rock / Krautrock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(660,'Hex','Bark Psychosis','GB',NULL,'Post-Rock',NULL,NULL,0,NULL,NULL,'/covers/660-Bark Psychosis-Hex.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1994,'Post-Rock / Space Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(661,'Marrow Deep','Mastodon','US',NULL,'Progressive Metal',NULL,NULL,0,NULL,NULL,'/covers/661-Mastodon-Marrow Deep.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Progressive Metal / Stoner Metal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
-INSERT INTO "albums" VALUES(662,'Who Loves the Sun','Chat Pile','US',NULL,'Noise Rock',NULL,NULL,0,NULL,NULL,'/covers/662-Chat Pile-Who Loves the Sun.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Noise Rock / Sludge Metal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(662,'Who Loves the Sun','Chat Pile','US',NULL,'Noise Rock',NULL,NULL,0,'2026-09-21',NULL,'/covers/662-Chat Pile-Who Loves the Sun.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Noise Rock / Sludge Metal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(663,'火烧云','谢天笑','CN',NULL,'Rock',NULL,NULL,0,NULL,NULL,'/covers/663-谢天笑-火烧云.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Rock / Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(664,'Californication','Red Hot Chili Peppers','US',NULL,'Alternative Rock',NULL,NULL,0,NULL,NULL,'/covers/664-Red Hot Chili Peppers-Californication.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1999,'Alternative Rock / Funk Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(665,'星星、荆棘和鸟群','莫西子诗','CN',NULL,'Mandopop',NULL,'莫西子诗2026年专辑，爱章鱼iJoy发行。',0,'2026-09-15',NULL,'/covers/665-Moxi Zishi-星星、荆棘和鸟群.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Folk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
@@ -4874,6 +4874,7 @@ INSERT INTO "albums" VALUES(668,'害羞的侵略 / SHY ATTACK','曾轶可','中�
 INSERT INTO "albums" VALUES(669,'椿II','椿乐队','中国','大陆','Rock',NULL,'从天地洪荒的起始，到无名者的归途，椿乐队把东方哲思揉进九段生命叩问里。《天地玄黄》讲透万物生灭的冥冥规则，《山中的寺庙》撕开俗世信仰的假面，《湖底》照见自我深处的迷局，《少年穷》吼出不肯低头的韧劲儿；从后山野花的生死，到小船渡世的藏锋，从风陵渡的魂归，到夜观江潮的狂歌，最终落回《无名氏》隔山望乡的怅惘。九首歌，九道人间命题；椿乐队继续以东方肌理写透生死、初心、思念与自省。(文案：王蒙)',0,'2026-09-18','海浪音乐','/covers/669-椿乐队-椿II.jpg','46:52',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(670,'Day and Night','Carly Rae Jepsen','US',NULL,'Pop',NULL,'Carly Rae Jepsen第七张录音室专辑（双碟），2026年9月18日发行，继2022年《The Loneliest Time》后时隔四年的全新创作。专辑分Day与Night两面各12首：Day部偏原声质感、融入70年代迷幻流行，Night部更具舞池电子气息。',0,'2026-09-20','School Boy/Interscope Records','/covers/670-Carly-Rae-Jepsen-Day-and-Night.jpg','85:20',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Pop / Dance-pop / Synth-pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(671,'樱桃可乐的滋味','马念先','中国','台湾','Mandopop, Funk, Soul, R&B',NULL,'马念先时隔五年的个人全创作专辑，发想自都会生活细节，由金曲制作人李权哲全权操刀制作。专辑名取自他最喜欢的饮料樱桃可乐，意在传递"既熟悉却依然新鲜"的感动。男女对唱曲《寂寞是什么》邀陈娴静合唱。',0,'2026-09-20','马念先工作室','/covers/671-马念先-樱桃可乐的滋味.jpg','26:15',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Mandopop / R&B / Funk','李权哲',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(672,'Vaho','Asia Menor','智利',NULL,'Indie Rock',NULL,'智利独立乐队 Asia Menor 第二张录音室专辑，2026年9月10日由 Sello Fisura 发行。延续首作《Enola Gay》的制作班底（Víctor Muñoz 制作、Chalo González 母带）。官方文案称专辑借由逃避、拖延与荒诞来面对冲突；后半专辑与 Narval Orquesta 合作，加入 Andrés Quezada 编曲的弦乐与管乐。',0,'2026-09-21','Sello Fisura','/covers/672-Asia Menor-Vaho.jpg','45:21',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Indie Rock / Post-Rock / Post-Punk','Víctor Muñoz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -8184,6 +8185,9 @@ INSERT INTO "listen_history" VALUES(3031,654,'2026-09-20',2026,'','');
 INSERT INTO "listen_history" VALUES(3032,671,'2026-09-20',2026,'','');
 INSERT INTO "listen_history" VALUES(3033,661,'2026-09-20',2026,'','');
 INSERT INTO "listen_history" VALUES(3034,671,'2026-09-21',2026,'','opencode');
+INSERT INTO "listen_history" VALUES(3036,667,'2026-09-21',2026,'','');
+INSERT INTO "listen_history" VALUES(3037,662,'2026-09-21',2026,'','');
+INSERT INTO "listen_history" VALUES(3038,672,'2026-09-21',2026,'','opencode');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15135,16 +15139,24 @@ INSERT INTO "tracks" VALUES(8045,671,5,'Sera',218493,1,'itunes','2026-09-21 12:4
 INSERT INTO "tracks" VALUES(8046,671,6,'寂寞是什么 (feat. 陈娴静)',177792,1,'itunes','2026-09-21 12:40:15',NULL,NULL);
 INSERT INTO "tracks" VALUES(8047,671,7,'来不及说再见',172155,1,'itunes','2026-09-21 12:40:15',NULL,NULL);
 INSERT INTO "tracks" VALUES(8048,671,8,'老爷车',200903,1,'itunes','2026-09-21 12:40:15',NULL,NULL);
+INSERT INTO "tracks" VALUES(8049,672,1,'Lo bueno que tiene, lo malo que ignoro',380394,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8050,672,2,'Seis lagunas',248078,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8051,672,3,'Metal',337500,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8052,672,4,'Cartas',236757,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8053,672,5,'Luego, también',243158,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8054,672,6,'Vi al diablo',240580,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8055,672,7,'Mehuín (feat. Narval Orquesta)',319788,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
+INSERT INTO "tracks" VALUES(8056,672,8,'Calor (feat. Narval Orquesta)',715132,1,'itunes','2026-09-21 12:53:03',NULL,NULL);
 DELETE FROM "sqlite_sequence";
-INSERT INTO "sqlite_sequence" VALUES('albums',671);
-INSERT INTO "sqlite_sequence" VALUES('tracks',8048);
+INSERT INTO "sqlite_sequence" VALUES('albums',672);
+INSERT INTO "sqlite_sequence" VALUES('tracks',8056);
 INSERT INTO "sqlite_sequence" VALUES('albums_2024',261);
 INSERT INTO "sqlite_sequence" VALUES('albums_2025',415);
 INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',330);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3035);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3038);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
