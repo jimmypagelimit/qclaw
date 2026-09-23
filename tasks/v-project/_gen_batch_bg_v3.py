@@ -351,7 +351,7 @@ def main():
     for i, f in enumerate(files, 1):
         src = os.path.join(input_dir, f)
         name = os.path.splitext(f)[0]
-        dst = os.path.join(output_dir, f'bg_v3b_{i:02d}_{name}.png')
+        dst = os.path.join(output_dir, f'{i:02d}_bg_v3b_{name}.png')
         print(f'[{i}/{len(files)}] {f} ...', end=' ')
         if process_v3(src, dst):
             print('OK')
