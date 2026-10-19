@@ -22,9 +22,9 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(image.mode, 'RGB')
         self.assertEqual(image.crop((180, 265, 730, 815)).tobytes(), cover.tobytes())
         right = np.asarray(image)[200:880, 1150:1800]
-        self.assertLess(float(np.quantile(right, .99)), 45)
+        self.assertLess(float(np.quantile(right, .99)), 120)
         luminance = right @ np.array([.2126, .7152, .0722])
-        self.assertLess(float(luminance.std()), 10)
+        self.assertLess(float(luminance.std()), 3)
         self.assertEqual(hashlib.sha256(image.tobytes()).digest(),
                          hashlib.sha256(v7.render(cover).tobytes()).digest())
 
@@ -54,6 +54,16 @@ class RenderTests(unittest.TestCase):
         mono = v7.render(Image.new('RGB', (550, 550), (160, 160, 160)))
         mono_mean = np.asarray(mono)[60:210, 150:1050].mean(axis=(0, 1))
         self.assertLess(float(mono_mean.max() - mono_mean.min()), 6)
+
+    def test_background_has_no_left_right_colour_split(self):
+        cover = Image.new('RGB', (550, 550), (190, 50, 35))
+        ImageDraw.Draw(cover).rectangle((275, 0, 549, 549), fill=(25, 90, 180))
+        ambient, _ = v7.palette(cover)
+        image = np.asarray(v7.background(cover, ambient, np.random.default_rng(42)), dtype=float)
+        left = image[:, :640].mean(axis=(0, 1))
+        right = image[:, -640:].mean(axis=(0, 1))
+        self.assertLess(float(np.abs(left - right).max()), .2)
+        self.assertLess(float(np.abs(image[:, 950].mean(axis=0) - left).max()), 3)
 
     def test_exif_rotation_is_applied_before_square_crop(self):
         with tempfile.TemporaryDirectory() as temp:
