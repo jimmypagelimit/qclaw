@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/exhibition.css?v=2">
+  <link rel="stylesheet" href="/css/layout.css?v=3">
 </head>
 <body>
   <!-- 导航栏 -->
@@ -22,12 +23,14 @@
       <a href="#" class="nav-link" data-page="albums"><span class="nav-index">02</span> 唱片收藏</a>
 
     </div>
+    <div class="nav-colophon" aria-hidden="true"><span class="rail-rule"></span><span>私人唱片档案</span><small>COLLECTING SOUNDS.<br>KEEPING MEMORIES.</small><span class="rail-edition">JIM / PERSONAL ARCHIVE</span></div>
   </nav>
 
   <!-- 主内容 -->
   <main class="container" id="main-content">
     <!-- 仪表盘 -->
     <div id="page-dashboard" class="page active">
+      <div class="dashboard-opening">
       <header class="archive-hero">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> JIM’S PRIVATE COLLECTION</p>
@@ -42,8 +45,11 @@
           <span class="art-caption">SOME RECORDS STAY WITH US.</span>
         </div>
       </header>
+      <aside class="listening-ledger" aria-label="聆听统计">
       <div class="section-heading"><div><p class="eyebrow">01 / LISTENING NOTES</p><h2>聆听留下的刻度</h2></div><span class="section-note">每一次重听，都是新的抵达。</span></div>
       <div class="stats-grid" id="stats-grid"></div>
+      </aside>
+      </div>
       <div class="section-heading ranking-heading"><div><p class="eyebrow">ON REPEAT</p><h2>总有一些声音，值得反复。</h2></div><span class="section-note">按累计收听次数排列</span></div>
       <div class="leaderboard-grid">
         <div class="chart-card">
@@ -60,9 +66,13 @@
     <!-- 专辑库 -->
     <div id="page-albums" class="page">
       <header class="collection-heading"><p class="eyebrow">02 / THE RECORD COLLECTION</p><h1>唱片里的，<em>另一个世界。</em></h1><p>在这里，找到你想再次听见的声音。</p><span class="collection-stamp" aria-hidden="true">拾音<br><small>ARCHIVE</small></span></header>
-      <div class="album-controls">
+      <div class="collection-workspace">
+      <aside class="album-controls" aria-label="唱片查询与视图设置">
+        <div class="index-heading"><p class="eyebrow">BROWSE THE ARCHIVE</p><h2>浏览索引</h2><p>按名字寻找，按时间重访。</p></div>
         <div class="search-bar">
+          <label class="field-caption" for="search-input">查找唱片 / 艺术家</label>
           <input type="text" id="search-input" placeholder="搜索一张唱片，或一位艺术家…" aria-label="搜索专辑名或艺术家" class="search-input">
+          <label class="field-caption" for="search-year">收听年份</label>
           <select id="search-year" aria-label="收听年份" class="search-select">
             <option value="">总库</option>
             <option value="2024">2024</option>
@@ -72,6 +82,7 @@
           <button id="search-btn" class="btn btn-primary"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>搜索</button>
         </div>
         <div class="view-controls">
+          <label class="field-caption" for="sort-by">排列方式</label>
           <select id="sort-by" aria-label="专辑排序方式" class="search-select">
             <option value="listen">按收听次数</option>
             <option value="score">按评分</option>
@@ -79,14 +90,19 @@
             <option value="artist">按艺术家</option>
             <option value="year">按发行年份</option>
           </select>
+          <label class="field-caption" for="sort-dir">排列方向</label>
           <select id="sort-dir" aria-label="排序方向" class="search-select">
             <option value="desc">降序</option>
             <option value="asc">升序</option>
           </select>
+          <span class="field-caption view-caption">展示视图</span>
           <button id="view-grid" class="view-btn active" title="卡片视图" aria-label="卡片视图"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg></button>
           <button id="view-list" class="view-btn" title="列表视图" aria-label="列表视图"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg></button>
         </div>
-      </div>
+        <div class="index-footnote" aria-hidden="true"><span>THE COLLECTION</span><span>每张唱片，都有一个位置。</span></div>
+      </aside>
+      <section class="collection-results" aria-label="专辑查询结果">
+      <div class="results-heading"><h2>唱片目录<span> / RECORD INDEX</span></h2><span>以封面，寻找下一次重逢。</span></div>
       <div id="albums-grid" class="albums-grid"></div>
       <div id="albums-list" class="albums-list" style="display:none">
         <div class="table-container">
@@ -107,6 +123,8 @@
         </div>
       </div>
       <div class="pagination" id="pagination"></div>
+      </section>
+      </div>
     </div>
 
   </main>
