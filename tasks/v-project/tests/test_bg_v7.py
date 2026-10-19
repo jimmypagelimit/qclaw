@@ -23,7 +23,8 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(image.crop((180, 265, 730, 815)).tobytes(), cover.tobytes())
         right = np.asarray(image)[200:880, 1150:1800]
         self.assertLess(float(np.quantile(right, .99)), 45)
-        self.assertLess(float(right.std()), 8)
+        luminance = right @ np.array([.2126, .7152, .0722])
+        self.assertLess(float(luminance.std()), 10)
         self.assertEqual(hashlib.sha256(image.tobytes()).digest(),
                          hashlib.sha256(v7.render(cover).tobytes()).digest())
 
@@ -42,6 +43,17 @@ class RenderTests(unittest.TestCase):
             bad.write_bytes(b'not an image')
             self.assertFalse(v7.process_v7(bad, root / 'result.png'))
             self.assertFalse((root / 'result.png').exists())
+
+    def test_background_really_tracks_album_hues(self):
+        red = v7.render(Image.new('RGB', (550, 550), (190, 40, 30)))
+        blue = v7.render(Image.new('RGB', (550, 550), (30, 70, 190)))
+        red_mean = np.asarray(red)[60:210, 150:1050].mean(axis=(0, 1))
+        blue_mean = np.asarray(blue)[60:210, 150:1050].mean(axis=(0, 1))
+        self.assertGreater(float(red_mean[0] - red_mean[2]), 20)
+        self.assertGreater(float(blue_mean[2] - blue_mean[0]), 20)
+        mono = v7.render(Image.new('RGB', (550, 550), (160, 160, 160)))
+        mono_mean = np.asarray(mono)[60:210, 150:1050].mean(axis=(0, 1))
+        self.assertLess(float(mono_mean.max() - mono_mean.min()), 6)
 
     def test_exif_rotation_is_applied_before_square_crop(self):
         with tempfile.TemporaryDirectory() as temp:

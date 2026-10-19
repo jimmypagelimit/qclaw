@@ -47,7 +47,7 @@ def palette(cover: Image.Image) -> tuple[np.ndarray, np.ndarray]:
     group = usable[np.all((usable // 32).astype(np.int16) == dominant_bin, axis=1)]
     colour = group.mean(axis=0)
     neutral = float(colour @ np.array([.2126, .7152, .0722]))
-    ambient = np.clip(neutral * .64 + colour * .36, 35, 205)
+    ambient = np.clip(neutral * .12 + colour * .88, 20, 215)
     accent = np.clip(neutral * .25 + colour * .75, 65, 215)
     return ambient, accent
 
@@ -58,17 +58,27 @@ def background(cover: Image.Image, ambient: np.ndarray, rng: np.random.Generator
     light = np.exp(-(((x - 435) / 620) ** 2 + ((y - 400) / 560) ** 2))
     lower = np.exp(-(((x - 780) / 760) ** 2 + ((y - 960) / 330) ** 2))
     arr = np.empty((H, W, 3), dtype=np.float32)
-    arr[:] = (14, 16, 18)
-    arr += light[..., None] * (ambient * .28 + np.array([8, 7, 6]))
-    arr += lower[..., None] * ambient * .075
-    # A very soft memory of the source, rather than a stretched visible duplicate.
-    memory = ImageOps.fit(cover, (480, 270)).filter(ImageFilter.GaussianBlur(48)).resize((W, H))
-    arr += (np.asarray(memory, dtype=np.float32) - 100) * .025 * light[..., None]
+    arr[:] = (8, 10, 12)
+    arr += ambient * .065
+    arr += light[..., None] * (ambient * .24 + np.array([6, 5, 4]))
+    arr += lower[..., None] * ambient * .12
+    # Broad, source-coloured clouds: retain both dominant and secondary hues.
+    # Blur at low resolution so no source details compete with the cover or titles.
+    memory = ImageOps.fit(cover, (240, 135)).filter(
+        ImageFilter.GaussianBlur(22)).resize((W, H), Image.Resampling.BICUBIC)
+    colour_field = np.asarray(memory, dtype=np.float32)
+    arr += colour_field * .36 * (.58 + .42 * light[..., None])
     vignette = np.clip(((x - 780) / 1500) ** 2 + ((y - 500) / 1100) ** 2, 0, 1)
     arr *= (1 - vignette * .2)[..., None]
     right = np.clip((x - 1050) / 700, 0, 1)
     right = right * right * (3 - 2 * right)
-    arr *= (1 - .3 * right)[..., None]
+    arr *= (1 - .48 * right)[..., None]
+    # Keep hue in the title area while compressing brightness, not each channel.
+    safe = np.clip((x - 1000) / 150, 0, 1)
+    safe = safe * safe * (3 - 2 * safe)
+    peak = arr.max(axis=2)
+    compression = np.minimum(1, 40 / np.maximum(peak, 1))
+    arr *= (1 - safe + safe * compression)[..., None]
     # Achromatic grain avoids coloured speckles, including in dark encodes.
     arr += rng.normal(0, .68, (H, W, 1)).astype(np.float32)
     return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
