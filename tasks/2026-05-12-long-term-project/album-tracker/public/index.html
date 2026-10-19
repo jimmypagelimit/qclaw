@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>专辑数据库</title>
+  <title>拾音 · 私人唱片档案 | Album Tracker</title>
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="张树的私人唱片档案。收藏专辑，记录聆听，让喜欢的声音留下痕迹。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/exhibition.css?v=1">
 </head>
 <body>
   <!-- 导航栏 -->
-  <nav class="navbar">
-    <div class="nav-brand">🎵 专辑数据库</div>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <nav class="navbar" aria-label="主导航">
+    <div class="nav-brand"><span class="brand-mark" aria-hidden="true"></span><span>拾音<span class="brand-english">THE LISTENING ARCHIVE</span></span></div>
     <div class="nav-links">
-      <a href="#" class="nav-link active" data-page="dashboard">仪表盘</a>
-      <a href="#" class="nav-link" data-page="albums">专辑库</a>
+      <a href="#" class="nav-link active" data-page="dashboard"><span class="nav-index">01</span> 聆听概览</a>
+      <a href="#" class="nav-link" data-page="albums"><span class="nav-index">02</span> 唱片收藏</a>
 
     </div>
   </nav>
 
   <!-- 主内容 -->
-  <main class="container">
+  <main class="container" id="main-content">
     <!-- 仪表盘 -->
     <div id="page-dashboard" class="page active">
-      <h1>仪表盘</h1>
+      <header class="archive-hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> JIM’S PRIVATE COLLECTION</p>
+          <h1>听过的，<br>都成为了<span class="title-last">自己<span class="red-period">。</span></span></h1>
+          <p class="hero-description">一张唱片，一段时间。<br>把反复回到的声音，收藏成生活的底纹。</p>
+          <div class="hero-colophon"><span>ALBUM TRACKER</span><span>音乐 · 时间 · 私人记忆</span></div>
+        </div>
+        <div class="record-art" role="img" aria-label="黑胶唱片与朱红唱片内封构成的抽象装帧">
+          <span class="art-coordinate">SIDE A / THE ART OF LISTENING</span>
+          <div class="record-sleeve"><span class="sleeve-type">拾<br>音<span>LISTEN.<br>KEEP.<br>REPEAT.</span></span><span class="sleeve-number">私人珍藏 / 001</span></div>
+          <div class="vinyl"><div class="vinyl-label"><span>拾 音</span><small>THE LISTENING ARCHIVE</small><i></i><small>33⅓ RPM · STEREO</small></div></div>
+          <span class="art-caption">SOME RECORDS STAY WITH US.</span>
+        </div>
+      </header>
+      <div class="section-heading"><div><p class="eyebrow">01 / LISTENING NOTES</p><h2>聆听留下的刻度</h2></div><span class="section-note">每一次重听，都是新的抵达。</span></div>
       <div class="stats-grid" id="stats-grid"></div>
+      <div class="section-heading ranking-heading"><div><p class="eyebrow">ON REPEAT</p><h2>总有一些声音，值得反复。</h2></div><span class="section-note">按累计收听次数排列</span></div>
       <div class="leaderboard-grid">
         <div class="chart-card">
-          <h3>专辑总榜 Top 10</h3>
+          <h3><span>反复聆听的唱片</span><span class="chart-number">ALBUMS / TOP 10</span></h3>
           <div id="album-leaderboard" class="leaderboard-list"></div>
         </div>
         <div class="chart-card">
-          <h3>艺人总榜 Top 10</h3>
+          <h3><span>常在耳边的名字</span><span class="chart-number">ARTISTS / TOP 10</span></h3>
           <div id="artist-leaderboard" class="leaderboard-list"></div>
         </div>
       </div>
@@ -40,11 +59,11 @@
 
     <!-- 专辑库 -->
     <div id="page-albums" class="page">
-      <h1>💿 专辑库</h1>
+      <header class="collection-heading"><p class="eyebrow">02 / THE RECORD COLLECTION</p><h1>唱片里的，<em>另一个世界。</em></h1><p>在这里，找到你想再次听见的声音。</p><span class="collection-stamp" aria-hidden="true">拾音<br><small>ARCHIVE</small></span></header>
       <div class="album-controls">
         <div class="search-bar">
-          <input type="text" id="search-input" placeholder="搜索专辑名 / 艺术家..." class="search-input">
-          <select id="search-year" class="search-select">
+          <input type="text" id="search-input" placeholder="搜索一张唱片，或一位艺术家…" aria-label="搜索专辑名或艺术家" class="search-input">
+          <select id="search-year" aria-label="收听年份" class="search-select">
             <option value="">总库</option>
             <option value="2024">2024</option>
             <option value="2025">2025</option>
@@ -53,14 +72,14 @@
           <button id="search-btn" class="btn btn-primary">搜索</button>
         </div>
         <div class="view-controls">
-          <select id="sort-by" class="search-select">
+          <select id="sort-by" aria-label="专辑排序方式" class="search-select">
             <option value="listen">按收听次数</option>
             <option value="score">按评分</option>
             <option value="name">按专辑名</option>
             <option value="artist">按艺术家</option>
             <option value="year">按发行年份</option>
           </select>
-          <select id="sort-dir" class="search-select">
+          <select id="sort-dir" aria-label="排序方向" class="search-select">
             <option value="desc">降序</option>
             <option value="asc">升序</option>
           </select>
@@ -92,12 +111,14 @@
 
   </main>
 
+  <footer class="archive-footer"><span>拾音 <span class="footer-divider">/</span> THE LISTENING ARCHIVE</span><span>让喜欢的声音，留下痕迹。<span class="footer-dot" aria-hidden="true"></span></span></footer>
+
   <!-- 专辑详情弹窗（只读） -->
-  <div id="album-modal" class="modal">
+  <div id="album-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-content modal-large">
       <div class="modal-header">
         <h2 id="modal-title">专辑详情</h2>
-        <button class="modal-close" id="modal-close">&times;</button>
+        <button class="modal-close" id="modal-close" aria-label="关闭专辑详情">&times;</button>
       </div>
       <div id="modal-body" class="modal-body"></div>
       <div class="modal-footer">
@@ -107,7 +128,7 @@
   </div>
 
   <!-- 提示消息 -->
-  <div id="toast" class="toast"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="/js/app.js"></script>
 </body>
