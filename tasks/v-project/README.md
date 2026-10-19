@@ -58,3 +58,40 @@ python3 -m unittest discover -s tests -p 'test_bg_v7.py' -v
 | V7 | `_gen_batch_bg_v7.py` | 深夜唱片内封，PNG |
 
 V3 已有输出位于 `output/bg_v3/`。V7 样张位于 `output/bg_v7/preview/`。完整记录见 [VERSION_HISTORY.md](VERSION_HISTORY.md)。
+
+## V7 旋转版 · MP4
+
+`_gen_video_bg_v7.py` 复用已确认的统一主色 V7 静态构图。背景、封面、内封和投影不动，仅露出的黑胶纹理及盘标顺时针旋转，高光固定。盘标仅使用抽象线条，不添加虚构专辑信息。
+
+默认 1920×1080、30fps、6秒一圈、无声 H.264 MP4（yuv420p / BT.709 / faststart）。可无缝重复播放，供视频剪辑配乐使用；输出在 `output/video_v7/`。源封面、静态 PNG 和旧动画版本不受影响。
+
+单张：
+
+```bash
+python3 _gen_video_bg_v7.py \
+  --test 'cover_sources/input/20世纪华语/张雨生-口是心非.jpg' \
+  --output output/video_v7/preview
+```
+
+按歌单后台量产：
+
+```bash
+nohup python3 -u _gen_video_bg_v7.py \
+  --input 'cover_sources/input/20世纪华语' \
+  --output 'output/video_v7/20世纪华语' \
+  > /tmp/v-project-video-v7.log 2>&1 &
+```
+
+- `--turn-seconds 6`：每圈秒数，可改为更慢或更快。
+- `--loops 1`：完整圈数，例如 `--loops 3` 默认生成18秒视频。
+- `--fps 24|30|60`：帧率；帧率乘每圈秒数必须为整数，保证循环周期精确。
+- 文件名为 `原封面名_v7.mp4`，支持中文、空格；不递归输入子目录。
+- 需要系统 `ffmpeg` 且含 `libx264` 编码器；逐帧流式编码，无需保存大量临时帧。成功后原子替换目标 MP4，失败不替换已有完整视频。
+
+验证命令：
+
+```bash
+python3 -m unittest discover -s tests -p 'test*bg_v7.py' -v
+```
+
+动画测试核对静止区域、封面像素、可见运动和循环边界。MP4 属于有损视频，编码后的像素会有正常压缩差异。可播放的成品见 `output/video_v7/preview/`。
