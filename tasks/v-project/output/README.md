@@ -1,10 +1,7 @@
-# V项目 - 输出产物
+# 背景产物
 
-## 当前背景图
-位置: ws/video_thumbs/20th_century_indie_bg/ (20张)
-Git commit: ff669b1
+- `bg_v3/`：保留原静态背景。
+- `bg_v7/preview/`：V7 全尺寸 PNG 样张与 `comparison.jpg` 对比图。
+- `bg_v7/歌单名/`：使用 V7 批量命令生成的对应歌单产物。
 
-## 新输出
-运行 _gen_batch_bg.py 后产物在此目录：
-- bg/  — 背景图PNG
-- video/ — 视频合成产物（待开发）
+生成方法见项目根目录 README。V7 不会自动重制或覆盖既有 V3 产物。

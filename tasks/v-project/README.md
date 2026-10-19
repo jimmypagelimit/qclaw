@@ -1,56 +1,60 @@
-# V 项目 — 视频制作工具箱
+# V 项目 · 音乐视频背景工具箱
 
-## 项目定位
-音乐视频背景图批量生成 + 视频合成工具箱。当前阶段：背景图生成完成，视频合成待启动。
+以专辑封面生成 1920×1080 背景，供音乐视频叠加标题、歌词等内容。
 
-## 目录结构
+## V7 · 深夜唱片内封
 
-```
-tasks/v-project/
-├── README.md               ← 本文件
-├── _gen_batch_bg.py        ← CD风格背景图生成脚本
-├── cover_sources/          ← 封面源图（软链/指向，非实际存储）
-└── output/                 ← 输出产物目录
-    ├── bg/                 ← 背景图输出（PNG, 1920×1080）
-    └── video/              ← 视频合成产物（待开发）
-```
+2026-10-19 新增静态艺术版本：哑光封套、半露黑胶、细密沟槽、柔和投影和低饱和环境光。封面保持原色，右侧保留暗色叠字空间。无预置标题、歌词或品牌文字。
 
-## 已完成
-**2026-05-23 — CD风格背景图生成（20张）**
-- 歌单：NME C86 20世纪独立摇滚
-- 输入：`video_thumbs/20th_century_indie/`（20张封面）
-- 输出：`video_thumbs/20th_century_indie_bg/`（20张PNG）
-- Git commit: `ff669b1` / `9a94a49`
+![V3 与 V7 对比](output/bg_v7/preview/comparison.jpg)
 
-## CD风格参数（敲定版）
-| 参数 | 值 |
-|------|-----|
-| 尺寸 | 1920×1080 (16:9) |
-| 封面位置 | 左侧180px，垂直居中 |
-| 封面尺寸 | 550px |
-| 模糊背景 | GaussianBlur radius=30 |
-| 暗角 | vignette 强度0.75 |
-| CD外圈 | 深色边框16px + 细线 #3C3240 |
-| CD内圈 | 圆环 inner_r=55, hole_r=14 |
-| 镜面高光 | 左上角弧形白带 |
-| 右侧渐暗 | fade_x = 封面右边缘 + 80px |
-| 右上装饰 | 三颗金色小圆点 |
-| 封面边框 | 金色分隔线 |
+左栏为已有 V3 文件，右栏为 V7。原 V3、V5、V6 均保留。
 
-## 待开发
-- [ ] 视频合成（背景图 + 音乐片段 + 文字→MP4）
-- [ ] 多歌单支持（非C86系列）
-- [ ] 封面自动下载流程整合
-- [ ] 文字（歌名/艺人/评论）渲染
+### 单张
 
-## 快速命令
 ```bash
-# 生成背景图
-C:\Python311\python.exe tasks\v-project\_gen_batch_bg.py
-
-# 输入封面放在
-tasks\v-project\cover_sources\input\    # 或指定目录
-
-# 输出在
-tasks\v-project\output\bg\
+cd /root/qclaw/tasks/v-project
+python3 _gen_batch_bg_v7.py \
+  --test 'cover_sources/input/21世纪独立摇滚/Car Seat Headrest - Twin Fantasy.jpg' \
+  --output output/bg_v7/preview
 ```
+
+### 按歌单批量
+
+```bash
+python3 _gen_batch_bg_v7.py \
+  --input 'cover_sources/input/20世纪华语' \
+  --output 'output/bg_v7/20世纪华语'
+```
+
+单张默认也写入 `output/bg_v7/`，不写入封面源目录。批量仅处理指定目录的图片，不递归子目录；文件名支持中文和空格。输出为 `bg_v7_序号_原文件名.png`。再次运行同一任务会更新对应 V7 输出，不改旧版本。
+
+大量图片请后台生成并通过文件数确认进度：
+
+```bash
+nohup python3 -u _gen_batch_bg_v7.py \
+  --input 'cover_sources/input/20世纪华语' \
+  --output 'output/bg_v7/20世纪华语' \
+  > /tmp/v-project-v7.log 2>&1 &
+```
+
+### 环境与验证
+
+系统 Python 3、Pillow 和 NumPy，无新增依赖、网络请求或字体要求。
+
+```bash
+python3 -m unittest discover -s tests -p 'test_bg_v7.py' -v
+```
+
+像素哈希决定颗粒，跨进程和改名后保持一致（相同运行环境）。封面居中裁方，EXIF 方向先校正，透明封面合成到深灰底。封面在最终画面中占 x=180、y=265、550×550px。露出的唱片最右约 x=1056，叠字建议从 x=1120 起，右侧预留至少 100px 边距。视频标题、歌词应另行合成，不包含在背景 PNG 中。
+
+## 其他版本
+
+| 版本 | 脚本 | 产物 |
+| --- | --- | --- |
+| V3（内部注释称 V4 精致版） | `_gen_batch_bg_v3.py` | CD 装饰、模糊封面背景，PNG |
+| V5 | `_gen_video_bg_v5.py` | 黑胶旋转、EQ 与唱针，MP4 / GIF |
+| V6 | `_gen_video_bg_v6.py` | 暗金环境光、频谱残影与 CRT 颗粒，MP4 / GIF |
+| V7 | `_gen_batch_bg_v7.py` | 深夜唱片内封，PNG |
+
+V3 已有输出位于 `output/bg_v3/`。V7 样张位于 `output/bg_v7/preview/`。完整记录见 [VERSION_HISTORY.md](VERSION_HISTORY.md)。
