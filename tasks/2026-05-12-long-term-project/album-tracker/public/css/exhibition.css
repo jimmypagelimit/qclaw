@@ -164,3 +164,143 @@ h1::after { display: none; }
 @media(max-width:800px) { .record-art { max-width: 355px; } }
 @media(max-width:560px) { .leaderboard-grid { grid-template-columns: minmax(0,1fr); } .record-art { justify-self: center; } }
 @media(max-width:800px) { .stat-card:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; } }
+
+/* Detail study / 02 — tactile surfaces, readable catalogue, quiet feedback. */
+html { scrollbar-gutter: stable; }
+body { text-rendering: optimizeLegibility; }
+h1,h2,.album-card-title,.modal-header h2 { font-kerning: normal; text-wrap: pretty; }
+.hero-copy h1 { text-wrap: balance; }
+.eyebrow { font-size: 11px; }
+.section-note { font-size: 12px; }
+.hero-description { font-size: 14px; }
+.brand-english { font-size: 9px; }
+.chart-number { font-size: 9px; }
+.archive-footer { font-size: 10px; }
+
+/* Embossed edge, paper sleeve seam and the record's reflected light. */
+.record-sleeve { background: linear-gradient(115deg,#bd503b 0%,#a63d2d 58%,#943426 100%); border: 1px solid #e6a48c66; box-shadow: -1px 1px 0 #f2c2a766,-9px 18px 26px #40301a23; transition: transform 650ms cubic-bezier(.2,.65,.3,1); }
+.record-sleeve::after { content: ''; position: absolute; top: 0; right: 9px; bottom: 0; width: 1px; background: #72271938; box-shadow: 1px 0 #eab8a333; }
+.sleeve-type { text-shadow: 0 1px #fff4,-1px -1px #69271926; }
+.vinyl { transition: transform 850ms cubic-bezier(.2,.65,.3,1); }
+.vinyl::before { transform: rotate(-8deg); transition: transform 850ms cubic-bezier(.2,.65,.3,1); }
+.vinyl-label { border: 1px solid #f5e6c8; background: radial-gradient(circle at 35% 30%,#f1e4c7,#d9c9a7); }
+.vinyl-label small { font-size: 6px; }
+
+/* Catalogue cards have a stable two-line title area, including long names. */
+.album-card-info { position: relative; padding: 15px 0 14px; }
+.album-card-title { white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; line-height: 1.45; min-height: 2.9em; max-height: 2.9em; overflow: hidden; overflow-wrap: anywhere; font-size: 19px; }
+.album-card-artist { margin-top: 6px; margin-bottom: 11px; }
+.album-card-meta { font-size: 10px; }
+.album-card-meta span { min-width: 0; }
+.album-card-cover { outline: 1px solid #24261f0d; outline-offset: -1px; }
+.album-card-cover img { display: block; }
+.album-card-cover::after { content: '查看内页 ↗'; position: absolute; left: 11px; bottom: 11px; padding: 6px 10px; font-size: 11px; letter-spacing: .08em; color: #f8f3e7; background: #24261fe6; opacity: 0; transform: translateY(5px); transition: opacity 180ms ease,transform 220ms ease; pointer-events: none; }
+.album-card-info::after { content: ''; position: absolute; left: 0; bottom: -1px; height: 1px; width: 100%; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 300ms ease; }
+.album-card-listen-badge { box-shadow: 0 1px 3px #24261f18; min-width: 30px; height: 27px; font-variant-numeric: tabular-nums; }
+.albums-grid { align-items: start; }
+
+/* Controls use a single line weight and clear hover, press and focus states. */
+.control-icon { width: 17px; height: 17px; flex-shrink: 0; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+#search-btn { gap: 9px; }
+.search-input { padding-left: 16px; }
+.search-input,.search-select { border-color: #c6c0b2; transition: border-color 180ms ease,background-color 180ms ease,box-shadow 180ms ease; }
+.search-input::placeholder { color: #747366; }
+.search-input:focus,.search-select:focus { background-color: #fcf9f1; border-color: var(--accent); box-shadow: 0 0 0 3px #a73e2d14; }
+.search-select { padding-right: 32px; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23626257' stroke-width='1.3'/%3E%3C/svg%3E"); background-size: 10px 7px; background-repeat: no-repeat; background-position: right 12px center; }
+.btn,.view-btn,.page-btn,.modal-close { touch-action: manipulation; transition: background-color 160ms ease,border-color 160ms ease,color 160ms ease,transform 160ms ease; }
+.btn:active,.view-btn:active,.page-btn:active { transform: translateY(1px); box-shadow: none; }
+.view-btn { color: var(--text-secondary); }
+.view-btn.active { color: var(--bg); box-shadow: inset 0 0 0 1px #ffffff14; }
+.page-btn { min-height: 44px; }
+.modal-close { width: 44px; height: 44px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.search-input:focus-visible,.search-select:focus-visible { outline-offset: 2px; }
+
+/* Quieter leaderboard rhythm, with count and rank columns aligned. */
+.lb-rank { font-variant-numeric: tabular-nums; }
+.lb-title { font-size: 14px; }
+.lb-artist { font-size: 12px; }
+.lb-count { font-variant-numeric: tabular-nums; }
+.lb-cover { background: var(--bg-secondary); }
+.stat-card .value { letter-spacing: -.025em; }
+.stat-card .sub,.stat-card .label { font-size: 12px; }
+
+/* The reading surface stays still while its contents scroll. */
+body:has(.modal.show) { overflow: hidden; }
+.modal-content { overscroll-behavior-y: contain; scrollbar-gutter: stable; }
+.modal-header { box-shadow: 0 2px 12px #24261f06; }
+.modal-header h2::before { content: 'THE RECORD / LINER NOTES'; display: block; margin-bottom: 8px; font: 500 9px/1.5 'IBM Plex Sans',sans-serif; letter-spacing: .17em; color: var(--text-muted); }
+.modal-header h2 { overflow-wrap: anywhere; }
+.detail-cover { outline: 1px solid #24261f10; outline-offset: -1px; }
+.detail-label { font-size: 11px; }
+.detail-value { font-size: 13px; }
+.detail-section-title { margin-top: 30px; margin-bottom: 18px; }
+.track-col-name { white-space: normal; overflow: visible; overflow-wrap: anywhere; padding-right: 12px; }
+.track-row { align-items: baseline; }
+.track-col-dur { width: 70px; }
+.lyrics-block { background: linear-gradient(90deg,#e4dccd 0 1px,transparent 1px) 15px 0 / 1px 100% no-repeat,#f9f6ef; padding: 28px 28px 28px 35px; scrollbar-gutter: stable; overscroll-behavior-y: contain; }
+.lyrics-track-header { align-items: baseline; gap: 10px; }
+.lyrics-track-num { font-size: 16px; font-variant-numeric: tabular-nums; }
+.lyrics-text { padding-left: 0; line-height: 2.35; letter-spacing: .02em; }
+.lrc-line { padding: 2px 0; }
+.lrc-time { display: inline-block; min-width: 43px; padding: 0; margin-right: 10px; color: #6d6c60; font-variant-numeric: tabular-nums; font-size: 10px; letter-spacing: 0; vertical-align: baseline; }
+.lyrics-section { padding: 25px 0; }
+.rating-link { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; }
+.detail-review-link a { display: inline-block; padding: 8px 0; text-underline-offset: 4px; }
+.desc-text { line-height: 2; }
+
+/* Intentional states before data arrives and when a search returns nothing. */
+.stats-grid:empty { min-height: 179px; background: linear-gradient(90deg,transparent 24.9%,var(--border) 25%,transparent 25.1%,transparent 49.9%,var(--border) 50%,transparent 50.1%,transparent 74.9%,var(--border) 75%,transparent 75.1%); }
+.leaderboard-list:empty { min-height: 400px; background: repeating-linear-gradient(0deg,transparent 0 76px,var(--border-light) 76px 77px); }
+.albums-grid:empty { min-height: 320px; }
+.albums-empty { padding: 70px 20px 80px; border: 1px solid var(--border); background: #f8f5ee80; font-size: 14px; }
+.albums-empty::before { content: '∅'; display: block; margin-bottom: 15px; font: 400 48px/1 Georgia,serif; color: var(--accent); }
+.albums-empty::after { content: '换一个名字，或试试其他收听年份。'; display: block; margin-top: 12px; font-size: 12px; color: var(--text-secondary); }
+@media(hover:hover) and (pointer:fine) {
+  .record-art:hover .record-sleeve { transform: rotate(-10deg) translateX(-3px); }
+  .record-art:hover .vinyl { transform: translateX(4px); }
+  .record-art:hover .vinyl::before { transform: rotate(24deg); }
+  .album-card:hover .album-card-cover::after { opacity: 1; transform: translateY(0); }
+  .album-card:hover .album-card-info::after { transform: scaleX(1); }
+  .album-card:hover .album-card-title { color: var(--accent); }
+  .search-input:hover,.search-select:hover { border-color: #969080; }
+  .view-btn:not(.active):hover,.page-btn:hover { background-color: #e9e2d5; border-color: #9d9585; color: var(--text); }
+  .modal-close:hover { color: var(--accent); border-color: var(--accent); background: #a73e2d09; }
+}
+@media(max-width:800px) {
+  .stats-grid:empty { min-height: 430px; background: none; }
+  .section-note { font-size: 11px; }
+  .brand-english { font-size: 8px; }
+}
+@media(max-width:560px) {
+  .brand-english { font-size: 7px; }
+  .hero-description { font-size: 13px; }
+  .section-note { font-size: 10px; }
+  .album-card-title { font-size: 17px; }
+  .album-card-meta { font-size: 9px; }
+  .album-card-info { padding-top: 12px; }
+  .album-card-artist { font-size: 12px; }
+  .search-select { padding-right: 29px; }
+  .search-input { font-size: 16px; }
+  .search-input::placeholder { font-size: 12px; }
+  .archive-footer { font-size: 9px; }
+  .lyrics-block { padding: 20px 17px 20px 23px; background-position: 10px 0; }
+  .lyrics-text { font-size: 15px; line-height: 2.2; }
+  .lyrics-track-name { font-size: 19px; }
+  .lrc-time { min-width: 36px; margin-right: 5px; font-size: 9px; }
+  .track-col-name { font-size: 13px; }
+  .modal-header h2::before { font-size: 8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .record-art:hover .vinyl,.record-art:hover .vinyl::before { transform: none; }
+  .record-art:hover .record-sleeve { transform: rotate(-8deg); }
+  .album-card:hover .album-card-cover,.album-card:hover .album-card-cover img { transform: none; }
+}
+@media(forced-colors:active) {
+  .view-btn.active { outline: 2px solid Highlight; outline-offset: -4px; }
+  .control-icon { stroke: ButtonText; }
+  .search-select { appearance: auto; background-image: none; padding-right: 12px; }
+}
+/* LRC rows are already block elements; source newlines must not add blank rows. */
+.lyrics-text:has(.lrc-line) { white-space: normal; }
+.lrc-line { white-space: pre-wrap; }

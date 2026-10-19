@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/exhibition.css?v=1">
+  <link rel="stylesheet" href="/css/exhibition.css?v=2">
 </head>
 <body>
   <!-- 导航栏 -->
@@ -69,7 +69,7 @@
             <option value="2025">2025</option>
             <option value="2026">2026</option>
           </select>
-          <button id="search-btn" class="btn btn-primary">搜索</button>
+          <button id="search-btn" class="btn btn-primary"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>搜索</button>
         </div>
         <div class="view-controls">
           <select id="sort-by" aria-label="专辑排序方式" class="search-select">
@@ -83,8 +83,8 @@
             <option value="desc">降序</option>
             <option value="asc">升序</option>
           </select>
-          <button id="view-grid" class="view-btn active" title="卡片视图">▦</button>
-          <button id="view-list" class="view-btn" title="列表视图">≡</button>
+          <button id="view-grid" class="view-btn active" title="卡片视图" aria-label="卡片视图"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg></button>
+          <button id="view-list" class="view-btn" title="列表视图" aria-label="列表视图"><svg class="control-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg></button>
         </div>
       </div>
       <div id="albums-grid" class="albums-grid"></div>
