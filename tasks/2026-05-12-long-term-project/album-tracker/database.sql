@@ -4888,6 +4888,7 @@ INSERT INTO "albums" VALUES(685,'后青春期的诗','五月天','中国','台�
 INSERT INTO "albums" VALUES(686,'成人世界','陈惠婷','中国','台湾','Mandopop',NULL,'陈惠婷第二张个人专辑，2015年10月30日发行，全碟12首，索尼音乐（台湾）发行。',0,'2026-10-15','索尼音乐','/covers/686-陈惠婷-成人世界.jpg','52:33',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2015,'流行',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(687,'Dopamine Chamber','Fontaines D.C.','爱尔兰','都柏林','Alternative, Post-Punk, Indie Rock',NULL,'Fontaines D.C.第六张录音室专辑，2026年10月16日发行，全碟11首，XL Recordings发行。',0,'2026-10-17','XL Recordings','/covers/687-Fontaines D.C.-Dopamine Chamber.jpg','43:57',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Post-Punk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(688,'Popstar','Tinashe','美国','肯塔基州','R&B, Pop, Alternative R&B',NULL,'Tinashe第七张录音室专辑，2026年9月25日发行，全碟16首，Atlantic Records发行。',0,'2026-10-17','Atlantic Records','/covers/688-Tinashe-Popstar.jpg','39:32',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'R&B',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(689,'哪天的形状','陈静琳',NULL,NULL,'流行',NULL,NULL,0,'2026-10-19','北京环球美音国际文化传播有限公司','/covers/chen-jinglin-one-day-i.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -8252,6 +8253,7 @@ INSERT INTO "listen_history" VALUES(3087,188,'2026-10-16',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3088,687,'2026-10-17',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3089,688,'2026-10-17',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3090,682,'2026-10-19',2026,'','opencode');
+INSERT INTO "listen_history" VALUES(3091,689,'2026-10-19',2026,'','opencode');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15397,7 +15399,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',331);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3090);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3091);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
