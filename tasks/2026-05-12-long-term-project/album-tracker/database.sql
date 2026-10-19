@@ -8254,6 +8254,7 @@ INSERT INTO "listen_history" VALUES(3088,687,'2026-10-17',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3089,688,'2026-10-17',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3090,682,'2026-10-19',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3091,689,'2026-10-19',2026,'','opencode');
+INSERT INTO "listen_history" VALUES(3092,684,'2026-10-19',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15399,7 +15400,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',331);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3091);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3092);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
