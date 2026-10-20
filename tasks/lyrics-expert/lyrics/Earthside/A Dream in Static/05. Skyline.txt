@@ -1,0 +1,8 @@
+风格：流行 Pop
+BPM：96
+KEY：
+-音名：C
+-调号：♯
+-调式：Major
+Beat说明：freebeat仅供demo或非营利性质使用
+Beat Maker : MRZ
