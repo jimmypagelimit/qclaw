@@ -19,3 +19,7 @@ tasks/2026-05-12-long-term-project/album-tracker/public/covers/539-Waa_Wei-*
 # SQLite WAL/SHM 临时文件 (sql.js 运行产生)
 *-wal
 *-shm
+
+# Python cache
+__pycache__/
+*.pyc
