@@ -1,0 +1,33 @@
+/* Fonts are served locally; each font directory contains its OFL.txt license. */
+@font-face {
+  font-family: 'Lyrics Chinese Handwriting';
+  src: url('/fonts/ma-shan-zheng/MaShanZheng-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lyrics Latin Handwriting';
+  src: url('/fonts/caveat/Caveat.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+
+.lyrics-text {
+  font-family: 'Lyrics Latin Handwriting', 'Lyrics Chinese Handwriting', 'KaiTi', 'STKaiti', cursive;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 2.1;
+  letter-spacing: .025em;
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .lyrics-text {
+    font-size: 19px;
+    line-height: 2.05;
+  }
+}
