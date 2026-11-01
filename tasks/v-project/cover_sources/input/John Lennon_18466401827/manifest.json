@@ -1,0 +1,72 @@
+{
+  "playlist": "John Lennon",
+  "playlist_id": "18466401827",
+  "track_count": 25,
+  "resolved_tracks": 25,
+  "covers": [
+    {
+      "album_id": 2068490,
+      "album": "John Lennon / Plastic Ono Band",
+      "artist": "John Lennon, The Plastic Ono Band",
+      "file": "001_John Lennon, The Plastic Ono Band_John Lennon _ Plastic Ono Band.jpg",
+      "source": "https://p2.music.126.net/XsO3GYvR3_9JKI1P79ptAg==/109951170169466856.jpg"
+    },
+    {
+      "album_id": 1712647,
+      "album": "Imagine",
+      "artist": "John Lennon",
+      "file": "002_John Lennon_Imagine.jpg",
+      "source": "https://p2.music.126.net/qVrElG9hT1Qqftw4qd61iw==/109951170169468733.jpg"
+    },
+    {
+      "album_id": 2068491,
+      "album": "Rock 'N' Roll",
+      "artist": "John Lennon",
+      "file": "003_John Lennon_Rock 'N' Roll.jpg",
+      "source": "https://p2.music.126.net/GzkpYkjgTYCiA8HR4YwE4w==/109951170216169814.jpg"
+    },
+    {
+      "album_id": 1712644,
+      "album": "Milk And Honey",
+      "artist": "John Lennon",
+      "file": "004_John Lennon_Milk And Honey.jpg",
+      "source": "https://p2.music.126.net/Nilc7vw4kGwJK2hfxoO-6g==/109951173377195479.jpg"
+    },
+    {
+      "album_id": 151051,
+      "album": "Mind Games",
+      "artist": "John Lennon",
+      "file": "005_John Lennon_Mind Games.jpg",
+      "source": "https://p2.music.126.net/7yU5_6pIHRhaoetapVlZOw==/109951170216174248.jpg"
+    },
+    {
+      "album_id": 151046,
+      "album": "Walls and Bridges (Deluxe Edition)",
+      "artist": "John Lennon",
+      "file": "006_John Lennon_Walls and Bridges (Deluxe Edition).jpg",
+      "source": "https://p2.music.126.net/JFpfiuwIjUMavz9o5gUhDA==/6668538022684781.jpg"
+    },
+    {
+      "album_id": 150943,
+      "album": "Peace, Love & Truth",
+      "artist": "John Lennon",
+      "file": "007_John Lennon_Peace, Love & Truth.jpg",
+      "source": "https://p2.music.126.net/lQ55uLt-h13mR5OC51RFNg==/836728348788082.jpg"
+    },
+    {
+      "album_id": 151022,
+      "album": "The John Lennon Collection",
+      "artist": "John Lennon",
+      "file": "008_John Lennon_The John Lennon Collection.jpg",
+      "source": "https://p2.music.126.net/WzluY6beGeywFBqVGI-WRw==/899400511571984.jpg"
+    },
+    {
+      "album_id": 151028,
+      "album": "Double Fantasy",
+      "artist": "John Lennon",
+      "file": "009_John Lennon_Double Fantasy.jpg",
+      "source": "https://p2.music.126.net/UAlOB-13Kwbo9zImQ6Y6Ow==/109951170216169394.jpg"
+    }
+  ],
+  "skipped": []
+}
