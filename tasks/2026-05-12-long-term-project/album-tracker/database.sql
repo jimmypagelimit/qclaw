@@ -4807,7 +4807,7 @@ INSERT INTO "albums" VALUES(604,'Lover Man','Nando Garcia',NULL,NULL,'Alternativ
 INSERT INTO "albums" VALUES(605,'Todo Salio Bien en la Sencilla Villa Quien','sueter7',NULL,NULL,'Indie Rock',NULL,NULL,0,NULL,'1/4 Compania Discos','/covers/605-sueter7-Todo Salio Bien en la Sencilla Villa Quien.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(606,'Role Model Hermit','mary in the junkyard','英国',NULL,'Indie Rock',NULL,NULL,0,NULL,'AMF Records (Island EMI UK/Island UK)','/covers/606-mary in the junkyard-Role Model Hermit.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Art Pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(607,'Blur','Blur','英国',NULL,'Alternative Rock',NULL,NULL,0,NULL,NULL,'/covers/607-Blur-Blur.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1997,'Britpop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
-INSERT INTO "albums" VALUES(608,'If You''re Feeling Sinister','Belle and Sebastian','英国',NULL,'Indie Pop',NULL,NULL,0,NULL,NULL,'/covers/608-Belle and Sebastian-If You''re Feeling Sinister.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1996,'Indie Folk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(608,'If You''re Feeling Sinister','Belle and Sebastian','英国',NULL,'Indie Pop',NULL,NULL,0,'2026-11-02',NULL,'/covers/608-Belle and Sebastian-If You''re Feeling Sinister.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1996,'Indie Folk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(609,'Count Your Blessings | Repented','Bring Me the Horizon','英国',NULL,'Metal',NULL,NULL,0,NULL,NULL,'/covers/609-Bring Me the Horizon-Count Your Blessings _ Repented.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,'Metalcore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(610,'U.F.O.F.','Big Thief','美国',NULL,'Indie Rock',NULL,NULL,0,NULL,NULL,'/covers/610-Big Thief-U.F.O.F..jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2019,'Indie Folk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(611,'秋天','苏醒','中国',NULL,'Mandopop',NULL,NULL,1,NULL,NULL,'/covers/611-苏醒-秋天.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2007,'Pop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
@@ -8276,6 +8276,7 @@ INSERT INTO "listen_history" VALUES(3105,435,'2026-10-31',2026,'','codex');
 INSERT INTO "listen_history" VALUES(3106,690,'2026-10-31',2026,'','opencode');
 INSERT INTO "listen_history" VALUES(3107,694,'2026-11-02',2026,'','');
 INSERT INTO "listen_history" VALUES(3108,694,'2026-11-02',2026,'','');
+INSERT INTO "listen_history" VALUES(3109,608,'2026-11-02',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15421,7 +15422,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',331);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3108);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3109);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
