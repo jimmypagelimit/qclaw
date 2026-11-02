@@ -4893,6 +4893,7 @@ INSERT INTO "albums" VALUES(690,'王国 Darktopia','陈惠婷','中国','台湾'
 INSERT INTO "albums" VALUES(691,'The Point of No Return','Dummy Toys',NULL,NULL,NULL,NULL,NULL,NULL,'2026-10-29','Laibixi Records','Dummy Toys - The Point of No Return.jpg','24:44',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(692,'知人','Tizzy Bac',NULL,NULL,NULL,NULL,NULL,NULL,'2026-10-29','相信音乐','Tizzy Bac - 知人.jpg','53:55',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2018,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(693,'sunset blush','Sadness',NULL,NULL,'Alternative',NULL,NULL,NULL,'2026-10-29','sadness','Sadness - sunset blush.jpg','37:38',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(694,'you made me / skin on linen','PISS','加拿大',NULL,'噪音摇滚',NULL,NULL,NULL,'2026-11-02','Sub Pop / Paper Bag Records',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -8272,6 +8273,9 @@ INSERT INTO "listen_history" VALUES(3102,415,'2026-10-29',2026,'','');
 INSERT INTO "listen_history" VALUES(3103,692,'2026-10-29',2026,'','');
 INSERT INTO "listen_history" VALUES(3104,693,'2026-10-29',2026,'','');
 INSERT INTO "listen_history" VALUES(3105,435,'2026-10-31',2026,'','codex');
+INSERT INTO "listen_history" VALUES(3106,690,'2026-10-31',2026,'','opencode');
+INSERT INTO "listen_history" VALUES(3107,694,'2026-11-02',2026,'','');
+INSERT INTO "listen_history" VALUES(3108,694,'2026-11-02',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15369,18 +15373,18 @@ INSERT INTO "tracks" VALUES(8278,685,9,'夜访吸血鬼',250000,1,'qq','2026-10-
 INSERT INTO "tracks" VALUES(8279,685,10,'如烟',314000,1,'qq','2026-10-14 12:41:57',NULL,NULL);
 INSERT INTO "tracks" VALUES(8280,685,11,'后青春期的诗',139000,1,'qq','2026-10-14 12:41:57',NULL,NULL);
 INSERT INTO "tracks" VALUES(8281,685,12,'笑忘歌',254000,1,'qq','2026-10-14 12:41:57',NULL,NULL);
-INSERT INTO "tracks" VALUES(8282,686,1,'流星冒险王国',320661,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8283,686,2,'xyz',247950,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8284,686,3,'寂寞守望者',272759,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8285,686,4,'镜像世界',260266,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8286,686,5,'梦的解析',220886,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8287,686,6,'Dr.恋爱',248297,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8288,686,7,'12345 木头人跳舞',236728,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8289,686,8,'美丽新世界',229430,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8290,686,9,'生之欲',285491,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8291,686,10,'迷雾森林',306551,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8292,686,11,'惊惧之泪',249205,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
-INSERT INTO "tracks" VALUES(8293,686,12,'失物之城',274822,1,'itunes','2026-10-15 12:47:24',NULL,NULL);
+INSERT INTO "tracks" VALUES(8282,686,1,'流星冒险王国',320661,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/01. 流星冒险王国.txt','陈惠婷/成人世界/01. 流星冒险王国.lrc');
+INSERT INTO "tracks" VALUES(8283,686,2,'xyz',247950,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/02. xyz.txt','陈惠婷/成人世界/02. xyz.lrc');
+INSERT INTO "tracks" VALUES(8284,686,3,'寂寞守望者',272759,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/03. 寂寞守望者.txt','陈惠婷/成人世界/03. 寂寞守望者.lrc');
+INSERT INTO "tracks" VALUES(8285,686,4,'镜像世界',260266,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/04. 镜像世界.txt','陈惠婷/成人世界/04. 镜像世界.lrc');
+INSERT INTO "tracks" VALUES(8286,686,5,'梦的解析',220886,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/05. 梦的解析.txt','陈惠婷/成人世界/05. 梦的解析.lrc');
+INSERT INTO "tracks" VALUES(8287,686,6,'Dr.恋爱',248297,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/06. Dr.恋爱.txt','陈惠婷/成人世界/06. Dr.恋爱.lrc');
+INSERT INTO "tracks" VALUES(8288,686,7,'12345 木头人跳舞',236728,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/07. 12345 木头人跳舞.txt','陈惠婷/成人世界/07. 12345 木头人跳舞.lrc');
+INSERT INTO "tracks" VALUES(8289,686,8,'美丽新世界',229430,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/08. 美丽新世界.txt','陈惠婷/成人世界/08. 美丽新世界.lrc');
+INSERT INTO "tracks" VALUES(8290,686,9,'生之欲',285491,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/09. 生之欲.txt','陈惠婷/成人世界/09. 生之欲.lrc');
+INSERT INTO "tracks" VALUES(8291,686,10,'迷雾森林',306551,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/10. 迷雾森林.txt','陈惠婷/成人世界/10. 迷雾森林.lrc');
+INSERT INTO "tracks" VALUES(8292,686,11,'惊惧之泪',249205,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/11. 惊惧之泪.txt','陈惠婷/成人世界/11. 惊惧之泪.lrc');
+INSERT INTO "tracks" VALUES(8293,686,12,'失物之城',274822,1,'itunes','2026-10-15 12:47:24','陈惠婷/成人世界/12. 失物之城.txt','陈惠婷/成人世界/12. 失物之城.lrc');
 INSERT INTO "tracks" VALUES(8294,687,1,'Six Shot Morning',296699,1,'itunes','2026-10-17 12:19:48',NULL,NULL);
 INSERT INTO "tracks" VALUES(8295,687,2,'Marianne',225646,1,'itunes','2026-10-17 12:19:48',NULL,NULL);
 INSERT INTO "tracks" VALUES(8296,687,3,'Mimesis',231684,1,'itunes','2026-10-17 12:19:48',NULL,NULL);
@@ -15417,7 +15421,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',331);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3105);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3108);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
