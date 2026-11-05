@@ -4895,6 +4895,7 @@ INSERT INTO "albums" VALUES(692,'知人','Tizzy Bac',NULL,NULL,NULL,NULL,NULL,NU
 INSERT INTO "albums" VALUES(693,'sunset blush','Sadness',NULL,NULL,'Alternative',NULL,NULL,NULL,'2026-10-29','sadness','Sadness - sunset blush.jpg','37:38',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(694,'you made me / skin on linen','PISS','加拿大',NULL,'噪音摇滚',NULL,NULL,NULL,'2026-11-02','Sub Pop / Paper Bag Records',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 INSERT INTO "albums" VALUES(695,'Mind Palace','钱润玉',NULL,NULL,'另类音乐',NULL,NULL,NULL,'2026-11-05','Down To Top','/covers/6822701468-钱润玉-Mind Palace.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
+INSERT INTO "albums" VALUES(696,'Save As','Ex:Re',NULL,NULL,'Alternative',NULL,NULL,NULL,'2026-11-05','4AD','/covers/6805069535-ExRe-Save-As.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2026,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'active');
 CREATE TABLE albums_2024 (
                         album_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         album_name TEXT NOT NULL,
@@ -8283,6 +8284,8 @@ INSERT INTO "listen_history" VALUES(3111,608,'2026-11-05',2026,'','codex');
 INSERT INTO "listen_history" VALUES(3112,608,'2026-11-05',2026,'','codex');
 INSERT INTO "listen_history" VALUES(3113,695,'2026-11-05',2026,'','');
 INSERT INTO "listen_history" VALUES(3114,695,'2026-11-05',2026,'','');
+INSERT INTO "listen_history" VALUES(3115,696,'2026-11-05',2026,'','');
+INSERT INTO "listen_history" VALUES(3116,696,'2026-11-05',2026,'','');
 CREATE TABLE review_contents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     review_id INTEGER NOT NULL,
@@ -15428,7 +15431,7 @@ INSERT INTO "sqlite_sequence" VALUES('albums_2026',195);
 INSERT INTO "sqlite_sequence" VALUES('genres',368);
 INSERT INTO "sqlite_sequence" VALUES('styles',212);
 INSERT INTO "sqlite_sequence" VALUES('artists',331);
-INSERT INTO "sqlite_sequence" VALUES('listen_history',3114);
+INSERT INTO "sqlite_sequence" VALUES('listen_history',3116);
 INSERT INTO "sqlite_sequence" VALUES('album_genres',821);
 INSERT INTO "sqlite_sequence" VALUES('album_styles',543);
 INSERT INTO "sqlite_sequence" VALUES('external_ratings',280);
